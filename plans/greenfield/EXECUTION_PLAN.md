@@ -1494,15 +1494,15 @@ Document local setup, environment variables, source behavior, data storage, and 
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) README documents install, setup, `JOOBLE_API_KEY`, local data path, no-description storage policy, LinkedIn no-fetch behavior, and MVP commands.
+- [x] (CODE) README documents install, setup, `JOOBLE_API_KEY`, local data path, no-description storage policy, LinkedIn no-fetch behavior, and MVP commands.
   - Verify: `cd ../.. && for p in "JOOBLE_API_KEY" "data/" "LinkedIn" "no-fetch" "jobs discover" "jobs add" "jobs export"; do rg -q "$p" README.md || exit 1; done`
-- [ ] (CODE) `.env.example` documents supported environment variables without secret values.
+- [x] (CODE) `.env.example` documents supported environment variables without secret values.
   - Verify: `cd ../.. && test -f .env.example && rg -q "JOOBLE_API_KEY=" .env.example && ! rg -n "=.+[A-Za-z0-9]{20,}" .env.example`
-- [ ] (CODE) `.claude/verification-config.json` contains test, typecheck, and build commands.
+- [x] (CODE) `.claude/verification-config.json` contains test, typecheck, and build commands.
   - Verify: `cd ../.. && test -f .claude/verification-config.json && node -e "const c=require('./.claude/verification-config.json'); if(!c.commands?.test||!c.commands?.typecheck||!c.commands?.build) process.exit(1)"`
-- [ ] (TEST) Full automated verification passes from a clean install state after docs/config changes.
+- [x] (TEST) Full automated verification passes from a clean install state after docs/config changes.
   - Verify: `cd ../.. && pnpm test && pnpm typecheck && pnpm build`
-- [ ] (CODE) Deferred public board and advanced classifier scope remain out of the MVP docs except as future notes.
+- [x] (CODE) Deferred public board and advanced classifier scope remain out of the MVP docs except as future notes.
   - Verify: `cd ../.. && rg -n "public board|job_classifier|future" README.md DEFERRED.md features/job_classifier/INITIAL_NOTES.md`
 
 **Files to Create:**

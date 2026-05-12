@@ -13,6 +13,7 @@ import {
   readEvents,
   readJsonFile,
   recordSessionInterrupted,
+  type JobRecord,
 } from "../../../../packages/core/src/index.js";
 import { createProgram } from "../cli.js";
 import { ReviewInterruptedError, runReviewFlow } from "../review/reviewPrompts.js";
@@ -174,7 +175,7 @@ describe("e2e CLI workflows", () => {
   });
 });
 
-function createCandidateJob(id: string) {
+function createCandidateJob(id: string): JobRecord {
   return {
     schemaVersion: 1,
     id,
@@ -194,7 +195,7 @@ function createCandidateJob(id: string) {
       scoredAt: "2026-05-12T20:00:00.000Z",
       scoringVersion: "rules-v1",
     },
-  } as const;
+  };
 }
 
 function output(log: ReturnType<typeof vi.spyOn>): string {

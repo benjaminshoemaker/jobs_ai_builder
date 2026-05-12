@@ -1,5 +1,14 @@
 {
-  "commands": {},
+  "commands": {
+    "test": "pnpm test",
+    "typecheck": "pnpm typecheck",
+    "build": "pnpm build",
+    "e2e": "pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts",
+    "metadataOnly": "pnpm --filter @ai-builder-jobs/core test -- export.test.ts no-description-persistence.test.ts"
+  },
+  "optional": {
+    "liveJooble": "test -n \"$JOOBLE_API_KEY\" && pnpm --filter @ai-builder-jobs/core test -- jooble-adapter.test.ts || true"
+  },
   "browser": {
     "tool": "auto"
   }
