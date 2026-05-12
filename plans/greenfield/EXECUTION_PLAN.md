@@ -457,15 +457,15 @@ Build the normalizer and deduper that map raw source candidates into canonical j
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Normalization code covers company, title, URL, location, and remote work strings.
+- [x] (CODE) Normalization code covers company, title, URL, location, and remote work strings.
   - Verify: `cd ../.. && rg -n "normalizeCompany|normalizeTitle|normalizeUrl|normalizeLocation|remote" packages/core/src/dedupe packages/core/src/normalize`
-- [ ] (TEST) Deduplication tests merge same external ID, same normalized URL, and same normalized company/title with overlapping location or work type.
+- [x] (TEST) Deduplication tests merge same external ID, same normalized URL, and same normalized company/title with overlapping location or work type.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- dedupe.test.ts`
-- [ ] (TEST) Deduplication tests keep separate listings when company/title match but location or work type differs without source proof.
+- [x] (TEST) Deduplication tests keep separate listings when company/title match but location or work type differs without source proof.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- dedupe.test.ts`
-- [ ] (TEST) Source listing tests preserve partial metadata and source error state.
+- [x] (TEST) Source listing tests preserve partial metadata and source error state.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- source-listings.test.ts`
-- [ ] (TYPE) Normalized candidates typecheck against storage schemas.
+- [x] (TYPE) Normalized candidates typecheck against storage schemas.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
