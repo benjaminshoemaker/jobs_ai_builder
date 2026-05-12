@@ -747,15 +747,15 @@ Wire adapters, candidate selection, dedupe, scoring, and storage into `jobs disc
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Discover service implements fetch limit, per-source quota or round-robin fill, cooldown skipping, dedupe, scoring, and top review-limit selection.
+- [x] (CODE) Discover service implements fetch limit, per-source quota or round-robin fill, cooldown skipping, dedupe, scoring, and top review-limit selection.
   - Verify: `cd ../.. && rg -n "fetchLimit|reviewLimit|round|cooldown|dedupe|score" packages/core/src/discovery apps/cli/src`
-- [ ] (TEST) Discovery tests retrieve up to 50 candidates by default and select the top 10 after scoring.
+- [x] (TEST) Discovery tests retrieve up to 50 candidates by default and select the top 10 after scoring.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- discovery.test.ts`
-- [ ] (TEST) Discovery tests avoid resurfacing recently reviewed, rejected, or archived jobs unless include flags are set.
+- [x] (TEST) Discovery tests avoid resurfacing recently reviewed, rejected, or archived jobs unless include flags are set.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- discovery.test.ts`
-- [ ] (TEST) No-new-candidate sessions exit successfully and record session metrics.
+- [x] (TEST) No-new-candidate sessions exit successfully and record session metrics.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- discovery.test.ts`
-- [ ] (TEST) CLI integration test covers `jobs discover --interactive=false` with mocked sources and temp data.
+- [x] (TEST) CLI integration test covers `jobs discover --interactive=false` with mocked sources and temp data.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- discover-command.test.ts`
 
 **Files to Create:**

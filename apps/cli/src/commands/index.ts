@@ -1,4 +1,5 @@
 import type { Command } from "commander";
+import { registerDiscoverCommand } from "./discover.js";
 
 type CommandDefinition = {
   name: string;
@@ -6,7 +7,6 @@ type CommandDefinition = {
 };
 
 const commandDefinitions: CommandDefinition[] = [
-  { name: "discover", description: "Fetch, rank, and review candidate jobs" },
   { name: "add <url>", description: "Add a manually found job URL" },
   { name: "list", description: "List stored jobs" },
   { name: "review", description: "Review an existing queue, such as maybe jobs" },
@@ -22,6 +22,8 @@ const commandDefinitions: CommandDefinition[] = [
 ];
 
 export function registerCommands(program: Command): void {
+  registerDiscoverCommand(program);
+
   for (const definition of commandDefinitions) {
     program
       .command(definition.name)
