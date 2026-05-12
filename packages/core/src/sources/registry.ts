@@ -4,6 +4,7 @@ import type { SourceRecord } from "../schemas/index.js";
 import { LinkedInManualAdapter } from "./linkedinManualAdapter.js";
 import { LeverAdapter } from "./leverAdapter.js";
 import { ManualAdapter } from "./manualAdapter.js";
+import { JoobleAdapter } from "./joobleAdapter.js";
 import type { SourceAdapter } from "./types.js";
 
 export class SourceRegistry {
@@ -16,6 +17,7 @@ export class SourceRegistry {
       new AshbyAdapter(),
       new GreenhouseAdapter(),
       new LeverAdapter(),
+      new JoobleAdapter(),
     ],
   ) {
     this.adapters = new Map(adapters.map((adapter) => [adapter.id, adapter]));

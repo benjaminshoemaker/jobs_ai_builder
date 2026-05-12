@@ -693,15 +693,15 @@ Implement Jooble as the first broad jobs API adapter with configurable provider 
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Jooble adapter reads credentials from the configured environment variable and never from persisted config.
+- [x] (CODE) Jooble adapter reads credentials from the configured environment variable and never from persisted config.
   - Verify: `cd ../.. && rg -n "broadApiCredentialEnvVar|process\\.env|JOOBLE_API_KEY" packages/core/src/sources packages/core/src/config`
-- [ ] (TEST) Jooble fixture tests normalize returned candidates into shared metadata.
+- [x] (TEST) Jooble fixture tests normalize returned candidates into shared metadata.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- jooble-adapter.test.ts`
-- [ ] (TEST) Missing-key tests enforce non-zero discover behavior unless partial sources are explicitly allowed.
+- [x] (TEST) Missing-key tests enforce non-zero discover behavior unless partial sources are explicitly allowed.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- source-failures.test.ts`
-- [ ] (TEST) Rate-limit and source failure tests write source error details and continue when at least one source succeeds.
+- [x] (TEST) Rate-limit and source failure tests write source error details and continue when at least one source succeeds.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- source-failures.test.ts`
-- [ ] (TYPE) Jooble adapter typechecks against `SourceAdapter`.
+- [x] (TYPE) Jooble adapter typechecks against `SourceAdapter`.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
