@@ -1166,13 +1166,13 @@ Add focused commands for revisiting maybe jobs and creating do-not-merge decisio
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) `jobs review maybe` lets the user relabel maybe jobs as `yes`, `no`, or keep `maybe` while preserving label history.
+- [x] (TEST) `jobs review maybe` lets the user relabel maybe jobs as `yes`, `no`, or keep `maybe` while preserving label history.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-maybe-and-dedupe.test.ts`
-- [ ] (TEST) `jobs dedupe mark-do-not-merge <jobIdA> <jobIdB>` creates an order-independent do-not-merge record.
+- [x] (TEST) `jobs dedupe mark-do-not-merge <jobIdA> <jobIdB>` creates an order-independent do-not-merge record.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-maybe-and-dedupe.test.ts`
-- [ ] (TEST) `jobs dedupe list <jobId>` displays do-not-merge decisions involving that job.
+- [x] (TEST) `jobs dedupe list <jobId>` displays do-not-merge decisions involving that job.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-maybe-and-dedupe.test.ts`
-- [ ] (TYPE) Review maybe and dedupe command implementations typecheck.
+- [x] (TYPE) Review maybe and dedupe command implementations typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
