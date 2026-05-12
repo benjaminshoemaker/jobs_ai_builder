@@ -548,18 +548,18 @@ Persist user-entered do-not-merge records and make dedupe check them before auto
 
 **Automated Checks:**
 
-- [ ] (TEST) Unit tests pass.
+- [x] (TEST) Unit tests pass.
   - Verify: `cd ../.. && pnpm test`
-- [ ] (TYPE) Type checking passes.
+- [x] (TYPE) Type checking passes.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) Build passes.
+- [x] (BUILD) Build passes.
   - Verify: `cd ../.. && pnpm build`
 
 **Regression Verification:**
 
-- [ ] (TEST) No-description persistence tests still pass.
+- [x] (TEST) No-description persistence tests still pass.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- no-description-persistence.test.ts`
-- [ ] (TEST) Dedupe and scoring tests pass together.
+- [x] (TEST) Dedupe and scoring tests pass together.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- dedupe.test.ts scoring.test.ts`
 
 ---
