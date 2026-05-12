@@ -2,8 +2,8 @@
 
 Primary active workstream: `plans/greenfield/`
 Current type: `greenfield`
-Current stage: `execution-plan`
-Current status: `active`
+Current stage: `completed`
+Current status: `completed`
 Last updated: 2026-05-12
 Updated by: /generate-plan
 
@@ -23,5 +23,5 @@ human explicitly revives them.
 
 | Path | Type | Status | Superseded By | Updated | Notes |
 |------|------|--------|---------------|---------|-------|
-| `plans/greenfield/` | greenfield | active |  | 2026-05-12 | Execution plan for TypeScript CLI-first AI Builder job sourcing and feedback loop |
+| `plans/greenfield/` | greenfield | completed |  | 2026-05-12 | Execution plan for TypeScript CLI-first AI Builder job sourcing and feedback loop |
 | `features/job_classifier/` | feature | planned |  | 2026-05-12 | Future classifier research beyond the rules-based MVP |

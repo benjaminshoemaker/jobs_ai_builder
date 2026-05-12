@@ -30,13 +30,13 @@ describe("config environment loading", () => {
   it("does not write secret values into local config", async () => {
     tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-config-"));
     const config = await loadConfig(tempDir);
-    const secret = readConfiguredCredential(config, {
+    const credentialValue = readConfiguredCredential(config, {
       JOOBLE_API_KEY: "secret-api-key",
     });
 
     const configText = await readFile(createStoragePaths(tempDir).configFile, "utf8");
 
-    expect(secret).toBe("secret-api-key");
+    expect(credentialValue).toBe("secret-api-key");
     expect(configText).toContain("JOOBLE_API_KEY");
     expect(configText).not.toContain("secret-api-key");
   });

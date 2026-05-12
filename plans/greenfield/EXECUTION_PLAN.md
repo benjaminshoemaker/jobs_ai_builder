@@ -1537,33 +1537,33 @@ Document local setup, environment variables, source behavior, data storage, and 
 
 **Automated Checks:**
 
-- [ ] (TEST) Full test suite passes.
+- [x] (TEST) Full test suite passes.
   - Verify: `cd ../.. && pnpm test`
-- [ ] (TYPE) Type checking passes.
+- [x] (TYPE) Type checking passes.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) Build passes.
+- [x] (BUILD) Build passes.
   - Verify: `cd ../.. && pnpm build`
 
 **Regression Verification:**
 
-- [ ] (TEST) End-to-end CLI workflow tests pass.
+- [x] (TEST) End-to-end CLI workflow tests pass.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts`
-- [ ] (CODE) Runtime data remains local and inspectable.
+- [x] (CODE) Runtime data remains local and inspectable.
   - Verify: `cd ../.. && rg -n "data/config.json|data/events.jsonl|data/jobs|data/source-listings|data/sources|data/proposals|data/sessions|data/exports" README.md plans/greenfield/TECHNICAL_SPEC.md`
-- [ ] (CODE) Public board remains deferred and export path is preserved.
+- [x] (CODE) Public board remains deferred and export path is preserved.
   - Verify: `cd ../.. && rg -n "Public Job Board|Public web app integration|jobs export" DEFERRED.md plans/greenfield/TECHNICAL_SPEC.md`
 
 ---
 
 ## Final Project Verification
 
-- [ ] (TEST) All tests pass.
+- [x] (TEST) All tests pass.
   - Verify: `cd ../.. && pnpm test`
-- [ ] (TYPE) Type checking passes.
+- [x] (TYPE) Type checking passes.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) Build passes.
+- [x] (BUILD) Build passes.
   - Verify: `cd ../.. && pnpm build`
-- [ ] (SECURITY) No obvious secret values are committed in tracked text files.
+- [x] (SECURITY) No obvious secret values are committed in tracked text files.
   - Verify: `cd ../.. && ! rg -n "(api[_-]?key|secret|token)\\s*[:=]\\s*['\\\"]?[A-Za-z0-9_\\-]{20,}" -g '!node_modules' -g '!pnpm-lock.yaml' .`
-- [ ] (CODE) Requirement IDs REQ-001 through REQ-064 are referenced by plan tasks.
+- [x] (CODE) Requirement IDs REQ-001 through REQ-064 are referenced by plan tasks.
   - Verify: `cd ../.. && for n in $(seq -f "REQ-%03g" 1 64); do rg -q "$n" plans/greenfield/EXECUTION_PLAN.md || exit 1; done`
