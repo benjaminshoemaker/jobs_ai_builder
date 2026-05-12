@@ -1,0 +1,19 @@
+{
+  "name": "@ai-builder-jobs/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "jobs": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --out-dir dist",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@ai-builder-jobs/core": "workspace:*",
+    "@inquirer/prompts": "^7.8.6",
+    "commander": "^14.0.1"
+  }
+}

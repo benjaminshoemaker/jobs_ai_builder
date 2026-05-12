@@ -63,15 +63,15 @@ Create the root pnpm workspace, TypeScript configuration, CLI package, and core 
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Root workspace manifests exist with package scripts for `build`, `test`, and `typecheck`.
+- [x] (CODE) Root workspace manifests exist with package scripts for `build`, `test`, and `typecheck`.
   - Verify: `cd ../.. && test -f package.json && test -f pnpm-workspace.yaml && test -f tsconfig.base.json && node -e "const p=require('./package.json'); if(!p.scripts?.build||!p.scripts?.test||!p.scripts?.typecheck) process.exit(1)"`
-- [ ] (CODE) CLI and core package manifests exist with the planned package names.
+- [x] (CODE) CLI and core package manifests exist with the planned package names.
   - Verify: `cd ../.. && node -e "const cli=require('./apps/cli/package.json'); const core=require('./packages/core/package.json'); if(cli.name!=='@ai-builder-jobs/cli'||core.name!=='@ai-builder-jobs/core') process.exit(1)"`
-- [ ] (TYPE) The empty scaffold typechecks.
+- [x] (TYPE) The empty scaffold typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) The empty scaffold builds.
+- [x] (BUILD) The empty scaffold builds.
   - Verify: `cd ../.. && pnpm build`
-- [ ] (TEST) The scaffold test command runs at least one smoke test.
+- [x] (TEST) The scaffold test command runs at least one smoke test.
   - Verify: `cd ../.. && pnpm test`
 
 **Files to Create:**
