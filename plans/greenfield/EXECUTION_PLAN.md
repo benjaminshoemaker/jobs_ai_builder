@@ -315,16 +315,16 @@ Add config creation, config validation, default query seeds, scoring-rule defaul
 
 **Automated Checks:**
 
-- [ ] (TEST) Unit tests pass.
+- [x] (TEST) Unit tests pass.
   - Verify: `cd ../.. && pnpm test`
-- [ ] (TYPE) Type checking passes.
+- [x] (TYPE) Type checking passes.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) Build passes.
+- [x] (BUILD) Build passes.
   - Verify: `cd ../.. && pnpm build`
 
 **Regression Verification:**
 
-- [ ] (CODE) No full job descriptions or API secrets are stored in committed runtime data.
+- [x] (CODE) No full job descriptions or API secrets are stored in committed runtime data.
   - Verify: `cd ../.. && test ! -d data && ! rg -n "JOOBLE_API_KEY|fullDescription|descriptionText" data 2>/dev/null`
 
 ---
