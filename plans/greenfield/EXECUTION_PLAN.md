@@ -924,18 +924,18 @@ Implement `jobs config` prompt-based editing for provider settings, limits, cool
 
 **Automated Checks:**
 
-- [ ] (TEST) Unit and CLI integration tests pass.
+- [x] (TEST) Unit and CLI integration tests pass.
   - Verify: `cd ../.. && pnpm test`
-- [ ] (TYPE) Type checking passes.
+- [x] (TYPE) Type checking passes.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) Build passes.
+- [x] (BUILD) Build passes.
   - Verify: `cd ../.. && pnpm build`
 
 **Regression Verification:**
 
-- [ ] (TEST) Source failure tests pass without live API credentials.
+- [x] (TEST) Source failure tests pass without live API credentials.
   - Verify: `cd ../.. && unset JOOBLE_API_KEY && pnpm --filter @ai-builder-jobs/core test -- source-failures.test.ts`
-- [ ] (TEST) CLI discover works against mocked sources in a temp data directory.
+- [x] (TEST) CLI discover works against mocked sources in a temp data directory.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- discover-command.test.ts`
 
 ---
