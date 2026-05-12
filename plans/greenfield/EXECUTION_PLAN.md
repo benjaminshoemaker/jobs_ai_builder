@@ -841,13 +841,13 @@ Implement `jobs sources` subcommands for adding, listing, and testing reusable s
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) `jobs sources add <url>` creates reusable ATS sources for Ashby, Greenhouse, and Lever and one-off manual sources for unknown URLs.
+- [x] (TEST) `jobs sources add <url>` creates reusable ATS sources for Ashby, Greenhouse, and Lever and one-off manual sources for unknown URLs.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- sources-command.test.ts`
-- [ ] (TEST) `jobs sources test <id>` returns adapter test status and preserves source error details.
+- [x] (TEST) `jobs sources test <id>` returns adapter test status and preserves source error details.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- sources-command.test.ts`
-- [ ] (TEST) `jobs sources list` distinguishes enabled, disabled, reusable, and one-off sources.
+- [x] (TEST) `jobs sources list` distinguishes enabled, disabled, reusable, and one-off sources.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- sources-command.test.ts`
-- [ ] (TYPE) Source command implementation typechecks.
+- [x] (TYPE) Source command implementation typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
