@@ -116,13 +116,13 @@ Add the Commander-based CLI shell and command registration structure. Commands c
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) The CLI exports a `runCli` or equivalent command runner used by the bin entrypoint.
+- [x] (CODE) The CLI exports a `runCli` or equivalent command runner used by the bin entrypoint.
   - Verify: `cd ../.. && rg -n "runCli|program\\.command|new Command" apps/cli/src`
-- [ ] (CODE) MVP command names are registered: `discover`, `add`, `list`, `review`, `show`, `archive`, `search`, `proposals`, `sources`, `config`, `dedupe`, `refresh`, and `export`.
+- [x] (CODE) MVP command names are registered: `discover`, `add`, `list`, `review`, `show`, `archive`, `search`, `proposals`, `sources`, `config`, `dedupe`, `refresh`, and `export`.
   - Verify: `cd ../.. && for c in discover add list review show archive search proposals sources config dedupe refresh export; do rg -q "\\b$c\\b" apps/cli/src || exit 1; done`
-- [ ] (TEST) CLI help output includes the MVP commands.
+- [x] (TEST) CLI help output includes the MVP commands.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- cli-help.test.ts`
-- [ ] (TYPE) CLI command registration typechecks.
+- [x] (TYPE) CLI command registration typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
