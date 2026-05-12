@@ -1446,15 +1446,15 @@ Create end-to-end tests that run the CLI through realistic local workflows using
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) End-to-end tests cover discover, review labels, list, show, maybe review, archive, proposals, refresh, and export in a temp data directory.
+- [x] (TEST) End-to-end tests cover discover, review labels, list, show, maybe review, archive, proposals, refresh, and export in a temp data directory.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts`
-- [ ] (TEST) End-to-end tests prove interrupted review preserves completed labels and exits cleanly.
+- [x] (TEST) End-to-end tests prove interrupted review preserves completed labels and exits cleanly.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts`
-- [ ] (TEST) End-to-end tests prove no-new-candidate sessions exit successfully.
+- [x] (TEST) End-to-end tests prove no-new-candidate sessions exit successfully.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts`
-- [ ] (TEST) End-to-end tests prove exported JSON contains active and archived metadata but no full descriptions or secrets.
+- [x] (TEST) End-to-end tests prove exported JSON contains active and archived metadata but no full descriptions or secrets.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts`
-- [ ] (BUILD) Full package build still succeeds after integration coverage is added.
+- [x] (BUILD) Full package build still succeeds after integration coverage is added.
   - Verify: `cd ../.. && pnpm build`
 
 **Files to Create:**
