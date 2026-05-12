@@ -53,6 +53,7 @@ export type DiscoverJobsResult = {
   fetched: number;
   uniqueAfterDedupe: number;
   selected: JobRecord[];
+  transientDescriptions: Record<string, string>;
   session: SessionRecord;
 };
 
@@ -106,7 +107,7 @@ export async function discoverJobs(input: DiscoverJobsInput): Promise<DiscoverJo
 
     uniqueAfterDedupe += 1;
     const listingId = `listing_${hash(normalized.sourceId, normalized.normalizedUrl)}`;
-    const job = createJobRecord(normalized, input.now, listingId);
+    const job = createJobRecord(normalized, input.now, listingId, sourceCandidate.transientDescription);
     const listing = createSourceListingRecord(normalized, {
       id: listingId,
       jobId: job.id,
@@ -136,6 +137,15 @@ export async function discoverJobs(input: DiscoverJobsInput): Promise<DiscoverJo
     fetched: fetchedCandidates.length,
     uniqueAfterDedupe,
     selected: ranked.map((item) => item.job),
+    transientDescriptions: Object.fromEntries(
+      ranked.flatMap(({ job }) => {
+        const candidate = fetchedCandidates.find((item) => {
+          const normalized = normalizeSourceCandidate(item);
+          return `job_${hash(normalized.normalizedCompany, normalized.normalizedTitle, normalized.normalizedUrl)}` === job.id;
+        });
+        return candidate?.transientDescription ? [[job.id, candidate.transientDescription]] : [];
+      }),
+    ),
     session,
   };
 }
@@ -162,7 +172,12 @@ function normalizeSourceCandidate(candidate: SourceCandidate): NormalizedCandida
   });
 }
 
-function createJobRecord(candidate: NormalizedCandidate, now: string, listingId: string): JobRecord {
+function createJobRecord(
+  candidate: NormalizedCandidate,
+  now: string,
+  listingId: string,
+  transientDescription?: string,
+): JobRecord {
   const id = `job_${hash(candidate.normalizedCompany, candidate.normalizedTitle, candidate.normalizedUrl)}`;
   return JobRecordSchema.parse({
     schemaVersion: 1,
@@ -186,6 +201,7 @@ function createJobRecord(candidate: NormalizedCandidate, now: string, listingId:
       workType: candidate.normalizedWorkType,
       compensationMin: candidate.compensationMin,
       compensationMax: candidate.compensationMax,
+      transientDescription,
     }),
   });
 }

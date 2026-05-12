@@ -1,10 +1,11 @@
-import { mkdtemp, rm } from "node:fs/promises";
+import { mkdtemp, readFile, readdir, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
 import { afterEach, describe, expect, it } from "vitest";
 
 import { createDefaultConfig } from "../config/index.js";
+import { createStoragePaths } from "../storage/index.js";
 import type { SourceAdapter, SourceCandidate } from "../sources/index.js";
 import { discoverJobs } from "./index.js";
 
@@ -79,6 +80,38 @@ describe("discovery service", () => {
       uniqueAfterDedupe: 0,
       reviewed: 0,
     });
+  });
+
+  it("carries transient descriptions into the review result and scoring without persisting raw text", async () => {
+    tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-discovery-"));
+    const transientDescription = "Use Claude Code to orchestrate agents and ship customer workflows.";
+    const result = await discoverJobs({
+      dataDir: tempDir,
+      config: createDefaultConfig(),
+      sources: [source("a")],
+      registry: registry([
+        adapter("manual", [
+          {
+            ...candidate("1", "AI Builder"),
+            transientDescription,
+          },
+        ]),
+      ]),
+      now: "2026-05-12T20:00:00.000Z",
+      interactive: false,
+    });
+
+    const [job] = result.selected;
+    expect(result.transientDescriptions[job!.id]).toBe(transientDescription);
+    expect(job!.score.positiveSignals.map((signal) => signal.id)).toContain("tool.claude_code");
+    expect(job!.score.positiveSignals.map((signal) => signal.id)).toContain("agent.agentic_workflow");
+
+    const paths = createStoragePaths(tempDir);
+    for (const dir of [paths.jobsDir, paths.sourceListingsDir, paths.sessionsDir]) {
+      for (const fileName of await readdir(dir)) {
+        await expect(readFile(path.join(dir, fileName), "utf8")).resolves.not.toContain(transientDescription);
+      }
+    }
   });
 });
 

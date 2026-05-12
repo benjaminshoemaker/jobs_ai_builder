@@ -64,8 +64,15 @@ export function registerDiscoverCommand(program: Command): void {
       if (options.interactive !== "false" && result.selected.length > 0) {
         const sourceListings = await readSourceListings(options.dataDir, result.selected.flatMap((job) => job.sourceListingIds));
         try {
+          const queue = createReviewQueue(result.selected, sourceListings, planned.sources, { limit: result.selected.length })
+            .map((item) => ({
+              ...item,
+              ...(result.transientDescriptions[item.job.id]
+                ? { transientDescription: result.transientDescriptions[item.job.id] }
+                : {}),
+            }));
           await runReviewFlow({
-            items: createReviewQueue(result.selected, sourceListings, planned.sources, { limit: result.selected.length }),
+            items: queue,
             onOutcome: async (outcome) => {
               if (!outcome.reviewLabel) return;
               await persistReviewLabel({
