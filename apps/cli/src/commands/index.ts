@@ -1,5 +1,6 @@
 import type { Command } from "commander";
 import { registerAddCommand } from "./add.js";
+import { registerConfigCommand } from "./config.js";
 import { registerDiscoverCommand } from "./discover.js";
 import { registerSourcesCommand } from "./sources.js";
 
@@ -15,7 +16,6 @@ const commandDefinitions: CommandDefinition[] = [
   { name: "archive <id>", description: "Archive a saved job" },
   { name: "search <query>", description: "Search local job metadata" },
   { name: "proposals", description: "Review proposed logic changes" },
-  { name: "config", description: "View or edit local configuration" },
   { name: "dedupe", description: "Manage deduplication decisions" },
   { name: "refresh", description: "Refresh saved source listing status" },
   { name: "export", description: "Export curated metadata" },
@@ -25,6 +25,7 @@ export function registerCommands(program: Command): void {
   registerDiscoverCommand(program);
   registerAddCommand(program);
   registerSourcesCommand(program);
+  registerConfigCommand(program);
 
   for (const definition of commandDefinitions) {
     program

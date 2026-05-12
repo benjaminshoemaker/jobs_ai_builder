@@ -885,13 +885,13 @@ Implement `jobs config` prompt-based editing for provider settings, limits, cool
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) `jobs config` prompt tests edit provider, credential env var, review limit, fetch limit, cooldown, and preferences.
+- [x] (TEST) `jobs config` prompt tests edit provider, credential env var, review limit, fetch limit, cooldown, and preferences.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- config-command.test.ts`
-- [ ] (TEST) Config command tests validate `hard_filter`, `soft_rank`, and `note_only` preference modes.
+- [x] (TEST) Config command tests validate `hard_filter`, `soft_rank`, and `note_only` preference modes.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- config-command.test.ts`
-- [ ] (TEST) Config command tests reject invalid config before writing to `data/config.json`.
+- [x] (TEST) Config command tests reject invalid config before writing to `data/config.json`.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- config-command.test.ts`
-- [ ] (TYPE) Config command implementation typechecks.
+- [x] (TYPE) Config command implementation typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
