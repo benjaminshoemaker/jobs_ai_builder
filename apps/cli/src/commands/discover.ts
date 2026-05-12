@@ -9,12 +9,14 @@ import {
   loadConfig,
   readJsonFile,
   SourceListingRecordSchema,
+  persistReviewLabel,
+  recordSessionInterrupted,
   type SourceAdapter,
   type SourceCandidate,
   type SourceListingRecord,
   type SourceRecord,
 } from "../../../../packages/core/src/index.js";
-import { runReviewFlow } from "../review/reviewPrompts.js";
+import { ReviewInterruptedError, runReviewFlow } from "../review/reviewPrompts.js";
 
 export function registerDiscoverCommand(program: Command): void {
   program
@@ -39,9 +41,37 @@ export function registerDiscoverCommand(program: Command): void {
       console.log(`Selected ${result.selected.length} candidate(s). Status: ${result.status}.`);
       if (options.interactive !== "false" && result.selected.length > 0) {
         const sourceListings = await readSourceListings(options.dataDir, result.selected.flatMap((job) => job.sourceListingIds));
-        await runReviewFlow({
-          items: createReviewQueue(result.selected, sourceListings, sources, { limit: result.selected.length }),
-        });
+        try {
+          await runReviewFlow({
+            items: createReviewQueue(result.selected, sourceListings, sources, { limit: result.selected.length }),
+            onOutcome: async (outcome) => {
+              if (!outcome.reviewLabel) return;
+              await persistReviewLabel({
+                dataDir: options.dataDir,
+                jobId: outcome.jobId,
+                reviewLabel: outcome.reviewLabel,
+                notes: outcome.notes,
+                now: new Date().toISOString(),
+                sessionId: result.session.id,
+              });
+            },
+            onInterrupted: async (context) => {
+              await recordSessionInterrupted({
+                dataDir: options.dataDir,
+                sessionId: result.session.id,
+                now: new Date().toISOString(),
+                reviewedJobIds: context.completedOutcomes.map((outcome) => outcome.jobId),
+                reason: context.error instanceof Error ? context.error.message : "unknown interruption",
+              });
+            },
+          });
+        } catch (error) {
+          if (error instanceof ReviewInterruptedError) {
+            console.log(`Review interrupted after ${error.completedOutcomes.length} completed review(s).`);
+            return;
+          }
+          throw error;
+        }
       }
     });
 }

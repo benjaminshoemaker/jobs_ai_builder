@@ -1017,15 +1017,15 @@ Implement the review write path that converts labels into lifecycle state, prese
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) Label transition tests map `yes` to active, `maybe` to maybe, and `no` to rejected while preserving separate review label and lifecycle status fields.
+- [x] (TEST) Label transition tests map `yes` to active, `maybe` to maybe, and `no` to rejected while preserving separate review label and lifecycle status fields.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- lifecycle.test.ts`
-- [ ] (TEST) Review persistence tests write `job.reviewed` events and preserve prior label/status history.
+- [x] (TEST) Review persistence tests write `job.reviewed` events and preserve prior label/status history.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- review-persistence.test.ts`
-- [ ] (TEST) Rejected jobs are hidden from normal list inputs but remain findable through explicit filters.
+- [x] (TEST) Rejected jobs are hidden from normal list inputs but remain findable through explicit filters.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- lifecycle.test.ts`
-- [ ] (TEST) Interrupted review tests persist completed review events, write `session.interrupted`, and leave unreviewed candidates as `candidate`.
+- [x] (TEST) Interrupted review tests persist completed review events, write `session.interrupted`, and leave unreviewed candidates as `candidate`.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- interrupted-review.test.ts`
-- [ ] (TYPE) Review persistence services typecheck.
+- [x] (TYPE) Review persistence services typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
