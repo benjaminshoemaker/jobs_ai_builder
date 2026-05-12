@@ -270,15 +270,15 @@ Add config creation, config validation, default query seeds, scoring-rule defaul
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Default config includes review limit 10, fetch limit 50, 24 hour cooldown, Jooble provider, query seeds, and preference modes.
+- [x] (CODE) Default config includes review limit 10, fetch limit 50, 24 hour cooldown, Jooble provider, query seeds, and preference modes.
   - Verify: `cd ../.. && rg -n "reviewLimit|fetchLimit|sourceCooldownHours|jooble|querySeeds|hard_filter|soft_rank|note_only" packages/core/src/config`
-- [ ] (TEST) Config tests create defaults when `data/config.json` is absent and preserve user-edited config when valid.
+- [x] (TEST) Config tests create defaults when `data/config.json` is absent and preserve user-edited config when valid.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- config.test.ts`
-- [ ] (TEST) Environment tests read the configured credential env var without writing secret values to local data.
+- [x] (TEST) Environment tests read the configured credential env var without writing secret values to local data.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- config-env.test.ts`
-- [ ] (TEST) Preference mode tests cover `hard_filter`, `soft_rank`, and `note_only` validation.
+- [x] (TEST) Preference mode tests cover `hard_filter`, `soft_rank`, and `note_only` validation.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- config.test.ts`
-- [ ] (TYPE) Config APIs typecheck.
+- [x] (TYPE) Config APIs typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
