@@ -797,13 +797,13 @@ Implement `jobs add <url>` so manually found jobs can be ingested and saved as c
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) `jobs add <url>` detects known ATS URLs, handles LinkedIn as no-fetch, prompts for missing title/company, and persists a candidate.
+- [x] (TEST) `jobs add <url>` detects known ATS URLs, handles LinkedIn as no-fetch, prompts for missing title/company, and persists a candidate.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- add-command.test.ts`
-- [ ] (TEST) Manual additions create source-listing records and can mark a pasted source as reusable.
+- [x] (TEST) Manual additions create source-listing records and can mark a pasted source as reusable.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- add-command.test.ts`
-- [ ] (TEST) LinkedIn add tests prove the command never attempts authenticated LinkedIn scraping.
+- [x] (TEST) LinkedIn add tests prove the command never attempts authenticated LinkedIn scraping.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- add-command.test.ts`
-- [ ] (TYPE) Add command implementation typechecks.
+- [x] (TYPE) Add command implementation typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**

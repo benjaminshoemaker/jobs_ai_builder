@@ -1,4 +1,5 @@
 import type { Command } from "commander";
+import { registerAddCommand } from "./add.js";
 import { registerDiscoverCommand } from "./discover.js";
 
 type CommandDefinition = {
@@ -7,7 +8,6 @@ type CommandDefinition = {
 };
 
 const commandDefinitions: CommandDefinition[] = [
-  { name: "add <url>", description: "Add a manually found job URL" },
   { name: "list", description: "List stored jobs" },
   { name: "review", description: "Review an existing queue, such as maybe jobs" },
   { name: "show <id>", description: "Show one saved job" },
@@ -23,6 +23,7 @@ const commandDefinitions: CommandDefinition[] = [
 
 export function registerCommands(program: Command): void {
   registerDiscoverCommand(program);
+  registerAddCommand(program);
 
   for (const definition of commandDefinitions) {
     program
