@@ -2,7 +2,7 @@ import type { Command } from "commander";
 
 import {
   createReviewQueue,
-  fetchPageDescription,
+  fetchJobDescription,
   persistReviewLabel,
   type ReviewQueueItem,
   type ReviewLabel,
@@ -22,6 +22,8 @@ export function registerReviewCommand(program: Command): void {
     .option("--note <note>", "optional note to attach to each labeled job")
     .option("--max-description-requests <n>", "maximum full job page fetches for this review", "10")
     .option("--skip-description-fetch", "skip full job page fetching")
+    .option("--skip-description-search-fallback", "skip search fallback when a source page blocks description fetching")
+    .option("--include-without-description", "include candidates without full descriptions in review")
     .action(async (options: ReviewCandidatesOptions) => {
       const data = await loadLocalData(options.dataDir);
       const limit = parsePositiveInt(options.limit, "limit");
@@ -53,13 +55,23 @@ export function registerReviewCommand(program: Command): void {
       );
       const hydrated = options.skipDescriptionFetch || maxDescriptionRequests === 0
         ? { items: queue, attempted: 0, succeeded: 0 }
-        : await hydrateReviewDescriptions(queue, maxDescriptionRequests);
+        : await hydrateReviewDescriptions(queue, {
+            maxDescriptionRequests,
+            allowSearchFallback: !options.skipDescriptionSearchFallback,
+          });
       if (hydrated.attempted > 0) {
         console.log(`Full descriptions fetched: ${hydrated.succeeded}/${hydrated.attempted}.`);
       }
+      const reviewItems = options.includeWithoutDescription
+        ? hydrated.items
+        : hydrated.items.filter((item) => item.transientDescriptionKind === "full");
+      if (reviewItems.length === 0) {
+        console.log("No candidates with full descriptions available for review.");
+        return;
+      }
 
       await runReviewFlow({
-        items: hydrated.items,
+        items: reviewItems,
         onOutcome: async (outcome) => {
           if (!outcome.reviewLabel) return;
           await persistReviewLabel({
@@ -128,6 +140,8 @@ type ReviewCandidatesOptions = ReviewMaybeOptions & {
   limit: string;
   maxDescriptionRequests: string;
   skipDescriptionFetch?: boolean;
+  skipDescriptionSearchFallback?: boolean;
+  includeWithoutDescription?: boolean;
 };
 
 function parseReviewLabel(label: string): ReviewLabel {
@@ -155,7 +169,7 @@ function parseNonNegativeInt(value: string, label: string): number {
 
 async function hydrateReviewDescriptions(
   items: ReviewQueueItem[],
-  maxDescriptionRequests: number,
+  options: { maxDescriptionRequests: number; allowSearchFallback: boolean },
 ): Promise<{ items: ReviewQueueItem[]; attempted: number; succeeded: number }> {
   let attempted = 0;
   let succeeded = 0;
@@ -165,18 +179,23 @@ async function hydrateReviewDescriptions(
     const listing = item.sourceListings.find((sourceListing) =>
       sourceListing.adapter !== "linkedin" && sourceListing.fetchStatus !== "no_fetch"
     );
-    if (!listing || attempted >= maxDescriptionRequests) {
+    if (!listing || attempted >= options.maxDescriptionRequests) {
       hydrated.push(item);
       continue;
     }
 
     attempted += 1;
-    const description = await fetchPageDescription(listing.sourceUrl);
-    if (description) {
+    const description = await fetchJobDescription({
+      sourceUrl: listing.sourceUrl,
+      title: item.job.title,
+      company: item.job.company,
+      allowSearchFallback: options.allowSearchFallback,
+    });
+    if (description.text) {
       succeeded += 1;
       hydrated.push({
         ...item,
-        transientDescription: description,
+        transientDescription: description.text,
         transientDescriptionKind: "full",
       });
       continue;

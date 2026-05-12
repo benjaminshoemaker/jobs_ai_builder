@@ -1,11 +1,47 @@
+import { Buffer } from "node:buffer";
+
 export type PageDescriptionFetchOptions = {
   fetchImpl?: typeof fetch;
   timeoutMs?: number;
   maxCharacters?: number;
 };
 
+export type JobDescriptionFetchInput = PageDescriptionFetchOptions & {
+  sourceUrl: string;
+  title?: string;
+  company?: string;
+  allowSearchFallback?: boolean;
+  searchResultLimit?: number;
+};
+
+export type JobDescriptionFetchResult = {
+  text?: string;
+  source: "direct" | "search" | "none";
+  sourceUrl?: string;
+};
+
 const DEFAULT_TIMEOUT_MS = 8_000;
 const DEFAULT_MAX_CHARACTERS = 30_000;
+const DEFAULT_SEARCH_RESULT_LIMIT = 5;
+
+export async function fetchJobDescription(
+  input: JobDescriptionFetchInput,
+): Promise<JobDescriptionFetchResult> {
+  const direct = await fetchPageDescription(input.sourceUrl, input);
+  if (direct) {
+    return { text: direct, source: "direct", sourceUrl: input.sourceUrl };
+  }
+
+  if (input.allowSearchFallback === false || !input.title || !input.company) {
+    return { source: "none" };
+  }
+
+  return fetchSearchFallbackDescription({
+    ...input,
+    title: input.title,
+    company: input.company,
+  });
+}
 
 export async function fetchPageDescription(
   url: string,
@@ -39,6 +75,53 @@ export async function fetchPageDescription(
   } finally {
     clearTimeout(timeout);
   }
+}
+
+async function fetchSearchFallbackDescription(
+  input: Required<Pick<JobDescriptionFetchInput, "sourceUrl" | "title" | "company">> &
+    JobDescriptionFetchInput,
+): Promise<JobDescriptionFetchResult> {
+  const fetchImpl = input.fetchImpl ?? fetch;
+  const resultUrls: string[] = [];
+
+  for (const searchUrl of buildSearchUrls(input.title, input.company)) {
+    let searchHtml: string;
+    try {
+      const response = await fetchImpl(searchUrl, {
+        redirect: "follow",
+        headers: {
+          Accept: "text/html,application/xhtml+xml,text/plain;q=0.9,*/*;q=0.8",
+          "User-Agent": "AIBuilderJobs/0.1 (+https://local-cli.invalid)",
+        },
+      });
+      if (!response.ok) continue;
+      searchHtml = await response.text();
+    } catch {
+      continue;
+    }
+
+    resultUrls.push(
+      ...extractSearchResultUrls(searchHtml)
+        .filter((url) => !shouldSkipFallbackUrl(url, input.sourceUrl)),
+    );
+    if (new Set(resultUrls).size >= (input.searchResultLimit ?? DEFAULT_SEARCH_RESULT_LIMIT)) {
+      break;
+    }
+  }
+
+  const uniqueResultUrls = [...new Set(resultUrls)].slice(
+    0,
+    input.searchResultLimit ?? DEFAULT_SEARCH_RESULT_LIMIT,
+  );
+
+  for (const resultUrl of uniqueResultUrls) {
+    const description = await fetchPageDescription(resultUrl, input);
+    if (description && descriptionLooksRelevant(description, input.title, input.company)) {
+      return { text: description, source: "search", sourceUrl: resultUrl };
+    }
+  }
+
+  return { source: "none" };
 }
 
 export function extractJobDescriptionFromHtml(
@@ -188,4 +271,150 @@ function stripHtmlComments(text: string): string {
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
+}
+
+function extractSearchResultUrls(html: string): string[] {
+  const urls: string[] = [];
+  for (const match of html.matchAll(/<a\b[^>]*class=["'][^"']*\bresult__a\b[^"']*["'][^>]*href=["']([^"']+)["']/gi)) {
+    const url = decodeHtmlEntities(match[1] ?? "");
+    const resolved = resolveDuckDuckGoUrl(url);
+    if (resolved) urls.push(resolved);
+  }
+  for (const match of html.matchAll(/<a\b[^>]*href=["']([^"']+)["']/gi)) {
+    const url = decodeHtmlEntities(match[1] ?? "");
+    const resolved = resolveBingUrl(url);
+    if (resolved) urls.push(resolved);
+  }
+  return [...new Set(urls)];
+}
+
+function resolveDuckDuckGoUrl(rawUrl: string): string | undefined {
+  try {
+    const absolute = rawUrl.startsWith("//")
+      ? `https:${rawUrl}`
+      : rawUrl.startsWith("/")
+        ? `https://duckduckgo.com${rawUrl}`
+        : rawUrl;
+    const url = new URL(absolute);
+    if (url.hostname.endsWith("duckduckgo.com") && url.pathname === "/l/") {
+      return url.searchParams.get("uddg") ?? undefined;
+    }
+    return url.toString();
+  } catch {
+    return undefined;
+  }
+}
+
+function resolveBingUrl(rawUrl: string): string | undefined {
+  try {
+    const url = new URL(rawUrl);
+    if (!url.hostname.endsWith("bing.com") || !url.pathname.startsWith("/ck/")) {
+      return undefined;
+    }
+    const encoded = url.searchParams.get("u");
+    if (!encoded) return undefined;
+    const payload = encoded.startsWith("a1") ? encoded.slice(2) : encoded;
+    const decoded = Buffer.from(payload, "base64url").toString("utf8");
+    return decoded.startsWith("http") ? decoded : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+function shouldSkipFallbackUrl(candidateUrl: string, sourceUrl: string): boolean {
+  try {
+    const candidate = new URL(candidateUrl);
+    const source = new URL(sourceUrl);
+    const hostname = candidate.hostname.replace(/^www\./, "");
+    if (candidate.toString() === source.toString()) return true;
+    if (hostname.endsWith("jooble.org")) return true;
+    if (hostname.endsWith("linkedin.com")) return true;
+    if (hostname.endsWith("duckduckgo.com")) return true;
+    if (hostname.endsWith("google.com")) return true;
+    return false;
+  } catch {
+    return true;
+  }
+}
+
+function descriptionLooksRelevant(description: string, title: string, company: string): boolean {
+  const text = normalizeForRelevance(description);
+  const companyTokens = tokenizeForRelevance(company);
+  const titleTokens = tokenizeForRelevance(title);
+  const companyMatch = companyTokens.some((token) => text.includes(token));
+  const titleMatches = titleTokens.filter((token) => text.includes(token)).length;
+  if (titleTokens.length === 0) return companyMatch;
+  return (companyMatch && titleMatches >= 1) || titleMatches >= Math.min(3, titleTokens.length);
+}
+
+function normalizeForRelevance(text: string): string {
+  return ` ${text.toLowerCase().replace(/[^a-z0-9]+/g, " ")} `;
+}
+
+function tokenizeForRelevance(text: string): string[] {
+  const stopwords = new Set([
+    "and",
+    "builder",
+    "builders",
+    "corp",
+    "corporation",
+    "company",
+    "experiences",
+    "for",
+    "group",
+    "inc",
+    "incorporated",
+    "job",
+    "llc",
+    "ltd",
+    "new",
+    "onsite",
+    "principal",
+    "remote",
+    "senior",
+    "the",
+    "with",
+  ]);
+  return [...new Set(
+    text
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, " ")
+      .split(/\s+/)
+      .filter((token) => token.length >= 3 && !stopwords.has(token))
+      .map((token) => ` ${token} `),
+  )];
+}
+
+function buildSearchUrls(title: string, company: string): string[] {
+  const cleanedTitle = cleanTitleForSearch(title);
+  const compactTitle = compactTitleForSearch(cleanedTitle);
+  const queries = [
+    `"${cleanedTitle}" ${company} job`,
+    `"${title}" "${company}" job description`,
+    compactTitle === cleanedTitle
+      ? `${cleanedTitle} ${company} job`
+      : `"${compactTitle}" "${company}"`,
+  ].filter((query, index, queries) => queries.indexOf(query) === index);
+  return queries.flatMap((query) => [
+    `https://duckduckgo.com/html/?q=${encodeURIComponent(query)}`,
+    `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
+  ]);
+}
+
+function cleanTitleForSearch(title: string): string {
+  return title
+    .replace(/\s*\([^)]*\)\s*$/g, "")
+    .replace(/\s+(?:in|at)\s+[A-Z][A-Za-z .,-]+$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function compactTitleForSearch(title: string): string {
+  const tokens = title
+    .replace(/[-_/|]+/g, " ")
+    .replace(/[^a-zA-Z0-9+# ]+/g, " ")
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 8);
+  return tokens.join(" ");
 }

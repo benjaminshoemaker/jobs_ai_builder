@@ -81,7 +81,7 @@ Use a dry run first:
 jobs discover --live --dry-run
 ```
 
-By default, live discovery makes only one Jooble API request per run using the first configured query seed. It then fetches up to 25 shortlisted job pages to get full descriptions for scoring and review. Those job page fetches do not use the Jooble API budget, but they are still external HTTP requests.
+By default, live discovery makes only one Jooble API request per run using the first configured query seed. It then fetches up to 25 shortlisted job pages to get full descriptions for scoring and review. If a Jooble page blocks direct fetching, the CLI searches for the same title/company and tries a non-Jooble result. Those description and search fetches do not use the Jooble API budget, but they are still external HTTP requests.
 
 Increase API usage carefully:
 
@@ -94,6 +94,9 @@ Tune or disable full-description page fetching separately:
 ```bash
 jobs discover --live --max-description-requests 10
 jobs discover --live --skip-description-fetch
+jobs discover --live --skip-description-search-fallback
+jobs review candidates --skip-description-search-fallback
+jobs review candidates --include-without-description
 ```
 
 The CLI keeps a local budget ledger in `data/api-usage/jooble.json`. The default local cap is 500 requests because Jooble documents request limits but does not clearly document the reset interval in the public REST API docs. If you need to change the cap intentionally:

@@ -105,13 +105,37 @@ describe("review maybe and dedupe commands", () => {
   it("reviews candidate jobs with full descriptions fetched from saved links", async () => {
     tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-review-candidates-"));
     const paths = createStoragePaths(tempDir);
-    const fullDescription = "Build customer-facing AI workflows with Claude Code and orchestrate agents.";
+    const fullDescription = "Example AI is hiring an AI Builder to build customer-facing AI workflows with Claude Code and orchestrate agents.";
     await seedCandidateJobWithListing(tempDir, "job_candidate");
-    const fetchSpy = vi.spyOn(globalThis, "fetch").mockResolvedValue({
-      ok: true,
-      headers: new Headers({ "content-type": "text/html" }),
-      text: async () => `<html><body><main><p>${fullDescription}</p></main></body></html>`,
-    } as Response);
+    const fetchSpy = vi.spyOn(globalThis, "fetch").mockImplementation(async (url) => {
+      const requestUrl = String(url);
+      if (requestUrl === "https://jooble.org/jdp/123") {
+        return {
+          ok: false,
+          status: 403,
+          headers: new Headers({ "content-type": "text/html" }),
+          text: async () => "blocked",
+        } as Response;
+      }
+      if (requestUrl.startsWith("https://duckduckgo.com/html/")) {
+        return {
+          ok: true,
+          headers: new Headers({ "content-type": "text/html" }),
+          text: async () => `
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F123">LinkedIn</a>
+            <a rel="nofollow" class="result__a" href="//duckduckgo.com/l/?uddg=https%3A%2F%2Fexample.com%2Fjobs%2Fai-builder">Example</a>
+          `,
+        } as Response;
+      }
+      if (requestUrl === "https://example.com/jobs/ai-builder") {
+        return {
+          ok: true,
+          headers: new Headers({ "content-type": "text/html" }),
+          text: async () => `<html><body><main><p>${fullDescription}</p></main></body></html>`,
+        } as Response;
+      }
+      throw new Error(`Unexpected URL: ${requestUrl}`);
+    });
     const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
 
     await createProgram().parseAsync([
@@ -125,6 +149,14 @@ describe("review maybe and dedupe commands", () => {
       "1",
     ]);
 
+    expect(fetchSpy).toHaveBeenCalledWith(
+      "https://jooble.org/jdp/123",
+      expect.objectContaining({ redirect: "follow" }),
+    );
+    expect(fetchSpy).toHaveBeenCalledWith(
+      expect.stringContaining("https://duckduckgo.com/html/"),
+      expect.any(Object),
+    );
     expect(fetchSpy).toHaveBeenCalledWith(
       "https://example.com/jobs/ai-builder",
       expect.objectContaining({ redirect: "follow" }),
@@ -230,7 +262,7 @@ async function seedCandidateJobWithListing(dataDir: string, id: string): Promise
     sourceId: "source_jooble_1",
     sourceType: "broad_api",
     adapter: "jooble",
-    sourceUrl: "https://example.com/jobs/ai-builder",
+    sourceUrl: "https://jooble.org/jdp/123",
     firstSeenAt: "2026-05-12T20:00:00.000Z",
     fetchStatus: "ok",
     normalizedMetadata: {

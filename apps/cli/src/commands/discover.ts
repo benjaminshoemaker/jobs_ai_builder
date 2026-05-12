@@ -9,7 +9,7 @@ import {
   createReviewQueue,
   createStoragePaths,
   discoverJobs,
-  fetchPageDescription,
+  fetchJobDescription,
   loadConfig,
   readJsonFile,
   readApiUsage,
@@ -40,6 +40,8 @@ export function registerDiscoverCommand(program: Command): void {
     .option("--env-file <path>", "load environment variables from a local file", ".env.local")
     .option("--max-description-requests <n>", "maximum full job page fetches for shortlisted candidates", "25")
     .option("--skip-description-fetch", "skip full job page fetching and use source snippets only")
+    .option("--skip-description-search-fallback", "skip search fallback when a source page blocks description fetching")
+    .option("--include-without-description", "include candidates without full descriptions in interactive review")
     .option("--dry-run", "show the live request plan without calling the API")
     .action(async (options: DiscoverCommandOptions) => {
       const config = await loadConfig(options.dataDir).catch(() => createDefaultConfig());
@@ -64,7 +66,9 @@ export function registerDiscoverCommand(program: Command): void {
         interactive: false,
         allowPartialSources: true,
         descriptionHydrationLimit: maxDescriptionRequests,
-        resolveDescription: options.skipDescriptionFetch || maxDescriptionRequests === 0 ? undefined : resolveFullDescription,
+        resolveDescription: options.skipDescriptionFetch || maxDescriptionRequests === 0
+          ? undefined
+          : (candidate) => resolveFullDescription(candidate, !options.skipDescriptionSearchFallback),
       });
 
       console.log(`Selected ${result.selected.length} candidate(s). Status: ${result.status}.`);
@@ -85,7 +89,12 @@ export function registerDiscoverCommand(program: Command): void {
               ...(result.transientDescriptionKinds[item.job.id]
                 ? { transientDescriptionKind: result.transientDescriptionKinds[item.job.id] }
                 : {}),
-            }));
+            }))
+            .filter((item) => options.includeWithoutDescription || item.transientDescriptionKind === "full");
+          if (queue.length === 0) {
+            console.log("No candidates with full descriptions available for review.");
+            return;
+          }
           await runReviewFlow({
             items: queue,
             onOutcome: async (outcome) => {
@@ -130,6 +139,8 @@ type DiscoverCommandOptions = {
   envFile: string;
   maxDescriptionRequests: string;
   skipDescriptionFetch?: boolean;
+  skipDescriptionSearchFallback?: boolean;
+  includeWithoutDescription?: boolean;
   dryRun?: boolean;
 };
 
@@ -291,16 +302,24 @@ function parseNonNegativeInt(value: string, label: string): number {
   return parsed;
 }
 
-async function resolveFullDescription(candidate: SourceCandidate): Promise<TransientDescription | undefined> {
+async function resolveFullDescription(
+  candidate: SourceCandidate,
+  allowSearchFallback: boolean,
+): Promise<TransientDescription | undefined> {
   if (candidate.source.adapter === "linkedin" || candidate.sourceSignal?.fetchPolicy === "no_fetch") {
     return candidate.transientDescription
       ? { text: candidate.transientDescription, kind: "snippet" }
       : undefined;
   }
 
-  const fullDescription = await fetchPageDescription(candidate.sourceUrl);
-  if (fullDescription) {
-    return { text: fullDescription, kind: "full" };
+  const fullDescription = await fetchJobDescription({
+    sourceUrl: candidate.sourceUrl,
+    title: candidate.metadata.title,
+    company: candidate.metadata.company,
+    allowSearchFallback,
+  });
+  if (fullDescription.text) {
+    return { text: fullDescription.text, kind: "full" };
   }
 
   return candidate.transientDescription
