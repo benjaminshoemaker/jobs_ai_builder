@@ -1342,15 +1342,15 @@ Add session-scoped learning adjustments, reversible within-session ranking chang
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) Session learning tests apply penalties for repeated negative signals and boosts for repeated positive signals within a session.
+- [x] (TEST) Session learning tests apply penalties for repeated negative signals and boosts for repeated positive signals within a session.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- session-learning.test.ts`
-- [ ] (TEST) Session adjustments are written as `scoring.session_adjusted` events and stored in the active session record.
+- [x] (TEST) Session adjustments are written as `scoring.session_adjusted` events and stored in the active session record.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- session-learning.test.ts`
-- [ ] (TEST) Reversal tests restore pre-adjustment ranking state within the current session.
+- [x] (TEST) Reversal tests restore pre-adjustment ranking state within the current session.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- session-learning.test.ts`
-- [ ] (TEST) Metrics tests track fetched count, unique count, reviewed count, yes/maybe/no counts, precision@10, and source-level acceptance rates.
+- [x] (TEST) Metrics tests track fetched count, unique count, reviewed count, yes/maybe/no counts, precision@10, and source-level acceptance rates.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- evaluation-metrics.test.ts`
-- [ ] (TYPE) Learning and metrics services typecheck.
+- [x] (TYPE) Learning and metrics services typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**

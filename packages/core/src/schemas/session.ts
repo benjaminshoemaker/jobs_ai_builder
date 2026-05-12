@@ -27,6 +27,16 @@ export const SessionRecordSchema = z.object({
     maybe: z.number().int().nonnegative(),
     no: z.number().int().nonnegative(),
     precisionAt10: z.number().min(0).max(1).optional(),
+    sourceAcceptanceRates: z
+      .array(
+        z.object({
+          sourceId: z.string().min(1),
+          reviewed: z.number().int().nonnegative(),
+          accepted: z.number().int().nonnegative(),
+          acceptanceRate: z.number().min(0).max(1),
+        }),
+      )
+      .optional(),
   }),
 });
 export type SessionRecord = z.infer<typeof SessionRecordSchema>;
