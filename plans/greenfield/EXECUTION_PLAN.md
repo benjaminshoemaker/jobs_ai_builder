@@ -573,9 +573,9 @@ Persist user-entered do-not-merge records and make dedupe check them before auto
 
 Human must complete before starting:
 
-- [ ] Phase 2 verification passes.
+- [x] Phase 2 verification passes.
   - Verify: `cd ../.. && pnpm test && pnpm typecheck && pnpm build`
-- [ ] Jooble API key is available for live source tests, or live tests will remain skipped.
+- [x] Jooble API key is available for live source tests, or live tests will remain skipped.
   - Verify: `cd ../.. && test -n "$JOOBLE_API_KEY" || echo "JOOBLE_API_KEY not set; live Jooble tests will be skipped"`
 
 ### Step 3.1: Source Adapters
