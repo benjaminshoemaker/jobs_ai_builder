@@ -2,6 +2,8 @@ import type { Command } from "commander";
 import { registerAddCommand } from "./add.js";
 import { registerConfigCommand } from "./config.js";
 import { registerDiscoverCommand } from "./discover.js";
+import { registerListCommand } from "./list.js";
+import { registerShowCommand } from "./show.js";
 import { registerSourcesCommand } from "./sources.js";
 
 type CommandDefinition = {
@@ -10,9 +12,7 @@ type CommandDefinition = {
 };
 
 const commandDefinitions: CommandDefinition[] = [
-  { name: "list", description: "List stored jobs" },
   { name: "review", description: "Review an existing queue, such as maybe jobs" },
-  { name: "show <id>", description: "Show one saved job" },
   { name: "archive <id>", description: "Archive a saved job" },
   { name: "search <query>", description: "Search local job metadata" },
   { name: "proposals", description: "Review proposed logic changes" },
@@ -26,6 +26,8 @@ export function registerCommands(program: Command): void {
   registerAddCommand(program);
   registerSourcesCommand(program);
   registerConfigCommand(program);
+  registerListCommand(program);
+  registerShowCommand(program);
 
   for (const definition of commandDefinitions) {
     program

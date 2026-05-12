@@ -1074,13 +1074,13 @@ Add the read-only local management commands that make saved jobs inspectable aft
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) `jobs list` defaults to active jobs and supports status, rejected, archived, and sort filters.
+- [x] (TEST) `jobs list` defaults to active jobs and supports status, rejected, archived, and sort filters.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- list-command.test.ts`
-- [ ] (TEST) `jobs show <id>` displays job metadata, source listings, score/signals, review history, events, linked proposals, and do-not-merge decisions.
+- [x] (TEST) `jobs show <id>` displays job metadata, source listings, score/signals, review history, events, linked proposals, and do-not-merge decisions.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- show-command.test.ts`
-- [ ] (TEST) List tests prove rejected and archived jobs are hidden by default but included with explicit filters.
+- [x] (TEST) List tests prove rejected and archived jobs are hidden by default but included with explicit filters.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- list-command.test.ts`
-- [ ] (TYPE) List and show command implementations typecheck.
+- [x] (TYPE) List and show command implementations typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
