@@ -23,7 +23,8 @@ export JOOBLE_API_KEY=
 ## Common Commands
 
 ```bash
-jobs discover --interactive=false
+jobs discover --live --dry-run
+jobs discover --live --max-api-requests 1
 jobs add "https://job-boards.greenhouse.io/example/jobs/123" --title "Product Builder" --company "Example"
 jobs sources add "https://jobs.ashbyhq.com/example"
 jobs sources list
@@ -53,6 +54,7 @@ Runtime data is stored under `data/` by default and is intentionally inspectable
 - `data/proposals`
 - `data/sessions`
 - `data/exports`
+- `data/api-usage`
 
 Full job descriptions are not persisted by default. Descriptions may be fetched transiently during review so signals can be extracted, but stored records keep metadata, links, labels, scores, signals, notes, and events.
 
@@ -66,6 +68,28 @@ The MVP supports:
 - LinkedIn no-fetch URLs.
 
 Source failures are recorded without deleting local jobs. `jobs refresh` updates source-listing visibility/status while preserving local archive and trend history.
+
+## API Safety
+
+Live API discovery is opt-in. `jobs discover` will not call Jooble unless `--live` is present.
+
+Use a dry run first:
+
+```bash
+jobs discover --live --dry-run
+```
+
+By default, live discovery makes only one Jooble request per run using the first configured query seed. Increase carefully:
+
+```bash
+jobs discover --live --max-api-requests 3
+```
+
+The CLI keeps a local budget ledger in `data/api-usage/jooble.json`. The default local cap is 500 requests because Jooble documents request limits but does not clearly document the reset interval in the public REST API docs. If you need to change the cap intentionally:
+
+```bash
+jobs discover --live --api-budget 500 --max-api-requests 1
+```
 
 ## Export
 

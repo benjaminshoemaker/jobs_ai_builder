@@ -1,13 +1,19 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
+import { loadEnvFile } from "node:process";
 import type { Command } from "commander";
 import {
+  ApiBudgetExceededError,
   createDefaultConfig,
+  createDefaultSourceRegistry,
   createReviewQueue,
   createStoragePaths,
   discoverJobs,
   loadConfig,
   readJsonFile,
+  readApiUsage,
+  remainingApiRequests,
+  reserveApiRequests,
   SourceListingRecordSchema,
   persistReviewLabel,
   recordSessionInterrupted,
@@ -15,6 +21,7 @@ import {
   type SourceCandidate,
   type SourceListingRecord,
   type SourceRecord,
+  type DiscoverRegistry,
 } from "../../../../packages/core/src/index.js";
 import { ReviewInterruptedError, runReviewFlow } from "../review/reviewPrompts.js";
 
@@ -25,15 +32,30 @@ export function registerDiscoverCommand(program: Command): void {
     .option("--interactive <value>", "run prompt-based review", "true")
     .option("--data-dir <dir>", "runtime data directory", "data")
     .option("--mock-source-file <path>", "read source candidates from a JSON fixture")
-    .action(async (options: { interactive: string; dataDir: string; mockSourceFile?: string }) => {
+    .option("--live", "use live API sources")
+    .option("--max-api-requests <n>", "maximum live API requests for this run", "1")
+    .option("--api-budget <n>", "local API request budget cap", "500")
+    .option("--env-file <path>", "load environment variables from a local file", ".env.local")
+    .option("--dry-run", "show the live request plan without calling the API")
+    .action(async (options: DiscoverCommandOptions) => {
       const config = await loadConfig(options.dataDir).catch(() => createDefaultConfig());
-      const { sources, registry } = await createMockRegistry(options.mockSourceFile);
+      loadOptionalEnvFile(options.envFile);
+      const now = new Date().toISOString();
+      const planned = await createDiscoveryPlan({ options, config, now });
+      if (planned.dryRunMessage) {
+        console.log(planned.dryRunMessage);
+        return;
+      }
+      if (planned.sources.length === 0) {
+        console.log("No discovery source selected. Use --live for Jooble API discovery or --mock-source-file for a fixture.");
+        return;
+      }
       const result = await discoverJobs({
         dataDir: options.dataDir,
         config,
-        sources,
-        registry,
-        now: new Date().toISOString(),
+        sources: planned.sources,
+        registry: planned.registry,
+        now,
         interactive: false,
         allowPartialSources: true,
       });
@@ -43,7 +65,7 @@ export function registerDiscoverCommand(program: Command): void {
         const sourceListings = await readSourceListings(options.dataDir, result.selected.flatMap((job) => job.sourceListingIds));
         try {
           await runReviewFlow({
-            items: createReviewQueue(result.selected, sourceListings, sources, { limit: result.selected.length }),
+            items: createReviewQueue(result.selected, sourceListings, planned.sources, { limit: result.selected.length }),
             onOutcome: async (outcome) => {
               if (!outcome.reviewLabel) return;
               await persistReviewLabel({
@@ -74,6 +96,89 @@ export function registerDiscoverCommand(program: Command): void {
         }
       }
     });
+}
+
+type DiscoverCommandOptions = {
+  interactive: string;
+  dataDir: string;
+  mockSourceFile?: string;
+  live?: boolean;
+  maxApiRequests: string;
+  apiBudget: string;
+  envFile: string;
+  dryRun?: boolean;
+};
+
+type DiscoveryPlan = {
+  sources: SourceRecord[];
+  registry: DiscoverRegistry;
+  dryRunMessage?: string;
+};
+
+async function createDiscoveryPlan(input: {
+  options: DiscoverCommandOptions;
+  config: Awaited<ReturnType<typeof loadConfig>>;
+  now: string;
+}): Promise<DiscoveryPlan> {
+  if (input.options.mockSourceFile) {
+    return createMockRegistry(input.options.mockSourceFile);
+  }
+
+  if (!input.options.live) {
+    return { sources: [], registry: createDefaultSourceRegistry() };
+  }
+
+  const requestCount = parsePositiveInt(input.options.maxApiRequests, "max API requests");
+  const requestLimit = parsePositiveInt(input.options.apiBudget, "API budget");
+  const queries = input.config.querySeeds.slice(0, requestCount);
+  if (queries.length === 0) {
+    throw new Error("No query seeds configured for live discovery.");
+  }
+
+  const usage = await readApiUsage(input.options.dataDir, "jooble", input.now, requestLimit);
+  const remainingBeforeRun = remainingApiRequests(usage);
+  if (input.options.dryRun) {
+    return {
+      sources: [],
+      registry: createDefaultSourceRegistry(),
+      dryRunMessage: [
+        `Live Jooble discovery would make ${queries.length} API request(s).`,
+        `Local budget remaining before run: ${remainingBeforeRun}/${requestLimit}.`,
+        `Queries: ${queries.join(", ")}`,
+      ].join("\n"),
+    };
+  }
+
+  try {
+    await reserveApiRequests({
+      dataDir: input.options.dataDir,
+      provider: "jooble",
+      requestCount: queries.length,
+      requestLimit,
+      now: input.now,
+      reason: `jobs discover --live (${queries.length} query seed(s))`,
+    });
+  } catch (error) {
+    if (error instanceof ApiBudgetExceededError) {
+      console.log(`${error.message}. Use --max-api-requests with a smaller value, inspect data/api-usage/jooble.json, or raise --api-budget intentionally.`);
+    }
+    throw error;
+  }
+
+  return {
+    sources: queries.map((query, index) => ({
+      schemaVersion: 1,
+      id: `source_jooble_${index + 1}`,
+      type: "broad_api",
+      adapter: "jooble",
+      name: `Jooble: ${query}`,
+      reusable: true,
+      enabled: true,
+      credentialEnvVar: input.config.broadApiCredentialEnvVar,
+      defaultQuery: query,
+    })),
+    registry: createDefaultSourceRegistry(),
+  };
 }
 
 async function readSourceListings(dataDir: string, ids: string[]): Promise<SourceListingRecord[]> {
@@ -133,4 +238,23 @@ async function createMockRegistry(mockSourceFile?: string) {
       },
     },
   };
+}
+
+function loadOptionalEnvFile(envFile: string): void {
+  try {
+    loadEnvFile(envFile);
+  } catch (error) {
+    if (typeof error === "object" && error !== null && "code" in error && error.code === "ENOENT") {
+      return;
+    }
+    throw error;
+  }
+}
+
+function parsePositiveInt(value: string, label: string): number {
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed <= 0) {
+    throw new Error(`Invalid ${label}: ${value}`);
+  }
+  return parsed;
 }

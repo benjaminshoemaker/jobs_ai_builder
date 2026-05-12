@@ -5,12 +5,14 @@ import path from "node:path";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { createProgram } from "../cli.js";
+import { createStoragePaths, readApiUsage } from "../../../../packages/core/src/index.js";
 
 describe("discover command", () => {
   let tempDir: string | undefined;
 
   afterEach(async () => {
     vi.restoreAllMocks();
+    delete process.env.JOOBLE_API_KEY;
     if (tempDir) {
       await rm(tempDir, { recursive: true, force: true });
       tempDir = undefined;
@@ -48,4 +50,97 @@ describe("discover command", () => {
 
     expect(log).toHaveBeenCalledWith(expect.stringContaining("Selected 1 candidate"));
   });
+
+  it("does not call live APIs unless --live or --mock-source-file is provided", async () => {
+    tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-cli-discover-"));
+    const fetchSpy = vi.spyOn(globalThis, "fetch");
+    const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
+
+    await createProgram().parseAsync([
+      "node",
+      "jobs",
+      "discover",
+      "--interactive=false",
+      "--data-dir",
+      tempDir,
+    ]);
+
+    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(log.mock.calls.flat().join("\n")).toContain("Use --live");
+  });
+
+  it("plans live Jooble discovery without spending budget during dry run", async () => {
+    tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-cli-discover-"));
+    const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
+    const fetchSpy = vi.spyOn(globalThis, "fetch");
+
+    await createProgram().parseAsync([
+      "node",
+      "jobs",
+      "discover",
+      "--live",
+      "--dry-run",
+      "--interactive=false",
+      "--data-dir",
+      tempDir,
+      "--max-api-requests",
+      "2",
+      "--api-budget",
+      "500",
+    ]);
+
+    expect(fetchSpy).not.toHaveBeenCalled();
+    expect(log.mock.calls.flat().join("\n")).toContain("would make 2 API request");
+    await expect(readApiUsage(tempDir, "jooble", "2026-05-12T22:00:00.000Z", 500)).resolves.toMatchObject({
+      requestsUsed: 0,
+    });
+  });
+
+  it("loads .env.local-compatible files, uses one live Jooble request by default, and reserves budget", async () => {
+    tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-cli-discover-"));
+    const envFile = path.join(tempDir, ".env.local");
+    await writeFile(envFile, "JOOBLE_API_KEY=test-key\n", "utf8");
+    const fetchSpy = vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        jobs: [
+          {
+            title: "AI Builder",
+            company: "Example AI",
+            link: "https://example.com/jobs/ai-builder",
+            location: "Remote",
+            salary: "$160K-$180K",
+            updated: "2026-05-12",
+            id: "jooble_1",
+          },
+        ],
+      }),
+    } as Response);
+    const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
+
+    await createProgram().parseAsync([
+      "node",
+      "jobs",
+      "discover",
+      "--live",
+      "--interactive=false",
+      "--data-dir",
+      tempDir,
+      "--env-file",
+      envFile,
+    ]);
+
+    expect(fetchSpy).toHaveBeenCalledTimes(1);
+    expect(String(fetchSpy.mock.calls[0]?.[0])).toContain("https://jooble.org/api/test-key");
+    expect(log.mock.calls.flat().join("\n")).toContain("Selected 1 candidate");
+    await expect(readApiUsage(tempDir, "jooble", "2026-05-12T22:00:00.000Z", 500)).resolves.toMatchObject({
+      requestsUsed: 1,
+    });
+    await expect(readJsonFileSafe(path.join(createStoragePaths(tempDir).jobsDir))).resolves.toBeGreaterThan(0);
+  });
 });
+
+async function readJsonFileSafe(dir: string): Promise<number> {
+  const { readdir } = await import("node:fs/promises");
+  return (await readdir(dir)).length;
+}
