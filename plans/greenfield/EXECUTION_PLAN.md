@@ -1324,7 +1324,7 @@ Add an export command that future public board work can consume. Export must inc
 
 Human must complete before starting:
 
-- [ ] Phase 4 verification passes.
+- [x] Phase 4 verification passes.
   - Verify: `cd ../.. && pnpm test && pnpm typecheck && pnpm build`
 
 ### Step 5.1: Feedback Loop
