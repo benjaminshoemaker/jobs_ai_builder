@@ -593,15 +593,15 @@ Create the source adapter interface, registry, manual ingestion adapter, and Lin
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Adapter interface includes `fetchCandidates`, optional `fetchByUrl`, optional `refreshListing`, and `testSource`.
+- [x] (CODE) Adapter interface includes `fetchCandidates`, optional `fetchByUrl`, optional `refreshListing`, and `testSource`.
   - Verify: `cd ../.. && rg -n "interface SourceAdapter|fetchCandidates|fetchByUrl|refreshListing|testSource" packages/core/src/sources`
-- [ ] (TEST) Manual adapter tests convert URL plus entered metadata into a source candidate and source signal.
+- [x] (TEST) Manual adapter tests convert URL plus entered metadata into a source candidate and source signal.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- manual-adapter.test.ts`
-- [ ] (TEST) LinkedIn adapter tests prove LinkedIn URLs use no-fetch behavior and prompt-compatible minimal metadata.
+- [x] (TEST) LinkedIn adapter tests prove LinkedIn URLs use no-fetch behavior and prompt-compatible minimal metadata.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- linkedin-adapter.test.ts`
-- [ ] (TEST) Registry tests select enabled adapters and skip disabled sources.
+- [x] (TEST) Registry tests select enabled adapters and skip disabled sources.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- source-registry.test.ts`
-- [ ] (TYPE) Adapter registry typechecks.
+- [x] (TYPE) Adapter registry typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
