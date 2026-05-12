@@ -2,6 +2,7 @@ export const corePackageName = "@ai-builder-jobs/core";
 
 export * from "./config/index.js";
 export * from "./dedupe/index.js";
+export * from "./descriptions/index.js";
 export * from "./discovery/index.js";
 export * from "./export/index.js";
 export * from "./learning/index.js";

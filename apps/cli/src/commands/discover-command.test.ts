@@ -46,6 +46,7 @@ describe("discover command", () => {
       tempDir,
       "--mock-source-file",
       mockFile,
+      "--skip-description-fetch",
     ]);
 
     expect(log).toHaveBeenCalledWith(expect.stringContaining("Selected 1 candidate"));
@@ -100,22 +101,37 @@ describe("discover command", () => {
     tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-cli-discover-"));
     const envFile = path.join(tempDir, ".env.local");
     await writeFile(envFile, "JOOBLE_API_KEY=test-key\n", "utf8");
-    const fetchSpy = vi.spyOn(globalThis, "fetch").mockResolvedValue({
-      ok: true,
-      json: async () => ({
-        jobs: [
-          {
-            title: "AI Builder",
-            company: "Example AI",
-            link: "https://example.com/jobs/ai-builder",
-            location: "Remote",
-            salary: "$160K-$180K",
-            updated: "2026-05-12",
-            id: "jooble_1",
-          },
-        ],
-      }),
-    } as Response);
+    const fetchSpy = vi.spyOn(globalThis, "fetch").mockImplementation(async (url) => {
+      if (String(url).includes("https://jooble.org/api/test-key")) {
+        return {
+          ok: true,
+          json: async () => ({
+            jobs: [
+              {
+                title: "AI Builder",
+                company: "Example AI",
+                link: "https://example.com/jobs/ai-builder",
+                location: "Remote",
+                salary: "$160K-$180K",
+                updated: "2026-05-12",
+                id: "jooble_1",
+                snippet: "Snippet fallback.",
+              },
+            ],
+          }),
+        } as Response;
+      }
+
+      return {
+        ok: true,
+        headers: new Headers({ "content-type": "text/html" }),
+        text: async () => `
+          <html><body><main>
+            <p>Build customer-facing workflows with Claude Code and orchestrate agents.</p>
+          </main></body></html>
+        `,
+      } as Response;
+    });
     const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
 
     await createProgram().parseAsync([
@@ -130,9 +146,11 @@ describe("discover command", () => {
       envFile,
     ]);
 
-    expect(fetchSpy).toHaveBeenCalledTimes(1);
+    expect(fetchSpy).toHaveBeenCalledTimes(2);
     expect(String(fetchSpy.mock.calls[0]?.[0])).toContain("https://jooble.org/api/test-key");
+    expect(String(fetchSpy.mock.calls[1]?.[0])).toContain("https://example.com/jobs/ai-builder");
     expect(log.mock.calls.flat().join("\n")).toContain("Selected 1 candidate");
+    expect(log.mock.calls.flat().join("\n")).toContain("Full descriptions fetched: 1/1");
     await expect(readApiUsage(tempDir, "jooble", "2026-05-12T22:00:00.000Z", 500)).resolves.toMatchObject({
       requestsUsed: 1,
     });

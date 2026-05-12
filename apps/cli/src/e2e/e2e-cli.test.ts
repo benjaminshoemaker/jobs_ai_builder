@@ -42,6 +42,7 @@ describe("e2e CLI workflows", () => {
       dataDir,
       "--mock-source-file",
       mockFile,
+      "--skip-description-fetch",
     ]);
     await writeMockSourceRecord(dataDir);
     const jobs = await readJobs(dataDir);
@@ -160,7 +161,17 @@ describe("e2e CLI workflows", () => {
     dataDir = await createTestDataDir();
     const mockFile = await writeMockSourceFile(dataDir);
     vi.spyOn(console, "log").mockImplementation(() => undefined);
-    await createProgram().parseAsync(["node", "jobs", "discover", "--interactive=false", "--data-dir", dataDir, "--mock-source-file", mockFile]);
+    await createProgram().parseAsync([
+      "node",
+      "jobs",
+      "discover",
+      "--interactive=false",
+      "--data-dir",
+      dataDir,
+      "--mock-source-file",
+      mockFile,
+      "--skip-description-fetch",
+    ]);
     const [active, archived] = await readJobs(dataDir);
     await persistReviewLabel({ dataDir, jobId: active.id, reviewLabel: "yes", now: "2026-05-12T22:00:00.000Z" });
     await createProgram().parseAsync(["node", "jobs", "archive", archived.id, "--data-dir", dataDir, "--reason", "filled"]);

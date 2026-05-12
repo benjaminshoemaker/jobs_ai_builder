@@ -8,6 +8,7 @@ describe("review card renderer", () => {
     const card = renderReviewCard({
       ...createReviewItem(),
       transientDescription: "Build customer-facing workflows with Claude Code and agent orchestration.",
+      transientDescriptionKind: "full",
     });
 
     expect(card).toContain("Product Builder @ Example AI");
@@ -19,7 +20,7 @@ describe("review card renderer", () => {
     expect(card).toContain("Score: 82/100");
     expect(card).toContain("Reason: Strong title and AI coding signal");
     expect(card).toContain("Signals: positive: Mentions Claude Code");
-    expect(card).toContain("Description:");
+    expect(card).toContain("Description (full, not saved):");
     expect(card).toContain("agent orchestration");
   });
 

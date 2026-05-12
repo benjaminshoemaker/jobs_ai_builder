@@ -1,10 +1,12 @@
 import type { JobRecord, SourceListingRecord, SourceRecord } from "../schemas/index.js";
+import type { TransientDescriptionKind } from "../discovery/index.js";
 
 export type ReviewQueueItem = {
   job: JobRecord;
   sourceListings: SourceListingRecord[];
   sources: SourceRecord[];
   transientDescription?: string;
+  transientDescriptionKind?: TransientDescriptionKind;
 };
 
 export type CreateReviewQueueOptions = {

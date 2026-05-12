@@ -24,9 +24,17 @@ export function renderReviewCard(item: ReviewQueueItem): string {
     `Score: ${job.score.total}/100`,
     `Reason: ${job.score.surfacedReason}`,
     `Signals: ${formatSignals(signals)}`,
-    transientDescription ? `Description:\n${transientDescription}` : "Description: Not fetched",
+    transientDescription
+      ? `Description (${formatDescriptionKind(item.transientDescriptionKind)}):\n${transientDescription}`
+      : "Description: Not fetched",
     "----------------------------------------",
   ].join("\n");
+}
+
+function formatDescriptionKind(kind: ReviewQueueItem["transientDescriptionKind"]): string {
+  if (kind === "full") return "full, not saved";
+  if (kind === "snippet") return "snippet fallback, not saved";
+  return "not saved";
 }
 
 function formatCompensation(compensation: ReviewQueueItem["job"]["compensation"]): string {

@@ -9,6 +9,7 @@ import {
   createReviewQueue,
   createStoragePaths,
   discoverJobs,
+  fetchPageDescription,
   loadConfig,
   readJsonFile,
   readApiUsage,
@@ -21,6 +22,7 @@ import {
   type SourceCandidate,
   type SourceListingRecord,
   type SourceRecord,
+  type TransientDescription,
   type DiscoverRegistry,
 } from "../../../../packages/core/src/index.js";
 import { ReviewInterruptedError, runReviewFlow } from "../review/reviewPrompts.js";
@@ -36,6 +38,8 @@ export function registerDiscoverCommand(program: Command): void {
     .option("--max-api-requests <n>", "maximum live API requests for this run", "1")
     .option("--api-budget <n>", "local API request budget cap", "500")
     .option("--env-file <path>", "load environment variables from a local file", ".env.local")
+    .option("--max-description-requests <n>", "maximum full job page fetches for shortlisted candidates", "25")
+    .option("--skip-description-fetch", "skip full job page fetching and use source snippets only")
     .option("--dry-run", "show the live request plan without calling the API")
     .action(async (options: DiscoverCommandOptions) => {
       const config = await loadConfig(options.dataDir).catch(() => createDefaultConfig());
@@ -50,6 +54,7 @@ export function registerDiscoverCommand(program: Command): void {
         console.log("No discovery source selected. Use --live for Jooble API discovery or --mock-source-file for a fixture.");
         return;
       }
+      const maxDescriptionRequests = parseNonNegativeInt(options.maxDescriptionRequests, "max description requests");
       const result = await discoverJobs({
         dataDir: options.dataDir,
         config,
@@ -58,9 +63,16 @@ export function registerDiscoverCommand(program: Command): void {
         now,
         interactive: false,
         allowPartialSources: true,
+        descriptionHydrationLimit: maxDescriptionRequests,
+        resolveDescription: options.skipDescriptionFetch || maxDescriptionRequests === 0 ? undefined : resolveFullDescription,
       });
 
       console.log(`Selected ${result.selected.length} candidate(s). Status: ${result.status}.`);
+      if (result.descriptionFetches.attempted > 0) {
+        console.log(
+          `Full descriptions fetched: ${result.descriptionFetches.succeeded}/${result.descriptionFetches.attempted}.`,
+        );
+      }
       if (options.interactive !== "false" && result.selected.length > 0) {
         const sourceListings = await readSourceListings(options.dataDir, result.selected.flatMap((job) => job.sourceListingIds));
         try {
@@ -69,6 +81,9 @@ export function registerDiscoverCommand(program: Command): void {
               ...item,
               ...(result.transientDescriptions[item.job.id]
                 ? { transientDescription: result.transientDescriptions[item.job.id] }
+                : {}),
+              ...(result.transientDescriptionKinds[item.job.id]
+                ? { transientDescriptionKind: result.transientDescriptionKinds[item.job.id] }
                 : {}),
             }));
           await runReviewFlow({
@@ -113,6 +128,8 @@ type DiscoverCommandOptions = {
   maxApiRequests: string;
   apiBudget: string;
   envFile: string;
+  maxDescriptionRequests: string;
+  skipDescriptionFetch?: boolean;
   dryRun?: boolean;
 };
 
@@ -264,4 +281,29 @@ function parsePositiveInt(value: string, label: string): number {
     throw new Error(`Invalid ${label}: ${value}`);
   }
   return parsed;
+}
+
+function parseNonNegativeInt(value: string, label: string): number {
+  const parsed = Number(value);
+  if (!Number.isInteger(parsed) || parsed < 0) {
+    throw new Error(`Invalid ${label}: ${value}`);
+  }
+  return parsed;
+}
+
+async function resolveFullDescription(candidate: SourceCandidate): Promise<TransientDescription | undefined> {
+  if (candidate.source.adapter === "linkedin" || candidate.sourceSignal?.fetchPolicy === "no_fetch") {
+    return candidate.transientDescription
+      ? { text: candidate.transientDescription, kind: "snippet" }
+      : undefined;
+  }
+
+  const fullDescription = await fetchPageDescription(candidate.sourceUrl);
+  if (fullDescription) {
+    return { text: fullDescription, kind: "full" };
+  }
+
+  return candidate.transientDescription
+    ? { text: candidate.transientDescription, kind: "snippet" }
+    : undefined;
 }

@@ -46,6 +46,15 @@ export type DiscoverJobsInput = {
   includeRejected?: boolean;
   includeArchived?: boolean;
   includeReviewed?: boolean;
+  descriptionHydrationLimit?: number;
+  resolveDescription?: (candidate: SourceCandidate) => Promise<TransientDescription | undefined>;
+};
+
+export type TransientDescriptionKind = "full" | "snippet";
+
+export type TransientDescription = {
+  text: string;
+  kind: TransientDescriptionKind;
 };
 
 export type DiscoverJobsResult = {
@@ -54,6 +63,11 @@ export type DiscoverJobsResult = {
   uniqueAfterDedupe: number;
   selected: JobRecord[];
   transientDescriptions: Record<string, string>;
+  transientDescriptionKinds: Record<string, TransientDescriptionKind>;
+  descriptionFetches: {
+    attempted: number;
+    succeeded: number;
+  };
   session: SessionRecord;
 };
 
@@ -85,7 +99,7 @@ export async function discoverJobs(input: DiscoverJobsInput): Promise<DiscoverJo
   const fetchedCandidates = roundRobin(perSourceResults, input.config.fetchLimit);
   const existingJobs = await readRecords(paths.jobsDir, JobRecordSchema);
   const existingListings = await readRecords(paths.sourceListingsDir, SourceListingRecordSchema);
-  const selected: Array<{ job: JobRecord; listing: SourceListingRecord }> = [];
+  const selected: SelectedCandidate[] = [];
   let uniqueAfterDedupe = 0;
 
   for (const sourceCandidate of fetchedCandidates) {
@@ -107,16 +121,33 @@ export async function discoverJobs(input: DiscoverJobsInput): Promise<DiscoverJo
 
     uniqueAfterDedupe += 1;
     const listingId = `listing_${hash(normalized.sourceId, normalized.normalizedUrl)}`;
-    const job = createJobRecord(normalized, input.now, listingId, sourceCandidate.transientDescription);
+    const job = createJobRecord(normalized, input.now, listingId, descriptionFromCandidate(sourceCandidate)?.text);
     const listing = createSourceListingRecord(normalized, {
       id: listingId,
       jobId: job.id,
       now: input.now,
     });
-    selected.push({ job, listing });
+    selected.push({
+      job,
+      listing,
+      normalized,
+      sourceCandidate,
+      transientDescription: descriptionFromCandidate(sourceCandidate),
+    });
   }
 
-  const ranked = selected
+  const initialSorted = selected
+    .sort((left, right) => right.job.score.total - left.job.score.total)
+  const hydrationLimit = input.resolveDescription
+    ? Math.min(input.descriptionHydrationLimit ?? input.config.reviewLimit, initialSorted.length)
+    : 0;
+  const hydrationPool = initialSorted.slice(0, hydrationLimit);
+  const unhydratedPool = initialSorted.slice(
+    hydrationLimit,
+    Math.max(hydrationLimit, input.config.reviewLimit),
+  );
+  const { candidates: hydratedPool, attempted, succeeded } = await hydrateDescriptions(hydrationPool, input);
+  const ranked = [...hydratedPool, ...unhydratedPool]
     .sort((left, right) => right.job.score.total - left.job.score.total)
     .slice(0, input.config.reviewLimit);
 
@@ -138,16 +169,62 @@ export async function discoverJobs(input: DiscoverJobsInput): Promise<DiscoverJo
     uniqueAfterDedupe,
     selected: ranked.map((item) => item.job),
     transientDescriptions: Object.fromEntries(
-      ranked.flatMap(({ job }) => {
-        const candidate = fetchedCandidates.find((item) => {
-          const normalized = normalizeSourceCandidate(item);
-          return `job_${hash(normalized.normalizedCompany, normalized.normalizedTitle, normalized.normalizedUrl)}` === job.id;
-        });
-        return candidate?.transientDescription ? [[job.id, candidate.transientDescription]] : [];
-      }),
+      ranked.flatMap(({ job, transientDescription }) =>
+        transientDescription?.text ? [[job.id, transientDescription.text]] : [],
+      ),
     ),
+    transientDescriptionKinds: Object.fromEntries(
+      ranked.flatMap(({ job, transientDescription }) =>
+        transientDescription?.text ? [[job.id, transientDescription.kind]] : [],
+      ),
+    ),
+    descriptionFetches: { attempted, succeeded },
     session,
   };
+}
+
+type SelectedCandidate = {
+  job: JobRecord;
+  listing: SourceListingRecord;
+  normalized: NormalizedCandidate;
+  sourceCandidate: SourceCandidate;
+  transientDescription?: TransientDescription;
+};
+
+async function hydrateDescriptions(
+  candidates: SelectedCandidate[],
+  input: DiscoverJobsInput,
+): Promise<{ candidates: SelectedCandidate[]; attempted: number; succeeded: number }> {
+  if (!input.resolveDescription || candidates.length === 0) {
+    return { candidates, attempted: 0, succeeded: 0 };
+  }
+
+  let attempted = 0;
+  let succeeded = 0;
+  const hydrated: SelectedCandidate[] = [];
+
+  for (const item of candidates) {
+    attempted += 1;
+    const resolved = await input.resolveDescription(item.sourceCandidate);
+    const transientDescription = resolved ?? item.transientDescription;
+    if (resolved?.kind === "full") {
+      succeeded += 1;
+    }
+
+    hydrated.push({
+      ...item,
+      transientDescription,
+      job: createJobRecord(item.normalized, input.now, item.listing.id, transientDescription?.text),
+    });
+  }
+
+  return { candidates: hydrated, attempted, succeeded };
+}
+
+function descriptionFromCandidate(candidate: SourceCandidate): TransientDescription | undefined {
+  return candidate.transientDescription
+    ? { text: candidate.transientDescription, kind: "snippet" }
+    : undefined;
 }
 
 function normalizeSourceCandidate(candidate: SourceCandidate): NormalizedCandidate {
@@ -201,6 +278,7 @@ function createJobRecord(
       workType: candidate.normalizedWorkType,
       compensationMin: candidate.compensationMin,
       compensationMax: candidate.compensationMax,
+      sourceType: candidate.sourceType,
       transientDescription,
     }),
   });

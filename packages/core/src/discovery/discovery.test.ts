@@ -113,6 +113,52 @@ describe("discovery service", () => {
       }
     }
   });
+
+  it("hydrates shortlisted candidates with full descriptions before final ranking", async () => {
+    tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-discovery-"));
+    const fullDescription =
+      "Own product discovery, build customer-facing MVPs, use Claude Code, Cursor, MCP, and orchestrate agents to ship production workflows.";
+    const result = await discoverJobs({
+      dataDir: tempDir,
+      config: { ...createDefaultConfig(), reviewLimit: 1, fetchLimit: 2 },
+      sources: [source("a")],
+      registry: registry([
+        adapter("manual", [
+          {
+            ...candidate("1", "AI Builder"),
+            transientDescription: "Generic AI builder role.",
+          },
+          {
+            ...candidate("2", "Product Builder"),
+            transientDescription: "Generic product builder role.",
+          },
+        ]),
+      ]),
+      now: "2026-05-12T20:00:00.000Z",
+      interactive: false,
+      descriptionHydrationLimit: 2,
+      async resolveDescription(sourceCandidate) {
+        return sourceCandidate.sourceUrl.endsWith("/2")
+          ? { text: fullDescription, kind: "full" }
+          : { text: sourceCandidate.transientDescription ?? "", kind: "snippet" };
+      },
+    });
+
+    const [job] = result.selected;
+    expect(job!.title).toContain("Product Builder");
+    expect(result.descriptionFetches).toEqual({ attempted: 2, succeeded: 1 });
+    expect(result.transientDescriptions[job!.id]).toBe(fullDescription);
+    expect(result.transientDescriptionKinds[job!.id]).toBe("full");
+    expect(job!.score.positiveSignals.map((signal) => signal.id)).toContain("tool.claude_code");
+    expect(job!.score.positiveSignals.map((signal) => signal.id)).toContain("agent.agentic_workflow");
+
+    const paths = createStoragePaths(tempDir);
+    for (const dir of [paths.jobsDir, paths.sourceListingsDir, paths.sessionsDir]) {
+      for (const fileName of await readdir(dir)) {
+        await expect(readFile(path.join(dir, fileName), "utf8")).resolves.not.toContain(fullDescription);
+      }
+    }
+  });
 });
 
 function source(id: string) {
