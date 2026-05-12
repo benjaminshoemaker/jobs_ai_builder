@@ -1,13 +1,20 @@
 import { readFile } from "node:fs/promises";
+import path from "node:path";
 import type { Command } from "commander";
 import {
   createDefaultConfig,
+  createReviewQueue,
+  createStoragePaths,
   discoverJobs,
   loadConfig,
+  readJsonFile,
+  SourceListingRecordSchema,
   type SourceAdapter,
   type SourceCandidate,
+  type SourceListingRecord,
   type SourceRecord,
 } from "../../../../packages/core/src/index.js";
+import { runReviewFlow } from "../review/reviewPrompts.js";
 
 export function registerDiscoverCommand(program: Command): void {
   program
@@ -17,11 +24,6 @@ export function registerDiscoverCommand(program: Command): void {
     .option("--data-dir <dir>", "runtime data directory", "data")
     .option("--mock-source-file <path>", "read source candidates from a JSON fixture")
     .action(async (options: { interactive: string; dataDir: string; mockSourceFile?: string }) => {
-      if (options.interactive !== "false") {
-        console.log("discover interactive review is not implemented yet.");
-        return;
-      }
-
       const config = await loadConfig(options.dataDir).catch(() => createDefaultConfig());
       const { sources, registry } = await createMockRegistry(options.mockSourceFile);
       const result = await discoverJobs({
@@ -35,7 +37,22 @@ export function registerDiscoverCommand(program: Command): void {
       });
 
       console.log(`Selected ${result.selected.length} candidate(s). Status: ${result.status}.`);
+      if (options.interactive !== "false" && result.selected.length > 0) {
+        const sourceListings = await readSourceListings(options.dataDir, result.selected.flatMap((job) => job.sourceListingIds));
+        await runReviewFlow({
+          items: createReviewQueue(result.selected, sourceListings, sources, { limit: result.selected.length }),
+        });
+      }
     });
+}
+
+async function readSourceListings(dataDir: string, ids: string[]): Promise<SourceListingRecord[]> {
+  const paths = createStoragePaths(dataDir);
+  return Promise.all(
+    ids.map((id) =>
+      readJsonFile(path.join(paths.sourceListingsDir, `${id}.json`), SourceListingRecordSchema),
+    ),
+  );
 }
 
 async function createMockRegistry(mockSourceFile?: string) {

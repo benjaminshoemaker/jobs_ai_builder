@@ -967,15 +967,15 @@ Build the interactive review renderer and prompt flow for the top-ranked candida
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Review renderer includes title, company, source, link, location/work type, compensation, posted date, score, signals, surfaced reason, and transient description.
+- [x] (CODE) Review renderer includes title, company, source, link, location/work type, compensation, posted date, score, signals, surfaced reason, and transient description.
   - Verify: `cd ../.. && rg -n "title|company|source|location|compensation|posted|score|signals|surfacedReason|transientDescription" apps/cli/src packages/core/src/review`
-- [ ] (TEST) Review card snapshot or string tests cover candidates with and without descriptions.
+- [x] (TEST) Review card snapshot or string tests cover candidates with and without descriptions.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-card.test.ts`
-- [ ] (TEST) Prompt flow tests support labels `yes`, `maybe`, `no`, skip, and optional structured notes.
+- [x] (TEST) Prompt flow tests support labels `yes`, `maybe`, `no`, skip, and optional structured notes.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-flow.test.ts`
-- [ ] (TEST) Review tests prove full descriptions are not persisted after rendering.
+- [x] (TEST) Review tests prove full descriptions are not persisted after rendering.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-flow.test.ts`
-- [ ] (TYPE) Review command code typechecks.
+- [x] (TYPE) Review command code typechecks.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
