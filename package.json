@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "pnpm -r build",
+    "jobs": "node apps/cli/dist/index.js",
     "test": "pnpm -r test",
     "typecheck": "pnpm -r typecheck"
   },

@@ -4,6 +4,8 @@ Local-first CLI for finding and reviewing AI Builder job opportunities before an
 
 The MVP focuses on a single-user workflow: fetch candidates, rank them with inspectable rules, review them as `yes` / `maybe` / `no`, preserve archive history, and export metadata for future use.
 
+Status: usable local beta. It runs from source, stores data locally, and requires a Jooble API key for live broad jobs API discovery.
+
 ## Setup
 
 ```bash
@@ -20,26 +22,32 @@ export JOOBLE_API_KEY=
 
 `JOOBLE_API_KEY` is read from the environment only. It is not stored in `data/config.json` or exported snapshots.
 
+Run the CLI from the repo root with:
+
+```bash
+pnpm jobs --help
+```
+
 ## Common Commands
 
 ```bash
-jobs discover --live --dry-run
-jobs discover --live --max-api-requests 1
-jobs discover --live --max-api-requests 1 --max-description-requests 25
-jobs add "https://job-boards.greenhouse.io/example/jobs/123" --title "Product Builder" --company "Example"
-jobs sources add "https://jobs.ashbyhq.com/example"
-jobs sources list
-jobs config set --review-limit 10 --fetch-limit 50
-jobs list
-jobs show <jobId>
-jobs search "Claude Code"
-jobs review candidates
-jobs review maybe --label yes
-jobs archive <jobId> --reason "filled"
-jobs dedupe mark-do-not-merge <jobIdA> <jobIdB>
-jobs proposals list
-jobs refresh
-jobs export
+pnpm jobs discover --live --dry-run
+pnpm jobs discover --live --max-api-requests 1
+pnpm jobs discover --live --max-api-requests 1 --max-description-requests 25
+pnpm jobs add "https://job-boards.greenhouse.io/example/jobs/123" --title "Product Builder" --company "Example"
+pnpm jobs sources add "https://jobs.ashbyhq.com/example"
+pnpm jobs sources list
+pnpm jobs config set --review-limit 10 --fetch-limit 50
+pnpm jobs list
+pnpm jobs show <jobId>
+pnpm jobs search "Claude Code"
+pnpm jobs review candidates
+pnpm jobs review maybe --label yes
+pnpm jobs archive <jobId> --reason "filled"
+pnpm jobs dedupe mark-do-not-merge <jobIdA> <jobIdB>
+pnpm jobs proposals list
+pnpm jobs refresh
+pnpm jobs export
 ```
 
 LinkedIn is handled as no-fetch manual capture. `jobs add` can save LinkedIn URLs with user-entered metadata, but the CLI does not scrape authenticated LinkedIn pages.
@@ -78,7 +86,7 @@ Live API discovery is opt-in. `jobs discover` will not call Jooble unless `--liv
 Use a dry run first:
 
 ```bash
-jobs discover --live --dry-run
+pnpm jobs discover --live --dry-run
 ```
 
 By default, live discovery makes only one Jooble API request per run using the first configured query seed. It then fetches up to 25 shortlisted job pages to get full descriptions for scoring and review. If a Jooble page blocks direct fetching, the CLI searches for the same title/company and tries a non-Jooble result. Those description and search fetches do not use the Jooble API budget, but they are still external HTTP requests.
@@ -86,23 +94,23 @@ By default, live discovery makes only one Jooble API request per run using the f
 Increase API usage carefully:
 
 ```bash
-jobs discover --live --max-api-requests 3
+pnpm jobs discover --live --max-api-requests 3
 ```
 
 Tune or disable full-description page fetching separately:
 
 ```bash
-jobs discover --live --max-description-requests 10
-jobs discover --live --skip-description-fetch
-jobs discover --live --skip-description-search-fallback
-jobs review candidates --skip-description-search-fallback
-jobs review candidates --include-without-description
+pnpm jobs discover --live --max-description-requests 10
+pnpm jobs discover --live --skip-description-fetch
+pnpm jobs discover --live --skip-description-search-fallback
+pnpm jobs review candidates --skip-description-search-fallback
+pnpm jobs review candidates --include-without-description
 ```
 
 The CLI keeps a local budget ledger in `data/api-usage/jooble.json`. The default local cap is 500 requests because Jooble documents request limits but does not clearly document the reset interval in the public REST API docs. If you need to change the cap intentionally:
 
 ```bash
-jobs discover --live --api-budget 500 --max-api-requests 1
+pnpm jobs discover --live --api-budget 500 --max-api-requests 1
 ```
 
 ## Export
