@@ -1391,15 +1391,15 @@ Add proposal creation, listing, approval, rejection, deferral, and application f
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) Proposal service tests create pending proposals with targets, evidence, proposed changes, and scoring version metadata when applicable.
+- [x] (TEST) Proposal service tests create pending proposals with targets, evidence, proposed changes, and scoring version metadata when applicable.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- proposals.test.ts`
-- [ ] (TEST) Approval tests update the correct config, source, query, preference, or scoring-rules file and write `proposal.approved` plus `proposal.applied` events.
+- [x] (TEST) Approval tests update the correct config, source, query, preference, or scoring-rules file and write `proposal.approved` plus `proposal.applied` events.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- proposals.test.ts`
-- [ ] (TEST) Rejected and deferred proposals remain inspectable and do not apply proposed changes.
+- [x] (TEST) Rejected and deferred proposals remain inspectable and do not apply proposed changes.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- proposals.test.ts`
-- [ ] (TEST) `jobs proposals` CLI tests cover list, show, approve, reject, and defer.
+- [x] (TEST) `jobs proposals` CLI tests cover list, show, approve, reject, and defer.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- proposals-command.test.ts`
-- [ ] (TYPE) Proposal services and commands typecheck.
+- [x] (TYPE) Proposal services and commands typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
