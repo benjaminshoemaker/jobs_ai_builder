@@ -338,7 +338,7 @@ Add config creation, config validation, default query seeds, scoring-rule defaul
 
 Human must complete before starting:
 
-- [ ] Phase 1 verification passes.
+- [x] Phase 1 verification passes.
   - Verify: `cd ../.. && pnpm test && pnpm typecheck && pnpm build`
 
 ### Step 2.1: Rules-Based Scoring
