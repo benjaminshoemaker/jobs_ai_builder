@@ -1299,18 +1299,18 @@ Add an export command that future public board work can consume. Export must inc
 
 **Automated Checks:**
 
-- [ ] (TEST) Unit and CLI integration tests pass.
+- [x] (TEST) Unit and CLI integration tests pass.
   - Verify: `cd ../.. && pnpm test`
-- [ ] (TYPE) Type checking passes.
+- [x] (TYPE) Type checking passes.
   - Verify: `cd ../.. && pnpm typecheck`
-- [ ] (BUILD) Build passes.
+- [x] (BUILD) Build passes.
   - Verify: `cd ../.. && pnpm build`
 
 **Regression Verification:**
 
-- [ ] (TEST) Review, lifecycle, archive, refresh, and export tests pass together.
+- [x] (TEST) Review, lifecycle, archive, refresh, and export tests pass together.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- review-flow.test.ts list-command.test.ts archive-command.test.ts refresh-command.test.ts`
-- [ ] (TEST) Export remains metadata-only.
+- [x] (TEST) Export remains metadata-only.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- export.test.ts no-description-persistence.test.ts`
 
 ---
