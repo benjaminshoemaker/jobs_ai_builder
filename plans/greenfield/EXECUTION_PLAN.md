@@ -1120,13 +1120,13 @@ Add local search and archive commands. Search must work without full description
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) `jobs search <query>` searches metadata, company, title, source names, notes, and signal labels without full description storage.
+- [x] (TEST) `jobs search <query>` searches metadata, company, title, source names, notes, and signal labels without full description storage.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- search-command.test.ts`
-- [ ] (TEST) `jobs archive <id>` records archive reason, lifecycle status, archive event, and keeps archived jobs searchable.
+- [x] (TEST) `jobs archive <id>` records archive reason, lifecycle status, archive event, and keeps archived jobs searchable.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- archive-command.test.ts`
-- [ ] (TEST) Archive tests prove archived jobs are excluded from normal list output and included with explicit archive filters.
+- [x] (TEST) Archive tests prove archived jobs are excluded from normal list output and included with explicit archive filters.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- archive-command.test.ts`
-- [ ] (TYPE) Search and archive command implementations typecheck.
+- [x] (TYPE) Search and archive command implementations typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
