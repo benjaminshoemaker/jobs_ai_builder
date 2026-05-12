@@ -168,13 +168,13 @@ Implement the Zod schemas and inferred TypeScript types for jobs, source listing
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Schema files export Zod schemas and inferred types for every record named in the technical spec.
+- [x] (CODE) Schema files export Zod schemas and inferred types for every record named in the technical spec.
   - Verify: `cd ../.. && for n in JobRecord SourceListingRecord SourceRecord AppConfig EventRecord ProposalRecord SessionRecord DoNotMergeRecord ScoringRulesRecord; do rg -q "$n" packages/core/src || exit 1; done`
-- [ ] (TEST) Schema tests accept valid fixtures for every record type.
+- [x] (TEST) Schema tests accept valid fixtures for every record type.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- schemas.test.ts`
-- [ ] (TEST) Schema tests reject invalid review labels, lifecycle statuses, preference modes, and source listing statuses.
+- [x] (TEST) Schema tests reject invalid review labels, lifecycle statuses, preference modes, and source listing statuses.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- schemas.test.ts`
-- [ ] (TYPE) Schema exports are available through the core package entrypoint.
+- [x] (TYPE) Schema exports are available through the core package entrypoint.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
