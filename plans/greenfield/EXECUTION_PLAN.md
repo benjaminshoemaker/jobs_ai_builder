@@ -949,7 +949,7 @@ Implement `jobs config` prompt-based editing for provider settings, limits, cool
 
 Human must complete before starting:
 
-- [ ] Phase 3 verification passes.
+- [x] Phase 3 verification passes.
   - Verify: `cd ../.. && pnpm test && pnpm typecheck && pnpm build`
 
 ### Step 4.1: Interactive Review
