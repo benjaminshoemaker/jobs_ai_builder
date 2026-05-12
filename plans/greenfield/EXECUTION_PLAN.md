@@ -506,15 +506,15 @@ Persist user-entered do-not-merge records and make dedupe check them before auto
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Core service can create, list, and check order-independent do-not-merge pairs.
+- [x] (CODE) Core service can create, list, and check order-independent do-not-merge pairs.
   - Verify: `cd ../.. && rg -n "DoNotMerge|doNotMerge|do-not-merge" packages/core/src`
-- [ ] (TEST) Tests prove `jobA/jobB` and `jobB/jobA` resolve to the same do-not-merge decision.
+- [x] (TEST) Tests prove `jobA/jobB` and `jobB/jobA` resolve to the same do-not-merge decision.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- do-not-merge.test.ts`
-- [ ] (TEST) Deduper tests prove recorded pairs are never auto-merged.
+- [x] (TEST) Deduper tests prove recorded pairs are never auto-merged.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- dedupe.test.ts`
-- [ ] (TEST) Creating a do-not-merge decision writes `job.do_not_merge_created`.
+- [x] (TEST) Creating a do-not-merge decision writes `job.do_not_merge_created`.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- do-not-merge.test.ts`
-- [ ] (TYPE) Do-not-merge services typecheck with storage APIs.
+- [x] (TYPE) Do-not-merge services typecheck with storage APIs.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**

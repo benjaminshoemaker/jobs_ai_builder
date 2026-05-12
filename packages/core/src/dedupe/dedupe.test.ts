@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { scoreCandidate } from "../scoring/index.js";
 import type { JobRecord, SourceListingRecord } from "../schemas/index.js";
-import { decideDeduplication } from "./index.js";
+import { createDoNotMergeRecord, decideDeduplication } from "./index.js";
 import { normalizeCandidate } from "../normalize/index.js";
 
 const now = "2026-05-12T20:00:00.000Z";
@@ -95,6 +95,36 @@ describe("candidate deduplication", () => {
     expect(decideDeduplication(candidate, [existing.job], [existing.listing])).toMatchObject({
       action: "create",
       reason: "no_match",
+    });
+  });
+
+  it("never auto-merges a recorded do-not-merge pair", () => {
+    const existing = fixtures();
+    const candidate = normalizeCandidate({
+      title: "AI Builder",
+      company: "Example Co",
+      sourceId: "source_1",
+      sourceType: "ats",
+      adapter: "greenhouse",
+      sourceUrl: "https://example.com/jobs/1",
+      externalId: "job_123",
+      workType: "remote",
+    });
+
+    expect(
+      decideDeduplication(candidate, [existing.job], [existing.listing], {
+        candidateJobId: "job_2",
+        doNotMergeRecords: [
+          createDoNotMergeRecord({
+            jobIdA: "job_1",
+            jobIdB: "job_2",
+            createdAt: now,
+          }),
+        ],
+      }),
+    ).toMatchObject({
+      action: "create",
+      reason: "do_not_merge",
     });
   });
 });
