@@ -220,15 +220,15 @@ Create the file-based storage layer for JSON entities and append-only JSONL even
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Storage paths match the technical spec under a configurable data directory.
+- [x] (CODE) Storage paths match the technical spec under a configurable data directory.
   - Verify: `cd ../.. && rg -n "jobs|source-listings|sources|proposals|sessions|do-not-merge|events\\.jsonl|scoring-rules" packages/core/src/storage`
-- [ ] (TEST) JSON entity writes use a temporary file and rename path.
+- [x] (TEST) JSON entity writes use a temporary file and rename path.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- storage.test.ts`
-- [ ] (TEST) Event log tests validate complete lines, ignore only a trailing partial line, and fail on invalid non-final lines.
+- [x] (TEST) Event log tests validate complete lines, ignore only a trailing partial line, and fail on invalid non-final lines.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- event-log.test.ts`
-- [ ] (TEST) Storage tests prove invalid files are not overwritten after Zod validation failure.
+- [x] (TEST) Storage tests prove invalid files are not overwritten after Zod validation failure.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- storage.test.ts`
-- [ ] (TYPE) Storage repository APIs typecheck against the schemas.
+- [x] (TYPE) Storage repository APIs typecheck against the schemas.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
