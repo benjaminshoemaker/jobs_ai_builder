@@ -33,6 +33,7 @@ jobs config set --review-limit 10 --fetch-limit 50
 jobs list
 jobs show <jobId>
 jobs search "Claude Code"
+jobs review candidates
 jobs review maybe --label yes
 jobs archive <jobId> --reason "filled"
 jobs dedupe mark-do-not-merge <jobIdA> <jobIdB>

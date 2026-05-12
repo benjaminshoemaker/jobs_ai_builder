@@ -1,4 +1,4 @@
-import { mkdtemp, rm } from "node:fs/promises";
+import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
@@ -8,6 +8,8 @@ import {
   DoNotMergeRecordSchema,
   EventRecordSchema,
   JobRecordSchema,
+  SourceListingRecordSchema,
+  SourceRecordSchema,
   atomicWriteJson,
   createStoragePaths,
   hasDoNotMergeDecision,
@@ -16,6 +18,11 @@ import {
   readJsonFile,
 } from "../../../../packages/core/src/index.js";
 import { createProgram } from "../cli.js";
+
+vi.mock("@inquirer/prompts", () => ({
+  input: vi.fn(async () => ""),
+  select: vi.fn(async () => "skip"),
+}));
 
 describe("review maybe and dedupe commands", () => {
   let tempDir: string | undefined;
@@ -95,6 +102,41 @@ describe("review maybe and dedupe commands", () => {
     });
   });
 
+  it("reviews candidate jobs with full descriptions fetched from saved links", async () => {
+    tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-review-candidates-"));
+    const paths = createStoragePaths(tempDir);
+    const fullDescription = "Build customer-facing AI workflows with Claude Code and orchestrate agents.";
+    await seedCandidateJobWithListing(tempDir, "job_candidate");
+    const fetchSpy = vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      headers: new Headers({ "content-type": "text/html" }),
+      text: async () => `<html><body><main><p>${fullDescription}</p></main></body></html>`,
+    } as Response);
+    const log = vi.spyOn(console, "log").mockImplementation(() => undefined);
+
+    await createProgram().parseAsync([
+      "node",
+      "jobs",
+      "review",
+      "candidates",
+      "--data-dir",
+      tempDir,
+      "--limit",
+      "1",
+    ]);
+
+    expect(fetchSpy).toHaveBeenCalledWith(
+      "https://example.com/jobs/ai-builder",
+      expect.objectContaining({ redirect: "follow" }),
+    );
+    expect(output(log)).toContain("Full descriptions fetched: 1/1");
+    expect(output(log)).toContain("Description (full, not saved):");
+    expect(output(log)).toContain("Claude Code");
+    await expect(readFile(path.join(paths.jobsDir, "job_candidate.json"), "utf8")).resolves.not.toContain(
+      fullDescription,
+    );
+  });
+
   it("creates an order-independent do-not-merge record", async () => {
     tempDir = await mkdtemp(path.join(tmpdir(), "jobs-ai-builder-dedupe-"));
     vi.spyOn(console, "log").mockImplementation(() => undefined);
@@ -164,6 +206,57 @@ async function seedMaybeJob(dataDir: string, id: string): Promise<void> {
       positiveSignals: [],
       negativeSignals: [],
       surfacedReason: "Maybe AI builder fit",
+      scoredAt: "2026-05-12T20:00:00.000Z",
+      scoringVersion: "rules-v1",
+    },
+  });
+}
+
+async function seedCandidateJobWithListing(dataDir: string, id: string): Promise<void> {
+  const paths = createStoragePaths(dataDir);
+  await atomicWriteJson(path.join(paths.sourcesDir, "source_jooble_1.json"), SourceRecordSchema, {
+    schemaVersion: 1,
+    id: "source_jooble_1",
+    type: "broad_api",
+    adapter: "jooble",
+    name: "Jooble: AI Builder",
+    reusable: true,
+    enabled: true,
+  });
+  await atomicWriteJson(path.join(paths.sourceListingsDir, "listing_candidate.json"), SourceListingRecordSchema, {
+    schemaVersion: 1,
+    id: "listing_candidate",
+    jobId: id,
+    sourceId: "source_jooble_1",
+    sourceType: "broad_api",
+    adapter: "jooble",
+    sourceUrl: "https://example.com/jobs/ai-builder",
+    firstSeenAt: "2026-05-12T20:00:00.000Z",
+    fetchStatus: "ok",
+    normalizedMetadata: {
+      title: "AI Builder",
+      company: "Example AI",
+      location: "Remote",
+      workType: "remote",
+    },
+  });
+  await atomicWriteJson(path.join(paths.jobsDir, `${id}.json`), JobRecordSchema, {
+    schemaVersion: 1,
+    id,
+    title: "AI Builder",
+    company: "Example AI",
+    discoveredAt: "2026-05-12T20:00:00.000Z",
+    updatedAt: "2026-05-12T20:00:00.000Z",
+    lifecycleStatus: "candidate",
+    location: "Remote",
+    workType: "remote",
+    sourceListingIds: ["listing_candidate"],
+    score: {
+      total: 80,
+      buckets: [],
+      positiveSignals: [],
+      negativeSignals: [],
+      surfacedReason: "Candidate AI builder fit",
       scoredAt: "2026-05-12T20:00:00.000Z",
       scoringVersion: "rules-v1",
     },
