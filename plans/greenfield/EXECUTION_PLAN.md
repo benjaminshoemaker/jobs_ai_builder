@@ -1211,13 +1211,13 @@ Add refresh behavior for saved source listings. Refresh must update listing visi
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) Refresh service marks source listings as `ok`, `unavailable`, `rate_limited`, or `error` without deleting local jobs.
+- [x] (TEST) Refresh service marks source listings as `ok`, `unavailable`, `rate_limited`, or `error` without deleting local jobs.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- refresh.test.ts`
-- [ ] (TEST) `jobs refresh` CLI integration test writes `job.refreshed` events and reports per-listing status.
+- [x] (TEST) `jobs refresh` CLI integration test writes `job.refreshed` events and reports per-listing status.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/cli test -- refresh-command.test.ts`
-- [ ] (TEST) Refresh tests preserve source error state and partial metadata on failed refresh.
+- [x] (TEST) Refresh tests preserve source error state and partial metadata on failed refresh.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- refresh.test.ts`
-- [ ] (TYPE) Refresh service and command typecheck.
+- [x] (TYPE) Refresh service and command typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
