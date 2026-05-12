@@ -29,7 +29,7 @@ Workflow guidelines for AI agents working in this project.
 3. Read the relevant specification and execution-plan documents before changing code.
 4. Confirm dependencies and existing patterns before implementing.
 5. Make the smallest change that satisfies the active task.
-6. Add or update tests when behavior changes.
+6. Add or update tests when behavior changes (default to TDD loop in Guardrails).
 7. Run configured verification before reporting completion.
 8. Update execution-plan checkboxes when scoped work requires it.
 9. Commit using the project task format after verification passes.
