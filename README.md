@@ -133,3 +133,7 @@ Optional focused checks:
 pnpm --filter @ai-builder-jobs/cli test -- e2e-cli.test.ts
 pnpm --filter @ai-builder-jobs/core test -- export.test.ts no-description-persistence.test.ts
 ```
+
+## License
+
+MIT.
