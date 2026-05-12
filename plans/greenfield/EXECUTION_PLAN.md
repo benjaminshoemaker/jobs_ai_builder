@@ -356,15 +356,15 @@ Build the 0-100 deterministic scorer with weighted buckets for title, AI tools, 
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) The scorer returns `ScoreResult` with total, buckets, positive signals, negative signals, surfaced reason, timestamp, and scoring version.
+- [x] (CODE) The scorer returns `ScoreResult` with total, buckets, positive signals, negative signals, surfaced reason, timestamp, and scoring version.
   - Verify: `cd ../.. && rg -n "ScoreResult|buckets|positiveSignals|negativeSignals|surfacedReason|scoringVersion" packages/core/src/scoring`
-- [ ] (TEST) Scoring tests cover positive title, AI tool, product/build, agent/LLM, production ownership, source quality, and exclusion signals.
+- [x] (TEST) Scoring tests cover positive title, AI tool, product/build, agent/LLM, production ownership, source quality, and exclusion signals.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- scoring.test.ts`
-- [ ] (TEST) Preference tests prove hard filters remove only clear violations, soft rank changes points, and note-only creates no score change.
+- [x] (TEST) Preference tests prove hard filters remove only clear violations, soft rank changes points, and note-only creates no score change.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- preferences.test.ts`
-- [ ] (TEST) Score totals are clamped to 0 through 100.
+- [x] (TEST) Score totals are clamped to 0 through 100.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- scoring.test.ts`
-- [ ] (TYPE) Scoring APIs typecheck against config and schema types.
+- [x] (TYPE) Scoring APIs typecheck against config and schema types.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
