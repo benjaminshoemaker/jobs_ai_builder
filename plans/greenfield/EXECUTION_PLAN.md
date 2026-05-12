@@ -405,13 +405,13 @@ Add description-signal extraction that can use fetched descriptions during a rev
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Description extraction accepts transient text and returns signal IDs, labels, weights, and source metadata without returning full text for persistence.
+- [x] (CODE) Description extraction accepts transient text and returns signal IDs, labels, weights, and source metadata without returning full text for persistence.
   - Verify: `cd ../.. && rg -n "transientDescription|description.*Signal|source: \\\"description\\\"" packages/core/src/scoring`
-- [ ] (TEST) Description tests identify AI coding tools, agentic workflows, product discovery, shipping ownership, and exclusion language.
+- [x] (TEST) Description tests identify AI coding tools, agentic workflows, product discovery, shipping ownership, and exclusion language.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- description-signals.test.ts`
-- [ ] (TEST) Persistence tests prove full description text is not written to job, source listing, event, session, proposal, or export records.
+- [x] (TEST) Persistence tests prove full description text is not written to job, source listing, event, session, proposal, or export records.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- no-description-persistence.test.ts`
-- [ ] (TYPE) Description-signal APIs integrate with `ScoreResult`.
+- [x] (TYPE) Description-signal APIs integrate with `ScoreResult`.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**

@@ -8,6 +8,7 @@ import {
   type ScoreResult,
   type Signal,
 } from "../schemas/index.js";
+import { extractDescriptionSignals } from "./descriptionSignals.js";
 import { evaluatePreferences } from "./preferences.js";
 import { detectRuleSignals, detectSourceQualitySignal } from "./signals.js";
 import type { ScoreCandidateOptions, ScoringCandidate } from "./types.js";
@@ -30,9 +31,15 @@ export function scoreCandidate(
   const config = options.config ?? createDefaultConfig();
   const scoringRules = options.scoringRules ?? createDefaultScoringRules();
   const scoredAt = options.now ?? new Date().toISOString();
+  const descriptionExtraction = extractDescriptionSignals(
+    candidate.transientDescription,
+    scoringRules,
+  );
+  const metadataCandidate = { ...candidate, transientDescription: undefined };
 
   const detectedSignals = [
-    ...detectRuleSignals(candidate, scoringRules),
+    ...detectRuleSignals(metadataCandidate, scoringRules),
+    ...descriptionExtraction.matches,
     detectSourceQualitySignal(candidate),
   ].filter((entry): entry is NonNullable<typeof entry> => Boolean(entry));
 
