@@ -1,0 +1,21 @@
+# Dependencies and builds
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Environment and verification credentials
+.env
+.env.*
+!.env.example
+.env.verification
+.claude/verification/auth-state.json
+
+# Local execution state
+.claude/phase-state.json
+.claude/phase-prep-result.json
+.claude/verification-log.jsonl
+.claude/auto-advance-session.json
+
+# Runtime data
+data/
