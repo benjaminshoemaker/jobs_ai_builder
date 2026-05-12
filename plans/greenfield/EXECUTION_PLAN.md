@@ -644,15 +644,15 @@ Add public ATS adapter support for Ashby, Greenhouse, and Lever using fixture-ba
 
 **Acceptance Criteria:**
 
-- [ ] (CODE) Ashby, Greenhouse, and Lever adapters are registered by adapter ID.
+- [x] (CODE) Ashby, Greenhouse, and Lever adapters are registered by adapter ID.
   - Verify: `cd ../.. && for a in AshbyAdapter GreenhouseAdapter LeverAdapter; do rg -q "$a" packages/core/src/sources || exit 1; done`
-- [ ] (TEST) Fixture tests normalize title, company, location, posted date, source URL, and external ID for each ATS.
+- [x] (TEST) Fixture tests normalize title, company, location, posted date, source URL, and external ID for each ATS.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- ats-adapters.test.ts`
-- [ ] (TEST) Adapter tests cover unavailable, rate-limited, and malformed payload paths without crashing discovery services.
+- [x] (TEST) Adapter tests cover unavailable, rate-limited, and malformed payload paths without crashing discovery services.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- ats-adapters.test.ts`
-- [ ] (CODE) Fixture payloads are checked into `packages/core/src/sources/fixtures`.
+- [x] (CODE) Fixture payloads are checked into `packages/core/src/sources/fixtures`.
   - Verify: `cd ../.. && test -d packages/core/src/sources/fixtures && find packages/core/src/sources/fixtures -type f | grep -E 'ashby|greenhouse|lever'`
-- [ ] (TYPE) ATS adapters typecheck against `SourceAdapter`.
+- [x] (TYPE) ATS adapters typecheck against `SourceAdapter`.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**

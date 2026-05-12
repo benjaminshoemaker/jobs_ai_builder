@@ -1,0 +1,17 @@
+{
+  "jobs": [
+    {
+      "id": 5153099008,
+      "title": "Senior Product Builder",
+      "updated_at": "2026-05-02T12:00:00Z",
+      "location": {
+        "name": "New York, NY"
+      },
+      "absolute_url": "https://boards.greenhouse.io/example/jobs/5153099008",
+      "content": "Build customer-facing AI workflows."
+    }
+  ],
+  "meta": {
+    "total": 1
+  }
+}

@@ -1,12 +1,23 @@
+import { AshbyAdapter } from "./ashbyAdapter.js";
+import { GreenhouseAdapter } from "./greenhouseAdapter.js";
 import type { SourceRecord } from "../schemas/index.js";
 import { LinkedInManualAdapter } from "./linkedinManualAdapter.js";
+import { LeverAdapter } from "./leverAdapter.js";
 import { ManualAdapter } from "./manualAdapter.js";
 import type { SourceAdapter } from "./types.js";
 
 export class SourceRegistry {
   private readonly adapters: Map<SourceRecord["adapter"], SourceAdapter>;
 
-  constructor(adapters: SourceAdapter[] = [new ManualAdapter(), new LinkedInManualAdapter()]) {
+  constructor(
+    adapters: SourceAdapter[] = [
+      new ManualAdapter(),
+      new LinkedInManualAdapter(),
+      new AshbyAdapter(),
+      new GreenhouseAdapter(),
+      new LeverAdapter(),
+    ],
+  ) {
     this.adapters = new Map(adapters.map((adapter) => [adapter.id, adapter]));
   }
 

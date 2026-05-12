@@ -1,0 +1,14 @@
+[
+  {
+    "id": "lever_1",
+    "text": "AI Product Engineer",
+    "hostedUrl": "https://jobs.lever.co/example/lever_1",
+    "createdAt": 1777651200000,
+    "categories": {
+      "location": "San Francisco, CA",
+      "team": "Product",
+      "commitment": "Full-time"
+    },
+    "descriptionPlain": "Use AI coding agents to ship product functionality."
+  }
+]
