@@ -4,6 +4,7 @@ import { registerArchiveCommand } from "./archive.js";
 import { registerConfigCommand } from "./config.js";
 import { registerDedupeCommand } from "./dedupe.js";
 import { registerDiscoverCommand } from "./discover.js";
+import { registerExportCommand } from "./export.js";
 import { registerListCommand } from "./list.js";
 import { registerRefreshCommand } from "./refresh.js";
 import { registerReviewCommand } from "./reviewMaybe.js";
@@ -18,7 +19,6 @@ type CommandDefinition = {
 
 const commandDefinitions: CommandDefinition[] = [
   { name: "proposals", description: "Review proposed logic changes" },
-  { name: "export", description: "Export curated metadata" },
 ];
 
 export function registerCommands(program: Command): void {
@@ -33,6 +33,7 @@ export function registerCommands(program: Command): void {
   registerReviewCommand(program);
   registerDedupeCommand(program);
   registerRefreshCommand(program);
+  registerExportCommand(program);
 
   for (const definition of commandDefinitions) {
     program

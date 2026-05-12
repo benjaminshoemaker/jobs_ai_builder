@@ -1258,13 +1258,13 @@ Add an export command that future public board work can consume. Export must inc
 
 **Acceptance Criteria:**
 
-- [ ] (TEST) Export tests write curated metadata to `data/exports/{timestamp}.json`.
+- [x] (TEST) Export tests write curated metadata to `data/exports/{timestamp}.json`.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- export.test.ts`
-- [ ] (TEST) Export tests prove full descriptions, API keys, and private env values are absent from exported JSON.
+- [x] (TEST) Export tests prove full descriptions, API keys, and private env values are absent from exported JSON.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- export.test.ts`
-- [ ] (TEST) Export tests include active, maybe, archived, source, score, signal, and link metadata needed by a future public board.
+- [x] (TEST) Export tests include active, maybe, archived, source, score, signal, and link metadata needed by a future public board.
   - Verify: `cd ../.. && pnpm --filter @ai-builder-jobs/core test -- export.test.ts`
-- [ ] (TYPE) Export service and command typecheck.
+- [x] (TYPE) Export service and command typecheck.
   - Verify: `cd ../.. && pnpm typecheck`
 
 **Files to Create:**
