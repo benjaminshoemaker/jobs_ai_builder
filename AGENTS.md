@@ -4,29 +4,32 @@ Project-wide guidance for AI agents working in Jobs AI Builder.
 
 ## Project context
 
-- Stack: TypeScript, Node.js 22+, pnpm workspaces, Commander, Inquirer, Zod,
-  and Vitest.
-- This is an on-demand local CLI; there is no development server.
-- Existing plans and feature documents are historical context and may contain
-  useful decisions or ideas. They are not a mandatory workflow or execution lock.
+- This is an on-demand, local-first TypeScript CLI; there is no development server.
+- The stack is Node.js 22+, pnpm workspaces, Commander, Inquirer, Zod, and Vitest.
+- `README.md` describes the current product and commands.
+- `IDEAS.md` is the non-binding backlog.
+- `features/job_classifier/INITIAL_NOTES.md` preserves the deeper classifier research brief.
 
 ## Working rules
 
-- Follow the user's current request and the nearest scoped project instructions.
+- Follow the user's current request; no backlog item authorizes implementation by itself.
 - Inspect existing dependencies and patterns before implementing.
 - Make the smallest change that satisfies the request.
-- Add or update tests for behavior changes; default to a TDD loop.
-- Do not skip, disable, or misreport failing tests.
+- Add or update tests for behavior changes; do not skip, disable, or misreport failures.
 - Preserve unrelated user changes and call out new dependencies or APIs.
-- Track bugs in `BUGS.md`, imminent work in `NEXT_STEPS.md`, longer-term ideas
-  in `DEFERRED.md`, and durable patterns in `LEARNINGS.md`.
+- Keep live API discovery opt-in and respect the local request budget.
+- Do not scrape authenticated LinkedIn pages.
+- Keep stored and exported data free of API keys, environment secrets, and full job descriptions unless the product boundary is explicitly changed.
+- Record open opportunities in `IDEAS.md`; keep durable constraints close to the code and current documentation.
 
 ## Verification
 
-Run repository-native tests and checks proportionate to the change. Verify
-objective claims before asking for manual confirmation, and report unavailable
-tools, credentials, or requirements explicitly.
+Run repository-native tests and checks proportionate to the change. For repo-wide changes, run:
 
-Treat instruction, automation, hook, CI, and security configuration as
-high-impact files. Required guarantees should be enforced by runnable tests or
-checks, not by an agent-specific harness.
+```bash
+pnpm test
+pnpm typecheck
+pnpm build
+```
+
+Report unavailable tools, credentials, source data, or requirements explicitly.
