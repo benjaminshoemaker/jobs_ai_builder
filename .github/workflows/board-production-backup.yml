@@ -1,0 +1,40 @@
+name: Board Production backup
+
+on:
+  workflow_dispatch:
+    inputs:
+      restore_check:
+        description: Restore the backup into a temporary database and verify row counts
+        required: false
+        type: boolean
+  schedule:
+    - cron: '0 19 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: board-production-backup
+  cancel-in-progress: false
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      BOARD_BACKUP_ENV: production
+      PG_TOOLS_IMAGE: board-pg-tools:18
+      BOARD_FORCE_RESTORE_CHECK: ${{ inputs.restore_check }}
+      DATABASE_URL_UNPOOLED: ${{ secrets.BOARD_PRODUCTION_DATABASE_URL_UNPOOLED }}
+      BLOB_READ_WRITE_TOKEN: ${{ secrets.BOARD_BACKUP_BLOB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: .github/backup/package-lock.json
+      - run: npm ci --prefix .github/backup
+      - run: node --test .github/backup/backup-config.test.mjs
+      - run: docker build --tag board-pg-tools:18 --file .github/backup/Dockerfile .github/backup
+      - run: node .github/backup/backup.mjs production
