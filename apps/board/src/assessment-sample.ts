@@ -21,3 +21,7 @@ export function assessmentSample<T extends Lead>(rows: T[], limit: number): T[] 
   }
   return selected;
 }
+
+export function topAssessments<T extends Lead>(rows:T[],limit:number):T[]{
+  return [...rows].sort((a,b)=>b.score-a.score||a.id.localeCompare(b.id)).slice(0,limit);
+}

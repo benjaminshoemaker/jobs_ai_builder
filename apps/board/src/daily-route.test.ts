@@ -1,10 +1,11 @@
-import {beforeEach,expect,it,vi} from 'vitest';
+import {afterEach,beforeEach,expect,it,vi} from 'vitest';
 const m=vi.hoisted(()=>({query:vi.fn(),start:vi.fn()}));
 vi.mock('./store',()=>({database:()=>({query:m.query})}));
 vi.mock('workflow/api',()=>({start:m.start}));
 import {GET} from '../app/api/internal/daily/route';
 const req=(action='intake',secret='correct')=>new Request(`https://preview.test/api/internal/daily?action=${action}`,{headers:{Authorization:`Bearer ${secret}`}});
-beforeEach(()=>{vi.resetAllMocks();vi.stubEnv('CRON_SECRET','correct');vi.stubEnv('BOARD_DAILY_RUNS_ENABLED','true');vi.stubEnv('VERCEL_ENV','preview');vi.stubEnv('BOARD_CANONICAL_ORIGIN','');});
+beforeEach(()=>{vi.resetAllMocks();vi.useFakeTimers();vi.setSystemTime(new Date('2026-11-12T18:00:00Z'));vi.stubEnv('CRON_SECRET','correct');vi.stubEnv('BOARD_DAILY_RUNS_ENABLED','true');vi.stubEnv('VERCEL_ENV','preview');vi.stubEnv('BOARD_CANONICAL_ORIGIN','');});
+afterEach(()=>vi.useRealTimers());
 it('rejects unauthenticated daily triggers',async()=>{
   expect((await GET(req('intake','wrong'))).status).toBe(401);
   expect(m.query).not.toHaveBeenCalled();expect(m.start).not.toHaveBeenCalled();
@@ -47,10 +48,7 @@ it('uses the stable configured origin for future review emails',async()=>{
   expect(m.start.mock.calls[0]?.[1]).toEqual([expect.stringMatching(/^\d{4}-\d{2}-\d{2}$/),'https://jobs-ai-builder-editorial-preview.vercel.app']);
 });
 it('does not let an early delivery test occupy the morning digest slot',async()=>{
-  vi.useFakeTimers();
-  try{
-    vi.setSystemTime(new Date('2026-11-12T15:59:00Z'));
-    expect((await GET(req('digest'))).status).toBe(425);
-    expect(m.start).not.toHaveBeenCalled();
-  }finally{vi.useRealTimers();}
+  vi.setSystemTime(new Date('2026-11-12T15:59:00Z'));
+  expect((await GET(req('digest'))).status).toBe(425);
+  expect(m.start).not.toHaveBeenCalled();
 });

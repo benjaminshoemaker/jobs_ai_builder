@@ -3,7 +3,14 @@ import {preparedAssessment,inferBuilder,reviewAssessment} from './pipeline-asses
 import {initialDraft} from './pipeline-drafts.js';
 import {visibleJobs} from './catalog.js';
 import {observeEmployerRole} from './listing-maintenance.js';
+import {runPipeline} from './pipeline.js';
 const description='<p>Understand user problems and choose what to build. Personally build working features with Claude Code, ship them to real users and measure adoption. No prior software engineering career required.</p>';
+it('limits the one-time top-100 mode to its named assessment run',async()=>{
+  const db={query:vi.fn()};
+  await expect(runPipeline(db as any,{phase:'assess',actor:'daily',initialTop100:true})).rejects.toThrow('one-time');
+  await expect(runPipeline(db as any,{phase:'collect',actor:'initial-production-top-100',initialTop100:true})).rejects.toThrow('one-time');
+  expect(db.query).not.toHaveBeenCalled();
+});
 it('sends the actual v12 policy and small contract; keeps metadata as explicit source reading cues',async()=>{
   const p=preparedAssessment('gpt-6-luna',{title:'Builder',source_id:'ashby:example',location:'US',snapshot:{descriptionHtml:description}});
   const send=vi.fn(async(_url:unknown,init:any)=>{expect(JSON.parse(init.body)).toEqual(p.request);expect(p.request.instructions).toContain('Distinguish owning the problem');expect(p.request.instructions).toContain('opening paragraphs');return Response.json({status:'completed',output:[{content:[{type:'output_text',text:JSON.stringify({decision:'yes',reason:'Owns problems and ships personally with AI.'})}]}]});});

@@ -1,6 +1,6 @@
 import {describe,it,expect} from 'vitest';
 import {canReserve,requestReservation,usageCost,pipelineRequestReservation,pipelineBudgetNanodollars} from './assessment-budget.js';
-import {assessmentSample} from './assessment-sample.js';
+import {assessmentSample,topAssessments} from './assessment-sample.js';
 describe('bounded Luna trial',()=>{
   const body={model:'gpt-6-luna',service_tier:'default',max_output_tokens:6000,input:'job'};
   it('reserves input bytes and maximum output without cache discounts',()=>{
@@ -18,6 +18,11 @@ describe('bounded Luna trial',()=>{
     const sample=assessmentSample(rows,9);expect(sample).toEqual(assessmentSample([...rows].reverse(),9));
     expect(new Set(sample.map(x=>x.id)).size).toBe(9);expect(sample.some(x=>x.score<=80)).toBe(true);
     expect(sample.filter(x=>x.source_id==='big').length).toBeLessThanOrEqual(1);
+  });
+  it('takes the highest scored candidates in the one-time pass regardless of input order',()=>{
+    const rows=[{id:'b',score:9,source_id:'one',provider:'ashby'},{id:'c',score:10,source_id:'two',provider:'lever'},{id:'a',score:10,source_id:'one',provider:'ashby'}];
+    expect(topAssessments(rows,2).map(x=>x.id)).toEqual(['a','c']);
+    expect(topAssessments([...rows].reverse(),2).map(x=>x.id)).toEqual(['a','c']);
   });
 });
 

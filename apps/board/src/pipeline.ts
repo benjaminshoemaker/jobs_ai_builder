@@ -1,7 +1,7 @@
 import type {Client,PoolClient} from 'pg';
 import {randomUUID} from 'node:crypto';
 import {SourceSchema,sourceEndpoint,parseDiscoveryFeed,publicApiRobots,selectDailyDiscoverySources} from './broad-discovery.js';
-import {assessmentSample} from './assessment-sample.js';
+import {assessmentSample,topAssessments} from './assessment-sample.js';
 import {digest} from './review-history.js';
 import {preparedAssessment,inferBuilder,reviewAssessment,type FitDecision} from './pipeline-assessor.js';
 import {pipelineRequestReservation,canReserve,operatingBudgetKey,operatingBudgetNanodollars,operatingMonthUsageSql,usageCost} from './assessment-budget.js';
@@ -16,7 +16,7 @@ export type PipelineDeps={get?:(url:string)=>Promise<SourceResponse>;fixtureInfe
 export async function tx<T>(db:DB,fn:()=>Promise<T>){await db.query('begin');try{const result=await fn();await db.query('commit');return result;}catch(e){await db.query('rollback');throw e;}}
 const json=(v:unknown)=>JSON.stringify(v);
 async function enqueue(db:DB,kind:string,key:string,payload:unknown){await db.query('insert into board_pipeline_jobs(id,kind,payload) values($1,$2,$3) on conflict do nothing',[digest(key),kind,json(payload)]);}
-export async function enqueuePipeline(db:DB,phase:Phase,limit=5,now=Date.now(),model?:string){
+export async function enqueuePipeline(db:DB,phase:Phase,limit=5,now=Date.now(),model?:string,selection:'sample'|'top'='sample'){
   if(!Number.isInteger(limit)||limit<1||limit>20)throw new Error('Pipeline batch must be 1–20');
   const cycle=new Date(now).toISOString().slice(0,10);
   if(phase==='collect'){
@@ -28,7 +28,8 @@ export async function enqueuePipeline(db:DB,phase:Phase,limit=5,now=Date.now(),m
   if(phase==='assess'){
     if(model!=='gpt-6-luna')throw new Error('Existing live allowance supports configured Luna only; no model or spending limit is changed');
     const eligible=(await db.query(`select d.*,s.provider,v.snapshot from board_discovery_candidates d join board_discovery_sources s on s.id=d.source_id join board_discovery_versions v on v.candidate_id=d.id and v.content_hash=d.current_hash where d.location_hint<>'non_us_indicated' and d.last_seen_at>now()-interval '1 day' and not exists(select 1 from board_candidate_reviews r where r.candidate_id=d.id and r.source_hash=d.current_hash) and not exists(select 1 from board_review_roles h where h.identity_key=d.identity_key or h.canonical_url=d.canonical_url) and not exists(select 1 from board_candidate_assessments a where a.candidate_id=d.id and a.source_hash=d.current_hash and a.classifier_version=$2 and a.model=$1) and not exists(select 1 from board_pipeline_jobs j where j.kind='assess' and j.state='blocked' and j.payload->>'candidateId'=d.id and j.payload->>'sourceHash'=d.current_hash) order by d.score desc,d.id`,[model,builderPromptVersionV12])).rows;
-    const rows=assessmentSample(eligible as (typeof eligible[number]&{id:string;source_id:string;score:number;provider:string})[],limit);
+    const leads=eligible as (typeof eligible[number]&{id:string;source_id:string;score:number;provider:string})[];
+    const rows=selection==='top'?topAssessments(leads,limit):assessmentSample(leads,limit);
     for(const r of rows){const p=preparedAssessment(model,r);await enqueue(db,'assess',`assess:${r.id}:${r.current_hash}:${p.promptHash}:${digest(p.body)}`,{candidateId:r.id,sourceHash:r.current_hash,promptHash:p.promptHash,requestHash:digest(p.body),model});}
   }
   if(phase==='stage'){
@@ -78,7 +79,7 @@ async function collect(db:DB,source:any,get:(url:string)=>Promise<SourceResponse
   });
   return {postings:parsed.total,candidates:records.length,fullTextRetained:retained,deferredFullText:records.length-retained};
 }
-async function assess(db:DB,job:any,deps:PipelineDeps){
+async function assess(db:DB,job:any,deps:PipelineDeps,dailyCap=20){
   const p=job.payload,row=(await db.query('select d.*,v.snapshot from board_discovery_candidates d join board_discovery_versions v on v.candidate_id=d.id and v.content_hash=d.current_hash where d.id=$1',[p.candidateId])).rows[0];
   if(!row||row.current_hash!==p.sourceHash)return {obsolete:true};
   if((await db.query('select 1 from board_candidate_reviews where candidate_id=$1 and source_hash=$2',[row.id,row.current_hash])).rows.length)return {obsolete:true};
@@ -95,7 +96,7 @@ async function assess(db:DB,job:any,deps:PipelineDeps){
       const used=Number((await db.query(operatingMonthUsageSql)).rows[0].n);
       const allowance=(await db.query('select model,cap_nanodollars from board_model_allowances where id=$1',[operatingBudgetKey])).rows[0];
       if(!allowance||allowance.model!==p.model||!canReserve(used,reservation,Math.min(Number(allowance.cap_nanodollars),operatingBudgetNanodollars)))throw new Error('Authorized $10 monthly Luna board allowance unavailable or exhausted; no call sent');
-      const daily=Number((await db.query("select count(*)::int as n from board_assessment_requests a join board_model_budget_reservations b on b.discovery_request_id=a.id where b.budget_key in ('luna-v11-preview-5usd','luna-monthly-10usd') and a.requested_at>now()-interval '1 day'")).rows[0].n);if(daily>=20)throw new Error('Daily model request allowance exhausted');
+      const daily=Number((await db.query("select count(*)::int as n from board_assessment_requests a join board_model_budget_reservations b on b.discovery_request_id=a.id where b.budget_key in ('luna-v11-preview-5usd','luna-monthly-10usd') and a.requested_at>now()-interval '1 day'")).rows[0].n);if(daily>=dailyCap)throw new Error('Daily model request allowance exhausted');
       await db.query("insert into board_assessment_requests(id,candidate_id,source_hash,model,calibration_version,status) values($1,$2,$3,$4,$5,'started')",[requestId,row.id,row.current_hash,p.model,calibrationId]);
       await db.query('insert into board_model_budget_reservations(id,budget_key,reserved_nanodollars,discovery_request_id) values($1,$2,$3,$1)',[requestId,operatingBudgetKey,reservation]);
       await db.query('update board_pipeline_jobs set request_id=$2 where id=$1',[job.id,requestId]);
@@ -113,8 +114,9 @@ async function assess(db:DB,job:any,deps:PipelineDeps){
     return {fit:result.fit,fixture:!!deps.fixtureInfer};
   });
 }
-export async function runPipeline(db:DB,options:{phase:Phase;actor:string;limit?:number;enqueue?:boolean},deps:PipelineDeps={}){
+export async function runPipeline(db:DB,options:{phase:Phase;actor:string;limit?:number;enqueue?:boolean;initialTop100?:boolean},deps:PipelineDeps={}){
   const limit=options.limit??3;if(!Number.isInteger(limit)||limit<1||limit>5)throw new Error('Invocation processes 1–5 durable jobs');
+  if(options.initialTop100&&(options.phase!=='assess'||options.actor!=='initial-production-top-100'))throw new Error('Initial top-100 mode is restricted to the one-time assessment pass');
   const locked=(await db.query("select pg_try_advisory_lock(hashtext('board-preview-pipeline')) as locked")).rows[0].locked;
   if(!locked)return {busy:true,processed:0};
   const id=randomUUID();let processed=0;
@@ -122,7 +124,7 @@ export async function runPipeline(db:DB,options:{phase:Phase;actor:string;limit?
     await db.query(`update board_pipeline_jobs set state=case when kind='assess' then 'blocked' else 'retry' end,failure=case when kind='assess' then 'Interrupted model attempt requires reconciliation; no automatic resend' else 'Interrupted step; safe bounded retry' end,lease_until=null where state='running'`);
     await db.query("update board_pipeline_runs set status='interrupted',finished_at=now() where status='running'");
     await db.query("insert into board_pipeline_runs(id,actor_id,phase,status) values($1,$2,$3,'running')",[id,options.actor,options.phase]);
-    if(options.phase!=='resume'&&options.enqueue!==false)await enqueuePipeline(db,options.phase,5,(deps.now??Date.now)(),deps.model);
+    if(options.phase!=='resume'&&options.enqueue!==false)await enqueuePipeline(db,options.phase,5,(deps.now??Date.now)(),deps.model,options.initialTop100?'top':'sample');
     for(let n=0;n<limit;n++){
       const job=await tx(db,async()=>{const row=(await db.query(`select * from board_pipeline_jobs where state in ('pending','retry') and attempts<3 and next_attempt_at<=now() ${options.phase==='resume'?'':'and kind=$1'} order by updated_at,id for update skip locked limit 1`,options.phase==='resume'?[]:[options.phase])).rows[0];if(row)await db.query("update board_pipeline_jobs set state='running',attempts=attempts+1,run_id=$2,lease_until=now()+interval '2 minutes',updated_at=now() where id=$1",[row.id,id]);return row;});
       if(!job)break;processed++;
@@ -131,7 +133,7 @@ export async function runPipeline(db:DB,options:{phase:Phase;actor:string;limit?
         if(job.kind==='collect')await db.query("insert into board_discovery_runs(id,status,max_requests) values($1,'running',40) on conflict do nothing",[id]);
         if(job.kind==='maintain')await db.query("insert into board_maintenance_runs(id,status,max_requests,summary) values($1,'running',40,'{\"origin\":\"pipeline\"}') on conflict do nothing",[id]);
         if(job.kind==='collect')result=await collect(db,{...job.payload.source,runId:id},url=>sourceGet(db,id,'collect',url,deps));
-        if(job.kind==='assess')result=await assess(db,job,deps);
+        if(job.kind==='assess')result=await assess(db,job,deps,options.initialTop100?110:20);
         if(job.kind==='stage')result=await tx(db,async()=>{
           const latest=(await db.query('select current_hash from board_discovery_candidates where id=$1',[job.payload.candidateId])).rows[0];
           const review=(await db.query('select id from board_candidate_reviews where candidate_id=$1 and source_hash=$2 order by created_at desc,id desc limit 1',[job.payload.candidateId,job.payload.sourceHash])).rows[0];
