@@ -25,8 +25,21 @@ async function pgTool(tool, args) {
     const containerArgs = args.map(arg => arg.replaceAll(folder, '/backup'));
     return run('docker', ['run', '--rm', ...variables, '--mount', `type=bind,src=${folder},dst=/backup`, process.env.PG_TOOLS_IMAGE, tool, ...containerArgs], { env: environment, maxBuffer: 4 * 1024 * 1024 });
   }
-  const binary = process.env[tool === 'pg_dump' ? 'PG_DUMP_BIN' : 'PG_RESTORE_BIN'] || tool;
+  const binary = process.env[tool === 'pg_dump' ? 'PG_DUMP_BIN' : tool === 'pg_restore' ? 'PG_RESTORE_BIN' : 'PG_PSQL_BIN'] || tool;
   return run(binary, args, { env: environment, maxBuffer: 4 * 1024 * 1024 });
+}
+async function restoreDrill(archive) {
+  const database = `board_restore_check_${Date.now()}`;
+  await pgTool('psql', ['--set', 'ON_ERROR_STOP=1', '--command', `CREATE DATABASE "${database}"`]);
+  try {
+    await pgTool('pg_restore', ['--clean', '--if-exists', '--no-owner', '--no-acl', '--exit-on-error', '--dbname', database, archive]);
+    const { stdout } = await pgTool('psql', ['--set', 'ON_ERROR_STOP=1', '--tuples-only', '--no-align', '--dbname', database, '--command', 'select (select count(*) from board_jobs), (select count(*) from board_discovery_candidates), (select count(*) from board_candidate_reviews), (select count(*) from board_migrations)']);
+    const counts = stdout.trim().split('|').map(Number);
+    if (counts.length !== 4 || counts.some(count => !Number.isSafeInteger(count)) || counts[3] < 21) throw new Error('Restored database counts are invalid');
+    return { jobs: counts[0], candidates: counts[1], reviews: counts[2], migrations: counts[3] };
+  } finally {
+    await pgTool('psql', ['--set', 'ON_ERROR_STOP=1', '--command', `DROP DATABASE "${database}" WITH (FORCE)`]);
+  }
 }
 try {
   await pgTool('pg_dump', ['--format=custom', '--schema=public', '--no-owner', '--no-acl', `--file=${dump}`]);
@@ -41,7 +54,8 @@ try {
   await writeFile(downloaded, copy, { mode: 0o600 });
   await pgTool('pg_restore', ['--list', downloaded]);
   if (createHash('sha256').update(copy).digest('hex') !== checksum) throw new Error('Uploaded backup checksum mismatch');
-  console.log(JSON.stringify({ status: 'verified', environment: target, pathname, bytes: bytes.length, sha256: checksum, retentionDays: 30 }));
+  const drill = process.env.BOARD_FORCE_RESTORE_CHECK === 'true' || new Date().getUTCDate() === 1 ? await restoreDrill(downloaded) : null;
+  console.log(JSON.stringify({ status: 'verified', environment: target, pathname, bytes: bytes.length, sha256: checksum, retentionDays: 30, restoreDrill: drill }));
 } finally {
   await rm(folder, { recursive: true, force: true });
 }

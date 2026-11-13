@@ -2,6 +2,11 @@ name: Board Preview backup
 
 on:
   workflow_dispatch:
+    inputs:
+      restore_check:
+        description: Restore the backup into a temporary database and verify row counts
+        required: false
+        type: boolean
   schedule:
     - cron: '30 18 * * *'
 
@@ -19,6 +24,7 @@ jobs:
     env:
       BOARD_BACKUP_ENV: preview
       PG_TOOLS_IMAGE: board-pg-tools:18
+      BOARD_FORCE_RESTORE_CHECK: ${{ inputs.restore_check }}
       DATABASE_URL_UNPOOLED: ${{ secrets.BOARD_PREVIEW_DATABASE_URL_UNPOOLED }}
       BLOB_READ_WRITE_TOKEN: ${{ secrets.BOARD_BACKUP_BLOB_TOKEN }}
     steps:
