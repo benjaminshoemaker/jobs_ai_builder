@@ -25,6 +25,31 @@ it('renders a selected source safely and labels unassessed retrieval accurately'
   const response=await GET(new Request('https://example.test/admin/discovery?provider=unknown'));
   const html=await response.text();expect(response.status).toBe(200);expect(html).toContain('0 model-assessed');expect(html).toContain('&lt;Builder&gt;');expect(html).not.toContain('<script>bad()');expect(mocks.query.mock.calls[0][1]).toEqual(['all','us_or_unknown']);
 });
+it('defaults to not required and unclear SWE gates, with a required-only override',async()=>{
+  mocks.getSession.mockResolvedValue({data:{user:{id:'owner'}}});mocks.isAdmin.mockReturnValue(true);
+  const base={source_id:'ashby:example',location:'US',location_hint:'us_indicated',score:80,current_hash:digest('source'),last_seen_at:new Date(),signals:{},has_text:true,review_id:null,assessment_id:null,assessment:{fit:'builder'},assessed_at:new Date(),model:'gpt-6-luna',classifier_version:'builder-fit-v12',calibration_version:'fixture'};
+  const open={...base,id:digest('open').slice(0,32),title:'Open route',gate_description:'No software engineering background required.'};
+  const required={...base,id:digest('required').slice(0,32),title:'Required route',gate_description:'7+ years of software engineering experience required.'};
+  const unclear={...base,id:digest('unclear').slice(0,32),title:'Unclear route',gate_description:'Build with AI and work with users.'};
+  for(const selected of [open,required,required])mocks.query.mockResolvedValueOnce({rows:[open,required,unclear]}).mockResolvedValueOnce({rows:[{...selected,canonical_url:'https://jobs.ashbyhq.com/example/one',snapshot:{descriptionHtml:selected.gate_description}}]}).mockResolvedValueOnce({rows:[]});
+  const defaultHtml=await (await GET(new Request('https://example.test/admin/discovery'))).text();
+  expect(defaultHtml).toContain('Open route');expect(defaultHtml).toContain('Unclear route');expect(defaultHtml).not.toContain('Required route');
+  expect(defaultHtml).toMatch(/name="swe" value="open" checked/);expect(defaultHtml).toMatch(/name="swe" value="unclear" checked/);expect(defaultHtml).not.toMatch(/name="swe" value="required" checked/);
+  const requiredHtml=await (await GET(new Request('https://example.test/admin/discovery?swe_filter=1&swe=required'))).text();
+  expect(requiredHtml).toContain('Required route');expect(requiredHtml).not.toContain('Open route');expect(requiredHtml).not.toContain('Unclear route');
+  const directHtml=await (await GET(new Request('https://example.test/admin/discovery?candidate='+required.id))).text();
+  expect(directHtml).toContain('<h2 id="selected-title" tabindex="-1">Required route</h2>');
+  mocks.query.mockResolvedValueOnce({rows:[open,required,unclear]}).mockResolvedValueOnce({rows:[]});
+  const emptyHtml=await (await GET(new Request('https://example.test/admin/discovery?swe_filter=1'))).text();
+  expect(emptyHtml).toContain('No job selected');expect(emptyHtml).not.toContain('Open route');
+});
+it('preserves the multi-checkbox SWE selection after saving a decision',async()=>{
+  mocks.getSession.mockResolvedValue({data:{user:{id:'owner'}}});mocks.isAdmin.mockReturnValue(true);mocks.query.mockResolvedValue({rows:[]});
+  const body=new URLSearchParams({token:token(),decision:'no',provider:'all',scope:'us_or_unknown',lane:'priority',swe_filter:'1'});body.append('swe','open');body.append('swe','required');
+  const response=await POST(new Request('https://example.test/admin/discovery',{method:'POST',headers:{origin:'https://example.test'},body}));
+  const location=new URL(response.headers.get('location')!);
+  expect(location.searchParams.getAll('swe')).toEqual(['open','required']);expect(location.searchParams.get('swe_filter')).toBe('1');
+});
 it('saves a decision transactionally and advances to the next suggested job',async()=>{
   mocks.getSession.mockResolvedValue({data:{user:{id:'owner'}}});mocks.isAdmin.mockReturnValue(true);
   mocks.query.mockResolvedValue({rows:[]});

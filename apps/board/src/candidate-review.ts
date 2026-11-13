@@ -1,9 +1,10 @@
 import {createHmac,timingSafeEqual} from 'node:crypto';
 import {z} from 'zod';
 import {digest} from './review-history.js';
+import type {PriorSwe} from './prior-swe.js';
 export const selectionPolicy='review-mix-v1';
 export type ReviewLane='priority'|'uncertain'|'negative_audit'|'exploration'|'evaluation'|'manual';
-export type QueueItem={id:string;title:string;source_id:string;location:string;location_hint:string;score:number;current_hash:string;first_seen_at?:Date|string;source_checked_at?:Date|string;signals?:{evergreenHint?:boolean};assessment_id:string|null;assessed_at?:Date|string;assessment: {fit:string;reason?:string;engineering?:string;focus?:string[]}|null;review_id:string|null;decision:string|null;has_text:boolean;lane?:ReviewLane};
+export type QueueItem={id:string;title:string;source_id:string;location:string;location_hint:string;score:number;current_hash:string;first_seen_at?:Date|string;source_checked_at?:Date|string;signals?:{evergreenHint?:boolean};assessment_id:string|null;assessed_at?:Date|string;assessment: {fit:string;reason?:string;engineering?:string;focus?:string[]}|null;review_id:string|null;decision:string|null;has_text:boolean;prior_swe?:PriorSwe;lane?:ReviewLane};
 export function reviewPurpose(id:string){return parseInt(digest(id).slice(0,8),16)%5===0?'evaluation' as const:'calibration' as const;}
 const positive=new Set(['builder','product_builder','operations_builder','engineering_builder','engineering_blend']);
 export function modelSuggestsBuilder(row:QueueItem){return positive.has(row.assessment?.fit??'');}

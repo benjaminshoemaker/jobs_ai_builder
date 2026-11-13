@@ -36,6 +36,10 @@
 .review-filters{display:flex;align-items:end;gap:16px;flex-wrap:wrap;margin:20px 0 24px}.review-filters label{display:grid;gap:6px;font-size:.85rem}
 .review-filters select,.review-filters button{min-height:44px;padding:10px 12px;border:1px solid #8d7c69;border-radius:6px;background:#fffdf9;font:inherit;color:inherit}
 .review-filters button{cursor:pointer;background:#74492f;color:#fff;border-color:#74492f}
+.review-swe-filter{border:0;padding:0;margin:0;min-width:0}.review-swe-filter legend{font-size:.85rem;margin-bottom:6px}.review-swe-options{display:flex;gap:6px;flex-wrap:wrap}
+.review-swe-options label{display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:7px 10px;border:1px solid var(--control-border);border-radius:6px;background:#fffdf9;white-space:nowrap;cursor:pointer}.review-swe-options input{width:18px;height:18px;accent-color:var(--accent-text)}
+.review-swe-help{margin:3px 0 0!important;color:var(--muted);font-size:.75rem!important;line-height:1.35!important}
+.review-background{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}.review-background small{color:var(--muted);font-size:.78rem}
 .review-layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:28px;align-items:start}
 .review-queue-shell{position:sticky;top:16px;max-height:calc(100dvh - 32px);overflow:auto;border:1px solid #d9cdbd;border-radius:8px;background:#fbf6ee;margin:0!important}
 .review-queue-shell>summary{padding:12px 16px!important}.review-queue{display:grid}.review-queue a{display:grid;gap:5px;padding:16px;border-top:1px solid #e2d7ca;text-decoration:none;color:inherit;border-left:3px solid transparent}
