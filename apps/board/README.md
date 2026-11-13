@@ -1,6 +1,14 @@
 # Working builder board
 
-The preview worker uses **builder-fit-v12**, including the Apollo mandate and independent problem-understanding distinction. It records the exact prompt, request and source versions. Integration and recovery tests use injected responses, and a bounded live preview cycle has run. Recurring scheduling remains disabled.
+## Live Production status — November 12, 2026
+
+The board is public at **https://jobs-ai-builder.vercel.app**. Production uses its own Neon Free database and Auth endpoint. A data-only transfer copied 21 content and editorial-provenance tables from Preview: 43 job records, 4,098 discovery candidates, 37 candidate reviews, and their required sources and history. Feedback, daily run and digest ledgers, model spending reservations, pipeline runs, Preview agent identity, and Auth sessions were not copied. The verified owner email/password account was copied without sessions or OAuth tokens; the Production URL is a trusted Neon Auth origin, but a successful password sign-in by the owner has not yet been observed.
+
+The public API and sitemap agree on 19 visible job IDs. A live Figma detail page includes the canonical Production URL and employer application link; a closed role returns 404, and anonymous editorial access redirects to sign-in. Production collection and email are **disabled** (`BOARD_DAILY_RUNS_ENABLED=false`); Production has no model, sender, or scheduler secret yet. A separate daily GitHub Actions [Production backup](https://github.com/benjaminshoemaker/jobs_ai_builder/actions/runs/43379377402) completed a cloud restore drill with the transferred row counts. It retains private public-schema archives for 30 days; Neon Auth is outside that archive. The first timed Production backup has not yet run.
+
+The release source is committed locally and mirrored to GitHub `main` with the same tree hash. Vercel is not connected to the Git repository for automatic code deployment; the Production release was built with `vercel deploy --prod` from that revision. `pnpm test`, `pnpm typecheck`, and `pnpm build` passed before launch. The remaining operational work is a real owner sign-in check, then separate Production configuration and verification of collection, assessment, digest, watchdog, and their spending guards before daily operation is enabled. Custom domain selection is deferred.
+
+The preview worker uses **builder-fit-v12**, including the Apollo mandate and independent problem-understanding distinction. It records the exact prompt, request and source versions. Integration and recovery tests use injected responses, and a bounded live preview cycle has run. The protected Preview has its separate daily review configuration.
 
 ### Resumable preview pipeline (October 29)
 
@@ -115,7 +123,7 @@ Fold events by visitor and job ID, retaining the latest `active` value, when rev
 
 Repository gates are `pnpm test`, `pnpm typecheck`, and `pnpm build`. HTTP integration tests cover route availability, sample labeling, hidden/stale records, identity validation, feedback persistence/undo, visitor separation, and cross-origin rejection.
 
-The Next.js board is running in protected Vercel previews with durable Neon data and freshly checked inventory. Production still needs isolated data, an agreed domain, and retained backups. The owner resolved the full-description policy: verified, publicly listed employer postings may show full text unless a source expressly prohibits reuse, with attribution and prompt removal if withdrawn or challenged. A point-in-time recovery branch from the preview database was tested on November 12. Do not expose the catalog-editing CLI as an unauthenticated HTTP endpoint. The implementation plan below describes the agreed next direction; the dated foundation status above records its earlier checkpoint.
+The current release state is recorded at the top of this file. The owner resolved the full-description policy: verified, publicly listed employer postings may show full text unless a source expressly prohibits reuse, with attribution and prompt removal if withdrawn or challenged. A point-in-time recovery branch from the preview database was tested on November 12. Do not expose the catalog-editing CLI as an unauthenticated HTTP endpoint. The dated checkpoints below preserve how the implementation reached the live board.
 
 ## Technical implementation plan
 
