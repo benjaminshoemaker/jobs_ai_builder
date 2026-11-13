@@ -18,7 +18,7 @@ jobs:
     timeout-minutes: 20
     env:
       BOARD_BACKUP_ENV: preview
-      PG_TOOLS_IMAGE: postgres:18
+      PG_TOOLS_IMAGE: board-pg-tools:18
       DATABASE_URL_UNPOOLED: ${{ secrets.BOARD_PREVIEW_DATABASE_URL_UNPOOLED }}
       BLOB_READ_WRITE_TOKEN: ${{ secrets.BOARD_BACKUP_BLOB_TOKEN }}
     steps:
@@ -30,4 +30,5 @@ jobs:
           cache-dependency-path: .github/backup/package-lock.json
       - run: npm ci --prefix .github/backup
       - run: node --test .github/backup/backup-config.test.mjs
+      - run: docker build --tag board-pg-tools:18 --file .github/backup/Dockerfile .github/backup
       - run: node .github/backup/backup.mjs preview
