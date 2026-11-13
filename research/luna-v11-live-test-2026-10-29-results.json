@@ -1,0 +1,665 @@
+{
+  "completedAt": "2026-10-30T06:12:33.593Z",
+  "model": "gpt-6-luna",
+  "policy": "builder-fit-v11",
+  "frozenArtifactHash": "b3423bedf30bd9f64b94f9dac86727e70cbe418a7a3867d20ee4fc4e38c0db97",
+  "budget": {
+    "requests": 20,
+    "reserved_usd": 0.15954675,
+    "uncached_usage_estimate_usd": 0.0076723
+  },
+  "publication": false,
+  "scheduling": false,
+  "predictions": [
+    {
+      "reviewId": "L01",
+      "candidateId": "0f0d1992be9f4c6a1c3bd7784b714b16",
+      "company": "greenhouse:wrike",
+      "title": "Senior Product Builder - Talent Pool",
+      "url": "https://job-boards.greenhouse.io/wrike/jobs/4710251005",
+      "location": "Estonia - Remote",
+      "score": 100,
+      "sourceHash": "ca6a5a6f25d884e48f437d282032edcc408037c71aa3eded952910d6bc47b5e9",
+      "requestHash": "c7deb0ff76a68650a36abe5696d9fc95235ea08e4cf099a5b84e00d36641d48f",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "You'll help build the very AI-powered platform you use every day, with real autonomy over the features you ship.",
+        "fit": "builder",
+        "focus": [],
+        "reason": "The role owns ambiguous product ideas through user/stakeholder discovery, solution tradeoffs, and end-to-end feature implementation and rollout. Daily AI-assisted building is an explicit part of the work.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "Designed, built, and shipped end-to-end features across the full stack- including a Java/Spring backend, REST APIs, data layer, testing, infrastructure touches, and rollout- while utilizing modern frontend technologies like TypeScript, React 19,\u00a0Microfrontends, and Module Federation, alongside legac",
+        "evidence": [
+          "As a distributed team, we own our growth, stay globally connected, and rely on the product we build to deliver impactful work alongside brilliant minds.",
+          "You'll have real ownership over meaningful work, a global team that has your back, and the flexibility to do your best work your way.",
+          "You'll help build the very AI-powered platform you use every day, with real autonomy over the features you ship."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Evidence not extracted; inspect employer posting."
+      }
+    },
+    {
+      "reviewId": "L02",
+      "candidateId": "3bff49b4950266d9cd483f0c54aaa398",
+      "company": "ashby:rillet",
+      "title": "Head of Accounting & Advisory Partnerships",
+      "url": "https://jobs.ashbyhq.com/rillet/edbff973-0404-45ef-a435-164ef7955abd",
+      "location": "San Francisco",
+      "score": 30,
+      "sourceHash": "4e00f1d02526d0dc431b44652af6671ce20ad58b328ee65c0c9f64b971c34a19",
+      "requestHash": "1dce4a398e4ec14f1a9930380aa242047afbc35e3c0a3447e513a80a72c92273",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Rillet is the Agentic ERP built for modern finance teams.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role is accountable for channel revenue, partnerships, team leadership, and go-to-market programs. Its \u201cbuilder\u201d language refers to partnership and sales infrastructure, not personally implementing AI-enabled software, tools, or automations.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "We\u2019re building in one of the largest software markets in the world, with the momentum to match.",
+        "evidence": [
+          "Rillet serves accounting and finance teams, the financial brains of their companies.",
+          "We\u2019re building in one of the largest software markets in the world, with the momentum to match.",
+          "Rillet has raised more than $200M, is valued at $1B, and is backed by Sequoia, a16z, ICONIQ, Bain Capital Ventures, Oak HC/FT, and other leading investors."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "8+ years of experience, ideally with an analytical foundation (accounting, MBB consulting, IB/PE experience)."
+      }
+    },
+    {
+      "reviewId": "L03",
+      "candidateId": "35bba289d34b748bc007f3cf2b51f7a9",
+      "company": "lever:reply",
+      "title": "Industry 4.0 Engineer",
+      "url": "https://jobs.lever.co/reply/906d8bd0-e58a-437e-8d0f-3d7bebc33ad8",
+      "location": "Atlanta, Georgia",
+      "score": 5,
+      "sourceHash": "6e1950ad86fe9f4dc271097abeb030c1ae4695b8b3fa23e86b50c470bfeab0ff",
+      "requestHash": "da97fc831f508785f3f85c005cae3c3ec94a27accd4def9cce41a8156d17e6ae",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Work with AI, IT, operations, and engineering teams to align Industry 4.0 initiatives with business goals",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role designs and implements manufacturing systems and recommends process improvements, but AI is only one technology within those systems; the posting does not establish AI-assisted building or iteration as part of the engineer\u2019s work.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "Evidence not extracted; inspect employer posting.",
+        "evidence": [
+          "We support and advise our customers in Automotive, Manufacturing, Smart Infrastructure and beyond in all aspects of Internet of Things (IoT) and Cloud Computing.",
+          "From designing and developing customized IoT solutions to implementing and managing them seamlessly, Concept Reply helps customers unlock the potential of IoT.",
+          "Develop and deploy data analytics platforms to monitor real-time performance, predict maintenance needs, and improve decision-making"
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Minimum Requirements US citizen or green card holder per client requirements Bachelor\u2019s degree in Mechanical Engineering, Electrical Engineering, Industrial Engineering, Computer Science, or a related field 3-5 years of experience in manufacturing, automation, or industrial engineering, with at least 2 years focused on Industry 4.0 technologies Proficiency in IoT platforms (e.g., MQTT, OPC UA), UNS, and industrial communication protocols"
+      }
+    },
+    {
+      "reviewId": "L04",
+      "candidateId": "16911f21c0d0e34c03a7c136265d2c2e",
+      "company": "Alt",
+      "title": "Product Builder, Vault",
+      "url": "https://jobs.ashbyhq.com/alt/52317979-235e-4b3f-b7a7-27d5e68d3bcf",
+      "location": "Remote",
+      "score": 100,
+      "sourceHash": "c1ae344c2ce35a18d58d1173a37e808ab999c72b5d30a123c8efec16ecc7ab36",
+      "requestHash": "3a4121fd875f4da2128be83dd54ba0896125a2aa1b4232614efac7b2011466e6",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "How You'll Use AI Here",
+        "fit": "builder",
+        "focus": [],
+        "reason": "The role owns Vault operational outcomes, identifies bottlenecks with warehouse staff and data, and personally builds and ships AI-enabled tools and software, then measures results and iterates against time-to-liquidity and other SLAs.",
+        "product": "Queue management, prioritization, labeling, SLA tracking, the exception taxonomy and the software that enforces it.",
+        "building": "Supporting KPIs: ingest and outtake SLA adherence, cost per item processed (labor minutes, rework, fully loaded unit cost), throughput per FTE and items per week, error and rework rate, inventory activation rate (vaulted to live to sold), ship-and-decide velocity (tools and changes shipped per week)",
+        "evidence": [
+          "This is a builder seat, not a product management seat.",
+          "You own the Vault from arrival to exit: ingest SLAs, intake and routing, exception handling and QC, outtake, international shipping, customs, insurance, carrier integrations, and the tooling that runs all of it.",
+          "And you own it the whole way: you stand in the room and watch the bottleneck, you pull the station data yourself, you write the tool that removes it, you ship it, you watch what P90 does, you keep it or you kill it."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "What You Bring You ship production code. Not \"technical.\" Not \"I can read code.\" You open the pull request, you take the review, you own the consequence when the queue tool breaks at 6am on an auction week. Full-stack enough to move through an operational surface without a handoff: the internal UI, the API, the query, the job. You've owned an operational system with real SLAs and unit costs and moved the numbers on it."
+      }
+    },
+    {
+      "reviewId": "L05",
+      "candidateId": "301f13a4151207bdb2e1190409ae8cad",
+      "company": "greenhouse:edo",
+      "title": "Senior Full Stack Engineer",
+      "url": "https://job-boards.greenhouse.io/edo/jobs/5143687007",
+      "location": "Los Angeles; New York; San Francisco",
+      "score": 20,
+      "sourceHash": "e7f3d9b31b073d2e0f0265eaedcbd5b286e7245015e3fdec41c2d5e9b518e077",
+      "requestHash": "2b621afd58b8578241c4ca46a4f36cc07078f20fd89c79a5ff4bd6bddfcb73db",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "By combining immediate engagement signals with world-class decision science and vertical AI, EDO equips industry leaders with syndicated, investment-grade data that aligns media to business results \u2014 with detailed competitive, category, and historical insights.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role centers on personally implementing full-stack product features and scaling APIs, but it does not establish that AI materially enables the engineer\u2019s building or iteration.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "Collaborate with our product teams to implement data exploration and visualization features in our client application.",
+        "evidence": [
+          "Our leading measurement platform connects convergent TV airings to the ad-driven consumer behaviors most predictive of future sales.",
+          "EDO empowers the advertising industry to maximize media impact, optimize creative performance, and know the fair value of every impression \u2014 across linear and streaming for an increasingly programmatic world.",
+          "By combining immediate engagement signals with world-class decision science and vertical AI, EDO equips industry leaders with syndicated, investment-grade data that aligns media to business results \u2014 with detailed competitive, category, and historical insights."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "5+ years of experience in product-focused full-stack software engineering, with a track record of delivering end-to-end features at scale."
+      }
+    },
+    {
+      "reviewId": "L06",
+      "candidateId": "cb9e7429b8bab4faf293a02b0a242333",
+      "company": "lever:cwsc",
+      "title": "IT Configuration and Change Business Analyst",
+      "url": "https://jobs.lever.co/cwsc/c96eb938-b819-4f53-a2c4-1d118ba403f5",
+      "location": "Bethesda, MD",
+      "score": 20,
+      "sourceHash": "d629b45a8c570d832834ac08d6279787cf32deec44be342dd18742eedb3039d0",
+      "requestHash": "5727fa7ee8f08a97b027be2f37393cd26d4d5231c0be34f7282973374caeec26",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "\u00b7Participate in continuous assessment of Configuration Management processes and practices.\u00b7Identify areas for improvement and provide input to enhance the efficiency and effectiveness of configuration management activities.\u00b7Collaborate with team members to implement approved improvements and changes",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role primarily supports CMDB accuracy, change governance, quality checks, and coordination. Although it mentions identifying opportunities to use AI, it does not establish responsibility for personally building and iterating on AI-enabled solutions.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "\u00b7Participate in continuous assessment of Configuration Management processes and practices.\u00b7Identify areas for improvement and provide input to enhance the efficiency and effectiveness of configuration management activities.\u00b7Collaborate with team members to implement approved improvements and changes",
+        "evidence": [
+          "\u00b7Assist in documenting and maintaining configuration items (CIs) in the Configuration Management Database (CMDB).\u00b7Work closely with Configuration Managers to ensure accurate records of hardware, software, and related components.\u00b7Help baseline the current set of CIs and ensure they are properly docum",
+          "\u00b7Coordinate the lifecycle of Normal, Standard, and Emergency Changes\u00b7Perform quality checks on change submissions (risk, impact, backout plan, testing evidence) \u00b7Validate risk scoring accuracy based on defined methodology\u00b7Validate completeness before TRB and CAB review\u00b7Maintain the enterprise change",
+          "\u00b7Participate in continuous assessment of Configuration Management processes and practices.\u00b7Identify areas for improvement and provide input to enhance the efficiency and effectiveness of configuration management activities.\u00b7Collaborate with team members to implement approved improvements and changes"
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Bachelor\u2019s degree in Computer Science, Information Technology, or related field (preferred)."
+      }
+    },
+    {
+      "reviewId": "L07",
+      "candidateId": "20f2a1492293ee404bbda6a6a6069ca0",
+      "company": "Fluidstack",
+      "title": "Product Engineer, Compute Operations",
+      "url": "https://jobs.ashbyhq.com/fluidstack/a59fc19b-ce9d-45ba-b303-58ec58ac6199",
+      "location": "New York, NY",
+      "score": 100,
+      "sourceHash": "a551709723273dabecd6d451b9a55bd89396bc60ae134f41203cd328df5ecf49",
+      "requestHash": "9d3eb3405ddc37789ced2560b18bf7b1b3d626dae62b60aeae426e138d367893",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Powerful AI will be the biggest lever for human choice we've ever built - but only if models are aligned with what humanity actually wants.",
+        "fit": "builder",
+        "focus": [],
+        "reason": "The role explicitly owns operational problems, designs solutions, and ships working systems using AI coding tools, while working alongside operators and building workflows they use in production.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "We acquire power, design and build data centers, and operate them - with teams spanning hardware and software.",
+        "evidence": [
+          "Powerful AI will be the biggest lever for human choice we've ever built - but only if models are aligned with what humanity actually wants.",
+          "There are groups building AI who don't share these goals.",
+          "Whoever deploys frontier compute infrastructure fastest will decide whether AI expands human freedom or shrinks it."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "What We're Looking For The below is a starting point. We always make space for exceptional people, so if you don't fit this role exactly, tell us where you would . You've shipped production code in Go, Python, or TypeScript, and you pick up whatever language the problem demands. You've built real features on LLM APIs (OpenAI, Anthropic, or open-weight models), MCP servers, and agentic frameworks."
+      }
+    },
+    {
+      "reviewId": "L08",
+      "candidateId": "66bb040076c035758f78cddd1f83edcb",
+      "company": "greenhouse:llrpartnersjobs",
+      "title": "Managing Director, Go-to-Market Value Creation",
+      "url": "https://job-boards.greenhouse.io/llrpartnersjobs/jobs/4402255009",
+      "location": "Remote - US",
+      "score": 23,
+      "sourceHash": "a045a25aecb514cce2d3266227f5a77690f68d18eb988e5958cfc94da80ccf96",
+      "requestHash": "859f5c6e358f97a8cf181a92fe4060d85ca523faa0a8f35a49bdfdec993afdc8",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "AI and Emerging GTM Technologies",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The primary mandate is senior GTM value creation: diagnosing commercial issues, advising portfolio companies, managing engagements and teams, and delivering revenue outcomes. AI work is identifying and helping implement GTM applications, not personally building and iterating working software or tools.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "The Managing Director will be expected to bring or develop practical GTM playbooks, tools, benchmarks, and best practices that can be adapted and deployed across multiple portfolio companies to drive repeatable impact.",
+        "evidence": [
+          "LLR Partners is seeking a Managing Director of Go-to-Market (\u201cGTM\u201d) to join the leadership team of its Value Creation Team.",
+          "The Managing Director will report to the Senior Managing Director of Value Creation and will be accountable for helping LLR portfolio of companies accelerate revenue growth, improve commercial productivity, and build scalable go-to-market capabilities.",
+          "The candidate will bring broad expertise across sales, revenue operations, marketing, customer success, pricing, channels, and commercial strategy, along with the judgment and interpersonal skills required to influence management teams and deal teams without formal authority."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Prior experience in a private equity operating, portfolio support, or value-creation role\u2014particularly at a firm investing in technology companies of similar size\u2014is highly desirable."
+      }
+    },
+    {
+      "reviewId": "L09",
+      "candidateId": "79328ae10bfb41ddbdc95c75aca49fa2",
+      "company": "lever:noodle",
+      "title": "Lead Engineer, Engineering (EDge Product Suite)",
+      "url": "https://jobs.lever.co/noodle/2f3a7bbe-00c7-415a-9a29-749c080d92ed",
+      "location": "New York, New York",
+      "score": 20,
+      "sourceHash": "3dcc49c50db14a6b4528770abada75e773693f369c501e4191a7bc9ee5eaf59e",
+      "requestHash": "661dcdc9b08fea229d37506181aba3f4013f307c63327d50af096af3a05872fc",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "We develop infrastructure, provide life-changing learning experiences, and grow the awareness of and the enrollment in some of the best academic institutions in the world.",
+        "fit": "builder",
+        "focus": [],
+        "reason": "The role combines shared product judgment\u2014partnering with the Product Manager on feature prioritization and design and identifying product deficiencies\u2014with hands-on implementation of agentic systems. It also explicitly calls for implementing AI engineering tools to improve product development, establishing an AI-enabled building mandate alongside its leadership duties.",
+        "product": "Assist Technology Leadership in hiring recommendations, resource allocation, and project prioritization.",
+        "building": "Propose and implement the strategic use of AI engineering tools to enhance product development and team efficiency.",
+        "evidence": [
+          "Universities need to go online quickly, economically, and elegantly, creating programs that students can't wait to tell their friends about and that their professors want to teach.",
+          "Our EDge product suite is an integrated collection of proprietary, AI-powered, higher education business management SaaS solutions.",
+          "Assist Technology Leadership in hiring recommendations, resource allocation, and project prioritization."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "You have:"
+      }
+    },
+    {
+      "reviewId": "L10",
+      "candidateId": "34649d259d7b358260f2a57703969a00",
+      "company": "ashby:clera",
+      "title": "Product Engineer, Consumer",
+      "url": "https://jobs.ashbyhq.com/clera/b6f95627-eecd-4931-89ec-f92d05b49ac5",
+      "location": "Palo Alto",
+      "score": 100,
+      "sourceHash": "0ece4ae51cbda12579df95862d2c6c31da1c2951440ac6b5124afbd4554a38a3",
+      "requestHash": "b8bf9c535f007242cff0eef5d4be1660a18d1c7ef80812fade433baf921392ba",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Comfort using AI coding tools such as Claude Code or Cursor while maintaining code quality and understanding system architecture.",
+        "fit": "builder",
+        "focus": [],
+        "reason": "Owns the loop from identifying user opportunities and shaping scope through personally building and shipping full-stack consumer products, then using analytics and feedback to iterate; AI coding tools support that implementation.",
+        "product": "You will combine product judgment, design, and full-stack engineering to build polished experiences and take responsibility for user value.",
+        "building": "Evidence not extracted; inspect employer posting.",
+        "evidence": [
+          "Join a consumer apps team as a founder-minded product engineer, owning products from identifying user opportunities through design, development, launch, and iteration.",
+          "You will combine product judgment, design, and full-stack engineering to build polished experiences and take responsibility for user value.",
+          "Define product positioning and scope features into the smallest complete versions worth shipping."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "What We're Looking For At least 3 years of experience shipping consumer products end-to-end, from concept to production; overall experience may range from 2 to 10+ years. Production experience with TypeScript, React, Next.js, Node.js, SQL, APIs, and data modeling. Experience implementing authentication, payments, and subscriptions, deploying applications, and resolving production issues. Experience designing consumer interfaces and onboarding, and setting up product analytics and running experiments."
+      }
+    },
+    {
+      "reviewId": "L11",
+      "candidateId": "777f92fb5dfa086edb0d6cc231f1190b",
+      "company": "greenhouse:adyen",
+      "title": "Product Manager, Partner Ecosystem",
+      "url": "https://job-boards.greenhouse.io/adyen/jobs/8158755",
+      "location": "San Francisco",
+      "score": 30,
+      "sourceHash": "67f2d6878d28a0d18cc1e9f371165254574a08fd009cc13eb83c2388fc00746b",
+      "requestHash": "756a9b90f5316addf269a2450529bf3b6058af84eae4cd88735a2beaac09292c",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Pioneer AI & Intelligent Automation: Champion the adoption of intelligent agents, LLM-powered workflows, and automated triage systems to accelerate partner enablement, technical inquiries, and documentation discovery.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role owns strategy, roadmaps, and delivery of internal platforms, and champions AI automation, but does not establish that the PM personally implements usable tools or uses AI to build and iterate on them. The stated technical work centers on architectural discussions and cross-functional delivery.",
+        "product": "Pioneer AI & Intelligent Automation: Champion the adoption of intelligent agents, LLM-powered workflows, and automated triage systems to accelerate partner enablement, technical inquiries, and documentation discovery.",
+        "building": "Through partnerships with major commerce, POS, enterprise software, and cloud platforms (such as Adobe Commerce, Salesforce, Oracle, and SAP), Adyen powers billions of dollars in global transaction volume.",
+        "evidence": [
+          "Adyen provides payments, data, and financial products in a single solution for customers like Meta, Uber, H&M, and Microsoft - making us the financial technology platform of choice.",
+          "Through partnerships with major commerce, POS, enterprise software, and cloud platforms (such as Adobe Commerce, Salesforce, Oracle, and SAP), Adyen powers billions of dollars in global transaction volume.",
+          "You will build and scale internal applications, automation frameworks, and data platforms that empower our global teams to scale partner integrations effortlessly and reliably."
+        ],
+        "operations": "Define the Product Vision & Roadmap: Own the end-to-end product strategy for internal partner tooling, developer infrastructure, and operational workflows.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Who You Are Proven Product Ownership: 8+ years of product management experience, preferably leveraging tooling, developer platforms, technical workflows, or complex B2B/API products in high-growth software or fintech environments. Technical Acumen: Strong technical foundation and fluency with modern software architecture, APIs, web technologies, and data pipelines. Comfortable having deep architectural discussions with senior engineers and solutions architects. Data-Driven & Problem Solver: You excel at breaking down ambiguous, multi-stakeholder operational problems into structured, scalable solutions."
+      }
+    },
+    {
+      "reviewId": "L12",
+      "candidateId": "989dfa14029b213ac4af2ff53ecc89c7",
+      "company": "lever:medi.ci",
+      "title": "Financial Controller",
+      "url": "https://jobs.lever.co/medi.ci/9cf64e54-9f22-48a5-96dc-cb2a1ba907bf",
+      "location": "San Antonio, Texas",
+      "score": 20,
+      "sourceHash": "6d572d5edf16d7cb7be5d5825ab8b02f956682c6a40603f13bc3e0f20b588727",
+      "requestHash": "04286887045305c643a132139b9957f36af6ce8ca7f5d039454cc1f3103839d1",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "At our flagship clinic, we deliver premium, prevention-first executive health exams powered by advanced diagnostics and AI-driven insights.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role primarily owns accounting and financial operations. It calls for identifying and implementing AI-enabled tools and process improvements, but does not establish personal responsibility for building working automations or other usable solutions; technology is an efficiency component of the controller role.",
+        "product": "Ability to work independently, take ownership of outcomes, and thrive in a fast-paced, growth-stage environment.",
+        "building": "Evaluate and implement tools, workflows, and process improvements that create a more scalable and technology-enabled finance function.",
+        "evidence": [
+          "At our flagship clinic, we deliver premium, prevention-first executive health exams powered by advanced diagnostics and AI-driven insights.",
+          "Gabi , a groundbreaking AI health companion app designed to put the world\u2019s smartest, kindest doctor in everyone\u2019s pocket\u2014delivering personalized health and nutrition guidance 24/7.",
+          "About the Role: We are seeking a hands-on, AI-forward Financial Controller who will play a critical role in managing and strengthening the financial operations that support our next stage of growth."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Qualifications: Demonstrated experience leveraging AI, automation, or technology to improve finance and accounting processes, with the ability to identify opportunities to automate workflows, increase efficiency, improve accuracy, and strengthen financial controls. Bachelor\u2019s degree in Accounting, Finance, or a related field. 5+ years of progressive accounting, finance, or financial operations experience. Strong foundation in accounting principles, financial reporting, reconciliations, accounts payable, accounts receivable, and financial controls."
+      }
+    },
+    {
+      "reviewId": "L13",
+      "candidateId": "6358178ee912b6f3c2c0707fde687ee9",
+      "company": "Artera",
+      "title": "AI Builder",
+      "url": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "location": "Seattle, Washington",
+      "score": 95,
+      "sourceHash": "c5d3e8eb305f009d12f84560eadd97a110fc56289a30ca57f8f1b66113d28c24",
+      "requestHash": "7a3ab4bcf2d5cbc96a591f8f4a037795141320d6208c40c16435cf5be9b80cd0",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "What We Deliver: Artera is an agentic company strengthening how healthcare providers communicate and care for patients.",
+        "fit": "builder",
+        "focus": [],
+        "reason": "Owns customer discovery, pain-point prioritization, and customer outcomes, while personally architecting and coding agentic solutions with AI-native tools, onboarding them into production, and iterating based on operational results.",
+        "product": "You'll be a fully contributing builder inside a customer-facing squad bringing AI-native fluency in delivering end-to-end on your customers\u2019 needs \u2014 owning initiatives from customer discovery through production operation, onboarding new customers onto what you build, and shipping enhancements that k",
+        "building": "Evidence not extracted; inspect employer posting.",
+        "evidence": [
+          "Our Mission: Make healthcare #1 in customer service.",
+          "As an agentic partner, we bring over a decade of healthcare experience to address urgent workflows from day one and build custom solutions as healthcare providers\u2019 needs evolve.",
+          "Trusted by 1,000+ specialties, FQHCs, health systems, and federal agencies, Artera strengthens and protects and enhances patient relationships across every interaction - from intake and scheduling to referral management, post-visit care, and more."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Requirements 2 - 5 years of professional software engineering, data science, machine learning, product management, product design, or technical project management experience, or equivalent demonstrated output. Demonstrated AI-native fluency with measurable leverage \u2014 ability to produce output on par with multiple traditional engineers using AI-native tools (e.g., Claude Code in the terminal) as the primary working environment; ability to learn new technology quickly Track record of shipping solutions end-to-end that ran reliably in production, including the enhancements that followed. Ability to work directly and productively with customers \u2014 onboarding them, owning the relationship, and tra"
+      }
+    },
+    {
+      "reviewId": "L14",
+      "candidateId": "c5aaa61545e67dc2a16e5aaf152456b0",
+      "company": "greenhouse:brex",
+      "title": "Senior Software Engineer, Backend (Product Engineering)",
+      "url": "https://www.brex.com/careers/8815495002?gh_jid=8815495002",
+      "location": "San Francisco, California, United States",
+      "score": 23,
+      "sourceHash": "82849d67d32930b424bb050e74c7f913f5787ba4fc65b759632dd17af91945ad",
+      "requestHash": "8b3448e1fb7562f7b3b7c935a5c7742592c2414fe024458299b73ae375867471",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role owns customer problems and personally designs and implements end-to-end backend features, but it does not establish that AI materially enables the engineer\u2019s building or iteration; Brex\u2019s AI-native product positioning alone is not enough.",
+        "product": "We tackle hard technical problems, own our outcomes, and push for excellence at every level \u2014 from architecture to deployment.",
+        "building": "We\u2019re looking for folks with an interest in building products and tools, and who are comfortable in dealing with lots of moving pieces.",
+        "evidence": [
+          "By combining global corporate cards and banking with intuitive spend management, bill pay, and travel software, Brex enables founders and finance teams to accelerate operations, gain real-time visibility, and control spend effortlessly.",
+          "Brex\u2019s AI-native automation and world-class service eliminate manual expense and accounting tasks for customers so they can focus on what matters most.",
+          "Tens of thousands of the world's best companies run on Brex, including DoorDash, Coinbase, Robinhood, Zoom, Plaid, Reddit, and SeatGeek."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Requirements: 7+ years of professional experience designing, developing, and deploying applications with a focus on the backend. Experience building and designing scalable backend systems Experience working with SQL or NoSQL databases Experience working with backend programming languages (Java, Kotlin, Python)"
+      }
+    },
+    {
+      "reviewId": "L15",
+      "candidateId": "81edb1a25a36bc74353c9fe2af47b91a",
+      "company": "ashby:specter",
+      "title": "Electrical Engineer",
+      "url": "https://jobs.ashbyhq.com/specter/0629bcbd-1d44-4f4c-8f91-6f7cbb10ac49",
+      "location": "San Francisco",
+      "score": 20,
+      "sourceHash": "659e792b64f4fe1b19ebe8ac216dece042551f6d60e0d2ad3660cb0e93d8df6a",
+      "requestHash": "c0f6647f39a86b1fde00a94116e397130507f3618ea458177a5df174f933df4e",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Today, we build video sensors with state-of-the-art AI agents that answer any question, anywhere in their environments.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role centers on electrical hardware design, validation, troubleshooting, and manufacturing support. It does not establish that AI materially enables the person's building or iteration.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "Today, we build video sensors with state-of-the-art AI agents that answer any question, anywhere in their environments.",
+        "evidence": [
+          "Today, we build video sensors with state-of-the-art AI agents that answer any question, anywhere in their environments.",
+          "Our co-founders Xerxes and Philip are passionate about empowering our partners in the fast approaching world of physical AI and robotics.",
+          "We are a small, fast growing team who hail from Anduril, Tesla, Uber, and the U.S."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Qualifications: 3+ years of electronic hardware design experience Experience working cross-functionally to define system architecture Experience shipping high volume product (automotive and/or aerospace preferred) and working with contract manufacturers Experience with board-level debugging, oscilloscopes, multimeters, logic analyzers, etc."
+      }
+    },
+    {
+      "reviewId": "L16",
+      "candidateId": "b7d300d75c4c478842b3ebf6e63133c0",
+      "company": "OnePay",
+      "title": "Design Engineer",
+      "url": "https://jobs.ashbyhq.com/oneapp/b7ae2b9b-0f31-468d-9ac8-395536da8beb",
+      "location": "United States (Remote)",
+      "score": 88,
+      "sourceHash": "67beaee6fc8868d960d7f1e4f0019f334714d6029ba22d4e572d04570599b199",
+      "requestHash": "701c0b5a4f1402bb787f156cffb4f3c858c352e43b3cc1ef9e5ae1cd8683097f",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "AI is a baseline part of how we work, not a future we\u2019re talking about.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role clearly owns AI-assisted implementation of production-ready components and design-to-code practices, but does not establish responsibility for understanding user or business problems or choosing what product solution to build.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "You ship in code.",
+        "evidence": [
+          "We\u2019re backed by Walmart, the world\u2019s largest retailer, and Ribbit Capital, one of fintech\u2019s most respected investors, giving us rare scale, distribution, and the opportunity to build something truly category-defining.",
+          "Our customers don\u2019t have time to wait\u2026 and neither do we.",
+          "That weight raises the bar on what we ship and how we ship it."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "What we\u2019re looking for You ship in code. Figma is part of how you communicate, but you\u2019re most fluent in the codebase. You generate production-ready work, not just specs. You\u2019re AI-native at production velocity."
+      }
+    },
+    {
+      "reviewId": "L17",
+      "candidateId": "60399a39fc32a948584e94cb004399a0",
+      "company": "greenhouse:uniteus",
+      "title": "Vice President, Product Management",
+      "url": "https://job-boards.greenhouse.io/uniteus/jobs/8909368002",
+      "location": "United States",
+      "score": 23,
+      "sourceHash": "dbb6aeac4acb982d2ee0a808ea386ebc55f03193e48b6b0dd12eae9759c8aabc",
+      "requestHash": "236003c3cec0a1e07bd2fc5de43decbcbf8d08823bc2f2a53d753d08f89d3ed6",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Identify where AI and advanced analytics can meaningfully improve how needs are identified, how services are coordinated, and how outcomes are measured.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "This is a product-organization leadership role focused on portfolio strategy, outcomes, and managing product leaders. The \u201cbuilder\u201d description refers to having architected platforms previously; it does not establish personal AI-assisted implementation, and AI experience is only a plus.",
+        "product": "Translate strategy into a clear, prioritized roadmap, and make hard tradeoff decisions with confidence and transparency.",
+        "building": "Evidence not extracted; inspect employer posting.",
+        "evidence": [
+          "Our customers span government agencies, health systems, health plans, and community-based organizations (CBOs).",
+          "Doing that well means building products that work for a caseworker at a small food pantry and a CIO at a national health plan, on the same platform, with the same commitment to privacy and dignity.",
+          "You'll shape how our platform scales: the shared services, identity, interoperability, and data foundations that let many teams ship independently without fragmenting the experience."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "12+ years of experience in product management, solution architecture, or health information technology, with 5+ years leading product teams and product leaders"
+      }
+    },
+    {
+      "reviewId": "L18",
+      "candidateId": "97f9ef2d025515fc36f615bf7d5f7b61",
+      "company": "lever:doola",
+      "title": "FP&A Analyst",
+      "url": "https://jobs.lever.co/doola/395aff9d-b0c2-453a-a3f6-4fab4ef710b4",
+      "location": "Remote in Chile",
+      "score": 5,
+      "sourceHash": "4237fa31df435300cbe208786be4476ea67a95c5b1c79c74f9247d7d23950a8c",
+      "requestHash": "eef616a2046695871c100d870dcc1a787a3fa8a374efd964f3d4a68eaaf04d94",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Use AI and automation tools to make recurring finance workflows faster, more accurate, and more repeatable while maintaining proper review and control.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The role is accountable for forecasts, financial reporting, and decision support. AI and automation are tools to improve recurring finance workflows, not a central mandate to personally build and iterate on working software or tools.",
+        "product": "Evidence not extracted; inspect employer posting.",
+        "building": "Experience creating AI-assisted reporting workflows, data review processes, or finance automations.",
+        "evidence": [
+          "We empower entrepreneurs and businesses of all sizes to navigate the intricate landscape of financial and regulatory requirements with ease, allowing them to focus on what truly matters - building and growing their ventures.",
+          "doola is looking for an FP&A Analyst to maintain and support the financial planning and reporting engine for the company.",
+          "actuals reporting, KPI dashboards, cash and runway visibility, and decision support for leadership."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "3 to 6 years of experience in FP&A, strategic finance, corporate finance, investment banking, consulting, or startup finance."
+      }
+    },
+    {
+      "reviewId": "L19",
+      "candidateId": "073d8abc5732031bfcc2d99892de5f74",
+      "company": "ashby:openart",
+      "title": "Creative Technologist (AI Design Engineer)",
+      "url": "https://jobs.ashbyhq.com/openart/48ee704c-6c89-4287-8f90-c88e1416f326",
+      "location": "San Carlos, California, USA",
+      "score": 78,
+      "sourceHash": "0537119aadf7f353b79cf9248f93ce44149cf105e9588b27c12628c0a68f9d3c",
+      "requestHash": "0bd777d7ffbb10c7e73cbaaf695c68284fddd1a259759a6cd1ae45ea41e9115b",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "Creative Technologist (AI Design Engineer)",
+        "fit": "builder",
+        "focus": [],
+        "reason": "The role owns identifying real creative-workflow problems, deciding what the agent should do, and using AI tools, APIs, and code to build polished, usable prototypes end to end. It validates those prototypes and shapes the roadmap; engineering taking validated work through production does not negate the hands-on builder mandate.",
+        "product": "A portfolio or GitHub showing the tools, prototypes, products, or experiments you've built.",
+        "building": "We're building the next generation of creative tools powered by cutting-edge AI, enabling anyone to create videos, images, visuals, characters, and stories with unprecedented speed and imagination.",
+        "evidence": [
+          "Creative Technologist (AI Design Engineer)",
+          "Also known as: Creative Workflow Specialist \u00b7 AI Workflow Designer",
+          "OpenArt is a leading AI Creative Platform for visual storytelling, used by millions worldwide."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Hands-on experience in professional creative production such as advertising, film, or content."
+      }
+    },
+    {
+      "reviewId": "L20",
+      "candidateId": "b13af6305dc06710b2ad63c7b97634ab",
+      "company": "greenhouse:mrbeastyoutube",
+      "title": "Senior Product Manager ",
+      "url": "https://job-boards.greenhouse.io/mrbeastyoutube/jobs/6123291004",
+      "location": "Primary: Bay Area (San Francisco/Peninsula) | Secondary: NYC",
+      "score": 30,
+      "sourceHash": "6b4b2d0582559312a8236734180dcd8927f00b191bbd2f684b1d8054de51b95b",
+      "requestHash": "5cd16c4b0c12528bf182ad1d25b55e966df09dddedd05aacc8315c6040ff07be",
+      "state": "succeeded",
+      "failure": null,
+      "assessment": {
+        "ai": "There is no legacy roadmap and no bloated process to inherit just a zero-to-one build, a small high-output team, and an AI-native way of working that lets one person do the job that used to take three.",
+        "fit": "exclude",
+        "focus": [],
+        "reason": "The PM owns product judgment, requirements, launch, and iteration, but engineering implements the features. AI use is for research, specs, prototyping flows, and analysis\u2014not a mandate to personally build and ship usable solutions.",
+        "product": "Define and track the metrics that matter activation, retention, conversion and use them to prioritize ruthlessly.",
+        "building": "You will help build the features millions of users actually touch inside a new mobile consumer product anchored around the MrBeast audience.",
+        "evidence": [
+          "Beast Industries is a multifaceted media and entertainment company founded by Jimmy Donaldson, popularly known as MrBeast, the most watched person in the world.",
+          "With a mission to entertain, inspire, and create significant social impact, Beast Industries operates across various domains including digital media, philanthropy, consumer products, and innovative business initiatives.",
+          "At Beast Industries, we believe in the transformative power of digital media and its potential to entertain, educate, and effect positive change."
+        ],
+        "operations": "Evidence not extracted; inspect employer posting.",
+        "engineering": "unclear",
+        "evidenceMode": "source_reading_cues",
+        "metadataStatus": "Provisional source excerpts; reconcile focus and experience gate before publication",
+        "qualifications": "Who You Are Experienced Operator : You have 5 - 8 years of product management experience, including shipping consumer-facing mobile products (iOS/Android or cross-platform) from concept to production at meaningful scale. Technical : You're fluent enough in APIs, data models, and system architecture to ask sharp, informed questions in technical design reviews, understand tradeoffs engineers raise, and know when a \"quick fix\" isn't. You don't need to write production code or technical specs yourself, but you understand the systems well enough to hold your own in the conversation. AI-First : You already build AI into your daily workflow using AI tools for research synthesis, spec drafting, prot"
+      }
+    }
+  ],
+  "execution": "Manual CLI invocation of the production worker code against the dedicated preview database and live OpenAI API; not a deployed HTTP inference invocation.",
+  "accuracyMeasured": false,
+  "geographyFindings": [
+    {
+      "reviewId": "L01",
+      "fit": "builder",
+      "boardEligibility": "Excluded: Estonia and talent pool; fit prediction retained"
+    },
+    {
+      "reviewId": "L18",
+      "fit": "exclude",
+      "boardEligibility": "Excluded: Chile; fit prediction retained"
+    }
+  ],
+  "deployment": {
+    "url": "https://jobs-ai-builder-7kucw50qh-benshoemakerxyz-3472s-projects.vercel.app",
+    "status": "READY",
+    "protection": "vercel_authentication",
+    "exactTrustedOriginRegistered": true,
+    "anonymousAdminStatus": 303,
+    "signedInInferenceVerified": false
+  },
+  "verification": {
+    "boardTests": 84,
+    "typecheck": "passed",
+    "isolatedDatabaseScenarios": 12,
+    "deploymentBuild": "passed",
+    "publishedListings": 22,
+    "hiddenCandidateDrafts": 9
+  }
+}

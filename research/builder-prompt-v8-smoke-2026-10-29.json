@@ -1,0 +1,153 @@
+{
+  "status": "complete",
+  "version": "builder-fit-v8",
+  "manifestHash": "b88ef4c432d737a4ae8c6b0cab21575db4196a378001b2a2c25512b794324a32",
+  "cases": [
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "title": "IT Intern, AI and Operations",
+      "company": "azul",
+      "expected": "no",
+      "sourceHash": "833dfcc2fc80e9b440f7c7c97e337683e19de0b84dad0634c61a711b5f954810",
+      "labelEvidence": "explicit_current_source_review",
+      "requestHash": "6247d08396fbdce741c551c4de27d5f2d709d295dd01c2e7ca46d9e65aef8596",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    },
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "title": "Director, Data Engineering",
+      "company": "getsquire",
+      "expected": "no",
+      "sourceHash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "labelEvidence": "explicit_current_source_review",
+      "requestHash": "0c65ca7ea85bacfef551913afaa7acb7b50e82a0e66b8946e75be52bbd3f80c1",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "rillet"
+      ]
+    },
+    {
+      "key": "overjoy",
+      "title": "Product Manager",
+      "company": "Overjoy",
+      "expected": "yes",
+      "sourceHash": "132246f2897d84ca9e6a6d87af652176a64bfb0d16ddc3804aacfa2f851d31ac",
+      "labelEvidence": "historical_label_with_matching_archived_capture",
+      "requestHash": "cab0e77554337b8ab83e39d1f3fea5be04eee0059bbdda2dd56ce4d55faea54f",
+      "exampleIds": [
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    },
+    {
+      "key": "batch1_c08",
+      "title": "Product Builder Intern",
+      "company": "AwardSpring",
+      "expected": "yes",
+      "sourceHash": "da61f1995c99efb88632345f71f8609fac553b1b6b0471a51ab7e1ee034c803f",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "requestHash": "b2843c336ab6eb21752b6904a59b126bf0c1f602eae1fb111f81fcfd0d96b3fa",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    }
+  ],
+  "maximumNewUSD": 0.011496125,
+  "priorReservedUSD": 3.5862089,
+  "results": [
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The intern helps build skills and agents, but the role is framed as assisting under direction and supporting configuration, testing, and operations. It does not establish ownership of a scoped usable solution or its results and iteration in use."
+      }
+    },
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role primarily leads data strategy, architecture, and a multidisciplinary organization, with hands-on work focused on pipelines and select AI-enablement capabilities. It does not establish a central mandate to use AI to personally build and iterate on user- or business-facing solutions."
+      }
+    },
+    {
+      "key": "overjoy",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns the customer-to-outcome product loop and is explicitly responsible for prototyping and shipping real small fixes personally with Claude Code, then measuring results and feeding learning into the roadmap."
+      }
+    },
+    {
+      "key": "batch1_c08",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern ships scoped features into a production product with real users, uses agentic AI tooling from day one, and is expected to exercise judgment by pushing back on specs and iterating."
+      }
+    }
+  ],
+  "note": "One development smoke test on previously inspected cases, not a holdout benchmark. Original source-text caveats still apply to historical positives. Target employer examples excluded.",
+  "developmentDiagnosticMetrics": {
+    "records": 4,
+    "scored": 4,
+    "humanMaybe": 0,
+    "truePositive": 2,
+    "falsePositive": 0,
+    "falseNegative": 0,
+    "trueNegative": 2,
+    "abstentions": 0,
+    "operationalFailures": 0,
+    "precision": 1,
+    "recall": 1,
+    "semanticRecall": 1,
+    "decisionCoverage": 1,
+    "labelBasis": "Recorded user judgments, including historically paired positive expectations whose original full text is unverified",
+    "includedHistoricallyPaired": 2
+  },
+  "sourceVerifiedMetrics": {
+    "records": 4,
+    "scored": 2,
+    "sourceUnverified": 2,
+    "humanMaybe": 0,
+    "truePositive": 0,
+    "falsePositive": 0,
+    "falseNegative": 0,
+    "trueNegative": 2,
+    "abstentions": 0,
+    "operationalFailures": 0,
+    "precision": null,
+    "recall": null,
+    "semanticRecall": null,
+    "decisionCoverage": 1
+  },
+  "budget": {
+    "reserved_usd": 3.597705025,
+    "reported_usage_estimate_usd": 0.900037425
+  }
+}

@@ -1,0 +1,957 @@
+{
+  "method": "Full frozen v5 rerun, followed by v6 schema-only recovery of its one operational failure. Classification disagreements were not retried. This is not a fresh full v6 run or an unseen accuracy benchmark.",
+  "baseline": "luna-reviewed-regression-2026-10-29-v3",
+  "intermediateFullRun": "luna-reviewed-regression-2026-10-29-v4",
+  "lastFullRun": "luna-reviewed-regression-2026-10-29-v5",
+  "validationRecovery": "luna-reviewed-regression-2026-10-29-v6-validation-recovery",
+  "summary": {
+    "yes": {
+      "tested": 29,
+      "positive": 27,
+      "negative": 1,
+      "uncertain": 1,
+      "failed": 0
+    },
+    "no": {
+      "tested": 4,
+      "positive": 0,
+      "negative": 4,
+      "uncertain": 0,
+      "failed": 0
+    }
+  },
+  "baselineSummary": {
+    "yes": {
+      "tested": 29,
+      "positive": 18,
+      "negative": 0,
+      "uncertain": 5,
+      "failed": 6
+    },
+    "no": {
+      "tested": 4,
+      "positive": 0,
+      "negative": 0,
+      "uncertain": 4,
+      "failed": 0
+    }
+  },
+  "budget": {
+    "reserved_usd": 0.8394613,
+    "uncached_usage_estimate_usd": 0.1169146
+  },
+  "missing": [
+    {
+      "id": "medecision",
+      "company": "Medecision",
+      "title": "AI Product Builder",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "rivian",
+      "company": "Rivian",
+      "title": "AI Product Engineer, Facilities",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vailent",
+      "company": "Vailent/Vinmar",
+      "title": "Builder (Product Led)",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vanta",
+      "company": "Vanta",
+      "title": "Senior Product Builder, Organizational Intelligence",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    }
+  ],
+  "results": [
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "company": "getsquire",
+      "title": "Director, Data Engineering",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "software_engineering",
+          "engineering_leadership"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 8+ years in data or software engineering, including 4+ years managing engineers, plus advanced SQL/Python and hands-on data-platform experience.",
+        "product": "Partners on company strategy and data-platform investments, but product/problem ownership is not the central mandate.",
+        "operations": "Owns data-organization strategy, hiring, budget, architecture, and technical standards; enables company-wide data, automation, and AI use cases.",
+        "building": "A player-coach role with about half the time hands-on, including personally building pipelines and ambiguous technical work, alongside leading a 5+ person organization.",
+        "ai": "Sets AI/LLM enablement strategy and builds select capabilities, with LLM tooling experience required.",
+        "reason": "Despite substantial hands-on coding and AI-building, the overall mandate is a conventional engineering leadership role: managing and growing a multidisciplinary technical organization, setting its direction, and owning its strategy and budget. The personal building is part of that director/player-coach remit, not the primary problem-to-solution ownership mandate sought here.",
+        "evidence": [
+          " We're hiring a Director, Data Engineering to build and lead our Data organization through a player-coach model, spending approximately half your time hands-on in the code and the other half developing engineers, setting technical direction, and owning the",
+          " Build, structure, and lead a growing Data organization of 5+ across Data Engineering, ML Engineering, and Analytics\n",
+          " Own headcount planning, hiring strategy, and budget for the Data organization\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "company": "azul",
+      "title": "IT Intern, AI and Operations",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "it_operations",
+          "security_operations"
+        ],
+        "engineering": "unclear",
+        "qualifications": "Undergraduate student in engineering, IT, physics, or a related field; minimum 3.4 GPA. Strong organization, prioritization, and communication skills.",
+        "product": "No broader product or user-problem ownership is described; the work is scoped to IT and security workflows.",
+        "operations": "Supports security triage, helpdesk and device/access tasks, and internal documentation under established playbooks and team direction.",
+        "building": "Builds and tests Claude skills and assists with scoping and iterating on agents, but these are adjunct projects within an IT/security support internship.",
+        "ai": "Claude skills, MCP connectors, and agents are used to automate repetitive IT and security tasks.",
+        "reason": "The primary mandate is an intern role supporting IT and security operations, including helpdesk and security tasks under direction. AI-agent and skill creation is real, but presented as a component of that support work rather than a central, independently owned problem-to-working-solution mandate.",
+        "evidence": [
+          "\n About You \nUnder the direction of our VP of IT and Security, our Intern will add value and contribute to key IT and Security projects.",
+          " Claude Skill Development Design, build, and test Claude skills (SKILL.md) for IT and Security workflows, including writing skill descriptions, step-by-step instructions, and prompt logic that integrates with Azul's connected MCP servers.",
+          "\n IT Operations and Helpdesk Assistance Assist with hardware procurement tracking, onboarding/offboarding tasks, Jamf device management, and SaaS access requests under the direction of the IT Operations team."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "company": "cssmerge",
+      "title": "Product Manager - Robotic Kitchen",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product"
+        ],
+        "engineering": "unclear",
+        "qualifications": "Seeks 5\u20138 years\u2019 experience, including 4+ years owning B2B or operational products end to end; frontline-team product experience and food, logistics, or manufacturing background are relevant.",
+        "product": "Owns KitchenOS strategy, roadmap, priorities, requirements, and product lifecycle, guided by operator research, operational data, and measurable outcomes.",
+        "operations": "Works with kitchen teams and tests workflows in real kitchens; field pilots, rollout, training, and adoption are part of delivery.",
+        "building": "AI-powered prototyping and MVPs are required to test concepts with users and challenge assumptions. The broader mandate centers on product definition, requirements, coordination, QA, and rollout\u2014not personally implementing working product features.",
+        "ai": "AI tools are explicitly used to build prototypes and MVPs for user testing; no direct AI-assisted implementation of shipped features is established.",
+        "reason": "This is a conventional product-management mandate: roadmap and requirements ownership, cross-functional delivery coordination, and launch readiness. AI-powered prototyping is explicit and meaningful, but the posting does not establish personal implementation as central to the overall role; prototypes support learning while delivery is coordinated across teams.",
+        "evidence": [
+          " Lead the product lifecycle from discovery through QA, rollout and iteration, while coordinating delivery across the KitchenOS roadmap.",
+          "\n Lead delivery and rollout: write clear requirements, test in real kitchens, and own launch readiness\u2014from QA and field pilots to documentation, training, and iteration.",
+          " You rapidly build prototypes and MVPs with AI tools to test concepts with real users, challenge assumptions, and turn what you learn into better products."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "company": "opensesame",
+      "title": "Systems Administrator ",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "it_administration",
+          "internal_operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "The posting does not specify a conventional software-engineering career requirement; it emphasizes administration of internal IT platforms, access controls, endpoint management, and security practices.",
+        "product": "No broader product mandate is described; the work supports employees and internal systems.",
+        "operations": "Owns internal IT support, systems administration, security, and process improvements across the Information Systems environment.",
+        "building": "Automation and integrations are part of the role, including implementing improvements to manual internal workflows, but they sit alongside a primary workload of tickets, tool administration, and security operations.",
+        "ai": "AI tools are used across the company, and the role includes improving secure, reliable internal AI workflows and identifying an AI-driven process improvement.",
+        "reason": "This is primarily an internal IT administration and support role: it carries a full ticket workload, manages enterprise tools and access, and handles security and compliance. Although it includes hands-on automation and AI-workflow improvements, those are adjuncts to the IT mandate rather than central ownership of building solutions around a defined problem.",
+        "evidence": [
+          "\n About the Role \n The Systems Administrator supports and improves OpenSesame\u2019s internal IT systems, resolving escalated issues, managing core tools, and driving automation and security initiatives.",
+          "\n Within 90 Days \n Carry a full ticket and project workload equivalent to team peers, delivering consistent and timely resolutions.",
+          "\n Identify at least two manual workflows for automation, and lead their technical evaluation and implementation."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "alaffia",
+      "company": "Alaffia",
+      "title": "AI Transformation Lead",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "ai_automation"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks an AI-native builder with demonstrated experience using AI to build and ship solutions, plus fluency with low-code/no-code and developer tools, SQL/BI, APIs, scripting, and integrations. Experience may come from product, operations, solutions engineering, technical program management, or similar work; a full-stack engineering background is not required.",
+        "product": "Partners across internal teams to identify and prioritize high-impact workflow problems, translate them into solutions, and measure their business impact.",
+        "operations": "Leads organization-wide AI transformation from workflow diagnosis and prioritization through deployment, adoption, measurement, and iteration; establishes reusable foundations and enables teams to sustain improvements.",
+        "building": "Personally designs and deploys AI agents, apps, and workflows with code and no-code tools, owning solutions from prototype to production without waiting for a dedicated engineering team.",
+        "ai": "AI is central: uses AI-native development tools and builds AI-powered agents, apps, workflows, and reusable platform foundations, with governance for regulated healthcare operations.",
+        "reason": "The mandate combines meaningful problem selection across teams with direct AI-enabled building and end-to-end ownership through production. It also owns adoption, impact measurement, and reusable operational foundations, making this an operations-focused builder role rather than internal support or coordination.",
+        "evidence": [
+          " Serve as a trusted internal partner to every team at Alaffia: proactively auditing their workflows to surface the highest-impact AI and automation opportunities.",
+          "\n Build & Ship \n Design and deploy AI-powered agents, apps, and workflows using a mix of code and no-code tools.",
+          "\n Own solutions end-to-end,\u00a0 from prototype to production, without waiting for a dedicated engineering team."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "alt",
+      "company": "Alt",
+      "title": "Product Builder, Growth",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_builder",
+        "focus": [
+          "growth",
+          "software_engineering",
+          "product"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires production-code ownership: open and review PRs, handle on-call consequences, and work across frontend, API, queries, and jobs. Also seeks growth/marketplace ownership, strong analytics and experimentation skills, and prior AI building; years are secondary to demonstrated work.",
+        "product": "Owns seller submission, buyer search/discovery, experimentation, and growth outcomes end to end, making bets based on funnel data and test results.",
+        "operations": "Not primarily an internal-operations mandate; work targets marketplace growth and user conversion.",
+        "building": "Personally finds funnel problems, writes and ships code, builds experimentation infrastructure and product experiences, and iterates based on measured results.",
+        "ai": "AI building is explicit: create an agent for experiment readouts, run model-driven search and reactivation, build an MCP server, and use AI coding tools to build and test flows with dealers.",
+        "reason": "Clear engineering-focused builder role: personal production implementation is central, with ownership of growth problems and measurable outcomes through experimentation. AI-enabled building is explicit, and solutions are shipped and tested with real users. The posting also requires substantial software-engineering practice; that is a separate qualification gate, not a role-fit veto.",
+        "evidence": [
+          " You own the seller submission funnel, buyer search and discovery, and the experimentation infrastructure underneath both, and you own them the whole way: you find the drop-off, you write the code, you ship it behind a flag, you read the result, you keep it or",
+          " Find the drop-offs across onboarding, Snap to Sell, quote acceptance, vault intake, and resubmission, then ship the fixes yourself.",
+          " Concretely, in this role:\n Build the experiment readout as an agent : it pulls the test, checks the guardrail metrics, flags the confound, and writes the ship-or-kill recommendation you then argue with\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "amperity",
+      "company": "Amperity",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires hands-on experience building agentic systems, using agent frameworks, tool use, and context engineering. The posting does not require a prior software-engineering career; engineering owns production architecture.",
+        "product": "Owns high-impact customer outcomes and product direction, using customer conversations, independent judgment, and adoption/value measures to shape what gets built and prioritized.",
+        "operations": "Works across customer workflows and cross-platform outcomes, but the mandate is primarily product-focused rather than internal operations.",
+        "building": "Personally prototypes with AI tools and low-code integrations, tests ideas in the codebase, and validates them with customers. Partners with engineering for production architecture and outcomes.",
+        "ai": "Shapes agentic product strategy and chooses between agents, workflows, and new interactions; builds and tests agentic systems and works on context engineering and trustworthy AI.",
+        "reason": "The role combines meaningful customer and product judgment with explicit personal hands-on work building agentic systems, rapid AI-assisted prototyping, and testing ideas in the codebase. It owns outcomes through customer adoption and value, while engineering owns production architecture; that boundary does not negate the builder mandate.",
+        "evidence": [
+          "\n You're a systems thinker who runs toward the most ambiguous problems \u2014 figuring out what's worth building, why, and for whom, often across more than one project.",
+          " You bring real technical depth, including direct, hands-on experience building agentic systems yourself \u2014 that's what lets you help shape and elevate Amperity's own agentic strategy, not just advise on it from the sidelines.",
+          "\n Technical Fluency: You prototype quickly using AI tools and low-code integrations, and can test ideas directly in a codebase."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "apollo",
+      "company": "Apollo",
+      "title": "Principal Product Builder, Data",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product",
+          "data"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 7+ years of product management experience owning complex data products, plus strong data judgment, compliance fluency, customer empathy, and technical fluency across architecture, APIs, reliability, and data models. These are qualifications, separate from role fit.",
+        "product": "Owns the data catalog\u2019s vision, strategy, roadmap, prioritization, metrics, and customer outcomes; works across engineering, design, data, and GTM.",
+        "operations": "Owns data sourcing strategy and vendor evaluation, including build-versus-buy decisions and ongoing partnerships.",
+        "building": "AI-assisted prototyping is explicitly expected to validate ideas before scaling investment. The posting does not establish personal implementation of working product features as central; engineering partners on architecture and delivery.",
+        "ai": "Names Claude Code, Cursor, Lovable, Figma AI, and similar AI-native workflows for prototyping and validation.",
+        "reason": "This is principally a senior product-management mandate: setting strategy, writing PRDs and tradeoff documents, prioritizing with teams, and guiding delivery. AI-native prototyping and a request for examples of things built or shipped are positive signals, but the stated personal making is specifically for validating ideas before scaling investment. The posting does not establish that personally implementing working solutions is central to the overall role.",
+        "evidence": [
+          " Prototype quickly using tools like Claude Code, Cursor, Lovable, Figma AI, and other AI-native workflows to validate ideas before scaling investment\n",
+          " Raise the bar for product clarity by writing crisp strategy docs, PRDs, launch plans, and tradeoff memos that make the next best action obvious\n",
+          " AI-native builder. You use tools like Claude Code, Cursor, Lovable, Figma AI, or similar to prototype, validate, and accelerate execution."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "axiad",
+      "company": "Axiad",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires an active, recent building practice from prototype to pull request, AI-native fluency with LLMs and agentic workflows, and the ability to move between product strategy and code. Identity-security and post-quantum literacy are also expected; PKI depth is a bonus.",
+        "product": "Owns product management across roadmap, discovery, prioritization, outbound positioning, and UX. Shapes solution decisions and feeds learning from building and selling into shared product strategy.",
+        "operations": "Not primarily an operations role; the mandate includes challenging legacy processes and using AI or agents to automate work that should not require humans.",
+        "building": "Personally chooses high-leverage moments to create prototypes, UX, and working software, sometimes carrying work through delivery and sometimes handing off the last mile. Building is an ongoing strategic practice, not an occasional prototype exercise.",
+        "ai": "AI and agents are intended to multiply the builder\u2019s work across the product discipline, including agentic workflows, design, code generation, and process automation.",
+        "reason": "A clear product-builder mandate: the role combines product and UX ownership with regular personal creation of working software, deliberate AI-native building, and accountability for outcomes. It explicitly connects discovery and customer learning to shared strategy and market position. Its substantial technical and domain expectations do not negate role fit.",
+        "evidence": [
+          " Prototypes, UX, working software: you pick the moments where making the thing is the highest-leverage move and take them without asking \u2014 handing the last mile to the team when that's the right call, carrying it yourself when it isn't.",
+          "\u00a0\n Drive inbound: discovery, customer interviews, ruthless prioritization.",
+          "\u00a0\n An active, recent building practice \u2014 prototype to pull request \u2014 deployed by strategic choice, not by exception or emergency."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c01",
+      "company": "ITS Logistics",
+      "title": "AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires production experience building with LLMs, agents, and retrieval; enterprise-grade coding using AI; strong CS foundation or equivalent; and sound judgment on architecture, testing, and AI security. Logistics experience is preferred, not required.",
+        "product": "Owns enterprise AI strategy, prioritizes business problems, defines solutions, and makes defensible value-based tradeoffs in close partnership with operational teams.",
+        "operations": "Works directly with floor teams, operations, finance, and support to identify real workflows; owns ROI baselines, adoption, deployment, and measured business outcomes.",
+        "building": "Personally takes AI solutions from business problem through implementation and production deployment. Expected to ship immediately and own the result end to end.",
+        "ai": "Builds production systems with LLMs, agents, and retrieval, using AI to write enterprise-grade code and validating generated work through testing. Applies enterprise architecture and security from the outset.",
+        "reason": "This is a clear operations-focused builder mandate: the role owns problem selection and ROI, personally builds AI solutions, and is accountable for deployment, adoption, and measured production results. Strong software-engineering qualifications are required, but they do not change the role fit.",
+        "evidence": [
+          " This is a rare seat. You own AI solutions end to end at a $6B logistics company, from the business problem through to something running in production that people depend on.",
+          "\n\u2022 Own the ROI case. Define the metric before you start, baseline it, prove the return after, and kill things that do not earn their place.",
+          "\n\u2022 You write enterprise-grade code using AI and have a process for doing it well."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v6-validation-recovery"
+    },
+    {
+      "key": "batch1_c03",
+      "company": "OpenArt",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "stretch",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks a student or similarly situated candidate with a technical background, product taste, hands-on use of creative AI tools, and engineering skills such as Python, JavaScript/TypeScript, or API work. A prior app, tool, side project, or design build is expected; no specific software-engineering career history is required.",
+        "product": "Talks with users daily, uses their needs to shape feature priorities, judges emerging AI capabilities, and helps decide what OpenArt should adopt or build.",
+        "operations": "No substantial operational process ownership is described; some collaboration with Growth and Community supports creator programs and showcases.",
+        "building": "Translates new capabilities into feature ideas and prototypes, then works with designers and engineers to ship them. The posting does not clearly establish personal implementation as a central job responsibility.",
+        "ai": "Tracks new AI models and tools and evaluates how they could become creative product features. It does not explicitly describe AI-assisted coding or personally implementing AI-powered features.",
+        "reason": "Strong product judgment and user feedback responsibilities, plus technical skills and prior building expectations. However, the role describes prototyping ideas and partnering with engineers to ship, without clearly making the intern's own implementation of working solutions central to the job. That leaves a material gap for a builder mandate.",
+        "evidence": [
+          "\n Turn ideas into features: translate new capabilities into feature ideas, prototype them, and work with designers and engineers to ship them.",
+          " Talk with them every day (interviews, Discord, social), understand what they need, and let that shape every feature you push for.",
+          "\n A builder with product taste: you have engineering skills (e.g., Python, JavaScript/TypeScript, working with APIs), you've built or shipped something (an app, side project, tool or design), and you can explain the choices behind it."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c07",
+      "company": "RK Logistics Group",
+      "title": "AI Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "internal_tools",
+          "ai_automation"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires demonstrated delivery of tools or systems with measurable business impact and experience using AI to automate or accelerate work. Operations, product, consulting, or internal-tools backgrounds are preferred; familiarity with APIs and automation platforms is useful.",
+        "product": "Applies business judgment to identify opportunities and translate ambiguous operational problems into system designs, then iterates with users and tracks adoption and impact.",
+        "operations": "Works with leaders and operators across operating companies to find opportunities to reduce cost, increase revenue, or save time; owns delivery and measurement of the resulting systems.",
+        "building": "Personally designs, deploys, and iterates working internal dashboards, workflows, automations, and agents using AI tools, integrations, and low-code platforms, from idea through use.",
+        "ai": "AI-first build methods are central: uses AI tools as the primary execution engine to assemble and operate automated systems, then improves them based on real usage and feedback.",
+        "reason": "Clear operations-builder mandate: the role turns ambiguous business problems into deployed AI-enabled systems, makes solution tradeoffs, and owns adoption and measurable business outcomes. It explicitly prioritizes hands-on AI-first implementation over traditional software engineering; onsite location and compensation do not change role fit.",
+        "evidence": [
+          "\n The AI Product Builder is responsible for turning unclear business ideas into live, automated business systems by leveraging existing AI tools, platforms, and integrations.",
+          " You will work directly with leadership and operators across multiple operating companies to identify opportunities, design solutions, and ship usable tools quickly.",
+          " Design and deploy internal dashboards, workflows, automations, and AI agents using AI-first build methods\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c08",
+      "company": "AwardSpring",
+      "title": "Product Builder Intern",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_blend",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Open to engineering, design, or product-management builders; requires prior experience shipping something real with AI tools and fluency with agentic development workflows. Student or recent-graduate status is required; a particular stack or engineering career path is not.",
+        "product": "Contributes product judgment by pushing back on specs and iterating on real, scoped work; the internship\u2019s emphasis can be shaped around the candidate\u2019s discipline.",
+        "operations": "Not an operations-focused mandate.",
+        "building": "Personally ships well-scoped features into a production codebase with real users, using agentic tools and senior review. The team explicitly expects every individual contributor to ship end-to-end.",
+        "ai": "AI-native development is central: AI-generated code and agentic tooling are part of everyday feature delivery, and prior hands-on building with tools such as Claude Code or Cursor is expected.",
+        "reason": "A clear hands-on builder role: interns ship production work using agentic tools, while being encouraged to challenge specs and iterate rather than wait for perfect direction. The internship is scoped and reviewed, but personal implementation is central, not merely prototyping or coordinating delivery.",
+        "evidence": [
+          " Nearly 100% of the code in our product is AI-generated, and every IC (engineer, PM, designer) ships features end-to-end with agentic tooling.",
+          "\n What you'll do\n Ship real, well-scoped work into a production codebase with actual users\n",
+          " Push back when a spec does not make sense\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c20",
+      "company": "TRM Labs",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering",
+          "forward_deployed",
+          "product_feedback"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires strong Python and/or Node.js/TypeScript programming, production AWS experience, hands-on Kubernetes, and database fluency. This is a generalist engineering role spanning application code, infrastructure, and data systems.",
+        "product": "Works directly with mission users to translate needs into capabilities, then carries field learning back to product and engineering teams and the roadmap.",
+        "operations": "Owns deployment and operation of TRM\u2019s platform in customer environments, including cloud and air-gapped settings, and is accountable for outcomes and urgent issue resolution.",
+        "building": "Personally builds working software, integrations, data pipelines, and prototypes; ownership spans from understanding the mission need through delivery and iteration.",
+        "ai": "Coding agents and LLM tooling are part of the expected shipping workflow; AI fluency is also evaluated. Building agentic systems is a bonus, not a requirement.",
+        "reason": "A hands-on engineering mandate, but not merely customer deployment: the role turns mission-user needs into working software, owns outcomes, and feeds learning back into the product roadmap. AI-assisted development is explicit. The core work requires substantial software-engineering experience.",
+        "evidence": [
+          "\n Sit directly with mission users, translate what they need into working software, and build it: integrations, data pipelines, and prototypes that prove out a capability before it's a product.",
+          "\n Act as the technical bridge back to TRM's product and engineering teams, carrying mission context into the roadmap.",
+          "\n What we\u2019re looking for: \n Strong programming ability in Python and/or Node.js/TypeScript, with real fluency developing with AI \u2014 coding agents and LLM tooling are part of how you ship, and you have judgment about where they help and where they don't."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c27",
+      "company": "OpenSesame",
+      "title": "AI Product Builder Intern",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "The posting emphasizes demonstrated AI building, but does not specify a prior software-engineering career requirement.",
+        "product": "Contributes to product-hypothesis incubation cycles and user tests; findings inform go, pivot, or kill decisions.",
+        "operations": "Builds an agent to automate a recurring lab task and improves the lab\u2019s code factory or process.",
+        "building": "Personally builds and tests working features or tools, deploys them for use, and contributes through full incubation cycles.",
+        "ai": "Uses AI coding tools and agents to build software, and builds and maintains an AI agent.",
+        "reason": "This internship makes hands-on AI-assisted building central: the intern ships deployed software, tests it with users, and contributes evidence to product decisions. The scope is supervised and part-time, but that does not diminish the clear builder mandate.",
+        "evidence": [
+          " About the Role \n OpenSesame's AI Innovation Lab runs short incubation cycles that turn product\u00a0hypotheses into deployed software and real customer evidence.",
+          " As an AI Product Builder\u00a0Intern, you'll work alongside the lab team using AI coding tools and agents to build, test,\u00a0and learn fast.",
+          " Ship one working feature or tool using AI coding tools, deployed and in use by the lab team."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c29",
+      "company": "Sekai",
+      "title": "AI Product Engineer",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 2+ years in software/product engineering or a comparable technical role, cross-stack comfort, and familiarity with AI coding tools; CS background is only a plus.",
+        "product": "Builds user-facing consumer features and contributes to product direction, prioritization, and UX decisions with Product.",
+        "operations": "Owns production issues and fixes them with attention to user impact, but this is secondary to feature development.",
+        "building": "End-to-end feature shipping is the primary work, with ownership through debugging and iteration.",
+        "ai": "AI is core to the workflow: used aggressively for development, debugging, prototyping, and iteration.",
+        "reason": "Clear engineering/product builder mandate: most work is personally shipping product features end-to-end, with meaningful input into product and UX decisions and explicit AI-native development expectations. Production issue ownership complements rather than replaces feature building.",
+        "evidence": [
+          "\n Responsibilities\n Build and ship product features end-to-end, with most of the role focused on new feature development\n",
+          " Partner closely with Product to turn ideas into shipped experiences and contribute to product direction and user experience decisions\n",
+          " Use AI aggressively in day-to-day development, debugging, prototyping, and iteration\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c46",
+      "company": "Faros",
+      "title": "Product Manager, AI Native Initiatives",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "product_builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 6+ years in product management, AI/ML product experience, and either prior engineering experience or deeply technical product work. Expects code-reading, system-design and API judgment, plus hands-on LLM experience; engineering employment is not mandatory.",
+        "product": "Owns a new AI-native product area, forms hypotheses in an emerging market, and shapes product decisions through customer feedback and substantial domain ownership.",
+        "operations": "Not primarily an internal operations role; the mandate centers on an AI-native product line and customer and business outcomes.",
+        "building": "The PM is explicitly expected to prototype, write, ship, dogfood, and iterate working product with designers and engineers, then put it in front of customers.",
+        "ai": "Uses LLM APIs, models, tools, and evaluations in product work; modern AI tools are expected to multiply personal output.",
+        "reason": "Clear product-builder mandate: the role owns an ambiguous AI product problem, personally prototypes and ships solutions, and learns from customers while being measured on product and business outcomes. Strong technical expectations are a separate qualification gate, not a fit veto.",
+        "evidence": [
+          " You will form strong hypotheses about where the market is going, collaborate with designers and engineers to turn those hypotheses into working product, put it in front of customers, and learn quickly enough to stay ahead of a rapidly moving field.",
+          "\n Ownership over process. We hand PMs problem spaces, not tasks.",
+          "\n Player-Builder Mentality: You do not want just to direct the work; you want to be in it."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c50",
+      "company": "Babylist",
+      "title": "Staff Product Designer (AI Builder)",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "design"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires a portfolio of shipped consumer product work across web and native mobile, strong research and design judgment, and the ability to write production frontend code. The posting does not require a prior software-engineering career.",
+        "product": "Owns a major customer journey end to end, sets its design vision, and uses research and feedback to shape and improve the experience.",
+        "operations": "Not primarily an operations role; the remit includes establishing AI-enabled design workflows and helping the wider team work more effectively.",
+        "building": "Personally moves from concepts to interactive prototypes and implements, refines, and polishes production experiences in the codebase.",
+        "ai": "AI-native building is an explicit expectation: use AI in research, prototyping, and production-code workflows, then teach the team what works.",
+        "reason": "This is a product-design builder mandate, not a conventional design role that hands mockups to engineers. The designer owns a major user experience and its outcomes, personally uses AI-native workflows to prototype and write production frontend code, and iterates based on user and metric feedback. The required coding is a technical-fluency gate, not evidence that prior SWE employment is required.",
+        "evidence": [
+          " Own a customer journey or major product experience end-to-end .",
+          " Show your team what's possible by doing it yourself leveraging AI - then share and teach what\u2019s working.",
+          " Work in the codebase to implement, refine, and polish the experiences you design."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "batch1_c52",
+      "company": "Faros",
+      "title": "AI-Native Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering",
+          "product",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Values evidence of building over credentials; likely signals include strong software fundamentals, independently learning technologies, problem-solving in ambiguity, and moving quickly from idea to implementation. AI-assisted development experience is expected as one of several likely qualifications, not a specified prior SWE career requirement.",
+        "product": "Identifies opportunities using evidence about engineering workflows and turns them into customer-facing capabilities that improve engineering outcomes; helps shape how engineering organizations use AI.",
+        "operations": "Builds reusable intelligence, context, automation, and agent workflows for engineering planning, delivery, quality, reliability, and decision-making.",
+        "building": "Direct creation is central: builds products, agents, workflows, evaluation systems, data systems, and reusable platform capabilities, rapidly testing ideas and turning promising experiments into customer-facing capabilities.",
+        "ai": "Explicitly AI-native work: uses AI to accelerate development and experiments with models, tools, and techniques to build agents, context and retrieval systems, and evaluation frameworks.",
+        "reason": "Clear builder mandate, not a traditional SWE role: the person identifies opportunities, exercises judgment, rapidly tests ideas, and personally builds AI-enabled capabilities through customer-facing delivery. The role spans product, engineering, and operational workflows; strong engineering fundamentals are sought, but prior SWE employment is not stated as a requirement.",
+        "evidence": [
+          "\n As an AI-Native Builder, you will identify opportunities, rapidly test ideas, build products, automate workflows, create capabilities, design evaluation systems, and help define how engineering itself evolves in the age of AI.",
+          " Rapidly experiment with emerging models, tools, and techniques, turning promising ideas into customer-facing capabilities\n",
+          " Experience using AI to accelerate development, research, analysis, or decision-making\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "earnin",
+      "company": "EarnIn",
+      "title": "Senior Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_blend",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 4+ years in product management or engineering, a relevant technical degree or equivalent experience, hands-on AI-native product-development lifecycle experience, and comfort working across the stack when needed. Prior software-engineering employment is not explicitly required.",
+        "product": "Own technical product strategy, define what to build and why, use community research and data to prioritize opportunities, and lead new initiatives from idea to launch while monitoring outcomes.",
+        "operations": "Improve product-development workflows by replacing manual friction with agentic processes and enabling teams to move governed AI work efficiently from experiment toward production.",
+        "building": "Build evaluation pipelines, automated PR hygiene, deployment gates, reusable libraries, templates, and reference implementations; help experiments become reusable production-ready work.",
+        "ai": "AI-native development is core to how the company designs, builds, and ships. The role builds AI quality and governance mechanisms and improves workflows with agentic automation.",
+        "reason": "This is a product-and-engineering blend: the role owns product strategy and user-informed opportunities while also building concrete AI-development infrastructure and reusable implementations that help work reach production. Its technical and cross-stack expectations indicate fluency, not an explicit requirement for a software-engineering career.",
+        "evidence": [
+          " Define what we build and why, working directly with engineers on architecture, tradeoffs, and AI-enabled product capabilities.",
+          " Build evaluation pipelines, automated PR hygiene, deployment gating, and generation-to-merge metrics that make governed AI fast, not slow.",
+          " Stay close to our community. Use user research and data analytics to identify and prioritize product opportunities, and run features and experiments to refine our products quickly."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "exiger",
+      "company": "Exiger",
+      "title": "AI Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Early-career role for someone with strong technical foundations who can code in Python, JavaScript, or TypeScript and has familiarity with APIs, data, testing, and debugging. Practical experience and shipped work matter more than a specific degree or tenure; typical experience is 1\u20133 years.",
+        "product": "Turns customer and business problems into product experiences, speaks directly with customers and internal users, and uses feedback and product data to decide what to build, improve, or stop.",
+        "operations": "Builds automations and workflows that make complex processes faster, easier, or more accurate; operations improvement is part of the work, not its sole focus.",
+        "building": "Personally builds AI applications, agents, automations, evaluations, prototypes, and production features; tests them with users, iterates, and progresses toward independently leading defined product problems.",
+        "ai": "Directly uses LLMs, agents, APIs, data, code, and low-code tools to build and evaluate AI-powered features; AI also supports research, coding, testing, and iteration.",
+        "reason": "A clear early-career product-and-engineering builder mandate: the role personally converts customer and business problems into working AI solutions, tests and iterates with users, and contributes to production features. Customer discovery and product-data feedback inform what to build, while engineering review is compatible with direct ownership. Coding is an explicit requirement, separate from the strong overall role fit.",
+        "evidence": [
+          "\n What You'll Do:\n Turn customer and business problems into prototypes, experiments, automations, and live product features.",
+          "\n Rapidly prototype ideas, put them in front of users, learn from their reactions, and iterate.",
+          "\n Talk directly with customers and internal users to understand how they work and identify opportunities to make their jobs easier."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "figma_ai_insights",
+      "company": "Figma",
+      "title": "Product Builder, AI Insights",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "design"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks exceptional UX/product design craft and deep AI fluency, with demonstrated hands-on experience shipping impactful AI-built products. Engineering career history is not specified as required.",
+        "product": "Identifies employee needs for customer insight, chooses meaningful opportunities, shapes intuitive experiences, and measures whether products improve customer understanding and decisions.",
+        "operations": "Builds internal products that help employees find customer evidence and understand customer needs; owns adoption and continued use.",
+        "building": "Personally uses AI tools to build and ship internal products from concept through launch, iterating from feedback and actual use and taking responsibility for quality and adoption.",
+        "ai": "Connects models, data, and tools into sophisticated workflows; builds evaluations, troubleshoots failures, and improves AI behavior and evidence quality.",
+        "reason": "The mandate clearly centers on personally making AI-enabled products: the builder identifies meaningful problems, exercises product and design judgment, ships working solutions, iterates with users, and owns adoption and impact. The stated bar is substantial, but prior software-engineering employment is not required.",
+        "evidence": [
+          " You own products from the first idea through design, building, evaluation, and adoption.",
+          " Use AI tools to build and ship internal products.",
+          " Build and shipped impactful products by turning ambitious ideas into working solutions using AI tools, demonstrating significant hands-on contributions, strong execution, and sustained value beyond initial prototypes\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "g2",
+      "company": "G2",
+      "title": "Senior AI Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 6+ years spanning product, software engineering, and/or design, with strength in at least two; AI product shipping, hands-on AI-tool use, and ability to read/write code and partner closely with engineers. These are qualifications, not a fit veto.",
+        "product": "Owns a product area, defines what to pursue from customer insight, shapes the experience and roadmap, and balances user needs with business outcomes and feasibility.",
+        "operations": "Not an operations-centered mandate; work is focused on product creation for external users.",
+        "building": "Directly carries ideas through to working products: production code, low-code/AI prototypes, and hands-on iteration with engineering partners, without default handoffs.",
+        "ai": "Uses AI coding tools in the building workflow and designs AI-powered experiences, including LLMs, agents, and AI workflows.",
+        "reason": "Clear product-focused builder role: independently owns an area, interprets customer problems, makes product and design decisions, and personally builds and ships AI-enabled products to external users. AI-assisted building is explicit and central; engineering collaboration and technical qualifications do not change the fit.",
+        "evidence": [
+          " As a Senior AI Product Builder, you'll be one of the first people in this model \u2014 taking ownership of a product area, shaping what the experience should be, and building it directly based on what you hear from real customers.",
+          "\nThis is a highly independent role: you'll interpret open-ended problems, decide what's worth pursuing, and carry it straight through to a working product, rather than routing it through separate product, design, and engineering steps.",
+          "\n Building & Shipping \n Write production code, prototype in a low-code/AI environment, or get deep in the weeds with engineering partners\u2014you are hands-on."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "gitlab",
+      "company": "GitLab",
+      "title": "AI Transformation Owner, Product & Design",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "product"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires deep knowledge of a function\u2019s operations, strategic prioritization, outcome measurement, influence, and experience building peer networks. Technical bar is explicitly non-SWE: the person should build and troubleshoot working agents, skills, and MCP connections, with no need to write production code.",
+        "product": "Owns the function\u2019s AI strategy and prioritization: map workflows, identify high-impact constraints, choose what to build, define success metrics, and drive adoption and iteration.",
+        "operations": "Embedded in a business function, the role reshapes how work gets done, coordinates change and champions, and is accountable for measurable operational outcomes and agent performance.",
+        "building": "Personally builds no-code/low-code agents, configures tools and skills, and iterates from working prototypes through evaluation, rollout, and ongoing performance ownership, partnering with an AI Engineer for production delivery.",
+        "ai": "AI is central: the owner builds and configures agents, refines their behavior, connects business systems, evaluates performance, and adapts solutions as models and tools change.",
+        "reason": "This is a clear operations-focused builder mandate, not just AI strategy or coordination. The owner identifies and prioritizes function-level problems, personally builds working AI agents and related configurations, then owns their evaluation, adoption, iteration, and outcomes. Production-grade engineering is supplied in partnership; prior SWE experience is explicitly unnecessary.",
+        "evidence": [
+          " You are the person responsible for identifying where AI can fundamentally change how your org operates, partnering with your Executive Sponsor to align on the biggest challenges, and driving measurable outcomes against them.",
+          " You'll manage the full lifecycle: understanding how work flows today, deciding where AI should reshape it, prioritizing what gets built and in what order, and ensuring what ships actually gets adopted.",
+          " Build AI agents using no-code and low-code platforms (e.g."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "indeed",
+      "company": "Indeed Flex",
+      "title": "Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "operations",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires experience building and shipping software and using AI coding tools to design, build, debug, and ship production code; API, events, and CRM implementation skills are expected. A CS background is a nice-to-have, not a stated requirement.",
+        "product": "Owns worker-side messaging experiences, frames problems, designs flows, and contributes improvements to the messaging roadmap based on discovery and user feedback.",
+        "operations": "Works with Operations and CRM to turn workflow needs into software, with responsibility for reliable worker communications and outcomes tied to supply performance.",
+        "building": "Personally prototypes and implements messaging and Braze integration changes, ships production code, and follows up after launch.",
+        "ai": "Explicitly uses AI coding tools to move from idea through prototype to production implementation.",
+        "reason": "This is a hands-on builder mandate: the role owns defined worker-messaging problems and solution design, investigates needs with Operations and CRM, personally uses AI tools to implement changes, and ships and monitors production code. Engineering collaboration and senior guidance do not displace direct ownership.",
+        "evidence": [
+          "\n Own day-to-day Braze integration work: frame the problem, design the flow, ship the change, and follow up after launch.",
+          "\n Use AI tools to go from idea to production quickly: prototype the flow, then implement and ship it.",
+          "\n You use AI coding tools (Cursor, Claude Code, Codex, or similar) to go from idea to prototype to production code yourself, and can walk through how you used those tools to design, build, debug, and ship."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "mangoapps",
+      "company": "MangoApps",
+      "title": "Product Manager, AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "The role calls for product-management fundamentals, customer discovery, and judgment about when to build directly versus seek engineering, design, or security support. It does not state a prior software-engineering career requirement.",
+        "product": "Owns features from discovery through launch and adoption; uses customer needs, feedback, usage, and business priorities to choose what to build, define outcomes, and guide ongoing improvement.",
+        "operations": "Not primarily an operations role; internal tools and demo environments are supporting responsibilities.",
+        "building": "Personally uses AI-assisted development tools to create functional prototypes, improve existing experiences, and make smaller production changes; reviews and tests the work and remains accountable for customer outcomes.",
+        "ai": "Claude Code and other AI-assisted development tools are explicitly used to build and iterate on working solutions, including production changes.",
+        "reason": "This is a product-led builder mandate, not merely a PM role that prototypes to communicate requirements: hands-on AI-assisted building is explicit, and the PM owns customer problems, solution choices, delivery, adoption, and results. Larger work is collaborative, but that does not displace the direct-building responsibility.",
+        "evidence": [
+          "\n Use customer feedback, product usage, competitive research, and business priorities to determine what should be built or improved.",
+          "\n Use AI-assisted development tools to create functional prototypes, product improvements, internal tools, and smaller production changes.",
+          "\n Stay accountable for the customer outcome, not just the requirements or initial release."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "oath",
+      "company": "Oath",
+      "title": "Product Manager",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks an experienced PM with 9\u201310 years\u2019 experience, startup adaptability, strong organization, and ability to build effectively with AI. The seniority and PM background are qualifications, not evidence against role fit.",
+        "product": "Shapes and scopes bets from ambiguous ideas, defines product goals and metrics with the audit team, and runs measurable experiments that inform iteration.",
+        "operations": "Owns delivery cadence and team coordination across two-week cycles, keeping work unblocked and shipping without unnecessary process.",
+        "building": "Hands-on creation is explicitly central: personally prototypes, ships, and tests AI features, agents, and workflows, then learns and iterates from results.",
+        "ai": "Uses AI daily to increase throughput and tools such as Claude Code to personally build and test working product ideas.",
+        "reason": "This is a product-focused builder role, not a PM role limited to roadmaps or coordination: the posting makes hands-on AI building core, with personal experimentation, shipping, and iteration alongside product judgment and outcome ownership.",
+        "evidence": [
+          " Prototype and ship AI features, agents, and workflows yourself with tools like Claude Code.",
+          "\n Shape and scope the work. Turn raw ideas into well-shaped, right-sized bets.",
+          " Ship, learn, iterate. Document what you learned so the whole team compounds it."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "overjoy",
+      "company": "Overjoy",
+      "title": "Product Manager",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "product_builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires customer-facing communication, clear technical writing, and comfort using AI coding tools to ship real things. Prior PM, APM, founding, or solutions experience is only an extra point; no prior software-engineering career is required.",
+        "product": "Owns a core product area from customer discovery through prioritization, launch, and measured outcomes. Uses customer insight and product judgment to shape what gets built and feeds learning into the roadmap.",
+        "operations": "Not primarily an operations role; the product supports wholesale sales work for consumer brands.",
+        "building": "Personally prototypes and ships small fixes with Claude Code, then partners with engineering and design to deliver features and launches.",
+        "ai": "AI coding tools are part of the hands-on workflow for prototyping and shipping. The product also provides AI agents for brands\u2019 wholesale sales work.",
+        "reason": "This is a clear product-builder mandate: the PM identifies customer problems, shapes solutions, personally prototypes and ships fixes with AI coding tools, and owns the loop through launch and measured outcomes. Engineering partnership does not displace the role\u2019s direct building responsibility.",
+        "evidence": [
+          "\n You&#x27;ll work close to customers and close to the code: talking to brands to understand their real problems, turning what you hear into crisp specs, prototyping fixes yourself in Claude Code, and partnering with engineering to ship.",
+          "\n What You&#x27;ll Own\n Own a product area end-to-end \u2014 discovery, spec, prioritization, launch, and the metrics that prove it worked\n",
+          " Prototype and ship small fixes yourself using Claude Code, without waiting on engineering\n"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "rillet",
+      "company": "Rillet",
+      "title": "Business Operations, AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "ai_transformation"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 3\u20135 years, ideally consulting or investing experience followed by startup operations work personally building AI-powered systems, tools, or processes. Candidates should explain the problem, approach, stack, and measured outcome; fluent use of current AI tooling is expected. No software-engineering career requirement is stated.",
+        "product": "Partners with functional leaders to define team-level AI transformation and shape changes to how Sales, Partnerships, Customer Success, and Deployment work.",
+        "operations": "Owns transformation from problem framing through a solution used daily, and is accountable for adoption and changed working practices. Also handles high-visibility BizOps analysis and company projects.",
+        "building": "Personal building is central: the role expects prior hands-on creation of AI-powered tools and processes and end-to-end execution of transformation solutions.",
+        "ai": "AI tooling is applied directly to real workflows, in collaboration with AI engineering and using Rillet\u2019s broader AI infrastructure; the goal is meaningful workflow transformation, not isolated task automation.",
+        "reason": "Strong operations-focused builder mandate: partners with function leaders to define transformation, personally owns execution from problem framing to daily use, and is accountable for adoption and changed ways of working. The posting explicitly requires hands-on experience building AI-powered systems, tools, or processes and applying current AI tooling to real workflows.",
+        "evidence": [
+          "\n What You'll Do\n Partner with function leaders to define AI transformation for their team.",
+          "\n Own execution end-to-end, from framing the problem to something the team runs on daily.",
+          "\n Who We're Looking For\n 3 - 5 years of experience; time at a top-tier management consulting firm (MBB) or a VC/PE fund, followed by an operating role at a startup where you personally built AI-powered systems, tools, or processes \u2014 not just used AI as an end"
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "sharkninja",
+      "company": "SharkNinja",
+      "title": "Director, Finance AI & Automation",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "finance",
+          "ai_automation"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires a blended Finance and Technology background, end-to-end ownership of financial processes, production AI-agent and automation delivery with measured outcomes, public-company controls experience, and technical-delivery leadership. Calls for Python, SQL, agentic workflows, and a coding environment such as Claude Code; software-engineering career history itself is not specified as mandatory.",
+        "product": "Identifies and prioritizes Finance use cases with functional leaders, choosing by financial impact and shaping the roadmap from opportunity through adoption and measured outcomes.",
+        "operations": "Owns AI and automation across FP&A, Accounting, Audit/SOX, Tax, and Treasury, with responsibility for controls, auditability, governed financial data, and value measured in margin, productivity, or enterprise value.",
+        "building": "Personally builds, deploys, and operates production agents and automations; owns standards, integration choices, and scaling of the capability while leading a small technical Finance team.",
+        "ai": "AI-agent and automation building is central: agentic workflows, LLM application development, evaluation, guardrails, and use of an agentic coding environment to build and ship.",
+        "reason": "Clear hands-on Finance AI builder mandate, not merely a director or program-management role: the person personally ships production agents, helps identify and sequence material use cases, and owns adoption, business outcomes, and safe scaling across Finance. The role also requires substantial technical fluency and leadership, but does not expressly require a prior SWE career.",
+        "evidence": [
+          "\n As the Director, Finance AI & Automation , you will own the design, build and deployment of the AI capability inside a global Finance organization at a nearly $8 billion consumer products company.",
+          " Help drive the Finance AI and automation roadmap end to end, from opportunity identification through production deployment, adoption, and measured business outcome.",
+          "\n Required: demonstrated, hands on expertise building and deploying AI agents and automations into production, with reference to specific systems you have built and the measured outcome they produced."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "shipbob",
+      "company": "ShipBob",
+      "title": "Senior AI Product Builder, Inventory Experience",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 5+ years in product management, product engineering, or equivalent, professional hands-on AI tool use, and strong technical fluency reading data models and API contracts and evaluating generated code. Prior SWE employment is not explicitly required.",
+        "product": "Owns discovery, prioritization, roadmap, success metrics, and product decisions for the catalog and inventory experience, informed by merchant research, usage data, and feedback.",
+        "operations": "Not primarily an internal operations mandate; the domain is merchant-facing inventory and catalog workflows within fulfillment technology.",
+        "building": "Personally creates AI-augmented prototypes and production PRs against the codebase, reviews generated code, and owns the loop through rollout measurement and kill decisions.",
+        "ai": "Uses an AI-native development toolchain to generate working code, synthesize research and metrics, and iterate from prototype to production PR.",
+        "reason": "A clear product-builder mandate: this person owns discovery and product outcomes while personally using AI development tools to build working prototypes and production PRs, then measures results and makes rollout-or-kill decisions. Engineering collaboration and technical fluency are part of the role, not a SWE-career gate.",
+        "evidence": [
+          "\u00a0\n As a Senior AI Product Builder at ShipBob, you own the full build loop for your product domain: discovery, story/specs, AI-augmented prototypes, and production-ready PRs.",
+          " You use the AI development toolchain (e.g., Claude Code, Driver.ai) to understand ShipBob\u2019s codebase architecture, generate working code against the actual repo, and ship with minimum engineering rework.",
+          "\u00a0\u00a0\n Run customer discovery yourself; use AI tools to synthesize research across tickets, interviews, behavioral data, and competitive signals."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "veho",
+      "company": "Veho",
+      "title": "Director of Product, Consumer & Support (AI Builder)",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 8+ years in product management, product engineering, or a hybrid; experience shipping consumer products at scale and building AI products in production. Logistics and support-tech experience preferred. A professional engineering background is explicitly not required.",
+        "product": "Owns the consumer delivery experience end to end, including tracking, notifications, feedback, and measurement, with product decisions tied to delivery defects and customer outcomes.",
+        "operations": "Reimagines support workflows and architecture, partnering with Support leadership on tooling and build-versus-buy decisions; targets resolution, satisfaction, and service costs.",
+        "building": "Personal AI-assisted building is central: turns ideas into working solutions and ships consumer systems, internal tools, and production support workflows rather than delegating implementation.",
+        "ai": "Uses AI tools such as Claude Code to build and ship; also designs and builds AI-powered products and support workflows for production use.",
+        "reason": "The mandate combines ownership of consumer and support outcomes with direct AI-assisted creation and shipping. It explicitly expects the person to build working solutions without relying heavily on others, iterate against measurable user and operational results, and deliver production systems\u2014not merely define requirements or prototype.",
+        "evidence": [
+          " You will own the consumer delivery experience end-to-end \u2014 tracking, notifications, delivery feedback, and the measurement systems that tell us whether we're getting better.",
+          " They combine product judgment with hands-on building to ship AI-powered workflows, consumer-facing systems, and internal tools that measurably improve Veho's consumer experience.",
+          " You use AI tools like Claude Code to turn ideas into working solutions without relying heavily on others."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    },
+    {
+      "key": "within",
+      "company": "Within",
+      "title": "Senior AI Product Manager",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 5\u20138 years in product management and experience shipping technically complex products, preferably B2B SaaS or AI platforms. Prior software-engineering employment is not required; technical fluency includes system tradeoffs, SQL, API documentation, and ability to raise a simple PR.",
+        "product": "Owns real AI product areas end to end: defines problems and priorities, conducts customer discovery, shapes user experiences and AI feedback loops, and measures outcomes through launch.",
+        "operations": "Not primarily an internal operations mandate; product work centers on customer-facing AI experiences and enterprise workflows.",
+        "building": "Directly prototypes solutions with AI tools to test directions, then drives features from concept through production and stays engaged through launch and iteration.",
+        "ai": "AI-native product work includes building generative AI features, using AI tooling to create working prototypes, and designing around probabilistic behavior, evaluation, feedback loops, and model failure modes.",
+        "reason": "Clear product-builder mandate: the role owns meaningful product areas, customer discovery, solution decisions, and outcomes, while personally building AI-assisted working prototypes and driving features into production. The posting explicitly says engineering is not required; technical fluency is a separate expectation.",
+        "evidence": [
+          " You\u2019ll own meaningful product areas end to end, from discovery through delivery, working directly with our CTO, engineering and design leads, and GTM, with the autonomy to define a problem, prototype the answer yourself, and ship it.",
+          " Build working prototypes with AI tooling to validate a direction before engineering commits.",
+          "\n The outcome . Define success metrics up front, instrument, and close the loop on everything you ship, then present it to the whole team and to customers with clarity and confidence."
+        ]
+      },
+      "resultRun": "luna-reviewed-regression-2026-10-29-v5"
+    }
+  ]
+}

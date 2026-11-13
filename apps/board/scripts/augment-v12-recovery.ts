@@ -1,0 +1,16 @@
+import {access} from 'node:fs/promises';
+import {createRequire} from 'node:module';import {readFile,writeFile} from 'node:fs/promises';import {builderRequestV12,buildBuilderPromptV12} from '../src/builder-prompt.js';import {pipelineRequestReservation} from '../src/assessment-budget.js';import {digest} from '../src/review-history.js';import {safeEmployerHtml} from '../src/employer-recheck.js';
+try{await access('../../research/luna-v12-reviewed-regression-2026-10-29-results.json');throw new Error('Regression already has results; use a new explicit run version instead of replacing frozen inputs.');}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
+
+const hp=createRequire(import.meta.resolve('sanitize-html'))('htmlparser2'),path='../../research/luna-v12-reviewed-regression-2026-10-29-frozen.json',r=JSON.parse(await readFile(path,'utf8'));
+function find(n:any,p:(n:any)=>boolean):any{if(p(n))return n;for(const child of n.children??[]){const hit=find(child,p);if(hit)return hit;}return null;}
+for(const id of ['medecision','rivian','rwe','toast','vailent']){
+ const item=r.missing.find((m:any)=>m.id===id);if(!item)continue;const html=await readFile('/tmp/v12-recovery/'+id+'.html','utf8'),doc=hp.parseDocument(html);let text='';
+ if(id==='rivian'){for(const m of html.matchAll(/<script[^>]*type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)){const p=JSON.parse(m[1]);if(p['@type']==='JobPosting'&&p.url.includes('/34304'))text=p.description;}}
+ else if(id==='vailent'){text=await readFile('/tmp/v12-recovery/vailent.txt','utf8');}
+ else {const cls=id==='medecision'?'job-preview-details':id==='rwe'?'jobdescription':'job-description';const element=find(doc,(n:any)=>n.type==='tag'&&(n.attribs?.class??'').split(/\s+/).includes(cls));if(element)text=hp.DomUtils.getInnerHTML(element);}
+ if(text.length<1000)throw new Error('Incomplete recovered role '+id);
+ const description=safeEmployerHtml(text),request=builderRequestV12('gpt-6-luna',{title:item.title,company:item.company,location:'',description});
+ r.cases.push({key:'historical:'+id,company:item.company,title:item.title,url:item.url,expected:item.expected,description,location:'',sourceHash:digest(text),sourceComparison:id==='vailent'?'current_rendered_employer_text_transcription_historical_label_unverified':'recovered_current_text_historical_label_unverified',group:'historical_diagnostic',labelOrigin:'historical-user-reference',checkedAt:new Date().toISOString(),inputHash:digest(description),request,requestHash:digest(JSON.stringify(request)),promptHash:digest(request.instructions),exampleIds:buildBuilderPromptV12({company:item.company}).exampleIds,reservation:pipelineRequestReservation(JSON.stringify(request))});r.missing=r.missing.filter((m:any)=>m.id!==id);
+}
+r.cases.sort((a:any,b:any)=>a.key.localeCompare(b.key));r.caseCount=r.cases.length;r.maxNewReservationUsd=r.cases.reduce((n:number,c:any)=>n+c.reservation,0)/1e9;r.groups=r.cases.reduce((n:any,c:any)=>{const k=c.group+':'+c.expected;n[k]=(n[k]??0)+1;return n},{});await writeFile(path,JSON.stringify(r,null,2)+'\n');console.log(JSON.stringify({cases:r.caseCount,groups:r.groups,maxNewReservationUsd:r.maxNewReservationUsd,missing:r.missing},null,2));

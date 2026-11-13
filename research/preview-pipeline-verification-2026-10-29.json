@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-11-12T23:38:45.475Z",
+  "database": "Dedicated preview database; isolated temporary schema with all migrations and real foreign keys",
+  "checks": [
+    "Collection failure retries safely; repeat collection does not duplicate candidates or requests",
+    "Actual v12 request contract; no duplicate inference; fixture output explicitly labeled",
+    "Saving human Yes immediately creates one hidden draft without a staging action",
+    "Metadata preparation verifies evidence, preserves reviewer choices, and reuses its result without duplicate inference",
+    "Saving source-bound draft preparation records provenance without publication or an approval event",
+    "Human Yes → one hidden draft → explicit editorial approval; published unknown pay remains unknown",
+    "Human Maybe immediately holds a linked listing; renewed Yes still requires draft approval",
+    "New discovery publications participate in freshness maintenance without recency bump",
+    "Changed source holds listing and blocks stale editorial approval until new-source human review",
+    "Complete feed absence plus exact posting 404 closes a new publication",
+    "Invalid evidence stays unpublished; a concurrent human edit invalidates metadata without being overwritten",
+    "Exhausted real reservation path stops before any network transmission",
+    "Interrupted model attempt is reconciled manually, never automatically resent",
+    "Source change during inference discards assessment without overwriting human labels",
+    "Concurrent worker invocation returns busy without processing",
+    "Database rejects reservations above the Pacific calendar-month Luna cap",
+    "Human Yes automatically rechecks exact employer posting, prepares supported fields, and publishes without a second manual approval"
+  ],
+  "fixtureModelCalls": 2,
+  "externalModelCalls": 0,
+  "schemaRemoved": true,
+  "realBoardRowsChanged": 0,
+  "schedulesEnabled": false
+}

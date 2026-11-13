@@ -3,6 +3,8 @@ node_modules/
 dist/
 coverage/
 *.tsbuildinfo
+.next/
+.vercel/
 
 # Environment and verification credentials
 .env
@@ -19,3 +21,5 @@ coverage/
 
 # Runtime data
 data/
+.vercel
+.env*

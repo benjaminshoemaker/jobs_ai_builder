@@ -1,0 +1,134 @@
+{
+  "run": "fresh-unseen-2026-10-29-v6",
+  "purpose": "Targeted prediction-hidden review. 4 predicted positives, 2 predicted negatives and 2 abstentions selected for contrasting mandates and U.S.-relevant locations. Not a random population-level benchmark. Predictions are omitted from the cards.",
+  "cards": [
+    {
+      "reviewId": "F1",
+      "candidateId": "989dfa14029b213ac4af2ff53ecc89c7",
+      "sourceHash": "6d572d5edf16d7cb7be5d5825ab8b02f956682c6a40603f13bc3e0f20b588727",
+      "url": "https://jobs.lever.co/medi.ci/9cf64e54-9f22-48a5-96dc-cb2a1ba907bf",
+      "title": "Financial Controller",
+      "source": "lever:medi.ci",
+      "company": "Medici",
+      "location": "San Antonio, hybrid: two clinic days weekly, plus Austin monthly",
+      "experience": "5+ years in accounting/finance; demonstrated AI or automation improvements. CPA preferred.",
+      "work": "Owns accounting, billing, collections, close, reporting and financial controls. Also identifies automation opportunities and implements tools and workflows across the finance function.",
+      "quotes": [
+        "Leverage AI, automation, and modern financial technology to streamline accounting and finance workflows, improve accuracy, reduce manual processes, and strengthen financial controls.",
+        "Evaluate and implement tools, workflows, and process improvements that create a more scalable and technology-enabled finance function."
+      ]
+    },
+    {
+      "reviewId": "F2",
+      "candidateId": "073d8abc5732031bfcc2d99892de5f74",
+      "sourceHash": "0537119aadf7f353b79cf9248f93ce44149cf105e9588b27c12628c0a68f9d3c",
+      "url": "https://jobs.ashbyhq.com/openart/48ee704c-6c89-4287-8f90-c88e1416f326",
+      "title": "Creative Technologist (AI Design Engineer)",
+      "source": "ashby:openart",
+      "company": "OpenArt",
+      "location": "San Carlos, CA; onsite or hybrid",
+      "experience": "Professional creative-production experience; AI coding tools, model APIs, agent frameworks and lightweight code; portfolio or GitHub.",
+      "work": "Researches creative workflows, defines problems, builds and validates usable prototypes, and helps turn them into features. Engineering takes validated prototypes to production.",
+      "quotes": [
+        "AI is your core tool for building.",
+        "We're not just looking for someone who makes demos. We're looking for someone who finds the problem, researches the workflow, delivers the prototype end to end, makes the case for it, and then hands it to engineering to ship."
+      ]
+    },
+    {
+      "reviewId": "F3",
+      "candidateId": "777f92fb5dfa086edb0d6cc231f1190b",
+      "sourceHash": "67f2d6878d28a0d18cc1e9f371165254574a08fd009cc13eb83c2388fc00746b",
+      "url": "https://job-boards.greenhouse.io/adyen/jobs/8158755",
+      "title": "Product Manager, Partner Ecosystem",
+      "source": "greenhouse:adyen",
+      "company": "Adyen",
+      "location": "San Francisco; at least three office days weekly",
+      "experience": "8+ years of product management; technical fluency in architecture, APIs and data pipelines.",
+      "work": "Owns partner-tooling strategy and roadmap, internal applications, automation and observability. Works across partner engineering, commercial and core-product teams.",
+      "quotes": [
+        "You will build and scale internal applications, automation frameworks, and data platforms that empower our global teams to scale partner integrations effortlessly and reliably.",
+        "Champion the adoption of intelligent agents, LLM-powered workflows, and automated triage systems to accelerate partner enablement, technical inquiries, and documentation discovery."
+      ]
+    },
+    {
+      "reviewId": "F4",
+      "candidateId": "c5aaa61545e67dc2a16e5aaf152456b0",
+      "sourceHash": "82849d67d32930b424bb050e74c7f913f5787ba4fc65b759632dd17af91945ad",
+      "url": "https://www.brex.com/careers/8815495002?gh_jid=8815495002",
+      "title": "Senior Software Engineer, Backend (Product Engineering)",
+      "source": "greenhouse:brex",
+      "company": "Brex",
+      "location": "San Francisco; three office days weekly",
+      "experience": "7+ years of professional backend application development; scalable systems, databases and Java/Kotlin/Python.",
+      "work": "Builds customer-facing financial products from concept to launch, works with customer-facing teams, and owns implementation and outcomes. AI-native automation is described at company level; the role does not specify AI development tools.",
+      "quotes": [
+        "Work alongside user-facing teams like Sales and Support to deeply understand our customers' needs.",
+        "Own problems end-to-end, from user experience and data models to scalability, operability, and ongoing metrics."
+      ]
+    },
+    {
+      "reviewId": "F5",
+      "candidateId": "6358178ee912b6f3c2c0707fde687ee9",
+      "sourceHash": "c5d3e8eb305f009d12f84560eadd97a110fc56289a30ca57f8f1b66113d28c24",
+      "url": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "title": "AI Builder",
+      "source": "lever:artera-2",
+      "company": "Artera",
+      "location": "Seattle posting; office-based U.S. hiring",
+      "experience": "2–5 years in SWE, data science, ML, PM, design or technical project management—or equivalent output. Demonstrated AI-native building and shipped production solutions.",
+      "work": "Owns outcomes and roadmaps for named healthcare customers, personally builds solutions with internal agentic systems, and monitors and improves them in production.",
+      "quotes": [
+        "Build novel solutions for named customers; translate their operational reality into technical solutions that you yourself architect and code with our internal agentic systems.",
+        "Own end-to-end delivery and realized outcomes for named customers."
+      ]
+    },
+    {
+      "reviewId": "F6",
+      "candidateId": "4627255651fe731d73c8544b0b04c646",
+      "sourceHash": "d1e46582a0f407b031dc47cadd26fe86d21a3da84f7698dfe993670afc34c44f",
+      "url": "https://jobs.lever.co/nationaljournal/5317b483-3b3e-4650-b7ae-29d6d1704e50",
+      "title": "Integrated Marketing Manager",
+      "source": "lever:nationaljournal",
+      "company": "Gravity Research",
+      "location": "Washington, DC; Tuesday–Thursday in office",
+      "experience": "2+ years in B2B marketing, creative marketing or design; Adobe/Canva and HubSpot.",
+      "work": "Owns campaign strategy and personally produces decks, reports, graphics, emails and digital assets. Uses AI for design and production workflows; also manages marketing operations and reporting.",
+      "quotes": [
+        "Apply AI tools to accelerate design, campaign development, editing, and production; experiment with new solutions to improve workflow efficiency across the marketing function",
+        "The Integrated Marketing Manager will also be directly responsible for designing and producing presentations, one-pagers, graphics, email campaigns, digital assets, and other marketing materials."
+      ]
+    },
+    {
+      "reviewId": "F7",
+      "candidateId": "aa79e8076d6eee8812c13de2ef88de97",
+      "sourceHash": "765c488f2d2201406f3e985101cc38381a5ec8ad55e9d52d5a554a99dd2576a2",
+      "url": "https://jobs.ashbyhq.com/alt/54374099-05d1-448c-8f61-50f72c9fba68",
+      "title": "Lead Design Builder",
+      "source": "ashby:alt",
+      "company": "Alt",
+      "location": "Remote; hiring restrictions not yet confirmed",
+      "experience": "Founding, first or early designer experience, or building something independently. Portfolio of outcomes; ability to prototype in code or adjacent tools with AI.",
+      "work": "Owns marketplace surfaces, problem framing, customer research, design decisions and metrics. Personally builds working prototypes in code and pairs with engineers at ship time.",
+      "quotes": [
+        "Working prototypes in code, not click-throughs, are how ideas get evaluated here",
+        "The quality foundation your team iterates on, and its survival through implementation. You pair with engineers at ship time; built-versus-designed fidelity is yours."
+      ]
+    },
+    {
+      "reviewId": "F8",
+      "candidateId": "b13af6305dc06710b2ad63c7b97634ab",
+      "sourceHash": "6b4b2d0582559312a8236734180dcd8927f00b191bbd2f684b1d8054de51b95b",
+      "url": "https://job-boards.greenhouse.io/mrbeastyoutube/jobs/6123291004",
+      "title": "Senior Product Manager",
+      "source": "greenhouse:mrbeastyoutube",
+      "company": "Beast Industries",
+      "location": "Bay Area preferred; NYC also listed",
+      "experience": "5–8 years of PM experience shipping consumer mobile products; technical architecture fluency and daily AI use.",
+      "work": "Owns a mobile-app feature area, requirements, launch and metrics; partners with engineering and design. Uses AI for specs, research, prototyping and data queries.",
+      "quotes": [
+        "You don't need to write production code or technical specs yourself, but you understand the systems well enough to hold your own in the conversation.",
+        "Write and maintain product requirements, acceptance criteria, and gap analyses that hold up under real engineering and QA scrutiny not just slide decks."
+      ]
+    }
+  ]
+}

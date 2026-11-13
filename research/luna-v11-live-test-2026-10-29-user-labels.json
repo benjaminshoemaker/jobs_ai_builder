@@ -1,0 +1,120 @@
+{
+  "createdAt": "2026-10-30T06:30:47.334032+00:00",
+  "sourceArtifactHash": "b3423bedf30bd9f64b94f9dac86727e70cbe418a7a3867d20ee4fc4e38c0db97",
+  "predictionArtifactHash": "28d27e8502c38b7253ce7fd91469da920004fc42f9bf619d0c21dd12f78f9659",
+  "purpose": "evaluation",
+  "scope": "Nine selected user-reviewed cases, not the full 20-job sample or a population accuracy estimate",
+  "reviews": [
+    {
+      "reviewId": "L04",
+      "candidateId": "16911f21c0d0e34c03a7c136265d2c2e",
+      "sourceHash": "c1ae344c2ce35a18d58d1173a37e808ab999c72b5d30a123c8efec16ecc7ab36",
+      "url": "https://jobs.ashbyhq.com/alt/52317979-235e-4b3f-b7a7-27d5e68d3bcf",
+      "title": "Product Builder, Vault",
+      "decision": "yes",
+      "userNote": "User confirmed yes",
+      "frozenPrediction": "builder"
+    },
+    {
+      "reviewId": "L07",
+      "candidateId": "20f2a1492293ee404bbda6a6a6069ca0",
+      "sourceHash": "a551709723273dabecd6d451b9a55bd89396bc60ae134f41203cd328df5ecf49",
+      "url": "https://jobs.ashbyhq.com/fluidstack/a59fc19b-ce9d-45ba-b303-58ec58ac6199",
+      "title": "Product Engineer, Compute Operations",
+      "decision": "yes",
+      "userNote": "User confirmed yes",
+      "frozenPrediction": "builder"
+    },
+    {
+      "reviewId": "L09",
+      "candidateId": "79328ae10bfb41ddbdc95c75aca49fa2",
+      "sourceHash": "3dcc49c50db14a6b4528770abada75e773693f369c501e4191a7bc9ee5eaf59e",
+      "url": "https://jobs.lever.co/noodle/2f3a7bbe-00c7-415a-9a29-749c080d92ed",
+      "title": "Lead Engineer, Engineering (EDge Product Suite)",
+      "decision": "no",
+      "userNote": "I think no",
+      "frozenPrediction": "builder"
+    },
+    {
+      "reviewId": "L10",
+      "candidateId": "34649d259d7b358260f2a57703969a00",
+      "sourceHash": "0ece4ae51cbda12579df95862d2c6c31da1c2951440ac6b5124afbd4554a38a3",
+      "url": "https://jobs.ashbyhq.com/clera/b6f95627-eecd-4931-89ec-f92d05b49ac5",
+      "title": "Product Engineer, Consumer",
+      "decision": "yes",
+      "userNote": "User confirmed yes",
+      "frozenPrediction": "builder"
+    },
+    {
+      "reviewId": "L13",
+      "candidateId": "6358178ee912b6f3c2c0707fde687ee9",
+      "sourceHash": "c5d3e8eb305f009d12f84560eadd97a110fc56289a30ca57f8f1b66113d28c24",
+      "url": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "title": "AI Builder",
+      "decision": "yes",
+      "userNote": "User confirmed yes",
+      "frozenPrediction": "builder"
+    },
+    {
+      "reviewId": "L19",
+      "candidateId": "073d8abc5732031bfcc2d99892de5f74",
+      "sourceHash": "0537119aadf7f353b79cf9248f93ce44149cf105e9588b27c12628c0a68f9d3c",
+      "url": "https://jobs.ashbyhq.com/openart/48ee704c-6c89-4287-8f90-c88e1416f326",
+      "title": "Creative Technologist (AI Design Engineer)",
+      "decision": "yes",
+      "userNote": "User confirmed yes",
+      "frozenPrediction": "builder"
+    },
+    {
+      "reviewId": "L16",
+      "candidateId": "b7d300d75c4c478842b3ebf6e63133c0",
+      "sourceHash": "67beaee6fc8868d960d7f1e4f0019f334714d6029ba22d4e572d04570599b199",
+      "url": "https://jobs.ashbyhq.com/oneapp/b7ae2b9b-0f31-468d-9ac8-395536da8beb",
+      "title": "Design Engineer",
+      "decision": "yes",
+      "userNote": "Yes. The user cites \"help define what modern design-to-code looks like at OnePay\" as ownership.",
+      "frozenPrediction": "exclude"
+    },
+    {
+      "reviewId": "L20",
+      "candidateId": "b13af6305dc06710b2ad63c7b97634ab",
+      "sourceHash": "6b4b2d0582559312a8236734180dcd8927f00b191bbd2f684b1d8054de51b95b",
+      "url": "https://job-boards.greenhouse.io/mrbeastyoutube/jobs/6123291004",
+      "title": "Senior Product Manager ",
+      "decision": "no",
+      "userNote": "User confirmed no",
+      "frozenPrediction": "exclude"
+    },
+    {
+      "reviewId": "L12",
+      "candidateId": "989dfa14029b213ac4af2ff53ecc89c7",
+      "sourceHash": "6d572d5edf16d7cb7be5d5825ab8b02f956682c6a40603f13bc3e0f20b588727",
+      "url": "https://jobs.lever.co/medi.ci/9cf64e54-9f22-48a5-96dc-cb2a1ba907bf",
+      "title": "Financial Controller",
+      "decision": "yes",
+      "userNote": "Yes. The user cites \"identifying processes that can be automated or AI-assisted and implementing smarter, more scalable ways of working.\"",
+      "frozenPrediction": "exclude"
+    }
+  ],
+  "score": {
+    "agreements": 6,
+    "reviewed": 9,
+    "truePositive": 5,
+    "falsePositive": 1,
+    "falseNegative": 2,
+    "trueNegative": 1
+  },
+  "unreviewed": [
+    "L01",
+    "L02",
+    "L03",
+    "L05",
+    "L06",
+    "L08",
+    "L11",
+    "L14",
+    "L15",
+    "L17",
+    "L18"
+  ]
+}

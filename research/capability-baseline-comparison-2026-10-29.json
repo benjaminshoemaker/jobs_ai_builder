@@ -1,0 +1,766 @@
+{
+  "method": "15 cases, identical criteria and source versions; original same-format paired run plus explicitly marked plain-text Sol format controls. Medium reasoning throughout. These format controls change representation, output schema and limits, so do not treat aggregate scores as a clean model ranking. Prior pilot output-limit failures remain separate and unscored. No new user labels or reference examples were supplied in prompts.",
+  "strictComparableCases": 9,
+  "strictComparableAgreements": 9,
+  "summary": {
+    "gpt-6-luna": {
+      "selected": 15,
+      "valid": 15,
+      "matchesRecordedJudgment": 13,
+      "disagreements": 2,
+      "unclear": 0,
+      "operationallyUnresolved": 0
+    },
+    "gpt-6.1-sol": {
+      "selected": 15,
+      "valid": 14,
+      "matchesRecordedJudgment": 11,
+      "disagreements": 2,
+      "unclear": 1,
+      "operationallyUnresolved": 1
+    }
+  },
+  "recoveredFromFormatFailure": [
+    "amperity",
+    "axiad",
+    "batch1_c20",
+    "batch1_c50",
+    "overjoy"
+  ],
+  "rows": [
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "company": "getsquire",
+      "title": "Director, Data Engineering",
+      "expected": "no",
+      "labelEvidence": "explicit_current_source_review",
+      "sourceComparison": "exact_user_reviewed_version",
+      "url": "https://jobs.lever.co/getsquire/2c9762e7-b7a1-4d76-b0a5-468a8b6a3c5e",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "no",
+            "reason": "The role is substantially hands-on, but its core building mandate is data pipelines, architecture, and leading the data organization. AI/LLM work is framed as enabling others and building select capabilities, without establishing that owning and iteratively validating AI-powered solutions is a substantial part of the job.",
+            "evidence": [
+              "p0009",
+              "p0018",
+              "p0020",
+              "p0021"
+            ],
+            "quotes": [
+              " We're hiring a Director, Data Engineering to build and lead our Data organization through a player-coach model, spending approximately half your time hands-on in the code and the other half developing engineers, setting technical direction, and owning the",
+              " Design, build, and debug the highest-impact pipelines, connecting our business systems, including CRM, billing, and internal platforms to our Snowflake warehouse, in both directions\n",
+              " Establish technical direction and standards for pipeline design, data modeling, and data quality across the org; personally build and ship the highest-risk or most ambiguous work\n",
+              " Build, structure, and lead a growing Data organization of 5+ across Data Engineering, ML Engineering, and Analytics\n"
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "no",
+            "reason": "Personal coding and shipping are substantial, but the primary mandate is building and operating data infrastructure while leading the Data organization. AI responsibilities focus on strategy, trusted-data foundations, and select enablement capabilities; the posting does not establish that personally building, deploying, and iterating AI-enabled solutions is a substantial part of the job.",
+            "evidence": [
+              "p0009",
+              "p0011",
+              "p0018",
+              "p0020"
+            ],
+            "quotes": [
+              " We're hiring a Director, Data Engineering to build and lead our Data organization through a player-coach model, spending approximately half your time hands-on in the code and the other half developing engineers, setting technical direction, and owning the",
+              "\n Success in this role means building a data foundation the company trusts by default, with reliable pipelines, clear standards, and scalable systems.",
+              " Design, build, and debug the highest-impact pipelines, connecting our business systems, including CRM, billing, and internal platforms to our Snowflake warehouse, in both directions\n",
+              " Establish technical direction and standards for pipeline design, data modeling, and data quality across the org; personally build and ship the highest-risk or most ambiguous work\n"
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "company": "azul",
+      "title": "IT Intern, AI and Operations",
+      "expected": "no",
+      "labelEvidence": "explicit_current_source_review",
+      "sourceComparison": "exact_user_reviewed_version",
+      "url": "https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Building AI tools is a substantial part of the internship: the intern designs, builds, and tests Claude skills and helps scope, build, deploy, and iterate on agents for real IT and Security workflows. Testing against real-world scenarios and validating integrations provide a meaningful use-and-improve loop.",
+            "evidence": [
+              "p0006",
+              "p0007",
+              "p0008"
+            ],
+            "quotes": [
+              " Claude Skill Development Design, build, and test Claude skills (SKILL.md) for IT and Security workflows, including writing skill descriptions, step-by-step instructions, and prompt logic that integrates with Azul's connected MCP servers.",
+              "\n AI Agent Design and Deployment Assist in scoping, building, and iterating on AI agents that automate repetitive IT and Security tasks, including tool selection, prompt engineering, and testing against real-world scenarios.",
+              "\n MCP Connector Integration and Testing Configure and validate MCP connector integrations (Slack, Atlassian, Asana, M365, Salesforce) within Claude, documenting tool behavior and flagging gaps or security considerations."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role explicitly includes personally designing, building, and testing Claude skills for IT/Security workflows, plus scoping, building, and iterating on agents that automate real tasks. Connected-tool integration and real-world testing establish usable implementations rather than concept demos. This building loop is a substantial responsibility alongside operational support, even under supervision.",
+            "evidence": [
+              "p0006",
+              "p0007",
+              "p0008"
+            ],
+            "quotes": [
+              " Claude Skill Development Design, build, and test Claude skills (SKILL.md) for IT and Security workflows, including writing skill descriptions, step-by-step instructions, and prompt logic that integrates with Azul's connected MCP servers.",
+              "\n AI Agent Design and Deployment Assist in scoping, building, and iterating on AI agents that automate repetitive IT and Security tasks, including tool selection, prompt engineering, and testing against real-world scenarios.",
+              "\n MCP Connector Integration and Testing Configure and validate MCP connector integrations (Slack, Atlassian, Asana, M365, Salesforce) within Claude, documenting tool behavior and flagging gaps or security considerations."
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "company": "cssmerge",
+      "title": "Product Manager - Robotic Kitchen",
+      "expected": "no",
+      "labelEvidence": "explicit_current_source_review",
+      "sourceComparison": "exact_user_reviewed_version",
+      "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8904230002",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "AI-enabled building is an explicit, non-negotiable part of the role: the PM personally builds prototypes and MVPs with AI, tests them with real users, and uses the learning to improve products. The role also owns delivery through field pilots, rollout, and iteration, establishing a meaningful build-test-improve loop alongside broader product responsibilities.",
+            "evidence": [
+              "p0006",
+              "p0015",
+              "p0020",
+              "p0021"
+            ],
+            "quotes": [
+              " Lead the product lifecycle from discovery through QA, rollout and iteration, while coordinating delivery across the KitchenOS roadmap.",
+              "\n Lead delivery and rollout: write clear requirements, test in real kitchens, and own launch readiness\u2014from QA and field pilots to documentation, training, and iteration.",
+              "\n AI-powered prototyping is second nature\u2014and non-negotiable.",
+              " You rapidly build prototypes and MVPs with AI tools to test concepts with real users, challenge assumptions, and turn what you learn into better products."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role explicitly makes hands-on AI-powered building non-negotiable: the person rapidly creates prototypes and MVPs, tests them with real users, and uses the findings to improve products. Combined with field research and ownership of pilots, rollout, and iteration, this establishes a substantive build\u2013validate\u2013improve loop, not merely product coordination or occasional demos.",
+            "evidence": [
+              "p0020",
+              "p0021",
+              "p0029",
+              "p0015"
+            ],
+            "quotes": [
+              "\n AI-powered prototyping is second nature\u2014and non-negotiable.",
+              " You rapidly build prototypes and MVPs with AI tools to test concepts with real users, challenge assumptions, and turn what you learn into better products.",
+              " You\u2019re comfortable spending time in kitchens, observing real workflows, and translating operator feedback and data into product decisions.",
+              "\n Lead delivery and rollout: write clear requirements, test in real kitchens, and own launch readiness\u2014from QA and field pilots to documentation, training, and iteration."
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "company": "opensesame",
+      "title": "Systems Administrator ",
+      "expected": "no",
+      "labelEvidence": "explicit_current_source_review",
+      "sourceComparison": "exact_user_reviewed_version",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "no",
+            "reason": "The primary mandate is internal IT administration: resolving support tickets, managing enterprise tools, access, security, and systems projects. Automation is included, including implementing two workflow automations and introducing an AI-driven or automation-based solution, but the posting does not establish that personally building and validating AI-enabled solutions is a substantial part of the role. The central build-and-improve loop is therefore not established.",
+            "evidence": [
+              "p0005",
+              "p0007",
+              "p0017",
+              "p0024"
+            ],
+            "quotes": [
+              " About the Team \n At OpenSesame, the Information Systems team empowers employees with the tools and systems to deliver exceptional customer service.",
+              "\n About the Role \n The Systems Administrator supports and improves OpenSesame\u2019s internal IT systems, resolving escalated issues, managing core tools, and driving automation and security initiatives.",
+              "\n Within 60 Days \n Independently manage and resolve escalated IT support tickets within expected service timelines.",
+              "\n Identify and introduce an AI-driven or automation-based solution to improve a repetitive internal process."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "no",
+            "reason": "The primary mandate is internal IT administration, escalated support, access management, and security. The role does own automation implementations, but the posting does not establish that personally building and iterating AI-enabled software is a substantial responsibility. Introducing an \u201cAI-driven or automation-based\u201d improvement and maintaining infrastructure that enables AI workflows do not establish that complete building loop.",
+            "evidence": [
+              "p0007",
+              "p0009",
+              "p0021",
+              "p0024"
+            ],
+            "quotes": [
+              "\n About the Role \n The Systems Administrator supports and improves OpenSesame\u2019s internal IT systems, resolving escalated issues, managing core tools, and driving automation and security initiatives.",
+              " The role will also help build, administer, and improve the internal systems, integrations, permissions, and automation that enable secure, reliable AI-powered workflows across the business.",
+              "\n Within 90 Days \n Carry a full ticket and project workload equivalent to team peers, delivering consistent and timely resolutions.",
+              "\n Identify and introduce an AI-driven or automation-based solution to improve a repetitive internal process."
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "alt",
+      "company": "Alt",
+      "title": "Product Builder, Growth",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://jobs.ashbyhq.com/alt/62bdcbde-df4a-4d2c-bd01-0560d86b387c",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "This is explicitly a hands-on builder role: the person identifies funnel problems, writes and ships production code, measures experiments, and keeps or kills changes based on results. AI building is part of the mandate, including agents, model-driven ranking and reactivation, and an MCP server; the role also calls for putting AI-built flows in front of real users and shipping what works.",
+            "evidence": [
+              "p0006",
+              "p0007",
+              "p0010",
+              "p0029"
+            ],
+            "quotes": [
+              "\n This is a builder seat, not a product management seat.",
+              " You own the seller submission funnel, buyer search and discovery, and the experimentation infrastructure underneath both, and you own them the whole way: you find the drop-off, you write the code, you ship it behind a flag, you read the result, you keep it or",
+              "\n What it is: pulling the funnel yourself in SQL on Monday, shipping the onboarding change on Tuesday, standing up the experiment harness that makes Wednesday's test trustworthy, and putting a model behind dealer reactivation instead of a campaign.",
+              " Build it, don't request it. Assignment, exposure logging, guardrails, readouts, and decision rules, wired to the warehouse and fast enough that a test is a Tuesday decision."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role explicitly owns the complete building loop: identify funnel problems, personally code and ship changes, measure experiments, and retain or revise solutions. AI-enabled implementation is a concrete responsibility, including an experiment-readout agent, model-driven ranking and reactivation, and flows built with AI coding tools and validated with real dealers. Production ownership and ongoing outcome accountability are central rather than delegated or incidental.",
+            "evidence": [
+              "p0007",
+              "p0021",
+              "p0029",
+              "p0030"
+            ],
+            "quotes": [
+              " You own the seller submission funnel, buyer search and discovery, and the experimentation infrastructure underneath both, and you own them the whole way: you find the drop-off, you write the code, you ship it behind a flag, you read the result, you keep it or",
+              " Find the drop-offs across onboarding, Snap to Sell, quote acceptance, vault intake, and resubmission, then ship the fixes yourself.",
+              " Build it, don't request it. Assignment, exposure logging, guardrails, readouts, and decision rules, wired to the warehouse and fast enough that a test is a Tuesday decision.",
+              " Then run high-velocity tests on it across onboarding, activation, search, and submission, and leave behind a compounding library of what we learned."
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "amperity",
+      "company": "Amperity",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://amperity.com/careers/8212260?gh_jid=8212260",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Hands-on building and validating AI solutions is a substantive part of the role: the person is expected to build agentic systems, prototype with AI tools and low-code integrations, and test ideas directly in the codebase. They connect customer needs to those solutions and are accountable for adoption and outcomes, while engineering owns production architecture.",
+            "evidence": [
+              "p0026",
+              "p0027",
+              "p0040",
+              "p0041"
+            ],
+            "quotes": [
+              " You bring real technical depth, including direct, hands-on experience building agentic systems yourself \u2014 that's what lets you help shape and elevate Amperity's own agentic strategy, not just advise on it from the sidelines.",
+              " Backlog management and roadmap coordination are part of the job, but your focus is outcomes: building things that matter to customers.",
+              " You understand their true goals, validate ideas directly through prototypes or feedback before shipping, and actively support internal teams to ensure real impact.",
+              "\n Technical Fluency: You prototype quickly using AI tools and low-code integrations, and can test ideas directly in a codebase."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "plain_text_operational_recovery",
+          "result": {
+            "decision": "unclear",
+            "reason": "The role owns customer problems, adoption, and ongoing outcomes, and explicitly includes AI-assisted prototyping and testing in a codebase. However, it does not establish whether personally building and validating usable solutions is a substantial responsibility, rather than supporting product discovery and strategy before engineering implements them."
+          },
+          "priorFailure": "Incomplete/refused model response: {\"reason\":\"max_output_tokens\"}",
+          "outputLimit": 2000,
+          "artifact": "research/capability-baseline-format-diagnostic-2026-10-29.json"
+        }
+      }
+    },
+    {
+      "key": "apollo",
+      "company": "Apollo",
+      "title": "Principal Product Builder, Data",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://job-boards.greenhouse.io/apolloio/jobs/6229000004",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Personal AI-enabled prototyping is an explicit part of the role, not just a company-level preference: the builder is expected to prototype quickly to validate ideas before scaling investment. Combined with close user discovery and an ongoing measure-and-iterate loop, this establishes meaningful building and validation as part of the mandate.",
+            "evidence": [
+              "p0006",
+              "p0007",
+              "p0008",
+              "p0023"
+            ],
+            "quotes": [
+              "\n Why this role exists \n The cost of going from idea to working prototype has collapsed.",
+              " One person with taste, strong judgment, and AI tools can now do what used to take a team and a sprint cycle.",
+              " Apollo is hiring for what comes next: Product Builders who combine product judgment, domain depth, and AI-native research and execution.",
+              " What you will do \n Get close to customers, GTM teams, Support, and internal users to understand where Apollo\u2019s data has gaps and accuracy or usability issues\n"
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "failed",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": null,
+          "failure": "Incomplete/refused model response: {\"reason\":\"max_output_tokens\"}"
+        }
+      }
+    },
+    {
+      "key": "axiad",
+      "company": "Axiad",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://job-boards.greenhouse.io/axiad/jobs/6220016004",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Personal building is an explicit, recurring part of the product mandate: the role owns prototypes and working software, chooses when to carry implementation through, and brings learning from building and selling back into product strategy. This establishes a substantial build-and-improve loop, not just AI-assisted coordination or occasional demos.",
+            "evidence": [
+              "p0010",
+              "p0011",
+              "p0015",
+              "p0016"
+            ],
+            "quotes": [
+              "\u00a0\n Actively build\u00a0product\u00a0\u2014 not the rule of the job, but a constant,\u00a0strategic\u00a0urgent\u00a0practice.",
+              " Prototypes, UX, working software: you pick the moments where making the thing is the highest-leverage move and take them without asking \u2014 handing the last mile to the team when that's the right call, carrying it yourself when it isn't.",
+              "\u00a0\n Push what you\u00a0learn\u00a0building and selling back into the shared strategy \u2014 a living hypothesis the whole team evolves together.",
+              "\u00a0\n Prototype what customers\u00a0can't\u00a0yet articulate."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "plain_text_operational_recovery",
+          "result": {
+            "decision": "yes",
+            "reason": "The mandate combines customer discovery and problem judgment with a constant, strategic practice of personally building AI-enabled prototypes, working software, and delivered features. It explicitly requires prototype-to-pull-request execution, carrying delivery through when appropriate, and feeding learning from building and selling back into product direction. Although product management remains broad, hands-on building and ownership of outcomes are central expectations, not occasional demos or routine handoffs to engineering."
+          },
+          "priorFailure": "Incomplete/refused model response: {\"reason\":\"max_output_tokens\"}",
+          "outputLimit": 600,
+          "artifact": "research/capability-baseline-format-diagnostic-axiad-2026-10-29.json"
+        }
+      }
+    },
+    {
+      "key": "batch1_c03",
+      "company": "OpenArt",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://jobs.ashbyhq.com/openart/8dd52ba6-a5b6-40b1-95fe-50de352fa254",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role centers on turning new AI capabilities and user needs into product features: the intern is expected to prototype ideas personally, work with design and engineering to ship them, and test features with users and competitors to inform what should improve. This is a substantial build-and-validation loop, not just product research or coordination.",
+            "evidence": [
+              "p0009",
+              "p0013",
+              "p0014",
+              "p0017"
+            ],
+            "quotes": [
+              " This role is for builders with a technical background and strong product taste: people who follow AI progress closely and know how to turn new capabilities into features creative professionals love.",
+              "\n Turn ideas into features: translate new capabilities into feature ideas, prototype them, and work with designers and engineers to ship them.",
+              "\n Test hands-on: run usability tests on new features and benchmark competing creative AI products, then form a clear judgment on what's great, what's broken and what to do next, and get the team aligned on it.",
+              " Talk with them every day (interviews, Discord, social), understand what they need, and let that shape every feature you push for."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role establishes a hands-on building loop: understand users\u2019 needs, turn new AI capabilities into personally built feature prototypes, collaborate with designers and engineers to ship them, and use usability testing to identify improvements. Technical prototyping is a core responsibility, not merely an occasional demo or product-coordination task.",
+            "evidence": [
+              "p0012",
+              "p0013",
+              "p0014",
+              "p0017"
+            ],
+            "quotes": [
+              " Track tech progress: follow new AI models, tools and tech trends at the cutting edge, often before public launch through early access, understand what each makes possible, and bring a regular take on what OpenArt should adopt or build.",
+              "\n Turn ideas into features: translate new capabilities into feature ideas, prototype them, and work with designers and engineers to ship them.",
+              "\n Test hands-on: run usability tests on new features and benchmark competing creative AI products, then form a clear judgment on what's great, what's broken and what to do next, and get the team aligned on it.",
+              " Talk with them every day (interviews, Discord, social), understand what they need, and let that shape every feature you push for."
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "batch1_c08",
+      "company": "AwardSpring",
+      "title": "Product Builder Intern",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://www.awardspring.com/careers/product-builder-intern",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role makes AI-enabled personal building central: every IC ships features end-to-end with agentic tooling, and the intern is expected to deliver real work into a production codebase used by customers, with senior review. The emphasis on challenging specs, iterating, and owning results supports a build-and-improve mandate rather than occasional demos or coordination.",
+            "evidence": [
+              "p0010",
+              "p0014",
+              "p0015",
+              "p0017"
+            ],
+            "quotes": [
+              " Nearly 100% of the code in our product is AI-generated, and every IC (engineer, PM, designer) ships features end-to-end with agentic tooling.",
+              "\n What you'll do\n Ship real, well-scoped work into a production codebase with actual users\n",
+              " Work with agentic tooling from day one, with senior review\n",
+              " Push back when a spec does not make sense\n"
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The intern personally ships scoped features into a live product using agentic tooling, rather than merely coordinating or demonstrating concepts. End-to-end shipping across disciplines, questioning specifications, and an explicit expectation to iterate establish a shared problem-judgment, building, deployment, and improvement loop. Senior review does not diminish that ownership.",
+            "evidence": [
+              "p0010",
+              "p0011",
+              "p0014",
+              "p0015"
+            ],
+            "quotes": [
+              " Nearly 100% of the code in our product is AI-generated, and every IC (engineer, PM, designer) ships features end-to-end with agentic tooling.",
+              " The lines between disciplines are intentionally blurred: PMs ship code, engineers make product calls, designers prototype in production.",
+              "\n What you'll do\n Ship real, well-scoped work into a production codebase with actual users\n",
+              " Work with agentic tooling from day one, with senior review\n"
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "batch1_c20",
+      "company": "TRM Labs",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "changed",
+      "url": "https://jobs.ashbyhq.com/trm-labs/e4992057-b59e-4fb3-8f18-a919497d0ba5",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role owns a substantial build-and-deploy loop: working directly with mission users to turn needs into software, shipping integrations, data pipelines, and prototypes, deploying and operating them in customer environments, and carrying lessons back into the product. AI coding agents and LLM tooling are explicitly part of how the engineer ships.",
+            "evidence": [
+              "p0004",
+              "p0008",
+              "p0010",
+              "p0014"
+            ],
+            "quotes": [
+              "\n As a Forward Deployed Engineer, you will work directly with TRM's national-security customers \u2014 deploying our platform into their environments, sitting with the people who use it, and building what the mission actually needs.",
+              " What you build enables our government customers to use TRM securely in the most demanding environments in the world \u2014 and carries what you learn there back into the product.",
+              "\n Sit directly with mission users, translate what they need into working software, and build it: integrations, data pipelines, and prototypes that prove out a capability before it's a product.",
+              "\n What we\u2019re looking for: \n Strong programming ability in Python and/or Node.js/TypeScript, with real fluency developing with AI \u2014 coding agents and LLM tooling are part of how you ship, and you have judgment about where they help and where they don't."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "plain_text_operational_recovery",
+          "result": {
+            "decision": "yes",
+            "reason": "The role centrally involves working directly with mission users, translating their needs into software, and personally building integrations, pipelines, and usable prototypes. Coding agents and LLM tooling are explicitly part of how the engineer ships. End-to-end responsibility for deploying, operating, debugging, and improving these solutions in customer environments establishes the full building loop, rather than incidental implementation support."
+          },
+          "priorFailure": "Incomplete/refused model response: {\"reason\":\"max_output_tokens\"}",
+          "outputLimit": 600,
+          "artifact": "research/capability-baseline-format-diagnostic-batch1_c20-2026-10-29.json"
+        }
+      }
+    },
+    {
+      "key": "batch1_c29",
+      "company": "Sekai",
+      "title": "AI Product Engineer",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "not_available",
+      "url": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role centers on personally building and shipping user-facing software features end-to-end, using AI in development, debugging, prototyping, and iteration, and improving the product through production fixes and close product collaboration. This establishes a substantial build-and-improve loop.",
+            "evidence": [
+              "p0008",
+              "p0009",
+              "p0011",
+              "p0012"
+            ],
+            "quotes": [
+              "\n This role is focused primarily on shipping new product features, while also owning production issues and fixing them quickly when they arise.",
+              " You will work closely with Product and Engineering to build new user experiences, improve product quality, and iterate fast.",
+              "\n Responsibilities\n Build and ship product features end-to-end, with most of the role focused on new feature development\n",
+              " Debug and fix production issues quickly, with strong judgment around user impact and prioritization\n"
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "The role centrally owns end-to-end delivery of user-facing features, partners with Product on user experience and direction, and uses AI throughout development. Shipping, production issue ownership, and ongoing quality and usability improvements establish the complete building-and-iteration loop.",
+            "evidence": [
+              "p0011",
+              "p0013",
+              "p0014",
+              "p0012"
+            ],
+            "quotes": [
+              "\n Responsibilities\n Build and ship product features end-to-end, with most of the role focused on new feature development\n",
+              " Partner closely with Product to turn ideas into shipped experiences and contribute to product direction and user experience decisions\n",
+              " Use AI aggressively in day-to-day development, debugging, prototyping, and iteration\n",
+              " Debug and fix production issues quickly, with strong judgment around user impact and prioritization\n"
+            ]
+          },
+          "failure": null
+        }
+      }
+    },
+    {
+      "key": "batch1_c50",
+      "company": "Babylist",
+      "title": "Staff Product Designer (AI Builder)",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "changed",
+      "url": "https://job-boards.greenhouse.io/babylist/jobs/5831620004",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Building and improving working product experiences is a substantial, hands-on part of the role: the designer researches user needs, creates interactive prototypes and production frontend code personally, tests work with users, and tracks outcomes to iterate or pivot. AI is explicitly part of those building workflows.",
+            "evidence": [
+              "p0019",
+              "p0023",
+              "p0025",
+              "p0027"
+            ],
+            "quotes": [
+              "\n Human-and-data-centered. You plan and run generative and evaluative research yourself, bring concrete qualitative and quantitative evidence into design decisions, and communicate design rationale clearly and persuasively.",
+              "\n Feedback fan. You build feedback loops into your process from the start \u2014 putting prototypes in front of users early, sharing in-progress work before it's polished, and actively soliciting critique that makes it better.",
+              " You move from a rough concept to an interactive prototype in hours, not weeks, and write production frontend code yourself rather than depending on an engineer to translate your mock.",
+              "\n Outcome owner. You instrument your own work, track whether it's moving the right metrics, and make clean iterate/pivot/stop calls based on evidence, not attachment."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "plain_text_operational_recovery",
+          "result": {
+            "decision": "yes",
+            "reason": "The role explicitly owns the full building loop: researching user problems, personally using AI to create interactive prototypes and production frontend code, testing with users, and instrumenting outcomes to guide iteration. Hands-on implementation and ongoing refinement are central responsibilities, not occasional demos or work delegated to engineers."
+          },
+          "priorFailure": "Incomplete/refused model response: {\"reason\":\"max_output_tokens\"}",
+          "outputLimit": 600,
+          "artifact": "research/capability-baseline-format-diagnostic-batch1_c50-2026-10-29.json"
+        }
+      }
+    },
+    {
+      "key": "overjoy",
+      "company": "Overjoy",
+      "title": "Product Manager",
+      "expected": "yes",
+      "labelEvidence": "historical_label_with_matching_archived_capture",
+      "sourceComparison": "identical",
+      "url": "https://jobs.overjoy.ai/40195",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "This is a substantial end-to-end builder mandate: the PM discovers customer problems, prototypes and ships small fixes personally using AI coding tools, partners with engineering, and measures outcomes. The posting explicitly describes the full loop and makes building a meaningful part of the role.",
+            "evidence": [
+              "p0009",
+              "p0010",
+              "p0014",
+              "p0017"
+            ],
+            "quotes": [
+              "\n You&#x27;ll work close to customers and close to the code: talking to brands to understand their real problems, turning what you hear into crisp specs, prototyping fixes yourself in Claude Code, and partnering with engineering to ship.",
+              " You&#x27;ll own the full loop from \"customer pain \u2192 problem statement \u2192 prototype \u2192 shipped feature \u2192 measured outcome.\"\n",
+              "\n What You&#x27;ll Own\n Own a product area end-to-end \u2014 discovery, spec, prioritization, launch, and the metrics that prove it worked\n",
+              " Prototype and ship small fixes yourself using Claude Code, without waiting on engineering\n"
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "plain_text_operational_recovery",
+          "result": {
+            "decision": "yes",
+            "reason": "The role explicitly owns the loop from customer discovery to AI-assisted implementation, launch, and measured outcomes. Personally prototyping and shipping real fixes with Claude Code is a recurring responsibility\u2014not merely a demo or work delegated to engineering\u2014and the PM remains accountable for metrics, customer follow-up, and improvements."
+          },
+          "priorFailure": "Incomplete/refused model response: {\"reason\":\"max_output_tokens\"}",
+          "outputLimit": 600,
+          "artifact": "research/capability-baseline-format-diagnostic-overjoy-2026-10-29.json"
+        }
+      }
+    },
+    {
+      "key": "rillet",
+      "company": "Rillet",
+      "title": "Business Operations, AI Builder",
+      "expected": "yes",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "sourceComparison": "changed",
+      "url": "https://jobs.ashbyhq.com/rillet/f8d4f207-1e14-49fc-a0aa-a997a0c9bc2c",
+      "models": {
+        "gpt-6-luna": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Building and improving AI-powered solutions is central to the role: it owns transformation from problem framing through a solution teams use daily, and drives adoption until workflows change. The posting also requires personal experience building AI systems, tools, or processes and working closely with AI engineering.",
+            "evidence": [
+              "p0020",
+              "p0027",
+              "p0029",
+              "p0030"
+            ],
+            "quotes": [
+              "\n Who We Need\n Rillet is looking for a Business Operations hire who builds with AI, not one who just talks about it.",
+              "\n What You'll Do\n Partner with function leaders to define AI transformation for their team.",
+              "\n Own execution end-to-end, from framing the problem to something the team runs on daily.",
+              "\n Drive adoption. The job's done when the team has genuinely changed how it works, not when something ships."
+            ]
+          },
+          "failure": null
+        },
+        "gpt-6.1-sol": {
+          "status": "succeeded",
+          "format": "numbered_passages_and_evidence_ids",
+          "result": {
+            "decision": "yes",
+            "reason": "Hands-on AI building is central to this role, alongside other BizOps work. The hire partners with function leaders to identify workflow problems, personally builds AI-powered solutions, and owns execution through daily operational use and genuine adoption\u2014not merely shipping or coordinating. That end-to-end transformation mandate establishes continued involvement in making the solutions effective, with AI engineering providing infrastructure support rather than replacing personal building.",
+            "evidence": [
+              "p0020",
+              "p0027",
+              "p0029",
+              "p0030"
+            ],
+            "quotes": [
+              "\n Who We Need\n Rillet is looking for a Business Operations hire who builds with AI, not one who just talks about it.",
+              "\n What You'll Do\n Partner with function leaders to define AI transformation for their team.",
+              "\n Own execution end-to-end, from framing the problem to something the team runs on daily.",
+              "\n Drive adoption. The job's done when the team has genuinely changed how it works, not when something ships."
+            ]
+          },
+          "failure": null
+        }
+      }
+    }
+  ],
+  "findings": [
+    "Both models accept user-rejected Lab37 and Azul, with explicit rationales based on prototypes/MVP user testing and agent/skill construction.",
+    "Both reject user-rejected SQUIRE and OpenSesame Systems Administrator.",
+    "On the nine same-format successful paired cases, decisions agree throughout.",
+    "Plain-text Sol controls return completed outputs with fewer output tokens, but representation/schema/limit changes were bundled; this does not isolate the exact cause of numbered-passage truncations.",
+    "Sol remains operationally unresolved on Apollo; Sol marks Amperity unclear in the plain-text control.",
+    "Most positive labels lack a verified original full-text pair. This is a challenge-set diagnostic, not a 99-percent accuracy benchmark or proof of a model ceiling."
+  ]
+}

@@ -1,4 +1,5 @@
 import type { Command } from "commander";
+import { registerPrototypeCommand } from "./prototype.js";
 import { registerAddCommand } from "./add.js";
 import { registerArchiveCommand } from "./archive.js";
 import { registerConfigCommand } from "./config.js";
@@ -22,6 +23,7 @@ const commandDefinitions: CommandDefinition[] = [
 ];
 
 export function registerCommands(program: Command): void {
+  registerPrototypeCommand(program);
   registerDiscoverCommand(program);
   registerAddCommand(program);
   registerSourcesCommand(program);

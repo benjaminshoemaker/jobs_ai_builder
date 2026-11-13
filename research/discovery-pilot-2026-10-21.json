@@ -1,0 +1,2007 @@
+{
+  "title": "Exploratory 50-candidate U.S. discovery pilot",
+  "checked_on": "2026-10-21",
+  "timezone": "America/Los_Angeles",
+  "definition": "Product judgment + direct building + AI enables building. Qualifications first. Genuine engineering-background blends remain distinct; engineering or solutions work alone is insufficient.",
+  "method": {
+    "AN": "First 15 distinct openings from most-recent results for product with United States location on AI Native Builder. Three pages (36 cards) inspected to observe additional candidates and duplication; only the first 15 distinct openings enter the 50-row screen.",
+    "HC": "First 15 non-overlapping openings from the public U.S. ai-product-builder relevance page, through Amperity. WEX also appeared here and was already counted in AN. This is a keyword-page comparison, not Talent Agent.",
+    "WEB": "20 selected candidates from independent responsibility/tool/title searches and previously surfaced employer examples. Several known examples retained. This is not an all-new, randomized or source-blinded holdout.",
+    "verification": "Published public ATS feed or employer detail page with job and application. For dynamic pages use browser/web fallback. Absence from a feed, an HTTP failure, and employer-declared closure are separate statuses.",
+    "comparison_limits": "Unequal queries, sort orders and sampling; assessment is subjective, partly calibrated on reused examples. Source yield here is descriptive, not overall precision/recall or a ranking of services. Source is initial sample lane, not exclusivity.",
+    "effort": "Public requests plus manual reading and browser fallbacks. Collection fetch script elapsed seconds is recorded below; human-equivalent review time and cost per relevant role were not reliably timed.",
+    "storage": "Metadata, authored summaries and short evidence passages only. No credentials or full job descriptions."
+  },
+  "summary": {
+    "source": {
+      "AN": 15,
+      "HC": 15,
+      "WEB": 20
+    },
+    "status": {
+      "current": 34,
+      "closed": 2,
+      "unverified": 6,
+      "not_in_current_feed": 6,
+      "unavailable_url": 2
+    },
+    "classification": {
+      "exclude": 11,
+      "stretch": 6,
+      "core": 17,
+      "unassessed": 16
+    }
+  },
+  "by_initial_source": {
+    "AN": {
+      "sampled": 15,
+      "availability": {
+        "current": 14,
+        "closed": 1
+      },
+      "assessments": {
+        "exclude": 10,
+        "stretch": 2,
+        "core": 2,
+        "unassessed": 1
+      }
+    },
+    "HC": {
+      "sampled": 15,
+      "availability": {
+        "current": 10,
+        "unverified": 4,
+        "closed": 1
+      },
+      "assessments": {
+        "core": 7,
+        "unassessed": 5,
+        "stretch": 2,
+        "exclude": 1
+      }
+    },
+    "WEB": {
+      "sampled": 20,
+      "availability": {
+        "current": 10,
+        "not_in_current_feed": 6,
+        "unavailable_url": 2,
+        "unverified": 2
+      },
+      "assessments": {
+        "core": 8,
+        "stretch": 2,
+        "unassessed": 10
+      }
+    }
+  },
+  "fetch_batch_elapsed_seconds": 2.9,
+  "duplicate_observations": [
+    "WEX R22767 surfaced through two career-site domains on AN, and on HC.",
+    "SharkNinja finance director surfaced through a branded careers page and Greenhouse.",
+    "Sony principal FDE surfaced through both branded and Workday URLs on AN page three; these cards are outside the 15-row AN screen."
+  ],
+  "targeted_AN_overlap_checks": {
+    "query_scope": "United States location retained; employer-name queries, exact outbound posting checked where visible. These checks do not establish inventory-wide absence.",
+    "no_result": [
+      "CloudZero",
+      "Legion Health",
+      "Medecision",
+      "Indeed Flex",
+      "Applied Intuition",
+      "ShipBob"
+    ],
+    "different_posting_only": {
+      "Vanta": "https://jobs.ashbyhq.com/vanta/dad058bc-c45a-4723-9e22-405b65c07a3a"
+    },
+    "exact_shortlist_postings_surfaced": [
+      "Tread",
+      "SharkNinja"
+    ],
+    "inconclusive": [
+      "Alt: 23 substring matches; target not among first 12 visible results."
+    ]
+  },
+  "candidates": [
+    {
+      "id": 1,
+      "source": "AN",
+      "company": "Sekai",
+      "title": "AI Product Engineer",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f",
+      "classification": "exclude",
+      "assessment_reason": "Product-centric engineer implementing features with Product; engineering-led scope, not clear product-area ownership.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "This role is focused primarily on shipping new product features, while also owning production issues and fixing them quickly when they arise. You will work closely with Product and Engineering to build new user experiences, improve product quality, and iterate fast. The right person is highly AI-native, strong in ownership, and excited to build in ",
+        "- Debug and fix production issues quickly, with strong judgment around user impact and prioritization"
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Engineering implementation with contribution to product direction; lacks clear ownership of what to build.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "toast",
+          "g2"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 2,
+      "source": "AN",
+      "company": "Form Energy",
+      "title": "Staff Forward Deployed Engineer",
+      "location": "Somerville, MA",
+      "url": "https://jobs.ashbyhq.com/formenergy/b271995b-a17b-4153-abf2-f1ab4c2283f2",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/formenergy/b271995b-a17b-4153-abf2-f1ab4c2283f2",
+      "classification": "exclude",
+      "assessment_reason": "User rejected this specific posting as forward-deployed/solutions work; eight-plus years production software required.",
+      "assessment_author": "assistant",
+      "prior_user_label": "no",
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "Form Energy is scaling on every axis at once — research, first-of-a-kind manufacturing, field deployment, and the business that runs behind them — and everywhere it scales, the same pattern repeats: brilliant people held back by fragile spreadsheets, manual handoffs, and software that doesn't exist yet. As a Staff Forward Deployed Engineer, you are",
+        "- Spearhead the adoption of AI-driven automation in the functions you're embedded with — prototype and ship AI-enabled tools and agents, and drive real adoption with the people who will use them, all within the guardrails set by Form Energy's independent AI-governance function."
+      ],
+      "reassessment": {
+        "decision": "user_negative",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "form"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "source": "AN",
+      "company": "Cyvl",
+      "title": "Forward Deployed Engineer",
+      "location": "New York, New York",
+      "url": "https://jobs.ashbyhq.com/cyvl/0e848342-babd-4ff7-834e-ca4b7c710f75",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/cyvl/0e848342-babd-4ff7-834e-ca4b7c710f75",
+      "classification": "exclude",
+      "assessment_reason": "User rejected: account implementation and solutions, rather than product ownership.",
+      "assessment_author": "assistant",
+      "prior_user_label": "no",
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "As a Forward Deployed Engineer, you'll embed with our largest city and agency customers, starting in New York City, and make Cyvl indispensable to how they run. You'll configure the platform against real agency data, prototype custom outputs and integrations with AI coding tools and our API, and find the next problem we can solve for them. This is ",
+        "- Build and deploy solutions: configure Cyvl against agency data and workflows, and prototype custom outputs and integrations using Claude Code and Cyvl's API."
+      ],
+      "reassessment": {
+        "decision": "user_negative",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "cyvl"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "source": "AN",
+      "company": "Atoms",
+      "title": "Senior Forward Deployed Engineer",
+      "location": "Mountain View, CA",
+      "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8903052002",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/cssmerge/jobs/8903052002",
+      "classification": "stretch",
+      "assessment_reason": "Internal discovery and product judgment are explicit, but three-plus years delivering software and architecture autonomy imply an engineering-heavy route.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "As a Forward Deployed Engineer on the Bionic Enterprise team, you’ll embed with teams across Atoms to improve how the company works using AI and software. You’ll combine engineering, product judgment, and hands-on problem solving to take problems from discovery through deployment and measurable results.",
+        "A bachelor’s degree and 3+ years of experience building and delivering software. Your background may include software engineering, forward deployed engineering, solutions engineering, founding a company, or hands-on technical consulting."
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Embedded engineering role with production/architecture experience; closer to the rejected Form Energy mandate than the product-led references.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "form",
+          "rivian"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 5,
+      "source": "AN",
+      "company": "Monaco",
+      "title": "Forward Deployed Engineer",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/monaco/3e2ab0e7-db5f-4fa0-b467-a4fd0e0be508",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/monaco/3e2ab0e7-db5f-4fa0-b467-a4fd0e0be508",
+      "classification": "exclude",
+      "assessment_reason": "Strategic-customer implementations, deal unblocking, and account rescue; feeds requirements back to Product.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "You'll join Delta Force, Monaco's forward deployed engineering team. Forward Deployed Engineers are the tip of the spear for our most strategic customers: when Sales, CX, or GTM needs something the product can't do yet, you embed with them, take an ambiguous, high-stakes problem, and own all of it from first discovery to a live, adopted system. Sco",
+        "- Build the hard parts yourself. Agents, MCP servers, API integrations, data pipelines, Retool apps, and the glue between messy systems."
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Strategic customer implementation and deal/account unblocking; product receives field feedback rather than being owned by this role.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cyvl",
+          "apollo"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 6,
+      "source": "AN",
+      "company": "Within",
+      "title": "Senior AI Product Manager",
+      "location": "San Francisco (HQ)",
+      "url": "https://jobs.ashbyhq.com/within.ai/6886702a-4e88-4cc1-9f71-04b690aefb9a",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/within.ai/6886702a-4e88-4cc1-9f71-04b690aefb9a",
+      "classification": "core",
+      "assessment_reason": "User-approved: PM background accepted; personally builds AI prototypes and owns product areas.",
+      "assessment_author": "assistant",
+      "prior_user_label": "yes",
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "- The prototype that settles the argument. Build working prototypes with AI tooling to validate a direction before engineering commits.",
+        "- A builder with real product instincts. You ship working prototypes with AI tooling (Cursor, Claude Code, v0) to validate a direction rather than waiting on engineering capacity. Links to things you’ve built are a strong plus."
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "within"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "source": "AN",
+      "company": "WEX",
+      "title": "Senior AI Product Manager (AI Builder)",
+      "location": "United States",
+      "url": "https://careers.wexinc.com/us/en/job/R22767/Senior-AI-Product-Manager-AI-Builder",
+      "checked_on": "2026-10-21",
+      "status": "closed",
+      "verification_note": "Live employer page states the job has been filled.",
+      "candidate_reference": "https://careers.wexinc.com/us/en/job/R22767/Senior-AI-Product-Manager-AI-Builder",
+      "classification": "unassessed",
+      "assessment_reason": "Employer page explicitly says filled. Do not recommend the indexed opening.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN",
+        "HC"
+      ],
+      "supporting_passages": [],
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 8,
+      "source": "AN",
+      "company": "OnePay",
+      "title": "AI Platform Engineer",
+      "location": "United States (Remote)",
+      "url": "https://jobs.ashbyhq.com/oneapp/a85bb5aa-9683-4d67-84e5-5d3e4bacda59",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/oneapp/a85bb5aa-9683-4d67-84e5-5d3e4bacda59",
+      "classification": "exclude",
+      "assessment_reason": "Current title is AI Platform Engineer; five-plus years professional engineering and implementation-centered mandate.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "- Operate as an AI-native engineer, utilizing tools like Cursor and Claude Code to rapidly prototype, deploy, and ship production-grade AI agents and automation workflows that solve high-stakes business problems in cross-functional organizations.",
+        "- 5+ years of professional engineering experience shipping production code to write clean, maintainable, and well-tested code."
+      ],
+      "retrieved_title": "Forward Deployed Engineer",
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Professional engineering and execution of AI strategy dominate the current AI Platform Engineer role.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "toast",
+          "g2"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 9,
+      "source": "AN",
+      "company": "Quantifind",
+      "title": "AI Forward Deployed Engineer ",
+      "location": "Palo Alto, CA",
+      "url": "https://www.quantifind.com/open-positions/?gh_jid=8024932",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://boards-api.greenhouse.io/v1/boards/quantifind/jobs/8024932",
+      "classification": "exclude",
+      "assessment_reason": "Government/customer environments, architecture, integration and deployment; solutions/engineering-centered.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "You're also an engineer who codes with AI as a first-class tool, not an add-on. You pair traditional technical training with a forward-leaning approach to agentic coding, rapid prototyping, and multi-agent workflows. You move fast, iterate with stakeholders, and care about shipping things that work.",
+        "Hands-on with AI coding tools and agentic workflows (Claude Code, GPT/Codex, Cursor, Windsurf), including multi-agent approaches for testing and validation"
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Customer architecture, government cloud and integration are the center of the work.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cyvl",
+          "amperity"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 10,
+      "source": "AN",
+      "company": "a16z-speedrun (design)",
+      "title": "Founding AI Product Design Lead",
+      "location": "Austin, TX",
+      "url": "https://jobs.ashbyhq.com/a16z-speedrun/96a180a0-caef-4a36-91f8-bc582fa302bf",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/a16z-speedrun/96a180a0-caef-4a36-91f8-bc582fa302bf",
+      "classification": "stretch",
+      "assessment_reason": "Maestro design leadership role surfaced through an investor board. AI-native design/prototyping is explicit, but personal implementation depth is unclear.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "Our product and engineering teams live in Claude Code daily. You’ll be embedded in that process, shaping how AI shows up across the product rather than just designing around it. Using AI tools to move fast is core to how we work, and it’s non-negotiable for this role.",
+        "- Prototype and test with real members and advisors, iterating quickly"
+      ],
+      "employer_name": "Maestro (posting hosted by a16z-speedrun)",
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Design and AI-tool fluency are explicit; personal creation of working software/agents as a central deliverable is not established.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cloudzero",
+          "indeed"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 11,
+      "source": "AN",
+      "company": "Upside",
+      "title": "Staff Forward Deployed Engineer, GTM Platform",
+      "location": "NYC",
+      "url": "https://jobs.ashbyhq.com/upside/3399cd25-3cc1-45f9-98da-4cf60c8f3123",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/upside/3399cd25-3cc1-45f9-98da-4cf60c8f3123",
+      "classification": "exclude",
+      "assessment_reason": "First staff engineering hire for a GTM platform; engineering depth and architecture dominate.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "- Move from prototype to production quickly, then keep iterating as AI capabilities change underneath you",
+        "- Real experience building with LLMs and AI APIs in production, including prompt design, output evaluation, and iterating toward reliability"
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "First staff engineer for a GTM platform; architecture and engineering execution dominate.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "toast",
+          "alaffia"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 12,
+      "source": "AN",
+      "company": "Tenex",
+      "title": "Senior Forward Deployed Engineer",
+      "location": "New York City",
+      "url": "https://jobs.ashbyhq.com/tenexlabs/f27221d6-a9b7-47db-9d30-f90487eab01a",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/tenexlabs/f27221d6-a9b7-47db-9d30-f90487eab01a",
+      "classification": "exclude",
+      "assessment_reason": "Engineer delivering multiple client projects in an engineering pod; not product-area ownership.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "Anthropic, OpenAI, and Cursor are partners where we turn technology into reliable systems businesses use every day.",
+        "You’ll own client projects end to end: find where AI adds real value, decide the technical plan, build the whole system, and keep improving it in production. You’ll lead a few projects at a time in a pod run by an engineering manager."
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Engineering-pod client projects rather than product ownership.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cyvl",
+          "vailent"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 13,
+      "source": "AN",
+      "company": "SharkNinja",
+      "title": "Director, Finance AI & Automation ",
+      "location": "Needham, MA, United States",
+      "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4709349006",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4709349006",
+      "classification": "core",
+      "assessment_reason": "Domain-specific internal builder: personally ships Finance agents, prioritizes by impact, and measures adoption; finance expertise and leadership required.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "shortlist_rank": 9,
+      "required_background": "8–10 years blending finance and technology; financial-statement/control literacy and technical delivery leadership.",
+      "personal_building": "Personally build production finance agents and own prioritization, adoption and impact.",
+      "shortlist_type": "Core, finance-domain internal builder",
+      "supporting_passages": [
+        "As the Director, Finance AI & Automation , you will own the design, build and deployment of the AI capability inside a global Finance organization at a nearly $8 billion consumer products company. This is not an advisory or program management role. You will personally build, production AI agents and automations that change how Finance plans, closes",
+        "Personally build agents and automations. This role stays hands on at the Director level and is expected to ship, not only to direct."
+      ],
+      "reassessment": {
+        "decision": "user_positive_qualified",
+        "reason": "Does seem to have a builder role, with substantial finance/domain and experience requirements.",
+        "basis": "direct user feedback",
+        "reference_ids": [
+          "sharkninja"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      },
+      "user_review": {
+        "label": "yes",
+        "reason": "Does seem to have a builder role, with substantial finance/domain and experience requirements.",
+        "qualification": "qualified",
+        "effective_fit": "core"
+      },
+      "previous_reassessment": {
+        "decision": "recommend",
+        "reason": "Personally builds production finance agents, prioritizes use cases and owns adoption/value. Strong domain-specific internal builder; finance career and controls expertise materially narrow eligibility.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "alaffia",
+          "rivian"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 14,
+      "source": "AN",
+      "company": "LLR Partners",
+      "title": "Forward Deployed Engineer",
+      "location": "Philadelphia, Pennsylvania",
+      "url": "https://job-boards.greenhouse.io/llrpartnersjobs/jobs/4399904009",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/llrpartnersjobs/jobs/4399904009",
+      "classification": "exclude",
+      "assessment_reason": "Professional SWE and production LLM engineering are required; internal engineering delivery rather than a clear product role.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "This is a mid-level seat with real ownership. You will not just consume off-the-shelf AI tools; you will build custom MCP servers, reusable Claude Skills, RAG pipelines, and the semantic and judgement layers that make every agent trustworthy at scale.",
+        "Build the platform layer. Custom MCP servers exposing LLR's data to every agent; RAG pipelines with chunking, embeddings, vector stores, retrieval/generation and evals; reusable Claude Skills that codify LLR patterns."
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Professional software/LLM engineering is the job center; clear product ownership is not established.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "toast",
+          "g2"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 15,
+      "source": "AN",
+      "company": "BambooHR",
+      "title": "Sr. Forward Deployed Engineer",
+      "location": "Utah | Hybrid",
+      "url": "https://job-boards.greenhouse.io/bamboohr17/jobs/6115974004",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/bamboohr17/jobs/6115974004",
+      "classification": "exclude",
+      "assessment_reason": "Software engineer owning time-boxed SMB customer engagements; solutions-centered despite discovery.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "AN"
+      ],
+      "supporting_passages": [
+        "This role requires travel to local customer sites. Our engineers work daily with AI coding tools such as Claude Code, Codex, and Cursor. The specific tools evolve over time."
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Software engineer owning time-boxed customer engagements and contributing roadmap feedback.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cyvl",
+          "vailent"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 16,
+      "source": "HC",
+      "company": "Medecision",
+      "title": "Medecision Inc. - AI Product Builder",
+      "location": "Remote, United States",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4571394",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "verification_note": "Employer detail page fetched directly; complete role text and Apply links present.",
+      "candidate_reference": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4571394",
+      "classification": "core",
+      "assessment_reason": "Five-plus years PM/PO/BA, healthcare IT or SaaS; explicitly welcomes PMs who learned coding with AI and directly build features.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "shortlist_rank": 3,
+      "required_background": "5+ years PM, PO or BA; healthcare IT or SaaS exposure; developer experience is a plus.",
+      "personal_building": "Own discovery through rollout and personally create working features/MVPs with AI coding tools.",
+      "shortlist_type": "Core, product-led builder",
+      "supporting_passages": [
+        "Are you looking for an emerging, AI-augmented hybrid role that combines the strategic vision of a product manager, the design sense of a UX designer, and the prototyping capability of a software engineer? We have that opportunity available in our AI Product Builder role.",
+        "To be successful at Medecision the AI Product Builder will understand what a customer centric organization entails and be able to infuse that ideology in your contributions. On a given day, you will help drive Medecision’s success by working closely with stakeholders and the development team to define and oversee products from start to finish, tran"
+      ],
+      "user_review": {
+        "label": "yes",
+        "reason": "Perfect match.",
+        "effective_fit": "core"
+      },
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "medecision"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "source": "HC",
+      "company": "G2",
+      "title": "Senior AI Product Builder",
+      "location": "Remote (US)",
+      "url": "https://jobs.ashbyhq.com/g2/92dc2275-115f-4676-a607-fdda964e8121",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/g2/92dc2275-115f-4676-a607-fdda964e8121",
+      "classification": "core",
+      "assessment_reason": "User-approved. Product/design backgrounds accepted; code and system-design fluency required, not necessarily an engineering career.",
+      "assessment_author": "assistant",
+      "prior_user_label": "yes",
+      "sources_observed": [
+        "HC",
+        "AN"
+      ],
+      "supporting_passages": [
+        "- Write production code, prototype in a low-code/AI environment, or get deep in the weeds with engineering partners—you are hands-on.",
+        "- Move from a customer conversation to a working prototype fast."
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "g2"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "source": "HC",
+      "company": "Exiger",
+      "title": "AI Product Builder ",
+      "location": "McLean, Virginia, United States; Richmond, Virginia, United States",
+      "url": "https://www.exiger.com/careers/6202657004?gh_jid=6202657004",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/exiger/jobs/6202657004",
+      "classification": "core",
+      "assessment_reason": "Product discovery plus AI-assisted implementation; accepts projects/research/internships as experience, with engineering support.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [
+        "As an AI Product Builder, you'll use large language models, AI agents, automation tools, code, and rapid prototyping to turn ambiguous problems into product experiences people actually use. You'll work end to end across the application, data, and AI layers while collaborating with engineers, designers, data specialists, customers, and other product",
+        "Turn customer and business problems into prototypes, experiments, automations, and live product features."
+      ],
+      "reassessment": {
+        "decision": "user_engineering_blend",
+        "reason": "User agrees with engineering-first product-blend assessment.",
+        "basis": "direct user feedback",
+        "reference_ids": [
+          "exiger"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      },
+      "user_review": {
+        "label": "engineering_first_blend",
+        "reason": "User agrees with engineering-first product-blend assessment.",
+        "qualification": "confirmed_type",
+        "effective_fit": "engineering_first_blend"
+      },
+      "previous_reassessment": {
+        "decision": "engineering_first_blend",
+        "reason": "Explicitly designed for an engineer moving into product, with real product decisions and direct AI building. Accepts projects/internships/research toward typical one-to-three years; engineering ability is expected, not necessarily an established SWE employment career.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "g2",
+          "extenteam"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 19,
+      "source": "HC",
+      "company": "ShipBob",
+      "title": "Senior AI Product Builder, Inventory Experience",
+      "location": "Remote - United States",
+      "url": "https://job-boards.greenhouse.io/shipbobinc/jobs/4725934005",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/shipbobinc/jobs/4725934005",
+      "classification": "core",
+      "assessment_reason": "PM route accepted; customer discovery through AI-assisted production PRs; logistics/ecommerce domain required.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "shortlist_rank": 6,
+      "required_background": "5+ years PM/product engineering/equivalent; supply chain, logistics or ecommerce experience.",
+      "personal_building": "Own discovery, AI prototypes, production PRs and outcome measurement with an engineering pod.",
+      "shortlist_type": "Core, product-led builder",
+      "supporting_passages": [
+        "AI Builders is ShipBob’s new job family — the deliberate next step for Product Management in the AI-native era. The thesis is simple: when AI tools can generate working code from precise specs, the slowest step is no longer the spec — it is the PM→Engineer handoff. AI Builders close that gap by owning discovery, specs, prototypes, and production PR",
+        "As a Senior AI Product Builder at ShipBob, you own the full build loop for your product domain: discovery, story/specs, AI-augmented prototypes, and production-ready PRs. This is not the traditional PM role — you are a builder. You use the AI development toolchain (e.g., Claude Code, Driver.ai) to understand ShipBob’s codebase architecture, generat"
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "reason": "Good match.",
+        "basis": "direct user feedback",
+        "reference_ids": [
+          "shipbob"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      },
+      "user_review": {
+        "label": "yes",
+        "reason": "Good match.",
+        "qualification": "positive",
+        "effective_fit": "core"
+      },
+      "previous_reassessment": {
+        "decision": "recommend",
+        "reason": "Whole discovery-to-PR-to-outcome loop is the mandate, with a PM entry route and engineering support; strong match to the product-led references.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "vailent",
+          "medecision"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 20,
+      "source": "HC",
+      "company": "EarnIn",
+      "title": "Senior Product Builder",
+      "location": "Mountain View, US",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8261686",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/earnin/jobs/8261686",
+      "classification": "core",
+      "assessment_reason": "User-approved. PM route accepted with technical degree/equivalence, full-stack comfort and hands-on AI delivery.",
+      "assessment_author": "assistant",
+      "prior_user_label": "yes",
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [
+        "As a Senior Product Builder at EarnIn, you’ll help bring our mission to life. EarnIn is making AI-native work a core capability. It’s how we design, build, and ship. The products you own will run in production, making real decisions for real people who depend on EarnIn to access their pay when it matters most. You’ll bring a strong technical founda",
+        "Graduate pilots to production. Take what’s working in engineering experiments and turn it into something the next team can fork and ship in a week. Build reusable libraries, templates, and reference implementations so no one solves the same problem twice."
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "earnin"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "source": "HC",
+      "company": "Postman",
+      "checked_on": "2026-10-21",
+      "status": "unverified",
+      "candidate_reference": "gh:postman:Product Builder",
+      "classification": "unassessed",
+      "assessment_reason": "Initial assumed board endpoint failed. Current employer page is dynamic; no current role verification completed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [],
+      "title": "Product Builder",
+      "retrieved_title": "Product Builder",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 22,
+      "source": "HC",
+      "company": "Axiad",
+      "title": "Principal Product Builder ",
+      "location": "San Jose, California, United States",
+      "url": "https://job-boards.greenhouse.io/axiad/jobs/6220016004",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/axiad/jobs/6220016004",
+      "classification": "core",
+      "assessment_reason": "User-approved reference: career PM plus active agentic building practice.",
+      "assessment_author": "assistant",
+      "prior_user_label": "yes",
+      "sources_observed": [
+        "HC",
+        "AN"
+      ],
+      "supporting_passages": [
+        "Actively build product — not the rule of the job, but a constant, strategic urgent practice. Prototypes, UX, working software: you pick the moments where making the thing is the highest-leverage move and take them without asking — handing the last mile to the team when that's the right call, carrying it yourself when it isn't.",
+        "Prototype what customers can't yet articulate."
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "axiad"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "source": "HC",
+      "company": "Alt",
+      "title": "Product Builder, Growth",
+      "location": "Remote",
+      "url": "https://jobs.ashbyhq.com/alt/62bdcbde-df4a-4d2c-bd01-0560d86b387c",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "ash:alt:Product Builder",
+      "classification": "stretch",
+      "assessment_reason": "Clear growth product ownership, but requires full-stack production coding and operational accountability; accessibility is not established by lack of a SWE tenure gate.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC",
+        "AN"
+      ],
+      "shortlist_rank": 10,
+      "required_background": "Full-stack production coding, SQL/Python, growth results and roughly five years building; owns operational consequences.",
+      "personal_building": "Own a marketplace growth funnel, build its changes and run experiments.",
+      "shortlist_type": "Stretch, engineering-intensive product blend; SWE career requirement not explicit",
+      "supporting_passages": [
+        "The people who are great at this have run growth inside a system that was already working, not just inside a roadmap someone else set. They ship their own code. And they are participants in this market: they buy, they sell, and they have a view on where liquidity actually goes.",
+        "- You've been shipping to production since week two, and the team reviews your PRs the way they review each other's."
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "reason": "Still a fit; asking for a lot. Demanding requirements do not make the role merely a stretch.",
+        "basis": "direct user feedback",
+        "reference_ids": [
+          "alt"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      },
+      "user_review": {
+        "label": "yes",
+        "reason": "Still a fit; asking for a lot. Demanding requirements do not make the role merely a stretch.",
+        "qualification": "positive",
+        "effective_fit": "core"
+      },
+      "previous_reassessment": {
+        "decision": "stretch",
+        "reason": "Owns growth decisions and builds the product, but full-stack production code and on-call accountability imply an engineering-intensive floor. Do not label as requiring a formal SWE career that the posting does not explicitly demand.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "earnin",
+          "extenteam"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 24,
+      "source": "HC",
+      "company": "North",
+      "title": "Senior Product Builder, Point-of-Sale (POS) at North | Remote Source",
+      "location": "United States (reported)",
+      "url": "https://nabancard.wd1.myworkdayjobs.com/nab/job/US---Remote/Senior-Product-Builder_JR102087",
+      "checked_on": "2026-10-21",
+      "status": "unverified",
+      "verification_note": "Employer apply URL discovered in secondary page; current employer detail not verified.",
+      "candidate_reference": "https://www.remotesource.com/jobs/MwdbZ3Gn2ZvWAz2WeHotu-senior-product-builder-at-north",
+      "classification": "unassessed",
+      "assessment_reason": "Secondary description is relevant but current employer opening was not independently verified.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [
+        "The Senior Product Builder, Point-of-Sale is a hands-on, builder-first role. This person will provide dedicated technical ownership by defining, designing, and prototyping iOS, Android, and hardware features for North’s flagship point-of-sale (POS) system.",
+        "Define, design, and build end-to-end proof-of-concept features, interactive prototypes, and technical sandboxes for desktop, iOS, Android, and hardware terminals/kiosks)."
+      ],
+      "retrieved_title": "Senior Product Builder, Point-of-Sale (POS)",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 25,
+      "source": "HC",
+      "company": "4M Analytics",
+      "checked_on": "2026-10-21",
+      "status": "unverified",
+      "candidate_reference": "https://hiringcafe.com/job/forward-deployed-product-builder-4m-analytics-austin-texas-caj612v1noth87wr",
+      "classification": "unassessed",
+      "assessment_reason": "Secondary description combines segment product strategy with AI building, but employer posting could not be verified in this pass.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [],
+      "title": "Forward Deployed Product Builder",
+      "retrieved_title": "Forward Deployed Product Builder",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 26,
+      "source": "HC",
+      "company": "Brief via a16z-speedrun",
+      "title": "Product Builder (Forward Deployed)",
+      "location": "San Francisco, CA",
+      "url": "https://jobs.ashbyhq.com/a16z-speedrun/41dac67e-5caa-44c5-9e00-8f64b48d7c0a",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "ash:a16z-speedrun:Product Builder (Forward Deployed)",
+      "classification": "exclude",
+      "assessment_reason": "Brief implementation, customer change management, workshops and enablement are central; product feedback is secondary.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [
+        "- - Build, hands-on. Prototype, configure, and demonstrate.",
+        "- - Up-to-date and hands-on with AI development."
+      ],
+      "employer_name": "Brief (posting hosted by a16z-speedrun)",
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Deploying Brief, enterprise enablement and change management are primary; closer to solutions than owning the product.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cyvl",
+          "apollo"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 27,
+      "source": "HC",
+      "company": "Noom",
+      "checked_on": "2026-10-21",
+      "status": "unverified",
+      "candidate_reference": "gh:noom:Growth Product",
+      "classification": "unassessed",
+      "assessment_reason": "Indexed description is promising; current primary opening not verified.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [],
+      "title": "Growth Product Builder",
+      "retrieved_title": "Growth Product Builder",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 28,
+      "source": "HC",
+      "company": "RK Industries",
+      "title": "Senior AI Product Manager / Agent Builder",
+      "location": "Aurora, Colorado",
+      "url": "https://jobs.jobvite.com/rkmi/job/obCNAfwU",
+      "checked_on": "2026-10-21",
+      "status": "closed",
+      "verification_note": "Live employer page redirects with error=404 and states the job listing no longer exists.",
+      "candidate_reference": "https://jobs.jobvite.com/rkmi/job/obCNAfwU",
+      "classification": "unassessed",
+      "assessment_reason": "Employer redirects to job list with explicit no-longer-exists message.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "supporting_passages": [],
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 29,
+      "source": "HC",
+      "company": "Artera",
+      "title": "AI Builder",
+      "location": "Seattle, Washington",
+      "url": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "classification": "stretch",
+      "assessment_reason": "Broad PM/design backgrounds accepted, but customer-specific implementation/onboarding is prominent; reassess product-versus-solutions boundary.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC",
+        "AN"
+      ],
+      "supporting_passages": [
+        "You'll be a fully contributing builder inside a customer-facing squad bringing AI-native fluency in delivering end-to-end on your customers’ needs — owning initiatives from customer discovery through production operation, onboarding new customers onto what you build, and shipping enhancements that keep pace with the technical possibilities for a na",
+        "Agentic Development: Build novel solutions for named customers; translate their operational reality into technical solutions that you yourself architect and code with our internal agentic systems."
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Current mandate builds for named provider customers and owns their onboarding/operation; solutions-led despite accessible PM/design routes.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cyvl",
+          "form"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 30,
+      "source": "HC",
+      "company": "Amperity",
+      "title": "Principal Product Builder - AI & Agentic Products",
+      "location": "Seattle, WA",
+      "url": "https://amperity.com/careers/8212260?gh_jid=8212260",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "verification_note": "Old ID failed. Followed current employer careers link to new ID 8212260; rendered full JD and application confirmed. Not proof old and new IDs are the same requisition.",
+      "candidate_reference": "https://job-boards.greenhouse.io/amperity/jobs/7728564",
+      "classification": "core",
+      "assessment_reason": "Current employer posting found under a new ID: owns product direction and prototypes agents; engineering owns production architecture.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "HC"
+      ],
+      "shortlist_rank": 5,
+      "required_background": "Customer-data expertise and hands-on agentic frameworks/tool use; no explicit SWE employment-tenure gate.",
+      "personal_building": "Shape product strategy and test ideas in the codebase; engineering owns production architecture.",
+      "shortlist_type": "Core, product-led builder",
+      "supporting_passages": [
+        "Technical Fluency: You prototype quickly using AI tools and low-code integrations, and can test ideas directly in a codebase. While engineering owns production architecture, hands-on experience with agentic frameworks, tool use, and context engineering is required."
+      ],
+      "user_review": {
+        "label": "yes",
+        "reason": "Great fit.",
+        "effective_fit": "core"
+      },
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "amperity"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "source": "WEB",
+      "company": "CloudZero",
+      "title": "Senior/Staff Product Manager, Agentic Practice",
+      "location": "San Francisco, CA",
+      "url": "https://jobs.ashbyhq.com/CloudZero/9a295df8-1e90-43df-b903-b01eabc3e240",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/CloudZero/9a295df8-1e90-43df-b903-b01eabc3e240",
+      "classification": "core",
+      "assessment_reason": "Three-to-four-plus years B2B SaaS PM plus expertise in another discipline; personally creates coding-agent prototypes without engineering assistance.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "shortlist_rank": 4,
+      "required_background": "3–4+ years B2B SaaS PM plus expertise in another discipline, including finance or product marketing.",
+      "personal_building": "Own a product area and independently build interactive prototypes with coding agents.",
+      "shortlist_type": "Core, prototype-focused product builder",
+      "supporting_passages": [
+        "You are AI-native in how you work. You use coding agents (Cursor, Claude Code, or similar) as part of your everyday practice — translating your own requirements into working prototypes, accelerating discovery cycles, and proving out ideas before engineering invests. You continually refine your own patterns and tools for using AI to do PM work bette",
+        "- Build interactive prototypes from your own requirements using coding agents (Cursor, Claude Code, or similar) to validate intent and gather feedback before engineering commits"
+      ],
+      "user_review": {
+        "label": "no",
+        "reason": "AI-native PM, not a builder role.",
+        "effective_fit": "exclude"
+      },
+      "reassessment": {
+        "decision": "user_negative",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "cloudzero"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "source": "WEB",
+      "company": "Level AI",
+      "title": "Revenue Operations Architect — GTM Systems Builder",
+      "location": "Remote, United States",
+      "url": "https://jobs.ashbyhq.com/level-ai/ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/level-ai/ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "classification": "stretch",
+      "assessment_reason": "Hands-on RevOps builder with broad non-SWE entry routes, but product ownership versus GTM systems operations remains uncertain.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [
+        "This is a builder role and a manager role. You’ll spend your days in Salesforce, in Gong, and in Claude — designing systems and shipping them, not only running a team or maintaining a process someone else defined. Most of the infrastructure doesn’t exist yet. You’ll design it, build it, own it, and prove it works before anyone else has to adopt it.",
+        "- GTM AI agents you architect and ship — research, sequencing, forecasting, and daily pipeline briefings — productionized, not prototyped."
+      ],
+      "reassessment": {
+        "decision": "hold",
+        "reason": "Hands-on internal agents and non-SWE routes are clear; product-building mandate versus RevOps systems ownership remains uncertain.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "alaffia",
+          "toast"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 33,
+      "source": "WEB",
+      "company": "Legion Health",
+      "title": "Founding Product Manager, Platform + Consumer + AI (backed by Y Combinator, $5M+ ARR, $23M+ raised)",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/legionhealth/0ffded39-1242-4a35-9bc3-0e5b0ce22276",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/legionhealth/0ffded39-1242-4a35-9bc3-0e5b0ce22276",
+      "classification": "core",
+      "assessment_reason": "Five-plus years PM/product engineering/founder experience; explicit product role, AI prototypes and regular production PRs.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "shortlist_rank": 2,
+      "required_background": "5+ years PM, product engineering, technical founder or equivalent; consumer product ownership.",
+      "personal_building": "Own patient product surfaces, prototype with AI and regularly open production PRs with engineering support.",
+      "shortlist_type": "Core, product-led builder",
+      "supporting_passages": [
+        "Our technical moat is hard to copy—we combine rich data, production AI, doctors in the loop, and end-to-end care operations to deliver measurably better care to a clinically complex patient population. This has helped us produce tens of thousands of total visits in just 2 years, all while holding ops costs flat and achieving industry-leading patien",
+        "The right person is technical enough to reason through APIs, data models, event instrumentation, AI workflows, edge cases, system constraints, and engineering tradeoffs, but consumer-minded enough to know that the best product often feels obvious, calm, and human. You should be able to sit with a patient problem, map the underlying clinical and ope"
+      ],
+      "user_review": {
+        "label": "no",
+        "reason": "User considers this a traditional product role and says it does not ask for code shipping.",
+        "effective_fit": "exclude",
+        "evidence_discrepancy": "The employer version reviewed during the pilot explicitly said to ship production PRs regularly. Preserve the negative overall-fit label without erasing this evidence or treating one coding sentence as sufficient."
+      },
+      "reassessment": {
+        "decision": "user_negative",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "legion"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "source": "WEB",
+      "company": "Tread",
+      "title": "Head of Product",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/tread/4f9049e0-ccc9-4c2e-a7e8-07e7e2e2649a",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/tread/4f9049e0-ccc9-4c2e-a7e8-07e7e2e2649a",
+      "classification": "stretch",
+      "assessment_reason": "Product leadership plus daily agentic prototyping, but seven-to-twelve-plus years shipping software and managing FDEs make the exact personal-building balance uncertain.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [
+        "We are hiring a hands-on product leader invigorated by how agents change the SDLC and product development. You will serve as the primary product partner for the CEO, taking full ownership of the product cycle and execution of critical roadmap areas, like payments and agentic scheduling optimization. You will spend significant time with our customer",
+        "You will inherit a culture where everyone across the company is utilizing Claude Code in Terminal, and where majority of non-engineers are shipping PRs. Your job is to professionalize the cadence without slowing it down, and create the leverage needed for the company to scale. We have zero patience for corporate fluff; we care about what you shippe"
+      ],
+      "reassessment": {
+        "decision": "hold",
+        "reason": "Senior product leader with daily AI prototyping, but management of delivery/FDEs is prominent and personal implementation accountability remains unclear.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "within",
+          "legion"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 35,
+      "source": "WEB",
+      "company": "Scribd",
+      "checked_on": "2026-10-21",
+      "status": "not_in_current_feed",
+      "candidate_reference": "https://jobs.ashbyhq.com/ScribdInc/ff2680ea-9a6d-436d-bdb0-300c647bf23e",
+      "classification": "unassessed",
+      "assessment_reason": "Exact indexed role absent from current employer feed; do not assume confirmed closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "Lead Product Manager - AI Developer Platform",
+      "retrieved_title": "Lead Product Manager - AI Developer Platform",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 36,
+      "source": "WEB",
+      "company": "Laurel",
+      "checked_on": "2026-10-21",
+      "status": "not_in_current_feed",
+      "candidate_reference": "https://jobs.ashbyhq.com/laurel/68831a5f-6e5d-463a-a610-10d8634628f0",
+      "classification": "unassessed",
+      "assessment_reason": "Exact indexed role absent from current employer feed; do not assume confirmed closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "AI Ops & Strategy, Product Ops",
+      "retrieved_title": "AI Ops & Strategy, Product Ops",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 37,
+      "source": "WEB",
+      "company": "SandboxAQ",
+      "checked_on": "2026-10-21",
+      "status": "not_in_current_feed",
+      "candidate_reference": "https://jobs.ashbyhq.com/sandboxaq/284392ee-68de-4910-b6df-dbce9c6116d8",
+      "classification": "unassessed",
+      "assessment_reason": "Exact indexed role absent from current employer feed; do not assume confirmed closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "VP of Operations, AI Simulation",
+      "retrieved_title": "VP of Operations, AI Simulation",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 38,
+      "source": "WEB",
+      "company": "Camunda Operate",
+      "checked_on": "2026-10-21",
+      "status": "not_in_current_feed",
+      "candidate_reference": "https://jobs.ashbyhq.com/camunda/46f8962b-008a-4679-ba56-7d343f2ae593",
+      "classification": "unassessed",
+      "assessment_reason": "Exact indexed role absent from current employer feed; do not assume confirmed closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "Product Builder (Operate)",
+      "retrieved_title": "Product Builder (Operate)",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 39,
+      "source": "WEB",
+      "company": "Camunda Hub",
+      "checked_on": "2026-10-21",
+      "status": "not_in_current_feed",
+      "candidate_reference": "https://jobs.ashbyhq.com/camunda/1487b177-d9ee-4ec3-8fc3-1db47756631a",
+      "classification": "unassessed",
+      "assessment_reason": "Exact indexed role absent from current employer feed; do not assume confirmed closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "Product Builder (Camunda Hub)",
+      "retrieved_title": "Product Builder (Camunda Hub)",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 40,
+      "source": "WEB",
+      "company": "Indeed Flex",
+      "title": "Product Builder",
+      "location": "Austin, Texas",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "verification_note": "Full current employer page read through web tool; application present. EU API-host assumption failed, not the posting.",
+      "candidate_reference": "https://job-boards.eu.greenhouse.io/indeedflex/jobs/4994921101",
+      "classification": "core",
+      "assessment_reason": "Employer page live. Accepts student/side-project builds and product/CRM/operations backgrounds; personally chooses improvements and ships AI-assisted production code.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "shortlist_rank": 1,
+      "required_background": "Demonstrated shipped app, integration, tool or side project, including student work; CS background optional.",
+      "personal_building": "Select messaging improvements, prototype and ship production code using AI tools.",
+      "shortlist_type": "Core, implementation-focused product builder",
+      "supporting_passages": [
+        "Experience building and shipping software, such as an app, integration, internal tool, or side project (including student work). Product, CRM, or operations experience is useful.",
+        "Use AI tools to go from idea to production quickly: prototype the flow, then implement and ship it."
+      ],
+      "url": "https://job-boards.eu.greenhouse.io/indeedflex/jobs/4994921101",
+      "user_review": {
+        "label": "yes",
+        "reason": "Good match.",
+        "effective_fit": "core"
+      },
+      "reassessment": {
+        "decision": "user_positive",
+        "basis": "user judgment preserved",
+        "reference_ids": [
+          "indeed"
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "source": "WEB",
+      "company": "FutureFit AI",
+      "checked_on": "2026-10-21",
+      "status": "not_in_current_feed",
+      "candidate_reference": "https://jobs.ashbyhq.com/futurefitai/d8da96c9-b271-484b-9e46-60fde3928e7b",
+      "classification": "unassessed",
+      "assessment_reason": "Exact indexed role absent from current employer feed; do not assume confirmed closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "Technical Product Manager",
+      "retrieved_title": "Technical Product Manager",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 42,
+      "source": "WEB",
+      "company": "Applied Intuition",
+      "title": "Product Manager - Platform",
+      "location": "Sunnyvale",
+      "url": "https://jobs.ashbyhq.com/applied/82523b1a-d267-412d-8f46-ac5dc29b2210",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/applied/82523b1a-d267-412d-8f46-ac5dc29b2210",
+      "classification": "core",
+      "assessment_reason": "Three-plus years cloud/SaaS PM and technical fluency to prototype with AI; owns platform product and UX tradeoffs. Prototype emphasis is less explicit than top references.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "shortlist_rank": 8,
+      "required_background": "3+ years PM on externally shipped cloud/SaaS products; relevant degree and technical fluency.",
+      "personal_building": "Own platform product and UX decisions; prototype with AI tools.",
+      "shortlist_type": "Core, lighter prototype evidence",
+      "supporting_passages": [
+        "- Define and ship the platform's core capabilities from first spec to customer hands, for builders who range from platform engineers to domain experts who have never written code",
+        "- Technical fluency to argue architecture tradeoffs with senior engineers and prototype with AI tools"
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "Platform PM with AI prototyping literacy; ongoing direct building is not sufficiently central.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cloudzero",
+          "amperity"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 43,
+      "source": "WEB",
+      "company": "Valsoft",
+      "checked_on": "2026-10-21",
+      "status": "unavailable_url",
+      "candidate_reference": "https://jobs.workable.com/view/mVNuxE6btrdaMEe71cWYtz/remote-ai-product-builder---usa-in-united-states-at-valsoft-corporation",
+      "classification": "unassessed",
+      "assessment_reason": "Posting URL returns 410 Gone; unavailable at reviewed URL, not proof of why it closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "AI Product Builder - USA",
+      "retrieved_title": "AI Product Builder - USA",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 44,
+      "source": "WEB",
+      "company": "New American Funding",
+      "checked_on": "2026-10-21",
+      "status": "unavailable_url",
+      "candidate_reference": "https://careers-nafinc.icims.com/jobs/8000/sr.-product-builder/job?in_iframe=1",
+      "classification": "unassessed",
+      "assessment_reason": "Posting URL returns 410 Gone; unavailable at reviewed URL, not proof of why it closed.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "Sr. Product Builder",
+      "retrieved_title": "Sr. Product Builder",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 45,
+      "source": "WEB",
+      "company": "Visa",
+      "title": "Director, Product Builder",
+      "url": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/Director--Product-Builder_REF088214W",
+      "checked_on": "2026-10-21",
+      "status": "unverified",
+      "candidate_reference": "https://visa.wd5.myworkdayjobs.com/en-US/Visa/job/Director--Product-Builder_REF088214W",
+      "classification": "unassessed",
+      "assessment_reason": "Workday shell returned without usable job detail; availability and fit unverified.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "retrieved_title": "Director, Product Builder",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 46,
+      "source": "WEB",
+      "company": "Specright",
+      "checked_on": "2026-10-21",
+      "status": "unverified",
+      "candidate_reference": "https://specright.isolvedhire.com/jobs/job_description_files.php?id=1741319&site_id=6257",
+      "classification": "unassessed",
+      "assessment_reason": "Indexed PDF is not confirmation of an active opening; binary response not parsed during this pass.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [],
+      "title": "AI Product Manager",
+      "retrieved_title": "AI Product Manager",
+      "reassessment": {
+        "decision": "withhold_availability",
+        "reason": "Initial availability verification is unresolved or negative; no recommendation from indexed descriptions alone.",
+        "basis": "initial pilot availability evidence; no fit label inferred from a fetch failure"
+      }
+    },
+    {
+      "id": 47,
+      "source": "WEB",
+      "company": "Kettle",
+      "title": "Senior Product Manager, AI",
+      "location": "Remote - US",
+      "url": "https://job-boards.greenhouse.io/kettle/jobs/8868834002",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://job-boards.greenhouse.io/kettle/jobs/8868834002",
+      "classification": "core",
+      "assessment_reason": "PM background plus direct AI demos/prototypes; collaborative client/internal product work rather than coordination alone.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [
+        "We are looking for a Senior Product Manager, AI to join our Product team. This is a builder role. You'll work on a cross-functional team of creative technologists and product designers, working on the tools, workflows, and accelerators that expand what Kettle and our clients can make. You'll contribute to both sides of that work: owning the PM work",
+        "Hands-on experience building or prototyping with AI tools, whether vibe coding functional demos, prompting and chaining AI APIs, or rapidly exploring new model capabilities to stress-test an idea before it becomes a project"
+      ],
+      "reassessment": {
+        "decision": "exclude",
+        "reason": "PM workstreams with hands-on work when needed; resembles the AI-native PM negative more than a core builder mandate.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "cloudzero",
+          "medecision"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 48,
+      "source": "WEB",
+      "company": "Oath",
+      "title": "Product Manager",
+      "location": "United States",
+      "url": "https://jobs.ashbyhq.com/oath/1ff90c8e-192a-4921-ba9d-89c74344c28e",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/oath/1ff90c8e-192a-4921-ba9d-89c74344c28e",
+      "classification": "core",
+      "assessment_reason": "Experienced PM who personally prototypes and ships agents/features with Claude Code.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [
+        "- Build with AI, hands-on. This is the core of the job, not a side skill. Prototype and ship AI features, agents, and workflows yourself with tools like Claude Code. Use AI daily to raise your own throughput. You should be building and testing ideas, not only writing roadmaps about building."
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "reason": "Good match.",
+        "basis": "direct user feedback",
+        "reference_ids": [
+          "oath"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      },
+      "user_review": {
+        "label": "yes",
+        "reason": "Good match.",
+        "qualification": "positive",
+        "effective_fit": "core"
+      },
+      "previous_reassessment": {
+        "decision": "recommend",
+        "reason": "Requires experienced PM who is excellent at AI building; explicitly makes personally prototyping/shipping features, agents and workflows core, alongside shaping bets and measuring experiments. PM title alone does not exclude it.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "within",
+          "medecision"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 49,
+      "source": "WEB",
+      "company": "Vanta",
+      "title": "Senior Product Builder, Organizational Intelligence",
+      "location": "Remote U.S.",
+      "url": "https://jobs.ashbyhq.com/vanta/c986dc01-e886-4bfe-bbe9-068b7af9d2d3",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/vanta/c986dc01-e886-4bfe-bbe9-068b7af9d2d3",
+      "classification": "core",
+      "assessment_reason": "Owns internal intelligence product choices and personally ships agents/tools; shipped work matters more than CS pedigree.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "shortlist_rank": 7,
+      "required_background": "Real, recent shipped AI tools; no CS/pedigree gate; product/workflow judgment.",
+      "personal_building": "Choose and build internal intelligence tools, agents and workflows; involve engineers when needed.",
+      "shortlist_type": "Core, internal-tools builder",
+      "supporting_passages": [
+        "This is a builder role. You will ship working things yourself — prototypes, internal tools, agent workflows. You will not hand specs to someone else and wait. Communication isn't a separate deliverable; it's how you learn what to build.",
+        "- Define what to build: scope the problem yourself, make explicit tradeoffs about what to defer, and own the sequence of what gets built and when"
+      ],
+      "reassessment": {
+        "decision": "user_positive",
+        "reason": "Good match.",
+        "basis": "direct user feedback",
+        "reference_ids": [
+          "vanta"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      },
+      "user_review": {
+        "label": "yes",
+        "reason": "Good match.",
+        "qualification": "positive",
+        "effective_fit": "core"
+      },
+      "previous_reassessment": {
+        "decision": "recommend",
+        "reason": "Owns what to build and personally creates the internal intelligence layer and agent workflows; shipped work is the entry evidence.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "alaffia",
+          "gitlab"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    },
+    {
+      "id": 50,
+      "source": "WEB",
+      "company": "Clutch",
+      "title": "Staff Product Manager, AI Agents",
+      "location": "United States",
+      "url": "https://jobs.ashbyhq.com/withclutch/03204709-1831-4462-ba33-73fc6d141505",
+      "checked_on": "2026-10-21",
+      "status": "current",
+      "candidate_reference": "https://jobs.ashbyhq.com/withclutch/03204709-1831-4462-ba33-73fc6d141505",
+      "classification": "core",
+      "assessment_reason": "Owns one agent product and roadmap through initial implementations; PM experience plus demonstrated AI builds.",
+      "assessment_author": "assistant",
+      "prior_user_label": null,
+      "sources_observed": [
+        "WEB"
+      ],
+      "supporting_passages": [
+        "This is not a traditional product management role. You will spend a large share of your time in front of customers — often on site — shaping products that don’t fully exist yet, then staying with them through the first implementations until they actually work in production. The next year is deliberately an experimentation year: listening, prototypi",
+        "- Rapidly prototype and live trial different agents and use cases."
+      ],
+      "reassessment": {
+        "decision": "hold",
+        "reason": "Owns an agent product and prototypes/live-trials it, but dedicated engineers implement alongside it. Need clearer ongoing personal-building mandate before recommending.",
+        "basis": "assistant reassessment against complete user reference set",
+        "reference_ids": [
+          "amperity",
+          "cloudzero"
+        ],
+        "availability_rechecked": "current",
+        "evidence_checked_on": "2026-10-21"
+      }
+    }
+  ],
+  "user_review_summary": {
+    "reviewed": 11,
+    "labels": {
+      "yes": 8,
+      "engineering_first_blend": 1,
+      "no": 2
+    },
+    "interpretation": "User_review records follow-up judgments; prior_user_label records earlier pilot judgments. These and the full user_reference_set take precedence over initial assistant classifications. Reassessment is the current disposition."
+  },
+  "user_reference_set": [
+    {
+      "id": "axiad",
+      "role": "Axiad — Principal Product Builder",
+      "label": "yes",
+      "reason": "Perfect reference: product ownership and agentic building."
+    },
+    {
+      "id": "vailent",
+      "role": "Vailent/Vinmar — Builder (Product Led)",
+      "label": "yes",
+      "reason": "Perfect reference: product decisions and direct AI-assisted delivery."
+    },
+    {
+      "id": "alaffia",
+      "role": "Alaffia — AI Transformation Lead",
+      "label": "yes",
+      "reason": "Strong internal product/workflow builder reference."
+    },
+    {
+      "id": "gitlab",
+      "role": "GitLab — AI Transformation Owner, Product & Design",
+      "label": "yes",
+      "reason": "Related positive: slightly different balance, still quite good."
+    },
+    {
+      "id": "rivian",
+      "role": "Rivian — AI Product Engineer, Facilities",
+      "label": "yes",
+      "reason": "Good match: product/TPM entry routes and direct AI building."
+    },
+    {
+      "id": "g2",
+      "role": "G2 — Senior AI Product Builder",
+      "label": "yes",
+      "reason": "Good match despite substantial technical fluency requirements."
+    },
+    {
+      "id": "apollo",
+      "role": "Apollo — Principal Product Builder, Data",
+      "label": "yes",
+      "reason": "Good match: product ownership and direct building."
+    },
+    {
+      "id": "within",
+      "role": "Within — Senior AI Product Manager",
+      "label": "yes",
+      "reason": "Good match; PM title and engineering support are compatible with the category."
+    },
+    {
+      "id": "earnin",
+      "role": "EarnIn — Senior Product Builder",
+      "label": "yes",
+      "reason": "Good match despite full-stack expectations and technical qualifications."
+    },
+    {
+      "id": "indeed",
+      "role": "Indeed Flex — Product Builder",
+      "label": "yes",
+      "reason": "Good match: personally ships AI-assisted software, accepts demonstrated builds."
+    },
+    {
+      "id": "medecision",
+      "role": "Medecision — AI Product Builder",
+      "label": "yes",
+      "reason": "Perfect reference: PM/PO/BA route and direct creation of working features."
+    },
+    {
+      "id": "amperity",
+      "role": "Amperity — Principal Product Builder",
+      "label": "yes",
+      "reason": "Great fit; engineering ownership of production architecture is compatible with fit."
+    },
+    {
+      "id": "brightwheel",
+      "role": "brightwheel — Staff AI Software Engineer, Product",
+      "label": "no",
+      "reason": "Specific posting rejected for significant engineering-career expectations."
+    },
+    {
+      "id": "docker",
+      "role": "Docker — Staff Software Engineer, AI Developer Tools",
+      "label": "no",
+      "reason": "Specific posting rejected for significant engineering-career expectations."
+    },
+    {
+      "id": "rwe",
+      "role": "RWE — Senior Product Manager, AI Transformation",
+      "label": "no",
+      "reason": "Product ownership of transformation without direct building."
+    },
+    {
+      "id": "cyvl",
+      "role": "Cyvl — Forward Deployed Engineer",
+      "label": "no",
+      "reason": "Solutions rather than product."
+    },
+    {
+      "id": "form",
+      "role": "Form Energy — Staff Forward Deployed Engineer",
+      "label": "no",
+      "reason": "Forward-deployed/solutions work."
+    },
+    {
+      "id": "toast",
+      "role": "Toast — GTM Engineer",
+      "label": "no",
+      "reason": "Engineering-centered role."
+    },
+    {
+      "id": "legion",
+      "role": "Legion Health — Founding Product Manager",
+      "label": "no",
+      "reason": "Overall traditional PM role. Preserve negative label despite coding language in the reviewed version."
+    },
+    {
+      "id": "cloudzero",
+      "role": "CloudZero — Senior/Staff PM, Agentic Practice",
+      "label": "no",
+      "reason": "AI-native PM rather than builder; prototyping alone is insufficient."
+    },
+    {
+      "id": "extenteam",
+      "role": "Extenteam — Founding AI Product Engineer, Multifamily",
+      "label": "stretch",
+      "reason": "Interesting stretch: appears to want an engineer despite broad formal qualifications."
+    },
+    {
+      "id": "sharkninja",
+      "role": "SharkNinja — Director, Finance AI & Automation",
+      "label": "yes",
+      "reason": "Does seem to have a builder role, with substantial finance/domain and experience requirements.",
+      "qualification": "qualified"
+    },
+    {
+      "id": "exiger",
+      "role": "Exiger — AI Product Builder",
+      "label": "engineering_first_blend",
+      "reason": "User agrees with engineering-first product-blend assessment.",
+      "qualification": "confirmed_type"
+    },
+    {
+      "id": "shipbob",
+      "role": "ShipBob — Senior AI Product Builder, Inventory Experience",
+      "label": "yes",
+      "reason": "Good match.",
+      "qualification": "positive"
+    },
+    {
+      "id": "alt",
+      "role": "Alt — Product Builder, Growth",
+      "label": "yes",
+      "reason": "Still a fit; asking for a lot. Demanding requirements do not make the role merely a stretch.",
+      "qualification": "positive"
+    },
+    {
+      "id": "oath",
+      "role": "Oath — Product Manager",
+      "label": "yes",
+      "reason": "Good match.",
+      "qualification": "positive"
+    },
+    {
+      "id": "vanta",
+      "role": "Vanta — Senior Product Builder, Organizational Intelligence",
+      "label": "yes",
+      "reason": "Good match.",
+      "qualification": "positive"
+    }
+  ],
+  "reference_principles": [
+    {
+      "principle": "Building must be a core deliverable, coupled with product ownership. Tool names, PM productivity, prototype mentions, or an isolated PR sentence are insufficient.",
+      "positive_examples": [
+        "axiad",
+        "vailent",
+        "apollo",
+        "indeed",
+        "medecision"
+      ],
+      "negative_examples": [
+        "rwe",
+        "legion",
+        "cloudzero"
+      ]
+    },
+    {
+      "principle": "Internal tools and functional transformation qualify when the person chooses and directly builds solutions as a product. Customer-specific implementations and account enablement alone do not.",
+      "positive_examples": [
+        "alaffia",
+        "gitlab",
+        "rivian",
+        "amperity"
+      ],
+      "negative_examples": [
+        "cyvl",
+        "form"
+      ]
+    },
+    {
+      "principle": "Read qualifications first, but distinguish engineering capability from an engineering career gate. Retain genuine product-building engineering blends separately, while respecting specific negative labels.",
+      "positive_examples": [
+        "g2",
+        "earnin",
+        "within"
+      ],
+      "negative_examples": [
+        "brightwheel",
+        "docker",
+        "toast"
+      ],
+      "stretch_examples": [
+        "extenteam"
+      ]
+    },
+    {
+      "principle": "Category fit and demanding eligibility are separate dimensions. Alt remains a fit despite high demands; Exiger is an accepted engineering-first blend; SharkNinja has a builder mandate with substantial finance requirements.",
+      "positive_examples": [
+        "alt",
+        "shipbob",
+        "vanta",
+        "oath",
+        "sharkninja"
+      ],
+      "engineering_blend_examples": [
+        "exiger"
+      ]
+    }
+  ],
+  "reassessment_summary": {
+    "reference_counts": {
+      "yes": 17,
+      "no": 8,
+      "stretch": 1,
+      "engineering_first_blend": 1
+    },
+    "decisions": {
+      "exclude": 14,
+      "user_negative": 4,
+      "user_positive": 11,
+      "withhold_availability": 16,
+      "user_positive_qualified": 1,
+      "user_engineering_blend": 1,
+      "hold": 3
+    },
+    "scope": "Original reassessment covered all 50 rows and rechecked 23 then-unlabeled current postings. Subsequent user feedback now covers 17 in-pilot roles (including prior labels); 16 availability cases remain withheld.",
+    "interpretation": "Reassessment is the current disposition. Original pilot fields and previous_reassessment preserve earlier judgments. Alt is a positive with high demands, Exiger an accepted engineering-first blend, and SharkNinja a qualified positive with substantial domain requirements.",
+    "recommended_ids": [],
+    "engineering_first_blend_ids": [
+      18
+    ],
+    "stretch_ids": [],
+    "hold_ids": [
+      32,
+      34,
+      50
+    ],
+    "initial_recommended_ids": [
+      19,
+      49,
+      48,
+      13
+    ]
+  }
+}

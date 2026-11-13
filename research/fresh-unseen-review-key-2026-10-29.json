@@ -1,0 +1,236 @@
+[
+  {
+    "reviewId": "F1",
+    "candidateId": "989dfa14029b213ac4af2ff53ecc89c7",
+    "sourceHash": "6d572d5edf16d7cb7be5d5825ab8b02f956682c6a40603f13bc3e0f20b588727",
+    "assessment": {
+      "id": "989dfa14029b213ac4af2ff53ecc89c7",
+      "requestId": "fda0bafc-8143-491b-a514-52e8a7c5a3e2",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "finance"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires a finance/accounting foundation, 5+ years of progressive experience, and demonstrated use of AI, automation, or technology to improve finance processes. CPA preferred, not required; no software-engineering career requirement stated.",
+        "product": "Owns the finance function’s operational problems and can identify where processes need improvement, rather than primarily coordinating delivery.",
+        "operations": "Direct ownership of multi-entity accounting, billing, payments, reporting, and controls, with responsibility for scalable process improvements.",
+        "building": "Expected to identify automation opportunities, evaluate and implement tools and workflows, and put improved finance processes into operation.",
+        "ai": "AI and automation are explicit tools for streamlining workflows, improving accuracy, reducing manual work, and strengthening controls.",
+        "reason": "This is an operations-focused builder role: the controller owns day-to-day financial operations and is expected to find problems, implement AI-enabled or automated improvements, and take responsibility for more efficient, scalable workflows. Finance expertise is required, but software engineering is not.",
+        "evidence": [
+          "\n The Financial Controller will own the day-to-day financial operations of the company while actively leveraging AI, automation, and modern financial tools to improve efficiency, accuracy, reporting, and financial controls.",
+          "\n Leverage AI, automation, and modern financial technology to streamline accounting and finance workflows, improve accuracy, reduce manual processes, and strengthen financial controls.",
+          "\n Evaluate and implement tools, workflows, and process improvements that create a more scalable and technology-enabled finance function."
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F2",
+    "candidateId": "073d8abc5732031bfcc2d99892de5f74",
+    "sourceHash": "0537119aadf7f353b79cf9248f93ce44149cf105e9588b27c12628c0a68f9d3c",
+    "assessment": {
+      "id": "073d8abc5732031bfcc2d99892de5f74",
+      "requestId": "c0d5870a-693e-4514-afa4-87b70988050c",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "design",
+          "product",
+          "creative_workflows"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires professional creative-production fluency and the ability to move between design and engineering. AI coding tools, model APIs, agent frameworks, and lightweight code are core building tools; a portfolio of working prototypes or products is expected. No prior software-engineering career is specified.",
+        "product": "Finds real workflow pain points with creative teams and clients, defines what prototypes must prove, and shapes product direction and agent behavior based on professional workflow judgment.",
+        "operations": "Embeds in production workflows to identify bottlenecks and define agent-run processes to professional standards, including what constitutes finished, usable work.",
+        "building": "Personally takes concepts from workflow research through interaction and visual design to polished, usable prototypes, then works with product and engineering to turn validated prototypes into shipped features and reusable patterns.",
+        "ai": "AI is explicitly the core building tool: uses AI tools, APIs, lightweight code, and agent frameworks to prototype and validate interactive workflows; also defines how the product agent performs creative work.",
+        "reason": "This is a central hands-on builder mandate, not merely a demo or requirements role: the person identifies real creative-workflow problems, independently builds and tests polished AI-enabled prototypes, and influences product direction. Validated work proceeds to launch with engineering, which is compatible with direct building.",
+        "evidence": [
+          " We're looking for someone who finds the problem, researches the workflow, delivers the prototype end to end, makes the case for it, and then hands it to engineering to ship.",
+          " You're proficient with AI coding tools, model APIs, agent frameworks, and lightweight code, and can independently turn concepts into working prototypes fast.",
+          " Work closely with product, model, and engineering teams to turn validated prototypes into shipped features, and build up reusable components and interaction patterns along the way, so the next workflow reaches creators faster."
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F3",
+    "candidateId": "777f92fb5dfa086edb0d6cc231f1190b",
+    "sourceHash": "67f2d6878d28a0d18cc1e9f371165254574a08fd009cc13eb83c2388fc00746b",
+    "assessment": {
+      "id": "777f92fb5dfa086edb0d6cc231f1190b",
+      "requestId": "0dbdfd6a-0206-404c-bd81-5f26db732822",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 8+ years of product management experience in tooling, developer platforms, technical workflows, or complex B2B/API products, plus strong fluency in software architecture, APIs, web technologies, and data pipelines.",
+        "product": "Owns strategy and roadmap for internal partner tooling, developer infrastructure, and operational workflows; prioritizes partner journeys and measurable business outcomes.",
+        "operations": "Identifies operational friction and drives automation and self-service across partner onboarding, integration maintenance, and support workflows.",
+        "building": "The posting describes designing and delivering internal platforms at the product level, but does not establish that the PM personally implements working solutions; delivery is framed through cross-functional engineering collaboration.",
+        "ai": "Champions adoption of intelligent agents, LLM-powered workflows, and automated triage, without a stated personal AI-enabled implementation responsibility.",
+        "reason": "This is primarily a conventional senior product-management mandate: defining vision and roadmaps, aligning stakeholders, and driving platform delivery through engineering teams. Platform-building and AI initiatives are stated as outcomes to lead, but personal creation and iteration of working solutions are not established.",
+        "evidence": [
+          "\n What You'll Do \n Define the Product Vision & Roadmap: Own the end-to-end product strategy for internal partner tooling, developer infrastructure, and operational workflows.",
+          "\n Build High-Impact Internal Platforms: Design and deliver internal tools and services—such as integration health monitoring, automated regression and compliance testing suites, partner certification portals, and self-service analytics platforms.",
+          "\n Pioneer AI & Intelligent Automation: Champion the adoption of intelligent agents, LLM-powered workflows, and automated triage systems to accelerate partner enablement, technical inquiries, and documentation discovery."
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F4",
+    "candidateId": "c5aaa61545e67dc2a16e5aaf152456b0",
+    "sourceHash": "82849d67d32930b424bb050e74c7f913f5787ba4fc65b759632dd17af91945ad",
+    "assessment": {
+      "id": "c5aaa61545e67dc2a16e5aaf152456b0",
+      "requestId": "87db3ecd-6063-426a-a7f1-973033a3fd64",
+      "status": "succeeded",
+      "result": {
+        "fit": "unclear",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 7+ years of professional backend application design, development, and deployment experience, plus scalable-systems, database, and backend-language expertise.",
+        "product": "Works on customer-facing products, learns customer needs with Sales and Support, and owns problems from user experience through ongoing metrics.",
+        "operations": "Includes responsibility for operability and ongoing product metrics.",
+        "building": "Personally designs and implements backend solutions and builds features and products end-to-end, from concept through launch.",
+        "ai": "The posting describes Brex’s AI-powered products, but does not establish that this role uses AI tools or workflows to build, test, or iterate on solutions.",
+        "reason": "The role clearly combines product problem ownership with hands-on implementation, but the posting does not establish AI-enabled building as part of this engineer’s work. That material gap leaves overall builder fit unclear; the demanding software-engineering requirement is a separate qualification issue.",
+        "evidence": [
+          "\n Work alongside user-facing teams like Sales and Support to deeply understand our customers' needs.",
+          "\n Design and implement solutions to improve our customers' banking experiences.",
+          "\n Own problems end-to-end, from user experience and data models to scalability, operability, and ongoing metrics."
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F5",
+    "candidateId": "6358178ee912b6f3c2c0707fde687ee9",
+    "sourceHash": "c5d3e8eb305f009d12f84560eadd97a110fc56289a30ca57f8f1b66113d28c24",
+    "assessment": {
+      "id": "6358178ee912b6f3c2c0707fde687ee9",
+      "requestId": "c4fe051d-d2ce-43b7-a2b7-0d8c06e4616d",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering",
+          "customer_facing",
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Accepts experience from software engineering, data science, ML, product management/design, technical project management, or demonstrated output. Requires AI-native CLI fluency, reliable production shipping, and customer-facing technical judgment; this is not restricted to prior SWE careers.",
+        "product": "Identifies customer pain, creates a roadmap, makes technical decisions from customer conversations, and contributes to squad prioritization. Customer discovery and operational feedback shape what gets built.",
+        "operations": "Owns named-customer outcomes through onboarding and production operation, including monitoring, reliability improvements, enhancements, and applicable on-call.",
+        "building": "Personally architects and codes novel customer solutions using internal agentic systems, then operates and improves what ships. Building is central, not merely prototyping or implementation to preset requirements.",
+        "ai": "AI-native tools are the primary working environment, with CLI-based agentic development expected across the work. The role builds and iterates on agentic systems for healthcare workflows.",
+        "reason": "Clear builder mandate: independently discovers customer problems, shapes solutions and priorities, personally architects and codes them with agentic systems, and owns production outcomes and continuous improvement. The customer-facing scope connects user learning to shipped capabilities; it is not limited to installation or configuration.",
+        "evidence": [
+          " \n At this level, you'll own customer outcomes independently with moderate supervision, bringing the curiosity of a product manager, the discipline of a project manager, and the agentic fluency of an engineer to your work.",
+          "\n Strategy: Identify customer pain and create a roadmap for solving their problems.",
+          "\n Agentic Development: Build novel solutions for named customers; translate their operational reality into technical solutions that you yourself architect and code with our internal agentic systems."
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F6",
+    "candidateId": "4627255651fe731d73c8544b0b04c646",
+    "sourceHash": "d1e46582a0f407b031dc47cadd26fe86d21a3da84f7698dfe993670afc34c44f",
+    "assessment": {
+      "id": "4627255651fe731d73c8544b0b04c646",
+      "requestId": "08e427c8-1ab7-4d20-a15e-7d189aa14578",
+      "status": "succeeded",
+      "result": {
+        "fit": "unclear",
+        "focus": [
+          "marketing",
+          "design",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Marketing and design experience, independent creation of polished collateral, campaign execution, HubSpot, and comfort experimenting with AI tools. No software-engineering requirement.",
+        "product": "Shapes how research and products are packaged and marketed, including campaign messaging, assets, channels, and timing; tracks performance to optimize campaigns.",
+        "operations": "Owns campaign execution, marketing materials, HubSpot workflows, reporting, website updates, and LinkedIn presence.",
+        "building": "Personally designs and produces marketing assets and takes campaigns from concept through launch. The posting does not establish that building AI-enabled workflows or solutions is central to this work.",
+        "ai": "Uses AI tools to accelerate design, campaign development, editing, and production, and experiments with solutions to improve workflow efficiency.",
+        "reason": "This is a hands-on marketing and creative role with real ownership of campaign choices and direct production through launch. However, AI is described mainly as a way to accelerate marketing workflows; the posting does not clearly establish personal implementation of AI-enabled working solutions as a central part of the mandate.",
+        "evidence": [
+          " This person will take projects from concept through execution, developing integrated campaign strategies while also independently designing and producing the marketing materials needed to bring those campaigns to life.",
+          " AI-Powered Workflows — Apply AI tools to accelerate design, campaign development, editing, and production; experiment with new solutions to improve workflow efficiency across the marketing function\n",
+          " Qualifications:\n The ideal candidate is both a strategic marketer and hands-on creative , bringing strong design instincts, integrated marketing experience, and the self-direction to take projects from concept through execution."
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F7",
+    "candidateId": "aa79e8076d6eee8812c13de2ef88de97",
+    "sourceHash": "765c488f2d2201406f3e985101cc38381a5ec8ad55e9d52d5a554a99dd2576a2",
+    "assessment": {
+      "id": "aa79e8076d6eee8812c13de2ef88de97",
+      "requestId": "c77fd7c8-f0a4-4780-9670-6477864a65ee",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "design",
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks an early/founding-caliber designer who has framed ambiguous problems, conceived and shipped work, and can explain outcomes quantitatively. Requires code or code-adjacent prototyping fluency and demonstrated AI-enabled making; it does not specify a prior software-engineering career requirement.",
+        "product": "Owns key marketplace surfaces and their user problems, framing, experience decisions, trust, and success metrics. Conducts user research, tests directions, and uses behavioral evidence to inform roadmap decisions.",
+        "operations": "Owns instrumentation, launch readouts, and iteration for assigned surfaces; personally reviews results and learns from misses.",
+        "building": "Builds working, code-based prototypes—not just click-throughs—to evaluate ideas with the team and users; pairs with engineers at ship time and owns design fidelity through implementation.",
+        "ai": "Uses AI to rapidly create testable prototypes with simulated model output, develop skills that enforce design standards, analyze customer feedback at scale, and generate and evaluate solution directions.",
+        "reason": "Strong design-builder mandate: the role defines the problems and experience for owned marketplace surfaces, gathers user evidence, and is accountable for outcomes. It explicitly requires working prototypes built in code and gives concrete AI-enabled building workflows, with prototypes tested against users and behavioral data. Engineering partnership at ship time is compatible with direct building.",
+        "evidence": [
+          " You write the framing for your surfaces: who's hurting, the evidence, the number that says it's real, the metric that says it worked.",
+          "\n The prototype. You build. Working prototypes in code, not click-throughs, are how ideas get evaluated here, because a thing you can touch settles an argument in an afternoon that a doc would run for two weeks.",
+          " Concretely, in this role:\n Get to a clickable prototype of a new flow in a day — real card data, simulated model output, testable interactions — so the team argues about a real thing instead of a doc\n"
+        ]
+      }
+    }
+  },
+  {
+    "reviewId": "F8",
+    "candidateId": "b13af6305dc06710b2ad63c7b97634ab",
+    "sourceHash": "6b4b2d0582559312a8236734180dcd8927f00b191bbd2f684b1d8054de51b95b",
+    "assessment": {
+      "id": "b13af6305dc06710b2ad63c7b97634ab",
+      "requestId": "54c0d9ba-9936-4662-9c06-ca250edc9b55",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 5–8 years of product management experience shipping consumer mobile products at scale, plus fluency in APIs, data models, and architecture. Production coding is explicitly not required.",
+        "product": "Owns a mobile-app feature area from opportunity sizing and requirements through launch, metrics, and post-launch iteration; shapes priorities using member research and product judgment.",
+        "operations": "Coordinates external partners and vendors and translates compliance and policy guidance into product rules.",
+        "building": "The PM stays close to engineering and uses AI for specs, research, prototypes, and analysis, but the described implementation is performed by engineering. Personal making is not central to the mandate.",
+        "ai": "AI tools support PM workflow and prototyping; the role also identifies AI product opportunities and turns them into shippable specs.",
+        "reason": "This is an end-to-end product-management role: the PM defines requirements, coordinates with engineering, and owns feature outcomes, while engineers build the product. AI-assisted prototyping and being close to the build do not establish a central personal implementation responsibility; the posting explicitly says production coding is unnecessary.",
+        "evidence": [
+          "\n Partner daily with engineering leads and designers in tight iteration loops; be in the details of the build, not just the roadmap.",
+          "\n Use AI tools as a default part of how you work from drafting specs and synthesizing research to prototyping flows and querying data so your output is materially faster than a traditional PM's.",
+          " You don't need to write production code or technical specs yourself, but you understand the systems well enough to hold your own in the conversation."
+        ]
+      }
+    }
+  }
+]

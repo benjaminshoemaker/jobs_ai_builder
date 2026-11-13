@@ -1,0 +1,27 @@
+{
+  "runs": [
+    {
+      "runId": "bc0d92f6-fff0-4868-9650-6afc5cb8e2bb",
+      "processed": 5,
+      "states": {
+        "succeeded": 5
+      },
+      "scheduled": false,
+      "published": 0,
+      "fixture": false
+    },
+    {
+      "runId": "b1b466a7-e7d6-4549-9743-4cf7e9bb05bd",
+      "processed": 2,
+      "states": {
+        "succeeded": 2
+      },
+      "scheduled": false,
+      "published": 0,
+      "fixture": false
+    }
+  ],
+  "published": 22,
+  "candidateDrafts": 16,
+  "modelCalls": 0
+}

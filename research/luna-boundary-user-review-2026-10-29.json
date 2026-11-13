@@ -1,0 +1,52 @@
+{
+  "reviews": [
+    {
+      "reviewId": "7e3cb906-8759-46e5-88e8-e526439f6b18",
+      "candidateId": "c1d22788c9cb215c409c26b711293492",
+      "sourceHash": "7b5c235f004e3f144746d5a0706abd0f833382945e2fa243d65f38156c46fa8b",
+      "assessmentId": "fcc76540-5aa2-4ae9-8ef3-d235dc89bb96",
+      "company": "greenhouse:cssmerge",
+      "title": "Product Manager - Robotic Kitchen",
+      "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8904230002",
+      "decision": "no",
+      "userReason": "No - mentions prototyping but not building",
+      "provenance": "Explicit user feedback in chat, 2026-10-29; targeted boundary review, not a random or blind accuracy benchmark."
+    },
+    {
+      "reviewId": "9a7715cc-5b32-4183-904a-0b68f3d90e76",
+      "candidateId": "65c30d5f2a8fabb4e8631904aabc177e",
+      "sourceHash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "assessmentId": "7fbc349d-199f-47d9-950b-1329f17fad12",
+      "company": "lever:getsquire",
+      "title": "Director, Data Engineering",
+      "url": "https://jobs.lever.co/getsquire/2c9762e7-b7a1-4d76-b0a5-468a8b6a3c5e",
+      "decision": "no",
+      "userReason": "No - this is much more of a traditional player/coach engineering director",
+      "provenance": "Explicit user feedback in chat, 2026-10-29; targeted boundary review, not a random or blind accuracy benchmark."
+    },
+    {
+      "reviewId": "4db3a153-8030-428b-b513-66e1570956f3",
+      "candidateId": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "sourceHash": "5a1b24cb0ec4157532cc1cd679c0318b58021ce15b1bcc2f83a43e8523eb0609",
+      "assessmentId": "2e4578ba-59c9-4369-8905-6d6fcd4b41f6",
+      "company": "greenhouse:opensesame",
+      "title": "Systems Administrator ",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645",
+      "decision": "no",
+      "userReason": "No",
+      "provenance": "Explicit user feedback in chat, 2026-10-29; targeted boundary review, not a random or blind accuracy benchmark."
+    },
+    {
+      "reviewId": "8ce8c48e-c5fd-475a-b81a-6ab0dee35f23",
+      "candidateId": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "sourceHash": "833dfcc2fc80e9b440f7c7c97e337683e19de0b84dad0634c61a711b5f954810",
+      "assessmentId": "74e9fea5-1e0b-4163-9407-1b0ea6a7f4de",
+      "company": "lever:azul",
+      "title": "IT Intern, AI and Operations",
+      "url": "https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db",
+      "decision": "no",
+      "userReason": "No",
+      "provenance": "Explicit user feedback in chat, 2026-10-29; targeted boundary review, not a random or blind accuracy benchmark."
+    }
+  ]
+}

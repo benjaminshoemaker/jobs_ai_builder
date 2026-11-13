@@ -1,0 +1,38 @@
+{
+  "checkedAt": "2026-10-30T04:28:30.213Z",
+  "published": 22,
+  "candidateDrafts": 9,
+  "fixtureAssessmentsInRealSchema": 0,
+  "remainingTestSchemas": 0,
+  "liveCollectionRun": {
+    "id": "228dcdf3-d863-4980-94ac-8b1b86e8e338",
+    "actor_id": "preview-verification",
+    "phase": "collect",
+    "status": "completed",
+    "started_at": "2026-10-30T04:27:51.577Z",
+    "finished_at": "2026-10-30T04:27:54.027Z",
+    "summary": {
+      "states": {
+        "succeeded": 1
+      },
+      "fixture": false,
+      "processed": 1,
+      "published": 0,
+      "scheduled": false
+    }
+  },
+  "schedulesEnabled": false,
+  "paidCallsThisTurn": 0,
+  "publicLaunch": false,
+  "deployment": "https://jobs-ai-builder-lbh8utk0d-benshoemakerxyz-3472s-projects.vercel.app",
+  "deploymentStatus": "READY",
+  "deploymentProtection": "vercel_authentication",
+  "deployedAdminAnonymousStatus": 303,
+  "deployedJobsStatus": 200,
+  "deployedJobsCount": 22,
+  "newDraftsExposed": 0,
+  "signedInDeployedBrowserVerified": true,
+  "localReadOnlyStatusRenderingVerified": true,
+  "authLimitation": null,
+  "signedInFollowup": "Verified via the user-signed-in Codex built-in browser; draft staging completed with zero new jobs/publications and the BioRender editor showed reconciled fields."
+}

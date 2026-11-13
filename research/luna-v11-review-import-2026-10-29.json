@@ -1,0 +1,60 @@
+{
+  "saved": [
+    {
+      "reviewId": "L04",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "6096c0db-1775-4df3-a44d-6bb2dea9bcdd"
+    },
+    {
+      "reviewId": "L07",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "bedae643-1c09-4ec6-a744-e0646b5070fd"
+    },
+    {
+      "reviewId": "L09",
+      "decision": "no",
+      "currentSource": true,
+      "reviewRecordId": "14aa997c-324f-4b45-a273-5bf1d5249996"
+    },
+    {
+      "reviewId": "L10",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "0350edd3-7418-4c19-ae35-fbc50ba1dddb"
+    },
+    {
+      "reviewId": "L13",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "0a0e2d21-9e62-45e0-a340-f45fe98ed18f"
+    },
+    {
+      "reviewId": "L19",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "66423c99-c2c0-472f-af06-bf3fcc0b1c4a"
+    },
+    {
+      "reviewId": "L16",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "3fd4781e-c733-48f5-acd3-b830eba8321e"
+    },
+    {
+      "reviewId": "L20",
+      "decision": "no",
+      "currentSource": true,
+      "reviewRecordId": "282f2113-fb9f-4e96-a44d-c791195ed15d"
+    },
+    {
+      "reviewId": "L12",
+      "decision": "yes",
+      "currentSource": true,
+      "reviewRecordId": "45ce00c0-afcf-4d1b-ade0-326bed03e59a"
+    }
+  ],
+  "published": 0,
+  "modelCalls": 0
+}

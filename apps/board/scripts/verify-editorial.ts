@@ -1,0 +1,40 @@
+import {Client} from 'pg';
+import assert from 'node:assert/strict';
+import {randomUUID} from 'node:crypto';
+import {JobSchema} from '../src/catalog.js';
+import {applyObservation} from '../src/maintenance-store.js';
+import {commitReview,loadReview} from '../src/editorial-store.js';
+import {recordVersion} from '../src/editorial-review.js';
+import {observationHash,maintenancePlan} from '../src/listing-maintenance.js';
+if(!process.argv.includes('--rollback-test')||process.env.VERCEL_ENV==='production'||!process.env.DATABASE_URL_UNPOOLED)throw new Error('Explicit preview rollback test required');
+const client=new Client({connectionString:process.env.DATABASE_URL_UNPOOLED});await client.connect();
+try{
+  await client.query('begin');
+  const {rows}=await client.query(`select j.record,c.snapshot from board_jobs j join board_publication_provenance p on p.job_id=j.id join board_review_checks c on c.id=p.check_id join board_review_roles r on r.id=p.reference_id where r.decision='approved' and j.record->>'status'='published' order by j.id limit 1 for update of j,r,p`);
+  const fixture=rows[0];assert.ok(fixture);const job=JobSchema.parse(fixture.record),runId=randomUUID(),now=Date.now();
+  await client.query("insert into board_maintenance_runs(id,status,max_requests) values($1,'running',40)",[runId]);
+  const source={...fixture.snapshot,title:'Rollback review builder',descriptionHtml:fixture.snapshot.descriptionHtml+'<p>Updated employer scope.</p>'};
+  await applyObservation(client,{runId,job,baseline:fixture.snapshot,observation:{kind:'open',snapshot:source,note:'Rollback source difference'},now});
+  const row=(await loadReview(client,job.id))!;
+  const action={action:'approve' as const,checkId:row.check_id,recordVersion:recordVersion(row.record),sourceHash:observationHash(source),note:'Rollback verification'};
+  const fields={workplace:'Onsite in Chandler, AZ',location:'Chandler, AZ',cities:'Chandler, AZ',arrangement:'Onsite',remoteScope:'',focus:'Operations',gate:'open',gateLabel:'No SWE requirement',payMin:'60000',payMax:'110000',payPeriod:'year',payKind:'unspecified',payText:'Employer pay',payDetail:'Pay type unspecified',reason:job.reason,problem:job.problem,building:job.building,delivery:job.delivery,qualifications:job.qualifications,confirmed:'yes'};
+  const firstReview=await commitReview(client,job.id,action,fields,'rollback-fixture',now);
+  const approved=(await loadReview(client,job.id))!;assert.equal(approved.record.status,'published');assert.equal(approved.record.title,source.title);assert.equal(approved.disposition,'refreshed');assert.equal(approved.record.checkedAt,new Date(now).toISOString());
+  const baseline=(await client.query('select c.snapshot from board_publication_provenance p join board_review_checks c on c.id=p.check_id where p.job_id=$1',[job.id])).rows[0].snapshot;
+  assert.equal(observationHash(baseline),observationHash(source));
+  assert.equal(maintenancePlan(approved.record,baseline,{kind:'open',snapshot:source,note:'Next check'},0,now+1).outcome,'refreshed');
+  assert.equal(await applyObservation(client,{runId,job:approved.record,baseline:fixture.snapshot,observation:{kind:'open',snapshot:source,note:'Worker fetched before editorial approval'},now:now+1}),'superseded');
+  // A repeated submit must not add a second audit event.
+  assert.equal(await commitReview(client,job.id,action,fields,'rollback-fixture',now),firstReview);
+  assert.equal((await client.query('select count(*)::int as n from board_editorial_reviews where job_id=$1 and actor_id=$2',[job.id,'rollback-fixture'])).rows[0].n,1);
+  const newer={...source,descriptionHtml:source.descriptionHtml+'<p>Another change.</p>'};
+  await applyObservation(client,{runId,job:approved.record,baseline,observation:{kind:'open',snapshot:newer,note:'Another source difference'},now:now+1000});
+  const held=(await loadReview(client,job.id))!;
+  await assert.rejects(commitReview(client,job.id,action,fields,'rollback-fixture',now+1000));
+  await commitReview(client,job.id,{action:'withdraw',checkId:held.check_id,recordVersion:recordVersion(held.record),sourceHash:observationHash(newer),note:'Withdraw fixture'}, {},'rollback-fixture',now+1000);
+  const withdrawn=(await loadReview(client,job.id))!;assert.equal(withdrawn.record.status,'closed');assert.equal(withdrawn.decision,'approved');
+  assert.equal((await client.query('select count(*)::int as n from board_editorial_reviews where job_id=$1 and actor_id=$2',[job.id,'rollback-fixture'])).rows[0].n,2);
+  await client.query('rollback');
+  assert.equal((await client.query('select count(*)::int as n from board_maintenance_runs where id=$1',[runId])).rows[0].n,0);
+  console.log('Verified approval, updated maintenance baseline, duplicate/stale rejection, withdrawal and audit history; all fixture changes rolled back.');
+}finally{await client.query('rollback');await client.end();}

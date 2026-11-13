@@ -1,0 +1,808 @@
+{
+  "run": "fresh-unseen-2026-10-29-v6",
+  "model": "gpt-6-luna",
+  "classifier": "builder-feedback-v6",
+  "calibrationVersion": "fb9f53cb897cea03763a0b13abca60969064299c8560415b4ed5ceac8db182bd",
+  "createdAt": "2026-10-29T22:44:47.118Z",
+  "policy": "Previously unattempted and unreviewed current source versions; deterministic score thirds with employer/provider diversity. Take the budget-fitting prefix, without selecting on model outcomes or job cost.",
+  "eligiblePool": 1400,
+  "requested": 40,
+  "selected": [
+    {
+      "id": "20f2a1492293ee404bbda6a6a6069ca0",
+      "title": "Product Engineer, Compute Operations",
+      "sourceId": "ashby:fluidstack",
+      "url": "https://jobs.ashbyhq.com/fluidstack/a59fc19b-ce9d-45ba-b303-58ec58ac6199",
+      "sourceHash": "a551709723273dabecd6d451b9a55bd89396bc60ae134f41203cd328df5ecf49",
+      "provider": "ashby",
+      "score": 100,
+      "location": "New York, NY",
+      "reservation": 7272900,
+      "requestHash": "4fcfd8eeab7870acbc22f600ca5991590e0dd074349476420fe928cea5b70f7e"
+    },
+    {
+      "id": "777f92fb5dfa086edb0d6cc231f1190b",
+      "title": "Product Manager, Partner Ecosystem",
+      "sourceId": "greenhouse:adyen",
+      "url": "https://job-boards.greenhouse.io/adyen/jobs/8158755",
+      "sourceHash": "67f2d6878d28a0d18cc1e9f371165254574a08fd009cc13eb83c2388fc00746b",
+      "provider": "greenhouse",
+      "score": 30,
+      "location": "San Francisco",
+      "reservation": 7318800,
+      "requestHash": "1ae69a72511c6db96b2efcaac9205eefe0bb0ecab535ae2f471ea48c4fe429d6"
+    },
+    {
+      "id": "fb7a6320f1308fee62c5cbb08922a6cd",
+      "title": "Senior .NET Full Stack Developer (React)",
+      "sourceId": "lever:reply",
+      "url": "https://jobs.lever.co/reply/45c56f5f-f735-46dd-9da7-c5f0506fed31",
+      "sourceHash": "246ce9d1a24241eb26086d18f78a4c0a4bf1ec79e3a4cd6fea1ff5d6d0ab3b10",
+      "provider": "lever",
+      "score": 5,
+      "location": "Kochi, Kerala",
+      "reservation": 6841400,
+      "requestHash": "3825e02d047048a6aee62c1e2640a2981b78cd4407a3e350679652ab381b658f"
+    },
+    {
+      "id": "aa79e8076d6eee8812c13de2ef88de97",
+      "title": "Lead Design Builder",
+      "sourceId": "ashby:alt",
+      "url": "https://jobs.ashbyhq.com/alt/54374099-05d1-448c-8f61-50f72c9fba68",
+      "sourceHash": "765c488f2d2201406f3e985101cc38381a5ec8ad55e9d52d5a554a99dd2576a2",
+      "provider": "ashby",
+      "score": 100,
+      "location": "Remote",
+      "reservation": 7619100,
+      "requestHash": "358347204ed01191b70fc2d5427927e3a44e1215268e60db936dbcf32c178427"
+    },
+    {
+      "id": "c5aaa61545e67dc2a16e5aaf152456b0",
+      "title": "Senior Software Engineer, Backend (Product Engineering)",
+      "sourceId": "greenhouse:brex",
+      "url": "https://www.brex.com/careers/8815495002?gh_jid=8815495002",
+      "sourceHash": "82849d67d32930b424bb050e74c7f913f5787ba4fc65b759632dd17af91945ad",
+      "provider": "greenhouse",
+      "score": 23,
+      "location": "San Francisco, California, United States",
+      "reservation": 6971000,
+      "requestHash": "260f4ac0859c97c98aae6d950cb74585707efa9ae582a558c9fd7fca57e17baf"
+    },
+    {
+      "id": "4627255651fe731d73c8544b0b04c646",
+      "title": "Integrated Marketing Manager",
+      "sourceId": "lever:nationaljournal",
+      "url": "https://jobs.lever.co/nationaljournal/5317b483-3b3e-4650-b7ae-29d6d1704e50",
+      "sourceHash": "d1e46582a0f407b031dc47cadd26fe86d21a3da84f7698dfe993670afc34c44f",
+      "provider": "lever",
+      "score": 20,
+      "location": "Washington DC",
+      "reservation": 7382300,
+      "requestHash": "d8e7d4a68f6c580c65d1328dd578ad074c8ac978674482b88e7515c92b7a19b4"
+    },
+    {
+      "id": "6358178ee912b6f3c2c0707fde687ee9",
+      "title": "AI Builder",
+      "sourceId": "lever:artera-2",
+      "url": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "sourceHash": "c5d3e8eb305f009d12f84560eadd97a110fc56289a30ca57f8f1b66113d28c24",
+      "provider": "lever",
+      "score": 95,
+      "location": "Seattle, Washington",
+      "reservation": 7772400,
+      "requestHash": "50434b8c55db125692ebe1950e66c1f1453dd1a20884f12660e2aa3956a21bc4"
+    },
+    {
+      "id": "be92a7255e23410d2e1ac7e6da0c2a2f",
+      "title": "Founding Account Executive",
+      "sourceId": "ashby:creem",
+      "url": "https://jobs.ashbyhq.com/creem/38925519-a91d-4000-8ae8-2572c5b888e3",
+      "sourceHash": "2dd1942960912a3ec84dd38a19158fc7d01c03acc1cabe50aeb59a4df0808bcc",
+      "provider": "ashby",
+      "score": 30,
+      "location": "Tallinn",
+      "reservation": 6928000,
+      "requestHash": "00450a12d4bf955bc6963d5937d58d0978e621c6ae8f3a54e6e91a50c388b6ab"
+    },
+    {
+      "id": "36df2e22d1ff4575792bddf0fa9f5aa1",
+      "title": "Lead Sales Engineer (South East) ",
+      "sourceId": "greenhouse:blackduck",
+      "url": "https://job-boards.greenhouse.io/blackduck/jobs/5397135008",
+      "sourceHash": "5907d19ada2f0d81ee7ac700d24a463664bf93cd64690cda7ededf0c885ca9ab",
+      "provider": "greenhouse",
+      "score": 8,
+      "location": "Jacksonville, Florida, United States",
+      "reservation": 7056500,
+      "requestHash": "1df9cb88c6aa95740123ca8a5f30d43414d944b0ed44b6ece478c9b35094e26e"
+    },
+    {
+      "id": "5227d18944426e830f1dae542656e8bb",
+      "title": "Founding Design Engineer",
+      "sourceId": "ashby:clera",
+      "url": "https://jobs.ashbyhq.com/clera/2e5c0f56-070f-4343-b98d-0a00e2114f72",
+      "sourceHash": "aa6a9898f7027c5b1008d9746bc14b3c86d33b207c68c42a2c686d3b99a771db",
+      "provider": "ashby",
+      "score": 90,
+      "location": "San Francisco",
+      "reservation": 6865700,
+      "requestHash": "b68e87cca7567dc4aef8ffe27e83fea2abc7f6dc29c1193b067f0e27a8628730"
+    },
+    {
+      "id": "60399a39fc32a948584e94cb004399a0",
+      "title": "Vice President, Product Management",
+      "sourceId": "greenhouse:uniteus",
+      "url": "https://job-boards.greenhouse.io/uniteus/jobs/8909368002",
+      "sourceHash": "dbb6aeac4acb982d2ee0a808ea386ebc55f03193e48b6b0dd12eae9759c8aabc",
+      "provider": "greenhouse",
+      "score": 23,
+      "location": "United States",
+      "reservation": 7868300,
+      "requestHash": "3021646145fc4973cbfc2ec3a41fbac2abe1f4a3e01df5e6372ef3444ac6d938"
+    },
+    {
+      "id": "989dfa14029b213ac4af2ff53ecc89c7",
+      "title": "Financial Controller",
+      "sourceId": "lever:medi.ci",
+      "url": "https://jobs.lever.co/medi.ci/9cf64e54-9f22-48a5-96dc-cb2a1ba907bf",
+      "sourceHash": "6d572d5edf16d7cb7be5d5825ab8b02f956682c6a40603f13bc3e0f20b588727",
+      "provider": "lever",
+      "score": 20,
+      "location": "San Antonio, Texas",
+      "reservation": 7289200,
+      "requestHash": "ff29ca8a410e9235b308e6e532977f51ae6f60302bdbff4e1bd3950faaa801be"
+    },
+    {
+      "id": "1751bde536c82963c1313c7be9666100",
+      "title": "Platform Engineer, Builder Experience",
+      "sourceId": "ashby:oneapp",
+      "url": "https://jobs.ashbyhq.com/oneapp/fbc0f334-5613-41fc-b5d7-87f2e5a20bee",
+      "sourceHash": "8c82c15b2914c91f4ccfd204c1c6b1a7cc3f5345f9c3bd586c5f1248b387e5fa",
+      "provider": "ashby",
+      "score": 88,
+      "location": "United States (Remote)",
+      "reservation": 7013200,
+      "requestHash": "7036276b7e316ea806ce404bdaff4a4e1168e996ee46cddade43b1f44dbd0b25"
+    },
+    {
+      "id": "b13af6305dc06710b2ad63c7b97634ab",
+      "title": "Senior Product Manager ",
+      "sourceId": "greenhouse:mrbeastyoutube",
+      "url": "https://job-boards.greenhouse.io/mrbeastyoutube/jobs/6123291004",
+      "sourceHash": "6b4b2d0582559312a8236734180dcd8927f00b191bbd2f684b1d8054de51b95b",
+      "provider": "greenhouse",
+      "score": 30,
+      "location": "Primary: Bay Area (San Francisco/Peninsula) | Secondary: NYC",
+      "reservation": 7169200,
+      "requestHash": "db19a861765d51fb3b4f5b457353a88a4ae1450f7194d491e5e51c344acd2b26"
+    },
+    {
+      "id": "97f9ef2d025515fc36f615bf7d5f7b61",
+      "title": "FP&A Analyst",
+      "sourceId": "lever:doola",
+      "url": "https://jobs.lever.co/doola/395aff9d-b0c2-453a-a3f6-4fab4ef710b4",
+      "sourceHash": "4237fa31df435300cbe208786be4476ea67a95c5b1c79c74f9247d7d23950a8c",
+      "provider": "lever",
+      "score": 5,
+      "location": "Remote in Chile",
+      "reservation": 7128400,
+      "requestHash": "a2632220edc5fa8af02a47c6b1d3087886b89625967d5274909ab7377e11a40d"
+    },
+    {
+      "id": "073d8abc5732031bfcc2d99892de5f74",
+      "title": "Creative Technologist (AI Design Engineer)",
+      "sourceId": "ashby:openart",
+      "url": "https://jobs.ashbyhq.com/openart/48ee704c-6c89-4287-8f90-c88e1416f326",
+      "sourceHash": "0537119aadf7f353b79cf9248f93ce44149cf105e9588b27c12628c0a68f9d3c",
+      "provider": "ashby",
+      "score": 78,
+      "location": "San Carlos, California, USA",
+      "reservation": 7277200,
+      "requestHash": "e2075a2f6cb721e5e1280f846401600fb09107946bac9843e60c39cf7f11e07d"
+    },
+    {
+      "id": "a0f2fcb7d833469b799c30298908c8c5",
+      "title": "Sr. In-House Counsel",
+      "sourceId": "greenhouse:tenstorrent",
+      "url": "https://job-boards.greenhouse.io/tenstorrent/jobs/5227784007",
+      "sourceHash": "0d69da9b7597ab971bae70fcce33dd9361f5839e108c32ef8c29c66c764e4016",
+      "provider": "greenhouse",
+      "score": 23,
+      "location": "Austin, Texas, United States; Boston, Massachusetts, United States; Santa Clara, California, United States; Toronto, Ontario, Canada",
+      "reservation": 7278700,
+      "requestHash": "8d356cedb3ca49ca7174169a5e0bc0052c694ddcf58c4d22a46fb2f3aad9f320"
+    },
+    {
+      "id": "14e2fe6e47e669ad7a0dd06ae87a9785",
+      "title": "Senior Software Engineer",
+      "sourceId": "lever:getmidas",
+      "url": "https://jobs.lever.co/getmidas/536b118f-21c2-4467-b893-c5dc3c90e9ca",
+      "sourceHash": "7b2b76ce170f3ce237651154a77983a24121548901da829929b52c6d322ed4c7",
+      "provider": "lever",
+      "score": 5,
+      "location": "Turkey",
+      "reservation": 6994400,
+      "requestHash": "18730ad32ff0018feb2af7c3165279d292e4b50d9e7594ccf56434047560c297"
+    },
+    {
+      "id": "0fa0b3bdfbfc737f36631b6997c97fce",
+      "title": "Senior Product Design Engineer - Floorcare",
+      "sourceId": "greenhouse:sharkninjaoperatingllc",
+      "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4712077006",
+      "sourceHash": "24e27e7b2d2d420ad1e38f02662af4ae97003732238580d4a483cbb3a11b3e7a",
+      "provider": "greenhouse",
+      "score": 78,
+      "location": "Needham, MA, United States",
+      "reservation": 7510000,
+      "requestHash": "7d682b43b921bcefc1fbd365a3f39e9bc29e5536d4dd437e831bcfad9c812f6d"
+    },
+    {
+      "id": "9379d591b1f591e57b842020cbfe4a2a",
+      "title": "Go-to-Market (GTM) Engineer (backed by Y Combinator, $5M+ ARR, $23M+ raised)",
+      "sourceId": "ashby:legionhealth",
+      "url": "https://jobs.ashbyhq.com/legionhealth/4519a1af-1862-4614-8767-d91c76e99f28",
+      "sourceHash": "fbe9e372949a34fea984289a3df1511849dd01af5d5bfd0827b4e02c5ec27200",
+      "provider": "ashby",
+      "score": 30,
+      "location": "San Francisco",
+      "reservation": 8197600,
+      "requestHash": "26800ae41c5284f377597e3d02c7e4e655cf9f4f07d521fe5030c138974e73fd"
+    },
+    {
+      "id": "ed2837bfe9e747ab9121bbe67634b465",
+      "title": "GTM Engineer",
+      "sourceId": "lever:softdocs",
+      "url": "https://jobs.lever.co/softdocs/6e1d3084-a0bf-4561-bbb0-5ee7ee2c6b53",
+      "sourceHash": "114cca9d5d4f510c7f1908154d5c1c02b81ed01a85aaa365e49ac6b09948af05",
+      "provider": "lever",
+      "score": 20,
+      "location": "Remote",
+      "reservation": 6949900,
+      "requestHash": "a99a0bf0065a644f201cb5cfc82b64ffb7cbce7d17a0f2c28588cea213edf799"
+    },
+    {
+      "id": "77ae534122143c62e1e1c015d487c6b5",
+      "title": "Revenue Operations Architect — GTM Systems Builder",
+      "sourceId": "ashby:level-ai",
+      "url": "https://jobs.ashbyhq.com/level-ai/ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "sourceHash": "280c02392af0b961be3714dbfd6f5adc9a16828d7ac8137e09ba8f997232d989",
+      "provider": "ashby",
+      "score": 78,
+      "location": "Remote, United States",
+      "reservation": 6871200,
+      "requestHash": "46000bc69a6f51418ecf5bef1cef1308dcb7b1df9b9ce4c6e4c5a44dd79906d8"
+    }
+  ],
+  "maximumNewUSD": 0.1595754,
+  "priorReservedUSD": 0.8394613,
+  "results": [
+    {
+      "id": "20f2a1492293ee404bbda6a6a6069ca0",
+      "requestId": "d5a7b12b-93e0-4554-8320-78ce679acf12",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering",
+          "operations"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires production-code experience in Go, Python, or TypeScript, plus building features with LLM APIs and daily use of AI coding tools and agents. Also values operational/on-call experience and product judgment.",
+        "product": "Owns fleet-health, repair, hardware-qualification, and facility workflows, shaping systems around how production engineers and operators work.",
+        "operations": "Works alongside production engineers and facility operators, turning operational pain into systems used on site and across compute infrastructure.",
+        "building": "Personally identifies problems, designs solutions, and ships production systems end to end, with ownership extending through operational adoption.",
+        "ai": "Uses LLM APIs, agent frameworks, and AI coding tools in an agentic development workflow.",
+        "reason": "A software-engineering-heavy builder mandate: the role owns consequential compute-operations problems, personally designs and ships production systems, and uses AI tools and agents directly in development. It also connects building to real operators and systems used in production.",
+        "evidence": [
+          " asked for. You work forward-deployed beside production engineers and facility operators, on site and on the rotation, and build what they use the next shift.",
+          "\n You work daily with AI coding tools like Claude Code and Cursor, and you get agents doing useful work autonomously alongside you.",
+          "\n You identify problems, design the solution, and ship it without waiting for direction or approval."
+        ]
+      }
+    },
+    {
+      "id": "777f92fb5dfa086edb0d6cc231f1190b",
+      "requestId": "0dbdfd6a-0206-404c-bd81-5f26db732822",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 8+ years of product management experience in tooling, developer platforms, technical workflows, or complex B2B/API products, plus strong fluency in software architecture, APIs, web technologies, and data pipelines.",
+        "product": "Owns strategy and roadmap for internal partner tooling, developer infrastructure, and operational workflows; prioritizes partner journeys and measurable business outcomes.",
+        "operations": "Identifies operational friction and drives automation and self-service across partner onboarding, integration maintenance, and support workflows.",
+        "building": "The posting describes designing and delivering internal platforms at the product level, but does not establish that the PM personally implements working solutions; delivery is framed through cross-functional engineering collaboration.",
+        "ai": "Champions adoption of intelligent agents, LLM-powered workflows, and automated triage, without a stated personal AI-enabled implementation responsibility.",
+        "reason": "This is primarily a conventional senior product-management mandate: defining vision and roadmaps, aligning stakeholders, and driving platform delivery through engineering teams. Platform-building and AI initiatives are stated as outcomes to lead, but personal creation and iteration of working solutions are not established.",
+        "evidence": [
+          "\n What You'll Do \n Define the Product Vision & Roadmap: Own the end-to-end product strategy for internal partner tooling, developer infrastructure, and operational workflows.",
+          "\n Build High-Impact Internal Platforms: Design and deliver internal tools and services—such as integration health monitoring, automated regression and compliance testing suites, partner certification portals, and self-service analytics platforms.",
+          "\n Pioneer AI & Intelligent Automation: Champion the adoption of intelligent agents, LLM-powered workflows, and automated triage systems to accelerate partner enablement, technical inquiries, and documentation discovery."
+        ]
+      }
+    },
+    {
+      "id": "fb7a6320f1308fee62c5cbb08922a6cd",
+      "requestId": "1390edd0-cc2a-4339-a933-9fe04dd448b3",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires six years of C#/.NET software development and extensive full-stack, cloud, microservices, and production-support experience.",
+        "product": "Implements enterprise applications; no meaningful ownership of problem definition or product outcomes is described.",
+        "operations": "Production troubleshooting and reliability work support the application engineering mandate.",
+        "building": "Directly develops and maintains software, but as conventional engineering delivery rather than an AI-enabled, problem-owning builder role.",
+        "ai": "No AI-enabled building responsibility is stated; the employer's general AI context does not establish one.",
+        "reason": "This is a conventional senior full-stack engineering role centered on delivering and supporting enterprise applications. It requires substantial prior software-engineering experience and does not establish an AI-enabled builder mandate or ownership of broader product problems.",
+        "evidence": [
+          " In this role, you will design, develop, and support scalable enterprise applications with a strong focus on backend engineering while contributing to modern React-based user interfaces.",
+          "\n Responsibilities\n Design, develop, and maintain scalable enterprise applications using C#, ASP.NET Core, React, and SQL Server following modern software architecture principles.",
+          " 6 years of experience in software development using C#, ASP.NET Core/.NET Core , and enterprise application development."
+        ]
+      }
+    },
+    {
+      "id": "aa79e8076d6eee8812c13de2ef88de97",
+      "requestId": "c77fd7c8-f0a4-4780-9670-6477864a65ee",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "design",
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks an early/founding-caliber designer who has framed ambiguous problems, conceived and shipped work, and can explain outcomes quantitatively. Requires code or code-adjacent prototyping fluency and demonstrated AI-enabled making; it does not specify a prior software-engineering career requirement.",
+        "product": "Owns key marketplace surfaces and their user problems, framing, experience decisions, trust, and success metrics. Conducts user research, tests directions, and uses behavioral evidence to inform roadmap decisions.",
+        "operations": "Owns instrumentation, launch readouts, and iteration for assigned surfaces; personally reviews results and learns from misses.",
+        "building": "Builds working, code-based prototypes—not just click-throughs—to evaluate ideas with the team and users; pairs with engineers at ship time and owns design fidelity through implementation.",
+        "ai": "Uses AI to rapidly create testable prototypes with simulated model output, develop skills that enforce design standards, analyze customer feedback at scale, and generate and evaluate solution directions.",
+        "reason": "Strong design-builder mandate: the role defines the problems and experience for owned marketplace surfaces, gathers user evidence, and is accountable for outcomes. It explicitly requires working prototypes built in code and gives concrete AI-enabled building workflows, with prototypes tested against users and behavioral data. Engineering partnership at ship time is compatible with direct building.",
+        "evidence": [
+          " You write the framing for your surfaces: who's hurting, the evidence, the number that says it's real, the metric that says it worked.",
+          "\n The prototype. You build. Working prototypes in code, not click-throughs, are how ideas get evaluated here, because a thing you can touch settles an argument in an afternoon that a doc would run for two weeks.",
+          " Concretely, in this role:\n Get to a clickable prototype of a new flow in a day — real card data, simulated model output, testable interactions — so the team argues about a real thing instead of a doc\n"
+        ]
+      }
+    },
+    {
+      "id": "c5aaa61545e67dc2a16e5aaf152456b0",
+      "requestId": "87db3ecd-6063-426a-a7f1-973033a3fd64",
+      "status": "succeeded",
+      "result": {
+        "fit": "unclear",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 7+ years of professional backend application design, development, and deployment experience, plus scalable-systems, database, and backend-language expertise.",
+        "product": "Works on customer-facing products, learns customer needs with Sales and Support, and owns problems from user experience through ongoing metrics.",
+        "operations": "Includes responsibility for operability and ongoing product metrics.",
+        "building": "Personally designs and implements backend solutions and builds features and products end-to-end, from concept through launch.",
+        "ai": "The posting describes Brex’s AI-powered products, but does not establish that this role uses AI tools or workflows to build, test, or iterate on solutions.",
+        "reason": "The role clearly combines product problem ownership with hands-on implementation, but the posting does not establish AI-enabled building as part of this engineer’s work. That material gap leaves overall builder fit unclear; the demanding software-engineering requirement is a separate qualification issue.",
+        "evidence": [
+          "\n Work alongside user-facing teams like Sales and Support to deeply understand our customers' needs.",
+          "\n Design and implement solutions to improve our customers' banking experiences.",
+          "\n Own problems end-to-end, from user experience and data models to scalability, operability, and ongoing metrics."
+        ]
+      }
+    },
+    {
+      "id": "4627255651fe731d73c8544b0b04c646",
+      "requestId": "08e427c8-1ab7-4d20-a15e-7d189aa14578",
+      "status": "succeeded",
+      "result": {
+        "fit": "unclear",
+        "focus": [
+          "marketing",
+          "design",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Marketing and design experience, independent creation of polished collateral, campaign execution, HubSpot, and comfort experimenting with AI tools. No software-engineering requirement.",
+        "product": "Shapes how research and products are packaged and marketed, including campaign messaging, assets, channels, and timing; tracks performance to optimize campaigns.",
+        "operations": "Owns campaign execution, marketing materials, HubSpot workflows, reporting, website updates, and LinkedIn presence.",
+        "building": "Personally designs and produces marketing assets and takes campaigns from concept through launch. The posting does not establish that building AI-enabled workflows or solutions is central to this work.",
+        "ai": "Uses AI tools to accelerate design, campaign development, editing, and production, and experiments with solutions to improve workflow efficiency.",
+        "reason": "This is a hands-on marketing and creative role with real ownership of campaign choices and direct production through launch. However, AI is described mainly as a way to accelerate marketing workflows; the posting does not clearly establish personal implementation of AI-enabled working solutions as a central part of the mandate.",
+        "evidence": [
+          " This person will take projects from concept through execution, developing integrated campaign strategies while also independently designing and producing the marketing materials needed to bring those campaigns to life.",
+          " AI-Powered Workflows — Apply AI tools to accelerate design, campaign development, editing, and production; experiment with new solutions to improve workflow efficiency across the marketing function\n",
+          " Qualifications:\n The ideal candidate is both a strategic marketer and hands-on creative , bringing strong design instincts, integrated marketing experience, and the self-direction to take projects from concept through execution."
+        ]
+      }
+    },
+    {
+      "id": "6358178ee912b6f3c2c0707fde687ee9",
+      "requestId": "c4fe051d-d2ce-43b7-a2b7-0d8c06e4616d",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering",
+          "customer_facing",
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Accepts experience from software engineering, data science, ML, product management/design, technical project management, or demonstrated output. Requires AI-native CLI fluency, reliable production shipping, and customer-facing technical judgment; this is not restricted to prior SWE careers.",
+        "product": "Identifies customer pain, creates a roadmap, makes technical decisions from customer conversations, and contributes to squad prioritization. Customer discovery and operational feedback shape what gets built.",
+        "operations": "Owns named-customer outcomes through onboarding and production operation, including monitoring, reliability improvements, enhancements, and applicable on-call.",
+        "building": "Personally architects and codes novel customer solutions using internal agentic systems, then operates and improves what ships. Building is central, not merely prototyping or implementation to preset requirements.",
+        "ai": "AI-native tools are the primary working environment, with CLI-based agentic development expected across the work. The role builds and iterates on agentic systems for healthcare workflows.",
+        "reason": "Clear builder mandate: independently discovers customer problems, shapes solutions and priorities, personally architects and codes them with agentic systems, and owns production outcomes and continuous improvement. The customer-facing scope connects user learning to shipped capabilities; it is not limited to installation or configuration.",
+        "evidence": [
+          " \n At this level, you'll own customer outcomes independently with moderate supervision, bringing the curiosity of a product manager, the discipline of a project manager, and the agentic fluency of an engineer to your work.",
+          "\n Strategy: Identify customer pain and create a roadmap for solving their problems.",
+          "\n Agentic Development: Build novel solutions for named customers; translate their operational reality into technical solutions that you yourself architect and code with our internal agentic systems."
+        ]
+      }
+    },
+    {
+      "id": "be92a7255e23410d2e1ac7e6da0c2a2f",
+      "requestId": "1748d89a-d458-4a32-8029-6e290765efcc",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "sales",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires full-cycle quota-carrying sales experience, high-value account judgment, and comfort with technical tools and automation. No software-engineering career requirement is stated.",
+        "product": "Owns the sales motion and revenue priorities, not product problem definition or product outcomes.",
+        "operations": "Builds sales pipeline and internal sales infrastructure from scratch, including lead enrichment and workflow automation.",
+        "building": "Personally configures enrichment and builds CRM or analytics automations to support sales operations; this is infrastructure for the sales role, not the central mandate of creating and delivering solutions to a broader user problem.",
+        "ai": "AI and automation are expected as leverage for prospecting and sales workflows; no AI-enabled product building mandate is described.",
+        "reason": "The primary work is founding-team account sales: prospecting, discovery, demos, negotiation, closing, and account growth. The role includes meaningful ownership of sales processes and hands-on workflow automation, but those are adjunct to the sales mandate rather than a central problem-to-solution building role.",
+        "evidence": [
+          "ABOUT THE ROLE \nAs the Founding Account Executive at Creem, you'll own the full sales motion end to end, from first conversation to closed deal to a growing account.",
+          " When a workflow in Attio or PostHog needs automating, you build it rather than filing a ticket.",
+          " You'll use AI and automation to make one person operate like a full team, and what you build now becomes the sales infrastructure the company scales on."
+        ]
+      }
+    },
+    {
+      "id": "36df2e22d1ff4575792bddf0fa9f5aa1",
+      "requestId": "484b2048-810c-43e0-933c-6ae8b498f157",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "sales_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 8+ years in sales/solutions engineering or technical presales, application-security knowledge, and familiarity with AI-based code-development tools and workflows.",
+        "product": "Advises prospects on application-security solutions tailored to their requirements during new-business sales cycles.",
+        "operations": "Partners with account executives to support sales strategy, customer acquisition, and technical validation.",
+        "building": "Conducts discovery, demonstrations, and proof-of-value engagements; the posting does not establish personal creation and ownership of working solutions as central work.",
+        "ai": "AI appears in the products discussed and in required familiarity with development tools; agentic workflows are preferred. No direct AI-enabled building responsibility is described.",
+        "reason": "This is a technical presales role focused on discovery, demonstrations, tailored solution design, and supporting new-customer sales—not personally building and taking responsibility for solutions through use or broader product outcomes.",
+        "evidence": [
+          " \n Role Overview  \n As a Lead Sales Engineer, you will act as a trusted technical advisor throughout the  new business sales cycle , working alongside Account Executives to engage prospective customers, uncover their needs, and deliver compelling,",
+          " Lead technical discovery sessions, product demonstrations, and  proof-of-value engagements  for prospective customers \n",
+          " Analyze prospect environments and requirements to design tailored, high-impact application security solutions \n"
+        ]
+      }
+    },
+    {
+      "id": "5227d18944426e830f1dae542656e8bb",
+      "requestId": "c087d58f-304e-4be0-9ab1-a5f4bd3f3bab",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "design",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 5+ years building product interfaces, a portfolio of shipped features, primary ownership of a production design system, and deep React/TypeScript/frontend expertise. These substantial software-engineering requirements are separate from role fit.",
+        "product": "High-ownership founding role shaping frontend UX and directly influencing product quality and direction; defines polished interfaces and patterns across the product suite.",
+        "operations": "Owns design-system and frontend-quality standards, including accessibility guardrails, tooling, tests, and conventions for human- and agent-written UI.",
+        "building": "Personally translates design intent into production code: reusable components, conversational interfaces, motion, and micro-interactions; owns the design system end-to-end.",
+        "ai": "Uses Claude Code, Cursor, and custom lint/agent rules in the frontend workflow; designs interfaces for agent-written UIs and AI products.",
+        "reason": "A hands-on design-engineering builder role: it owns frontend experience and standards while directly translating design decisions into shipped production interfaces. AI coding tools are explicitly part of the workflow, and the role has influence over product direction. The demanding frontend engineering background is a separate qualification gate, not a fit veto.",
+        "evidence": [
+          "\n You'll work shoulder-to-shoulder with the founders and a small, tight-knit engineering team, with enormous scope and direct influence over the product's quality and direction from day one.",
+          "\n What You'll Do\n Own the design system end-to-end: design tokens, a shadcn/ui-based component library, and Tailwind CSS conventions applied consistently across the product suite.",
+          "\n Integrate AI coding tools (e.g., Claude Code, Cursor) and custom lint/agent rules into the frontend workflow."
+        ]
+      }
+    },
+    {
+      "id": "60399a39fc32a948584e94cb004399a0",
+      "requestId": "5d0b68d8-d688-4ab6-84e4-c3189bbf515c",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product",
+          "leadership"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 12+ years in product management, solution architecture, or health IT, including 5+ years leading product teams; large healthcare portfolios, production interoperability, and deep platform/identity/API fluency are emphasized. These are qualifications, not the basis for exclusion.",
+        "product": "Owns product vision, strategy, portfolio investment, roadmaps, and measurable customer and financial outcomes across a healthcare platform.",
+        "operations": "Leads product directors and managers, establishes product practices, and coordinates with engineering, design, sales, and implementation leadership.",
+        "building": "The posting calls this a role for a builder and values having architected platforms, but its work allocation centers on executive product leadership, portfolio decisions, and managing teams—not personally implementing and iterating working solutions.",
+        "ai": "Identifies where AI and analytics could improve products; applying AI is a preferred qualification. No direct AI-enabled implementation or testing responsibility is described.",
+        "reason": "This is a conventional senior product-management leadership mandate: setting strategy, allocating portfolio investment, and leading a product organization. The “builder” framing and technical platform background do not establish personal creation of working solutions as central work, and AI appears as opportunity identification rather than hands-on building.",
+        "evidence": [
+          "\n You'll help set the product vision and strategy, lead a team of product directors and managers, and own the portfolio from investment decision to measurable outcome.",
+          "\n Identify where AI and advanced analytics can meaningfully improve how needs are identified, how services are coordinated, and how outcomes are measured.",
+          " Lead, mentor, and grow a team of product directors and product managers, building a culture of empowered, outcome-focused teams."
+        ]
+      }
+    },
+    {
+      "id": "989dfa14029b213ac4af2ff53ecc89c7",
+      "requestId": "fda0bafc-8143-491b-a514-52e8a7c5a3e2",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "finance"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires a finance/accounting foundation, 5+ years of progressive experience, and demonstrated use of AI, automation, or technology to improve finance processes. CPA preferred, not required; no software-engineering career requirement stated.",
+        "product": "Owns the finance function’s operational problems and can identify where processes need improvement, rather than primarily coordinating delivery.",
+        "operations": "Direct ownership of multi-entity accounting, billing, payments, reporting, and controls, with responsibility for scalable process improvements.",
+        "building": "Expected to identify automation opportunities, evaluate and implement tools and workflows, and put improved finance processes into operation.",
+        "ai": "AI and automation are explicit tools for streamlining workflows, improving accuracy, reducing manual work, and strengthening controls.",
+        "reason": "This is an operations-focused builder role: the controller owns day-to-day financial operations and is expected to find problems, implement AI-enabled or automated improvements, and take responsibility for more efficient, scalable workflows. Finance expertise is required, but software engineering is not.",
+        "evidence": [
+          "\n The Financial Controller will own the day-to-day financial operations of the company while actively leveraging AI, automation, and modern financial tools to improve efficiency, accuracy, reporting, and financial controls.",
+          "\n Leverage AI, automation, and modern financial technology to streamline accounting and finance workflows, improve accuracy, reduce manual processes, and strengthen financial controls.",
+          "\n Evaluate and implement tools, workflows, and process improvements that create a more scalable and technology-enabled finance function."
+        ]
+      }
+    },
+    {
+      "id": "1751bde536c82963c1313c7be9666100",
+      "requestId": "15771f5f-61f6-478c-b90a-fad736f6300d",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 2–9 years of software-engineering experience and deep expertise in distributed systems, cloud infrastructure, developer platforms, and CI/CD. These are role requirements, separate from fit.",
+        "product": "Owns development of platform services, developer tooling, and frameworks that improve engineering velocity and support agentic applications across OnePay’s products.",
+        "operations": "Improves deployment speed, reliability, observability, and confidence through shared infrastructure, automation, and CI/CD work.",
+        "building": "Personally designs and builds core platform services, internal tools, and frameworks for use by engineering teams.",
+        "ai": "Builds frameworks for agentic applications and developer tools; the team explicitly embraces agentic development workflows and coding agents.",
+        "reason": "This is a hands-on engineering builder mandate: the role creates and evolves working platform capabilities used across the product ecosystem, including agentic tooling, and explicitly uses agentic development workflows. Its substantial software-engineering requirements do not negate the fit.",
+        "evidence": [
+          " Develop internal developer tooling and shared infrastructure that improve velocity, reliability, and observability across engineering teams\n",
+          " Build and evolve frameworks that support the construction and orchestration of agentic applications, enabling intelligent, automated workflows across products\n",
+          " We also embrace agentic development, so engineers have their choice of a variety of models and agent harnesses, including Claude Code, Cursor, Codex, and more to fit their workflow."
+        ]
+      }
+    },
+    {
+      "id": "b13af6305dc06710b2ad63c7b97634ab",
+      "requestId": "54c0d9ba-9936-4662-9c06-ca250edc9b55",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 5–8 years of product management experience shipping consumer mobile products at scale, plus fluency in APIs, data models, and architecture. Production coding is explicitly not required.",
+        "product": "Owns a mobile-app feature area from opportunity sizing and requirements through launch, metrics, and post-launch iteration; shapes priorities using member research and product judgment.",
+        "operations": "Coordinates external partners and vendors and translates compliance and policy guidance into product rules.",
+        "building": "The PM stays close to engineering and uses AI for specs, research, prototypes, and analysis, but the described implementation is performed by engineering. Personal making is not central to the mandate.",
+        "ai": "AI tools support PM workflow and prototyping; the role also identifies AI product opportunities and turns them into shippable specs.",
+        "reason": "This is an end-to-end product-management role: the PM defines requirements, coordinates with engineering, and owns feature outcomes, while engineers build the product. AI-assisted prototyping and being close to the build do not establish a central personal implementation responsibility; the posting explicitly says production coding is unnecessary.",
+        "evidence": [
+          "\n Partner daily with engineering leads and designers in tight iteration loops; be in the details of the build, not just the roadmap.",
+          "\n Use AI tools as a default part of how you work from drafting specs and synthesizing research to prototyping flows and querying data so your output is materially faster than a traditional PM's.",
+          " You don't need to write production code or technical specs yourself, but you understand the systems well enough to hold your own in the conversation."
+        ]
+      }
+    },
+    {
+      "id": "97f9ef2d025515fc36f615bf7d5f7b61",
+      "requestId": "c4878e1d-4a87-4d05-93c3-61416176cee6",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "finance_operations"
+        ],
+        "engineering": "unclear",
+        "qualifications": "Requires 3–6 years in FP&A or a related finance field, strong financial modeling and spreadsheet skills, SaaS metrics knowledge, and analytical judgment. Software-engineering experience is not required.",
+        "product": "Supports leadership decisions through forecasting, budget analysis, KPI reporting, and strategic finance work; the role does not own a product or broader solution problem.",
+        "operations": "Owns recurring finance reporting and planning processes, including forecasts, budgets, cash/runway visibility, and board support.",
+        "building": "Improves reporting processes and templates, but the central work is financial analysis and reporting rather than personally building and delivering working solutions.",
+        "ai": "AI and automation tools are used to improve recurring finance workflows; the posting does not establish direct implementation as a central responsibility.",
+        "reason": "The primary mandate is conventional FP&A: maintaining forecasts, producing financial reports, and supporting leadership decisions. AI and automation appear as workflow-improvement tools alongside that work, without clear responsibility for personally building and taking working solutions into use as a central part of the role.",
+        "evidence": [
+          "\n Key Responsibilities \n Maintain the company forecast model, including actuals updates, revenue assumptions, expense forecasts, headcount planning, cash forecasting, runway scenarios, and scenario planning.",
+          "\n Build repeatable reporting processes and templates that improve the monthly finance rhythm and reduce dependency on the Head of Finance.",
+          "\n Use AI and automation tools to make recurring finance workflows faster, more accurate, and more repeatable while maintaining proper review and control."
+        ]
+      }
+    },
+    {
+      "id": "073d8abc5732031bfcc2d99892de5f74",
+      "requestId": "c0d5870a-693e-4514-afa4-87b70988050c",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "design",
+          "product",
+          "creative_workflows"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires professional creative-production fluency and the ability to move between design and engineering. AI coding tools, model APIs, agent frameworks, and lightweight code are core building tools; a portfolio of working prototypes or products is expected. No prior software-engineering career is specified.",
+        "product": "Finds real workflow pain points with creative teams and clients, defines what prototypes must prove, and shapes product direction and agent behavior based on professional workflow judgment.",
+        "operations": "Embeds in production workflows to identify bottlenecks and define agent-run processes to professional standards, including what constitutes finished, usable work.",
+        "building": "Personally takes concepts from workflow research through interaction and visual design to polished, usable prototypes, then works with product and engineering to turn validated prototypes into shipped features and reusable patterns.",
+        "ai": "AI is explicitly the core building tool: uses AI tools, APIs, lightweight code, and agent frameworks to prototype and validate interactive workflows; also defines how the product agent performs creative work.",
+        "reason": "This is a central hands-on builder mandate, not merely a demo or requirements role: the person identifies real creative-workflow problems, independently builds and tests polished AI-enabled prototypes, and influences product direction. Validated work proceeds to launch with engineering, which is compatible with direct building.",
+        "evidence": [
+          " We're looking for someone who finds the problem, researches the workflow, delivers the prototype end to end, makes the case for it, and then hands it to engineering to ship.",
+          " You're proficient with AI coding tools, model APIs, agent frameworks, and lightweight code, and can independently turn concepts into working prototypes fast.",
+          " Work closely with product, model, and engineering teams to turn validated prototypes into shipped features, and build up reusable components and interaction patterns along the way, so the next workflow reaches creators faster."
+        ]
+      }
+    },
+    {
+      "id": "a0f2fcb7d833469b799c30298908c8c5",
+      "requestId": "48a4978f-3b13-45c6-989b-9434042a7793",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "legal_operations"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires a JD, active state bar membership, and 5+ years of legal experience; technology or semiconductor contracting experience is preferred.",
+        "product": "No product mandate; the role advises internal teams and supports commercial transactions.",
+        "operations": "Owns contracting, compliance, legal risk, and scalable legal processes across the company.",
+        "building": "Creates legal templates, playbooks, and CLM workflows. This is legal-process building, not personal creation of working product solutions.",
+        "ai": "AI tooling is used to improve legal operations, but AI-enabled solution implementation and iteration are not central responsibilities.",
+        "reason": "The primary work is in-house legal counsel: negotiating agreements, advising stakeholders, and managing risk. Building templates and workflows and using AI tools support that legal mandate; the posting does not establish personal creation and delivery of working AI-enabled solutions as central work.",
+        "evidence": [
+          " In this role, you will take end-to-end ownership of the areas you support—guiding teams through the entire contract lifecycle, from intake and drafting through negotiation, execution, and ongoing management—while minimizing legal and compliance risk and",
+          "\n A builder, not just a reviewer.",
+          " You create the templates, playbooks, fallback positions, and CLM workflows that let Sales, Channel, and Supply Chain scale without a legal bottleneck, and you reach for AI tooling to make legal operations faster and better."
+        ]
+      }
+    },
+    {
+      "id": "14e2fe6e47e669ad7a0dd06ae87a9785",
+      "requestId": "0cbe8cb1-dc46-4a25-a643-a5bc91bda49f",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires a strong software-development foundation and experience designing scalable, reliable systems, including distributed and transactional systems. Mentoring and production engineering rigor are also expected.",
+        "product": "Product-minded engineering: contributes to architectural trade-offs and turns ambiguous problems into concrete solutions, in collaboration with product and business teams.",
+        "operations": "Owns high-volume, mission-critical systems in production, including reliability, observability, and recovery.",
+        "building": "Personally designs and develops systems, owns their lifecycle from design to production, and makes architectural decisions for working software.",
+        "ai": "AI-assisted development is explicitly encouraged to improve productivity while maintaining quality; effective AI-tool use is also expected.",
+        "reason": "This is a hands-on software-building role, not merely an engineering leadership or coordination position. It owns real production outcomes and includes AI-assisted development as part of the workflow. Its required software-engineering background is a separate qualification gate, not a fit veto.",
+        "evidence": [
+          " Own the full lifecycle-from design to production-while ensuring clear and effective communication across teams\n",
+          " Make and contribute to pragmatic architectural decisions, balancing real-world trade-offs\n",
+          " Leverage modern tools, including AI-assisted development, to improve productivity while maintaining high quality standards\n"
+        ]
+      }
+    },
+    {
+      "id": "0fa0b3bdfbfc737f36631b6997c97fce",
+      "requestId": "2c578ee1-d632-448b-bc1d-96efddbb4754",
+      "status": "succeeded",
+      "result": {
+        "fit": "unclear",
+        "focus": [
+          "design",
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 5–8+ years of mechanical-engineering experience, electromechanical product-development expertise, and SolidWorks or Creo proficiency. Hands-on lab prototyping and testing are expected.",
+        "product": "Owns front-end technology and feasibility for the Floorcare roadmap, shaping consumer-centered solutions through engineering studies and cross-functional work.",
+        "operations": "Prioritizes multiple project workflows and develops findings and next steps through lab testing.",
+        "building": "Personally develops proof-of-concept rigs, CAD layouts, models, and working prototypes to test and refine product solutions before handoff to back-end implementation.",
+        "ai": "The company promotes an AI-native culture and expects experimentation with new tools, but the role description does not establish AI-enabled building as part of the work.",
+        "reason": "This is a hands-on product-design and engineering role with meaningful front-end problem and solution ownership, plus direct prototyping and iteration. However, the posting only gives broad company-level AI expectations; it does not show that the role uses AI to build or test its solutions. That material gap leaves builder fit unclear.",
+        "evidence": [
+          "\n What You'll Get to Do\n Own the Floorcare roadmap's front-end technology and feasibility phase for our next generation of vacuums and floorcare products — complete system innovations that sit between the physical (mechanical) and system (sensors, software,",
+          "\n Tinker hands-on across short- and long-term projects, in the form of proof-of-concept rigs.",
+          " Our people are expected to experiment boldly, adopt new tools, and continuously raise what’s possible to create meaningful impact for our consumers."
+        ]
+      }
+    },
+    {
+      "id": "9379d591b1f591e57b842020cbfe4a2a",
+      "requestId": "3c676b35-4c36-4e47-bf2e-2722d1e60934",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "gtm_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires substantial ownership experience in GTM/revenue systems and strong hands-on technical ability, including SQL, production-quality code, integrations, and production LLM workflows. This is a demanding technical profile, but the posting does not require a prior software-engineering career.",
+        "product": "Owns the architecture and product decisions for provider-partnership and referral systems, translating commercial and frontline needs into systems that improve referrals, speed to care, and revenue outcomes.",
+        "operations": "Builds and operates the CRM, prospecting, outbound, referral, attribution, and reporting infrastructure; accountable for reliability, adoption, and measurable operational results.",
+        "building": "Personally configures tools or writes code to build integrations, agents, and internal products; ships, tests, monitors, and iterates on production workflows.",
+        "ai": "Deploys AI-assisted workflows and production LLM-powered research, extraction, routing, and agentic automation, with evaluations, monitoring, and human review.",
+        "reason": "A hands-on GTM systems-building mandate: the person shapes solutions to messy commercial and referral problems, directly implements AI-enabled systems, and owns their reliability, adoption, and business impact. This is an operations/GTM builder role, not merely systems administration or coordination.",
+        "evidence": [
+          " You will configure best-in-class tools when they are sufficient and write code or build integrations, agents, and internal products when they are not.",
+          "\n Production experience with LLM-powered research, extraction, classification, routing, or agentic automation, including structured outputs, evaluations, monitoring, confidence thresholds, and human-in-the-loop review.",
+          " You can turn a messy frontline problem into a coherent system that people trust and use."
+        ]
+      }
+    },
+    {
+      "id": "ed2837bfe9e747ab9121bbe67634b465",
+      "requestId": "4bae8ee1-7d62-4a1d-8deb-efd4d313b7e2",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "growth_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 3+ years in marketing/revenue operations, growth engineering, or similar GTM systems work, with pipeline-growth evidence. Requires hands-on CRM and Clay experience, plus comfort with APIs, webhooks, data mapping, and spreadsheets/SQL/BI. AI integration is expected; scripting is a plus, not a stated requirement.",
+        "product": "Owns the go-to-market systems and workflow choices that support outbound, lead nurturing, attribution, and pipeline growth, coordinating with marketing and SDR partners.",
+        "operations": "Builds and maintains the marketing stack, integrations, enrichment and prospecting workflows, attribution models, and reporting; automates repetitive GTM processes and is measured on lead volume and pipeline quality.",
+        "building": "Personally configures and builds workflows with Clay, Zapier, APIs, and potentially custom scripts, then maintains the systems and reporting used in the GTM motion.",
+        "ai": "Expected to integrate AI tools into daily operations; the role also directly builds automated workflows and integrations, though AI-assisted implementation is not specified.",
+        "reason": "This is a hands-on GTM systems and operations builder role: it owns the stack and pipeline-oriented outcomes while personally creating and maintaining automation, integrations, models, and reporting. AI integration is explicit, although the posting does not specify AI-assisted coding.",
+        "evidence": [
+          "\n About the Role \n We're looking for a GTM Engineer to own the strategy, systems, integrations, and data infrastructure behind our go-to-market motion.",
+          " Use Clay to build enrichment, scoring, and prospecting workflows \n",
+          " Ability to integrate AI tools into daily operations \n"
+        ]
+      }
+    },
+    {
+      "id": "77ae534122143c62e1e1c015d487c6b5",
+      "requestId": "47404bc7-2b1d-4771-87ce-013055b8b9cf",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "gtm_systems"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires substantial RevOps/GTM experience and hands-on fluency with Salesforce, Gong, and AI tooling. Software-engineering employment experience is not specified.",
+        "product": "Shapes and owns the GTM operating systems, from forecasting and deal governance to signal intelligence and executive reporting.",
+        "operations": "Builds and proves new revenue systems, then earns adoption by demonstrating value; owns cross-functional GTM projects through completion.",
+        "building": "Personally designs and ships production systems, automations, and AI agents rather than merely directing a team or maintaining existing processes.",
+        "ai": "Claude, agents, and LLM-driven workflows are core to the stack; the role specifically architects and ships productionized GTM agents.",
+        "reason": "A builder-first operations mandate: the person defines and owns a largely blank-canvas GTM infrastructure, personally builds working systems, and uses AI in production workflows. It includes proof and adoption, not just coordination or prototyping.",
+        "evidence": [
+          " You’ll design it, build it, own it, and prove it works before anyone else has to adopt it.",
+          "\n GTM AI agents you architect and ship — research, sequencing, forecasting, and daily pipeline briefings — productionized, not prototyped.",
+          "\n Hands-on builder. You’ve personally built forecasts, routing logic, deal-desk rules, dashboards, or GTM automations — not just directed a team that did."
+        ]
+      }
+    }
+  ],
+  "budget": {
+    "reserved_usd": 0.9990367,
+    "uncached_usage_estimate_usd": 0.1391865
+  }
+}

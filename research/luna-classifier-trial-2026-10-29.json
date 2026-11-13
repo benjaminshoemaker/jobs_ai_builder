@@ -1,0 +1,568 @@
+{
+  "asOf": "2026-10-29T21:54:23.948Z",
+  "model": "gpt-6-luna",
+  "authorizedMaximumUSD": 1,
+  "requests": [
+    {
+      "status": "failed",
+      "n": 3
+    },
+    {
+      "status": "succeeded",
+      "n": 17
+    }
+  ],
+  "budget": {
+    "requests": 20,
+    "reserved_usd": 0.1271647,
+    "uncached_usage_estimate_usd": 0.0169739
+  },
+  "limitations": [
+    "Engineering and AI-assisted-building boundary corrections were informed by this trial; this is diagnostic calibration, not an independent accuracy benchmark.",
+    "Version 1 predictions remain audit history and may still be the latest prediction for candidates not reassessed.",
+    "No candidate reviews or public listings were created."
+  ],
+  "assessments": [
+    {
+      "id": "df224516-caa0-4924-8ccd-7e94e6d2d905",
+      "candidate_id": "301f13a4151207bdb2e1190409ae8cad",
+      "source_hash": "e7f3d9b31b073d2e0f0265eaedcbd5b286e7245015e3fdec41c2d5e9b518e077",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:51:43.673Z",
+      "title": "Senior Full Stack Engineer",
+      "source_id": "greenhouse:edo",
+      "canonical_url": "https://job-boards.greenhouse.io/edo/jobs/5143687007",
+      "location": "Los Angeles; New York; San Francisco",
+      "result": {
+        "ai": "The company describes its platform as using vertical AI, but the role description does not specify direct AI or AI-assisted building responsibilities.",
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "reason": "A strong software-engineering builder role with direct ownership of shipped client-facing product features. Classify as engineering-focused rather than product-focused: product collaboration and impact are clear, but the posting does not establish substantial ownership of product direction or outcomes. Requires prior software-engineering experience.",
+        "product": "Builds client-facing data exploration, visualization, and reporting features in collaboration with product, analytics, and data science teams. Product impact is central, but the posting emphasizes engineering implementation rather than product decision ownership.",
+        "building": "Personally develops full-stack features, scales application services and reporting processes, and owns high-impact projects through rapid product iteration.",
+        "evidence": [
+          "Collaborate with our product teams to implement data exploration and visualization features in our client application.",
+          "Scale our application, associated APIs, and backend processes related to our automated reporting tools.",
+          "5+ years of experience in product-focused full-stack software engineering, with a track record of delivering end-to-end features at scale."
+        ],
+        "operations": "Not an operations-focused role.",
+        "engineering": "swe_required",
+        "qualifications": "Requires a BS/MS in a technical field and 5+ years of product-focused full-stack software engineering, with end-to-end features delivered at scale and strong software engineering fundamentals. React, TypeScript, Ruby on Rails, MySQL/Snowflake, and AWS are the listed stack."
+      }
+    },
+    {
+      "id": "acb4c201-cd3e-40de-aba3-08f7ac4492ed",
+      "candidate_id": "65c30d5f2a8fabb4e8631904aabc177e",
+      "source_hash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:51:48.130Z",
+      "title": "Director, Data Engineering",
+      "source_id": "lever:getsquire",
+      "canonical_url": "https://jobs.lever.co/getsquire/2c9762e7-b7a1-4d76-b0a5-468a8b6a3c5e",
+      "location": "United States",
+      "result": {
+        "ai": "AI and LLM enablement is part of the mandate: establish strategy and build capabilities on trusted data foundations; agent-building experience is a plus.",
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering",
+          "data_engineering",
+          "ai_enablement"
+        ],
+        "reason": "Positive engineering-focused builder. The role owns the data platform and organizational outcomes while explicitly requiring hands-on pipeline development and shipping ambiguous, high-risk work. It is not product-focused, and it requires substantial prior engineering experience.",
+        "product": "Not primarily a product role; translates company strategy into data-platform investments in partnership with leadership.",
+        "building": "A player-coach role with substantial personal execution: designs, builds, and debugs data pipelines, ships high-risk or ambiguous work, and builds selected enablement capabilities while setting technical direction and leading the organization.",
+        "evidence": [
+          "We're hiring a Director, Data Engineering to build and lead our Data organization through a player-coach model, spending approximately half your time hands-on in the code and the other half developing engineers, setting technical direction, and owning the organization’s strategy.",
+          "Design, build, and debug the highest-impact pipelines, connecting our business systems, including CRM, billing, and internal platforms to our Snowflake warehouse, in both directions",
+          "Establish technical direction and standards for pipeline design, data modeling, and data quality across the org; personally build and ship the highest-risk or most ambiguous work"
+        ],
+        "operations": "Builds and leads the internal data function and foundation supporting company-wide reporting, automation, and AI use cases.",
+        "engineering": "swe_required",
+        "qualifications": "Requires 8+ years in data or software engineering, including 4+ years managing engineers, plus advanced SQL and Python, hands-on warehouse, modeling, and orchestration tools, and experience leading a multidisciplinary data organization of 5+ people. This is a demanding director-level role with hiring, budget, and organizational responsibilities."
+      }
+    },
+    {
+      "id": "8a0baa1f-1d65-456a-b4a4-427c8375df5c",
+      "candidate_id": "0f0d1992be9f4c6a1c3bd7784b714b16",
+      "source_hash": "ca6a5a6f25d884e48f437d282032edcc408037c71aa3eded952910d6bc47b5e9",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:51:53.565Z",
+      "title": "Senior Product Builder - Talent Pool",
+      "source_id": "greenhouse:wrike",
+      "canonical_url": "https://job-boards.greenhouse.io/wrike/jobs/4710251005",
+      "location": "Estonia - Remote",
+      "result": {
+        "ai": "Daily AI coding-tool use is expected, including building automations and skills and critically evaluating AI output.",
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "reason": "Strong fit as a software-engineering-focused builder: the role explicitly expects senior engineers to independently take features from rough ideas through production, own technical and product tradeoffs, and use AI tools in daily development. It requires substantial prior software-engineering experience. This is a talent-pool posting rather than an immediately available role.",
+        "product": "Makes technical and product tradeoffs while turning ambiguous product ideas into features; product judgment supports, but does not appear to replace, the engineering focus.",
+        "building": "Personally plans, builds, tests, and ships production features end-to-end, including backend, frontend, infrastructure, rollout, and workflow automation.",
+        "evidence": [
+          "senior engineers who take a feature from a rough idea to a production system on their own, and who use AI as a genuine multiplier rather than a buzzword.",
+          "You take a high-level idea, figure out what actually needs to be built by talking to the right people, and ship it end-to-end: backend logic, frontend touches where needed, automated and manual testing, infra, and the dozen adjacent things a real feature needs.",
+          "Make technical and product tradeoff calls yourself, manage the risk, and push things over the finish line"
+        ],
+        "operations": "No distinct operations-building focus described.",
+        "engineering": "swe_required",
+        "qualifications": "Requires strong full-stack engineering experience, especially Java 21, Spring, REST APIs, SQL, TypeScript, and React. Seeks a track record of end-to-end feature or system ownership in a substantial existing codebase, advanced daily use of AI coding tools, and comfort making decisions under ambiguity. The posting is for a talent pool; a suitable role may open later."
+      }
+    },
+    {
+      "id": "1e8fe44e-70d9-4a13-ab97-70d32bc700ad",
+      "candidate_id": "3bff49b4950266d9cd483f0c54aaa398",
+      "source_hash": "4e00f1d02526d0dc431b44652af6671ce20ad58b328ee65c0c9f64b971c34a19",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:51:59.100Z",
+      "title": "Head of Accounting & Advisory Partnerships",
+      "source_id": "ashby:rillet",
+      "canonical_url": "https://jobs.ashbyhq.com/rillet/edbff973-0404-45ef-a435-164ef7955abd",
+      "location": "San Francisco",
+      "result": {
+        "ai": "Works at an AI-native ERP company, but no direct AI building responsibility is described.",
+        "fit": "exclude",
+        "focus": [
+          "partnerships",
+          "sales"
+        ],
+        "reason": "This is a partnerships and revenue leadership role. Its hands-on work is closing partners, creating pitches, building go-to-market infrastructure, and scaling a team—not owning and personally delivering working software or workflows. The Rillet operations-builder reference applies to a different posting, not this role.",
+        "product": "No product ownership described; the role leads accounting-firm and CFO partnerships to drive channel revenue and market reach.",
+        "building": "The posting uses builder language for hands-on commercial execution and partnership infrastructure, not personally creating and delivering software, tools, agents, or workflows.",
+        "evidence": [
+          "You’ll own our strategy across the Big 4, top accounting firms, mid-market boutiques, and the long-tail of high value Fractional CFOs — building relationships that translate into pipeline, revenue, and long-term market advantage.",
+          "You will orchestrate the partnerships engine, while still stepping in to close a partner, create the pitch, or solve what is not working.",
+          "Effectively enable partner cross-sell, up-level Rillet’s sales process to work productively with partners, create repeatable go-to-market motions, and build & manage an engaging events calendar."
+        ],
+        "operations": "Owns partnership strategy, pipeline, operating cadence, repeatable go-to-market programs, events, and team leadership.",
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires 8+ years, ideally analytical/accounting or finance background, and leadership scaling revenue-accountable strategic partnerships or channel teams. Advisory-firm experience strongly preferred; substantial travel and NYC/SF presence required."
+      }
+    },
+    {
+      "id": "7d49dd49-36e8-4084-b7c7-e21c803e7ae6",
+      "candidate_id": "16911f21c0d0e34c03a7c136265d2c2e",
+      "source_hash": "c1ae344c2ce35a18d58d1173a37e808ab999c72b5d30a123c8efec16ecc7ab36",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:11.062Z",
+      "title": "Product Builder, Vault",
+      "source_id": "ashby:alt",
+      "canonical_url": "https://jobs.ashbyhq.com/alt/52317979-235e-4b3f-b7a7-27d5e68d3bcf",
+      "location": "Remote",
+      "result": {
+        "ai": "Applies agents to exception handling, document and vision models to shipping and intake, and MCP tools to operational data; expects shipped AI-enabled tools rather than general AI familiarity.",
+        "fit": "engineering_builder",
+        "focus": [
+          "operations",
+          "software_engineering"
+        ],
+        "reason": "Strong builder fit with an operations and software-engineering focus. The role combines end-to-end ownership of Vault outcomes with explicit personal responsibility for building and operating the production tools that deliver them. The substantial engineering and experience requirements characterize the role, rather than undermining fit.",
+        "product": "Not a conventional product-management role: owns the Vault lifecycle and its time-to-liquidity metric, makes trade-offs, and builds software to improve marketplace activation and operations.",
+        "building": "Directly writes and ships durable production software, replaces internal tooling, instruments station-level data, and owns whether the tools and workflows improve measured outcomes.",
+        "evidence": [
+          "You own the Vault from arrival to exit: ingest SLAs, intake and routing, exception handling and QC, outtake, international shipping, customs, insurance, carrier integrations, and the tooling that runs all of it.",
+          "you pull the station data yourself, you write the tool that removes it, you ship it, you watch what P90 does, you keep it or you kill it.",
+          "The Vault tooling, built not requested. Queue management, prioritization, labeling, SLA tracking, the exception taxonomy and the software that enforces it."
+        ],
+        "operations": "Strong operations focus: owns warehouse intake through shipping, SLAs, unit costs, throughput, quality, and bottleneck removal, informed by direct observation on the floor.",
+        "engineering": "swe_required",
+        "qualifications": "Requires roughly 5+ years of production software building, full-stack capability, and ownership of operational systems with real SLAs and unit costs. Strong SQL/Python and hands-on instrumentation are expected, alongside demonstrated AI builds. These are demanding requirements, but the role is explicitly designed for an engineer who personally owns operational outcomes."
+      }
+    },
+    {
+      "id": "2e4578ba-59c9-4369-8905-6d6fcd4b41f6",
+      "candidate_id": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "source_hash": "5a1b24cb0ec4157532cc1cd679c0318b58021ce15b1bcc2f83a43e8523eb0609",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:15.896Z",
+      "title": "Systems Administrator ",
+      "source_id": "greenhouse:opensesame",
+      "canonical_url": "https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645",
+      "location": "Remote",
+      "result": {
+        "ai": "AI-powered workflows are part of the remit; the role improves their reliability and identifies AI-driven or automation-based process improvements.",
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "it_systems",
+          "automation"
+        ],
+        "reason": "Positive operations-focused builder. The role owns internal systems and process outcomes and explicitly leads technical evaluation and implementation of workflow automations. It is systems administration, not a software-engineering career role.",
+        "product": "Not a product-ownership role; the focus is improving internal employee systems and business operations.",
+        "building": "Personally evaluates and implements automations and system improvements, with ownership of internal tools and projects.",
+        "evidence": [
+          "The role will also help build, administer, and improve the internal systems, integrations, permissions, and automation that enable secure, reliable AI-powered workflows across the business.",
+          "Identify at least two manual workflows for automation, and lead their technical evaluation and implementation."
+        ],
+        "operations": "Owns internal IT platforms and operational processes, including provisioning, security, support, and workflow reliability.",
+        "engineering": "technical_fluency",
+        "qualifications": "Hands-on internal IT systems administration: manage support tickets, SaaS tools, access controls, security, integrations, and internal workflows. The posting emphasizes demonstrated ability and impact rather than a specified software-engineering background."
+      }
+    },
+    {
+      "id": "74e9fea5-1e0b-4163-9407-1b0ea6a7f4de",
+      "candidate_id": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "source_hash": "833dfcc2fc80e9b440f7c7c97e337683e19de0b84dad0634c61a711b5f954810",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:19.773Z",
+      "title": "IT Intern, AI and Operations",
+      "source_id": "lever:azul",
+      "canonical_url": "https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db",
+      "location": "Sunnyvale, CA",
+      "result": {
+        "ai": "AI-assisted workflow automation is central: Claude skills, agents, prompt logic, tool selection, and MCP connectors.",
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "ai_workflow_automation"
+        ],
+        "reason": "Positive operations-focused builder. The intern directly creates and tests AI skills, agents, and integrations for IT and Security work, with responsibility for iteration against real-world scenarios. Product ownership is not central; the focus is internal operations.",
+        "product": "Not product-focused; work supports internal IT and Security workflows rather than owning a user-facing product.",
+        "building": "Personally helps scope, build, test, and iterate on Claude skills, AI agents, and MCP integrations for real-world internal tasks.",
+        "evidence": [
+          "Design, build, and test Claude skills (SKILL.md) for IT and Security workflows, including writing skill descriptions, step-by-step instructions, and prompt logic that integrates with Azul's connected MCP servers.",
+          "Assist in scoping, building, and iterating on AI agents that automate repetitive IT and Security tasks, including tool selection, prompt engineering, and testing against real-world scenarios."
+        ],
+        "operations": "Builds and improves internal IT and Security workflows, while also assisting with security operations, helpdesk tasks, and documentation.",
+        "engineering": "technical_fluency",
+        "qualifications": "Requires current undergraduate enrollment in a relevant major and minimum 3.4 GPA. Internship is 8–12 weeks, 40 hours weekly; emphasizes organization, prioritization, and communication."
+      }
+    },
+    {
+      "id": "3a075eba-4ed0-449e-b108-c366374951c4",
+      "candidate_id": "34649d259d7b358260f2a57703969a00",
+      "source_hash": "0ece4ae51cbda12579df95862d2c6c31da1c2951440ac6b5124afbd4554a38a3",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:25.025Z",
+      "title": "Product Engineer, Consumer",
+      "source_id": "ashby:clera",
+      "canonical_url": "https://jobs.ashbyhq.com/clera/b6f95627-eecd-4931-89ec-f92d05b49ac5",
+      "location": "Palo Alto",
+      "result": {
+        "ai": "Uses AI coding tools such as Claude Code or Cursor while maintaining code quality and understanding system architecture.",
+        "fit": "engineering_blend",
+        "focus": [
+          "product",
+          "software_engineering",
+          "design"
+        ],
+        "reason": "Strong fit: product judgment and end-to-end ownership are central, alongside substantial hands-on full-stack engineering and consumer design. This is an engineering-heavy blend, with prior software-engineering experience explicitly required.",
+        "product": "Owns product positioning, scope, user value, and iteration, using engagement data and user feedback to shape consumer products.",
+        "building": "Personally designs and builds full-stack products, then launches, monitors, debugs, and improves them; expects polished MVPs or substantial iterations in 3–7 days.",
+        "evidence": [
+          "owning products from identifying user opportunities through design, development, launch, and iteration.",
+          "Build frontend and backend systems with TypeScript, React, Next.js, and Node.js.",
+          "Ship polished MVPs or substantial iterations in 3 to 7 days, then debug issues and improve the product using user feedback."
+        ],
+        "operations": "",
+        "engineering": "swe_required",
+        "qualifications": "Requires 3+ years shipping consumer products end-to-end and production experience with TypeScript, React, Next.js, Node.js, SQL, APIs, data modeling, deployment, and production support. Also expects consumer UX, analytics, and experimentation experience."
+      }
+    },
+    {
+      "id": "d2ba8448-5b8e-4275-b617-74be23143a64",
+      "candidate_id": "66bb040076c035758f78cddd1f83edcb",
+      "source_hash": "a045a25aecb514cce2d3266227f5a77690f68d18eb988e5958cfc94da80ccf96",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:29.377Z",
+      "title": "Managing Director, Go-to-Market Value Creation",
+      "source_id": "greenhouse:llrpartnersjobs",
+      "canonical_url": "https://job-boards.greenhouse.io/llrpartnersjobs/jobs/4402255009",
+      "location": "Remote - US",
+      "result": {
+        "ai": "Evaluates and helps implement AI use cases across sales, revenue operations, marketing, customer success, forecasting, enablement, and customer engagement.",
+        "fit": "exclude",
+        "focus": [
+          "gtm_strategy",
+          "sales_operations"
+        ],
+        "reason": "This is a senior GTM value-creation and advisory role. Although it includes hands-on execution and developing playbooks and tools, it does not show that the individual personally builds and delivers working software or workflows, so builder ownership is not established.",
+        "product": "Not a product-building role; it supports portfolio companies’ commercial performance and GTM capabilities.",
+        "building": "Hands-on operating and execution ownership is described, but the posting does not establish personal creation and delivery of working software, tools, agents, or workflows.",
+        "evidence": [
+          "The Managing Director will personally lead high-impact portfolio engagements while managing and developing a team of GTM professionals.",
+          "The individual will rapidly diagnose the commercial issues and opportunities most material to enterprise value, translate those insights into practical action plans, and stay engaged through execution and measurable results.",
+          "Identify and help implement practical AI applications across sales, revenue operations, marketing, customer success, forecasting, enablement, and customer engagement."
+        ],
+        "operations": "Leads GTM improvement engagements, builds repeatable playbooks and tools, and helps implement practical AI applications across commercial functions.",
+        "engineering": "unclear",
+        "qualifications": "Requires a repeat CRO or equivalent senior commercial executive, with extensive SaaS/technology-enabled business experience; PE-backed experience and GTM diligence are preferred. Also calls for team leadership and practical AI understanding."
+      }
+    },
+    {
+      "id": "66c24f22-b43a-4864-8bbb-1c99a174facc",
+      "candidate_id": "cb9e7429b8bab4faf293a02b0a242333",
+      "source_hash": "d629b45a8c570d832834ac08d6279787cf32deec44be342dd18742eedb3039d0",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:33.833Z",
+      "title": "IT Configuration and Change Business Analyst",
+      "source_id": "lever:cwsc",
+      "canonical_url": "https://jobs.lever.co/cwsc/c96eb938-b819-4f53-a2c4-1d118ba403f5",
+      "location": "Bethesda, MD",
+      "result": {
+        "ai": "Mentions identifying opportunities and implementing plans to incorporate AI tools and efficiencies, without specifying direct AI building or ownership of working solutions.",
+        "fit": "exclude",
+        "focus": [
+          "it_operations",
+          "change_management"
+        ],
+        "reason": "This is an IT governance and coordination role. Its AI reference is an opportunity to incorporate tools and efficiencies, not evidence that the analyst personally builds and owns working software or workflows.",
+        "product": "Not a product-building role; responsibilities center on IT configuration records and change-control governance.",
+        "building": "Supports approved process improvements, but the description does not assign personal ownership for creating and delivering working software, tools, agents, or workflows.",
+        "evidence": [
+          "The position plays a critical control function within IT Operations and works closely with infrastructure, application, security, risk, and audit teams.",
+          "Coordinate the lifecycle of Normal, Standard, and Emergency Changes",
+          "Identify opportunities and implement plans to incorporate AI tools and efficiencies."
+        ],
+        "operations": "Coordinates change reviews, calendars, documentation, risk checks, and CMDB accuracy within IT operations.",
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 2+ years supporting configuration/change management, ITIL knowledge and required ITIL Foundation v4 certification; experience with ServiceNow or similar ITSM tools, M365 and PowerBI. Public Trust Moderate clearance specified."
+      }
+    },
+    {
+      "id": "f69a5582-e500-4048-b806-9833c95868a1",
+      "candidate_id": "7751cbf5a57af335d1b73a9881af9aca",
+      "source_hash": "bfbf8ff1cd1b03cac64ae497a51aa841822fca4ace3c9f150c812ef9858b6359",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:37.441Z",
+      "title": "Senior Product Engineer",
+      "source_id": "ashby:onoshealth",
+      "canonical_url": "https://jobs.ashbyhq.com/onoshealth/58d36bae-5153-471a-9c8c-2094339be001",
+      "location": "San Francisco",
+      "result": {
+        "ai": "Builds AI/ML pipelines for clinical-note analysis and automated recommendations; AI coding tools are part of the development workflow.",
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "reason": "A hands-on software engineering lead who owns production implementation and delivery, while also working directly with customers and shaping product requirements and strategy. Engineering is central, and the posting explicitly requires substantial prior software-building experience.",
+        "product": "Product-minded work includes customer discovery, requirements gathering, roadmap influence, and end-to-end ownership of platform features.",
+        "building": "Personally develops and delivers platform features and customer-specific integrations, from scoping and architecture through implementation and testing. Also leads technical architecture and production engineering.",
+        "evidence": [
+          "Own end-to-end development of new features and functionality for the Onos platform, including requirements gathering, scoping, architecting, implementation and testing to deliver timely and high quality outcomes",
+          "Work directly with health plan customers to understand their claims workflows, data formats, and pain points, then translate that into working software",
+          "A hands-on technical leader who can architect robust and extensible systems, establish best practices with AI coding tools, and ship high quality production code"
+        ],
+        "operations": "",
+        "engineering": "swe_required",
+        "qualifications": "Requires 5+ years building software applications, strong system design, and hands-on technical leadership shipping production code. Healthcare data-format experience is a bonus, not required."
+      }
+    },
+    {
+      "id": "fcc76540-5aa2-4ae9-8ef3-d235dc89bb96",
+      "candidate_id": "c1d22788c9cb215c409c26b711293492",
+      "source_hash": "7b5c235f004e3f144746d5a0706abd0f833382945e2fa243d65f38156c46fa8b",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:41.299Z",
+      "title": "Product Manager - Robotic Kitchen",
+      "source_id": "greenhouse:cssmerge",
+      "canonical_url": "https://job-boards.greenhouse.io/cssmerge/jobs/8904230002",
+      "location": "Los Angeles, CA",
+      "result": {
+        "ai": "AI is explicitly used for rapid prototyping and MVPs; the role also translates forecasts and recommendations into actionable operator tools.",
+        "fit": "product_builder",
+        "focus": [
+          "product",
+          "operations"
+        ],
+        "reason": "Strong product-builder fit: owns operator-facing product decisions and outcomes, and personally builds AI-assisted prototypes and MVPs for user testing. The work focuses on software-enabled kitchen operations, with delivery ownership through field pilots and rollout.",
+        "product": "Owns KitchenOS product definition, priorities, and roadmap based on operator research and data; leads discovery, delivery, QA, launches, and iteration against user and business outcomes.",
+        "building": "Directly prototypes and builds MVPs with AI tools to test concepts with real users, then takes products through field pilots and launch.",
+        "evidence": [
+          "Own the operator-facing product roadmap: define and prioritize KitchenOS tools for brand managers and kitchen teams, using field research, operational data, and business impact.",
+          "AI-powered prototyping is second nature—and non-negotiable. You rapidly build prototypes and MVPs with AI tools to test concepts with real users, challenge assumptions, and turn what you learn into better products."
+        ],
+        "operations": "Builds tools and workflows for kitchen operators and brand teams, spanning recipes, menus, production, inventory, and quality execution across sites.",
+        "engineering": "unclear",
+        "qualifications": "Seeks 5–8 years’ experience, including 4+ years owning B2B or operational products end to end, plus frontline-tools experience. Food, restaurant tech, logistics, or manufacturing experience is a plus. Requires AI-powered prototyping; no specific software-engineering career background is stated."
+      }
+    },
+    {
+      "id": "306eb454-1172-4bcf-8974-47963d12c793",
+      "candidate_id": "79328ae10bfb41ddbdc95c75aca49fa2",
+      "source_hash": "3dcc49c50db14a6b4528770abada75e773693f369c501e4191a7bc9ee5eaf59e",
+      "classifier_version": "builder-feedback-v1",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:52:45.446Z",
+      "title": "Lead Engineer, Engineering (EDge Product Suite)",
+      "source_id": "lever:noodle",
+      "canonical_url": "https://jobs.lever.co/noodle/2f3a7bbe-00c7-415a-9a29-749c080d92ed",
+      "location": "New York, New York",
+      "result": {
+        "ai": "Applies AI engineering tools to product development and team efficiency, and builds agentic systems integrated with existing products.",
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering"
+        ],
+        "reason": "Positive engineering-focused builder: the role has direct responsibility for product and engineering deficiencies, production architecture, and personally designing and implementing agentic systems. It explicitly requires substantial prior software-engineering experience; product prioritization is collaborative rather than the primary focus.",
+        "product": "Collaborates with the product manager on prioritization and enterprise feature design, but product ownership is not central to the role.",
+        "building": "Engineering lead who designs and implements agentic systems, scales the EDge product suite, and improves production quality and infrastructure. Leads and mentors engineers.",
+        "evidence": [
+          "Independently audit and propose initiatives to address deficiencies in Noodle’s technology products and processes.",
+          "Design and implement agentic systems that integrate with existing products."
+        ],
+        "operations": "",
+        "engineering": "swe_required",
+        "qualifications": "Requires 5–8 years of experience in programming languages and frameworks, plus experience designing and implementing agentic systems. Also calls for production engineering expertise across Python/Node/React, AWS, databases, software quality, and team leadership."
+      }
+    },
+    {
+      "id": "0274f693-41c4-488f-a107-68a83e30c714",
+      "candidate_id": "05002ae56fddf736d82183102a9ba0c0",
+      "source_hash": "9419c81cd5d3337ce49b7ab2d295183e3efad4bc191011af7652ff99c3125bc4",
+      "classifier_version": "builder-feedback-v2",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:53:48.669Z",
+      "title": "Product Engineer, Business Operations",
+      "source_id": "ashby:fluidstack",
+      "canonical_url": "https://jobs.ashbyhq.com/fluidstack/0337be3a-3844-4832-9078-b098bdefd736",
+      "location": "San Francisco, CA",
+      "result": {
+        "ai": "AI-assisted building is explicit: daily use of coding tools such as Claude Code and Cursor, alongside creating LLM features and autonomous agents.",
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "software_engineering"
+        ],
+        "reason": "Strong operations-focused builder. The role names concrete business problems, expects the hire to shape solutions with functional experts, and makes direct end-to-end software creation central. It explicitly requires daily AI coding-tool use and ties delivery to real operational adoption. Production software engineering experience is required.",
+        "product": "Shapes internal products around real finance, legal, recruiting, and infrastructure-delivery workflows, with explicit attention to user judgment and interface quality.",
+        "building": "Personally identifies problems, designs solutions, and ships production software end to end; owns whether tools are adopted and work within business deadlines.",
+        "evidence": [
+          "You've earned credibility with experts outside engineering: finance leads, lawyers, recruiters, or auditors, and driven adoption of your software inside their real deadlines, like a working close calendar or an offer that has to go out today.",
+          "You identify problems, design the solution, and ship it without waiting for direction or approval.",
+          "You work daily with AI coding tools like Claude Code and Cursor, and you get agents doing useful work autonomously alongside you."
+        ],
+        "operations": "Builds software for hiring, finance, capital deployment, contracts, and operational workflows, embedding with functional teams and driving adoption.",
+        "engineering": "swe_required",
+        "qualifications": "Requires shipped production code in Go, Python, or TypeScript and experience building LLM features, MCP servers, and agentic frameworks. Also expects credibility with business experts and adoption of software in real workflows; listed finance, legal, and recruiting domain areas are bonuses."
+      }
+    },
+    {
+      "id": "c7e1cfe5-2767-4d7a-8908-e976753a9c5a",
+      "candidate_id": "301f13a4151207bdb2e1190409ae8cad",
+      "source_hash": "e7f3d9b31b073d2e0f0265eaedcbd5b286e7245015e3fdec41c2d5e9b518e077",
+      "classifier_version": "builder-feedback-v2",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:53:53.726Z",
+      "title": "Senior Full Stack Engineer",
+      "source_id": "greenhouse:edo",
+      "canonical_url": "https://job-boards.greenhouse.io/edo/jobs/5143687007",
+      "location": "Los Angeles; New York; San Francisco",
+      "result": {
+        "ai": "The description mentions vertical AI as part of EDO’s platform, but does not say the engineer uses AI tools to implement, test, or iterate on software.",
+        "fit": "unclear",
+        "focus": [
+          "software_engineering"
+        ],
+        "reason": "This is a software-engineering-centered role with substantial direct implementation. However, the posting does not establish AI-assisted building or meaningful ownership of problem definition; the company’s use of AI in its platform is not evidence that the engineer uses AI as a building tool. Fit is therefore unclear for this AI-enabled collection.",
+        "product": "Builds client-facing data exploration, visualization, and reporting features in collaboration with product and analytics teams; the posting does not establish personal responsibility for shaping user problems or product direction.",
+        "building": "Direct full-stack implementation, scaling APIs and backend processes, and ownership of high-impact projects are central. Delivery is suggested by end-to-end feature and continuous-deployment language.",
+        "evidence": [
+          "Collaborate with our product teams to implement data exploration and visualization features in our client application.",
+          "5+ years of experience in product-focused full-stack software engineering, with a track record of delivering end-to-end features at scale.",
+          "Work on a small team and take ownership of high-impact projects."
+        ],
+        "operations": "Not an operations-focused role.",
+        "engineering": "swe_required",
+        "qualifications": "Requires 5+ years of product-focused full-stack engineering, a CS-related degree, and strong software-engineering fundamentals. Uses React/TypeScript, Ruby on Rails, MySQL/Snowflake, and AWS."
+      }
+    },
+    {
+      "id": "7fbc349d-199f-47d9-950b-1329f17fad12",
+      "candidate_id": "65c30d5f2a8fabb4e8631904aabc177e",
+      "source_hash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "classifier_version": "builder-feedback-v2",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:54:00.000Z",
+      "title": "Director, Data Engineering",
+      "source_id": "lever:getsquire",
+      "canonical_url": "https://jobs.lever.co/getsquire/2c9762e7-b7a1-4d76-b0a5-468a8b6a3c5e",
+      "location": "United States",
+      "result": {
+        "ai": "Requires LLM-tooling experience and building with LLMs, but does not establish that the person materially uses AI as a tool to implement, test, or iterate on their own work.",
+        "fit": "unclear",
+        "focus": [
+          "software_engineering",
+          "data_engineering",
+          "operations"
+        ],
+        "reason": "Strong engineering-led data/platform builder with problem prioritization and direct delivery. However, the posting describes building AI capabilities, not clearly AI-assisted building by the role-holder. That required criterion is unclear, so this is not a confirmed positive for the AI-enabled collection.",
+        "product": "Not primarily product ownership. The role shapes data strategy and platform investments in partnership with company leadership.",
+        "building": "Substantial hands-on responsibility: builds and debugs pipelines, personally ships high-risk or ambiguous work, and develops select AI-enablement capabilities.",
+        "evidence": [
+          "Partner with the Chief Product and Technology Officer and cross-functional leaders to translate company strategy into data contracts and platform investments",
+          "Design, build, and debug the highest-impact pipelines, connecting our business systems, including CRM, billing, and internal platforms to our Snowflake warehouse, in both directions",
+          "Direct experience setting AI and LLM enablement strategy and building with LLM tooling"
+        ],
+        "operations": "Builds trusted data infrastructure and enables company automation and AI use cases; owns the data organization, architecture, and prioritization of integration work.",
+        "engineering": "swe_required",
+        "qualifications": "Requires 8+ years in data or software engineering and 4+ years managing engineers, plus advanced SQL/Python and hands-on warehouse, modeling, and orchestration experience. Director-level hiring, budget, and organizational leadership are also expected."
+      }
+    },
+    {
+      "id": "4fc76398-0e1f-47e4-92c7-3fd23e24308b",
+      "candidate_id": "0f0d1992be9f4c6a1c3bd7784b714b16",
+      "source_hash": "ca6a5a6f25d884e48f437d282032edcc408037c71aa3eded952910d6bc47b5e9",
+      "classifier_version": "builder-feedback-v2",
+      "calibration_version": "031e31f57f3cc3a1fe048093a5362134df13b2e712187a416c8366584a44fdc7",
+      "model": "gpt-6-luna",
+      "created_at": "2026-10-29T21:54:05.367Z",
+      "title": "Senior Product Builder - Talent Pool",
+      "source_id": "greenhouse:wrike",
+      "canonical_url": "https://job-boards.greenhouse.io/wrike/jobs/4710251005",
+      "location": "Estonia - Remote",
+      "result": {
+        "ai": "AI tools are explicitly used daily to build, test and iterate, including custom automations; the posting makes AI use mandatory.",
+        "fit": "exclude",
+        "focus": [
+          "software_engineering"
+        ],
+        "reason": "Strong AI-assisted, engineering-focused builder evidence: the person clarifies what to build, delivers end-to-end features, and owns outcomes. However, this collection seeks U.S. jobs, while the posting is located in Estonia and does not establish U.S. eligibility or location. Excluded on geography, not role fit.",
+        "product": "Shapes ambiguous product ideas by speaking with relevant people and making product and technical tradeoffs; this is engineering-led rather than a product-owner role.",
+        "building": "The role centers on personally taking features from idea through full-stack implementation, testing, infrastructure and rollout, with responsibility for production outcomes.",
+        "evidence": [
+          "You take a high-level idea, figure out what actually needs to be built by talking to the right people, and ship it end-to-end: backend logic, frontend touches where needed, automated and manual testing, infra, and the dozen adjacent things a real feature needs.",
+          "Use AI tools (Cursor, Claude/Codex, our internal AI portal and MCP) as a daily part of how you build- including writing your own automations and skills where they save real time",
+          "Make technical and product tradeoff calls yourself, manage the risk, and push things over the finish line"
+        ],
+        "operations": "Not an operations-focused role.",
+        "engineering": "swe_required",
+        "qualifications": "Requires strong full-stack engineering, especially Java/Spring, APIs, SQL, TypeScript and React, plus advanced daily AI-coding-tool use. The posting identifies Estonia as the remote location; it does not establish a U.S.-based opportunity."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1133 @@
+{
+  "runId": "luna-v12-reviewed-regression-2026-10-29",
+  "manifestHash": "b4fe1c8c15c0dca5e36b1bd9c65099c035f3244e4b0824abc6112f3413a83df7",
+  "model": "gpt-6-luna",
+  "policy": "builder-fit-v12",
+  "execution": "Actual live Responses API; fixed known-case regression; no candidate assessment, label or publication updates",
+  "updatedAt": "2026-10-30T06:46:03.495Z",
+  "caseCount": 74,
+  "metrics": {
+    "exactReviewed": {
+      "records": 24,
+      "scored": 24,
+      "sourceUnverified": 0,
+      "humanMaybe": 0,
+      "truePositive": 16,
+      "falsePositive": 2,
+      "falseNegative": 0,
+      "trueNegative": 5,
+      "abstentions": 1,
+      "operationalFailures": 0,
+      "precision": 0.8888888888888888,
+      "recall": 1,
+      "semanticRecall": 1,
+      "decisionCoverage": 0.9583333333333334
+    },
+    "historicalDiagnostics": {
+      "records": 50,
+      "matched": 43,
+      "disagreed": 7,
+      "unclear": 0,
+      "operationalFailures": 0,
+      "notAttempted": 0,
+      "sourcePairing": "Unverified historical label/text pairing; diagnostic agreement only. Not a verified accuracy, precision or recall estimate."
+    },
+    "combinedDiagnostic": {
+      "records": 74,
+      "matched": 64,
+      "disagreed": 9,
+      "unclear": 1,
+      "operationalFailures": 0,
+      "notAttempted": 0,
+      "sourcePairing": "Mixed verified and unverified source pairs; counts only."
+    },
+    "latestNine": {
+      "records": 9,
+      "matched": 9,
+      "disagreed": 0,
+      "unclear": 0,
+      "operationalFailures": 0,
+      "notAttempted": 0
+    }
+  },
+  "missing": [
+    {
+      "id": "brightwheel",
+      "company": "brightwheel",
+      "title": "Staff AI Software Engineer, Product",
+      "url": "https://jobs.ashbyhq.com/brightwheel/1e5afc7d-5a4d-437e-bade-1e4a14ba4c24",
+      "expected": "no",
+      "reason": "Exact posting absent from a complete feed and canonical employer posting returned HTTP 404"
+    },
+    {
+      "id": "vanta",
+      "company": "Vanta",
+      "title": "Senior Product Builder, Organizational Intelligence",
+      "url": "https://jobs.ashbyhq.com/vanta/c986dc01-e886-4bfe-bbe9-068b7af9d2d3",
+      "expected": "yes",
+      "reason": "Exact posting absent from a complete feed and canonical employer posting returned HTTP 404"
+    }
+  ],
+  "uncertain": [
+    {
+      "id": "batch1_c37",
+      "title": "AI Product Manager",
+      "label": "maybe"
+    },
+    {
+      "id": "extenteam",
+      "title": "Founding AI Product Engineer, Multifamily",
+      "label": "stretch"
+    },
+    {
+      "id": "T07",
+      "title": "AI Developer Experience Engineer",
+      "label": "maybe"
+    }
+  ],
+  "budget": {
+    "requests": 94,
+    "reserved_usd": 0.8027542,
+    "uncached_usage_estimate_usd": 0.0367705
+  },
+  "results": [
+    {
+      "key": "historical:batch1_c43",
+      "company": "Rillet",
+      "title": "Product Manager",
+      "url": "https://jobs.ashbyhq.com/rillet/a182464e-76c1-4f0b-af78-76ba8a611281",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns customer discovery, product direction, roadmap, and delivery in partnership with engineers, but does not make personally implementing working software or AI-assisted workflows a substantive responsibility."
+      }
+    },
+    {
+      "key": "historical:cloudzero",
+      "company": "CloudZero",
+      "title": "Senior/Staff PM, Agentic Practice",
+      "url": "https://jobs.ashbyhq.com/CloudZero/9a295df8-1e90-43df-b903-b01eabc3e240",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The PM owns customer discovery, product strategy, and iteration, but personal building is framed as creating interactive prototypes to validate ideas before engineering commits. The posting does not establish responsibility for implementing usable solutions or shipping working features with AI."
+      }
+    },
+    {
+      "key": "historical:cyvl",
+      "company": "Cyvl",
+      "title": "Forward Deployed Engineer",
+      "url": "https://jobs.ashbyhq.com/cyvl/0e848342-babd-4ff7-834e-ca4b7c710f75",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role combines understanding agency workflows and surfacing unmet needs with personally building and deploying custom outputs and integrations using AI coding tools and Cyvl’s API, then owning adoption and outcomes."
+      }
+    },
+    {
+      "key": "historical:docker",
+      "company": "Docker",
+      "title": "Staff Software Engineer, AI Developer Tools",
+      "url": "https://jobs.ashbyhq.com/docker/87bda848-01ed-4641-beaa-829373d0ed56",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns clarifying ambiguous user and business problems, exercising developer-product judgment, and personally designing, building, and operating production AI tools and platform capabilities. It also requires shipping and iterating on useful solutions based on real adoption and operational results."
+      }
+    },
+    {
+      "key": "historical:form",
+      "company": "Form Energy",
+      "title": "Staff Forward Deployed Engineer",
+      "url": "https://jobs.ashbyhq.com/formenergy/b271995b-a17b-4153-abf2-f1ab4c2283f2",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns identifying and prioritizing high-leverage problems with embedded teams, then personally building, shipping, and iterating AI-enabled software and workflows with users. It owns outcomes through production and adoption."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n01",
+      "company": "g2",
+      "title": "Associate GTM Engineer",
+      "url": "https://jobs.ashbyhq.com/g2/187a60bb-94fd-4127-bddd-a8c26ae6dec1",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role personally builds, tests, ships, and iterates AI-powered GTM workflows, then rolls them out and tracks business results. It also includes working with GTM teams to understand requests and applying outcome- and UX-based solution judgment, with senior guidance on scope and priorities."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n02",
+      "company": "figma",
+      "title": "Sales Operations Manager",
+      "url": "https://boards.greenhouse.io/figma/jobs/6235320004?gh_jid=6235320004",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns sales-operations problems and is expected to build and maintain AI-enabled intelligence systems and deploy workflows that improve forecasting and other processes. Its responsibility to analyze performance and surface actionable improvements supplies the problem judgment as well as implementation mandate."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n03",
+      "company": "vanta",
+      "title": "Staff Product Designer, Activation",
+      "url": "https://jobs.ashbyhq.com/vanta/7d9922bb-2d0e-4833-bc4e-df65dc57d232",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns activation strategy, product design, experimentation, and delivery with engineering, but personal building is limited to optional code or AI prototyping to test ideas. It does not establish responsibility for implementing usable solutions or features."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n04",
+      "company": "trm-labs",
+      "title": "Deployment Strategist, National Security",
+      "url": "https://jobs.ashbyhq.com/trm-labs/369c6fb3-6214-478e-870e-f57d3b234481",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role primarily owns customer adoption, training, account health, renewals, and relaying customer feedback. Although it requires building and using AI workflows, it does not establish substantive responsibility for personally implementing working solutions to user or business problems and iterating on their results."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n05",
+      "company": "openart",
+      "title": "B2B Lifecycle Marketing Manager",
+      "url": "https://jobs.ashbyhq.com/openart/069aefb9-3103-4e07-9485-d5f66f5f4d01",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns lifecycle strategy and personally builds, tests, and iterates marketing campaigns, but it does not establish that AI materially enables that implementation; working at an AI company is not enough."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n06",
+      "company": "figma",
+      "title": "Manager, Software Engineering - UX Platform",
+      "url": "https://boards.greenhouse.io/figma/jobs/6237757004?gh_jid=6237757004",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role is primarily engineering-team management, mentorship, and setting strategy and priorities. The team builds product features, but the posting does not make personally implementing AI-assisted solutions an expected responsibility for the manager."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n07",
+      "company": "figma",
+      "title": "PhD Intern, Security Engineer (2027)",
+      "url": "https://boards.greenhouse.io/figma/jobs/6238015004?gh_jid=6238015004",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The intern is expected to develop security solutions and incident-analysis tooling, but AI-assisted building is only an optional qualification, not a substantive part of the role’s mandate."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n08",
+      "company": "trm-labs",
+      "title": "Enablement Manager, Public Sector",
+      "url": "https://jobs.ashbyhq.com/trm-labs/56b079fd-2ca5-4a65-8f3f-e63ae8073d36",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns sales onboarding, training, playbooks, and content systems, with some enablement-tool workflow implementation. It does not establish a substantive mandate to personally build AI-enabled solutions or operational workflows and iterate them based on use; general AI fluency expectations do not supply that responsibility."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n09",
+      "company": "earnin",
+      "title": "Head of Communications",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8329516",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns communications strategy, PR, media relations, campaigns, and team and agency management. It does not require personally building AI-enabled software, tools, or operational workflows."
+      }
+    },
+    {
+      "key": "historical:fresh_20261028_n10",
+      "company": "veho-tech-inc",
+      "title": "Warehouse Associate II, Ground Operations",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/5770ec09-a538-4f2f-958a-5dbfc9eaddcd",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role centers on warehouse sorting, package handling, and driver launch operations. It does not assign responsibility for understanding and shaping a problem and personally building AI-enabled solutions or workflows."
+      }
+    },
+    {
+      "key": "historical:legion",
+      "company": "Legion Health",
+      "title": "Founding Product Manager",
+      "url": "https://jobs.ashbyhq.com/legionhealth/0ffded39-1242-4a35-9bc3-0e5b0ce22276",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns patient problems and product decisions across the care journey, then prototypes and regularly ships production PRs using AI-enabled tools, measuring outcomes and iterating with users and clinical/operations teams."
+      }
+    },
+    {
+      "key": "historical:medecision",
+      "company": "Medecision",
+      "title": "AI Product Builder",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4571394",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns customer discovery and product decisions, then directly builds, tests, ships, and iterates on working features or MVPs using AI-assisted development tools, with feedback from real users."
+      }
+    },
+    {
+      "key": "historical:rivian",
+      "company": "Rivian",
+      "title": "AI Product Engineer, Facilities",
+      "url": "https://careers.rivian.com/careers-home/jobs/34304?lang=en-US",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns Facilities workflow problems end to end: it finds and prioritizes automation opportunities with stakeholders, personally builds and deploys AI-assisted internal tools and automations, and iterates on them using user feedback and measured operational impact."
+      }
+    },
+    {
+      "key": "historical:rwe",
+      "company": "RWE",
+      "title": "Senior Product Manager, AI Transformation",
+      "url": "https://jobs.rwe.com/RWE/job/Austin-Sr-Product-Manager%2C-AI-Transformation-TX-78701/1415821833/",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns AI product strategy, requirements, squad delivery, adoption, and iterative evaluation, but does not establish personal AI-assisted implementation of working solutions; execution is assigned to cross-functional teams."
+      }
+    },
+    {
+      "key": "historical:toast",
+      "company": "Toast",
+      "title": "GTM Engineer",
+      "url": "https://careers.toasttab.com/jobs/gtm-engineer-sales-workflow-automation-revenue-intelligence-remote-united-states",
+      "expected": "no",
+      "group": "historical_diagnostic",
+      "sourceComparison": "recovered_current_text_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns identifying and automating sales-workflow needs, personally building LLM-powered agents and integrations from prototype through production, and improving them based on rep adoption and sales outcomes."
+      }
+    },
+    {
+      "key": "historical:vailent",
+      "company": "Vailent/Vinmar",
+      "title": "Builder (Product Led)",
+      "url": "https://apply.workable.com/vinmar-international/j/386FDF1309/",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "current_rendered_employer_text_transcription_historical_label_unverified",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns product discovery, prioritization, and outcomes while personally using AI agents to build and ship production software weekly. It puts working changes in users’ hands, measures results, and iterates from user feedback."
+      }
+    },
+    {
+      "key": "prior:65c30d5f2a8fabb4e8631904aabc177e",
+      "company": "getsquire",
+      "title": "Director, Data Engineering",
+      "url": "https://jobs.lever.co/getsquire/2c9762e7-b7a1-4d76-b0a5-468a8b6a3c5e",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role combines data-organization leadership with substantial hands-on pipeline and platform engineering, but its AI responsibility is setting enablement strategy and building AI/LLM capabilities—not an established mandate to use AI to build and iterate on solutions to user or business problems."
+      }
+    },
+    {
+      "key": "prior:8fe2124691866e8b9c1bf3a95887a3dd",
+      "company": "azul",
+      "title": "IT Intern, AI and Operations",
+      "url": "https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern is expected to design, build, and test Claude skills and to help scope, build, deploy, and iterate on agents for real IT and Security workflows, including selecting tools and testing against real scenarios. That combines hands-on AI implementation with some solution judgment, despite senior direction."
+      }
+    },
+    {
+      "key": "prior:alaffia",
+      "company": "Alaffia",
+      "title": "AI Transformation Lead",
+      "url": "https://careers.kula.ai/alaffia/33849-ai-transformation-lead",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns identifying and prioritizing high-impact operational problems, then personally building, deploying, measuring, and iterating AI tools and workflows from prototype to production. That establishes both solution judgment and substantive AI-enabled implementation responsibility."
+      }
+    },
+    {
+      "key": "prior:alt",
+      "company": "Alt",
+      "title": "Product Builder, Growth",
+      "url": "https://jobs.ashbyhq.com/alt/62bdcbde-df4a-4d2c-bd01-0560d86b387c",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns growth problems and outcomes, personally builds and ships production code and AI-enabled tools, and iterates through experiments and user results. It includes deciding what to build across seller submission, search, and marketplace liquidity—not merely coordinating engineering."
+      }
+    },
+    {
+      "key": "prior:amperity",
+      "company": "Amperity",
+      "title": "Principal Product Builder",
+      "url": "https://amperity.com/careers/8212260?gh_jid=8212260",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role combines customer discovery and product judgment—deciding what is worth building, why, and for whom—with required hands-on experience building agentic systems, rapid AI-assisted prototyping, and testing ideas in the codebase. It owns outcomes through customer adoption and value; engineering ownership of production architecture does not negate that builder mandate."
+      }
+    },
+    {
+      "key": "prior:apollo",
+      "company": "Apollo",
+      "title": "Principal Product Builder, Data",
+      "url": "https://job-boards.greenhouse.io/apolloio/jobs/6229000004",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role combines customer and data-product judgment with an explicit AI-native builder mandate: it owns strategy through delivery and requires rapid prototyping with tools such as Claude Code and Cursor, plus evidence of things built or shipped. The prototypes are tied to validating product decisions and driving the product’s learning loop, rather than being only specifications or coordination."
+      }
+    },
+    {
+      "key": "prior:axiad",
+      "company": "Axiad",
+      "title": "Principal Product Builder",
+      "url": "https://job-boards.greenhouse.io/axiad/jobs/6220016004",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly combines product judgment—customer discovery, prioritization, UX, and strategy—with a sustained personal practice of using AI to build prototypes and working software, carry features through to pull requests, and test them against customer needs. It owns outcomes while sharing strategy and final hardening with the team."
+      }
+    },
+    {
+      "key": "prior:batch1_c01",
+      "company": "ITS Logistics",
+      "title": "AI Builder",
+      "url": "https://job-boards.greenhouse.io/itslogisticsllc/jobs/5370389008",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns AI solutions from identifying and prioritizing business problems through personal AI-assisted implementation, production deployment, adoption, and measured ROI. The role explicitly requires building enterprise-grade LLM systems and shipping usable results."
+      }
+    },
+    {
+      "key": "prior:batch1_c03",
+      "company": "OpenArt",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "url": "https://jobs.ashbyhq.com/openart/8dd52ba6-a5b6-40b1-95fe-50de352fa254",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern will turn emerging AI capabilities and daily user feedback into feature ideas, personally prototype them, test usability, and work with designers and engineers to ship the resulting features. The engineering-skills requirement supports that hands-on product-building mandate."
+      }
+    },
+    {
+      "key": "prior:batch1_c07",
+      "company": "RK Logistics Group",
+      "title": "AI Product Builder",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4506881",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns translating ambiguous business problems into solutions and personally designing, deploying, and iterating AI-enabled workflows and internal tools based on usage and business impact."
+      }
+    },
+    {
+      "key": "prior:batch1_c08",
+      "company": "AwardSpring",
+      "title": "Product Builder Intern",
+      "url": "https://www.awardspring.com/careers/product-builder-intern",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern ships scoped work into a production product with real users using agentic tools, and is expected to exercise solution judgment by pushing back on specs and iterating. That establishes personal AI-assisted implementation and meaningful product contribution."
+      }
+    },
+    {
+      "key": "prior:batch1_c20",
+      "company": "TRM Labs",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "url": "https://jobs.ashbyhq.com/trm-labs/e4992057-b59e-4fb3-8f18-a919497d0ba5",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "changed",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns understanding national-security users’ mission problems and personally translating them into working software, integrations, pipelines, and prototypes. AI coding agents are explicitly part of how the engineer ships, and customer use informs iteration and the broader product."
+      }
+    },
+    {
+      "key": "prior:batch1_c27",
+      "company": "OpenSesame",
+      "title": "AI Product Builder Intern",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8313424?gh_jid=8313424",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern is expected to build and deploy working software with AI coding tools, test it with users, and use findings in incubation decisions. Shipping usable features and iterating on customer evidence is the central mandate."
+      }
+    },
+    {
+      "key": "prior:batch1_c29",
+      "company": "Sekai",
+      "title": "AI Product Engineer",
+      "url": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role personally builds and ships user-facing features end-to-end, uses AI in development and iteration, and contributes to product direction and user-experience decisions."
+      }
+    },
+    {
+      "key": "prior:batch1_c46",
+      "company": "Faros",
+      "title": "Product Manager, AI Native Initiatives",
+      "url": "https://jobs.ashbyhq.com/faros-ai/11413be9-77d0-40e7-957a-687c347146d6",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The PM owns an ambiguous AI product problem, shapes what to build, and is explicitly expected to prototype, write, ship, and use modern AI tools to multiply their work. They put solutions in front of customers and iterate based on results."
+      }
+    },
+    {
+      "key": "prior:batch1_c50",
+      "company": "Babylist",
+      "title": "Staff Product Designer (AI Builder)",
+      "url": "https://job-boards.greenhouse.io/babylist/jobs/5831620004",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "changed",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns a major customer experience, including user research, design direction, and outcome decisions, while personally using AI-native workflows to prototype and implement, refine, and polish production frontend code. It also requires testing work with users and iterating based on evidence."
+      }
+    },
+    {
+      "key": "prior:batch1_c52",
+      "company": "Faros",
+      "title": "AI-Native Builder",
+      "url": "https://jobs.ashbyhq.com/faros-ai/f0978123-07f9-457e-9236-dc136ac1c0e7",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "changed",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly combines identifying and judging engineering-organization problems with using AI to rapidly build and test products, agents, workflows, and platform capabilities, then measuring outcomes and improving them."
+      }
+    },
+    {
+      "key": "prior:c1d22788c9cb215c409c26b711293492",
+      "company": "cssmerge",
+      "title": "Product Manager - Robotic Kitchen",
+      "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8904230002",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns product discovery, roadmap, requirements, QA, rollout, and coordination with engineering. AI-built prototypes and MVPs are specified for testing concepts with users, but personal implementation of usable, shipped KitchenOS solutions is not established."
+      }
+    },
+    {
+      "key": "prior:e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "company": "opensesame",
+      "title": "Systems Administrator ",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns internal systems and workflow improvements, including identifying manual processes and leading their technical evaluation and implementation. It also explicitly calls for building and improving automation and AI-enabled workflows, with responsibility for operational results."
+      }
+    },
+    {
+      "key": "prior:earnin",
+      "company": "EarnIn",
+      "title": "Senior Product Builder",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8261686",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role combines product judgment—setting strategy and prioritizing opportunities through user research—with hands-on AI-native execution. It explicitly owns building evaluation pipelines, agentic workflows, reusable libraries, and production product initiatives, then measuring and improving their results."
+      }
+    },
+    {
+      "key": "prior:exiger",
+      "company": "Exiger",
+      "title": "AI Product Builder",
+      "url": "https://www.exiger.com/careers/6202657004?gh_jid=6202657004",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly combines understanding customer and business problems and deciding what to build with personally creating AI-powered workflows, prototypes, and scoped production features. It also owns putting work in front of users, using feedback and data to iterate, and shipping useful results, with AI integrated into development."
+      }
+    },
+    {
+      "key": "prior:figma_ai_insights",
+      "company": "Figma",
+      "title": "Product Builder, AI Insights",
+      "url": "https://job-boards.greenhouse.io/figma/jobs/6227402004?gh_jid=6227402004",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "changed",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns identifying customer-understanding problems and choosing opportunities, then uses AI tools to design, build, ship, evaluate, and improve internal products through launch and continued use."
+      }
+    },
+    {
+      "key": "prior:g2",
+      "company": "G2",
+      "title": "Senior AI Product Builder",
+      "url": "https://jobs.ashbyhq.com/g2/92dc2275-115f-4676-a607-fdda964e8121",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns customer problem discovery and product decisions, then personally builds and ships working products using AI coding tools and iterates from user feedback."
+      }
+    },
+    {
+      "key": "prior:gitlab",
+      "company": "GitLab",
+      "title": "AI Transformation Owner, Product & Design",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8716179002",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns identifying and prioritizing AI opportunities in its function’s workflows, then personally builds no-code/low-code agents and iterates on them based on usage and performance. It is accountable for adoption and measurable outcomes, while partnering with engineering to scale solutions."
+      }
+    },
+    {
+      "key": "prior:indeed",
+      "company": "Indeed Flex",
+      "title": "Product Builder",
+      "url": "https://job-boards.eu.greenhouse.io/indeedflex/jobs/4994921101",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns worker messaging problems from discovery and prioritization through design, personal AI-assisted implementation, production shipping, and post-launch monitoring. It also connects those changes to Flexer experience and supply outcomes."
+      }
+    },
+    {
+      "key": "prior:mangoapps",
+      "company": "MangoApps",
+      "title": "Product Manager, AI Builder",
+      "url": "https://hq.workforce.mangoapps.com/apps/job_board/public/jobs/472",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role combines customer discovery and product prioritization with hands-on AI-assisted creation of functional prototypes, product improvements, internal tools, and smaller production changes. It remains accountable for customer outcomes and iterates after launch based on feedback and usage."
+      }
+    },
+    {
+      "key": "prior:oath",
+      "company": "Oath",
+      "title": "Product Manager",
+      "url": "https://jobs.ashbyhq.com/oath/1ff90c8e-192a-4921-ba9d-89c74344c28e",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly makes hands-on AI building core: the PM personally prototypes and ships AI features, agents, and workflows, then tests and iterates on them. They also shape bets and define success measures, connecting problem judgment to delivery and outcomes."
+      }
+    },
+    {
+      "key": "prior:overjoy",
+      "company": "Overjoy",
+      "title": "Product Manager",
+      "url": "https://jobs.overjoy.ai/40195",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "identical",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The PM owns customer discovery and product judgment through launch and measured outcomes, and is explicitly expected to prototype and ship small fixes personally using Claude Code."
+      }
+    },
+    {
+      "key": "prior:rillet",
+      "company": "Rillet",
+      "title": "Business Operations, AI Builder",
+      "url": "https://jobs.ashbyhq.com/rillet/f8d4f207-1e14-49fc-a0aa-a997a0c9bc2c",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "changed",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns AI transformation with functional leaders, framing business problems and personally executing end-to-end solutions that teams use daily, then driving adoption and changed workflows. This is a substantive AI-enabled building and operational-results mandate."
+      }
+    },
+    {
+      "key": "prior:sharkninja",
+      "company": "SharkNinja",
+      "title": "Director, Finance AI & Automation",
+      "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4709349006",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns Finance automation opportunities from identification through production deployment, adoption, and measured business outcomes, and is expected to personally build and ship production AI agents and automations. It combines financial-process judgment with hands-on AI-assisted implementation."
+      }
+    },
+    {
+      "key": "prior:shipbob",
+      "company": "ShipBob",
+      "title": "Senior AI Product Builder, Inventory Experience",
+      "url": "https://job-boards.greenhouse.io/shipbobinc/jobs/4725934005",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns the full product loop for inventory and catalog: personally conducts discovery, shapes solutions and success criteria, builds AI-augmented prototypes and production PRs, then measures outcomes and makes rollout-or-kill decisions."
+      }
+    },
+    {
+      "key": "prior:veho",
+      "company": "Veho",
+      "title": "Director of Product, Consumer & Support (AI Builder)",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/58699c81-9b9a-473d-9455-c1a93ef0c6d3",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly combines end-to-end consumer product judgment with personally using AI tools such as Claude Code to build and ship production consumer systems and support workflows, then measuring and iterating on outcomes."
+      }
+    },
+    {
+      "key": "prior:within",
+      "company": "Within",
+      "title": "Senior AI Product Manager",
+      "url": "https://jobs.ashbyhq.com/within.ai/6886702a-4e88-4cc1-9f71-04b690aefb9a",
+      "expected": "yes",
+      "group": "historical_diagnostic",
+      "sourceComparison": "not_available",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns product areas end to end: personally defines problems through customer discovery, builds AI-tooling prototypes to validate solutions, and drives features to production while measuring outcomes. The role explicitly calls for shippable working solutions, not just specs or concept demos."
+      }
+    },
+    {
+      "key": "v10:T01",
+      "company": "Artera",
+      "title": "Associate AI Builder",
+      "url": "https://jobs.lever.co/artera-2/eae88c70-fbf5-4525-890c-d3f9377418b0",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns customer outcomes from discovery through production, identifies customer pain and roadmaps solutions, and personally architects and codes them using agentic systems. It also requires monitoring real-world performance and shipping improvements based on production results."
+      }
+    },
+    {
+      "key": "v10:T02",
+      "company": "BioRender",
+      "title": "Product Builder",
+      "url": "https://jobs.ashbyhq.com/biorender-inc/6e7f4b8d-f068-4d11-964d-da74b1c53b8c",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns discovery and deciding what to build, then personally prototypes with AI-assisted coding tools and ships features for real users. That establishes the full problem-to-working-solution mandate."
+      }
+    },
+    {
+      "key": "v10:T03",
+      "company": "Fluidstack",
+      "title": "Product Engineer, Business Operations",
+      "url": "https://jobs.ashbyhq.com/fluidstack/0337be3a-3844-4832-9078-b098bdefd736",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns identifying business-operations problems, designing solutions, and personally shipping production software with AI tools. It embeds with finance, legal, recruiting, and other teams to build and iterate on usable workflows adopted in real business deadlines."
+      }
+    },
+    {
+      "key": "v10:T04",
+      "company": "Alt",
+      "title": "Lead Design Builder: Marketplace",
+      "url": "https://jobs.ashbyhq.com/alt/f049b9f7-26eb-4f92-8ca6-6ab9ae31c0f1",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns framing marketplace problems and choosing solutions based on user evidence and metrics, while personally building working code prototypes with AI, testing them with users, and iterating toward shipped outcomes."
+      }
+    },
+    {
+      "key": "v10:T05",
+      "company": "Level AI",
+      "title": "Revenue Operations Architect — GTM Systems Builder",
+      "url": "https://jobs.ashbyhq.com/level-ai/ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns defining and solving core GTM operating problems, then personally designing, building, and validating Salesforce systems, automations, dashboards, and productionized AI agents. Its AI-assisted implementation is a substantive responsibility, not just team management or process maintenance."
+      }
+    },
+    {
+      "key": "v10:T06",
+      "company": "Kettle",
+      "title": "Senior Creative Technologist",
+      "url": "https://job-boards.greenhouse.io/kettle/jobs/8885210002",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role is accountable for personally turning emerging AI capabilities and team needs into working, reusable tools, workflows, and accelerators, then carrying them beyond experiments into structured delivery. It combines solution judgment with hands-on AI-enabled building and validation."
+      }
+    },
+    {
+      "key": "v10:T08",
+      "company": "Ramp",
+      "title": "Design Engineer",
+      "url": "https://jobs.ashbyhq.com/ramp/b68aca53-16c0-4ced-ab1d-e8beb2940b4f",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns product surfaces from concept through production, personally builds React/TypeScript experiences with AI tools, validates prototypes with customers, and iterates toward shipped interfaces."
+      }
+    },
+    {
+      "key": "v10:T09",
+      "company": "MongoDB",
+      "title": "Staff Product Manager, AI Builder Experience",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=8129885",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns partner-platform strategy, roadmap, and cross-functional delivery, but does not establish personal implementation of usable software or AI-assisted workflows. “Hands-on builder” is tied to turning opportunities into a vision and roadmap; regular use of AI tools is not a build mandate."
+      }
+    },
+    {
+      "key": "v10:T10",
+      "company": "OnePay",
+      "title": "Platform Engineer, Builder Experience",
+      "url": "https://jobs.ashbyhq.com/oneapp/fbc0f334-5613-41fc-b5d7-87f2e5a20bee",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "unclear",
+        "reason": "The role clearly builds platform services, developer tools, and agentic frameworks using an agentic-development environment. It does not establish whether the engineer is responsible for identifying and shaping developer problems and choosing solutions, or primarily implementing technical enhancements."
+      }
+    },
+    {
+      "key": "v10:T11",
+      "company": "HomeSmart Services",
+      "title": "Forward Deployed Engineer — Applied AI",
+      "url": "https://homesmartservices.bamboohr.com/careers/1116",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role explicitly owns understanding business workflows and defining success, then personally builds, deploys, monitors, and improves production AI-enabled applications and automations using AI development tools. This establishes both problem judgment and hands-on delivery."
+      }
+    },
+    {
+      "key": "v10:T12",
+      "company": "Onos Health",
+      "title": "Senior Product Engineer",
+      "url": "https://jobs.ashbyhq.com/onoshealth/58d36bae-5153-471a-9c8c-2094339be001",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role combines understanding health-plan workflows and pain points with owning end-to-end feature delivery, from requirements and scoping through implementation and testing. It also explicitly expects the engineer to establish practices with AI coding tools and ship production software."
+      }
+    },
+    {
+      "key": "v11:L04",
+      "company": "Alt",
+      "title": "Product Builder, Vault",
+      "url": "https://jobs.ashbyhq.com/alt/52317979-235e-4b3f-b7a7-27d5e68d3bcf",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns real Vault operational problems and measurable outcomes, from diagnosing floor bottlenecks to choosing and shipping software that improves time-to-liquidity and SLAs. It explicitly requires personally building and deploying tools and AI-enabled workflows, then measuring and iterating on their results."
+      }
+    },
+    {
+      "key": "v11:L07",
+      "company": "Fluidstack",
+      "title": "Product Engineer, Compute Operations",
+      "url": "https://jobs.ashbyhq.com/fluidstack/a59fc19b-ce9d-45ba-b303-58ec58ac6199",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns real compute-operations problems alongside production engineers and facility operators, shapes solutions to their workflows, and personally ships production systems using AI coding tools and agentic frameworks."
+      }
+    },
+    {
+      "key": "v11:L09",
+      "company": "lever:noodle",
+      "title": "Lead Engineer, Engineering (EDge Product Suite)",
+      "url": "https://jobs.lever.co/noodle/2f3a7bbe-00c7-415a-9a29-749c080d92ed",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role centers on engineering leadership, team management, technical strategy, and improving development practices. It includes implementing agentic systems and AI-tooling initiatives, but does not establish a personal mandate to use AI to build and iterate on solutions to user or business problems."
+      }
+    },
+    {
+      "key": "v11:L10",
+      "company": "ashby:clera",
+      "title": "Product Engineer, Consumer",
+      "url": "https://jobs.ashbyhq.com/clera/b6f95627-eecd-4931-89ec-f92d05b49ac5",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns consumer products from identifying user opportunities and defining scope through personal full-stack implementation, launch, and iteration; AI coding tools support this end-to-end delivery."
+      }
+    },
+    {
+      "key": "v11:L12",
+      "company": "lever:medi.ci",
+      "title": "Financial Controller",
+      "url": "https://jobs.lever.co/medi.ci/9cf64e54-9f22-48a5-96dc-cb2a1ba907bf",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The Controller is explicitly accountable for identifying finance processes suited to AI or automation and implementing and maintaining scalable tools, workflows, and process improvements, while owning financial operations and outcomes."
+      }
+    },
+    {
+      "key": "v11:L13",
+      "company": "Artera",
+      "title": "AI Builder",
+      "url": "https://jobs.lever.co/artera-2/66019d50-3ae7-490e-9d64-6d4ad7e60ad4",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns customer pain discovery and solution roadmaps, then personally architects and codes AI-enabled systems for named customers, operates them in production, and improves them from real-world results."
+      }
+    },
+    {
+      "key": "v11:L16",
+      "company": "OnePay",
+      "title": "Design Engineer",
+      "url": "https://jobs.ashbyhq.com/oneapp/b7ae2b9b-0f31-468d-9ac8-395536da8beb",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role personally builds production-ready components using AI coding tools and helps define a better design-to-code and handoff practice, combining implementation with judgment about how the team should solve its workflow problem."
+      }
+    },
+    {
+      "key": "v11:L19",
+      "company": "ashby:openart",
+      "title": "Creative Technologist (AI Design Engineer)",
+      "url": "https://jobs.ashbyhq.com/openart/48ee704c-6c89-4287-8f90-c88e1416f326",
+      "expected": "yes",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The role owns finding and researching real creative-workflow problems, deciding what solutions and agent behavior should do, and using AI tools, APIs, and lightweight code to build polished, usable prototypes and validate them with users. Engineering takes validated prototypes through launch, but personal end-to-end implementation and iteration are substantive responsibilities."
+      }
+    },
+    {
+      "key": "v11:L20",
+      "company": "greenhouse:mrbeastyoutube",
+      "title": "Senior Product Manager ",
+      "url": "https://job-boards.greenhouse.io/mrbeastyoutube/jobs/6123291004",
+      "expected": "no",
+      "group": "exact_reviewed",
+      "sourceComparison": "exact_user_reviewed_version",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns feature strategy, requirements, launch, and iteration with engineering, but personal building is limited to AI-assisted PM work such as prototyping flows and drafting specs. It explicitly says production code is not required; engineers implement the shippable features."
+      }
+    }
+  ],
+  "regressionOnly": true,
+  "liveClassifierPromoted": false
+}

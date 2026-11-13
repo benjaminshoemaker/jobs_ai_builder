@@ -1,0 +1,103 @@
+{
+  "runId": "luna-reviewed-regression-2026-10-29-v6-validation-recovery",
+  "manifestHash": "ff02f0c3ea389e39e155e260d68604e6331147c1880b020409e0d11d7c68e1b5",
+  "classifierHash": "914d2784668f0a3efb4c20d1c20019de3859110c9190b7e8f3619b3f354a38fc",
+  "model": "gpt-6-luna",
+  "scope": "Operational failures from v5 only; no retry of disagreements",
+  "createdAt": "2026-10-29T22:26:54.617Z",
+  "calibrationVersion": "fb9f53cb897cea03763a0b13abca60969064299c8560415b4ed5ceac8db182bd",
+  "policy": "Employer-family leave-out; role fit separate from geography. Target labels/reasons absent from prompt. Previously reviewed cases, not an unseen benchmark.",
+  "sourceCaveat": "Positive expectations are historical labels; descriptions marked changed/not_available are drift diagnostics, not verified exact historical-source regression.",
+  "missing": [
+    {
+      "id": "medecision",
+      "company": "Medecision",
+      "title": "AI Product Builder",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "rivian",
+      "company": "Rivian",
+      "title": "AI Product Engineer, Facilities",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vailent",
+      "company": "Vailent/Vinmar",
+      "title": "Builder (Product Led)",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vanta",
+      "company": "Vanta",
+      "title": "Senior Product Builder, Organizational Intelligence",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    }
+  ],
+  "cases": [
+    {
+      "key": "batch1_c01",
+      "company": "ITS Logistics",
+      "title": "AI Builder",
+      "url": "https://job-boards.greenhouse.io/itslogisticsllc/jobs/5370389008",
+      "expected": "yes",
+      "location": {
+        "name": "Reno, NV"
+      },
+      "checkedAt": "2026-10-29T07:40:57.151Z",
+      "sourceHash": "cd7d2f0e9b336af6757b37f58b045e869ce46a082ef95f14035ecc6b8d91b2c2",
+      "sourceId": "3567acce-1855-46f9-86b0-436017c5bbef",
+      "comparison": "not_available",
+      "contextHash": "54b3b383f5938281994ade1fee451a8d5fd7811d5ce47556a87ca7069d46db3f",
+      "inputHash": "fc06482b65d64dcc36e85f8e5be29d38c0e000a1cde05ed25ab7e19a6cf0fbb7"
+    }
+  ],
+  "results": [
+    {
+      "key": "batch1_c01",
+      "company": "ITS Logistics",
+      "title": "AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "operations",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires production experience building with LLMs, agents, and retrieval; enterprise-grade coding using AI; strong CS foundation or equivalent; and sound judgment on architecture, testing, and AI security. Logistics experience is preferred, not required.",
+        "product": "Owns enterprise AI strategy, prioritizes business problems, defines solutions, and makes defensible value-based tradeoffs in close partnership with operational teams.",
+        "operations": "Works directly with floor teams, operations, finance, and support to identify real workflows; owns ROI baselines, adoption, deployment, and measured business outcomes.",
+        "building": "Personally takes AI solutions from business problem through implementation and production deployment. Expected to ship immediately and own the result end to end.",
+        "ai": "Builds production systems with LLMs, agents, and retrieval, using AI to write enterprise-grade code and validating generated work through testing. Applies enterprise architecture and security from the outset.",
+        "reason": "This is a clear operations-focused builder mandate: the role owns problem selection and ROI, personally builds AI solutions, and is accountable for deployment, adoption, and measured production results. Strong software-engineering qualifications are required, but they do not change the role fit.",
+        "evidence": [
+          " This is a rare seat. You own AI solutions end to end at a $6B logistics company, from the business problem through to something running in production that people depend on.",
+          "\n• Own the ROI case. Define the metric before you start, baseline it, prove the return after, and kill things that do not earn their place.",
+          "\n• You write enterprise-grade code using AI and have a process for doing it well."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "yes": {
+      "tested": 1,
+      "positive": 1,
+      "negative": 0,
+      "uncertain": 0,
+      "failed": 0
+    },
+    "no": {
+      "tested": 0,
+      "positive": 0,
+      "negative": 0,
+      "uncertain": 0,
+      "failed": 0
+    }
+  },
+  "budget": {
+    "reserved_usd": 0.8394613,
+    "uncached_usage_estimate_usd": 0.1169146
+  }
+}

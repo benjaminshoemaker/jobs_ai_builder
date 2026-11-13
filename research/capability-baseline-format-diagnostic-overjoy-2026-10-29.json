@@ -1,0 +1,23 @@
+{
+  "caseKey": "overjoy",
+  "maxOutputTokens": 600,
+  "status": "completed",
+  "incompleteDetails": null,
+  "returnedModel": "gpt-6.1-sol",
+  "outputText": "{\"decision\":\"yes\",\"reason\":\"The role explicitly owns the loop from customer discovery to AI-assisted implementation, launch, and measured outcomes. Personally prototyping and shipping real fixes with Claude Code is a recurring responsibility—not merely a demo or work delegated to engineering—and the PM remains accountable for metrics, customer follow-up, and improvements.\"}",
+  "outputTypes": [
+    "message"
+  ],
+  "usage": {
+    "input_tokens": 1611,
+    "input_tokens_details": {
+      "cache_write_tokens": 1608,
+      "cached_tokens": 0
+    },
+    "output_tokens": 76,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1687
+  }
+}

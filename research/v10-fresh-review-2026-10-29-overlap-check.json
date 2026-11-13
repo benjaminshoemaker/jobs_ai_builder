@@ -1,0 +1,68 @@
+{
+  "checkedAt": "2026-10-30T00:44:24.914Z",
+  "method": "Read-only comparison by posting UUID/job ID/canonical URL against all saved historical and candidate human reviews",
+  "reviewedUrlCount": 58,
+  "selected": [
+    {
+      "reviewId": "T01",
+      "identity": "eae88c70-fbf5-4525-890c-d3f9377418b0",
+      "overlap": false
+    },
+    {
+      "reviewId": "T02",
+      "identity": "6e7f4b8d-f068-4d11-964d-da74b1c53b8c",
+      "overlap": false
+    },
+    {
+      "reviewId": "T03",
+      "identity": "0337be3a-3844-4832-9078-b098bdefd736",
+      "overlap": false
+    },
+    {
+      "reviewId": "T04",
+      "identity": "f049b9f7-26eb-4f92-8ca6-6ab9ae31c0f1",
+      "overlap": false
+    },
+    {
+      "reviewId": "T05",
+      "identity": "ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "overlap": false
+    },
+    {
+      "reviewId": "T06",
+      "identity": "8885210002",
+      "overlap": false
+    },
+    {
+      "reviewId": "T07",
+      "identity": "4463390009",
+      "overlap": false
+    },
+    {
+      "reviewId": "T08",
+      "identity": "b68aca53-16c0-4ced-ab1d-e8beb2940b4f",
+      "overlap": false
+    },
+    {
+      "reviewId": "T09",
+      "identity": "8129885",
+      "overlap": false
+    },
+    {
+      "reviewId": "T10",
+      "identity": "fbc0f334-5613-41fc-b5d7-87f2e5a20bee",
+      "overlap": false
+    },
+    {
+      "reviewId": "T11",
+      "identity": "https://homesmartservices.bamboohr.com/careers/1116",
+      "overlap": false
+    },
+    {
+      "reviewId": "T12",
+      "identity": "58d36bae-5153-471a-9c8c-2094339be001",
+      "overlap": false
+    }
+  ],
+  "overlaps": 0
+}

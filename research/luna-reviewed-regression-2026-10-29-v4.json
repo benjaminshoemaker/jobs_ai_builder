@@ -1,0 +1,1449 @@
+{
+  "runId": "luna-reviewed-regression-2026-10-29-v4",
+  "manifestHash": "585b17806b88ae261e88cab64326e0c7e6c14ce6206de0b1397443fb5a057c6a",
+  "classifierHash": "537499d72689751c1b8cf8c37d55f09b690a2c759ac9493f018941c774fe7062",
+  "model": "gpt-6-luna",
+  "createdAt": "2026-10-29T22:21:13.138Z",
+  "calibrationVersion": "fb9f53cb897cea03763a0b13abca60969064299c8560415b4ed5ceac8db182bd",
+  "policy": "Employer-family leave-out; role fit separate from geography. Target labels/reasons absent from prompt. Previously reviewed cases, not an unseen benchmark.",
+  "sourceCaveat": "Positive expectations are historical labels; descriptions marked changed/not_available are drift diagnostics, not verified exact historical-source regression.",
+  "missing": [
+    {
+      "id": "medecision",
+      "company": "Medecision",
+      "title": "AI Product Builder",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "rivian",
+      "company": "Rivian",
+      "title": "AI Product Engineer, Facilities",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vailent",
+      "company": "Vailent/Vinmar",
+      "title": "Builder (Product Led)",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vanta",
+      "company": "Vanta",
+      "title": "Senior Product Builder, Organizational Intelligence",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    }
+  ],
+  "cases": [
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "company": "getsquire",
+      "title": "Director, Data Engineering",
+      "url": "https://jobs.lever.co/getsquire/2c9762e7-b7a1-4d76-b0a5-468a8b6a3c5e",
+      "expected": "no",
+      "location": {
+        "team": "Engineering",
+        "location": "United States",
+        "commitment": "Full-Time Exempt",
+        "department": "PDE",
+        "allLocations": [
+          "United States",
+          "Ontario"
+        ]
+      },
+      "checkedAt": "2026-10-29T08:59:52.119Z",
+      "sourceHash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "sourceId": "65c30d5f2a8fabb4e8631904aabc177e",
+      "comparison": "exact_user_reviewed_version",
+      "contextHash": "7888fc8ba868c4ecdfa708f7b45d9d60970a71efae1ed241dbc544f1164acbad",
+      "inputHash": "c3d854e5f3745a61320b4955c82f0d3a986443418d3775d0f7cdbe90fd356e57"
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "company": "azul",
+      "title": "IT Intern, AI and Operations",
+      "url": "https://jobs.lever.co/azul/8f41ceaf-8835-4fc7-ba57-9384487d59db",
+      "expected": "no",
+      "location": {
+        "team": "Information Technology",
+        "location": "Sunnyvale, CA",
+        "commitment": "Intern",
+        "allLocations": [
+          "Sunnyvale, CA",
+          "United States - Remote"
+        ]
+      },
+      "checkedAt": "2026-10-29T09:01:17.634Z",
+      "sourceHash": "833dfcc2fc80e9b440f7c7c97e337683e19de0b84dad0634c61a711b5f954810",
+      "sourceId": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "comparison": "exact_user_reviewed_version",
+      "contextHash": "cbbe0200ca516af6b9db5c0dd7721db0b75e2280002509b44305a4bb31782db2",
+      "inputHash": "1e52f19c90876d21efc2b4a0e888cb71136317ce5eb2e4546a08860ffc6fe239"
+    },
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "company": "cssmerge",
+      "title": "Product Manager - Robotic Kitchen",
+      "url": "https://job-boards.greenhouse.io/cssmerge/jobs/8904230002",
+      "expected": "no",
+      "location": {
+        "name": "Los Angeles, CA"
+      },
+      "checkedAt": "2026-10-29T08:59:23.324Z",
+      "sourceHash": "7b5c235f004e3f144746d5a0706abd0f833382945e2fa243d65f38156c46fa8b",
+      "sourceId": "c1d22788c9cb215c409c26b711293492",
+      "comparison": "exact_user_reviewed_version",
+      "contextHash": "5f91dfd48d06373e373649644a1eb14c2f0525a0dff7f9ec79ba996b3de6217b",
+      "inputHash": "7e815f2afd505fee72377a9750ad5f5b01d72f8b074ee998bdeb5a96e6eac8b1"
+    },
+    {
+      "key": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "company": "opensesame",
+      "title": "Systems Administrator ",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8188645?gh_jid=8188645",
+      "expected": "no",
+      "location": {
+        "name": "Remote"
+      },
+      "checkedAt": "2026-10-29T08:59:15.762Z",
+      "sourceHash": "5a1b24cb0ec4157532cc1cd679c0318b58021ce15b1bcc2f83a43e8523eb0609",
+      "sourceId": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "comparison": "exact_user_reviewed_version",
+      "contextHash": "a175aefb65f32dde62972f59186edb730fff7e2e03647da63884512a83f8bda3",
+      "inputHash": "10a1e3fe49eeb6a8ca75cfed38beabee3ea4b4fd4971fe0be814dcffeb2959d4"
+    },
+    {
+      "key": "alaffia",
+      "company": "Alaffia",
+      "title": "AI Transformation Lead",
+      "url": "https://careers.kula.ai/alaffia/33849-ai-transformation-lead",
+      "expected": "yes",
+      "location": [
+        {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "New York",
+            "addressCountry": "US",
+            "addressLocality": "New York"
+          }
+        }
+      ],
+      "checkedAt": "2026-10-29T07:40:56.196Z",
+      "sourceHash": "5516a6a8f95202ecd5b091059f88d4bfd67cb4d103e2096b8beaa2a21caf9448",
+      "sourceId": "b44e0369-9100-4523-b290-cf9417ba8f2d",
+      "comparison": "not_available",
+      "contextHash": "2392d0e4adb559bb2d1f1f5afb6c1146e96d5cbe33883b2d72ba38e266881953",
+      "inputHash": "dad1411519f3431ebd7296cab46bba78914edd707f79744e8ee58d2a06d02123"
+    },
+    {
+      "key": "alt",
+      "company": "Alt",
+      "title": "Product Builder, Growth",
+      "url": "https://jobs.ashbyhq.com/alt/62bdcbde-df4a-4d2c-bd01-0560d86b387c",
+      "expected": "yes",
+      "location": "Remote",
+      "checkedAt": "2026-10-29T07:40:56.465Z",
+      "sourceHash": "bb9c3d4b628f7513e47be95bc6c425aaa341f6699dde781f18fb5e973e850687",
+      "sourceId": "f3685812-441e-40b1-839e-a968f070f642",
+      "comparison": "not_available",
+      "contextHash": "c9b4240c1d25d5a7053f7586fc2be625b52375e6f6e36f64dcf98ecd67ef9bc2",
+      "inputHash": "f611539a8845e58d328ef223a3fa64820b266e04839d3875d456310b1f507b8a"
+    },
+    {
+      "key": "amperity",
+      "company": "Amperity",
+      "title": "Principal Product Builder",
+      "url": "https://amperity.com/careers/8212260?gh_jid=8212260",
+      "expected": "yes",
+      "location": {
+        "name": "Seattle, WA"
+      },
+      "checkedAt": "2026-10-29T07:40:56.713Z",
+      "sourceHash": "b8313db95b66154a9605d091c5888cbb9b184e8a9cf63870847e93192b44b55e",
+      "sourceId": "2f79718e-4cd8-49ee-86e2-7c606fdff15b",
+      "comparison": "not_available",
+      "contextHash": "0aa4a193867f099e4ce0c6357652d5cf9c65b4da90861cff14e427f1d671e42b",
+      "inputHash": "40c76105a0305f0353c6199e6bee5035c1feb57a3355e3708ee4532718f4ae1c"
+    },
+    {
+      "key": "apollo",
+      "company": "Apollo",
+      "title": "Principal Product Builder, Data",
+      "url": "https://job-boards.greenhouse.io/apolloio/jobs/6229000004",
+      "expected": "yes",
+      "location": {
+        "name": "Remote, United States"
+      },
+      "checkedAt": "2026-10-29T07:40:56.889Z",
+      "sourceHash": "af09f2e49cdc64deeb205980146747d03cc8dc53bfe1c8bc3746e4d04cd7f608",
+      "sourceId": "e2654263-7a44-4b9f-9d88-ec994f1d44b5",
+      "comparison": "not_available",
+      "contextHash": "cd59dae630f0a64965104094ef1c89b5fcfcb777f1785ad91dab91e0af8bd581",
+      "inputHash": "050ed7f8fd916d40433220f186443da5c53cd25ff58d434e5ed238f3346920c9"
+    },
+    {
+      "key": "axiad",
+      "company": "Axiad",
+      "title": "Principal Product Builder",
+      "url": "https://job-boards.greenhouse.io/axiad/jobs/6220016004",
+      "expected": "yes",
+      "location": {
+        "name": "San Jose, California, United States"
+      },
+      "checkedAt": "2026-10-29T07:40:57.019Z",
+      "sourceHash": "7bd2c65180c2ca7da458b16d2d30cc932a2654b64075e365969a86978bbb609e",
+      "sourceId": "1aa474a3-8ea8-4454-b49d-cb5d5a2b92f6",
+      "comparison": "not_available",
+      "contextHash": "e04c2d6f7712d283f5ac9343a8b69dd83e850333b37f00e7f362dd69149fc705",
+      "inputHash": "eaf38912185bbc21ef499df0518cd1b6af2dd3a16cf482943a1358581560a341"
+    },
+    {
+      "key": "batch1_c01",
+      "company": "ITS Logistics",
+      "title": "AI Builder",
+      "url": "https://job-boards.greenhouse.io/itslogisticsllc/jobs/5370389008",
+      "expected": "yes",
+      "location": {
+        "name": "Reno, NV"
+      },
+      "checkedAt": "2026-10-29T07:40:57.151Z",
+      "sourceHash": "cd7d2f0e9b336af6757b37f58b045e869ce46a082ef95f14035ecc6b8d91b2c2",
+      "sourceId": "3567acce-1855-46f9-86b0-436017c5bbef",
+      "comparison": "not_available",
+      "contextHash": "54b3b383f5938281994ade1fee451a8d5fd7811d5ce47556a87ca7069d46db3f",
+      "inputHash": "fc06482b65d64dcc36e85f8e5be29d38c0e000a1cde05ed25ab7e19a6cf0fbb7"
+    },
+    {
+      "key": "batch1_c03",
+      "company": "OpenArt",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "url": "https://jobs.ashbyhq.com/openart/8dd52ba6-a5b6-40b1-95fe-50de352fa254",
+      "expected": "yes",
+      "location": "San Carlos, California, USA",
+      "checkedAt": "2026-10-29T07:40:57.330Z",
+      "sourceHash": "8ce39a6a0be2dfe6ef6686d5aaa9a8f9149b43a7d32e1629a41b8398c125d252",
+      "sourceId": "e1282932-51d1-4337-a113-81091de65ced",
+      "comparison": "not_available",
+      "contextHash": "30cd317cb0ea88386fb0c97936f036408f22a26d22ab1e34c7ba8e391e992a23",
+      "inputHash": "9e49ea243f26e0fd563838986d9f5a5624bb340fcb3de09d53dc448a165d117a"
+    },
+    {
+      "key": "batch1_c07",
+      "company": "RK Logistics Group",
+      "title": "AI Product Builder",
+      "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4506881",
+      "expected": "yes",
+      "location": "",
+      "checkedAt": "2026-10-29T07:47:17.764Z",
+      "sourceHash": "526497d0f2e2a5afac735b8822e03c0a15d88a777b7d77995a4d9759ee011add",
+      "sourceId": "c060e770-7285-406d-9258-c75db2b88474",
+      "comparison": "not_available",
+      "contextHash": "b2e258718eace45baad99616773fa08185660c991b89d34d97d220494da007d6",
+      "inputHash": "3ec7f86defcd0277b1fe2ebe9fab38ce435aeea58a490793770cd1dd63aeebc4"
+    },
+    {
+      "key": "batch1_c08",
+      "company": "AwardSpring",
+      "title": "Product Builder Intern",
+      "url": "https://www.awardspring.com/careers/product-builder-intern",
+      "expected": "yes",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "60607",
+          "addressRegion": "IL",
+          "streetAddress": "West Loop / Fulton Market",
+          "addressCountry": "US",
+          "addressLocality": "Chicago"
+        }
+      },
+      "checkedAt": "2026-10-29T07:40:58.467Z",
+      "sourceHash": "da61f1995c99efb88632345f71f8609fac553b1b6b0471a51ab7e1ee034c803f",
+      "sourceId": "0b69e80e-1df7-41b0-a45a-72c6865be44a",
+      "comparison": "not_available",
+      "contextHash": "7a6f848fd4f1b1b64f3262eb68ed27d8b9164bff29da7b80ad673ce1b4e08cdc",
+      "inputHash": "88c2e43cd69cb586483eae384b3bc2fdfc9ab37c8d95f2b98468c209381d3131"
+    },
+    {
+      "key": "batch1_c20",
+      "company": "TRM Labs",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "url": "https://jobs.ashbyhq.com/trm-labs/e4992057-b59e-4fb3-8f18-a919497d0ba5",
+      "expected": "yes",
+      "location": "Washington D.C.",
+      "checkedAt": "2026-10-29T07:40:58.628Z",
+      "sourceHash": "32d29b009df1d4b59012bd0f75600c2ea7fdb21404d81ed07c6c5596550b94a0",
+      "sourceId": "224dcf6b-703f-48ee-b9a5-4f5ccfbb50fc",
+      "comparison": "changed",
+      "contextHash": "fb5a3ccc8c44a91cd1ef5d406506757fe3a0aab9314469008dc3d9c3d035adfc",
+      "inputHash": "7bbf8dda655588f4ce5b12e68b9e9dfb14ef497516b44a68d3a2357eac114184"
+    },
+    {
+      "key": "batch1_c27",
+      "company": "OpenSesame",
+      "title": "AI Product Builder Intern",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8313424?gh_jid=8313424",
+      "expected": "yes",
+      "location": {
+        "name": "Remote"
+      },
+      "checkedAt": "2026-10-29T07:40:58.772Z",
+      "sourceHash": "59f1960cd96d652f4fa94383c8321f670c904b97c1f7d2c778fd4826bba20255",
+      "sourceId": "692c4979-4b6f-4b01-8596-d037aca28fb3",
+      "comparison": "not_available",
+      "contextHash": "a175aefb65f32dde62972f59186edb730fff7e2e03647da63884512a83f8bda3",
+      "inputHash": "3ef07c29ce0aa90b796e95bd81c564d9ff6ba72cff0e8921185b055b1fc1c941"
+    },
+    {
+      "key": "batch1_c29",
+      "company": "Sekai",
+      "title": "AI Product Engineer",
+      "url": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f",
+      "expected": "yes",
+      "location": "San Francisco",
+      "checkedAt": "2026-10-29T07:40:58.938Z",
+      "sourceHash": "c69ea4b0755fb3397fdcd4b453df506ff020ae6fdd826b5e35faf8b0a694c2a8",
+      "sourceId": "2ef4a1e4-060f-44a8-94c2-d705a36d8564",
+      "comparison": "not_available",
+      "contextHash": "af85ab517051f35167e6928ec8a50214d5f73fa6dfc2904e756141e74188edab",
+      "inputHash": "db2c0360cc79f24411614dd9b8c152c332c0fe73d177fc13a87b18e2bc958050"
+    },
+    {
+      "key": "batch1_c46",
+      "company": "Faros",
+      "title": "Product Manager, AI Native Initiatives",
+      "url": "https://jobs.ashbyhq.com/faros-ai/11413be9-77d0-40e7-957a-687c347146d6",
+      "expected": "yes",
+      "location": "Redwood City",
+      "checkedAt": "2026-10-29T07:40:59.220Z",
+      "sourceHash": "176e902458891476e4594aba3065b68d9022d60ba0af05c95d3400184ca7c748",
+      "sourceId": "87abc523-801a-4cd9-8bda-597a7ee610f0",
+      "comparison": "not_available",
+      "contextHash": "bd445e64d92314c1e1db4c5e965c2d3b01ee6df3c8a0fd21bbaaa2e5ab65050c",
+      "inputHash": "2d6d123d2b3d8d5775c0320c338fd4f8f795335acfb8aa45248bd8003e4a194d"
+    },
+    {
+      "key": "batch1_c50",
+      "company": "Babylist",
+      "title": "Staff Product Designer (AI Builder)",
+      "url": "https://job-boards.greenhouse.io/babylist/jobs/5831620004",
+      "expected": "yes",
+      "location": {
+        "name": "United States"
+      },
+      "checkedAt": "2026-10-29T07:40:59.352Z",
+      "sourceHash": "2be08fba69f5b3cab09aaad77ac16b19a7d57eee74cc561447c7da8783e67e8d",
+      "sourceId": "cacac2ad-4d25-4e13-b98d-92857710391e",
+      "comparison": "changed",
+      "contextHash": "bb9142c992529bec5060d36c0eee97f0288e5e97d451c079f41b2bb3342bc66a",
+      "inputHash": "4885bae4a2427d848adaf0a6b7f0b021ba8e0292fca0007cf5cd2257d624ea2e"
+    },
+    {
+      "key": "batch1_c52",
+      "company": "Faros",
+      "title": "AI-Native Builder",
+      "url": "https://jobs.ashbyhq.com/faros-ai/f0978123-07f9-457e-9236-dc136ac1c0e7",
+      "expected": "yes",
+      "location": "Redwood City",
+      "checkedAt": "2026-10-29T07:40:59.380Z",
+      "sourceHash": "c99569ea3595b29ed147eadb9eb97c936bea17f021ed0374d2712d0ece30e2c0",
+      "sourceId": "f8e39bce-e05f-4ff3-afdf-e011b4a70749",
+      "comparison": "changed",
+      "contextHash": "bd445e64d92314c1e1db4c5e965c2d3b01ee6df3c8a0fd21bbaaa2e5ab65050c",
+      "inputHash": "a8dcc6603eb74063515fd252c4b25763a466bc9a48ca2d87dc403ee5a30bdcdf"
+    },
+    {
+      "key": "earnin",
+      "company": "EarnIn",
+      "title": "Senior Product Builder",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8261686",
+      "expected": "yes",
+      "location": {
+        "name": "Mountain View, US"
+      },
+      "checkedAt": "2026-10-29T07:40:59.504Z",
+      "sourceHash": "186bf44266da036b0d13034014d63a4e0fc74125c04e46e1a582fa6f16e8e013",
+      "sourceId": "868d890d-ce13-472e-950c-5f1894f5477e",
+      "comparison": "not_available",
+      "contextHash": "5e454d7b972102d5615862c1757339f5cb2bb83f30cc25aaaf24362728578425",
+      "inputHash": "1b7e16817fdcead9de8fe703cee9131e7148948cd5fbf7c8f32f09dffb43cee5"
+    },
+    {
+      "key": "exiger",
+      "company": "Exiger",
+      "title": "AI Product Builder",
+      "url": "https://www.exiger.com/careers/6202657004?gh_jid=6202657004",
+      "expected": "yes",
+      "location": {
+        "name": "McLean, Virginia, United States; Richmond, Virginia, United States"
+      },
+      "checkedAt": "2026-10-29T07:40:59.636Z",
+      "sourceHash": "50ea23f6754b55714dc753bad17964f18e05a4bb3cefaa54a5875b0d7046f905",
+      "sourceId": "eaa87b94-70f4-4956-94a0-febdc5a27f90",
+      "comparison": "not_available",
+      "contextHash": "cc660ee070416fd540a1124c6124dd10aa464c5c899b941970492c053affd87b",
+      "inputHash": "fa39e263b3da841420f43e86e7e9fc133430edc7065c6caf891cc3daea61047f"
+    },
+    {
+      "key": "figma_ai_insights",
+      "company": "Figma",
+      "title": "Product Builder, AI Insights",
+      "url": "https://job-boards.greenhouse.io/figma/jobs/6227402004?gh_jid=6227402004",
+      "expected": "yes",
+      "location": {
+        "name": "San Francisco, CA • New York, NY • United States"
+      },
+      "checkedAt": "2026-10-29T07:40:59.815Z",
+      "sourceHash": "6ea8c90fafcd1564e0080dcbeb69a1bc92e9810bc8de9eb0e4d8e0bb8730712b",
+      "sourceId": "5814b8a8-7757-4f0b-82b4-5bd08d202e40",
+      "comparison": "changed",
+      "contextHash": "0e4e725b19b86b47a5e18ced7e0237f84f1f1207e696e5c7ea78aab2318a93f2",
+      "inputHash": "77bcd63a1261bfd9eff8cb4dba17b62e7c0b9cc2ebf9b589eeac36f1756fcc4f"
+    },
+    {
+      "key": "g2",
+      "company": "G2",
+      "title": "Senior AI Product Builder",
+      "url": "https://jobs.ashbyhq.com/g2/92dc2275-115f-4676-a607-fdda964e8121",
+      "expected": "yes",
+      "location": "Remote (US)",
+      "checkedAt": "2026-10-29T07:40:59.947Z",
+      "sourceHash": "7b674c89e10d507ab6551bb131c34d4df64ab47ac36e1eb6fa8396a0faa19a18",
+      "sourceId": "b938097c-6ea4-4f22-abaf-6c2decb14d4f",
+      "comparison": "not_available",
+      "contextHash": "2c20695c7c2c4dabf02abc549b221632ce576891927acbc249539a03a37bbfc8",
+      "inputHash": "e736ff8a9216547f748e0e8695db05b31a20ff695566620b508a51fee970ded0"
+    },
+    {
+      "key": "gitlab",
+      "company": "GitLab",
+      "title": "AI Transformation Owner, Product & Design",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8716179002",
+      "expected": "yes",
+      "location": {
+        "name": "Remote, Canada; Remote, United Kingdom; Remote, United States"
+      },
+      "checkedAt": "2026-10-29T07:41:00.175Z",
+      "sourceHash": "107ca577c56d28069474111791021226a21d73abbdd4191b100bee0a97b2fd7f",
+      "sourceId": "0908ab86-f47f-4c7d-8341-c539c2ea6e31",
+      "comparison": "not_available",
+      "contextHash": "2459d1b6e84f6b8ff56128860240b8b88f653875f598d7d5fafb49b802b17663",
+      "inputHash": "2adbd2883308b9d5b8aa25d1b1e211804ab511c9b872cee3f0c87ac36d0ec46a"
+    },
+    {
+      "key": "indeed",
+      "company": "Indeed Flex",
+      "title": "Product Builder",
+      "url": "https://job-boards.eu.greenhouse.io/indeedflex/jobs/4994921101",
+      "expected": "yes",
+      "location": "",
+      "checkedAt": "2026-10-29T07:47:18.256Z",
+      "sourceHash": "a5a77dbb4969201af8680470e4d2d20931bf3dc5888a5f472a9a119aeb205f25",
+      "sourceId": "d39dbcd7-b4f1-420e-a680-1c78b41a1e03",
+      "comparison": "not_available",
+      "contextHash": "908438445b37307742210e4a148bf6cc2a802b94c3bbec974fae4e5d3a2f7045",
+      "inputHash": "9be0c524d434e5dcfe6aa677e93362a57e2033e88e5f4d2593c872a75d266196"
+    },
+    {
+      "key": "mangoapps",
+      "company": "MangoApps",
+      "title": "Product Manager, AI Builder",
+      "url": "https://hq.workforce.mangoapps.com/apps/job_board/public/jobs/472",
+      "expected": "yes",
+      "location": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "postalCode": "98109-4312",
+          "addressRegion": "Washington",
+          "streetAddress": "760 Aloha Street, Suite 500",
+          "addressCountry": "US",
+          "addressLocality": "Seattle"
+        }
+      },
+      "checkedAt": "2026-10-29T07:41:00.971Z",
+      "sourceHash": "de042c126744ec3e9d93e604f6f0cdc73481e44ca4db302a3e6cce6aff788f3c",
+      "sourceId": "df09eb50-ad2a-46d2-9b5b-5968a68a51e0",
+      "comparison": "not_available",
+      "contextHash": "da39be2b67fa4fcbe385fa44ada56e5b4cfb9f36da316b2bfbb5223410d22569",
+      "inputHash": "7f908303c3810532dd110886a6e4ad3ba12f265005dc5bc87dd505a108ddb6e8"
+    },
+    {
+      "key": "oath",
+      "company": "Oath",
+      "title": "Product Manager",
+      "url": "https://jobs.ashbyhq.com/oath/1ff90c8e-192a-4921-ba9d-89c74344c28e",
+      "expected": "yes",
+      "location": "United States",
+      "checkedAt": "2026-10-29T07:41:01.408Z",
+      "sourceHash": "12d39fd4866bc44bf8aa5b11c15b50f85bc93d52ed2c7629c35f25f50f07760a",
+      "sourceId": "5b5ae01e-a109-4584-ad76-79c4d300e1b8",
+      "comparison": "not_available",
+      "contextHash": "f446de7f407e1ed3c3d7f6de1ee3d3048993adc4ce8ff52b9f992ba8f8d17c0b",
+      "inputHash": "df57eace2c7e4705180924da92a004dcb9444ef5a6b1aaaa29a13d10edc39e64"
+    },
+    {
+      "key": "overjoy",
+      "company": "Overjoy",
+      "title": "Product Manager",
+      "url": "https://jobs.overjoy.ai/40195",
+      "expected": "yes",
+      "location": "New York City, NY",
+      "checkedAt": "2026-10-29T07:51:31.776Z",
+      "sourceHash": "132246f2897d84ca9e6a6d87af652176a64bfb0d16ddc3804aacfa2f851d31ac",
+      "sourceId": "22675ff9-75de-4361-a260-cedd0ed38b7f",
+      "comparison": "identical",
+      "contextHash": "844ae339da62a670c7815624ed2f8f39885a72a8fee3cb62f934d70da59ab4e8",
+      "inputHash": "3cfd64d58114e575fcee06a4231a2892a014551ae5dc500edb13243165616b2b"
+    },
+    {
+      "key": "rillet",
+      "company": "Rillet",
+      "title": "Business Operations, AI Builder",
+      "url": "https://jobs.ashbyhq.com/rillet/f8d4f207-1e14-49fc-a0aa-a997a0c9bc2c",
+      "expected": "yes",
+      "location": "New York City",
+      "checkedAt": "2026-10-29T07:41:01.820Z",
+      "sourceHash": "e5a497731f7f9f2335f0b76b5db62e267c199774887e9f4d0c9dfa5cdfe04fcd",
+      "sourceId": "4aa81496-73e4-43ee-a3dc-2df9f6cc0bb9",
+      "comparison": "changed",
+      "contextHash": "d0b2eb501d6b6db9a3fe359801423400edf651749856ea3ffbd50f60fc707e29",
+      "inputHash": "3fca8bd0a99b98258c1397752ac9bbe37b51cee0f911694ed0fe45789328d095"
+    },
+    {
+      "key": "sharkninja",
+      "company": "SharkNinja",
+      "title": "Director, Finance AI & Automation",
+      "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4709349006",
+      "expected": "yes",
+      "location": {
+        "name": "Needham, MA, United States"
+      },
+      "checkedAt": "2026-10-29T07:41:02.737Z",
+      "sourceHash": "46f5d52f70004c7db90a6c9186d055941efb74ff3dae2fb1f506b96a76069d16",
+      "sourceId": "13f7dd35-977f-4d31-a2ef-a7d19c6837b7",
+      "comparison": "not_available",
+      "contextHash": "a31bd65440c4a4c30ead5933dd5e33c2ba8f2a0b687192ddc579629656fb1a94",
+      "inputHash": "a936139eaa3c4d0aed97ff305d51755aef0549ab2089d9afcb8cd583386b2113"
+    },
+    {
+      "key": "shipbob",
+      "company": "ShipBob",
+      "title": "Senior AI Product Builder, Inventory Experience",
+      "url": "https://job-boards.greenhouse.io/shipbobinc/jobs/4725934005",
+      "expected": "yes",
+      "location": {
+        "name": "Remote - United States"
+      },
+      "checkedAt": "2026-10-29T07:41:02.917Z",
+      "sourceHash": "3f979d78e68bc8dd0529d02758f2a62ba94b032466b635ceea729afe4385ba4f",
+      "sourceId": "3cc05cb7-44ac-4d67-bcc8-3f16e67f02c0",
+      "comparison": "not_available",
+      "contextHash": "ff97bd680479a6fdbef98172b4e66755dc818db5d393cc478c1e9da5b8351d57",
+      "inputHash": "fcf9b7be89552cca2be092d01047ebad0c90975c2213ec92589614b6b09d5a71"
+    },
+    {
+      "key": "veho",
+      "company": "Veho",
+      "title": "Director of Product, Consumer & Support (AI Builder)",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/58699c81-9b9a-473d-9455-c1a93ef0c6d3",
+      "expected": "yes",
+      "location": "New York City Office",
+      "checkedAt": "2026-10-29T07:41:03.501Z",
+      "sourceHash": "88a4f4982e89b41e80b7305643e4d7e4e146b2d37dab7fa79621a9487adbb1ca",
+      "sourceId": "0377031c-dc67-4aa4-989f-c122412bdc06",
+      "comparison": "not_available",
+      "contextHash": "d65fc0460fc9308d8b23c5b72c49687e940ebb53f10aa90c71314a2020ebdd8f",
+      "inputHash": "e20d575e2079f8fc43c43a9fb02213f426dee6768a2257fa421060d08541843b"
+    },
+    {
+      "key": "within",
+      "company": "Within",
+      "title": "Senior AI Product Manager",
+      "url": "https://jobs.ashbyhq.com/within.ai/6886702a-4e88-4cc1-9f71-04b690aefb9a",
+      "expected": "yes",
+      "location": "San Francisco (HQ)",
+      "checkedAt": "2026-10-29T07:41:03.684Z",
+      "sourceHash": "90450f818428459cc296cb982c978ec408e5eb409e10e35e5b806cb8d84f42f2",
+      "sourceId": "d79df3fb-3680-4982-8280-67fa12715b04",
+      "comparison": "not_available",
+      "contextHash": "be5f024538238ad39cd913298750f06724b609d47e1ebc75bedce1f3b036d20f",
+      "inputHash": "0c7cc73c85601fc1de6878ecf5bd425faffa0f547c80f1e6d179fd0ef86870c4"
+    }
+  ],
+  "results": [
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "company": "getsquire",
+      "title": "Director, Data Engineering",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "software_engineering",
+          "data_engineering",
+          "engineering_leadership"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 8+ years in data or software engineering, including 4+ years managing engineers, plus advanced SQL/Python and hands-on warehouse, transformation, and orchestration tools experience.",
+        "product": "Owns data strategy and architecture and translates company strategy into platform investments; primary scope is technical direction and organization leadership, not product/problem discovery.",
+        "operations": "Builds a trusted data foundation for company reporting, automation, and AI use cases; audits existing integrations and prioritizes replacement work.",
+        "building": "Player-coach director role: leads a 5+ person multidisciplinary organization, budgets, hiring, and technical direction while spending about half the time hands-on and personally shipping difficult data engineering work.",
+        "ai": "Sets AI/LLM enablement strategy, builds with LLM tooling, and remains hands-on in select enablement capabilities.",
+        "reason": "The posting clearly describes a conventional engineering director/player-coach mandate: managing and growing a technical organization, setting architecture and standards, and owning its delivery, alongside substantial hands-on coding. AI enablement and direct implementation are present, but do not change the primary mandate into the kind of cross-functional builder role sought.",
+        "evidence": [
+          " We're hiring a Director, Data Engineering to build and lead our Data organization through a player-coach model, spending approximately half your time hands-on in the code and the other half developing engineers, setting technical direction, and owning the",
+          " Establish technical direction and standards for pipeline design, data modeling, and data quality across the org; personally build and ship the highest-risk or most ambiguous work\n",
+          " Champion AI and automation enablement company-wide, ensuring agents and LLM use cases are built on a trusted data foundation, while remaining hands-on in building select enablement capabilities\n"
+        ]
+      }
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "company": "azul",
+      "title": "IT Intern, AI and Operations",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Undergraduate student in engineering, IT, physics, or a related field; GPA of at least 3.4. Strong organization, prioritization, and communication skills.",
+        "product": "No meaningful product or broader problem ownership is described; work is scoped around IT and security workflows under the VP's direction.",
+        "operations": "Primarily an IT and security operations internship: helpdesk and device/access tasks, security triage, connector configuration, and documentation, with AI automation as a project within that remit.",
+        "building": "The intern will build and test Claude skills and assist with scoping, building, and iterating on agents against real-world scenarios. This is concrete AI-enabled work, but sits alongside support and administration duties rather than establishing a central end-to-end builder mandate.",
+        "ai": "Directly develops Claude skills and helps build and iterate on agents that automate repetitive IT and security tasks.",
+        "reason": "Although the posting includes hands-on AI skill and agent development, the overall role is an IT/security support internship under established direction. Helpdesk, device/access administration, security triage, and documentation are core duties; the AI work is an adjunct project, not evidence of a broader builder mandate.",
+        "evidence": [
+          "\n About You \nUnder the direction of our VP of IT and Security, our Intern will add value and contribute to key IT and Security projects.",
+          " Claude Skill Development Design, build, and test Claude skills (SKILL.md) for IT and Security workflows, including writing skill descriptions, step-by-step instructions, and prompt logic that integrates with Azul's connected MCP servers.",
+          "\n IT Operations and Helpdesk Assistance Assist with hardware procurement tracking, onboarding/offboarding tasks, Jamf device management, and SaaS access requests under the direction of the IT Operations team."
+        ]
+      }
+    },
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "company": "cssmerge",
+      "title": "Product Manager - Robotic Kitchen",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 5–8 years’ experience, including 4+ years owning B2B or operational products; frontline-team product experience is valued. AI-powered prototyping is required, but no software-engineering career requirement is stated.",
+        "product": "Owns the KitchenOS roadmap and product lifecycle, using field research, operational data, and business impact to prioritize operator-facing tools and workflows.",
+        "operations": "Works closely with kitchen operators and operations teams; tests in real kitchens and owns rollout readiness, training, adoption, and operational outcomes.",
+        "building": "AI-assisted prototypes and MVPs are used to test concepts with users and challenge assumptions. The posting does not make personally implementing production solutions central; it emphasizes requirements, coordination, and delivery with engineering.",
+        "ai": "Rapid AI-powered prototyping is described as a non-negotiable way to test concepts and learn from users.",
+        "reason": "This is primarily a conventional product-management mandate: roadmap and requirements ownership, cross-functional coordination, and delivery/rollout. Personal AI prototyping is explicit, but framed as a way to test concepts and inform product decisions—not as central responsibility for implementing working solutions through use. Prototyping alone does not establish the required builder mandate.",
+        "evidence": [
+          "\n About the role \n Own the product definition, strategy and roadmap for KitchenOS tools that support R&D Team, Brand Managers, and Kitchen Operators; from recipe development and menu building to production and inventory workflows.",
+          "\n Lead delivery and rollout: write clear requirements, test in real kitchens, and own launch readiness—from QA and field pilots to documentation, training, and iteration.",
+          " You rapidly build prototypes and MVPs with AI tools to test concepts with real users, challenge assumptions, and turn what you learn into better products."
+        ]
+      }
+    },
+    {
+      "key": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "company": "opensesame",
+      "title": "Systems Administrator ",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [],
+        "engineering": "technical_fluency",
+        "qualifications": "The posting does not specify conventional software-engineering experience; it calls for administering business IT systems and tools.",
+        "product": "No product mandate is established; the role supports and improves internal IT systems.",
+        "operations": "Core work is internal IT support, systems administration, access/security controls, and operational process improvement.",
+        "building": "Automation implementation is included, but alongside a full support-ticket and IT-systems workload; it is not the central mandate of a working-solution builder role.",
+        "ai": "AI-powered workflows are part of the environment, and an AI-driven or automation solution is a project objective. That does not change the role's primary IT administration and support remit.",
+        "reason": "The role's main responsibility is internal IT administration: resolving escalated support tickets, managing tools and access, and maintaining security. It includes automation and AI-workflow improvement projects, but these are adjuncts to the IT support and systems mandate rather than central ownership of building solutions.",
+        "evidence": [
+          "\n About the Role \n The Systems Administrator supports and improves OpenSesame’s internal IT systems, resolving escalated issues, managing core tools, and driving automation and security initiatives.",
+          "\n Within 90 Days \n Carry a full ticket and project workload equivalent to team peers, delivering consistent and timely resolutions.",
+          "\n Identify at least two manual workflows for automation, and lead their technical evaluation and implementation."
+        ]
+      }
+    },
+    {
+      "key": "alaffia",
+      "company": "Alaffia",
+      "title": "AI Transformation Lead",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "ai_automation"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 3–6 years in product, product operations, forward-deployed/solutions engineering, TPM, or similar work solving operational problems with technical solutions. Requires fluency with AI coding tools, low/no-code, SQL/BI, APIs, scripting, and integrations, but not full-stack engineering.",
+        "product": "Prioritizes operational pain points by impact and ROI, then defines and measures success with teams across the organization.",
+        "operations": "Internal transformation mandate spanning clinical, payment integrity, utilization management, appeals, product, and GTM workflows; includes adoption, enablement, and operational rigor.",
+        "building": "Personally designs, deploys, and owns AI agents, apps, and workflows from prototype to production, without waiting for engineering; iterates using data and feedback.",
+        "ai": "AI-native development with tools such as Claude Code and Cursor, plus low-code/no-code, APIs, scripting, and integrations; builds AI-powered solutions and reusable agent foundations.",
+        "reason": "Clear operations-focused builder role: identifies and prioritizes real organizational bottlenecks, personally builds and ships AI solutions end-to-end, and owns adoption, measurement, and iteration. AI-enabled implementation and technical fluency are explicit; this is not merely internal support or an enablement role.",
+        "evidence": [
+          " Serve as a trusted internal partner to every team at Alaffia: proactively auditing their workflows to surface the highest-impact AI and automation opportunities.",
+          "\n Own solutions end-to-end,  from prototype to production, without waiting for a dedicated engineering team.",
+          " An AI-native builder with deep, demonstrated experience using AI to build, ship, and accelerate work."
+        ]
+      }
+    },
+    {
+      "key": "alt",
+      "company": "Alt",
+      "title": "Product Builder, Growth",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_builder",
+        "focus": [
+          "growth",
+          "software_engineering",
+          "product"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires production-code shipping, full-stack capability, PR review and on-call ownership, plus growth-surface experience, strong analytics and experimentation, and marketplace fluency. AI-building experience is also expected.",
+        "product": "Owns submission, search and discovery, experimentation, and growth outcomes end to end; finds funnel problems, chooses and tests changes, and makes keep-or-kill decisions against metrics.",
+        "operations": "Not primarily an operations role; owns growth systems and experimentation infrastructure as product surfaces.",
+        "building": "Directly writes, ships, tests, and iterates production code across growth funnels, ranking, and experimentation infrastructure, with responsibility for results in use.",
+        "ai": "AI is part of the work: build an experiment-readout agent, run model-driven search experiments, automate dealer reactivation, and create an MCP interface; AI-assisted flow building is explicitly expected.",
+        "reason": "Clear engineering-led builder mandate: personally owns growth problems and metrics, implements and ships production solutions, and uses AI in concrete building work. The role requires a substantial software-engineering background, which is a separate qualification gate rather than a fit veto.",
+        "evidence": [
+          " You own the seller submission funnel, buyer search and discovery, and the experimentation infrastructure underneath both, and you own them the whole way: you find the drop-off, you write the code, you ship it behind a flag, you read the result, you keep it or",
+          " Build it, don't request it. Assignment, exposure logging, guardrails, readouts, and decision rules, wired to the warehouse and fast enough that a test is a Tuesday decision.",
+          " Concretely, in this role:\n Build the experiment readout as an agent : it pulls the test, checks the guardrail metrics, flags the confound, and writes the ship-or-kill recommendation you then argue with\n"
+        ]
+      }
+    },
+    {
+      "key": "amperity",
+      "company": "Amperity",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires direct hands-on agentic-systems experience, including frameworks, tool use, and context engineering. Also expects rapid AI-tool/low-code prototyping and codebase testing; engineering owns production architecture.",
+        "product": "Owns ambiguous, high-impact customer outcomes and uses customer engagement, adoption, and value to shape product decisions and strategy across workflows.",
+        "operations": "Not primarily an internal operations mandate; customer adoption and value in real workflows are key outcomes.",
+        "building": "Personally prototypes, validates ideas, tests in the codebase, and shapes agentic approaches, while partnering with engineering for production architecture.",
+        "ai": "AI and agentic product strategy is central: determine suitable agentic approaches and shape products, workflows, and context engineering for trustworthy customer value.",
+        "reason": "A strong product-builder mandate: the role connects customer pain and feedback to independent product judgment, requires hands-on agentic experience and AI-assisted prototyping/codebase testing, and is accountable for adoption and measurable outcomes. Engineering ownership of production architecture does not negate the direct-building responsibility.",
+        "evidence": [
+          "\n You're a systems thinker who runs toward the most ambiguous problems — figuring out what's worth building, why, and for whom, often across more than one project.",
+          "\n Technical Fluency: You prototype quickly using AI tools and low-code integrations, and can test ideas directly in a codebase.",
+          "\n Customer adoption and value: The capabilities you lead are adopted in real customer workflows and produce measurable improvements in time to value, product usage, retention, expansion, or other agreed business outcomes."
+        ]
+      }
+    },
+    {
+      "key": "apollo",
+      "company": "Apollo",
+      "title": "Principal Product Builder, Data",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 7+ years of product-management experience owning complex data products, principal-level judgment and influence, data expertise, compliance fluency, and technical fluency across architecture and APIs. No prior software-engineering career is specified.",
+        "product": "Owns the data catalog’s vision, strategy, roadmap, KPIs, and customer experience, with responsibility for prioritization and build-versus-buy decisions.",
+        "operations": "Coordinates data sourcing and vendor evaluation, and works with Engineering, Research, Design, GTM, Support, and customers on data quality and outcomes.",
+        "building": "AI-native prototyping is expected to validate ideas before larger investment, and the posting asks for examples of things built or shipped. It does not establish hands-on implementation as central to this role’s broader product-management mandate.",
+        "ai": "Calls for AI-native workflows and tools such as Claude Code, Cursor, Lovable, and Figma AI to prototype and accelerate execution.",
+        "reason": "Despite the builder framing and explicit AI-native prototyping expectation, the described work centers on product strategy, roadmap ownership, cross-functional delivery, and validating ideas before scaling investment. The posting does not establish that personally implementing working solutions is a central responsibility rather than supporting product discovery.",
+        "evidence": [
+          " Prototype quickly using tools like Claude Code, Cursor, Lovable, Figma AI, and other AI-native workflows to validate ideas before scaling investment\n",
+          " What we are looking for \n 7+ years of product management experience, including ownership of complex data-centric product areas from strategy through launch\n",
+          " You can point to things you built or shipped, not just specs you wrote\n"
+        ]
+      }
+    },
+    {
+      "key": "axiad",
+      "company": "Axiad",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Career product-manager route with end-to-end product, discovery, UX, market, and identity-security judgment. Requires recent AI-native building practice from prototype to pull request and comfort in the codebase; this is technical fluency, not an explicit SWE-career requirement.",
+        "product": "Owns product management, roadmap, inbound/outbound, and UX; discovers and prioritizes customer problems, prototypes unmet needs, and feeds learning into shared strategy.",
+        "operations": "Uses AI and agents to compress cycle times and automate work that should not require humans.",
+        "building": "Personally chooses high-leverage moments to create prototypes, UX, and working software, carrying work through when appropriate and handing off the last mile when not. Building is described as a constant strategic practice.",
+        "ai": "AI and agents are integrated throughout the work; AI-native fluency includes LLMs, agentic workflows, design/code generation, and building from prototype to pull request.",
+        "reason": "Strong product-focused builder mandate: meaningful problem and solution judgment, direct AI-enabled making of working software, and responsibility for connecting what is built to customer value and product strategy. The role explicitly rejects PMs who delegate execution as the norm. Location and compensation do not affect role fit.",
+        "evidence": [
+          " Own product management as a capability — roadmap, inbound, outbound, and UX.",
+          " Prototypes, UX, working software: you pick the moments where making the thing is the highest-leverage move and take them without asking — handing the last mile to the team when that's the right call, carrying it yourself when it isn't.",
+          " \n AI-native fluency: LLMs, agents, skills, agentic workflows, design and codegen as force multipliers and used more than any other “tool”."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c01",
+      "company": "ITS Logistics",
+      "title": "AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_builder",
+        "focus": [
+          "operations",
+          "ai_product",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires production experience with LLMs, agents, and retrieval; enterprise-grade coding using AI; strong CS-equivalent foundation to assess designs; and practical security expertise. Logistics experience is preferred, not required.",
+        "product": "Owns enterprise AI strategy and prioritization, chooses builds against business value, and defines and verifies ROI. Works directly with operational teams to understand their workflows.",
+        "operations": "Builds for a large logistics business, engaging floor teams and functions such as operations, finance, and support; solutions must integrate with existing systems and be adopted in production.",
+        "building": "Personally owns AI solutions from business problem through implementation, deployment, adoption, and measured results. Expected to ship immediately, with architecture, security, and design standards included from the start.",
+        "ai": "Directly builds production LLM, agent, and retrieval systems, using AI in the coding workflow while validating and testing generated work. Applies judgment on agentic versus deterministic approaches.",
+        "reason": "This is a clear engineering-focused builder mandate: the person identifies and prioritizes meaningful business problems, personally builds enterprise AI solutions, and owns deployment, adoption, and measured outcomes. The posting explicitly calls for AI-assisted coding and production implementation; the substantial software-engineering requirements describe the route, not a reason to discount fit.",
+        "evidence": [
+          " Business problem, build, deployment, adoption, measured result.",
+          "\n• Own the ROI case. Define the metric before you start, baseline it, prove the return after, and kill things that do not earn their place.",
+          "\n• You write enterprise-grade code using AI and have a process for doing it well."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c03",
+      "company": "OpenArt",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "design"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks students or similarly situated candidates with a technical background, AI-creative-tool experience, and engineering skills such as Python, JavaScript/TypeScript, or APIs. Prior SWE employment is not required.",
+        "product": "Shapes creative features using daily user conversations, usability tests, and judgment about which emerging AI capabilities OpenArt should adopt or build.",
+        "operations": "Not a primary operations mandate; growth and community collaboration are supporting responsibilities.",
+        "building": "Translates new AI capabilities into feature ideas, prototypes them, and works with designers and engineers to ship them.",
+        "ai": "Tracks emerging models and tools and applies them to creative product features; AI creative tools are part of the expected workflow.",
+        "reason": "This is a product-focused builder internship: it combines user-informed feature judgment and hands-on prototyping with collaboration to ship features. The technical-background requirement is a separate qualification, not a reason to discount the role fit.",
+        "evidence": [
+          "\n Turn ideas into features: translate new capabilities into feature ideas, prototype them, and work with designers and engineers to ship them.",
+          " Talk with them every day (interviews, Discord, social), understand what they need, and let that shape every feature you push for.",
+          "\n A builder with product taste: you have engineering skills (e.g., Python, JavaScript/TypeScript, working with APIs), you've built or shipped something (an app, side project, tool or design), and you can explain the choices behind it."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c07",
+      "company": "RK Logistics Group",
+      "title": "AI Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "internal_tools",
+          "workflow_automation"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires demonstrated delivery of tools or systems with measurable business impact and experience using AI tools to automate or accelerate work. Operations, product, consulting, or internal-tools background is preferred; traditional software-engineering experience is not required.",
+        "product": "Works with leadership and operators to identify business opportunities and design solutions, exercising judgment on system design and tradeoffs.",
+        "operations": "Owns internal automations and business systems from ambiguous problem through deployment, then tracks adoption and ROI and iterates with real-use feedback.",
+        "building": "Personally designs, connects, and deploys usable dashboards, workflows, automations, and agents with AI-first methods and existing tools; success depends on shipped systems and their outcomes.",
+        "ai": "Uses AI tools as the primary execution engine to build and iterate on automated workflows and internal tools, alongside APIs and low-code or no-code integrations.",
+        "reason": "Clear operations-focused builder mandate: translates vague business problems into systems, personally deploys AI-enabled solutions, and owns iteration, adoption, and measurable business impact. Its explicit non-SWE route does not diminish the building responsibility.",
+        "evidence": [
+          " You will work directly with leadership and operators across multiple operating companies to identify opportunities, design solutions, and ship usable tools quickly.",
+          " Design and deploy internal dashboards, workflows, automations, and AI agents using AI-first build methods\n",
+          " Ship working systems rapidly and iterate based on real usage and feedback\n"
+        ]
+      }
+    },
+    {
+      "key": "batch1_c08",
+      "company": "AwardSpring",
+      "title": "Product Builder Intern",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Open to current students or recent graduates from engineering, design, or product management. Prior shipped work with AI tools matters more than school or a particular stack; fluency in agentic development is expected.",
+        "product": "Contributes product judgment by pushing back on specs that do not make sense; work is shaped around the intern’s chosen discipline.",
+        "operations": "Not a primary operations mandate.",
+        "building": "Ships well-scoped work into a production codebase with real users, using agentic tooling from day one and iterating with senior review.",
+        "ai": "AI-native development is central: ICs across engineering, product, and design ship end-to-end with agentic tools, and the posting expects prior hands-on building with tools such as Claude Code or Cursor.",
+        "reason": "Clear builder mandate: interns personally use agentic tools to ship real production work, with room to contribute product judgment and iterate under senior review. The role explicitly welcomes engineering, design, or product backgrounds, so prior SWE employment is not required.",
+        "evidence": [
+          "\n About this role\n This is one internship open to builders of any stripe: engineering, design, or product management.",
+          " Nearly 100% of the code in our product is AI-generated, and every IC (engineer, PM, designer) ships features end-to-end with agentic tooling.",
+          "\n What you'll do\n Ship real, well-scoped work into a production codebase with actual users\n"
+        ]
+      }
+    },
+    {
+      "key": "batch1_c20",
+      "company": "TRM Labs",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "exclude",
+        "focus": [
+          "software_engineering",
+          "customer_implementation"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires strong programming ability in Python and/or Node.js/TypeScript, plus hands-on Kubernetes, production AWS, database fluency, and broad engineering delivery experience.",
+        "product": "Works directly with mission users to translate needs into software and carries customer context back to product teams, but the mandate centers on customer deployments and mission-specific delivery.",
+        "operations": "Owns deployment, integration, operation, and incident resolution in customer environments, including cloud and air-gapped settings.",
+        "building": "Builds and ships application code, integrations, data pipelines, and prototypes for customer environments; this is a generalist engineering role.",
+        "ai": "Coding agents and LLM tooling are explicitly part of the engineering workflow used to ship.",
+        "reason": "Despite direct implementation, AI-enabled development, and customer problem translation, this is principally a forward-deployed engineering/solutions role: deploys and operates TRM’s platform inside customer environments, builds mission-specific capabilities, and relays learnings to the product team. Customer-specific implementation alone does not establish the broader product/problem ownership sought.",
+        "evidence": [
+          "\n The impact you will have: \n Deploy, integrate and operate TRM's platform inside customer environments - cloud and air-gapped - and own the outcome, not just your slice of it.",
+          "\n Sit directly with mission users, translate what they need into working software, and build it: integrations, data pipelines, and prototypes that prove out a capability before it's a product.",
+          "\n What we’re looking for: \n Strong programming ability in Python and/or Node.js/TypeScript, with real fluency developing with AI — coding agents and LLM tooling are part of how you ship, and you have judgment about where they help and where they don't."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c27",
+      "company": "OpenSesame",
+      "title": "AI Product Builder Intern",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "No prior software-engineering career requirement is stated; applicants are asked to share examples of something they built with AI.",
+        "product": "Contributes to product incubation cycles and user tests; findings inform go, pivot, or kill decisions.",
+        "operations": "Builds an agent to remove a recurring team task and improves the lab's development process.",
+        "building": "Uses AI coding tools and agents to build, test, and ship working software that is deployed and used.",
+        "ai": "AI-assisted building is explicit: ship a working feature or tool, build and maintain an AI agent, and iterate through incubation cycles.",
+        "reason": "Personal AI-enabled building is central: the intern ships deployed software, tests it with users, and contributes evidence to product decisions. The lab continues relying on the work after the internship. The posting says the position is on-site in Austin; that is separate from role fit.",
+        "evidence": [
+          " About the Role \n OpenSesame's AI Innovation Lab runs short incubation cycles that turn product hypotheses into deployed software and real customer evidence.",
+          " As an AI Product Builder Intern, you'll work alongside the lab team using AI coding tools and agents to build, test, and learn fast.",
+          " \n What Success Looks Like  \n You ship real software that real users touch, and your work shows up in the evidence that drives go/pivot/kill decisions."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c29",
+      "company": "Sekai",
+      "title": "AI Product Engineer",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "engineering_builder",
+        "focus": [
+          "software_engineering",
+          "product"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires 2+ years in software or product-oriented technical roles, comfort across frontend and backend, and familiarity with AI coding tools. These are role qualifications, separate from the strong product-building fit.",
+        "product": "Builds user-facing features and contributes to product direction and UX decisions with Product; prioritizes user impact and iterates on quality and usability.",
+        "operations": "Owns production issues and resolves them quickly, prioritizing by user impact.",
+        "building": "End-to-end feature development is the primary work: personally builds and ships features, works across the stack, and iterates with Product and Engineering.",
+        "ai": "Uses AI as a core part of development, including day-to-day building, debugging, prototyping, and iteration; expects active use of modern AI coding tools and workflows.",
+        "reason": "Strong engineering-focused builder fit. The role centers on personally shipping product features end-to-end, contributes to product and UX decisions, and explicitly uses AI throughout development and iteration. Production ownership complements rather than displaces feature building.",
+        "evidence": [
+          "\n Responsibilities\n Build and ship product features end-to-end, with most of the role focused on new feature development\n",
+          " Partner closely with Product to turn ideas into shipped experiences and contribute to product direction and user experience decisions\n",
+          " Use AI aggressively in day-to-day development, debugging, prototyping, and iteration\n"
+        ]
+      }
+    },
+    {
+      "key": "batch1_c46",
+      "company": "Faros",
+      "title": "Product Manager, AI Native Initiatives",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 6+ years in product management and substantial technical and AI fluency, including code, system design, and hands-on LLM work. Prior engineering experience is one route, not an absolute requirement; the posting does not make a SWE career a fit condition.",
+        "product": "Owns a meaningful AI-native product surface, forms product hypotheses in an emerging market, and is accountable for customer and business outcomes.",
+        "operations": "Not primarily an internal operations mandate; work centers on the customer-facing AI-native product line.",
+        "building": "Explicit player-builder expectation: prototype, write, ship, dogfood, and iterate with customers and engineers. Uses modern AI tools to increase personal output.",
+        "ai": "Builds AI-native agent workflows and evaluation capabilities; expects hands-on experimentation with models, tools, APIs, and agent failures.",
+        "reason": "Strong product-builder fit: the PM owns an ambiguous problem space and product outcomes, makes substantive product decisions, and is explicitly expected to prototype, write, and ship using modern AI tools. Building is central rather than limited to concept demos; technical depth and seniority requirements do not negate fit.",
+        "evidence": [
+          "\n You will own a meaningful surface area of our new AI-native product line.",
+          " You will form strong hypotheses about where the market is going, collaborate with designers and engineers to turn those hypotheses into working product, put it in front of customers, and learn quickly enough to stay ahead of a rapidly moving field.",
+          "\n Player-Builder Mentality: You do not want just to direct the work; you want to be in it."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c50",
+      "company": "Babylist",
+      "title": "Staff Product Designer (AI Builder)",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "design"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Staff-level product design role requiring shipped consumer work across web and native mobile, strong research and design-system skills, and the ability to write production frontend code in the product codebase.",
+        "product": "Owns a major customer journey end to end, sets its design vision and sequence of bets, grounds decisions in user research, and tracks outcomes to iterate, pivot, or stop.",
+        "operations": "Not primarily an operations mandate; the role also establishes AI-enabled design workflows and helps collaborators contribute to experience design.",
+        "building": "Personally turns concepts into interactive prototypes and production frontend code, implements and polishes experiences, and shares AI-native workflows with the team.",
+        "ai": "AI is integral to the daily workflow: use it for research synthesis, rapid prototyping, production code, design-system evolution, and interaction exploration.",
+        "reason": "A clear product-and-design builder mandate: the role owns a major user experience and its outcomes while personally using AI-native workflows to prototype, implement, and refine production frontend experiences. Design ownership and hands-on building are central, not incidental.",
+        "evidence": [
+          " Own a customer journey or major product experience end-to-end .",
+          "\n Build with AI-native workflows .",
+          " Work in the codebase to implement, refine, and polish the experiences you design."
+        ]
+      }
+    },
+    {
+      "key": "batch1_c52",
+      "company": "Faros",
+      "title": "AI-Native Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "software_engineering",
+          "product",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Values demonstrated building over credentials; likely signals include software engineering fundamentals, a history of building products or systems, rapid independent learning, AI-accelerated work, and moving from idea to implementation. No specific engineering career path is required.",
+        "product": "Identifies opportunities and engineering bottlenecks, then creates capabilities and customer-facing products aimed at real engineering outcomes.",
+        "operations": "Builds reusable workflows, automation, and context systems to improve how engineering organizations plan, deliver, review, and make decisions.",
+        "building": "Directly builds agents, workflows, evaluation frameworks, data systems, platform capabilities, and experiments; success is framed around outcomes and leverage.",
+        "ai": "AI-native work includes experimenting with models and tools, building agent workflows and evaluation systems, and using AI to accelerate development and analysis.",
+        "reason": "The role centers on identifying opportunities and bottlenecks, exercising judgment about what to build, and personally turning ideas into products, workflows, agents, and reusable capabilities. AI is integral to both the building approach and the solutions. Strong engineering fundamentals are valued, but the posting explicitly distinguishes this from a traditional software-engineering role; that is a technical-fluency signal, not a stated prior-career requirement.",
+        "evidence": [
+          "\n As an AI-Native Builder, you will identify opportunities, rapidly test ideas, build products, automate workflows, create capabilities, design evaluation systems, and help define how engineering itself evolves in the age of AI.",
+          " Create agents and workflows that use Faros's operational context to assist with engineering planning, delivery, review, quality, reliability, and decision-making\n",
+          " Use data and evidence to identify bottlenecks in software delivery and create products that help organizations continuously improve\n"
+        ]
+      }
+    },
+    {
+      "key": "earnin",
+      "company": "EarnIn",
+      "title": "Senior Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 4+ years in product management or engineering, relevant technical education or equivalent experience, hands-on AI-native product-development lifecycle experience, and comfort working across the stack. These indicate technical fluency, not an explicit SWE-career requirement.",
+        "product": "Owns technical product strategy and defines what to build, using user research and analytics to prioritize opportunities, run experiments, and refine products; also sets product vision and success metrics.",
+        "operations": "Improves the development lifecycle with agentic workflows, evaluation pipelines, deployment gates, and reusable implementation patterns that reduce friction across teams.",
+        "building": "AI-native development is core to how products are designed, built, and shipped. The role builds production-oriented workflows and reusable solutions, advancing experiments into patterns teams can fork and ship.",
+        "ai": "AI-native product development is central: apply agentic workflows, build evaluation and deployment mechanisms, and establish quality benchmarks and governance for AI-powered products.",
+        "reason": "This is a product-and-engineering blend with real product strategy and user-opportunity ownership, alongside a central mandate to build AI-native development workflows and reusable production solutions. It explicitly calls for hands-on AI-native lifecycle experience and working across the stack; the posting does not clearly require a prior SWE career.",
+        "evidence": [
+          " You’ll bring a strong technical foundation to product work: setting product strategy, uncovering new insights, and driving execution on new, zero-to-one initiatives.",
+          " Build evaluation pipelines, automated PR hygiene, deployment gating, and generation-to-merge metrics that make governed AI fast, not slow.",
+          " Turn what’s working in engineering experiments into something the next team can fork and ship in a week."
+        ]
+      }
+    },
+    {
+      "key": "exiger",
+      "company": "Exiger",
+      "title": "AI Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Early-career role for someone with strong technical foundations who has built and shipped a real application, agent, automation, or other working product. Expects coding ability and continued engineering development; practical experience can substitute for a degree.",
+        "product": "Turns customer and business problems into product experiences, talks directly with users, uses feedback and data to choose what to build or improve, and grows toward independently leading defined product problems.",
+        "operations": "Builds automations and workflows that make complex processes faster, easier, or more accurate; operational improvement is part of product delivery, not the sole mandate.",
+        "building": "Personally builds AI applications, agents, automations, experiments, and scoped production features; tests and iterates with users and engineers, with an explicit path toward independently owning product problems.",
+        "ai": "Uses LLMs, agents, APIs, data, code, and low-code tools; experiments with prompts, retrieval, tools, models, and parameters, and evaluates feature quality, reliability, safety, and usefulness.",
+        "reason": "The central mandate is to turn ambiguous customer and business problems into working AI product experiences, personally build and test them, gather user feedback, and iterate toward production. Product judgment and implementation are both explicit; engineering support and review do not displace direct building.",
+        "evidence": [
+          "\n What You'll Do:\n Turn customer and business problems into prototypes, experiments, automations, and live product features.",
+          "\n Rapidly prototype ideas, put them in front of users, learn from their reactions, and iterate.",
+          "\n Use product data and user feedback to decide what to build, improve, or stop."
+        ]
+      }
+    },
+    {
+      "key": "figma_ai_insights",
+      "company": "Figma",
+      "title": "Product Builder, AI Insights",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "design"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks exceptional UX/product design craft, deep AI fluency, and a record of hands-on shipping impactful products with sustained value beyond prototypes. The description does not require a prior software-engineering career.",
+        "product": "Identifies unmet needs for better customer understanding, chooses high-impact internal product opportunities, and shapes intuitive experiences that inform decisions.",
+        "operations": "Owns internal products from concept through launch, adoption, continued use, and measurement of their impact.",
+        "building": "Personally uses AI tools to build and ship internal products, evaluates AI behavior and evidence quality, and iterates based on feedback and actual use.",
+        "ai": "Builds AI workflows connecting models, data, and tools; troubleshoots prompts and integrations; creates evaluations to identify failures and verify improvements.",
+        "reason": "A clear product-and-design builder mandate: the role defines meaningful problems, personally builds working AI-enabled products, and owns their launch, iteration, adoption, and impact measurement. Partnering with engineering and other teams is compatible with that direct ownership.",
+        "evidence": [
+          "\n What you’ll do at Figma: \n Identify where Figmates need better customer understanding.",
+          " Use AI tools to build and ship internal products.",
+          " Ship focused versions early. Improve them rapidly through feedback, actual use, and careful attention to interaction and visual details\n"
+        ]
+      }
+    },
+    {
+      "key": "g2",
+      "company": "G2",
+      "title": "Senior AI Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "software_engineering",
+          "design"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 6+ years spanning product, software engineering, and/or design, strength in at least two areas, plus coding fluency and system-design understanding. This is not framed as requiring a prior SWE career.",
+        "product": "Owns a product area, defines what to build from customer insight, makes product and design decisions, and carries work through launch and iteration.",
+        "operations": "Not an operations-focused mandate; cross-functional alignment supports independent product creation.",
+        "building": "Hands-on creation is central: use AI coding tools, write production code or prototype with AI/low-code tools, and take ideas directly to working products without handoffs.",
+        "ai": "AI is integral to the building workflow and product design, including AI-powered features and experiences informed by understanding LLMs, agents, and AI workflows.",
+        "reason": "Strong builder fit: independently owns product problems and decisions informed by customers, personally builds with AI and engineering partners, and is accountable for shipping and iterating products for external users. The engineering foundation is a qualification, not a fit veto.",
+        "evidence": [
+          " As a Senior AI Product Builder, you'll be one of the first people in this model — taking ownership of a product area, shaping what the experience should be, and building it directly based on what you hear from real customers.",
+          "\nThis is a highly independent role: you'll interpret open-ended problems, decide what's worth pursuing, and carry it straight through to a working product, rather than routing it through separate product, design, and engineering steps.",
+          "\n Building & Shipping \n Write production code, prototype in a low-code/AI environment, or get deep in the weeds with engineering partners—you are hands-on."
+        ]
+      }
+    },
+    {
+      "key": "gitlab",
+      "company": "GitLab",
+      "title": "AI Transformation Owner, Product & Design",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "ai_transformation",
+          "agent_building"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Requires deep knowledge of a function’s operations, strategic prioritization, outcome metrics, cross-functional influence, and comfort building and troubleshooting agents with AI tools. Explicitly does not require production coding or a software-engineering background.",
+        "product": "Owns the function’s AI strategy and priorities: identifies operational constraints and opportunities, chooses work against business outcomes, and manages rollout and adoption.",
+        "operations": "Embedded in a business function, maps end-to-end workflows, drives organizational change, and coordinates a champion network to extend adoption.",
+        "building": "Personally builds no-code/low-code agents, configures skills and MCP connections, and owns agent performance, evaluation, iteration, and replacement.",
+        "ai": "AI is central to the mandate: the role builds and operates agents, refines their behavior from usage, evaluates them as models or data change, and adapts solutions as tools evolve.",
+        "reason": "A clear operations-focused builder mandate: the role defines where AI can reshape the function’s work, personally creates working agent solutions without waiting for engineering, and remains accountable for their performance and adoption. Engineering provides production delivery and architecture, while this role owns business context, no-code building, and outcomes.",
+        "evidence": [
+          " You are the person responsible for identifying where AI can fundamentally change how your org operates, partnering with your Executive Sponsor to align on the biggest challenges, and driving measurable outcomes against them.",
+          " Build AI agents using no-code and low-code platforms (e.g.",
+          " Those that aren't, you own. Either way, you're accountable for their performance: tracking KPIs, running evaluations after model or data changes, and iterating based on what you learn."
+        ]
+      }
+    },
+    {
+      "key": "indeed",
+      "company": "Indeed Flex",
+      "title": "Product Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "operations",
+          "software_engineering"
+        ],
+        "engineering": "swe_required",
+        "qualifications": "Requires experience building and shipping software, with API, event, and CRM implementation ability. A CS background is only a nice-to-have; the posting explicitly welcomes student work and side projects.",
+        "product": "Owns assigned worker-side messaging systems: frames problems, designs flows, prioritizes improvements, and follows outcomes and feedback into roadmap contributions.",
+        "operations": "Translates Operations and CRM needs into reliable worker communications, working with those teams and learning service workflows through discovery.",
+        "building": "Personally designs, codes, and ships production software for Braze integrations and worker-app transactional communications, with end-to-end quality and post-launch follow-up.",
+        "ai": "Uses AI coding tools to move from idea through prototype, implementation, debugging, and production shipping.",
+        "reason": "A clear product-and-operations builder mandate: the person investigates worker and internal workflow problems, shapes messaging solutions, and personally ships production code. AI coding tools are explicitly part of the idea-to-production workflow; this is central work, not merely prototyping. Engineering collaboration and senior guidance do not displace individual ownership.",
+        "evidence": [
+          "\n Own day-to-day Braze integration work: frame the problem, design the flow, ship the change, and follow up after launch.",
+          "\n Ship end-to-end with Engineering, CRM, and Operations; the deliverable is production code.",
+          "\n Use AI tools to go from idea to production quickly: prototype the flow, then implement and ship it."
+        ]
+      }
+    },
+    {
+      "key": "mangoapps",
+      "company": "MangoApps",
+      "title": "Product Manager, AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "product_builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "The role combines product-management fundamentals with hands-on AI-assisted development. It asks for judgment on what to build directly and when to involve engineering, design, or security; no prior software-engineering career is specified.",
+        "product": "Owns features from customer discovery through launch, adoption, and improvement; uses customer needs, feedback, usage, and business priorities to choose what to build and measures outcomes.",
+        "operations": "Not a primary operations mandate; internal tools and workflow improvements are among the possible deliverables.",
+        "building": "Personally uses AI-assisted tools to create functional prototypes, product improvements, internal tools, and smaller production changes; tests the work and remains accountable for customer outcomes.",
+        "ai": "AI-assisted development tools, including Claude Code, are explicitly used to explore ideas, build and iterate on working solutions, and contribute to production-ready features.",
+        "reason": "Clear product-builder mandate: the PM shapes problems and solutions through customer discovery and product judgment, directly builds and tests working features with AI tools, and owns outcomes through launch, adoption, and iteration. Engineering collaboration for larger work does not displace the personal building responsibility.",
+        "evidence": [
+          " Develop a deep understanding of customer needs, workflows, pain points, and business goals.",
+          "\n Use AI-assisted development tools to create functional prototypes, product improvements, internal tools, and smaller production changes.",
+          "\n Stay accountable for the customer outcome, not just the requirements or initial release."
+        ]
+      }
+    },
+    {
+      "key": "oath",
+      "company": "Oath",
+      "title": "Product Manager",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "product_builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 9–10+ years as a product manager, startup experience, strong organization, and comfort building with AI tools. No prior software-engineering career requirement is stated.",
+        "product": "Shapes and scopes product bets, sets goals and metrics with the audit and verification team, and runs experiments that inform iteration.",
+        "operations": "Owns delivery cadence and keeps engineering and design organized, on-task, and unblocked.",
+        "building": "Hands-on AI building is explicitly core: personally prototypes and ships features, agents, and workflows, then tests, learns, and iterates.",
+        "ai": "Uses Claude Code and other AI tools to build and test ideas directly, while using AI daily to increase throughput.",
+        "reason": "This is a product-focused builder mandate, not merely a PM role that prototypes on the side: personal AI-assisted creation and shipping are stated as core work. The PM also shapes bets, sets success measures, and runs an experimentation loop tied to business outcomes. Engineering coordination is part of the role but does not displace direct building.",
+        "evidence": [
+          " Prototype and ship AI features, agents, and workflows yourself with tools like Claude Code.",
+          "\n Shape and scope the work. Turn raw ideas into well-shaped, right-sized bets.",
+          "\n Drive business success. Set product goals aligned with the business and help deliver them."
+        ]
+      }
+    },
+    {
+      "key": "overjoy",
+      "company": "Overjoy",
+      "title": "Product Manager",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires customer-facing comfort, strong technical communication, use of AI coding tools to ship real things, and in-person work in NYC. Prior PM/APM or startup experience is only an extra point; no SWE career requirement is stated.",
+        "product": "Owns a core product area from customer discovery and prioritization through launch and measured outcomes, shaping what to build based on customer signal.",
+        "operations": "Not a primary operations mandate.",
+        "building": "Personally prototypes and ships small fixes with Claude Code, then partners with engineering and design to deliver and iterate on features.",
+        "ai": "Uses AI coding tools directly to create and ship working product fixes; the product itself supports AI agents doing wholesale sales work.",
+        "reason": "A clear builder’s PM mandate: the person identifies customer problems, has autonomy to shape solutions, personally builds and ships small fixes using Claude Code, and owns launches and measured outcomes. Engineering partnership complements rather than replaces that direct building.",
+        "evidence": [
+          "\n You&#x27;ll work close to customers and close to the code: talking to brands to understand their real problems, turning what you hear into crisp specs, prototyping fixes yourself in Claude Code, and partnering with engineering to ship.",
+          "\n What You&#x27;ll Own\n Own a product area end-to-end — discovery, spec, prioritization, launch, and the metrics that prove it worked\n",
+          " Prototype and ship small fixes yourself using Claude Code, without waiting on engineering\n"
+        ]
+      }
+    },
+    {
+      "key": "rillet",
+      "company": "Rillet",
+      "title": "Business Operations, AI Builder",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "ai_transformation"
+        ],
+        "engineering": "explicit_non_swe_route",
+        "qualifications": "Seeks 3–5 years, ideally MBB or VC/PE experience followed by startup operating experience personally building AI-powered systems, tools, or processes. Candidates should explain the problem, approach, stack, and measured outcome; no SWE employment requirement is stated.",
+        "product": "Partners with function leaders to define AI transformation and identify step-change changes to how their teams work.",
+        "operations": "Owns transformation with Sales, Partnerships, Customer Success, and Deployment from problem framing through daily use and adoption; also handles high-visibility BizOps analysis and company projects.",
+        "building": "The posting explicitly calls for hands-on prior building of AI-powered systems, tools, or processes and end-to-end execution to solutions teams run daily. AI engineering is a collaborator, not the sole implementer.",
+        "ai": "AI is central: applies current AI capabilities to real workflows, transforms operating practices beyond small automations, and works with AI engineering on broader infrastructure.",
+        "reason": "A clear operations-builder mandate: the hire helps define team problems and transformation, personally brings AI-powered systems and processes into operation, and owns adoption until teams change how they work. BizOps projects supplement rather than displace that core mandate; demanding experience preferences do not change the role fit.",
+        "evidence": [
+          "\n Who We Need\n Rillet is looking for a Business Operations hire who builds with AI, not one who just talks about it.",
+          "\n What You'll Do\n Partner with function leaders to define AI transformation for their team.",
+          "\n Own execution end-to-end, from framing the problem to something the team runs on daily."
+        ]
+      }
+    },
+    {
+      "key": "sharkninja",
+      "company": "SharkNinja",
+      "title": "Director, Finance AI & Automation",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "operations_builder",
+        "focus": [
+          "operations",
+          "software_engineering"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires a finance-and-technology blend, end-to-end financial process ownership, production agent-building experience, public-company controls knowledge, and technical delivery leadership. Python, SQL, agentic coding, and production engineering skills are explicitly required; this is a demanding technical profile, separate from role fit.",
+        "product": "Prioritizes finance use cases by financial impact, identifies and sequences opportunities with finance leaders, and commits to measurable enterprise outcomes.",
+        "operations": "Owns AI and automation across FP&A, Accounting, Audit/SOX, Tax, and Treasury, including production deployment, adoption, controls, auditability, and quantified business value.",
+        "building": "Personally builds and ships production agents and automations, owns the roadmap through deployment and outcomes, sets engineering standards, and leads a small technical team.",
+        "ai": "Builds and deploys agentic workflows using orchestration, tool use, LLM application development, evaluation, guardrails, and an agentic coding environment.",
+        "reason": "Clear operations-focused builder mandate: personally creates and deploys production AI agents and automations, chooses and prioritizes financially material problems with stakeholders, and owns adoption, controls, and measured business outcomes. Director seniority and substantial technical requirements do not negate fit.",
+        "evidence": [
+          "\n As the Director, Finance AI & Automation , you will own the design, build and deployment of the AI capability inside a global Finance organization at a nearly $8 billion consumer products company.",
+          " You will personally build, production AI agents and automations that change how Finance plans, closes, controls, and decides.",
+          " Help drive the Finance AI and automation roadmap end to end, from opportunity identification through production deployment, adoption, and measured business outcome."
+        ]
+      }
+    },
+    {
+      "key": "shipbob",
+      "company": "ShipBob",
+      "title": "Senior AI Product Builder, Inventory Experience",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 5+ years in product management, product engineering, or equivalent, professional hands-on AI-tool use, and technical fluency reading data models and API contracts and evaluating generated code. Track record of shipping working prototypes or production code; logistics or commerce experience preferred.",
+        "product": "Owns the Product and Inventory Experience domain end to end: conducts discovery, prioritizes the roadmap, defines product contracts and success metrics, and makes rollout-or-kill decisions based on outcomes.",
+        "operations": "Owns product workflows and data quality for catalog, inventory, and receiving surfaces that underpin fulfillment operations.",
+        "building": "Personally uses an AI-native development toolchain to generate code against the production repository, builds prototypes, reviews generated code, and ships production PRs with outcome measurement.",
+        "ai": "AI tools support discovery and metrics analysis; AI-native development tools are used to generate working code, prototype, and ship production changes.",
+        "reason": "A clear product-builder mandate: the role owns discovery and product decisions as well as the complete build loop, including AI-assisted implementation against the actual codebase, production PRs, and post-launch outcome decisions. Engineering collaboration and technical fluency are part of the role, not a reason to exclude it.",
+        "evidence": [
+          " \n As a Senior AI Product Builder at ShipBob, you own the full build loop for your product domain: discovery, story/specs, AI-augmented prototypes, and production-ready PRs.",
+          " You use the AI development toolchain (e.g., Claude Code, Driver.ai) to understand ShipBob’s codebase architecture, generate working code against the actual repo, and ship with minimum engineering rework.",
+          " \n What you'll do:  \n Own the full product loop end-to-end: AI-augmented discovery → story/spec → prototype → production PR → outcome measurement."
+        ]
+      }
+    },
+    {
+      "key": "veho",
+      "company": "Veho",
+      "title": "Director of Product, Consumer & Support (AI Builder)",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "builder",
+        "focus": [
+          "product",
+          "operations"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Requires 8+ years across product management, product engineering, or a hybrid; experience shipping consumer products at scale and designing and building AI products in production. Explicitly says professional engineering experience is not required, but expects independent AI-assisted building and a strong technical point of view.",
+        "product": "Owns the consumer delivery experience end to end, including tracking, notifications, feedback, and measurement. Shapes interactive consumer surfaces and connects product choices to delivery defect reduction and customer experience.",
+        "operations": "Reimagines support through AI-powered workflows, tooling architecture, and build-versus-buy decisions, with responsibility for improving resolution and satisfaction while reducing interaction costs.",
+        "building": "Personal AI-assisted building is central: independently turns ideas into working solutions and builds and ships consumer systems and support workflows into production, iterating against measurable outcomes.",
+        "ai": "Uses AI tools such as Claude Code to build; creates production AI-powered support workflows and AI products. Success is measured through consumer and support satisfaction, resolution, deflection, delivery issues, and cost.",
+        "reason": "Clear product-and-operations builder mandate, not a conventional PM role: owns consumer and support outcomes, makes product and technical decisions, and is explicitly expected to use AI tools to personally build and ship production solutions. Seniority and product-management experience are requirements, not fit vetoes.",
+        "evidence": [
+          " You will own the consumer delivery experience end-to-end — tracking, notifications, delivery feedback, and the measurement systems that tell us whether we're getting better.",
+          " You will build and ship AI-powered support workflows that increase first-contact resolution while increasing customer satisfaction and reducing cost per interaction.",
+          " You use AI tools like Claude Code to turn ideas into working solutions without relying heavily on others."
+        ]
+      }
+    },
+    {
+      "key": "within",
+      "company": "Within",
+      "title": "Senior AI Product Manager",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "fit": "product_builder",
+        "focus": [
+          "product"
+        ],
+        "engineering": "technical_fluency",
+        "qualifications": "Seeks 5–8 years in product management, preferably in B2B SaaS or AI platforms, with a record of shipping technically complex products to measurable outcomes. Engineering employment is explicitly not required; technical credibility and basic PR capability are expected.",
+        "product": "Owns real AI product areas end to end: customer discovery, problem definition, prioritization, solution decisions, and measurable outcomes. Direct customer feedback and UX judgment inform iteration.",
+        "operations": "Not primarily an internal operations mandate; the role owns customer-facing enterprise AI product surfaces and works across engineering, design, and GTM.",
+        "building": "Personally builds AI-tooling prototypes to resolve product questions, then drives features through delivery and launch. Prototypes support a broader hands-on product ownership mandate.",
+        "ai": "Uses AI tooling to build and test working prototypes; owns AI experiences and accounts for probabilistic behavior, model failure, evaluation, and feedback loops.",
+        "reason": "Clear product-builder mandate: the person defines meaningful problems, owns shipping product areas, builds working prototypes with AI tooling, and remains accountable through launch and measured outcomes. Engineering collaboration and technical fluency are expected, but production-grade coding or a prior engineering career is not required.",
+        "evidence": [
+          " You’ll own meaningful product areas end to end, from discovery through delivery, working directly with our CTO, engineering and design leads, and GTM, with the autonomy to define a problem, prototype the answer yourself, and ship it.",
+          " Build working prototypes with AI tooling to validate a direction before engineering commits.",
+          "\n The outcome . Define success metrics up front, instrument, and close the loop on everything you ship, then present it to the whole team and to customers with clarity and confidence."
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "yes": {
+      "tested": 29,
+      "positive": 27,
+      "negative": 2,
+      "uncertain": 0,
+      "failed": 0
+    },
+    "no": {
+      "tested": 4,
+      "positive": 0,
+      "negative": 4,
+      "uncertain": 0,
+      "failed": 0
+    }
+  },
+  "budget": {
+    "reserved_usd": 0.5917666,
+    "uncached_usage_estimate_usd": 0.0819342
+  }
+}

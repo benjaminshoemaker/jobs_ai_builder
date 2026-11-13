@@ -1,0 +1,441 @@
+{
+  "cutoff": "2026-10-28T07:00:00.000Z",
+  "collectedAt": "2026-10-29T04:35:21.688Z",
+  "requests": 20,
+  "stats": [
+    {
+      "board": "ashby:vanta",
+      "total": 79,
+      "unseen": 79,
+      "afterCutoff": 1,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:oath",
+      "total": 6,
+      "unseen": 4,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:alt",
+      "total": 22,
+      "unseen": 21,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:within.ai",
+      "error": "[\n  {\n    \"validation\": \"regex\",\n    \"code\": \"invalid_string\",\n    \"message\": \"Invalid\",\n    \"path\": []\n  }\n]"
+    },
+    {
+      "board": "ashby:rillet",
+      "total": 41,
+      "unseen": 38,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:trm-labs",
+      "total": 115,
+      "unseen": 114,
+      "afterCutoff": 2,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:faros-ai",
+      "total": 12,
+      "unseen": 8,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:veho-tech-inc",
+      "total": 55,
+      "unseen": 52,
+      "afterCutoff": 1,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:g2",
+      "total": 50,
+      "unseen": 49,
+      "afterCutoff": 2,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:sevenai",
+      "total": 41,
+      "unseen": 40,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:sekai",
+      "total": 7,
+      "unseen": 6,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:openart",
+      "total": 30,
+      "unseen": 29,
+      "afterCutoff": 1,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:legionhealth",
+      "total": 157,
+      "unseen": 156,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "ashby:CloudZero",
+      "total": 14,
+      "unseen": 13,
+      "afterCutoff": 0,
+      "dateUnknown": 0
+    },
+    {
+      "board": "greenhouse:figma",
+      "total": 140,
+      "unseen": 136,
+      "afterCutoff": 0,
+      "dateUnknown": 136
+    },
+    {
+      "board": "greenhouse:babylist",
+      "total": 38,
+      "unseen": 35,
+      "afterCutoff": 0,
+      "dateUnknown": 35
+    },
+    {
+      "board": "greenhouse:axiad",
+      "total": 8,
+      "unseen": 7,
+      "afterCutoff": 0,
+      "dateUnknown": 7
+    },
+    {
+      "board": "greenhouse:apolloio",
+      "total": 54,
+      "unseen": 53,
+      "afterCutoff": 0,
+      "dateUnknown": 53
+    },
+    {
+      "board": "greenhouse:earnin",
+      "total": 27,
+      "unseen": 26,
+      "afterCutoff": 0,
+      "dateUnknown": 26
+    },
+    {
+      "board": "greenhouse:opensesame",
+      "total": 21,
+      "unseen": 20,
+      "afterCutoff": 0,
+      "dateUnknown": 20
+    }
+  ],
+  "supplement": {
+    "requests": 7,
+    "cap": 11,
+    "stats": [
+      {
+        "board": "greenhouse:figma",
+        "firstPublishedAvailable": true,
+        "newlyPublished": 3,
+        "updatedNeedingFirstPublished": [],
+        "sampleKeys": [
+          "absolute_url",
+          "data_compliance",
+          "internal_job_id",
+          "location",
+          "metadata",
+          "id",
+          "updated_at",
+          "requisition_id",
+          "title",
+          "company_name",
+          "first_published",
+          "language",
+          "application_deadline",
+          "content",
+          "departments",
+          "offices",
+          "ai_disclaimer",
+          "include_ai_disclaimer",
+          "ai_opt_out_request_url"
+        ]
+      },
+      {
+        "board": "greenhouse:babylist",
+        "firstPublishedAvailable": true,
+        "newlyPublished": 0,
+        "updatedNeedingFirstPublished": [],
+        "sampleKeys": [
+          "absolute_url",
+          "data_compliance",
+          "internal_job_id",
+          "location",
+          "metadata",
+          "id",
+          "updated_at",
+          "requisition_id",
+          "title",
+          "company_name",
+          "first_published",
+          "language",
+          "application_deadline",
+          "content",
+          "departments",
+          "offices",
+          "ai_disclaimer",
+          "include_ai_disclaimer",
+          "ai_opt_out_request_url"
+        ]
+      },
+      {
+        "board": "greenhouse:axiad",
+        "firstPublishedAvailable": true,
+        "newlyPublished": 0,
+        "updatedNeedingFirstPublished": [],
+        "sampleKeys": [
+          "absolute_url",
+          "data_compliance",
+          "internal_job_id",
+          "location",
+          "metadata",
+          "id",
+          "updated_at",
+          "requisition_id",
+          "title",
+          "company_name",
+          "first_published",
+          "language",
+          "application_deadline",
+          "content",
+          "departments",
+          "offices",
+          "ai_disclaimer",
+          "include_ai_disclaimer",
+          "ai_opt_out_request_url"
+        ]
+      },
+      {
+        "board": "greenhouse:apolloio",
+        "firstPublishedAvailable": true,
+        "newlyPublished": 0,
+        "updatedNeedingFirstPublished": [],
+        "sampleKeys": [
+          "absolute_url",
+          "data_compliance",
+          "education",
+          "internal_job_id",
+          "location",
+          "metadata",
+          "id",
+          "updated_at",
+          "requisition_id",
+          "title",
+          "company_name",
+          "first_published",
+          "language",
+          "application_deadline",
+          "content",
+          "departments",
+          "offices",
+          "ai_disclaimer",
+          "include_ai_disclaimer",
+          "ai_opt_out_request_url"
+        ]
+      },
+      {
+        "board": "greenhouse:earnin",
+        "firstPublishedAvailable": true,
+        "newlyPublished": 1,
+        "updatedNeedingFirstPublished": [],
+        "sampleKeys": [
+          "absolute_url",
+          "data_compliance",
+          "internal_job_id",
+          "location",
+          "metadata",
+          "id",
+          "updated_at",
+          "requisition_id",
+          "title",
+          "company_name",
+          "first_published",
+          "language",
+          "application_deadline",
+          "content",
+          "departments",
+          "offices",
+          "ai_disclaimer",
+          "include_ai_disclaimer",
+          "ai_opt_out_request_url"
+        ]
+      },
+      {
+        "board": "greenhouse:opensesame",
+        "firstPublishedAvailable": true,
+        "newlyPublished": 0,
+        "updatedNeedingFirstPublished": [],
+        "sampleKeys": [
+          "absolute_url",
+          "data_compliance",
+          "education",
+          "internal_job_id",
+          "location",
+          "metadata",
+          "id",
+          "updated_at",
+          "requisition_id",
+          "title",
+          "company_name",
+          "first_published",
+          "language",
+          "application_deadline",
+          "content",
+          "departments",
+          "offices",
+          "ai_disclaimer",
+          "include_ai_disclaimer",
+          "ai_opt_out_request_url"
+        ]
+      },
+      {
+        "board": "ashby:within.ai",
+        "newlyPublished": 0
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "title": "Deployment Strategist, National Security",
+      "company": "trm-labs",
+      "url": "https://jobs.ashbyhq.com/trm-labs/369c6fb3-6214-478e-870e-f57d3b234481",
+      "location": "United States",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T21:47:12.070+00:00",
+      "board": "ashby:trm-labs",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "Associate GTM Engineer",
+      "company": "g2",
+      "url": "https://jobs.ashbyhq.com/g2/187a60bb-94fd-4127-bddd-a8c26ae6dec1",
+      "location": "Chicago, IL",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T14:32:21.352+00:00",
+      "board": "ashby:g2",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "Staff Product Designer, Activation",
+      "company": "vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/7d9922bb-2d0e-4833-bc4e-df65dc57d232",
+      "location": "Remote U.S.",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T16:20:47.153+00:00",
+      "board": "ashby:vanta",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "Enablement Manager, Public Sector",
+      "company": "trm-labs",
+      "url": "https://jobs.ashbyhq.com/trm-labs/56b079fd-2ca5-4a65-8f3f-e63ae8073d36",
+      "location": "United States; London, United Kingdom; EMEA",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T21:28:38.566+00:00",
+      "board": "ashby:trm-labs",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "Warehouse Associate II, Ground Operations",
+      "company": "veho-tech-inc",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/5770ec09-a538-4f2f-958a-5dbfc9eaddcd",
+      "location": "Highland Park, MI",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T12:45:18.856+00:00",
+      "board": "ashby:veho-tech-inc",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "B2B Lifecycle Marketing Manager",
+      "company": "openart",
+      "url": "https://jobs.ashbyhq.com/openart/069aefb9-3103-4e07-9485-d5f66f5f4d01",
+      "location": "San Carlos, California, USA",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T17:49:15.759+00:00",
+      "board": "ashby:openart",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "Account Executive, SMB - EMEA/AMER",
+      "company": "g2",
+      "url": "https://jobs.ashbyhq.com/g2/c6f01dd2-5107-4462-bd1a-58d28480c6f2",
+      "location": "Bengaluru",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T07:39:44.903+00:00",
+      "board": "ashby:g2",
+      "dateBasis": "last_published_may_include_reposts"
+    },
+    {
+      "title": "Manager, Software Engineering - UX Platform",
+      "company": "figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6237757004?gh_jid=6237757004",
+      "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.092Z",
+      "postedAt": "2026-10-28T18:56:10-04:00",
+      "board": "greenhouse:figma",
+      "dateBasis": "first_published"
+    },
+    {
+      "title": "PhD Intern, Security Engineer (2027)",
+      "company": "figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6238015004?gh_jid=6238015004",
+      "location": "San Francisco, CA \u2022 New York, NY",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.092Z",
+      "postedAt": "2026-10-28T20:08:03-04:00",
+      "board": "greenhouse:figma",
+      "dateBasis": "first_published"
+    },
+    {
+      "title": "Sales Operations Manager",
+      "company": "figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6235320004?gh_jid=6235320004",
+      "location": "San Francisco, CA \u2022 New York, NY",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.092Z",
+      "postedAt": "2026-10-28T19:11:24-04:00",
+      "board": "greenhouse:figma",
+      "dateBasis": "first_published"
+    },
+    {
+      "title": "Head of Communications",
+      "company": "earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8329516",
+      "location": "Mountain View, US",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.370Z",
+      "postedAt": "2026-10-28T12:39:32-04:00",
+      "board": "greenhouse:earnin",
+      "dateBasis": "first_published"
+    }
+  ]
+}

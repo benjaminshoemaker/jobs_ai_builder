@@ -1,0 +1,25 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "pnpm build",
+  "regions": ["sfo1"],
+  "schedules": {
+    "builder-daily-intake": {
+      "schedule": "45 6 * * *",
+      "timezone": "America/Los_Angeles",
+      "path": "/api/internal/daily?action=intake",
+      "requestMethod": "GET"
+    },
+    "builder-daily-digest": {
+      "schedule": "0 8 * * *",
+      "timezone": "America/Los_Angeles",
+      "path": "/api/internal/daily?action=digest",
+      "requestMethod": "GET"
+    },
+    "builder-daily-watchdog": {
+      "schedule": "0 9 * * *",
+      "timezone": "America/Los_Angeles",
+      "path": "/api/internal/daily?action=watchdog",
+      "requestMethod": "GET"
+    }
+  }
+}

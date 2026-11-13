@@ -1,0 +1,672 @@
+{
+  "status": "source_frozen_before_predictions",
+  "promptVersion": "builder-fit-v10",
+  "policyHash": "521562aa787cafa56c2afa88e572d7966b8804cd6a7657fb6b08b8a0e0faca71",
+  "targets": [
+    {
+      "company": "Artera",
+      "provider": "lever",
+      "slug": "artera-2",
+      "id": "eae88c70-fbf5-4525-890c-d3f9377418b0"
+    },
+    {
+      "company": "BioRender",
+      "provider": "cached_ashby",
+      "slug": "biorender-inc",
+      "id": "6e7f4b8d-f068-4d11-964d-da74b1c53b8c"
+    },
+    {
+      "company": "Fluidstack",
+      "provider": "ashby",
+      "slug": "fluidstack",
+      "id": "0337be3a-3844-4832-9078-b098bdefd736"
+    },
+    {
+      "company": "Alt",
+      "provider": "ashby",
+      "slug": "alt",
+      "id": "f049b9f7-26eb-4f92-8ca6-6ab9ae31c0f1"
+    },
+    {
+      "company": "Level AI",
+      "provider": "ashby",
+      "slug": "level-ai",
+      "id": "ba2b8d96-a353-4cbe-a3ef-0cb749781dcd"
+    },
+    {
+      "company": "Kettle",
+      "provider": "greenhouse",
+      "slug": "kettle",
+      "id": "8885210002"
+    },
+    {
+      "company": "PlanetScale",
+      "provider": "greenhouse",
+      "slug": "planetscale",
+      "id": "4463390009"
+    },
+    {
+      "company": "Ramp",
+      "provider": "ashby",
+      "slug": "ramp",
+      "id": "b68aca53-16c0-4ced-ab1d-e8beb2940b4f"
+    },
+    {
+      "company": "MongoDB",
+      "provider": "cached_greenhouse",
+      "slug": "mongodb",
+      "id": "8129885"
+    },
+    {
+      "company": "OnePay",
+      "provider": "ashby",
+      "slug": "oneapp",
+      "id": "fbc0f334-5613-41fc-b5d7-87f2e5a20bee"
+    },
+    {
+      "company": "HomeSmart Services",
+      "provider": "cached_bamboohr",
+      "slug": "homesmartservices",
+      "id": "1116"
+    },
+    {
+      "company": "Onos Health",
+      "provider": "ashby",
+      "slug": "onoshealth",
+      "id": "58d36bae-5153-471a-9c8c-2094339be001"
+    }
+  ],
+  "selection": "Purposive U.S. challenge batch: title-ranked unreviewed saved candidates plus employer-verified BioRender, MongoDB and HomeSmart leads. No prior model assessments used to select. Not representative discovery precision or recall. OnePay and MongoDB intentionally test title/mandate boundaries.",
+  "apiModelCalls": 0,
+  "maximumNewEmployerRequests": 9,
+  "checkedAt": "2026-10-30T00:41:35.227Z",
+  "requests": [
+    {
+      "url": "https://api.lever.co/v0/postings/artera-2/eae88c70-fbf5-4525-890c-d3f9377418b0?mode=json",
+      "startedAt": "2026-10-30T00:41:35.229Z",
+      "status": 200
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/fluidstack?includeCompensation=true",
+      "startedAt": "2026-10-30T00:41:35.526Z",
+      "status": 200
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/alt?includeCompensation=true",
+      "startedAt": "2026-10-30T00:41:35.654Z",
+      "status": 200
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/level-ai?includeCompensation=true",
+      "startedAt": "2026-10-30T00:41:35.684Z",
+      "status": 200
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/kettle/jobs/8885210002",
+      "startedAt": "2026-10-30T00:41:35.918Z",
+      "status": 200
+    },
+    {
+      "url": "https://boards-api.greenhouse.io/v1/boards/planetscale/jobs/4463390009",
+      "startedAt": "2026-10-30T00:41:36.061Z",
+      "status": 200
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/ramp?includeCompensation=true",
+      "startedAt": "2026-10-30T00:41:36.111Z",
+      "status": 200
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/oneapp?includeCompensation=true",
+      "startedAt": "2026-10-30T00:41:36.204Z",
+      "status": 200
+    },
+    {
+      "url": "https://api.ashbyhq.com/posting-api/job-board/onoshealth?includeCompensation=true",
+      "startedAt": "2026-10-30T00:41:36.237Z",
+      "status": 200
+    }
+  ],
+  "cachedReads": [
+    "/tmp/builder-resolved-0.json",
+    "/tmp/builder-resolved-1.json",
+    "/tmp/builder-fresh-probe-3.txt"
+  ],
+  "probes": "Additional employer probes were public read-only requests: BioRender old slug 404, company careers page resolved biorender-inc; HomeSmart page/list/detail; OneDigital detail API 403 and excluded. No closure inferred from access failure.",
+  "sources": [
+    {
+      "reviewId": "T01",
+      "company": "Artera",
+      "title": "Associate AI Builder",
+      "url": "https://jobs.lever.co/artera-2/eae88c70-fbf5-4525-890c-d3f9377418b0",
+      "sourceUrl": "https://api.lever.co/v0/postings/artera-2/eae88c70-fbf5-4525-890c-d3f9377418b0?mode=json",
+      "provider": "lever",
+      "employerPostingId": "eae88c70-fbf5-4525-890c-d3f9377418b0",
+      "checkedAt": "2026-10-30T00:44:23.283Z",
+      "postedAt": "2026-07-31T00:16:53.169Z",
+      "location": {
+        "commitment": "Full Time",
+        "department": "AI Service Squad",
+        "location": "Seattle, Washington",
+        "team": "AI Builders",
+        "allLocations": [
+          "Seattle, Washington",
+          "Santa Barbara, California",
+          "Kansas City, Missouri"
+        ],
+        "workplaceType": "onsite"
+      },
+      "compensation": {
+        "min": 80000,
+        "max": 140000,
+        "currency": "USD",
+        "interval": "per-year-salary"
+      },
+      "description": "ABOUT ARTERA \n Our Mission: Make healthcare #1 in customer service. \n What We Deliver: Artera is an agentic company strengthening how healthcare providers communicate and care for patients. As an agentic partner, we bring over a decade of healthcare experience to address urgent workflows from day one and build custom solutions as healthcare providers’ needs evolve. Trusted by 1,000+ specialties, FQHCs, health systems, and federal agencies, Artera strengthens and protects and enhances patient relationships across every interaction - from intake and scheduling to referral management, post-visit care, and more.\n Hear from our CEO , Guillaume de Zwirek, about why we are standing at the edge of the biggest technological shift in healthcare’s history! \n Our award-winning culture: Our award-winning culture: Since founding in 2015, Artera has consistently been recognized for its innovative technology, business growth, and named a top place to work. Examples of these accolades include: Inc. 5000 Fastest Growing Private Companies (2020, 2021, 2022, 2023, 2024); Deloitte Technology Fast 500 (2021, 2022, 2023, 2024, 2025); Built In Best Companies to Work For (2021, 2022, 2023, 2024, 2025, 2026). Artera has also been recognized by Forbes as one of “America’s Best Startup Employers,” Newsweek as one of the “World’s Best Digital Health Companies,” and named one of the top “44 Startups to Bet your Career on in 2024” by Business Insider. \n Applicants must be currently authorized and have the ability to provide proof of full-time, long-term authorization to work in the United States. We are unable to provide visa sponsorship or support visa transfers now or in the future. \n ABOUT THE OPPORTUNITY \n Artera is hiring an Associate AI Builder to build the agentic systems that deliver exceptional patient experiences for our customers — scheduling, referral coordination, medication refills, billing, payment estimation and more. \n You'll be a contributing builder inside a customer-facing squad bringing AI-native fluency in delivering end-to-end on your customers’ needs — owning initiatives from customer discovery through production operation, onboarding new customers onto what you build, and shipping enhancements that keep pace with the technical possibilities for a named subset of our provider customers. Your creativity should be boundless, your desire to deliver world class solutions unmatched, and your initiative and accountability to those outcomes as a new bar for our customers they themselves aspire to. \n At this level, you'll support/own customer outcomes independently with supervision, bringing the curiosity of a product manager, the discipline of a project manager, and the agentic fluency of an engineer to your work. You'll develop real subject-matter expertise and long term relationships with senior healthcare executives, and internally teach and support newer builders and experiment and advocate for novel agentic techniques that make every Artera customer even more successful. \n This role supports a federal-facing product and is considered essential to secure operations. Candidates must meet eligibility for a government background check and comply with organizational security policies and federal data protection standards. The position includes responsibilities related to secure access, incident response, and operational continuity. Ongoing training and adherence to compliance requirements will be required.\n OUR APPROACH TO WORK LOCATION \n At Artera, we believe the best work happens when people are truly connected. Our AI services model has shown what’s possible when small, focused teams move fast together — the speed of collaboration, pace of career growth, and quality of what we build can become stronger when teams share space. As we grow, we want every new teammate to feel part of an in-person community from day one.\n That’s why we are focusing our U.S. hiring in three cities, where we are investing in offices and building strong local teams:\n Santa Barbara, CA (Our HQ)\n Seattle, WA\n Kansas City, KS/MO\n Unless a role’s posting states otherwise, new U.S. roles are based in one of these three cities, and candidates should reside in (or be willing to relocate to) one of these areas. Each location follows an in-person schedule that reflects how our local teams work best; we’ll walk you through what to expect for your specific role and city during the interview process.\n Focusing on offices and hiring in a few locations, rather than spreading thin across many cities, lets us invest deeply in each one so every team has real community, mentorship, and momentum in person.\n WORKING AT ARTERA \n Company benefits - Full health benefits (medical, dental, and vision), flexible spending accounts, company paid life insurance, company paid short-term & long-term disability, company equity, voluntary benefits, 401(k) and more! \n Career development - Manager development resources, employee development funds \n Generous time off - Company holidays, Winter & Summer break, and flexible time off \n Employee Resource Groups (ERGs) - We believe that everyone should belong at their workplace. Our ERGs are available for identifying employees or allies to join. \n EQUAL EMPLOYMENT OPPORTUNITY (EEO) STATEMENT \n Artera is an Equal Opportunity Employer and is committed to fair and equitable hiring practices. All hiring decisions at Artera are based on strategic business needs, job requirements, and individual qualifications. All candidates are considered without regard to race, color, religion, gender, sexual orientation, gender identity, national origin, age, disability, genetics, protected veteran status, or any other protected status.\n Affirmative Action Plan: To review our company’s Affirmative Action Notice, please click here to view our Affirmative Action Notice .\n Know Your Rights: To view your rights as an applicant under federal equal employment opportunity laws, please view the official EEOC poster: Know Your Rights: Workplace Discrimination is Illegal .\n In compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required employment eligibility verification form upon hire.\n Artera is committed to providing employees with a work environment free of discrimination and harassment; Artera will not tolerate discrimination or harassment of any kind. Artera provides reasonable accommodations for applicants and employees in compliance with state and federal laws. If you need an accommodation, please reach out to hr@artera.io.\n DATA PRIVACY \n Artera values your privacy. By submitting your application, you consent to the processing of your personal information provided in conjunction with your application. For more information please refer to our Privacy Policy . \n SECURITY REQUIREMENTS \n All employees are responsible for protecting the confidentiality, integrity, and availability of the organization’s systems and data, including safeguarding Artera’s sensitive information such as, Personal identifiable Information (PII) and Protected Health Information (PHI). Those with specific security or privacy responsibilities must ensure compliance with organizational policies, regulatory requirements, and applicable standards and frameworks by implementing safeguards, monitoring for threats, reporting incidents, and addressing data handling risks or breaches. \n Responsibilities\n Ownership: Own end-to-end delivery and realized outcomes for named customers. Represent Artera credibly in customer conversations, and raise the bar on the customer solutions the squad ships.\n Strategy: Identify customer pain and create a roadmap for solving their problems.\n Program Management: Align stakeholders, connect necessary data pipelines, and manage fast and painless onboarding onto our solutions.\n Agentic Development: Build novel solutions for named customers; translate their operational reality into technical solutions that you yourself architect and code with our internal agentic systems.\n Continuous Improvement: Instrument, monitor, and improve the reliability of what you ship; create enhancements based on what production actually tells you; participate in on-call where applicable.\n AI-native: your work across all dimensions will be inherently reliant on AI-native tools primarily using the CLI; which means you will own a greater breadth and volume of responsibility than a typical technologist.\n Domain Expertise: Develop and maintain subject-matter expertise in your customer segments (e.g. primary care, community health, orthopedics) and integration surface (e.g., scheduling, referrals, patient messaging, EHR/CCaaS).\n Mentorship: Mentor and onboard newer builders; review their work with a mindset for raising the bar on agentic techniques and customer orientation.\n Leadership: Contribute to squad-level prioritization and planning in partnership with the Head of Segment.\n Requirements\n 0 - 3 years of professional software engineering, data science, machine learning, product management, product design, or technical project management experience, or equivalent demonstrated output; open to fresh graduates!\n AI-native fluency with measurable leverage — ability to produce output on par with multiple traditional engineers using AI-native tools (e.g., Claude Code in the terminal) as the primary working environment; ability to learn new technology quickly \n Ability to work directly and productively with customers — onboarding them, owning the relationship, and translating customer conversations into technical decisions.\n Curiosity of a product manager and discipline of a project manager: asks \"why\" before \"how,\" scopes and sequences work, communicates status, and lands the work.\n Written and verbal communication sufficient to present complicated concepts to teammates, managers, and customers with the appropriate level of detail.\n Bonus\n Prior experience in healthcare technology, digital health, or patient-facing products.\n Hands-on experience building production agentic systems, RAG pipelines, or MCP-based tool integrations.\n Familiarity with HIPAA, HITRUST, or FedRAMP compliance considerations in builds.\n Experience with EHR integrations (Epic, athena, eClinicalWorks, NextGen) or call center / CCaaS integrations.\n Experience writing evals and quality benchmarks for LLM-driven systems.",
+      "sourceHash": "d2ea449f525dba2c403fd27977697a050f59cdd2c2d553a33ff477a16bb25149",
+      "normalizedHash": "1238eface7e7546eef92b5082d68769f8cd711d4ddba86a458c751f4477d5aed",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T02",
+      "company": "BioRender",
+      "title": "Product Builder",
+      "url": "https://jobs.ashbyhq.com/biorender-inc/6e7f4b8d-f068-4d11-964d-da74b1c53b8c",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/biorender-inc?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "6e7f4b8d-f068-4d11-964d-da74b1c53b8c",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-10-23T16:51:07.575+00:00",
+      "location": {
+        "primary": "Remote (Canada)",
+        "secondary": [
+          {
+            "location": "Remote (US)",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "California",
+                "addressCountry": "United States",
+                "addressLocality": "San Francisco"
+              }
+            }
+          }
+        ],
+        "workplaceType": "Remote",
+        "isRemote": true
+      },
+      "compensation": {
+        "compensationTierSummary": null,
+        "scrapeableCompensationSalarySummary": null,
+        "compensationTiers": [],
+        "summaryComponents": []
+      },
+      "description": "At BioRender, we’re on a mission to accelerate the world’s ability to learn, discover, and communicate science – transforming how knowledge is shared and making science open, collaborative, and easily understandable by all.\n We’re shaping the future of science communication and are looking for talented individuals to help bring this vision to life! 🚀\n BioRender is launching the Product Builder track – a new kind of role designed for scientists and researchers who have been building with AI. \n We're looking for scientists and researchers who understand the problem from the inside – who have run experiments, wrestled with figures, navigated lab workflows – and are now building tools to solve their problems.\n With AI-assisted coding, the gap between \"I have an idea\" and \"I built it\" has never been smaller. We think the best next generation of product builders will come from people with deep domain expertise and the curiosity to prototype fast. \n What you'll do \n Own discovery for your product area: identify unmet needs, and turn insights into a clear point of view on what to build\n Prototype new features and ideas yourself using AI-assisted tools like Claude, Cursor, or similar \n Ship things. Take ideas from concept to something real users are interacting with\n Work directly with BioRender’s founders\n What we're looking for \n A background in biology, life sciences, or a related research field\n Genuine familiarity with BioRender - you've used it, you have opinions about it\n Comfort with AI coding tools - you don't need to be a software expert but you’ve built a product that people use and spend your free time tinkering in Claude code and have collaborated with others via Github\n Something you've built: a script, a tool, a side project, a vibe-coded experiment that actually worked and people really use\n Curiosity, scrappiness, and the ability to move from idea to prototype quickly\n Why join us? \n We are mission-driven : we work collaboratively towards our shared vision of improving scientific communication and accelerating scientific discovery. BioRender figures have appeared in more than 54,000 publications!\n BioRender is loved by millions! We have a world-class NPS and a community of loyal fans and users in 200+ countries!\n Our company is backed by top investors and accelerators like Y Combinator, and we are on a growth trajectory comparable to many top-performing SaaS companies\n We’re remote-first with team members across Canada and the U.S., offering you the flexibility to work from anywhere.\n BioRender is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status. By submitting this application, you consent to the processing of your personal data by BioRender in accordance with GDPR and our Privacy Policy.",
+      "sourceHash": "8771d3d61b0a2de28e0e17984ceb6608105560c52be82146376e8c1448e0d248",
+      "normalizedHash": "e5e775ff280be78211f1177c737462eed1d493357b5b70c9b1b37e77f8082d9e",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T03",
+      "company": "Fluidstack",
+      "title": "Product Engineer, Business Operations",
+      "url": "https://jobs.ashbyhq.com/fluidstack/0337be3a-3844-4832-9078-b098bdefd736",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/fluidstack?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "0337be3a-3844-4832-9078-b098bdefd736",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-10-03T02:01:35.580+00:00",
+      "location": {
+        "primary": "San Francisco, CA",
+        "secondary": [],
+        "workplaceType": "OnSite",
+        "isRemote": false
+      },
+      "compensation": {
+        "compensationTierSummary": "$224K – $300K • Offers Equity",
+        "scrapeableCompensationSalarySummary": "$224K - $300K",
+        "compensationTiers": [
+          {
+            "id": "cd5be466-009e-4034-8421-fe525b43afb9",
+            "tierSummary": "$224K – $300K • Offers Equity",
+            "title": null,
+            "additionalInformation": null,
+            "components": [
+              {
+                "id": "2122dc5c-443f-4984-9a48-aa9fbbf19391",
+                "summary": "$224K – $300K",
+                "compensationType": "Salary",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": 224000,
+                "maxValue": 300000
+              },
+              {
+                "id": "418fd78f-2e0d-4b68-97f6-5d235e6fd53c",
+                "summary": "Offers Equity",
+                "compensationType": "EquityPercentage",
+                "interval": "NONE",
+                "currencyCode": null,
+                "minValue": null,
+                "maxValue": null
+              }
+            ]
+          }
+        ],
+        "summaryComponents": [
+          {
+            "compensationType": "Salary",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": 224000,
+            "maxValue": 300000
+          },
+          {
+            "compensationType": "EquityPercentage",
+            "interval": "NONE",
+            "currencyCode": null,
+            "minValue": null,
+            "maxValue": null
+          }
+        ]
+      },
+      "description": "About Fluidstack\n We exist to make humanity more free. For most of human history, you farmed or you starved. Technology gave people more time for the things they wanted to do, instead of things they had to do. Powerful AI will be the biggest lever for human choice we've ever built - but only if models are aligned with what humanity actually wants. There are groups building AI who don't share these goals. Whoever deploys frontier compute infrastructure fastest will decide whether AI expands human freedom or shrinks it. \n We're singularly focused on delivering 10 to 100s of GWs of compute faster than anyone else, rethinking every layer of the stack. We acquire power, design and build data centers, and operate them - with teams spanning hardware and software. Speed and scale are our key differentiators. Come be a part of building civilization-scale infrastructure for AI.\n We hire people who care deeply about this problem space. If that is you, please apply! \n How We Operate\n Be a barrel. Full autonomy. Own things end to end, take on scope without being asked, no permission required to operate outside your core role.\n Insane urgency. We drive everything forward as fast as possible.\n Reason from first principles. Challenge every assumption. Zero analogy thinking, no egos, the best idea wins.\n Love of the game. The frontier of AI is the most interesting problem of our time. We put in long hours at high intensity to push the frontier forward.\n Build something that actually matters. If you're going to spend your time, spend it on something that matters to the world.\n The Decision Team \n Examples of key problems the team is working on \n Automate the delivery of gigawatts. Every process that takes AI infrastructure from land to live compute becomes software: schedules, decisions, and todos generated from a live knowledge graph instead of chased by hand.\n Forward-deploy beside the experts. Product teams sit with quality managers, sourcing leads, and deployment engineers on factory floors and sites, and turn their judgment into systems that reach every unit.\n Deliver every supercomputer faster than the last. Dozens of concurrent projects feed one graph, so every lesson learned at one site becomes a preventive check at all of them.\n Role Scope \n Build the hiring machine as software. Hiring is the company's biggest bottleneck. Every role, seat, and interview loop already lives in one graph, and you take it the rest of the way: the recruiting system synced both directions, interviewer supply and load visible to every hiring manager, and onboarding generated the moment an offer is signed, so day one starts with the job instead of the checklist.\n Build the cash view the company runs on: today no system derives near term spend, so finance forecasts by hand and misses what construction already committed. You turn purchase orders, contract terms, and build milestones into an order schedule, a cash demand curve by month, and a payment schedule that recompute as procurement and construction move.\n Build one capital pipeline from approved budget to released capital to spent dollar, gated on build milestones the delivery system already verifies, with the proof chain behind every financing drawdown assembled automatically, so releasing nine figures takes a day of judgment and funding follows construction within days.\n Parse every MSA, change order, and side letter into obligations, prices, deadlines, penalties, and SLAs, so a delivery lead gets what we owe a customer at a site with the clause attached, a change order arrives with its legal and finance checks done, and the corpus of executed deals prices the next negotiation.\n Embed forward-deployed with finance, treasury, accounting, legal, and people teams through a close, a drawdown, a negotiation, and a hiring loop, and turn their approvals, contract terms, screens, and reconciliations into structured data and generated work, including a continuous close where capitalization and depreciation post as events the moment they happen.\n What We're Looking For \n The below is a starting point. We always make space for exceptional people, so if you don't fit this role exactly, tell us where you would . \n You've shipped production code in Go, Python, or TypeScript, and you pick up whatever language the problem demands.\n You've built real features on LLM APIs (OpenAI, Anthropic, or open-weight models), MCP servers, and agentic frameworks.\n You work daily with AI coding tools like Claude Code and Cursor, and you get agents doing useful work autonomously alongside you.\n You identify problems, design the solution, and ship it without waiting for direction or approval.\n You've moved fast under deadline while leaving foundations that other engineers extended after you moved on.\n You've earned credibility with experts outside engineering: finance leads, lawyers, recruiters, or auditors, and driven adoption of your software inside their real deadlines, like a working close calendar or an offer that has to go out today.\n Your product taste shows in what you've shipped: a controller, a recruiter, or a lawyer calls your interface obvious, and the workflow matches how their work actually happens.\n Bonus: ERP and fixed asset accounting. FP&A, cash forecasting, and capital planning. Structured finance or treasury operations. Contract lifecycle systems. ATS and HRIS integrations (Ashby, Greenhouse, Rippling, Workday). LLM extraction over legal and financial documents.\n Benefits: \n Competitive total compensation package (cash + equity)\n Health, dental, and vision insurance\n Retirement plan\n Generous PTO policy\n We are committed to pay equity and transparency.\n Fluidstack is an Equal Employment Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, sexual orientation, gender identity, disability and protected veterans’ status, or any other characteristic protected by law. Fluidstack will consider for employment qualified applicants with arrest and conviction records pursuant to applicable law.\n Applicant Privacy Notice \n AI Screening Notice \n Ashby Bias Audit \n You will receive a confirmation email once your application has successfully been accepted. If there is an error with your submission and you did not receive a confirmation email, please email careers@fluidstack.io with your resume/CV, the role you've applied for, and the date you submitted your application-- someone from our recruiting team will be in touch.",
+      "sourceHash": "d8a68ff4482e6f36964c269baf59a3d998b9c850962aaed0ca80de63a07311ee",
+      "normalizedHash": "5e396400b06c5fd8b8ccaec005d6a76e755e0970ce7489f142d74af31a991302",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T04",
+      "company": "Alt",
+      "title": "Lead Design Builder: Marketplace",
+      "url": "https://jobs.ashbyhq.com/alt/f049b9f7-26eb-4f92-8ca6-6ab9ae31c0f1",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/alt?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "f049b9f7-26eb-4f92-8ca6-6ab9ae31c0f1",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-08-27T19:36:23.816+00:00",
+      "location": {
+        "primary": "Remote",
+        "secondary": [],
+        "workplaceType": "Remote",
+        "isRemote": true
+      },
+      "compensation": {
+        "compensationTierSummary": "$200K – $245K • Offers Equity",
+        "scrapeableCompensationSalarySummary": "$200K - $245K",
+        "compensationTiers": [
+          {
+            "id": "0811b364-58be-42c5-9f9a-07852b559e24",
+            "tierSummary": "$200K – $245K • Offers Equity",
+            "title": null,
+            "additionalInformation": null,
+            "components": [
+              {
+                "id": "730283bf-f68d-4544-bd17-0f8e2934fdc6",
+                "summary": "$200K – $245K",
+                "compensationType": "Salary",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": 200000,
+                "maxValue": 245000
+              },
+              {
+                "id": "728608d1-7eb1-4aee-99ad-288fa762a4b7",
+                "summary": "Offers Equity",
+                "compensationType": "EquityPercentage",
+                "interval": "NONE",
+                "currencyCode": null,
+                "minValue": null,
+                "maxValue": null
+              }
+            ]
+          }
+        ],
+        "summaryComponents": [
+          {
+            "compensationType": "Salary",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": 200000,
+            "maxValue": 245000
+          },
+          {
+            "compensationType": "EquityPercentage",
+            "interval": "NONE",
+            "currencyCode": null,
+            "minValue": null,
+            "maxValue": null
+          }
+        ]
+      },
+      "description": "Alt is unlocking the value of alternative assets, starting with the $5 B trading-card market. We let collectors buy, sell, vault, and finance their cards in one place and we are backed by leaders at Stripe, Coinbase, Seven Seven Six, and pro athletes like Tom Brady and Giannis Antetokounmpo. Our next frontier is real-time pricing at scale—the Alt Value that powers every trade, loan, and product on the platform.\n The Role\n You own the marketplace surfaces where that decision happens — listing and submission, the offer moment, bidding and auction close, payout, the places where Alt asserts a price and asks someone to act on it. Design at Alt isn't a service function that receives requirements. It's the discipline that writes them.\n The bar you're held to: every surface you own ships with a written problem frame, a metric instrumented before launch, a readout you ran yourself — and craft good enough that a user screenshots it and sends it to someone. One without the other doesn't count here. A beautiful screen that didn't move anything is a miss. A number that moved on a surface nobody wants to look at is a different kind of miss.\n What You'll Own:\n The problem. You write the framing for your surfaces: who's hurting, the evidence, the number that says it's real, the metric that says it worked. AI-assisted, design-reviewed, never skipped. If nobody can state the problem in a sentence, it isn't ready to be solved.\n The craft. How completely the solution solves the problem, all the way to delight. It runs the full arc: reading the problem so precisely that the solution feels obvious in hindsight, shaping the flow so the user never has to think about the tool. It takes a user from \"this worked\" to \"I want to show someone.\" That's still made by a person with taste and reps. We can generate a hundred options in an hour; you're here because you can make one of them solve the problem so well it delights.\n The solution space. Multiple real directions, converged against your surface's written bar. You'll pressure-test, extend, and validate with users — not pick the first thing that renders.\n The experience decisions. When a thing appears, what it feels like in the user's actual state, what tone it takes, what gets removed to make room, and what it does to neighboring screens. On a platform where people wire five figures based on what a screen makes them feel, these decisions are the product.\n The words. Copy is design here. The sentence that explains why an offer is what it is does more work than the layout around it. You write it.\n Trust, specifically. How much confidence we assert, when we show uncertainty, what the platform states versus suggests. As more of what we show a user is model-generated, this becomes the highest-stakes surface in the company, and Design has sign-off on it.\n The crafted base. The quality foundation your team iterates on, and its survival through implementation. You pair with engineers at ship time; built-versus-designed fidelity is yours.\n Your metrics. Instrumented before launch. You run your own readouts and kill your own misses.\n The research. Customer conversations every week, CX tickets and session replays mined as a habit, lightweight tests run by you, at the pace of the work. Your frames cite evidence because you went and got it.\n The prototype. You build. Working prototypes in code, not click-throughs, are how ideas get evaluated here, because a thing you can touch settles an argument in an afternoon that a doc would run for two weeks.\n How You'll Use AI Here:\n We don't want to hear that you use Claude every day. Everyone does. We want to know what you've built with it. Concretely, in this role:\n Get to a clickable prototype of a new flow in a day — real card data, simulated model output, testable interactions — so the team argues about a real thing instead of a doc\n Write a Claude skill that holds your surface's written bar , so every frame gets checked against it before it reaches review, and the bar stops depending on who's in the room\n Mine CX tickets and session replays at volume to find the pattern you'd never catch by hand — the phrasing that precedes an abandoned submission, the screen people revisit three times before they bail\n Turn a customer call into a synthesis the team can act on the same afternoon , not a deck three weeks later\n Generate and kill twenty directions before you commit to one, and be able to say what each one taught you\n Put a prototype in front of actual high-value sellers and come to roadmap planning with behavioral data — \"version B moved stated acceptance likelihood, here's the prototype, here's the number\"\n And have a view on the other side of it: where AI output is actively wrong for this work, and what you refuse to hand to a model. We ask.\n If you've built agents, written skills or MCP servers, wired up connectors, or shipped internal tooling your team actually depends on — lead with that. Name the artifact, not the tool.\n What You Bring:\n Relentless curiosity about users. This is the first bar. Not \"I read the research\" — you go and get it.\n You've made ambiguity tractable, more than once. Not a UI problem with a brief attached: a genuinely open problem, where you had to decide what the problem even was before anyone could work on it. You can tell us how you structured the chaos, what you chose not to solve, and how you knew when you had clarity.\n Articulation as part of your craft. You can state a problem so cleanly that the room aligns before a single mock exists, and defend a trade-off to an engineer, a founder, and a customer in their own languages. If we ask \"what were you actually solving?\" about your best work, the answer arrives in one sentence, not a walkthrough.\n Influence without authority. You've changed what a company built through the quality of your reasoning: reframed a roadmap, killed a bad direction, gotten engineers to fight for your design's details.\n Founding, first, or early designer experience — or you've built something of your own. You know what it costs to own an outcome end to end.\n You've shipped things you conceived , not just executed from someone else's spec, and you can narrate the problem-framing behind your best work unprompted.\n A portfolio organized around problems and outcomes, not screens. You talk about your work quantitatively: what moved, what you killed, what you learned.\n You prototype in code, or in code-adjacent tools, as a thinking medium. AI is already how you work. You can name the last thing you built with Claude, Cursor, Lovable, v0, or Figma Make — and what it got wrong. We'll ask you to show us, so bring something real.\n Bonus: marketplace or two-sided experience; high-consideration or financial products where trust was the conversion problem; consumer products with a passionate community; you collect, or you have a view on where this market is going.\n How We'll Interview You\n We'll be specific so you can prepare. Before any of it: download the app, put a card up, make a bid, or sell. Every round assumes you've used the product, and we expect your point of view to sharpen as you go. For this role, pay attention to the submission, offer, and auction surfaces — those are the ones you'd own.\n 1. Recruiter screen — 30 minutes The surfaces you own today and the metric you move. Why Alt. How AI actually shows up in your workflow. We'll answer your questions and talk comp.\n 2. Hiring manager with Vijay, Head of Design — 60 minutes How you frame problems. Bring an open problem you had to define before anyone could work on it, and be ready on what you chose not to solve. Two or three pieces organized around problems and outcomes, not screens. Bring the numbers: what moved, what you killed, what you learned. We'll push back on at least one decision on purpose.\n 3. Leore, our founder and CEO — 45 minutes. Everyone who joins Alt meets Leore, and he's in design loops daily, so this is a working conversation. Bring a point of view on a marketplace surface you'd go after first and why.\n 4. Reference check(s) — 15 minutes with a former manager(s)\n Compensation: $200,000 - $245,000 per year, plus equity for all full-time employees.\n What we offer: \n For full-time Employees \n We cover 85% of your medical, dental, and vision, and up to 50% for dependents. HSA/FSA available \n Generous PTO that people actually take\n Parental leave at full salary\n $200/month wellness + $100/month home office stipend\n Free DoorDash Pass membership, because dinner shouldn't be a decision\n Remote-first (for most positions), with WeWork access when you want a room with other humans\n 401(k)\n Alt Equity to all full-time employees",
+      "sourceHash": "44ae4cd946aab79f53edde9f2693df8423e3369b1d908c52304907c14a3e0f50",
+      "normalizedHash": "5224df0bedc4ff6b775339a2c33bf70bba662fc057d98aef8ec2a38c6f72975b",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T05",
+      "company": "Level AI",
+      "title": "Revenue Operations Architect — GTM Systems Builder",
+      "url": "https://jobs.ashbyhq.com/level-ai/ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/level-ai?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "ba2b8d96-a353-4cbe-a3ef-0cb749781dcd",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-08-12T05:00:16.506+00:00",
+      "location": {
+        "primary": "Remote, United States",
+        "secondary": [],
+        "workplaceType": "Remote",
+        "isRemote": true
+      },
+      "compensation": {
+        "compensationTierSummary": null,
+        "scrapeableCompensationSalarySummary": null,
+        "compensationTiers": [],
+        "summaryComponents": []
+      },
+      "description": "Level AI · Remote (US) · Reports to the CRO \n About Level AI\n Level AI is building the LLM-native platform for customer experience. We process 100% of contact center interactions in real time to power automated QA, real-time agent assist, Voice of the Customer, and voice/chat AI agents — used by companies like Affirm, Penske, Carta, and OpenTable. We’re Series C, scaling fast, and rebuilding our GTM engine to match the ambition of the product.\n About the Role\n This is a builder role and a manager role. You’ll spend your days in Salesforce, in Gong, and in Claude — designing systems and shipping them, not only running a team or maintaining a process someone else defined. Most of the infrastructure doesn’t exist yet. You’ll design it, build it, own it, and prove it works before anyone else has to adopt it.\n If you’re energized by a blank canvas and shipping real systems — and you’ve built one, ideally with AI in the loop — we want to talk. If you’ve only maintained a machine someone else built, this isn’t the fit.\n What You’ll Build\n The forecast and deal engine\n A simplified, high-accuracy forecast off two sources only — Gong + Salesforce — on a MEDDICC-based commit/best-case structure with a +/-5% accuracy target and a weekly CRO cadence.\n The deal desk: pricing guardrails, discount authority, and quote governance — built to move fast without leaking margin.\n Territory and quota models: capacity planning, attainment tracking, and clean routing logic owned in Salesforce.\n GTM engineering & signal intelligence\n The signal layer: product usage and intent data routed into a scored queue for BDRs and AEs.\n GTM AI agents you architect and ship — research, sequencing, forecasting, and daily pipeline briefings — productionized, not prototyped.\n An ICP scoring model that sharpens itself as deal data compounds.\n The CRO’s operating system\n A live executive dashboard: pipeline coverage, conversion, ramp velocity, NRR, and forecast accuracy — self-serve, not a weekly manual pull.\n The systems and data hygiene that make every number above trustworthy.\n GTM execution\n Own cross-functional GTM projects end to end (pricing changes, launches, new-segment entry) with named owners and a clear definition of done on every line.\n Partner with Marketing to keep one pipeline definition and one source of truth — no parallel systems, no competing data.\n What You’ll Need\n 6+ years in RevOps, GTM engineering, or sales strategy at high-growth B2B SaaS/AI — ideally through the $20M–$100M ARR scaling phase.\n Hands-on builder. You’ve personally built forecasts, routing logic, deal-desk rules, dashboards, or GTM automations — not just directed a team that did.\n Deep, working fluency in Salesforce and Gong; strong analytical and systems-design instincts.\n A bias toward shipping and finishing: you scope tightly, deliver, and close the loop rather than leaving projects at 80%.\n Comfort building with AI tooling (Claude, agents, LLM-driven workflows) as a core part of the stack, not a novelty.\n Able to influence a tenured, change-resistant seller base by proving value first, then driving adoption.\n Nice to Have\n CPQ / Salesforce architecture depth.\n Experience with outbound data infrastructure (enrichment, sequencing, intent).\n Enterprise sales motion and complex-deal support.\n This is a zero-to-one, builder-first role. If you want to run a team, this isn’t it. If you want to build the system a great team will run on,",
+      "sourceHash": "e625a35e9b7e45b41713134495899a376e1033a93640380dc1f466bc8b82cb8b",
+      "normalizedHash": "074033cadb9e652893518760cede647fc03c9cdeb5cdee15edd5357d893b296a",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T06",
+      "company": "Kettle",
+      "title": "Senior Creative Technologist",
+      "url": "https://job-boards.greenhouse.io/kettle/jobs/8885210002",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/kettle/jobs/8885210002",
+      "provider": "greenhouse",
+      "employerPostingId": "8885210002",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-10-13T09:45:25-04:00",
+      "location": {
+        "name": "Remote - US"
+      },
+      "compensation": null,
+      "description": "Kettle designs digital products with soul, for some of the most ambitious consumer brands in the world. Our work lives at the intersection of product thinking and brand storytelling; products that are just as considered in feeling as they are in function.\n We are looking for a Senior Creative Technologist to join our team, someone who builds the tools, workflows, and accelerators that help Kettle do its best work. In this role, you'll sit at the intersection of emerging AI capabilities and our creative and product practices, rapidly turning what's newly possible into things our teams can use. This is a role for someone who is deeply technical and deeply curious; you’re equally comfortable in the code and in a creative conversation, and you know when to move fast, and when to bring in technical rigor.\n Candidates should have:\n Hands-on experience in creative technology, applied AI development, or a related technical discipline, with a track record of shipping things that work in real environments, not just a sandbox\n A portfolio that demonstrates technical depth and creative range: client work, functional tools, interactive experiences, AI-powered demos, or workflow systems built with intention\n Fluency across the generative AI landscape.You follow new model launches and capability releases closely, and you have recent examples of work that responds to what's emerging\n Strong command of modern front-end development, headless CMSs, AI APIs and tooling\n You understand what it means to build something secure, performant, and structurally sound, and you know when to bring in software build principles to experiments \n The self-direction to pick up problems independently and drive them to completion\n Collaborate across disciplines, including Design, Product Management, Copy, Strategy, and Production. You enjoy helping others bring their best ideas to life\n Nice to have: \n Experience building AI-powered pipelines or workflow accelerators in an agency or product environment\n Familiarity with agentic systems and AI-native development environments\n Experience with Python, Node, and Swift\n We'd like to know that you can: \n Move quickly from \"what could we do with this?\" to something working and worth sharing, without waiting for a fully defined brief\n Translate experiments into clear, reusable outputs (working code, demos, documentation, shared patterns) that make new capabilities accessible across disciplines and stick beyond a single project\n Show up credibly in a room: present your work and represent technical thinking to internal stakeholders and in client conversations \n Adapt across contexts, from rapid prototyping and experimentation, to more structured build and delivery\n The target range of base compensation for this role is $140k - 160k. Actual compensation is influenced by a wide array of factors including but not limited to skill set, level of experience, and location.",
+      "sourceHash": "6832b93e51cf9d3ee2567ff4ae16d776011e2aa329e8af5d4467187e04892165",
+      "normalizedHash": "e2c9869591e5cc83c4b4e15ac20a87009218a9c57099124002b2358817b3e4d0",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T07",
+      "company": "PlanetScale",
+      "title": "AI Developer Experience Engineer",
+      "url": "https://job-boards.greenhouse.io/planetscale/jobs/4463390009",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/planetscale/jobs/4463390009",
+      "provider": "greenhouse",
+      "employerPostingId": "4463390009",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-10-21T18:57:46-04:00",
+      "location": {
+        "name": "Remote US "
+      },
+      "compensation": null,
+      "description": "About the role\n More and more PlanetScale databases are created, connected and queried by AI agents. Cursor, Claude Code, Codex and a growing list of other tools now sit between developers and their infrastructure.\n You will own that experience end to end. You'll make sure PlanetScale shows up everywhere developers build with AI, that our MCP server and CLI work flawlessly in every agent, and that we can measure how well it all works. Then you'll show the world how to do it well through demos, docs, blog posts, videos, and conferences.\n This is a hands-on role combining engineering, content creation, and a strong public voice. You'll work closely with the teams that build our MCP server, CLI, API and docs.\n The landscape of how developers work with AI changes fast. You'll have the opportunity to move quickly, experiment, and take the lead on the future of AI use with databases and infrastructure.\n Make PlanetScale great with AI tools\n Build and maintain the plugins for PlanetScale in every AI marketplace and directory: agent plugins, skill registries, MCP directories, IDE extension stores and AI app builders\n Own our integrations with AI coding tools, agent frameworks and platforms\n Stay current with AI tools as they launch and ensure our customers have a great experience from day one\n Test the PlanetScale MCP server and CLI across Claude Code, Cursor, Codex, VS Code and other clients, and catch regressions before users do\n Find friction in creating a database, connecting, running migrations and debugging queries from inside an agent, then fix it or drive the fix with the owning team\n Improve the context agents rely on: tool descriptions, skills, llms.txt, docs written for agents, and error messages agents can act on\n Attention to AEO (answer engine optimization): make sure agents find and recommend PlanetScale\n Build and maintain skills for working with Postgres, MySQL, Vitess, Neki, and PlanetScale\n Measure how well we're doing\n Build evals that run real agent tasks against PlanetScale databases\n Benchmark how agents perform with PlanetScale and work towards continuous improvement\n Track how often AI assistants and agents recommend PlanetScale for database questions, and whether what they say about us is accurate\n Instrument and report on agent usage: databases created by agents, time to first connection, MCP versus CLI usage, and where sessions fail\n Show people how to do it well\n Build demos and sample apps that show PlanetScale and AI tooling at their best\n Write docs, guides and blog posts on using databases effectively with AI, including safe access, branching and performance assessment\n Make videos and attend conferences to communicate with our audience how to build effectively with AI\n These attributes best describe you\n Daily use of AI coding agents, with strong opinions about what makes a tool work well with them\n Experience building an MCP server, plugin, CLI or SDK that real developers use\n Software engineering background in languages like TypeScript and Go, and comfort with APIs, OAuth and the command line\n Experience with writing docs, blogs, and / or video content creation\n Good at communicating with a broad audience and customers alike on socials\n Experience working with relational databases (Postgres, MySQL, SQLite), schema design, migrations, connection handling, and Postgres or MySQL in production\n Data fluency: designing evals, writing the queries behind a dashboard, and telling a real trend from noise\n Clear communication of technical ideas in writing, on video and on stage\n Independence and speed: spotting a gap, shipping a fix, and telling people about it\n Genuine curiosity about the AI tooling landscape and a habit of keeping up with it\n Bonus points\n Contributions to the MCP spec, SDKs or popular open-source MCP servers\n Experience writing agent skills, plugins or rules files for Claude Code, Cursor or Codex\n Experience with LLM eval tools and building benchmarks for agents\n Experience with AEO or GEO, or with tracking how LLMs surface and recommend a product\n A blog, YouTube channel or GitHub that developers already follow\n Experience with Vitess, database sharding, or running databases at scale\n Why PlanetScale\n We're redefining how high-growth companies manage data at scale—and we work with some of the most exciting brands in gaming, consumer tech, and B2B SaaS. As a Software Engineer, you'll be at the core of building the platform that powers world-class apps used by hundreds of millions of users worldwide. PlanetScale is a profitable company with a philosophy centered around building small teams of p99 individuals and is recognized as one of the fastest growing companies in America.\n At PlanetScale we believe in supporting people to do their best work and thrive no matter the location. Our mission is to build a diverse, equitable, and inclusive company. We strive to build an inclusive environment where all people feel that they are equally respected and valued, whether they are a candidate or an employee. We welcome applicants of any educational background, gender identity and expression, sexual orientation, religion, ethnicity, age, citizenship, socioeconomic status, disability, pregnancy status, and veteran status.\n If you have a disability, please let us know if there's any way we can make the interview process better for you; we're happy to accommodate!\n Total Compensation and Pay Transparency\n An employee's total compensation consists of base salary + variable comp where appropriate + benefits + equity. A member of our Talent Acquisition team will be happy to answer any further questions when we engage with you to begin the interview process.\n Base Salary Range: $170,000 - $220,000",
+      "sourceHash": "bdedb54389fcc58cf800e349005452971b0f28a597804abd4a8dd3edd77a631e",
+      "normalizedHash": "58f201181c9be488cd11db81fd9eca135285d2a581b9d654a9ce721306221c2a",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T08",
+      "company": "Ramp",
+      "title": "Design Engineer",
+      "url": "https://jobs.ashbyhq.com/ramp/b68aca53-16c0-4ced-ab1d-e8beb2940b4f",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/ramp?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "b68aca53-16c0-4ced-ab1d-e8beb2940b4f",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-07-08T14:57:40.553+00:00",
+      "location": {
+        "primary": "New York, NY (HQ)",
+        "secondary": [],
+        "workplaceType": "Hybrid",
+        "isRemote": true
+      },
+      "compensation": {
+        "compensationTierSummary": "$172K – $440K • Offers Equity",
+        "scrapeableCompensationSalarySummary": "$172K - $440K",
+        "compensationTiers": [
+          {
+            "id": "fc834ec2-5863-48db-89f5-27e6e2b85632",
+            "tierSummary": "Estimated Base Salary $172K – $440K • Offers Equity",
+            "title": null,
+            "additionalInformation": null,
+            "components": [
+              {
+                "id": "b91a4169-81f8-40cd-8eec-7c4d73f562a6",
+                "summary": "Estimated Base Salary $172K – $440K",
+                "compensationType": "Salary",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": 172000,
+                "maxValue": 440000
+              },
+              {
+                "id": "455a20f3-13c6-4eaf-9b9c-9bfe344193f6",
+                "summary": "Offers Equity",
+                "compensationType": "EquityCashValue",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": null,
+                "maxValue": null
+              }
+            ]
+          }
+        ],
+        "summaryComponents": [
+          {
+            "compensationType": "Salary",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": 172000,
+            "maxValue": 440000
+          },
+          {
+            "compensationType": "EquityCashValue",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": null,
+            "maxValue": null
+          }
+        ]
+      },
+      "description": "About Ramp \n Ramp is building the smart infrastructure for finance teams, embedded in the transaction flow of every dollar a business spends. We automate how over $275B in annualized spend flows in and out of 85,000+ companies: authorizing payments, flagging risk, categorizing spend, and closing books.\n The problems are high-stakes, data-dense, and unforgiving.\n We hire people with high agency and high urgency. We look for slope over intercept. We care less about where you trained and more about what you’ve built. At Ramp, everyone is a builder who owns problems end to end and makes consequential decisions that shape the outcome.\n The median Ramp customer saves 7.5% and grows revenue 16% in their first year – far in excess of businesses operating without Ramp. We believe every ambitious company deserves the same.\n If you want to build systems that directly shape how companies move and manage billions, Ramp is the place to do it.\n About the Role \n As a Design Engineer at Ramp, you sit at the intersection of design and front-end engineering. You bring ambitious ideas to life in real interfaces, prototype directly in code, validate with customers, and ship production experiences with a high bar for craft, performance, and reliability.\n Design at Ramp is AI first and builder led. Work starts in an LLM to clarify intent and constraints, moves into tools like Claude and Cursor to explore and build, is tested with real customers, and then comes into Figma for systems and polish. AI and self-serve research are default parts of the workflow, not side experiments.\n We are looking for multiple design engineers who think like a designer, code like a front-end engineer, and treat AI as a real collaborator.\n What You’ll Do \n Design and build high-craft product experiences: Own key surfaces end to end, from concept through production. Use layout, interaction, and motion to make complex behavior feel simple and safe.\n Work AI first with Cursor and Claude Code: Use LLMs, Cursor, and Claude Code as your starting point. Draft intent, explore implementations, scaffold components, and refactor with AI in the loop. Apply your own judgment to refine quality.\n Prototype in code and validate with customers: Build interactive prototypes in React and TypeScript and test them with real users using self-serve research tools. Use what you learn to refine flows before full systemization.\n Bridge design systems, product, and brand: Translate Ramp’s design principles into reusable components and patterns. Extend the design system so expressive, brand-aligned moments are easy to build and scale.\n Reveal what our agents are doing without noise: Design patterns that show what AI and automation are doing on behalf of customers. Use hierarchy, copy, and motion to earn trust while keeping the default experience simple.\n Champion performance and accessibility: Ship work that is fast, accessible, and robust. Pay attention to semantics, focus states, reduced motion, and Core Web Vitals. Partner with engineers to debug and optimize over time.\n Share AI-native workflows: Document prompts, patterns, and workflows you use in Cursor and Claude Code. Share them with designers and engineers to raise the bar across the team.\n What You Need \n Strong experience across both design and front-end engineering, with ownership from idea to shipped interface\n Fluency in React, TypeScript or JavaScript, semantic HTML, and modern CSS\n Active use of tools like Cursor and Claude Code, with clear opinions on how to get high-quality output\n A portfolio that shows high visual and interaction craft in live experiences or working prototypes\n A systems mindset and interest in building reusable components and patterns\n Care for performance, accessibility, and reliability as part of craft\n Clear written and verbal communication, and comfort pairing with designers, engineers, and marketers\n Based in or open to relocate to NYC \n Nice to Haves \n Experience contributing to a design system or front-end component library\n Familiarity with experimentation or analytics tools\n Experience with headless CMS, design tokens, or theming systems\n Background in fintech, B2B SaaS, or other trust-heavy domains\n Interest in mentoring others on AI-native workflows\n Benefits available to all full-time Ramp employees (Global) \n Flexible PTO\n Centralized home-office equipment ordering\n Health and wellness stipend\n Budget for intra-office travel\n Weekly coffee stipend\n United States \n 100% medical, dental & vision insurance coverage for you, with partial coverage for dependents\n One Medical annual membership\n 401(k), including employer match on contributions made while employed by Ramp\n Fertility HRA (up to $10,000 per year)\n Parental leave: up to 16 weeks (birthing + bonding) or 8 weeks (bonding only) at 100% pay\n Pet insurance\n In-office perks: lunch, snacks, drinks, and more\n Relocation expense coverage to NYC or SF (if needed)\n Canada \n Group medical, dental, and vision coverage through Sun Life\n Life, AD&D, and disability coverage\n Fertility drug coverage (up to $4,000 lifetime)\n Group Retirement Plan with employer match (RRSP + DPSP)\n Parental leave: up to 16 weeks (birthing + bonding) or 8 weeks (bonding only) at 100% pay, with additional time available at reduced pay\n Employee Assistance Program and virtual care through Lumino Health\n United Kingdom \n Private medical insurance through Freedom Elite\n Virtual GP and at-home care via eMed x Livi\n Workplace pension through Penfold, with salary sacrifice option\n Parental leave: up to 16 weeks (birthing + bonding) or 8 weeks (bonding only) at 100% pay with additional time available at reduced pay\n Referral Instructions \n If you are being referred for the role, please contact that person to apply on your behalf.\n Other notices \n Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.\n Beware of recruiting scams: Ramp will only contact you through official @ Ramp.com email addresses and will never ask for payment or sensitive personal information during the hiring process. \n Ramp Applicant Privacy Notice",
+      "sourceHash": "63963b09ddb997a24d37fdb535ca7f532221d03c690fbd3d0d76b8da5f4a2c66",
+      "normalizedHash": "67259aec2752255310fc6409710a26b4b6103ef0d6a81e38f18fce84d3890521",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T09",
+      "company": "MongoDB",
+      "title": "Staff Product Manager, AI Builder Experience",
+      "url": "https://www.mongodb.com/careers/job/?gh_jid=8129885",
+      "sourceUrl": "https://boards-api.greenhouse.io/v1/boards/mongodb/jobs/8129885",
+      "provider": "greenhouse",
+      "employerPostingId": "8129885",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-09-04T18:13:52-04:00",
+      "location": {
+        "name": "United States"
+      },
+      "compensation": null,
+      "description": "The Role\n AI Builder Experience (ABX) is MongoDB’s front door for the agentic era. We help human developers and coding agents discover, evaluate, and choose MongoDB, and we make MongoDB work naturally inside the AI-native tools, frameworks, and platforms where software is being built.\n We are looking for an outstanding Staff Product Manager to own the Partner Platform: the products, experiences, and operating model that allow ecosystem partners to build trusted, high-quality MongoDB experiences for their users. This includes the Partner API and the broader path toward self-serve integrations, partner onboarding, enterprise controls, marketplace/discovery, and partner-managed experiences.\n This is a role at the intersection of humans, machines, and partners. Human builders increasingly work through AI agents; AI agents need reliable interfaces, context, permissions, and tools; and partners determine where those experiences are discovered and adopted. You will make those three parts work together so MongoDB becomes the obvious database choice wherever AI-native software is created.\n The role is highly cross-functional and highly visible. You will work with engineering, design, IAM, billing, security, documentation, analytics, product marketing, partnerships, field teams, and strategic customers and partners. You will be expected to operate as both a strategic product leader and a hands-on builder who can turn an ambiguous ecosystem opportunity into a clear product vision, strategy, and an executable roadmap.\n What You’ll Do\n Own the vision, strategy, and roadmap for the MongoDB Partner Platform, starting with the Partner API and evolving toward a scalable, self-serve industry leading partner experience\n Turn partner and customer needs into clear product bets, sequencing near-term delivery against a compelling long-term platform strategy\n Build the next phases of the Partner API, including self-serve onboarding, enterprise and administrator controls, partner-managed account creation and billing, partner discovery, and a high-quality integration bar\n Establish a repeatable operating model for partner intake, design-partner engagement, integration support, launch readiness, documentation, incident response, and post-launch learning\n Partner deeply with the Partner team, IAM, Billing, Security, Engineering, Design, Docs, Analytics, Product Marketing, Sales, and Technical Services to align all towards the cross-functional outcomes required\n Work directly with strategic AI-native partners, cloud platforms, and similar to understand their users, business models, technical constraints, and adoption levers\n Ensure the platform works for both human and agentic developers: APIs and tools must be understandable to people, usable by agents, observable, secure, and resilient under automation\n Define the metrics that show whether the platform is creating value, e.g. partner activation, time to first successful integration, integration quality, end-user adoption, successful agentic workflows, cluster growth, and partner-influenced revenue\n Create clear product narratives and communicate strategy to executives, engineering teams, partners, customers, and field stakeholders\n Represent ABX and MongoDB externally as a credible voice on AI-native product development, developer ecosystems, and partner platforms\n What We’re Looking For\n 8+ years of product management or equivalent experience, including ownership of complex technical products, platforms, APIs, developer tools, ecosystems, or partner integrations\n Demonstrated success taking a product or platform from ambiguous opportunity through launch, adoption, and continued evolution\n Deep technical fluency: you can reason about APIs, authentication and authorization, distributed systems, platform boundaries, integrations, data flows, reliability, and security trade-offs\n Experience building products for developers, technical users, AI-native workflows, or platform ecosystems. Direct experience with AI agents, MCP, agent frameworks, agentic coding tools, or agentic developer platforms is strongly preferred\n A clear point of view on the difference between building for human developers and building for AI agents, including implications for APIs, documentation, tooling, evaluation, observability, and quality\n Strong partner and customer instincts, with experience translating external needs into a product strategy without becoming a collection of one-off feature requests\n Ability to navigate complex and growing organizations, align teams without direct authority, and create momentum when ownership and dependencies are not obvious\n Comfort balancing speed, security, quality, enterprise requirements, and long-term platform health in a fast-moving market\n Strong analytical judgment and the ability to define meaningful outcomes even when the direct revenue line is indirect or still emerging\n Excellent written and verbal communication skills; you write clear documents, make trade-offs visible, and communicate effectively from engineering working sessions to executive reviews\n Genuine enthusiasm for AI-native development and regular hands-on use of AI tools in your own work\n Nice to Have\n Experience with partner platforms, marketplaces, developer ecosystems, cloud platforms, databases, infrastructure, or enterprise SaaS\n Experience with OAuth, delegated access, API governance, partner billing, provisioning, or multi-tenant product models\n Experience with MongoDB, developer tools, application frameworks, or data infrastructure\n Success Measures\n Within 30 days:\n Develop a deep understanding of the current Partner API, partner pipeline, design-partner experience, dependencies, launch commitments, and known gaps\n Build strong working relationships with engineering, IAM, Billing, Security, Design, Partnerships, Docs, Analytics, Product Marketing, and the adjacent ABX PMs\n Meet key partners and customers and understand the jobs they need the Partner Platform to accomplish for humans, agents, and their businesses\n Produce a concise current-state assessment: what is working, what is fragile, what is one-off, and what must become platform capability\n Within 60 days:\n Evolve the Partner Platform vision and strategy, including clear ownership boundaries with AI Interfaces and AI Frameworks\n Establish a metrics framework connecting partner integration quality and adoption to builder activation, Atlas usage, enterprise confidence, and business impact\n Deliver an aligned roadmap for the next phases of Partner API, partner onboarding, enterprise controls, and partner platform capabilities\n Identify the highest-leverage operating-model changes needed to improve partner speed, quality, and repeatability\n Within 90 days:\n Drive one or more high-impact improvements that materially improve partner onboarding, integration quality, enterprise readiness, or end-user adoption\n Establish a credible plan for scaling from design partners to a broader ecosystem without relying on bespoke MongoDB-side work for every integration\n Be recognized by engineering, design, partnerships, marketing, and field teams as a trusted product leader and effective cross-functional partner\n Present a clear recommendation for the long-term Partner Platform shape, including the investments, sequencing, and trade-offs required to make MongoDB the default database for AI-native builders\n About MongoDB\n MongoDB is built for change, empowering our customers and our people to innovate at the speed of the market. We have redefined the data platform for the AI era, enabling builders to create, transform, and disrupt industries with software. MongoDB’s unified data platform, the most widely available, globally distributed data platform on the market, helps organizations modernize legacy workloads, embrace innovation, and unleash AI. Our cloud-native platform, MongoDB Atlas, is the only globally distributed, multi-cloud data platform and is available across AWS, Google Cloud, and Microsoft Azure.\n With offices worldwide and over 67,000 customers, including AI-native startups and approximately 75% of the Fortune 100, relying on MongoDB for their most important applications, we’re powering the next era of software.\n Our compass at MongoDB is our Leadership Commitment, guiding how and why we make decisions, show up for each other, and win. It’s what makes us MongoDB. \n To drive the personal growth and business impact of our employees, we’re committed to developing a supportive and enriching culture for everyone. From employee affinity groups, to fertility assistance and a generous parental leave policy , we value our employees’ wellbeing and want to support them along every step of their professional and personal journeys. Learn more about what it’s like to work at MongoDB , and help us make an impact on the world!\n MongoDB is committed to providing any necessary accommodations for individuals with disabilities within our application and interview process. To request an accommodation due to a disability, please inform your recruiter.\n MongoDB, Inc. provides equal employment opportunities to all employees and applicants for employment and prohibits discrimination and harassment of any type and makes all hiring decisions without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state or local laws.\n REQ ID: 3273520423\n MongoDB’s base salary range for this role is posted below. Compensation at the time of offer is unique to each candidate and based on a variety of factors such as skill set, experience, qualifications, and work location. Salary is one part of MongoDB’s total compensation and benefits package. Other benefits for eligible employees may include: equity, participation in the employee stock purchase program, flexible paid time off, 20 weeks fully-paid gender-neutral parental leave, fertility and adoption assistance, 401(k) plan, mental health counseling, access to transgender-inclusive health insurance coverage, and health benefits offerings. Please note, the base salary range listed below and the benefits in this paragraph are only applicable to U.S.-based candidates.\n MongoDB’s base salary range for this role in the U.S. is:\n $151,000 &mdash; $297,000 USD",
+      "sourceHash": "73816a54fe1308e09e74f680edb5fef7447f4e3ff9668861661e7071a4365e46",
+      "normalizedHash": "e510d49f68d50678a29ce955bf67ed6cf0722c6c85e96c5390166de39e500d62",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T10",
+      "company": "OnePay",
+      "title": "Platform Engineer, Builder Experience",
+      "url": "https://jobs.ashbyhq.com/oneapp/fbc0f334-5613-41fc-b5d7-87f2e5a20bee",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/oneapp?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "fbc0f334-5613-41fc-b5d7-87f2e5a20bee",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-07-24T23:13:14.067+00:00",
+      "location": {
+        "primary": "United States (Remote)",
+        "secondary": [],
+        "workplaceType": "Remote",
+        "isRemote": true
+      },
+      "compensation": {
+        "compensationTierSummary": "$140K – $190K • Offers Equity",
+        "scrapeableCompensationSalarySummary": "$140K - $190K",
+        "compensationTiers": [
+          {
+            "id": "3898e499-e457-46fb-9113-10218c3bada7",
+            "tierSummary": "$140K – $190K • Offers Equity",
+            "title": null,
+            "additionalInformation": null,
+            "components": [
+              {
+                "id": "36765065-33ef-40a5-8ed9-4b7775c66e7f",
+                "summary": "$140K – $190K",
+                "compensationType": "Salary",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": 140000,
+                "maxValue": 190000
+              },
+              {
+                "id": "db2b0353-2bc8-46bc-9413-0b68b0f681a2",
+                "summary": "Offers Equity",
+                "compensationType": "EquityCashValue",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": null,
+                "maxValue": null
+              }
+            ]
+          }
+        ],
+        "summaryComponents": [
+          {
+            "compensationType": "Salary",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": 140000,
+            "maxValue": 190000
+          },
+          {
+            "compensationType": "EquityCashValue",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": null,
+            "maxValue": null
+          }
+        ]
+      },
+      "description": "About OnePay\n OnePay is the consumer fintech trusted by millions of Americans to make money better.\n Our financial system is broken. High fees, low rates, and too few ways to actually grow your money. We’re fixing it. And we’re moving fast.\n We’re an all-in-one financial services platform that brings together banking, high-yield savings, credit cards, point-of-sale lending, investing, and crypto in one place. We also partner with employers, HCM providers, gig platforms, and others to deliver embedded financial services to millions of employees and frontline workers.\n We’re backed by Walmart, the world’s largest retailer, and Ribbit Capital, one of fintech’s most respected investors, giving us rare scale, distribution, and the opportunity to build something truly category-defining.\n But what really sets OnePay apart is how we move. Our customers don’t have time to wait… and neither do we. This place moves fast, and we’re looking for people who are:\n Ready to run\n Hungry and driven by urgency\n Exceptional at what they do, with low ego\n Comfortable operating in motion\n The Role\n As a Platform Engineer on the Builder Experience Team at OnePay, you will build the core platform services and developer frameworks that power large-scale, distributed systems and enable the next generation of intelligent, agent-driven applications.\n What You’ll Do\n Design and operate platform-oriented core services that support high-scale distributed systems across OnePay’s product ecosystem\n Develop internal developer tooling and shared infrastructure that improve velocity, reliability, and observability across engineering teams\n Build and evolve frameworks that support the construction and orchestration of agentic applications, enabling intelligent, automated workflows across products\n Drive enhancements in CI/CD pipelines, automation, and developer workflows to increase deployment speed, reliability, and confidence across teams\n You Bring\n 2-9 years of experience in software engineering within fintech, cloud infrastructure, or large-scale distributed systems environments\n Experience building developer platforms, internal tooling, or frameworks that enable other engineers to move faster\n Deep expertise in distributed systems, asynchronous processing, and high-availability platform services\n Production experience in AWS cloud environments and building cloud-native infrastructure\n Demonstrated experience designing and building agentic developer tools that empower automation, collaboration, or intelligent workflows\n Strong experience working with CI/CD pipelines and driving continuous integration and delivery improvements\n Drive and proactivity – everyone here is a builder and executor\n Tools We Use\n We use Typescript front to back, with node and NestJS frameworks for server code and React Native for our iOS, Android, and Web clients. We run on a highly distributed cloud-native stack with Kubernetes and AWS, and scale and resiliency are at the heart of everything we build. We also embrace agentic development, so engineers have their choice of a variety of models and agent harnesses, including Claude Code, Cursor, Codex, and more to fit their workflow. While you don't need experience with our exact stack, familiarity with modern software engineering practices will help you ramp up quickly.\n What We Offer\n Competitive base salary, stock options, and health benefits from Day 1\n 401(k) plan with company match\n Remote-friendly (US), flexible time off (FTO), and opportunities for growth\n A high-growth, mission-driven, inclusive culture where your work has real impact\n Standard Interview Process\n Our process varies by role. Most candidates go through:\n AI-assisted initial screen\n Interview with Talent Partner\n Technical or Hiring Manager Interview\n Team Interview\n Executive Interview\n Offer!\n Equal Employment Opportunity\n To build technology and products that are used and loved by people and solve real-world problems, we need to build a team with many different perspectives and experiences. We are an equal opportunity employer. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status. We encourage candidates from all backgrounds to apply. Applicants in need of special assistance or accommodation during the interview process or in accessing our website may contact us at talent@onepay.com.",
+      "sourceHash": "fc8eb33b88ebe2e6071b3e580604e7721b33f9141002afddb464c7e2983eb0f3",
+      "normalizedHash": "21369999469df6181595cf19d05151230dad3e606366e73bedf90b8b77c985ed",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T11",
+      "company": "HomeSmart Services",
+      "title": "Forward Deployed Engineer — Applied AI",
+      "url": "https://homesmartservices.bamboohr.com/careers/1116",
+      "sourceUrl": "https://homesmartservices.bamboohr.com/careers/1116/detail",
+      "provider": "bamboohr",
+      "employerPostingId": "1116",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-10-22",
+      "location": {
+        "location": {
+          "city": "Scottsdale",
+          "state": "Arizona",
+          "postalCode": "85255",
+          "addressCountry": "United States"
+        },
+        "locationType": "2"
+      },
+      "compensation": null,
+      "description": "Please click on the link below in order to apply for the position. \n https://homesmartservices.bamboohr.com/jobs/   \n HomeSmart is seeking a hands-on applied AI engineer to work directly with internal teams and affiliated businesses. You’ll identify meaningful business problems and build practical solutions—from initial prototype through production and ongoing improvement. Some projects will have a clear scope; others will require you to investigate workflows and define the problem.\n This individual-contributor role partners with engineering, data science, and infrastructure teams. We welcome data scientists, applied AI/ML engineers, and full-stack developers with strong engineering skills; prior Forward Deployed Engineer experience is not required.\n What You’ll Do \n Work with business teams to understand workflows, identify opportunities, and define success measures.\n Build and deploy production-ready applications, APIs, integrations, AI-enabled workflows, and automation.\n Develop reliable data pipelines and shared data models, including a business data ontology connecting people, activities, documents, and relationships across systems.\n Collaborate on machine learning architecture, training and inference pipelines, testing, and evaluation; troubleshoot issues and improve performance.\n Choose the right approach for each problem—AI/ML, deterministic logic, or conventional software—based on accuracy, latency, cost, and control.\n Build in security, access controls, traceability, error handling, testing, and human review; protect sensitive data and credentials.\n Monitor adoption, quality, time savings, and operating costs, then improve and maintain solutions after launch.\n What You’ll Bring \n Experience building software or AI applications, with the ability to explain your contributions and technical tradeoffs.\n Strong Python skills; working knowledge of SQL, APIs, software engineering fundamentals, version control, code review, and testing.\n Experience building with language models and evaluating their capabilities, limitations, and production performance.\n Comfort using AI development tools such as Claude Code, Codex, or Cursor—and the ability to debug, validate, and improve generated code.\n Sound security judgment around permissions, data integrity, sensitive information, and production credentials.\n Clear communication, curiosity, initiative, and the ability to work through ambiguity with technical and nontechnical partners.\n Helpful Experience \n Experience with large-scale data systems, cloud infrastructure, deployment automation, machine learning, AI agents, retrieval, document understanding, workflow systems, semantic models, or ontologies is helpful. LangChain, LangGraph, and other orchestration tools are welcome.\n You do not need expertise in every area, a specific degree, or a set number of years of experience. We value demonstrated ability, sound judgment, and a willingness to learn. Professional work, independent projects, open source, and self-built products all count.\n What to expect in the interview \n Be prepared to provide examples of your work such as a GitHub profile, portfolio, or project links. Public code is not required. Please do not share confidential or proprietary information.\n Why HomeSmart \n Help shape how a real estate business operates. You’ll work closely with users, stakeholders, and experienced technical colleagues, with the opportunity to build solutions that improve individual workflows and become shared capabilities across the organization. Our hybrid approach combines collaboration in Scottsdale with focused engineering time.\n HomeSmart is an equal opportunity employer. We welcome qualified applicants from all backgrounds and evaluate candidates based on skills, demonstrated capabilities, and potential. Please let our recruiting team know if you need an accommodation during the hiring process.",
+      "sourceHash": "4db03bf61c79f66d49260ef3f08a3bf9a32961581c7df32baa0677c4dfd32c78",
+      "normalizedHash": "7a3bae491be5b7f9532fdb5c51b406e1ea1cb8548091df528372e7f09be1fb2d",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    },
+    {
+      "reviewId": "T12",
+      "company": "Onos Health",
+      "title": "Senior Product Engineer",
+      "url": "https://jobs.ashbyhq.com/onoshealth/58d36bae-5153-471a-9c8c-2094339be001",
+      "sourceUrl": "https://api.ashbyhq.com/posting-api/job-board/onoshealth?includeCompensation=true",
+      "provider": "ashby",
+      "employerPostingId": "58d36bae-5153-471a-9c8c-2094339be001",
+      "checkedAt": "2026-10-30T00:41:35.227Z",
+      "postedAt": "2026-07-28T02:54:25.434+00:00",
+      "location": {
+        "primary": "San Francisco",
+        "secondary": [],
+        "workplaceType": "Hybrid",
+        "isRemote": true
+      },
+      "compensation": {
+        "compensationTierSummary": "$200K – $250K • Offers Equity",
+        "scrapeableCompensationSalarySummary": "$200K - $250K",
+        "compensationTiers": [
+          {
+            "id": "18532c54-650f-4ae5-9b8f-60a252e6187e",
+            "tierSummary": "$200K – $250K • Offers Equity",
+            "title": null,
+            "additionalInformation": null,
+            "components": [
+              {
+                "id": "56331d39-9daf-4155-8743-1f8967c96413",
+                "summary": "Offers Equity",
+                "compensationType": "EquityPercentage",
+                "interval": "NONE",
+                "currencyCode": null,
+                "minValue": null,
+                "maxValue": null
+              },
+              {
+                "id": "6c43b350-efd6-4fdd-86ce-334e6cb398c1",
+                "summary": "$200K – $250K",
+                "compensationType": "Salary",
+                "interval": "1 YEAR",
+                "currencyCode": "USD",
+                "minValue": 200000,
+                "maxValue": 250000
+              }
+            ]
+          }
+        ],
+        "summaryComponents": [
+          {
+            "compensationType": "EquityPercentage",
+            "interval": "NONE",
+            "currencyCode": null,
+            "minValue": null,
+            "maxValue": null
+          },
+          {
+            "compensationType": "Salary",
+            "interval": "1 YEAR",
+            "currencyCode": "USD",
+            "minValue": 200000,
+            "maxValue": 250000
+          }
+        ]
+      },
+      "description": "About Onos Health \n Onos Health’s mission is simple but ambitious: ensure every healthcare dollar goes toward delivering the highest quality care. Today, 30% of total U.S. healthcare spending is wasted due to ineffective care and administrative burden caused by misalignment between providers and payers.\n Onos is addressing this by building the largest AI-driven healthcare data platform. Our models enables payers to make faster, more accurate decisions across their populations. By guiding members to the right care, Onos is channeling more dollars to high-quality care that drives better outcomes while making healthcare more affordable.\n Onos is well-funded by some of the best healthcare investors and is working with the nation’s largest health plans. Come join a category-defining company and help reimagine healthcare for the better.\n Why Onos? \n Meaningful impact: Help fix what is fundamentally broken in healthcare\n Direct collaboration: Work alongside experienced founders with deep healthcare and data expertise\n Culture: Join a high-performing, transparent, and results-oriented team\n Ownership: Significant responsibility and autonomy from day one\n Opportunity: Play a pivotal role in building a fast-growing, category-defining healthcare AI company\n The Role \n We're seeking an experienced Product (Full-Stack) Engineer, someone who is product minded and customer oriented to join and be our technical lead to interface directly with clients. As an early team member, you'll work closely with our founding team while helping to build and lead a growing engineering team. This role is a hybrid role based in San Francisco, where you'll be expected to work at our office in person 3 times a week.\n What you'll be doing at Onos: \n Work directly with health plan customers to understand their claims workflows, data formats, and pain points, then translate that into working software\n Be the primary technical point of contact during integrations and rollouts of the Onos platform for new enterprise customers, and provide actionable insights and recommendations to health plan administrators\n Own end-to-end development of new features and functionality for the Onos platform, including requirements gathering, scoping, architecting, implementation and testing to deliver timely and high quality outcomes\n Shape our technical roadmap, make key architectural decisions, and influence the company's product and technical strategy\n Technical Challenges At Onos: \n Develop an intelligent engine that ingests complex medical standards of care documents and evaluates provider adherence to guidelines\n Design and implement robust and extensible systems to easily support many different kinds of enterprise workflows and integrations\n Build AI/ML pipelines to analyze handwritten clinical notes, accurately extract important medical information, and automate recommendations for clinical reviewers\n Scale our systems to process millions of healthcare records while maintaining strict security and compliance requirements\n Tech Stack: \n At Onos, we work with a modern tech stack where we continuously evaluate and adopt cutting-edge technologies as we scale.\n Infrastructure/Systems: AWS (ECS, Bedrock, Glue, etc.), Docker, Github Actions, Terraform\n Languages/Frameworks \n Backend: Python, Django, Celery / Celery Beat, django-ninja, django-tenants\n Frontend: NextJS, Typescript, Tanstack Query, Shadcn UI, Zod, Nuqs\n Database/Storage: PostgreSQL (AWS RDS), S3, Clickhouse\n Development Tools: Github, Jira, Claude Code, CoderabbitAI, Tusk\n What we're looking for: \n 5+ years experience building software applications\n Strong product sense and system design skills with a track record of defining clear requirements, test scenarios, and acceptance criteria for complex systems\n Customer obsessed and motivated to make an impact in the healthcare space\n A hands-on technical leader who can architect robust and extensible systems, establish best practices with AI coding tools, and ship high quality production code\n Bonus points if you have: \n Worked with machine learning and large language models for end-user applications\n Hands-on experience navigating healthcare data formats such as EDI X12, HL7, FHIR, and custom payer flat files\n Benefits and Perks \n Flexible hybrid arrangement: 3 days/week at San Francisco office (Financial District), remote-first culture\n Unlimited vacation policy\n Paid parental leave\n Medical, dental, and vision insurance\n Pre-tax commuter benefits\n 401(k)\n Significant equity as an early employee\n Direct mentorship from experienced founders\n Ground-floor opportunity to help build a team and culture\n Regular team events and offsites\n Company-provided equipment and home office setup\n We are an equal opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.",
+      "sourceHash": "ab3ee55f0cc3538240cdcfb62963efc6b77b303dc8814663307dddf409d6deaa",
+      "normalizedHash": "3c47d9453407d79bd4c1b9b9f1a3610de4ee8517feb498fa50c3859e8e3817ee",
+      "promptHash": "600b440632895c28a7b8dad1943bdfc4236ff9c5afb14077efa6a9dc83c43e97"
+    }
+  ],
+  "normalizationCorrection": {
+    "role": "T01",
+    "reason": "descriptionBody repeated a subsection already present in description; retain one canonical description block before predictions are frozen",
+    "previousArtifact": "v10-fresh-review-2026-10-29-sources-initial-normalization.json",
+    "additionalPublicRead": {
+      "url": "https://api.lever.co/v0/postings/artera-2/eae88c70-fbf5-4525-890c-d3f9377418b0?mode=json",
+      "status": 200
+    }
+  }
+}

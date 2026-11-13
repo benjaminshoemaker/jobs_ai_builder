@@ -1,0 +1,9 @@
+import {access} from 'node:fs/promises';
+import {Client} from 'pg';import {readFile,writeFile,mkdir} from 'node:fs/promises';
+try{await access('../../research/luna-v12-reviewed-regression-2026-10-29-results.json');throw new Error('Regression already has results; use a new explicit run version instead of replacing frozen inputs.');}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
+
+if(!process.argv.includes('--live')||process.env.VERCEL_ENV==='production')throw new Error('Explicit preview --live required');
+const path='../../research/luna-v12-reviewed-regression-2026-10-29-frozen.json',r=JSON.parse(await readFile(path,'utf8'));const c=new Client({connectionString:process.env.DATABASE_URL_UNPOOLED});await c.connect();await mkdir('/tmp/v12-recovery',{recursive:true});try{
+const run=(await c.query('select id from board_history_recheck_runs where max_requests=30 order by started_at desc limit 1')).rows[0].id;r.sourceRecoveryRunId=run;let seq=Number((await c.query('select count(*) n from board_history_requests where run_id=$1',[run])).rows[0].n);
+for(const item of r.missing.filter((x:any)=>!['brightwheel','vanta'].includes(x.id))){if(seq>=30)throw new Error('Source request bound reached');await c.query('insert into board_history_requests(run_id,sequence,endpoint) values($1,$2,$3)',[run,++seq,item.url]);const response=await fetch(item.url,{redirect:'manual',signal:AbortSignal.timeout(15000)});const html=await response.text();await writeFile('/tmp/v12-recovery/'+item.id+'.html',html);console.log(JSON.stringify({id:item.id,status:response.status,bytes:html.length,title:html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1],headings:[...html.matchAll(/<h[1-3][^>]*>([\s\S]*?)<\/h[1-3]>/gi)].slice(0,10).map(m=>m[1].replace(/<[^>]*>/g,''))}));}
+r.sourceRecoveryRequests=seq;await writeFile(path,JSON.stringify(r,null,2)+'\n');}finally{await c.end()}

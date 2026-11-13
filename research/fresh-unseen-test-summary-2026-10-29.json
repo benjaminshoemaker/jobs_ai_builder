@@ -1,0 +1,24 @@
+{
+  "requested": 40,
+  "tested": 22,
+  "valid": 22,
+  "maximumNewUSD": 0.1595754,
+  "distribution": {
+    "builder": 11,
+    "exclude": 8,
+    "unclear": 3
+  },
+  "budget": {
+    "reserved_usd": 0.9990367,
+    "uncached_usage_estimate_usd": 0.1391865
+  },
+  "reviewCount": 8,
+  "limitations": [
+    "Budget-fitting prefix of a source/score-diverse sample, not a representative prevalence estimate.",
+    "Four captured lead locations clearly indicate non-US geography despite their unknown location hints: Kochi, Tallinn, Chile and Turkey; none are in the user review batch.",
+    "The marketing employer is Gravity Research, although its ATS board is nationaljournal.",
+    "No fresh user labels have been recorded and no accuracy metric is available.",
+    "The category classifier was frozen; manual source inspection did not alter predictions.",
+    "Descriptions are saved employer-feed captures, not a new live check of every application page."
+  ]
+}

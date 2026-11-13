@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-30T01:00:38.397Z",
+  "promptVersion": "builder-fit-v10",
+  "policyHash": "521562aa787cafa56c2afa88e572d7966b8804cd6a7657fb6b08b8a0e0faca71",
+  "predictionArtifactHash": "1f902c22e221cb42c4ef7073e2c8cca7536c06a34ae42867adeb7e57a6890825",
+  "metrics": {
+    "records": 12,
+    "scored": 11,
+    "sourceUnverified": 0,
+    "humanMaybe": 1,
+    "truePositive": 9,
+    "falsePositive": 0,
+    "falseNegative": 0,
+    "trueNegative": 2,
+    "abstentions": 0,
+    "operationalFailures": 0,
+    "precision": 1,
+    "recall": 1,
+    "semanticRecall": 1,
+    "decisionCoverage": 1
+  },
+  "clearAgreement": 11,
+  "clearJudgments": 11,
+  "unresolved": [
+    {
+      "reviewId": "T07",
+      "company": "PlanetScale",
+      "prediction": "yes",
+      "userDecision": "maybe",
+      "userReason": "I'm not sure it actually had the \"understand the problem yourself\" part - it seems like it's just an engineer"
+    }
+  ],
+  "scope": "Frozen predictions on a purposive batch of twelve jobs previously unreviewed by the user. Assessments authored in the existing conversation, not isolated API model executions. All eleven definite labels matched; one uncertain label excluded from binary metrics. Too small and selected to establish population accuracy or recall.",
+  "apiModelCalls": 0,
+  "productionChanges": false
+}

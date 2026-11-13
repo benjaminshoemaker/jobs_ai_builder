@@ -1,0 +1,23 @@
+{
+  "caseKey": "batch1_c20",
+  "maxOutputTokens": 600,
+  "status": "completed",
+  "incompleteDetails": null,
+  "returnedModel": "gpt-6.1-sol",
+  "outputText": "{\"decision\":\"yes\",\"reason\":\"The role centrally involves working directly with mission users, translating their needs into software, and personally building integrations, pipelines, and usable prototypes. Coding agents and LLM tooling are explicitly part of how the engineer ships. End-to-end responsibility for deploying, operating, debugging, and improving these solutions in customer environments establishes the full building loop, rather than incidental implementation support.\"}",
+  "outputTypes": [
+    "message"
+  ],
+  "usage": {
+    "input_tokens": 2869,
+    "input_tokens_details": {
+      "cache_write_tokens": 2866,
+      "cached_tokens": 0
+    },
+    "output_tokens": 90,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2959
+  }
+}

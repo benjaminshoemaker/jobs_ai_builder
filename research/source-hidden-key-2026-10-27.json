@@ -1,0 +1,299 @@
+{
+  "date": "2026-10-27",
+  "routes": {
+    "C01": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C02": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C03": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C04": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C05": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C06": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C07": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C08": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C09": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C10": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C11": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C12": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C13": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C14": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C15": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C16": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C17": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C18": {
+      "route": "hiringcafe_keyword",
+      "source_url": "https://hiringcafe.com/jobs/ai-product-builder?page=1",
+      "employer_url": null
+    },
+    "C19": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C20": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C21": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C22": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C23": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C24": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C25": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C26": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C27": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C28": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C29": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C30": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C31": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C32": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C33": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C34": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C35": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C36": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C37": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C38": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C39": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C40": {
+      "route": "ai_native_builder_category",
+      "source_url": "https://www.ai-native-builder.com/ai-product-builder-jobs",
+      "employer_url": null
+    },
+    "C41": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/faros-ai",
+      "employer_url": "https://jobs.ashbyhq.com/faros-ai/19fa1cbf-2f8e-43df-9fef-d52fe12c0ee1"
+    },
+    "C42": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+      "employer_url": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5"
+    },
+    "C43": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/rillet",
+      "employer_url": "https://jobs.ashbyhq.com/rillet/a182464e-76c1-4f0b-af78-76ba8a611281"
+    },
+    "C44": {
+      "route": "direct_employer_board",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs?content=true",
+      "employer_url": "https://boards.greenhouse.io/figma/jobs/5707966004?gh_jid=5707966004"
+    },
+    "C45": {
+      "route": "direct_employer_board",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/babylist/jobs?content=true",
+      "employer_url": "https://job-boards.greenhouse.io/babylist/jobs/6121161004"
+    },
+    "C46": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/faros-ai",
+      "employer_url": "https://jobs.ashbyhq.com/faros-ai/11413be9-77d0-40e7-957a-687c347146d6"
+    },
+    "C47": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+      "employer_url": "https://jobs.ashbyhq.com/ramp/cdc3cb5a-8c6d-4820-86cf-5f9daa2b41fc"
+    },
+    "C48": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/veho-tech-inc",
+      "employer_url": "https://jobs.ashbyhq.com/veho-tech-inc/23b41a77-e16a-49b0-86a7-bb1ad64cfccd"
+    },
+    "C49": {
+      "route": "direct_employer_board",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs?content=true",
+      "employer_url": "https://boards.greenhouse.io/figma/jobs/6233043004?gh_jid=6233043004"
+    },
+    "C50": {
+      "route": "direct_employer_board",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/babylist/jobs?content=true",
+      "employer_url": "https://job-boards.greenhouse.io/babylist/jobs/5831620004"
+    },
+    "C51": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/oath",
+      "employer_url": "https://jobs.ashbyhq.com/oath/aa7508f1-429b-4c7a-b0e4-c7e74467a14d"
+    },
+    "C52": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/faros-ai",
+      "employer_url": "https://jobs.ashbyhq.com/faros-ai/f0978123-07f9-457e-9236-dc136ac1c0e7"
+    },
+    "C53": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/ramp",
+      "employer_url": "https://jobs.ashbyhq.com/ramp/3f4509ad-1858-478b-a7fb-bcd792d9575a"
+    },
+    "C54": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/veho-tech-inc",
+      "employer_url": "https://jobs.ashbyhq.com/veho-tech-inc/8219c3cb-e053-4928-b7e0-c31e777e1678"
+    },
+    "C55": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/rillet",
+      "employer_url": "https://jobs.ashbyhq.com/rillet/a157ef05-3218-4b42-ae79-a3d6d95c4bde"
+    },
+    "C56": {
+      "route": "direct_employer_board",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/figma/jobs?content=true",
+      "employer_url": "https://boards.greenhouse.io/figma/jobs/6207950004?gh_jid=6207950004"
+    },
+    "C57": {
+      "route": "direct_employer_board",
+      "source_url": "https://boards-api.greenhouse.io/v1/boards/babylist/jobs?content=true",
+      "employer_url": "https://job-boards.greenhouse.io/babylist/jobs/5988511004"
+    },
+    "C58": {
+      "route": "direct_employer_board",
+      "source_url": "https://api.ashbyhq.com/posting-api/job-board/faros-ai",
+      "employer_url": "https://jobs.ashbyhq.com/faros-ai/b30ce000-f54f-4767-aa74-19ecd7d7d838"
+    }
+  },
+  "warnings": [
+    "This source key is withheld from user review until relevance labels are recorded.",
+    "Search-site listings are unverified until employer checks; direct feed means listed at collection time."
+  ]
+}

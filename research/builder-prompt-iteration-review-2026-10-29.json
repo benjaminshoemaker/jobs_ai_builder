@@ -1,0 +1,258 @@
+{
+  "mode": "in_thread_policy_revision_and_review",
+  "baseline": {
+    "version": "builder-fit-v8",
+    "metrics": {
+      "records": 33,
+      "scored": 33,
+      "humanMaybe": 0,
+      "truePositive": 26,
+      "falsePositive": 0,
+      "falseNegative": 1,
+      "trueNegative": 4,
+      "abstentions": 2,
+      "operationalFailures": 0,
+      "precision": 1,
+      "recall": 0.896551724137931,
+      "semanticRecall": 0.896551724137931,
+      "decisionCoverage": 0.9393939393939394,
+      "labelBasis": "Recorded historical expectations; text/version pairing caveats retained, not unseen accuracy"
+    }
+  },
+  "rounds": [
+    {
+      "version": "builder-fit-v9",
+      "change": "Interpret implementation evidence across responsibilities and qualifications; distinguish production architecture from personal building.",
+      "metrics": {
+        "records": 33,
+        "scored": 33,
+        "humanMaybe": 0,
+        "truePositive": 27,
+        "falsePositive": 0,
+        "falseNegative": 1,
+        "trueNegative": 4,
+        "abstentions": 1,
+        "operationalFailures": 0,
+        "precision": 1,
+        "recall": 0.9310344827586207,
+        "semanticRecall": 0.9310344827586207,
+        "decisionCoverage": 0.9696969696969697
+      },
+      "disagreements": [
+        "apollo",
+        "batch1_c03"
+      ]
+    },
+    {
+      "version": "builder-fit-v10",
+      "change": "Clarify functional AI feature prototyping, shared delivery and non-code-generator AI building tools without admitting content-only AI use.",
+      "metrics": {
+        "records": 33,
+        "scored": 33,
+        "humanMaybe": 0,
+        "truePositive": 28,
+        "falsePositive": 0,
+        "falseNegative": 1,
+        "trueNegative": 4,
+        "abstentions": 0,
+        "operationalFailures": 0,
+        "precision": 1,
+        "recall": 0.9655172413793104,
+        "semanticRecall": 0.9655172413793104,
+        "decisionCoverage": 1
+      },
+      "disagreements": [
+        "apollo"
+      ]
+    }
+  ],
+  "selected": "builder-fit-v10",
+  "stoppingReason": "No further general rule was found that resolves Apollo without relaxing the reviewed prototype-only PM boundary or adding unsupported job-specific assumptions. This is a local policy-review stopping point, not proof of a globally optimal prompt.",
+  "fullTextGuard": {
+    "key": "fresh_20261028_n02",
+    "company": "Figma",
+    "title": "Sales Operations Manager",
+    "expected": "no",
+    "sourceId": "8a9b98f3-6a8d-41ef-891a-aba8af865525",
+    "sourceHash": "bd645633753a4cac15e7e9d750aecd9f10a912f22bd01e1448437be90c284d54",
+    "result": "no",
+    "reason": "The main mandate is sales advice, forecasts, operating cadence and insights; dashboards and AI-assisted analysis support that work rather than establishing ownership of creating and iterating working software solutions."
+  },
+  "historicalMetadataCoverage": {
+    "references": 54,
+    "fullTextInPrior33": 29,
+    "additionalFullTextGuard": 1,
+    "metadataOnly": [
+      {
+        "id": "vailent",
+        "role": "Vailent/Vinmar — Builder (Product Led)",
+        "label": "yes",
+        "reason": "Perfect reference: product decisions and direct AI-assisted delivery."
+      },
+      {
+        "id": "rivian",
+        "role": "Rivian — AI Product Engineer, Facilities",
+        "label": "yes",
+        "reason": "Good match: product/TPM entry routes and direct AI building."
+      },
+      {
+        "id": "medecision",
+        "role": "Medecision — AI Product Builder",
+        "label": "yes",
+        "reason": "Perfect reference: PM/PO/BA route and direct creation of working features."
+      },
+      {
+        "id": "brightwheel",
+        "role": "brightwheel — Staff AI Software Engineer, Product",
+        "label": "no",
+        "reason": "Specific posting rejected for significant engineering-career expectations."
+      },
+      {
+        "id": "docker",
+        "role": "Docker — Staff Software Engineer, AI Developer Tools",
+        "label": "no",
+        "reason": "Specific posting rejected for significant engineering-career expectations."
+      },
+      {
+        "id": "rwe",
+        "role": "RWE — Senior Product Manager, AI Transformation",
+        "label": "no",
+        "reason": "Product ownership of transformation without direct building."
+      },
+      {
+        "id": "cyvl",
+        "role": "Cyvl — Forward Deployed Engineer",
+        "label": "no",
+        "reason": "Solutions rather than product."
+      },
+      {
+        "id": "form",
+        "role": "Form Energy — Staff Forward Deployed Engineer",
+        "label": "no",
+        "reason": "Forward-deployed/solutions work."
+      },
+      {
+        "id": "toast",
+        "role": "Toast — GTM Engineer",
+        "label": "no",
+        "reason": "Engineering-centered role."
+      },
+      {
+        "id": "legion",
+        "role": "Legion Health — Founding Product Manager",
+        "label": "no",
+        "reason": "Overall traditional PM role. Preserve negative label despite coding language in the reviewed version."
+      },
+      {
+        "id": "cloudzero",
+        "role": "CloudZero — Senior/Staff PM, Agentic Practice",
+        "label": "no",
+        "reason": "AI-native PM rather than builder; prototyping alone is insufficient."
+      },
+      {
+        "id": "extenteam",
+        "role": "Extenteam — Founding AI Product Engineer, Multifamily",
+        "label": "stretch",
+        "reason": "Interesting stretch: appears to want an engineer despite broad formal qualifications."
+      },
+      {
+        "id": "vanta",
+        "role": "Vanta — Senior Product Builder, Organizational Intelligence",
+        "label": "yes",
+        "reason": "Good match."
+      },
+      {
+        "id": "batch1_c37",
+        "role": "SevenAI — AI Product Manager",
+        "label": "maybe",
+        "reason": "User is unsure whether personal building is actually part of the role. Product focus."
+      },
+      {
+        "id": "batch1_c43",
+        "role": "Rillet — Product Manager",
+        "label": "no",
+        "reason": "User says no: appears to be a PM role, not a builder role."
+      },
+      {
+        "id": "fresh_20261028_n01",
+        "role": "g2 — Associate GTM Engineer",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N01). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n03",
+        "role": "vanta — Staff Product Designer, Activation",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N03). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n04",
+        "role": "trm-labs — Deployment Strategist, National Security",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N04). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n05",
+        "role": "openart — B2B Lifecycle Marketing Manager",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N05). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n06",
+        "role": "figma — Manager, Software Engineering - UX Platform",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N06). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n07",
+        "role": "figma — PhD Intern, Security Engineer (2027)",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N07). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n08",
+        "role": "trm-labs — Enablement Manager, Public Sector",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N08). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n09",
+        "role": "earnin — Head of Communications",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N09). Specific reason and focus were not supplied."
+      },
+      {
+        "id": "fresh_20261028_n10",
+        "role": "veho-tech-inc — Warehouse Associate II, Ground Operations",
+        "label": "no",
+        "reason": "User confirmed no in the fresh-posting review (N10). Specific reason and focus were not supplied."
+      }
+    ],
+    "note": "All saved reference judgments informed the boundary audit. Metadata-only records are not scored as successful full-posting classifications."
+  },
+  "rejectedDirections": [
+    {
+      "direction": "Accept PM roles from roadmap ownership, past shipping experience and AI prototyping alone",
+      "reason": "Would admit the user-rejected Lab37 pattern and weaken the traditional-PM boundary; not selected."
+    },
+    {
+      "direction": "Treat every technically skilled AI-product feature prototyper as a match",
+      "reason": "Could equate developing an AI product or testing creative tools with using AI to implement solutions; retain the combined-mandate requirement."
+    },
+    {
+      "direction": "Require personal ownership of final production architecture and deployment",
+      "reason": "Would discard valid shared delivery, junior and design builders; not selected."
+    },
+    {
+      "direction": "Exclude interns, IT, customer-facing work or substantial SWE experience categorically",
+      "reason": "Conflicts with approved AwardSpring, OpenSesame builder intern, TRM, Sekai and demanding hybrid examples; not selected."
+    },
+    {
+      "direction": "Add an Apollo-specific acceptance example or exception to eliminate the last mismatch",
+      "reason": "Would replace the unresolved evidence boundary with an answer-key rule; not selected."
+    }
+  ],
+  "apiCalls": 0,
+  "apiBudgetChangeUSD": 0,
+  "productionChanges": false
+}

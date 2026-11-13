@@ -1,0 +1,18 @@
+{
+  "selection": "source-hidden-heldout-1-selection-2026-10-27.json",
+  "checked_date_pacific": "2026-10-27",
+  "records": [
+    { "id": "C04", "status": "employer_identity_unresolved", "source_title": "AI Product Lead", "note": "HiringCafe still displays the role. Granicus posting 10314 with the same title is gone; a similar posting 10453 is live. The source's exact employer posting ID could not be established, so do not treat either as this candidate's confirmed current posting." },
+    { "id": "C16", "status": "employer_current_title_changed", "employer_title": "Agent Core Technical Product Manager", "employer_url": "https://jpmc.fa.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1002/job/210797788" },
+    { "id": "C47", "status": "employer_current", "employer_title": "Senior Product Marketing Manager - New Products", "employer_url": "https://jobs.ashbyhq.com/ramp/cdc3cb5a-8c6d-4820-86cf-5f9daa2b41fc" },
+    { "id": "C22", "status": "employer_current", "employer_title": "Applied AI Product Manager - Financial Services/Audit", "employer_url": "https://apply.deloitte.com/en_US/careers/JobDetail/Applied-AI-Product-Manager-Financial-Services-Audit/368391" },
+    { "id": "C09", "status": "employer_current", "employer_title": "Staff Product Manager, AI Builder Experience", "employer_url": "https://www.mongodb.com/careers/jobs/8129885" },
+    { "id": "C55", "status": "employer_current", "employer_title": "Product Designer", "employer_url": "https://jobs.ashbyhq.com/rillet/a157ef05-3218-4b42-ae79-a3d6d95c4bde" },
+    { "id": "C39", "status": "employer_current_title_changed", "employer_title": "Senior Product Engineer", "employer_url": "https://jobs.ashbyhq.com/onoshealth/58d36bae-5153-471a-9c8c-2094339be001" },
+    { "id": "C54", "status": "employer_current", "employer_title": "VP of Commercial Product", "employer_url": "https://jobs.ashbyhq.com/veho-tech-inc/8219c3cb-e053-4928-b7e0-c31e777e1678" },
+    { "id": "C30", "status": "employer_current_title_changed", "employer_title": "AI Forward Deployed Engineer", "employer_url": "https://www.quantifind.com/open-positions/?gh_jid=8024932" },
+    { "id": "C14", "status": "employer_current", "employer_title": "Staff Product Manager, AI Research & Engineering", "employer_url": "https://collectorsuniverse.wd1.myworkdayjobs.com/en-US/collectors/job/Staff-Product-Manager--AI-Research---Engineering_JR106708" },
+    { "id": "C51", "status": "employer_current", "employer_title": "AI Audit Lead", "employer_url": "https://jobs.ashbyhq.com/oath/aa7508f1-429b-4c7a-b0e4-c7e74467a14d" },
+    { "id": "C32", "status": "employer_current_title_changed", "employer_title": "Growth / AI Product Manager", "employer_url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=56dad57d-81b7-4889-9f75-7ef29807fa05&ccId=1990797403_6352&jobId=618871&lang=en_US" }
+  ]
+}

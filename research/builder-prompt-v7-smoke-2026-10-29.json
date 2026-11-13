@@ -1,0 +1,205 @@
+{
+  "status": "complete",
+  "version": "builder-fit-v7",
+  "manifestHash": "7358f54c0d2aa45a1f41dbf0f4560e881b75a107df93832ce0161b7ce2261b51",
+  "cases": [
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "title": "Product Manager - Robotic Kitchen",
+      "company": "cssmerge",
+      "expected": "no",
+      "sourceHash": "7b5c235f004e3f144746d5a0706abd0f833382945e2fa243d65f38156c46fa8b",
+      "labelEvidence": "explicit_current_source_review",
+      "requestHash": "60a43e343c69bf81838f70123b4810ed199dc753f4e284d548894a04f769e607",
+      "exampleIds": [
+        "overjoy",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "title": "IT Intern, AI and Operations",
+      "company": "azul",
+      "expected": "no",
+      "sourceHash": "833dfcc2fc80e9b440f7c7c97e337683e19de0b84dad0634c61a711b5f954810",
+      "labelEvidence": "explicit_current_source_review",
+      "requestHash": "b46ba9e8e39273134b02fe34ff1b50485bd58be995ddbafffee8656823242ea2",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    },
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "title": "Director, Data Engineering",
+      "company": "getsquire",
+      "expected": "no",
+      "sourceHash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "labelEvidence": "explicit_current_source_review",
+      "requestHash": "5b4f6079a86c646cdf2dc8f856e586ec779a42155d4a2b56f0b25d2944930704",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "rillet"
+      ]
+    },
+    {
+      "key": "overjoy",
+      "title": "Product Manager",
+      "company": "Overjoy",
+      "expected": "yes",
+      "sourceHash": "132246f2897d84ca9e6a6d87af652176a64bfb0d16ddc3804aacfa2f851d31ac",
+      "labelEvidence": "historical_label_with_matching_archived_capture",
+      "requestHash": "9a16e937a6dc40c1f66d6887949d9ab336a45143d828e60a1289cf5f74a11e6e",
+      "exampleIds": [
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    },
+    {
+      "key": "batch1_c08",
+      "title": "Product Builder Intern",
+      "company": "AwardSpring",
+      "expected": "yes",
+      "sourceHash": "da61f1995c99efb88632345f71f8609fac553b1b6b0471a51ab7e1ee034c803f",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "requestHash": "5420ac45f1db9b18cb7d426fde79e318a99b4216f8d62a7355df2ec16691853b",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ]
+    },
+    {
+      "key": "batch1_c20",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "company": "TRM Labs",
+      "expected": "yes",
+      "sourceHash": "32d29b009df1d4b59012bd0f75600c2ea7fdb21404d81ed07c6c5596550b94a0",
+      "labelEvidence": "historical_label_unverified_text_pair",
+      "requestHash": "28f33425fffa4dc5460b7924906a73e60e3e5a84cdaf763dae7142a3211a5d43",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "squire",
+        "rillet"
+      ]
+    }
+  ],
+  "maximumNewUSD": 0.017783625,
+  "priorReservedUSD": 3.568425275,
+  "results": [
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The PM owns discovery, requirements, QA, rollout, and roadmap coordination; AI is required for prototypes and MVPs to validate concepts, but the posting does not establish personal implementation of usable product features or tools. Engineering is the delivery partner."
+      }
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern is explicitly responsible for designing, building, testing, and iterating on Claude skills and AI agents for real IT and Security workflows, including deployment and connector validation. That is hands-on AI-enabled implementation, not merely research or coordination."
+      }
+    },
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "expected": "no",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The director is explicitly expected to spend about half their time hands-on, personally designing, building, debugging, and shipping high-impact data pipelines and AI enablement capabilities, while using AI/LLM tooling and leading the broader organization."
+      }
+    },
+    {
+      "key": "overjoy",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The PM owns discovery through measured launch and is explicitly expected to use Claude Code to prototype and ship small fixes personally, alongside engineering shipping the broader work."
+      }
+    },
+    {
+      "key": "batch1_c08",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The intern ships well-scoped work into a production codebase with real users, using agentic tooling from day one and iterating with senior review."
+      }
+    },
+    {
+      "key": "batch1_c20",
+      "expected": "yes",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The engineer personally translates mission-user needs into working software, integrations, data pipelines, and prototypes, deploys them in customer environments, and carries learning back to the product. AI coding tools are explicitly part of how they build and ship."
+      }
+    }
+  ],
+  "note": "One development smoke test on six previously inspected cases, not a holdout benchmark. Original source-text caveats still apply to historical positives. Target employer examples excluded.",
+  "developmentDiagnosticMetrics": {
+    "records": 6,
+    "scored": 6,
+    "humanMaybe": 0,
+    "truePositive": 3,
+    "falsePositive": 2,
+    "falseNegative": 0,
+    "trueNegative": 1,
+    "abstentions": 0,
+    "operationalFailures": 0,
+    "precision": 0.6,
+    "recall": 1,
+    "semanticRecall": 1,
+    "decisionCoverage": 1,
+    "labelBasis": "Recorded user judgments, including historically paired positive expectations whose original full text is unverified",
+    "includedHistoricallyPaired": 3
+  },
+  "sourceVerifiedMetrics": {
+    "records": 6,
+    "scored": 3,
+    "sourceUnverified": 3,
+    "humanMaybe": 0,
+    "truePositive": 0,
+    "falsePositive": 2,
+    "falseNegative": 0,
+    "trueNegative": 1,
+    "abstentions": 0,
+    "operationalFailures": 0,
+    "precision": 0,
+    "recall": null,
+    "semanticRecall": null,
+    "decisionCoverage": 1
+  },
+  "budget": {
+    "reserved_usd": 3.5862089,
+    "reported_usage_estimate_usd": 0.898665975
+  }
+}

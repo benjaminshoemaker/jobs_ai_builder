@@ -15,3 +15,6 @@ export * from "./schemas/index.js";
 export * from "./sources/index.js";
 export * from "./storage/index.js";
 export * from "./usage/index.js";
+export * from "./prototype/assessment.js";
+export * from "./prototype/collect.js";
+export * from "./prototype/workflow.js";

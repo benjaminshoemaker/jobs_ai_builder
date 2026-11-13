@@ -1,0 +1,156 @@
+{
+  "imported": [
+    {
+      "reviewId": "T01",
+      "candidateId": "bb4a782052fdc54c04faaaf33396279b",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T02",
+      "candidateId": "559c6073acd6d4bf60ba9d6fb977ebcf",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T03",
+      "candidateId": "05002ae56fddf736d82183102a9ba0c0",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T04",
+      "candidateId": "af994dff77dbc8f1c5fb1132778101ee",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T05",
+      "candidateId": "77ae534122143c62e1e1c015d487c6b5",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T06",
+      "candidateId": "4704c599d5115e207ab3015db65ac2e8",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T07",
+      "candidateId": "a7e7dff1ea73a431f166a1e13f71d714",
+      "decision": "maybe",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T08",
+      "candidateId": "bbf3141e859add7901a9e025b78ff8ed",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T09",
+      "candidateId": "111ae371b241b14d1ab5fd06ba441fae",
+      "decision": "no",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T10",
+      "candidateId": "1751bde536c82963c1313c7be9666100",
+      "decision": "no",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T11",
+      "candidateId": "24d1e28ed086a075bf2356688fa8e3fe",
+      "decision": "yes",
+      "currentSource": true
+    },
+    {
+      "reviewId": "T12",
+      "candidateId": "7751cbf5a57af335d1b73a9881af9aca",
+      "decision": "yes",
+      "currentSource": true
+    }
+  ],
+  "draftRuns": [
+    {
+      "runId": "537c596c-80f9-48aa-9ff2-0d8798ca9c2d",
+      "processed": 3,
+      "states": {
+        "succeeded": 3
+      },
+      "scheduled": false,
+      "published": 0,
+      "fixture": false
+    },
+    {
+      "runId": "64fd2f98-23f6-42dc-9b3f-8ef3e217f733",
+      "processed": 3,
+      "states": {
+        "succeeded": 3
+      },
+      "scheduled": false,
+      "published": 0,
+      "fixture": false
+    },
+    {
+      "runId": "a39f7526-3300-41f0-b68c-3ad01946952a",
+      "processed": 3,
+      "states": {
+        "succeeded": 3
+      },
+      "scheduled": false,
+      "published": 0,
+      "fixture": false
+    },
+    {
+      "runId": "7c561e60-d4a6-44ac-8e57-029fb4adabfd",
+      "processed": 0,
+      "states": {},
+      "scheduled": false,
+      "published": 0,
+      "fixture": false
+    }
+  ],
+  "modelCalls": 0,
+  "published": 0,
+  "drafts": [
+    {
+      "job_id": "candidate-05002ae56fddf736d82183102a9ba0c0",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-24d1e28ed086a075bf2356688fa8e3fe",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-4704c599d5115e207ab3015db65ac2e8",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-559c6073acd6d4bf60ba9d6fb977ebcf",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-7751cbf5a57af335d1b73a9881af9aca",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-77ae534122143c62e1e1c015d487c6b5",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-af994dff77dbc8f1c5fb1132778101ee",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-bb4a782052fdc54c04faaaf33396279b",
+      "status": "draft"
+    },
+    {
+      "job_id": "candidate-bbf3141e859add7901a9e025b78ff8ed",
+      "status": "draft"
+    }
+  ]
+}

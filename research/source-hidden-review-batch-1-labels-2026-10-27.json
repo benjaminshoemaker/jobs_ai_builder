@@ -1,0 +1,19 @@
+{
+  "batch": "source-hidden-review-batch-1-2026-10-27",
+  "label_source": "user review, with C52 identity clarified in follow-up",
+  "focus_vocabulary": "open; tags describe the work and may overlap",
+  "labels": [
+    { "id": "C46", "label": "yes", "focus": ["product"], "reason": "Yes; product focus." },
+    { "id": "C20", "label": "yes", "focus": ["software_engineering"], "reason": "Directly works with mission users, builds working software, and carries mission context into the product roadmap." },
+    { "id": "C29", "label": "yes", "focus": ["software_engineering"], "reason": "Product-centric engineer who cares about user experience, moves fast, and uses AI as a core part of building." },
+    { "id": "C27", "label": "yes", "focus": ["product"], "reason": "Yes; product focus." },
+    { "id": "C03", "label": "yes", "focus": ["product"], "reason": "Yes; product focus." },
+    { "id": "C50", "label": "yes", "focus": ["design"], "reason": "Yes; design focus." },
+    { "id": "C37", "label": "maybe", "focus": ["product"], "reason": "Unsure whether personal building is actually in the role." },
+    { "id": "C43", "label": "no", "focus": [], "reason": "Appears to be just a PM role." },
+    { "id": "C08", "label": "yes", "focus": ["product"], "reason": "Yes; product focus." },
+    { "id": "C52", "label": "yes", "focus": ["product"], "reason": "User clarified that the C53 reference in their initial reply meant C52 Faros AI-Native Builder." },
+    { "id": "C01", "label": "yes", "focus": ["software_engineering"], "reason": "Yes; software engineering focus." },
+    { "id": "C07", "label": "yes", "focus": ["operations"], "reason": "Yes; operations focus." }
+  ]
+}

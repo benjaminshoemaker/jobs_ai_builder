@@ -1,0 +1,23 @@
+{
+  "caseKey": "batch1_c50",
+  "maxOutputTokens": 600,
+  "status": "completed",
+  "incompleteDetails": null,
+  "returnedModel": "gpt-6.1-sol",
+  "outputText": "{\"decision\":\"yes\",\"reason\":\"The role explicitly owns the full building loop: researching user problems, personally using AI to create interactive prototypes and production frontend code, testing with users, and instrumenting outcomes to guide iteration. Hands-on implementation and ongoing refinement are central responsibilities, not occasional demos or work delegated to engineers.\"}",
+  "outputTypes": [
+    "message"
+  ],
+  "usage": {
+    "input_tokens": 2598,
+    "input_tokens_details": {
+      "cache_write_tokens": 2595,
+      "cached_tokens": 0
+    },
+    "output_tokens": 74,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2672
+  }
+}

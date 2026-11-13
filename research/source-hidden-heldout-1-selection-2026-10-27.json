@@ -1,0 +1,13 @@
+{
+  "purpose": "predeclared, source-balanced follow-up from the remaining 46 candidates; no relevance labels assigned",
+  "selection_rule": "Exclude all twelve batch-1 IDs, sort eligible IDs within each source route, then draw four without replacement per route using Python random.Random('2026-10-27-heldout-1-v1').sample. Keep route mapping in the separate source key.",
+  "seed": "2026-10-27-heldout-1-v1",
+  "selected_ids": ["C39", "C30", "C22", "C32", "C47", "C55", "C54", "C51", "C16", "C04", "C14", "C09"],
+  "route_count_each": 4,
+  "status": "eleven current employer postings verified for source-hidden review; C04 employer identity unresolved; no relevance labels assigned",
+  "verification_notes": [
+    "C39's employer board currently lists the same posting ID as Senior Product Engineer, not the Forward Deployed Engineer title captured in the source pool.",
+    "C30's Greenhouse feed currently lists the same posting ID as AI Forward Deployed Engineer.",
+    "The per-candidate results are recorded in source-hidden-heldout-1-verification-2026-10-27.json."
+  ]
+}

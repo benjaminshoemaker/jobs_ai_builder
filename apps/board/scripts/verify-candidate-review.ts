@@ -1,0 +1,34 @@
+import {Client} from 'pg';
+import assert from 'node:assert/strict';
+import {randomUUID} from 'node:crypto';
+import {candidateQueueData,saveCandidateReview} from '../src/candidate-review-store.js';
+import {reviewPurpose,selectionPolicy,type ReviewToken} from '../src/candidate-review.js';
+import {calibrationSnapshot} from '../src/review-calibration.js';
+import {digest} from '../src/review-history.js';
+if(!process.argv.includes('--rollback-test')||process.env.VERCEL_ENV==='production'||!process.env.DATABASE_URL_UNPOOLED)throw new Error('Explicit preview rollback test required');
+const client=new Client({connectionString:process.env.DATABASE_URL_UNPOOLED});await client.connect();
+try{
+  await client.query('begin');
+  const candidates=(await client.query('select c.* from board_discovery_candidates c join board_discovery_versions v on v.candidate_id=c.id and v.content_hash=c.current_hash where not exists(select 1 from board_candidate_reviews r where r.candidate_id=c.id) order by c.id limit 100')).rows;
+  const calibration=candidates.find(row=>reviewPurpose(row.id)==='calibration'),evaluation=candidates.find(row=>reviewPurpose(row.id)==='evaluation');assert.ok(calibration&&evaluation);
+  const baseline=await calibrationSnapshot(client);assert.equal(baseline.historicalCount,54);
+  const modelId=randomUUID();await client.query('insert into board_candidate_assessments(id,candidate_id,source_hash,classifier_version,calibration_version,model,result) values($1,$2,$3,$4,$5,$6,$7)',[modelId,calibration.id,calibration.current_hash,'rollback',baseline.id,'rollback-test',{fit:'exclude',reason:'FAKE-MODEL-NOTE'}]);
+  const token:ReviewToken={id:calibration.id,hash:calibration.current_hash,nonce:randomUUID(),actor:'rollback-fixture',assessmentId:modelId,reviewId:null,lane:'negative_audit',policy:selectionPolicy,issuedAt:Date.now()};
+  const fields={decision:'yes',focus:'Product',engineering:'explicit_non_swe_route',note:'Fixture feedback, not a real category judgment'};
+  await saveCandidateReview(client,token,fields);await saveCandidateReview(client,token,fields);
+  await assert.rejects(saveCandidateReview(client,token,{...fields,note:'Changed note on an already-used form'}),/already used/);
+  assert.equal((await client.query('select count(*)::int as n from board_candidate_reviews where candidate_id=$1',[calibration.id])).rows[0].n,1);
+  const learned=await calibrationSnapshot(client);assert.notEqual(learned.id,baseline.id);assert.equal(learned.selectedFeedback,baseline.selectedFeedback+1);assert.ok(!learned.context.includes('FAKE-MODEL-NOTE'));
+  const queue=await candidateQueueData(client,'all','all');assert.ok(!queue.eligible.some(row=>row.id===calibration.id));
+  const correction={...token,nonce:randomUUID(),reviewId:token.nonce};await saveCandidateReview(client,correction,{...fields,decision:'no',note:'Corrected fixture'});
+  const corrected=await calibrationSnapshot(client);assert.notEqual(corrected.id,learned.id);const context=JSON.parse(corrected.context);assert.equal(context.feedback.find((row:any)=>row.candidate===calibration.id).decision,'no');
+  await assert.rejects(saveCandidateReview(client,{...token,nonce:randomUUID()},fields),/newer decision/);
+  const evalToken={...token,id:evaluation.id,hash:evaluation.current_hash,nonce:randomUUID(),assessmentId:null,reviewId:null,lane:'evaluation' as const};await saveCandidateReview(client,evalToken,{...fields,decision:'maybe',note:'Held-out fixture'});
+  assert.equal((await calibrationSnapshot(client)).id,corrected.id);
+  const changed=digest('changed-source');await client.query('update board_discovery_candidates set current_hash=$2 where id=$1',[calibration.id,changed]);
+  await assert.rejects(saveCandidateReview(client,{...correction,nonce:randomUUID(),reviewId:correction.nonce},fields),/source changed/);
+  await assert.rejects(saveCandidateReview(client,{...correction,hash:changed,nonce:randomUUID(),reviewId:correction.nonce},fields),/Full employer text/);
+  await client.query('rollback');
+  assert.equal((await client.query("select count(*)::int as n from board_candidate_reviews where actor_id='rollback-fixture'")).rows[0].n,0);
+  console.log('Verified source-bound saving, idempotence, corrections, queue advance, feedback-version updates and held-out exclusion; all fixture changes rolled back.');
+}finally{await client.query('rollback');await client.end();}

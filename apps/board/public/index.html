@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Builder roles</title>
+  <link rel="stylesheet" href="/tokens.css">
+  <link rel="stylesheet" href="/styles.css">
+  <!--SERVER_META-->
+</head>
+<body data-theme="workshop" data-palette="apricot">
+  <div class="board-notice" id="board-notice" role="status"></div>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">b/</span> Builder roles</a>
+      <nav class="header-links" aria-label="Primary"><a href="#jobs">Find roles</a><a href="#about">The definition</a></nav>
+    </div>
+  </header>
+  <main class="page" id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <h1 id="hero-title">Roles for people who think, build, and ship with AI.</h1>
+        <p class="hero-copy">Every role here asks one person to help define a problem, build a working solution with AI, and get it into use. Explore where that work lives and what background each employer requires.</p>
+      </div>
+      <div class="hero-aside" id="about"><strong>What counts as a builder?</strong>Someone who uses AI to personally turn a problem they help define into working software, gets it into use, and learns from what happens next.</div>
+    </section>
+    <div class="board-layout" id="jobs">
+      <aside class="sidebar" aria-label="Job filters">
+        <h2>Filter roles</h2>
+        <button class="mobile-filter-toggle" type="button" aria-expanded="false">Filters</button>
+        <div class="filter-group"><label for="focus-filter">Work focus</label><select id="focus-filter"><option value="all">All focuses</option><option value="Product">Product</option><option value="Operations">Operations</option><option value="Engineering-led">Engineering-led</option><option value="Design">Design</option></select></div>
+        <div class="filter-group"><label for="gate-filter">Prior SWE experience</label><select id="gate-filter"><option value="all">Any requirement</option><option value="open">Not required</option><option value="required">Required</option><option value="unclear">Unclear</option></select></div>
+        <div class="filter-group"><label for="salary-filter">Annual base salary</label><select id="salary-filter" aria-describedby="salary-help"><option value="0">Any salary</option><option value="100000">$100,000+</option><option value="150000">$150,000+</option><option value="200000">$200,000+</option><option value="250000">$250,000+</option></select><p class="filter-help" id="salary-help">USD ranges that reach this amount. Excludes bonus and equity.</p><div class="checks"><label><input id="unknown-pay" type="checkbox"> Include unknown base pay</label></div></div>
+        <div class="filter-group"><fieldset><legend>Location</legend><details class="location-picker"><summary id="location-summary">All cities</summary><div class="location-actions"><button type="button" id="select-all-cities">Select all</button><button type="button" id="clear-cities">Clear</button></div><div id="location-options" class="checks location-options"></div></details><div class="checks"><label><input id="include-remote" type="checkbox" checked> Include remote roles</label></div></fieldset></div>
+        <button class="filter-reset" id="reset-filters" type="button">Reset filters</button><p class="sidebar-note" hidden><strong>Research sample.</strong> These roles were user-reviewed. Flags stay in this preview and are not submitted.</p>
+      </aside>
+      <section aria-labelledby="board-title">
+        <div class="board-heading"><div><h2 id="board-title">Builder roles</h2></div><span class="result-count" id="result-count" aria-live="polite"></span></div>
+        <div class="search-row"><label for="job-search">Search roles</label><input id="job-search" type="search" placeholder="Search title, company, or work" autocomplete="off"></div>
+        <p id="feedback-status" role="status" class="feedback-status"></p><div class="cards" id="cards" aria-busy="true">Loading roles…</div><noscript>Enable JavaScript to search and browse this board.</noscript>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="page">Builder roles · Curated roles for people who think, build, and ship with AI.</div></footer>
+  <dialog id="details" aria-labelledby="role-details-title"><div class="dialog-inner" id="details-content"></div></dialog>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

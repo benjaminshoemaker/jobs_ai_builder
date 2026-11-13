@@ -1,0 +1,1036 @@
+{
+  "status": "complete_in_thread_review",
+  "version": "builder-fit-v8",
+  "mode": "in-thread-regression-review",
+  "model": "User-selected GPT-6.1 Sol in current desktop thread; not independently resolved through CLI",
+  "policyHash": "dbd9dcadf4cd1edd6aed5e6eff49a9a297a091730ef71a33281780b4d338dbe9",
+  "source": "Frozen 33-case v3 development set",
+  "caveat": "Conversation includes prior labels and results; not a blind or isolated model benchmark. Historical source-pairing caveats remain.",
+  "cases": [
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "title": "Director, Data Engineering",
+      "company": "getsquire",
+      "expected": "no",
+      "sourceHash": "496d92c0b8ea0132533bed46c5440374fa9d5a0c928c6e151617556dd84732d2",
+      "inputHash": "c3d854e5f3745a61320b4955c82f0d3a986443418d3775d0f7cdbe90fd356e57",
+      "normalizedInputHash": "2882d3b70bc0fb6d2adbd770ae2629a55a3e86e902a3d3bb2fa8e53496f6d938",
+      "comparison": "exact_user_reviewed_version",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "rillet"
+      ],
+      "file": "01.json"
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "title": "IT Intern, AI and Operations",
+      "company": "azul",
+      "expected": "no",
+      "sourceHash": "833dfcc2fc80e9b440f7c7c97e337683e19de0b84dad0634c61a711b5f954810",
+      "inputHash": "1e52f19c90876d21efc2b4a0e888cb71136317ce5eb2e4546a08860ffc6fe239",
+      "normalizedInputHash": "f86262f5ce3f8727836fcdaa094f8e33d265de288b4c728e4f219f963a9e2c3b",
+      "comparison": "exact_user_reviewed_version",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "02.json"
+    },
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "title": "Product Manager - Robotic Kitchen",
+      "company": "cssmerge",
+      "expected": "no",
+      "sourceHash": "7b5c235f004e3f144746d5a0706abd0f833382945e2fa243d65f38156c46fa8b",
+      "inputHash": "7e815f2afd505fee72377a9750ad5f5b01d72f8b074ee998bdeb5a96e6eac8b1",
+      "normalizedInputHash": "486380cbc1d4b3f1e5d1ff6bcccb44df1955ae68e48f2626eff423c83907c3e1",
+      "comparison": "exact_user_reviewed_version",
+      "exampleIds": [
+        "overjoy",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "03.json"
+    },
+    {
+      "key": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "title": "Systems Administrator ",
+      "company": "opensesame",
+      "expected": "no",
+      "sourceHash": "5a1b24cb0ec4157532cc1cd679c0318b58021ce15b1bcc2f83a43e8523eb0609",
+      "inputHash": "10a1e3fe49eeb6a8ca75cfed38beabee3ea4b4fd4971fe0be814dcffeb2959d4",
+      "normalizedInputHash": "c637ca5b96509813fc5e754b64b74a16b91afeb81e477b2a9f0cb776576b748f",
+      "comparison": "exact_user_reviewed_version",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "04.json"
+    },
+    {
+      "key": "alaffia",
+      "title": "AI Transformation Lead",
+      "company": "Alaffia",
+      "expected": "yes",
+      "sourceHash": "5516a6a8f95202ecd5b091059f88d4bfd67cb4d103e2096b8beaa2a21caf9448",
+      "inputHash": "dad1411519f3431ebd7296cab46bba78914edd707f79744e8ee58d2a06d02123",
+      "normalizedInputHash": "4b81dd2b6e8b0a9460ddd1c16b16afe94cb1f3872ba86d9154260ede236d3cbf",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "05.json"
+    },
+    {
+      "key": "alt",
+      "title": "Product Builder, Growth",
+      "company": "Alt",
+      "expected": "yes",
+      "sourceHash": "bb9c3d4b628f7513e47be95bc6c425aaa341f6699dde781f18fb5e973e850687",
+      "inputHash": "f611539a8845e58d328ef223a3fa64820b266e04839d3875d456310b1f507b8a",
+      "normalizedInputHash": "440e80ed1ee8dc79c901627f1cdafc50b511f74b1ec50a14fc8acc99524234fb",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "06.json"
+    },
+    {
+      "key": "amperity",
+      "title": "Principal Product Builder",
+      "company": "Amperity",
+      "expected": "yes",
+      "sourceHash": "b8313db95b66154a9605d091c5888cbb9b184e8a9cf63870847e93192b44b55e",
+      "inputHash": "40c76105a0305f0353c6199e6bee5035c1feb57a3355e3708ee4532718f4ae1c",
+      "normalizedInputHash": "5b9a9520149c73993829a24b92f6abc66b0c1a50386ee0e9097a144e0bf8efec",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "07.json"
+    },
+    {
+      "key": "apollo",
+      "title": "Principal Product Builder, Data",
+      "company": "Apollo",
+      "expected": "yes",
+      "sourceHash": "af09f2e49cdc64deeb205980146747d03cc8dc53bfe1c8bc3746e4d04cd7f608",
+      "inputHash": "050ed7f8fd916d40433220f186443da5c53cd25ff58d434e5ed238f3346920c9",
+      "normalizedInputHash": "0e23118f0331221d3d13d6509a1390b1e3f33e459fd0f15f4f15003de7aa8a41",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "08.json"
+    },
+    {
+      "key": "axiad",
+      "title": "Principal Product Builder",
+      "company": "Axiad",
+      "expected": "yes",
+      "sourceHash": "7bd2c65180c2ca7da458b16d2d30cc932a2654b64075e365969a86978bbb609e",
+      "inputHash": "eaf38912185bbc21ef499df0518cd1b6af2dd3a16cf482943a1358581560a341",
+      "normalizedInputHash": "69d52f0adb51add77d5cee478671528c5800a2b5b23801826c82096b27c679a1",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "09.json"
+    },
+    {
+      "key": "batch1_c01",
+      "title": "AI Builder",
+      "company": "ITS Logistics",
+      "expected": "yes",
+      "sourceHash": "cd7d2f0e9b336af6757b37f58b045e869ce46a082ef95f14035ecc6b8d91b2c2",
+      "inputHash": "fc06482b65d64dcc36e85f8e5be29d38c0e000a1cde05ed25ab7e19a6cf0fbb7",
+      "normalizedInputHash": "c9e9e133852566883d2dcd3813361dfc4a207053bc657f21c4b7babbfe08cc9b",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "10.json"
+    },
+    {
+      "key": "batch1_c03",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "company": "OpenArt",
+      "expected": "yes",
+      "sourceHash": "8ce39a6a0be2dfe6ef6686d5aaa9a8f9149b43a7d32e1629a41b8398c125d252",
+      "inputHash": "9e49ea243f26e0fd563838986d9f5a5624bb340fcb3de09d53dc448a165d117a",
+      "normalizedInputHash": "11b4b3be6bd1d3b93bb490ad7cab8ca1e5d8bbe7f58cbca568a5091802833f5a",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "11.json"
+    },
+    {
+      "key": "batch1_c07",
+      "title": "AI Product Builder",
+      "company": "RK Logistics Group",
+      "expected": "yes",
+      "sourceHash": "526497d0f2e2a5afac735b8822e03c0a15d88a777b7d77995a4d9759ee011add",
+      "inputHash": "3ec7f86defcd0277b1fe2ebe9fab38ce435aeea58a490793770cd1dd63aeebc4",
+      "normalizedInputHash": "4890a9b8631f4dfb4976b551fe8a4c1c16a561dc36b6c95d4c8e43028b0bebbb",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "12.json"
+    },
+    {
+      "key": "batch1_c08",
+      "title": "Product Builder Intern",
+      "company": "AwardSpring",
+      "expected": "yes",
+      "sourceHash": "da61f1995c99efb88632345f71f8609fac553b1b6b0471a51ab7e1ee034c803f",
+      "inputHash": "88c2e43cd69cb586483eae384b3bc2fdfc9ab37c8d95f2b98468c209381d3131",
+      "normalizedInputHash": "cee3ed0ded4083b4f26f3fd6d7915d97fe867c3fdccf39000ba0bea6da5e6530",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "13.json"
+    },
+    {
+      "key": "batch1_c20",
+      "title": "Forward Deployed Engineer, U.S. National Security",
+      "company": "TRM Labs",
+      "expected": "yes",
+      "sourceHash": "32d29b009df1d4b59012bd0f75600c2ea7fdb21404d81ed07c6c5596550b94a0",
+      "inputHash": "7bbf8dda655588f4ce5b12e68b9e9dfb14ef497516b44a68d3a2357eac114184",
+      "normalizedInputHash": "f9ddfc8324468b4e1f5025dee5659cba08c543677b16c8e41a673353457bc301",
+      "comparison": "changed",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "squire",
+        "rillet"
+      ],
+      "file": "14.json"
+    },
+    {
+      "key": "batch1_c27",
+      "title": "AI Product Builder Intern",
+      "company": "OpenSesame",
+      "expected": "yes",
+      "sourceHash": "59f1960cd96d652f4fa94383c8321f670c904b97c1f7d2c778fd4826bba20255",
+      "inputHash": "3ef07c29ce0aa90b796e95bd81c564d9ff6ba72cff0e8921185b055b1fc1c941",
+      "normalizedInputHash": "66f1d454ae16b44cd066df609edaa21874204b0517be94b84a6e8653a552ced6",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "15.json"
+    },
+    {
+      "key": "batch1_c29",
+      "title": "AI Product Engineer",
+      "company": "Sekai",
+      "expected": "yes",
+      "sourceHash": "c69ea4b0755fb3397fdcd4b453df506ff020ae6fdd826b5e35faf8b0a694c2a8",
+      "inputHash": "db2c0360cc79f24411614dd9b8c152c332c0fe73d177fc13a87b18e2bc958050",
+      "normalizedInputHash": "382a637085f9fb5aea759bb92c156af095f5f538cb8dd1a642ed7f8b7526479b",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "16.json"
+    },
+    {
+      "key": "batch1_c46",
+      "title": "Product Manager, AI Native Initiatives",
+      "company": "Faros",
+      "expected": "yes",
+      "sourceHash": "176e902458891476e4594aba3065b68d9022d60ba0af05c95d3400184ca7c748",
+      "inputHash": "2d6d123d2b3d8d5775c0320c338fd4f8f795335acfb8aa45248bd8003e4a194d",
+      "normalizedInputHash": "fc3a95bc4abc20205914835a485da25e0461ca3cbe9fcdd0bb690661a58d051f",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "17.json"
+    },
+    {
+      "key": "batch1_c50",
+      "title": "Staff Product Designer (AI Builder)",
+      "company": "Babylist",
+      "expected": "yes",
+      "sourceHash": "2be08fba69f5b3cab09aaad77ac16b19a7d57eee74cc561447c7da8783e67e8d",
+      "inputHash": "4885bae4a2427d848adaf0a6b7f0b021ba8e0292fca0007cf5cd2257d624ea2e",
+      "normalizedInputHash": "7390822f9a23519bcff3c95f824ffec61ef76555b7b90f32552786ad3219a1e1",
+      "comparison": "changed",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "18.json"
+    },
+    {
+      "key": "batch1_c52",
+      "title": "AI-Native Builder",
+      "company": "Faros",
+      "expected": "yes",
+      "sourceHash": "c99569ea3595b29ed147eadb9eb97c936bea17f021ed0374d2712d0ece30e2c0",
+      "inputHash": "a8dcc6603eb74063515fd252c4b25763a466bc9a48ca2d87dc403ee5a30bdcdf",
+      "normalizedInputHash": "f32ff10d56bf8ada05d3f1db6e79bb6a85cee48ea6319fec669dd43e354e01da",
+      "comparison": "changed",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "19.json"
+    },
+    {
+      "key": "earnin",
+      "title": "Senior Product Builder",
+      "company": "EarnIn",
+      "expected": "yes",
+      "sourceHash": "186bf44266da036b0d13034014d63a4e0fc74125c04e46e1a582fa6f16e8e013",
+      "inputHash": "1b7e16817fdcead9de8fe703cee9131e7148948cd5fbf7c8f32f09dffb43cee5",
+      "normalizedInputHash": "a9742a36c5c617bf4cb6b7d0af5d7b24183db7d4d62328aa83937d4033399d19",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "20.json"
+    },
+    {
+      "key": "exiger",
+      "title": "AI Product Builder",
+      "company": "Exiger",
+      "expected": "yes",
+      "sourceHash": "50ea23f6754b55714dc753bad17964f18e05a4bb3cefaa54a5875b0d7046f905",
+      "inputHash": "fa39e263b3da841420f43e86e7e9fc133430edc7065c6caf891cc3daea61047f",
+      "normalizedInputHash": "1423fcef412833eb1b4a089b5e381eac325a1af273b42ae930d7e58b8d1c514c",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "21.json"
+    },
+    {
+      "key": "figma_ai_insights",
+      "title": "Product Builder, AI Insights",
+      "company": "Figma",
+      "expected": "yes",
+      "sourceHash": "6ea8c90fafcd1564e0080dcbeb69a1bc92e9810bc8de9eb0e4d8e0bb8730712b",
+      "inputHash": "77bcd63a1261bfd9eff8cb4dba17b62e7c0b9cc2ebf9b589eeac36f1756fcc4f",
+      "normalizedInputHash": "673f34b2f175c40b2aeda8a8b68d24694942e1f245733abfe581e6b67dc2d324",
+      "comparison": "changed",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "22.json"
+    },
+    {
+      "key": "g2",
+      "title": "Senior AI Product Builder",
+      "company": "G2",
+      "expected": "yes",
+      "sourceHash": "7b674c89e10d507ab6551bb131c34d4df64ab47ac36e1eb6fa8396a0faa19a18",
+      "inputHash": "e736ff8a9216547f748e0e8695db05b31a20ff695566620b508a51fee970ded0",
+      "normalizedInputHash": "66ddcedc4194c9b330be8a8e7f6460d423be08d3ac4630cbbb219947a354b229",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "23.json"
+    },
+    {
+      "key": "gitlab",
+      "title": "AI Transformation Owner, Product & Design",
+      "company": "GitLab",
+      "expected": "yes",
+      "sourceHash": "107ca577c56d28069474111791021226a21d73abbdd4191b100bee0a97b2fd7f",
+      "inputHash": "2adbd2883308b9d5b8aa25d1b1e211804ab511c9b872cee3f0c87ac36d0ec46a",
+      "normalizedInputHash": "c383a44260fc7f11e2504952f4b96f555c5722f2d70e8427f0c5f6ae37e46bd2",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "24.json"
+    },
+    {
+      "key": "indeed",
+      "title": "Product Builder",
+      "company": "Indeed Flex",
+      "expected": "yes",
+      "sourceHash": "a5a77dbb4969201af8680470e4d2d20931bf3dc5888a5f472a9a119aeb205f25",
+      "inputHash": "9be0c524d434e5dcfe6aa677e93362a57e2033e88e5f4d2593c872a75d266196",
+      "normalizedInputHash": "de00a21521c8520a4b706711f8b6159a612124dc35924edcf031b1b772a161dc",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "25.json"
+    },
+    {
+      "key": "mangoapps",
+      "title": "Product Manager, AI Builder",
+      "company": "MangoApps",
+      "expected": "yes",
+      "sourceHash": "de042c126744ec3e9d93e604f6f0cdc73481e44ca4db302a3e6cce6aff788f3c",
+      "inputHash": "7f908303c3810532dd110886a6e4ad3ba12f265005dc5bc87dd505a108ddb6e8",
+      "normalizedInputHash": "047c7743b34953a16d2f6436a580a5dab267a0ea8e05d730f7c9f7a22a2cd9c9",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "26.json"
+    },
+    {
+      "key": "oath",
+      "title": "Product Manager",
+      "company": "Oath",
+      "expected": "yes",
+      "sourceHash": "12d39fd4866bc44bf8aa5b11c15b50f85bc93d52ed2c7629c35f25f50f07760a",
+      "inputHash": "df57eace2c7e4705180924da92a004dcb9444ef5a6b1aaaa29a13d10edc39e64",
+      "normalizedInputHash": "db1b8b0063b5738513673ce3a88252489d879a4106c0e423d1f9307f5d69af8e",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "27.json"
+    },
+    {
+      "key": "overjoy",
+      "title": "Product Manager",
+      "company": "Overjoy",
+      "expected": "yes",
+      "sourceHash": "132246f2897d84ca9e6a6d87af652176a64bfb0d16ddc3804aacfa2f851d31ac",
+      "inputHash": "3cfd64d58114e575fcee06a4231a2892a014551ae5dc500edb13243165616b2b",
+      "normalizedInputHash": "3ddfd93b3feab7b02e22999ddf9a745e08794071d1a4776e218bb5133c06dbf6",
+      "comparison": "identical",
+      "exampleIds": [
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "28.json"
+    },
+    {
+      "key": "rillet",
+      "title": "Business Operations, AI Builder",
+      "company": "Rillet",
+      "expected": "yes",
+      "sourceHash": "e5a497731f7f9f2335f0b76b5db62e267c199774887e9f4d0c9dfa5cdfe04fcd",
+      "inputHash": "3fca8bd0a99b98258c1397752ac9bbe37b51cee0f911694ed0fe45789328d095",
+      "normalizedInputHash": "a9756c42d62c53e30851102c367f9d43c02d5f72e73d90909352776baeccdac4",
+      "comparison": "changed",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire"
+      ],
+      "file": "29.json"
+    },
+    {
+      "key": "sharkninja",
+      "title": "Director, Finance AI & Automation",
+      "company": "SharkNinja",
+      "expected": "yes",
+      "sourceHash": "46f5d52f70004c7db90a6c9186d055941efb74ff3dae2fb1f506b96a76069d16",
+      "inputHash": "a936139eaa3c4d0aed97ff305d51755aef0549ab2089d9afcb8cd583386b2113",
+      "normalizedInputHash": "00d3d8f8d68c4fd9a8b707213a8c3de032313de7615b293bde5e09b2feb17e90",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "30.json"
+    },
+    {
+      "key": "shipbob",
+      "title": "Senior AI Product Builder, Inventory Experience",
+      "company": "ShipBob",
+      "expected": "yes",
+      "sourceHash": "3f979d78e68bc8dd0529d02758f2a62ba94b032466b635ceea729afe4385ba4f",
+      "inputHash": "fcf9b7be89552cca2be092d01047ebad0c90975c2213ec92589614b6b09d5a71",
+      "normalizedInputHash": "9f274357a63413fdc2e6c5053482bc0f1fdb39fa2cb0425f456be5eba94f76f3",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "31.json"
+    },
+    {
+      "key": "veho",
+      "title": "Director of Product, Consumer & Support (AI Builder)",
+      "company": "Veho",
+      "expected": "yes",
+      "sourceHash": "88a4f4982e89b41e80b7305643e4d7e4e146b2d37dab7fa79621a9487adbb1ca",
+      "inputHash": "e20d575e2079f8fc43c43a9fb02213f426dee6768a2257fa421060d08541843b",
+      "normalizedInputHash": "b17ceff26c6868d573e17c4384aa47645bde2b1d06938c6338dc236a5688738d",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "32.json"
+    },
+    {
+      "key": "within",
+      "title": "Senior AI Product Manager",
+      "company": "Within",
+      "expected": "yes",
+      "sourceHash": "90450f818428459cc296cb982c978ec408e5eb409e10e35e5b806cb8d84f42f2",
+      "inputHash": "0c7cc73c85601fc1de6878ecf5bd425faffa0f547c80f1e6d179fd0ef86870c4",
+      "normalizedInputHash": "7ff2bb34e9812d5485c03b3e33f8d28531a246378a00542d432ed54360f42b16",
+      "comparison": "not_available",
+      "exampleIds": [
+        "overjoy",
+        "lab37",
+        "batch1_c08",
+        "azul",
+        "batch1_c20",
+        "squire",
+        "rillet"
+      ],
+      "file": "33.json"
+    }
+  ],
+  "missing": [
+    {
+      "id": "medecision",
+      "company": "Medecision",
+      "title": "AI Product Builder",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "rivian",
+      "company": "Rivian",
+      "title": "AI Product Engineer, Facilities",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vailent",
+      "company": "Vailent/Vinmar",
+      "title": "Builder (Product Led)",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    },
+    {
+      "id": "vanta",
+      "company": "Vanta",
+      "title": "Senior Product Builder, Organizational Intelligence",
+      "reason": "No full saved employer description; not evaluated from a title or user-label summary"
+    }
+  ],
+  "results": [
+    {
+      "key": "65c30d5f2a8fabb4e8631904aabc177e",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The primary mandate is to lead the data organization and its architecture while coding pipelines. LLM enablement is present, but personal AI-assisted problem-to-result building is not established as the role mandate."
+      }
+    },
+    {
+      "key": "8fe2124691866e8b9c1bf3a95887a3dd",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The intern assists with skills, agents, connectors and IT/security support under direction. The posting does not establish responsibility for a scoped usable solution and its outcomes."
+      }
+    },
+    {
+      "key": "c1d22788c9cb215c409c26b711293492",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The role owns PM requirements, roadmap, coordination and rollout. Its explicit personal AI making is prototypes and MVPs to test concepts rather than implementing and shipping usable product changes."
+      }
+    },
+    {
+      "key": "e2a8aabf6a823e1ff1966fb93c1a2b8e",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The primary work is systems administration, access management, tickets and security. Introducing a few AI or automation improvements does not make personal AI-assisted building the central mandate."
+      }
+    },
+    {
+      "key": "alaffia",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Diagnoses operational bottlenecks, prioritizes ROI, personally deploys AI agents and apps from prototype to production, and measures adoption and business outcomes."
+      }
+    },
+    {
+      "key": "alt",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns growth problems and metrics, writes and ships production changes personally with AI coding tools, and runs experiments through ship-or-kill decisions."
+      }
+    },
+    {
+      "key": "amperity",
+      "status": "succeeded",
+      "result": {
+        "decision": "unclear",
+        "reason": "The posting requires direct experience building agentic systems and rapid AI prototypes in the codebase, but does not clearly establish whether personally implementing usable solutions is central to this role or primarily validates ideas for engineering."
+      }
+    },
+    {
+      "key": "apollo",
+      "status": "succeeded",
+      "result": {
+        "decision": "no",
+        "reason": "The detailed mandate is product strategy, sourcing, telemetry and cross-functional delivery. Personal AI work is explicitly prototyping to validate before investment; the posting does not establish a central personal implementation-and-shipping responsibility."
+      }
+    },
+    {
+      "key": "axiad",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns discovery, UX and product outcomes while maintaining an active AI-enabled prototype-to-pull-request practice, personally carrying delivery through the last mile when appropriate."
+      }
+    },
+    {
+      "key": "batch1_c01",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns business problem, prioritization, enterprise implementation, deployment, adoption and measured ROI, explicitly writing enterprise code with AI."
+      }
+    },
+    {
+      "key": "batch1_c03",
+      "status": "succeeded",
+      "result": {
+        "decision": "unclear",
+        "reason": "The intern personally prototypes feature ideas and works with designers and engineers to ship them, but it is unclear whether AI-assisted implementation of usable software is part of that personal mandate rather than concept exploration and creative-AI product testing."
+      }
+    },
+    {
+      "key": "batch1_c07",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Turns ambiguous operational problems into live internal systems using AI-first tools and integrations, personally deploys them, and tracks use and business impact."
+      }
+    },
+    {
+      "key": "batch1_c08",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Ships scoped features into a production codebase using agentic tools with senior review, challenges specifications, and iterates as a cross-disciplinary builder."
+      }
+    },
+    {
+      "key": "batch1_c20",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Works with mission users to define and personally build capabilities, uses coding agents to ship, owns deployment outcomes, and carries field learning into the product roadmap."
+      }
+    },
+    {
+      "key": "batch1_c27",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Uses AI coding tools to ship deployed features and agents, tests with users, and contributes evidence to product go/pivot/kill decisions."
+      }
+    },
+    {
+      "key": "batch1_c29",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Personally ships user-facing features end to end, contributes product and UX judgment, and uses AI throughout development, debugging and iteration."
+      }
+    },
+    {
+      "key": "batch1_c46",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns a product problem space and outcomes, explicitly participates in building and shipping rather than only directing, and uses AI tools in that hands-on loop."
+      }
+    },
+    {
+      "key": "batch1_c50",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns user research and experience judgment, implements production frontend code personally with AI-native workflows, and instruments outcomes to guide iteration."
+      }
+    },
+    {
+      "key": "batch1_c52",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Identifies opportunities and builds products, platforms and agent workflows, using AI to cross disciplinary boundaries and validating effectiveness against real engineering outcomes."
+      }
+    },
+    {
+      "key": "earnin",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Combines technical product strategy with personally building evaluation pipelines, reusable libraries and reference implementations, graduating experiments into production and measuring user value."
+      }
+    },
+    {
+      "key": "exiger",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Frames customer problems, personally contributes production features using an AI-enabled development lifecycle, and uses product evidence to decide what to improve or stop."
+      }
+    },
+    {
+      "key": "figma_ai_insights",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns internal customer-understanding products from opportunity selection and design through personal AI-assisted building, launch, evaluation and adoption."
+      }
+    },
+    {
+      "key": "g2",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns product and design decisions and carries open-ended customer problems directly into working products using AI coding tools and hands-on implementation."
+      }
+    },
+    {
+      "key": "gitlab",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns internal AI strategy and prioritization while personally building working low-code agents, maintaining their fleet, and iterating on KPIs and real usage with engineering support."
+      }
+    },
+    {
+      "key": "indeed",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Frames worker-messaging problems, implements and ships production code personally with AI tools, monitors results, and contributes discovery learning to the roadmap."
+      }
+    },
+    {
+      "key": "mangoapps",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns product discovery through adoption and personally uses AI development tools for internal tools, improvements and smaller production changes, with engineering support for larger work."
+      }
+    },
+    {
+      "key": "oath",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Hands-on AI building is explicitly the core job: personally ships features, agents and workflows, shapes bets, and measures experiments and business outcomes."
+      }
+    },
+    {
+      "key": "overjoy",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns customer discovery through measured outcomes and explicitly prototypes and ships small fixes personally with Claude Code while partnering with engineering."
+      }
+    },
+    {
+      "key": "rillet",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Frames operational problems with function leaders, personally builds AI-powered systems and tools, and remains accountable for daily use and adoption."
+      }
+    },
+    {
+      "key": "sharkninja",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Personally builds and deploys production AI agents using agentic coding tools, chooses finance opportunities by material value, and owns controls, adoption and measured outcomes."
+      }
+    },
+    {
+      "key": "shipbob",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Owns discovery, specifications, AI-generated production PRs and outcome measurement, personally working against the real repository with engineering review."
+      }
+    },
+    {
+      "key": "veho",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "Combines consumer and support product judgment with personally building and shipping AI-assisted production systems, then instruments and improves their outcomes."
+      }
+    },
+    {
+      "key": "within",
+      "status": "succeeded",
+      "result": {
+        "decision": "yes",
+        "reason": "The overall mandate explicitly gives autonomy to define a problem, prototype the answer personally with AI and ship it, with outcome ownership and the ability to raise PRs. Engineering collaboration and a lower production-code bar do not by themselves negate that mandate."
+      }
+    }
+  ],
+  "execution": {
+    "method": "Current assistant read the complete normalized frozen descriptions and applied v8 in the existing thread. These are authored in-thread assessments, not independent codex exec model responses.",
+    "apiCalls": 0,
+    "apiBudgetChangeUSD": 0,
+    "cliProbe": {
+      "model": "gpt-6.1-sol",
+      "authentication": "ChatGPT login; OPENAI_API_KEY and CODEX_API_KEY removed from probe environment",
+      "outcome": "Rejected with model_not_found: model is not supported when using Codex with a ChatGPT account",
+      "classifiedJobs": 0
+    },
+    "limitations": [
+      "Thread contains prior user labels and prior model outputs; label contamination cannot be excluded.",
+      "The desktop thread model is user-reported; no independently resolved GPT-6.1 Sol execution metadata was available.",
+      "Prompt examples and policies are context for this review, not isolated per-job instruction payloads.",
+      "Historical positive text/label pairing caveats remain.",
+      "The 33-case set has only four negatives and cannot establish discovery precision at real-world prevalence."
+    ],
+    "productionChanges": false
+  },
+  "developmentDiagnosticMetrics": {
+    "records": 33,
+    "scored": 33,
+    "humanMaybe": 0,
+    "truePositive": 26,
+    "falsePositive": 0,
+    "falseNegative": 1,
+    "trueNegative": 4,
+    "abstentions": 2,
+    "operationalFailures": 0,
+    "precision": 1,
+    "recall": 0.896551724137931,
+    "semanticRecall": 0.896551724137931,
+    "decisionCoverage": 0.9393939393939394,
+    "labelBasis": "Recorded historical expectations; text/version pairing caveats retained, not unseen accuracy"
+  },
+  "sourceVerifiedMetrics": {
+    "records": 33,
+    "scored": 4,
+    "sourceUnverified": 29,
+    "humanMaybe": 0,
+    "truePositive": 0,
+    "falsePositive": 0,
+    "falseNegative": 0,
+    "trueNegative": 4,
+    "abstentions": 0,
+    "operationalFailures": 0,
+    "precision": null,
+    "recall": null,
+    "semanticRecall": null,
+    "decisionCoverage": 1
+  },
+  "disagreements": [
+    {
+      "key": "amperity",
+      "company": "Amperity",
+      "title": "Principal Product Builder",
+      "expected": "yes",
+      "prediction": "unclear",
+      "comparison": "not_available",
+      "reason": "The posting requires direct experience building agentic systems and rapid AI prototypes in the codebase, but does not clearly establish whether personally implementing usable solutions is central to this role or primarily validates ideas for engineering."
+    },
+    {
+      "key": "apollo",
+      "company": "Apollo",
+      "title": "Principal Product Builder, Data",
+      "expected": "yes",
+      "prediction": "no",
+      "comparison": "not_available",
+      "reason": "The detailed mandate is product strategy, sourcing, telemetry and cross-functional delivery. Personal AI work is explicitly prototyping to validate before investment; the posting does not establish a central personal implementation-and-shipping responsibility."
+    },
+    {
+      "key": "batch1_c03",
+      "company": "OpenArt",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "expected": "yes",
+      "prediction": "unclear",
+      "comparison": "not_available",
+      "reason": "The intern personally prototypes feature ideas and works with designers and engineers to ship them, but it is unclear whether AI-assisted implementation of usable software is part of that personal mandate rather than concept exploration and creative-AI product testing."
+    }
+  ]
+}

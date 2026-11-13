@@ -1,0 +1,80 @@
+{
+  "labelSource": "Direct user reply in this conversation",
+  "labels": [
+    {
+      "id": "N01",
+      "url": "https://jobs.ashbyhq.com/g2/187a60bb-94fd-4127-bddd-a8c26ae6dec1",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N02",
+      "url": "https://boards.greenhouse.io/figma/jobs/6235320004?gh_jid=6235320004",
+      "label": "no",
+      "focus": null,
+      "reason": "User correction (2026-10-29): \"The Sales Operations Manager role at Figma should not be on there. That was a mistake.\" Earlier positive review is superseded; no further rationale supplied.",
+      "originalReview": {
+        "label": "yes",
+        "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+      },
+      "correctedAt": "2026-10-29"
+    },
+    {
+      "id": "N03",
+      "url": "https://jobs.ashbyhq.com/vanta/7d9922bb-2d0e-4833-bc4e-df65dc57d232",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N04",
+      "url": "https://jobs.ashbyhq.com/trm-labs/369c6fb3-6214-478e-870e-f57d3b234481",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N05",
+      "url": "https://jobs.ashbyhq.com/openart/069aefb9-3103-4e07-9485-d5f66f5f4d01",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N06",
+      "url": "https://boards.greenhouse.io/figma/jobs/6237757004?gh_jid=6237757004",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N07",
+      "url": "https://boards.greenhouse.io/figma/jobs/6238015004?gh_jid=6238015004",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N08",
+      "url": "https://jobs.ashbyhq.com/trm-labs/56b079fd-2ca5-4a65-8f3f-e63ae8073d36",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N09",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8329516",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    },
+    {
+      "id": "N10",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/5770ec09-a538-4f2f-958a-5dbfc9eaddcd",
+      "label": "no",
+      "focus": null,
+      "reason": "User: \"No2 yes. None of the rest are.\" No additional rationale or focus label supplied."
+    }
+  ]
+}

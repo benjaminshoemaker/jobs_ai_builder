@@ -1,0 +1,40 @@
+{
+  "checkedAt": "2026-10-30T04:41:38.223671+00:00",
+  "preview": "https://jobs-ai-builder-lbh8utk0d-benshoemakerxyz-3472s-projects.vercel.app",
+  "vercelProtectionPassedInChrome": true,
+  "exactNeonTrustedOriginRegistered": true,
+  "signedInBoardFlowVerified": true,
+  "remainingAccessStep": null,
+  "employerRequests": 9,
+  "openPostings": 9,
+  "preparedHiddenDrafts": 9,
+  "draftsWithoutKnownGeographyBlock": 8,
+  "geographyUnconfirmed": [
+    "Alt"
+  ],
+  "publishedBefore": 22,
+  "publishedAfter": 22,
+  "newDraftsExposedByDeployedEndpoint": 0,
+  "boardTestsPassed": 82,
+  "isolatedDatabaseScenariosPassed": 12,
+  "boardTypecheck": "passed",
+  "boardBuild": "passed",
+  "paidModelCalls": 0,
+  "scheduledCollectionEnabled": false,
+  "publicLaunch": false,
+  "signedInVerification": {
+    "browser": "Codex built-in browser",
+    "adminPage": true,
+    "pipelinePage": true,
+    "maintenancePage": true,
+    "preparedDraftEditor": "BioRender",
+    "draftStagingPost": {
+      "processed": 0,
+      "published": 0,
+      "scheduled": false,
+      "status": "completed"
+    },
+    "inferenceControl": "disabled",
+    "publicationsPerformed": 0
+  }
+}

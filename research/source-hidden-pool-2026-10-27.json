@@ -1,0 +1,587 @@
+{
+  "date": "2026-10-27",
+  "unit": "U.S. candidate posting",
+  "selection": "Top 20 HiringCafe keyword page roles excluding 32 prior labels; first 22 U.S. AI Native Builder category roles excluding known names/URLs and duplicates; 18 round-robin title matches from seven manually selected employer boards. No relevance labels yet.",
+  "candidates": [
+    {
+      "id": "C01",
+      "title": "AI Builder - Liberty (Reno)",
+      "company": "ITS Technologies & Logistics",
+      "location": "Reno, NV",
+      "url": "https://hiringcafe.com/job/ai-builder-liberty-reno-its-technologies-and-logistics-llc-reno-nevada-iu3tbk6oy5njr63h",
+      "qualification_hint": "Build working AI software; product design judgment; technical field or equivalent.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C02",
+      "title": "Forward Deployment AI Product Builder",
+      "company": "Presto",
+      "location": "San Mateo, CA",
+      "url": "https://hiringcafe.com/job/forward-deployment-ai-product-builder-enterprise-deployment-presto-9hf4f3tx4u3cmufp",
+      "qualification_hint": "4+ years with engineering teams; complex software or AI systems.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C03",
+      "title": "Early Adopter & Product Builder Intern, Creative AI",
+      "company": "OpenArt AI",
+      "location": "San Carlos, CA",
+      "url": "https://hiringcafe.com/job/early-adopter-and-product-builder-intern-creative-ai-openart-ai-san-2crl7gg4ysfx20rh",
+      "qualification_hint": "Student or trained in CS, engineering, HCI or design; shipped work.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C04",
+      "title": "AI Product Lead",
+      "company": "Granicus",
+      "location": "Remote U.S.",
+      "url": "https://hiringcafe.com/job/ai-product-lead-granicus-united-states-9olgyll66k33399t",
+      "qualification_hint": "Product delivery; front-end engineering in JS/TS and React; AI coding agents.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C05",
+      "title": "Senior AI Product Manager",
+      "company": "Kickoff",
+      "location": "New York, NY",
+      "url": "https://hiringcafe.com/job/senior-ai-product-manager-kickoff-new-york-city-new-york-1skx13fn769tuju5",
+      "qualification_hint": "Product management; AI coding tools; some coding exposure.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C06",
+      "title": "Product Manager, AI-Native Builder",
+      "company": "Bond Sports",
+      "location": "New York, NY",
+      "url": "https://hiringcafe.com/job/product-manager-ai-native-builder-bond-sports-new-york-city-new-york-65qzlc5g960wfn2g",
+      "qualification_hint": "3+ years building software products; APIs, databases, web apps; AI coding tools.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C07",
+      "title": "AI Product Builder",
+      "company": "RK Logistics Group",
+      "location": "Chandler, AZ",
+      "url": "https://hiringcafe.com/job/ai-product-builder-mon-fri-8-00am-4-30pm-onsite-rk-logistics-group-4di6j5wvrjngtx2l",
+      "qualification_hint": "Built tools with business impact; AI automation; U.S. work authorization.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C08",
+      "title": "Product Builder Intern",
+      "company": "AwardSpring",
+      "location": "Chicago, IL",
+      "url": "https://hiringcafe.com/job/product-builder-intern-awardspring-chicago-illinois-a72i7kyaf2t4udbe",
+      "qualification_hint": "Student or recent graduate; personally built with AI coding tools.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C09",
+      "title": "Staff Product Manager, AI Builder Experience",
+      "company": "MongoDB",
+      "location": "New York, NY",
+      "url": "https://hiringcafe.com/job/staff-product-manager-ai-builder-experience-mongodb-new-york-city-new-n27tpa364d9v85c4",
+      "qualification_hint": "8+ years PM or equivalent; technical platform and developer-tool fluency.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C10",
+      "title": "Hardware Product Lead - AI Builder",
+      "company": "Emporia Energy",
+      "location": "Littleton, CO",
+      "url": "https://hiringcafe.com/job/hardware-product-lead-ai-builder-home-energy-products-emporia-energy-jgevln1iwigk3175",
+      "qualification_hint": "5+ years hardware PM; shipping physical products; AI tool use.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C11",
+      "title": "Builder - Senior/Staff Product Manager",
+      "company": "Reevo",
+      "location": "Santa Clara, CA",
+      "url": "https://hiringcafe.com/job/builder-senior-staff-product-manager-reevo-santa-clara-california-tos84v3i68by8ere",
+      "qualification_hint": "6+ years PM; product leadership and technical aptitude.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C12",
+      "title": "Product Engineer - AI Finance",
+      "company": "Bjak",
+      "location": "Remote U.S.",
+      "url": "https://hiringcafe.com/job/product-engineer-ai-finance-bjak-united-states-jwujl8z5kxm8m8fl",
+      "qualification_hint": "Product management or builder experience; product sense and stakeholder management.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C13",
+      "title": "Senior Builder - Product Manager",
+      "company": "Ring",
+      "location": "Multiple U.S. locations",
+      "url": "https://hiringcafe.com/job/senior-builder-product-manager-ring-ring-hawthorne-california-8o9ltgr35xtzwy7i",
+      "qualification_hint": "5+ years software engineering or PM; GenAI applications and AI coding tools.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C14",
+      "title": "Staff Product Manager, AI Research & Engineering",
+      "company": "Collectors",
+      "location": "Remote U.S.",
+      "url": "https://hiringcafe.com/job/staff-product-manager-ai-research-and-engineering-collectors-san-43t2wfiegblbciv3",
+      "qualification_hint": "10+ years PM; AI workflows; hands-on builder.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C15",
+      "title": "Senior Associate Builder",
+      "company": "AI Fund",
+      "location": "Mountain View, CA",
+      "url": "https://hiringcafe.com/job/senior-associate-builder-ai-fund-mountain-view-california-zxnpp8oca5m70th4",
+      "qualification_hint": "Hands-on coding, GenAI applications, AI coding tools; STEM or research degree.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C16",
+      "title": "Agent Core Product Manager for Agent Builder",
+      "company": "JPMorgan Chase",
+      "location": "Multiple U.S. locations",
+      "url": "https://hiringcafe.com/job/agent-core-product-manager-for-agent-builder-jpmorgan-chase-seattle-kfxgnnbgjyqou4dx",
+      "qualification_hint": "5+ years AI PM or domain experience; agent lifecycle and product leadership.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C17",
+      "title": "Senior Product Manager - Bits Agent Builder",
+      "company": "Datadog",
+      "location": "New York, NY",
+      "url": "https://hiringcafe.com/job/senior-product-manager-bits-agent-builder-datadog-new-york-new-york-rp57a6x6thpiiju4",
+      "qualification_hint": "PM with platform and API experience; CS/engineering or equivalent.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C18",
+      "title": "AI Solutions Engineer / Product Builder",
+      "company": "Confluent Health",
+      "location": "Remote U.S.",
+      "url": "https://hiringcafe.com/job/ai-solutions-engineer-product-builder-confluent-health-united-states-zqylp4mlbh0wbxuv",
+      "qualification_hint": "Strong TypeScript, React, SQL, APIs and agentic AI experience.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C19",
+      "title": "Forward Deployed Engineer",
+      "company": "HomeSmart Services",
+      "location": "Scottsdale, Arizona, United States",
+      "url": "https://homesmartservices.bamboohr.com/careers/1116",
+      "qualification_hint": "Experience building software or AI applications; strong Python; working knowledge of SQL, APIs, version control, testing; experience with language models and AI development tools like Claude Code, Codex, or Cursor.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C20",
+      "title": "Forward Deployed Engineer",
+      "company": "TRM Labs",
+      "location": "North America or Washington or San Francisco or Los Angeles or New York City or London or Singapore",
+      "url": "https://jobs.ashbyhq.com/trm-labs/e4992057-b59e-4fb3-8f18-a919497d0ba5",
+      "qualification_hint": "Strong Python and/or Node.js/TypeScript programming, AI fluency, Kubernetes, AWS, relational databases, communication, adaptability, and experience delivering beyond a primary specialty.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C21",
+      "title": "AI Product Manager",
+      "company": "Kickoff",
+      "location": "New York City, New York, United States",
+      "url": "https://trainwithkickoff.notion.site/Senior-Product-Manager-25059ea92910820ebcab0119a43c6013",
+      "qualification_hint": "AI-native builder with strong AI coding tool skills, some coding exposure, product management experience, and ability to ship fast; in-person NYC 4-5 days/week.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C22",
+      "title": "Applied AI Product Manager",
+      "company": "Deloitte US",
+      "location": "Hermitage or Tampa or New York City or Dallas or Jersey City or Morristown",
+      "url": "https://apply.deloitte.com/en_US/careers/JobDetail/Applied-AI-Product-Manager-Financial-Services-Audit/368391",
+      "qualification_hint": "Bachelor's degree in business, marketing, engineering or related field; 6+ years lean product management; 3+ years enterprise scale; 1+ year AI products; 1+ year financial services/audit; cloud platform and observability tools; 3 days/week in office; 0-20% travel.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C23",
+      "title": "Forward Deployed Engineer",
+      "company": "KPMG LLP",
+      "location": "Albany or Albuquerque or Anchorage or Ashburn or Atlanta or Austin or Baltimore or Baton Rouge or Bentonville or Birmingham or Boise or Boston or Boulder or Buffalo or Charlotte or Chicago or Cincinnati or Cleveland or Columbus or Dallas or Denver or Des Moines or Detroit or El Segundo or Fort Worth or Fort Lauderdale or Greenville or Harrisburg or Hartford or Houston or Indianapolis or Irvine or Jackson or Jacksonville or Kansas City or Knoxville or Las Vegas or Lincoln or Los Angeles or Louisville or McLean or Melville or Memphis or Miami or Milwaukee or Minneapolis or Montvale or Morristown or Nashville or New Orleans or New York City or Oklahoma City or Omaha or Orlando or Philadelphia or Phoenix or Pittsburgh or Portland or Providence or Raleigh or Richmond or Rochester or Sacramento or Salt Lake City or San Antonio or San Diego or San Francisco or Santa Clara or Seattle or Shreveport or St. Louis or Stamford or Tallahassee or Tampa or Tempe or Virginia Beach or Washington or Winston-Salem",
+      "url": "https://www.kpmguscareers.com/jobdetail/?jobId=139512",
+      "qualification_hint": "Minimum 4 years hands-on experience shipping secure full-stack production software with data/ML/AI; Bachelor's in STEM or 5 years relevant experience; expertise in cloud (Azure, AWS, GCP), LLMs, AI coding harnesses, agent frameworks; ability to travel domestically.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C24",
+      "title": "Product Engineer",
+      "company": "Social Discovery Group",
+      "location": "United States or Japan",
+      "url": "https://social-discovery-ventures.breezy.hr/p/e5a41beaf52b01-product-engineer-ai-native",
+      "qualification_hint": "Senior engineering experience owning complex production systems end-to-end, including architecture, reliability, deployment, and integrations; strong AI-agent development skills, ownership, and critical review abilities.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C25",
+      "title": "Forward Deployed Engineer",
+      "company": "Sony Pictures Entertainment Inc.",
+      "location": "Culver City, California, United States",
+      "url": "https://jp.sonypicturesjobs.com/%e3%82%b8%e3%83%a7%e3%83%96/%e3%82%ab%e3%83%ab%e3%83%8f%e3%83%bc%e3%82%b7%e3%83%86%e3%82%a3/principal-forward-deployed-engineer/28957/101642494784",
+      "qualification_hint": "8+ years full-stack production engineering; experience with AI-assisted development tools (Claude Code, Cursor, GitHub Copilot, Windsurf); production LLM systems; enterprise security; strong stakeholder communication; bachelor's degree or equivalent.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C26",
+      "title": "Forward Deployed Engineer",
+      "company": "CarParts.com",
+      "location": "Long Beach, California, United States",
+      "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=ad933d4d-2649-4054-8cc2-d704d60ff765&ccId=19000101_000001&jobId=522312&lang=en_US",
+      "qualification_hint": "3-6 years professional software engineering; proficiency in Python, Java, TypeScript, Go, or C#; strong software design, databases, APIs, testing, cloud, Git; AI tool adoption and LLM integration experience.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C27",
+      "title": "AI Product Builder Intern",
+      "company": "OpenSesame",
+      "location": "Austin, Texas, United States",
+      "url": "https://boards.greenhouse.io/opensesame/jobs/8313424?gh_jid=8313424",
+      "qualification_hint": "No prior experience required; must be able to work on-site in Austin, Texas; must provide examples of AI-built projects; flexible 10-20 hours per week.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C28",
+      "title": "Applied AI Product Engineer",
+      "company": "VetsEZ",
+      "location": "United States",
+      "url": "https://vetsez.breezy.hr/p/0bcfb695560901-senior-applied-ai-product-engineer-remote-opportunity",
+      "qualification_hint": "Bachelor's in Computer Science, 5+ years software engineering, proficiency with Claude Code, Python/TypeScript/JavaScript, LLM integration, U.S. citizenship, ability to obtain Public Trust clearance, reside in continental US.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C29",
+      "title": "AI Product Engineer",
+      "company": "Sekai",
+      "location": "United States",
+      "url": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f",
+      "qualification_hint": "2+ years in software/product engineering; strong product sense; AI-native with tool familiarity; ownership and end-to-end delivery; frontend/backend experience; startup-ready.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C30",
+      "title": "Forward Deployed Engineer",
+      "company": "Quantifind",
+      "location": "Palo Alto or Atlanta or Washington or United States",
+      "url": "https://www.quantifind.com/open-positions/?gh_jid=8024932",
+      "qualification_hint": "US citizen with 4+ years experience; strong Python/Scala/Java/R skills; AWS (ECS, RDS, S3, Cognito, Bedrock); Terraform/CloudFormation; Docker/EKS/Kubernetes; CI/CD; familiarity with FedRAMP/NIST/DoD standards; forward-deployed client experience; AI coding tools experience.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C31",
+      "title": "Product Design",
+      "company": "a16z-speedrun",
+      "location": "Austin or Austin or Austin",
+      "url": "https://jobs.ashbyhq.com/a16z-speedrun/96a180a0-caef-4a36-91f8-bc582fa302bf",
+      "qualification_hint": "Senior or leadership startup design experience, shipped consumer product portfolio, expertise in Figma and Claude, complex workflow design, AI-native experiences, prototyping, testing, and brand design.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C32",
+      "title": "Product Manager",
+      "company": "Neumo",
+      "location": "New Mexico or West Jordan or Texas or Carrollton or Illinois or United States or Alabama",
+      "url": "https://workforcenow.adp.com/mascsr/default/mdf/recruitment/recruitment.html?cid=56dad57d-81b7-4889-9f75-7ef29807fa05&ccId=1990797403_6352&jobId=618871&lang=en_US",
+      "qualification_hint": "Bachelor's degree or equivalent; 3+ years product management experience; 2+ years technical experience; experience with AI-assisted coding tools, design systems, front-end fundamentals, and growth analytics; willingness to travel up to 40%.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C33",
+      "title": "Product Manager",
+      "company": "GreenSky",
+      "location": "Atlanta, Georgia, United States",
+      "url": "https://careers-greensky.icims.com/jobs/5166/agentic-%28ai%29-native-product-manager%2c-ai-native-pods/job?in_iframe=1",
+      "qualification_hint": "Requires 5+ years in product management, including 2+ years with consumer or merchant-facing products in fintech, payments, marketplaces, or high-growth software. Requires daily AI prototyping fluency and Agile experience.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C34",
+      "title": "AI Product Manager",
+      "company": "UKON",
+      "location": "Denver, Colorado, United States",
+      "url": "https://ats.rippling.com/ukon/jobs/a79f9862-7d9f-4497-a235-3502dcc0ea20",
+      "qualification_hint": "5+ years building and shipping software with product ownership; production coding experience; proficiency in a modern programming language; Git, automated testing, code review; AI-enabled product experience; strong technical fluency across APIs, databases, and architecture.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C35",
+      "title": "Forward Deployed Engineer",
+      "company": "Dingoblu Financial Inc",
+      "location": "Charlotte, North Carolina, United States",
+      "url": "https://dingoblu.applytojob.com/apply/yo3F0xojJ7/Forward-Deployed-Engineer",
+      "qualification_hint": "5+ years building and shipping production software with financial services experience; production React and Flutter; hands-on AWS; CI/CD with GitHub Actions; deep Claude experience; client-facing ability; on-site in Charlotte with periodic travel.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C36",
+      "title": "AI Product Manager",
+      "company": "Milliman",
+      "location": "Chicago or Brookfield or Windsor",
+      "url": "https://recruiting2.ultipro.com/mil1017/JobBoard/f54234e9-dfde-b183-fd20-4fbdb19cba7a/OpportunityDetail?opportunityId=16904377-7375-41da-9ac3-586c796c36c1",
+      "qualification_hint": "Bachelor's degree in computer science or related field; 6+ years software engineering experience; 6+ months technical leadership; Azure or comparable cloud; SQL, data modeling, APIs; AI-assisted development tools; legal authorization to work in US without sponsorship.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C37",
+      "title": "Product Manager",
+      "company": "SevenAI",
+      "location": "Boston, Massachusetts, United States",
+      "url": "https://jobs.ashbyhq.com/sevenai/7ecab710-4008-4c7e-8518-c8b15bee95bf",
+      "qualification_hint": "5+ years in software engineering or product development; strong AI/LLM experience; BS/technical degree; experience with GenAI and AI tooling.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C38",
+      "title": "AI Builder",
+      "company": "Wrike",
+      "location": "Lithuania or Prague or Nicosia or Bengaluru or Rennes or Australia or Costa Rica or Cyprus or Czech Republic or Estonia or France or India or Ireland or Japan or United States",
+      "url": "https://job-boards.greenhouse.io/wrike/jobs/4710247005",
+      "qualification_hint": "Senior full-stack engineer experienced with Java (21)/Spring, REST APIs, SQL, TypeScript/React, end-to-end feature ownership, and advanced, daily use of AI coding tools.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C39",
+      "title": "Forward Deployed Engineer",
+      "company": "Onos Health",
+      "location": "San Francisco, California, United States",
+      "url": "https://jobs.ashbyhq.com/onoshealth/58d36bae-5153-471a-9c8c-2094339be001",
+      "qualification_hint": "5+ years building software, strong product and system design skills, customer-facing integration experience, hands-on technical leadership, experience with healthcare data formats and ML a plus.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C40",
+      "title": "Forward Deployed Engineer",
+      "company": "Concourse",
+      "location": "New York City, New York, United States",
+      "url": "https://jobs.ashbyhq.com/concoursetech/c14762b1-fdbf-479d-ad9e-782a869f81df",
+      "qualification_hint": "Experienced engineer with backend and frontend ability, portfolio of end-to-end projects, hands-on use of AI coding tools, comfortable with government legacy data, US citizenship required.",
+      "availability": "unverified",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C41",
+      "title": "AI Engineering Tech Lead / Architect",
+      "company": "faros-ai",
+      "location": "Redwood City",
+      "url": "https://jobs.ashbyhq.com/faros-ai/19fa1cbf-2f8e-43df-9fef-d52fe12c0ee1",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C42",
+      "title": "Product Designer",
+      "company": "ramp",
+      "location": "New York, NY (HQ)",
+      "url": "https://jobs.ashbyhq.com/ramp/eca54d0e-232a-4c3e-bfcc-d6c6add393f5",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C43",
+      "title": "Product Manager",
+      "company": "rillet",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/rillet/a182464e-76c1-4f0b-af78-76ba8a611281",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C44",
+      "title": "AI Applied Scientist",
+      "company": "figma",
+      "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/5707966004?gh_jid=5707966004",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C45",
+      "title": "Senior Product Designer, AI Registry",
+      "company": "babylist",
+      "location": "United States",
+      "url": "https://job-boards.greenhouse.io/babylist/jobs/6121161004",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C46",
+      "title": "Product Manager, AI Native Initiatives",
+      "company": "faros-ai",
+      "location": "Redwood City",
+      "url": "https://jobs.ashbyhq.com/faros-ai/11413be9-77d0-40e7-957a-687c347146d6",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C47",
+      "title": "Senior Product Marketing Manager - New Products",
+      "company": "ramp",
+      "location": "New York, NY (HQ)",
+      "url": "https://jobs.ashbyhq.com/ramp/cdc3cb5a-8c6d-4820-86cf-5f9daa2b41fc",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C48",
+      "title": "Principal Product Manager, Transportation",
+      "company": "veho-tech-inc",
+      "location": "New York City Office",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/23b41a77-e16a-49b0-86a7-bb1ad64cfccd",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C49",
+      "title": "AI Engineer, Internal Tools",
+      "company": "figma",
+      "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/6233043004?gh_jid=6233043004",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C50",
+      "title": "Staff Product Designer(AI Builder)",
+      "company": "babylist",
+      "location": "United States",
+      "url": "https://job-boards.greenhouse.io/babylist/jobs/5831620004",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C51",
+      "title": "AI Audit Lead",
+      "company": "oath",
+      "location": "United States",
+      "url": "https://jobs.ashbyhq.com/oath/aa7508f1-429b-4c7a-b0e4-c7e74467a14d",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C52",
+      "title": "AI-Native Builder",
+      "company": "faros-ai",
+      "location": "Redwood City",
+      "url": "https://jobs.ashbyhq.com/faros-ai/f0978123-07f9-457e-9236-dc136ac1c0e7",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C53",
+      "title": "Product Manager | Procurement",
+      "company": "ramp",
+      "location": "New York, NY (HQ)",
+      "url": "https://jobs.ashbyhq.com/ramp/3f4509ad-1858-478b-a7fb-bcd792d9575a",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C54",
+      "title": "VP of Commercial Product",
+      "company": "veho-tech-inc",
+      "location": "New York City Office",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/8219c3cb-e053-4928-b7e0-c31e777e1678",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C55",
+      "title": "Product Designer",
+      "company": "rillet",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/rillet/a157ef05-3218-4b42-ae79-a3d6d95c4bde",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C56",
+      "title": "Content Strategist, Product",
+      "company": "figma",
+      "location": "San Francisco, CA \u2022 New York, NY \u2022 United States",
+      "url": "https://boards.greenhouse.io/figma/jobs/6207950004?gh_jid=6207950004",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C57",
+      "title": "Staff Product Manager, Wishlist",
+      "company": "babylist",
+      "location": "United States",
+      "url": "https://job-boards.greenhouse.io/babylist/jobs/5988511004",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    },
+    {
+      "id": "C58",
+      "title": "Product Marketing Lead",
+      "company": "faros-ai",
+      "location": "Remote",
+      "url": "https://jobs.ashbyhq.com/faros-ai/b30ce000-f54f-4767-aa74-19ecd7d7d838",
+      "qualification_hint": "",
+      "availability": "employer_feed",
+      "checked_at": "2026-10-27"
+    }
+  ]
+}

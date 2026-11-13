@@ -1,0 +1,255 @@
+{
+  "method": "Codex agent assessment using the locked definition and all 44 reference judgments; not a Decisions API run",
+  "model": "gpt-6.1-sol (this session)",
+  "referenceCount": 44,
+  "referenceSha256": "3528263c07dc4b592817140940d5975e13ee1f98b91f45655a6044a8d495d9a8",
+  "cutoff": "2026-10-28T07:00:00.000Z",
+  "collectedAt": "2026-10-29T04:35:21.688Z",
+  "dateLimitations": "Last screening is day-precision Oct 27 Pacific; Ashby dates are last-published and may include reposts. Greenhouse dates are first_published, never updated_at.",
+  "scope": "Complete 10-role U.S.-eligible set in the after-cutoff window from 20 selected employer boards; not the entire U.S. market.",
+  "budgetedAttempts": 27,
+  "httpRequests": 26,
+  "newCandidatesBeforeUSFilter": 11,
+  "outsideUS": [
+    {
+      "title": "Account Executive, SMB - EMEA/AMER",
+      "url": "https://jobs.ashbyhq.com/g2/c6f01dd2-5107-4462-bd1a-58d28480c6f2",
+      "location": "Bengaluru"
+    }
+  ],
+  "records": [
+    {
+      "title": "Associate GTM Engineer",
+      "company": "g2",
+      "url": "https://jobs.ashbyhq.com/g2/187a60bb-94fd-4127-bddd-a8c26ae6dec1",
+      "location": "Chicago, IL",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T14:32:21.352+00:00",
+      "board": "ashby:g2",
+      "dateBasis": "last_published_may_include_reposts",
+      "id": "N01",
+      "prediction": "yes",
+      "focus": [
+        "revenue_operations"
+      ],
+      "engineering": "technical_fluency",
+      "confidence": "moderate",
+      "reason": "Personally builds and ships AI workflows, supports requirements, rolls them out, and measures business results. Ownership is supervised rather than autonomous; that is the main boundary to review.",
+      "evidence": [
+        "Build and ship workflows",
+        "2+ years in RevOps, GTM strategy, sales"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "ac7c463d5a70bcc7176b807da708a9ef0261d1667e8f7af07b113d5d21362253"
+    },
+    {
+      "title": "Sales Operations Manager",
+      "company": "figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6235320004?gh_jid=6235320004",
+      "location": "San Francisco, CA • New York, NY",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.092Z",
+      "postedAt": "2026-10-28T19:11:24-04:00",
+      "board": "greenhouse:figma",
+      "dateBasis": "first_published",
+      "id": "N02",
+      "prediction": "yes",
+      "focus": [
+        "operations",
+        "analytics"
+      ],
+      "engineering": "technical_fluency",
+      "confidence": "moderate",
+      "reason": "Owns operational improvements and builds AI-enabled intelligence systems; hands-on Claude Code/Codex is explicitly requested. Distinguish this from analysis-only sales operations.",
+      "evidence": [
+        "Build and maintain intelligence systems",
+        "including hands-on experience with Claude Code and Codex"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "4ac1ca3be2affe7f094cd38c17dcdd1ef932de1e8255f5f8dbd534313c31fc12"
+    },
+    {
+      "title": "Staff Product Designer, Activation",
+      "company": "vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/7d9922bb-2d0e-4833-bc4e-df65dc57d232",
+      "location": "Remote U.S.",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T16:20:47.153+00:00",
+      "board": "ashby:vanta",
+      "dateBasis": "last_published_may_include_reposts",
+      "id": "N03",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "no_swe_career_requirement_stated",
+      "confidence": "moderate",
+      "reason": "Owns design strategy and shipped experiences, but coding/AI prototyping appears as a supporting qualification, not a central mandate to personally build working software.",
+      "evidence": [
+        "Comfort prototyping in code or with AI tools",
+        "alongside your PM and EM"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "1e6cb667ba004ac94789a5ca3e6bbc42014c560f1e2b35ba9375fcf4e6b760b6"
+    },
+    {
+      "title": "Deployment Strategist, National Security",
+      "company": "trm-labs",
+      "url": "https://jobs.ashbyhq.com/trm-labs/369c6fb3-6214-478e-870e-f57d3b234481",
+      "location": "United States",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T21:47:12.070+00:00",
+      "board": "ashby:trm-labs",
+      "dateBasis": "last_published_may_include_reposts",
+      "id": "N04",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "no_swe_career_requirement_stated",
+      "confidence": "high",
+      "reason": "Customer adoption, training, renewals, and expansion are the core accountabilities. AI fluency and product feedback do not establish personal software building.",
+      "evidence": [
+        "own a portfolio of U.S. defense and intelligence accounts",
+        "adoption, value realization, and renewal"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "03c09941bbafd70067e9c515699e0dfdcf1949506cc7265d714476f58152fc2d"
+    },
+    {
+      "title": "B2B Lifecycle Marketing Manager",
+      "company": "openart",
+      "url": "https://jobs.ashbyhq.com/openart/069aefb9-3103-4e07-9485-d5f66f5f4d01",
+      "location": "San Carlos, California, USA",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T17:49:15.759+00:00",
+      "board": "ashby:openart",
+      "dateBasis": "last_published_may_include_reposts",
+      "id": "N05",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "no_swe_career_requirement_stated",
+      "confidence": "moderate",
+      "reason": "Personally builds lifecycle campaigns and owns their outcomes, but the posting does not make AI-assisted software/tools/agents creation central. Marketing automation alone is insufficient.",
+      "evidence": [
+        "build and QA the campaigns",
+        "3+ years hands-on with a lifecycle platform"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "284c88e6ada58b71fbc1a495b47fdd6e482f7ebd1499fa9de11314c05b13c0d5"
+    },
+    {
+      "title": "Manager, Software Engineering - UX Platform",
+      "company": "figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6237757004?gh_jid=6237757004",
+      "location": "San Francisco, CA • New York, NY • United States",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.092Z",
+      "postedAt": "2026-10-28T18:56:10-04:00",
+      "board": "greenhouse:figma",
+      "dateBasis": "first_published",
+      "id": "N06",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "swe_required",
+      "confidence": "high",
+      "reason": "Leads an engineering team and its roadmap; the individual is not hired primarily to personally build and ship with AI.",
+      "evidence": [
+        "Manage and support a team of experienced engineers",
+        "2+ years of engineering management experience"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "d32e8a386135b269837e5191b0045be38abec21a22015475cbe1125a72333e56"
+    },
+    {
+      "title": "PhD Intern, Security Engineer (2027)",
+      "company": "figma",
+      "url": "https://boards.greenhouse.io/figma/jobs/6238015004?gh_jid=6238015004",
+      "location": "San Francisco, CA • New York, NY",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.092Z",
+      "postedAt": "2026-10-28T20:08:03-04:00",
+      "board": "greenhouse:figma",
+      "dateBasis": "first_published",
+      "id": "N07",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "coding_and_phd_required_not_swe_career",
+      "confidence": "moderate",
+      "reason": "Direct engineering work is present, but AI coding tools are an optional plus rather than central to this security internship. This is not rejected merely for engineering qualifications.",
+      "evidence": [
+        "Experience using AI tools",
+        "Proficiency in at least one general-purpose coding language"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "ea3464566bf55f221c8f2c66d5d3de093bcf22fbe6a172866b5e0f78f7f48740"
+    },
+    {
+      "title": "Enablement Manager, Public Sector",
+      "company": "trm-labs",
+      "url": "https://jobs.ashbyhq.com/trm-labs/56b079fd-2ca5-4a65-8f3f-e63ae8073d36",
+      "location": "United States; London, United Kingdom; EMEA",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T21:28:38.566+00:00",
+      "board": "ashby:trm-labs",
+      "dateBasis": "last_published_may_include_reposts",
+      "id": "N08",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "no_swe_career_requirement_stated",
+      "confidence": "high",
+      "reason": "Sales enablement, onboarding, training, and content systems are central; no personal AI-software-building mandate.",
+      "evidence": [
+        "execution-focused enablement role",
+        "onboarding, training, and content programs"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "5a23757c0932c32d3c691af66fc097b78902c0a88d5fe68ca014524c858eb935"
+    },
+    {
+      "title": "Head of Communications",
+      "company": "earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8329516",
+      "location": "Mountain View, US",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:37:15.370Z",
+      "postedAt": "2026-10-28T12:39:32-04:00",
+      "board": "greenhouse:earnin",
+      "dateBasis": "first_published",
+      "id": "N09",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "no_swe_career_requirement_stated",
+      "confidence": "high",
+      "reason": "Communications strategy, PR, and executive visibility; no personal AI-assisted software-building mandate.",
+      "evidence": [
+        "Develop and implement a comprehensive communications strategy"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "1d299e564bec87f8f08d4a0d2ad8eb349fea0b77eb20dc164a8d1e94ff454d47"
+    },
+    {
+      "title": "Warehouse Associate II, Ground Operations",
+      "company": "veho-tech-inc",
+      "url": "https://jobs.ashbyhq.com/veho-tech-inc/5770ec09-a538-4f2f-958a-5dbfc9eaddcd",
+      "location": "Highland Park, MI",
+      "availability": "employer_feed",
+      "checkedAt": "2026-10-29T04:35:21.688Z",
+      "postedAt": "2026-10-28T12:45:18.856+00:00",
+      "board": "ashby:veho-tech-inc",
+      "dateBasis": "last_published_may_include_reposts",
+      "id": "N10",
+      "prediction": "no",
+      "focus": [],
+      "engineering": "not_applicable",
+      "confidence": "high",
+      "reason": "Physical warehouse operations, package sorting, and driver launches; no software builder mandate.",
+      "evidence": [
+        "scan, sort packages onto pallets or into routes"
+      ],
+      "userLabel": null,
+      "sourceTextSha256": "3a3ca540572716f2006b4dd97956613d16676a4e1976ca3e5cb9785a732d9411"
+    }
+  ]
+}

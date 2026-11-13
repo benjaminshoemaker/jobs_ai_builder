@@ -1,0 +1,24 @@
+{
+  "caseKey": "axiad",
+  "maxOutputTokens": 600,
+  "status": "completed",
+  "incompleteDetails": null,
+  "returnedModel": "gpt-6.1-sol",
+  "outputText": "{\"decision\":\"yes\",\"reason\":\"The mandate combines customer discovery and problem judgment with a constant, strategic practice of personally building AI-enabled prototypes, working software, and delivered features. It explicitly requires prototype-to-pull-request execution, carrying delivery through when appropriate, and feeding learning from building and selling back into product direction. Although product management remains broad, hands-on building and ownership of outcomes are central expectations, not occasional demos or routine handoffs to engineering.\"}",
+  "outputTypes": [
+    "reasoning",
+    "message"
+  ],
+  "usage": {
+    "input_tokens": 1438,
+    "input_tokens_details": {
+      "cache_write_tokens": 1435,
+      "cached_tokens": 0
+    },
+    "output_tokens": 125,
+    "output_tokens_details": {
+      "reasoning_tokens": 22
+    },
+    "total_tokens": 1563
+  }
+}

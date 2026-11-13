@@ -1,0 +1,1563 @@
+{
+  "run": "recent-50-luna-2026-11-12",
+  "model": "gpt-6-luna",
+  "classifierVersion": "builder-fit-v12",
+  "createdAt": "2026-11-13T02:25:14.029Z",
+  "selection": "Newest first_seen_at among U.S.-or-unknown unreviewed candidates with a current full-text snapshot and no prior assessment attempt. Frozen before model outputs.",
+  "budgetBeforeNanodollars": 205321200,
+  "maximumNewNanodollars": 431110450,
+  "items": [
+    {
+      "id": "23dd03a786038cf03f33137568f6f660",
+      "title": "Senior Backend & Cloud Infrastructure Engineer",
+      "sourceId": "ashby:sekai",
+      "url": "https://jobs.ashbyhq.com/sekai/1ad47635-d8d2-4c0a-8d06-2b6498e05dea",
+      "sourceHash": "2a2c275d359c93dadf44e80099b79b78e4d259437274b8da9f574de6bf75c423",
+      "firstSeenAt": "2026-11-12T14:47:37.340Z",
+      "requestHash": "8610bca8430a4b5ccb4d172c3f050f5a8d49d0f30c30efd329e6e43b56239951",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7699000
+    },
+    {
+      "id": "13bb57632c8bc226adac5cd2cc00eed2",
+      "title": "Staff Software Engineer",
+      "sourceId": "greenhouse:elationhealth",
+      "url": "https://www.elationhealth.com/about-us/careers/?gh_jid=8265478",
+      "sourceHash": "4feaf803770d6e4e7d09b26cd67528cb00a6961cc2436a2346ce6d26de1ec20d",
+      "firstSeenAt": "2026-11-12T14:47:33.266Z",
+      "requestHash": "012b25b1222e0cb92980b90b7b9c878ef8c81f9ee23771ce836c3452be33b656",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7767600
+    },
+    {
+      "id": "22573febd2405850431d551ca3421e40",
+      "title": "Contract Operations Associate",
+      "sourceId": "greenhouse:elationhealth",
+      "url": "https://www.elationhealth.com/about-us/careers/?gh_jid=8335330",
+      "sourceHash": "3a3b012339bcfdfcdaadafcccdc6835e728491716e6ca656d7f84f225dbb3f20",
+      "firstSeenAt": "2026-11-12T14:47:33.266Z",
+      "requestHash": "8a0fe8c69d1691178778cdc3cae1daf0c8550308cb0634e4e9937633d2a07d0f",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8829850
+    },
+    {
+      "id": "4a8b2a11dc93070163ee518cf5a5b427",
+      "title": "Senior OR Staff Product Designer",
+      "sourceId": "greenhouse:elationhealth",
+      "url": "https://www.elationhealth.com/about-us/careers/?gh_jid=8014971",
+      "sourceHash": "f20306db10701d4d5f9199b1b07ae6e3b37f2e884a059a02c0032ab524097712",
+      "firstSeenAt": "2026-11-12T14:47:33.266Z",
+      "requestHash": "a7ffb6a8694d45c578b340cb859b9c5490faf37b692aad30602aefcabb9994cb",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7685000
+    },
+    {
+      "id": "9b3fa558ab0b45dee37ecccaa916f093",
+      "title": "Head of Design",
+      "sourceId": "greenhouse:elationhealth",
+      "url": "https://www.elationhealth.com/about-us/careers/?gh_jid=8192334",
+      "sourceHash": "953d92f7e58d384a5751794fe837f8ccdc7acf5a03ccfc11b49f7a08958efd33",
+      "firstSeenAt": "2026-11-12T14:47:33.266Z",
+      "requestHash": "0d8a5be5404ff0a1da29e29e80b53b0308cef86c2d899f8ffdf7b08aea96f9de",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8965650
+    },
+    {
+      "id": "c9d98a2b694803ff98318894763c7518",
+      "title": "Senior Director / Vice President, Customer Support",
+      "sourceId": "greenhouse:elationhealth",
+      "url": "https://www.elationhealth.com/about-us/careers/?gh_jid=8160851",
+      "sourceHash": "341afd198a6d5aa3276192c7d32b748e248579dd7a47ff0690451300918c57e5",
+      "firstSeenAt": "2026-11-12T14:47:33.266Z",
+      "requestHash": "456a35885b4b6c4526ff5c17bed83949ae276a97a18a6895f1403be7ffc0a6f6",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8898800
+    },
+    {
+      "id": "e1c7d4d3f223a4d59c51a929bf6095fc",
+      "title": "Sales Engineer - Billing",
+      "sourceId": "greenhouse:elationhealth",
+      "url": "https://www.elationhealth.com/about-us/careers/?gh_jid=7983156",
+      "sourceHash": "1cce071d3d82993486c954aba44af5c7d786212bdad06c0bbb5c3021547a54b8",
+      "firstSeenAt": "2026-11-12T14:47:33.266Z",
+      "requestHash": "d7e518b715abe847a303d3d10f0d9812c4d84616edb91920846349792b9fd5c7",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8540400
+    },
+    {
+      "id": "5bb22bfc95e01375d8ab51623e96b102",
+      "title": "Senior Manager, Training",
+      "sourceId": "ashby:docker",
+      "url": "https://jobs.ashbyhq.com/docker/98ec5d62-88ad-47f0-9d6f-aeb624e3caed",
+      "sourceHash": "1b40a6cb9f0f683424c7b7af18a5a3a0c591b6179060a809594d2a98fabc2c88",
+      "firstSeenAt": "2026-11-12T14:47:20.420Z",
+      "requestHash": "40f3841896f96907a70b89cfea83eb28362fd054de97f1e1a49b042a329ecea1",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9600550
+    },
+    {
+      "id": "8facc4d417484af84fcafaae76b235eb",
+      "title": "Staff Software Engineer, Sandbox Secrets (West Coast)",
+      "sourceId": "ashby:docker",
+      "url": "https://jobs.ashbyhq.com/docker/7c5981e1-9dcf-41f1-a6bb-58e3cf4394af",
+      "sourceHash": "8ef56c6aecd521bcd1f8403c70fba491bf4eb02dd79609b667d32bd0e121ddfa",
+      "firstSeenAt": "2026-11-12T14:47:20.420Z",
+      "requestHash": "b846702db2b6a5b2c46cb053d22304b194202d88bb3625297d1ef15b8c21441e",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8665350
+    },
+    {
+      "id": "c9f98ac1b100dff7840ac3977d3318b3",
+      "title": "Principal Technical Program Manager, Forward Deployed Engineering",
+      "sourceId": "ashby:docker",
+      "url": "https://jobs.ashbyhq.com/docker/512fdaf9-083a-4431-a0ab-17915fd0650f",
+      "sourceHash": "5547b24a994967c4835901d4bd217ac1ace62d2b6032f631288f1ad2d73bb0af",
+      "firstSeenAt": "2026-11-12T14:47:20.420Z",
+      "requestHash": "39a1a67e95b2faca8d1556c435b6a755588d388b5e5c1224faa8657dc8cf9f89",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9185100
+    },
+    {
+      "id": "f0146731b9dbe9fc28e1ed223dbf977e",
+      "title": "Senior Event Manager",
+      "sourceId": "ashby:docker",
+      "url": "https://jobs.ashbyhq.com/docker/c9fffb9d-ca8d-4702-b364-a2b58125a273",
+      "sourceHash": "cc95b1397800e01597c2d88cccf5688e189a2a65c44bde458d34881bdb885c9f",
+      "firstSeenAt": "2026-11-12T14:47:20.420Z",
+      "requestHash": "54f98d8f1f0c70fc2505f074406c6ff64fafe1f64c4d99a00dae147ed344457f",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9887200
+    },
+    {
+      "id": "0aec329bb165cd07cfa4fbc09448381a",
+      "title": "Regional Sales Director, Financial Services - NYC ",
+      "sourceId": "greenhouse:gitlab",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8895702002",
+      "sourceHash": "8318ece4aa8a27e470d33eedeced4c4204871e9b1f2ebc29a83d3972ecc4cf3a",
+      "firstSeenAt": "2026-11-12T14:46:40.254Z",
+      "requestHash": "ea61a483c53622ed20f5bc367df5cba4e5ac016ac9d0800c640f073879768f5b",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9304450
+    },
+    {
+      "id": "0df5bde0a5cee0879ff1a3295619293d",
+      "title": "Data Scientist, Enterprise Analytics",
+      "sourceId": "greenhouse:gitlab",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922013002",
+      "sourceHash": "ef95ae9258043e2fa0b9cfd93bbdcdbe972e40dd37dd50af368f9b7200aee7d3",
+      "firstSeenAt": "2026-11-12T14:46:40.254Z",
+      "requestHash": "fb2be99ad1122c2e6dd9d63575327cbfd89d68f2e714e8a246f1487b529ea1df",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9042300
+    },
+    {
+      "id": "1692f0de869f647dbdc57c077fe7d64f",
+      "title": "Staff Regional Marketing Manager, West",
+      "sourceId": "greenhouse:gitlab",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8920177002",
+      "sourceHash": "2bd876b588f56d0ae6dae9d5d2a7098953fe7dfe61c17889c25adf87730ae4b9",
+      "firstSeenAt": "2026-11-12T14:46:40.254Z",
+      "requestHash": "50e9dfc8858901251b31b413ca5f2c1a641f979b4e8a1f0e5b5638f5765e4e40",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9473150
+    },
+    {
+      "id": "3aedba5b070ebf51615b1beee62e6da3",
+      "title": "Manager, Sales Recruiting (AMER)",
+      "sourceId": "greenhouse:gitlab",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922862002",
+      "sourceHash": "33af6abed2c95745d505814bffd388862e7eb7dee245af9790dc44fc52124f32",
+      "firstSeenAt": "2026-11-12T14:46:40.254Z",
+      "requestHash": "148eabbe63d3a6757b26f50453ff77979180d9aac2cfa9ccf2b67f4a5dd40ec6",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8826700
+    },
+    {
+      "id": "abe18be5b4af2e69a20906684483e7d0",
+      "title": "Senior Lifecycle Marketing Manager",
+      "sourceId": "greenhouse:gitlab",
+      "url": "https://job-boards.greenhouse.io/gitlab/jobs/8936287002",
+      "sourceHash": "84010177e928e368ec7f889477cc692dda6b2f5903d74ea3bcdcf225b29dc04a",
+      "firstSeenAt": "2026-11-12T14:46:40.254Z",
+      "requestHash": "986d7c3850e8acb246335dd183035de254317200d3b20af0662bcec7f2190757",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8896700
+    },
+    {
+      "id": "438cea9527435b3853ce3dff1395df03",
+      "title": "Salesforce Administrator",
+      "sourceId": "ashby:brightwheel",
+      "url": "https://jobs.ashbyhq.com/brightwheel/7090be37-92c2-4836-9728-d6aae0065286",
+      "sourceHash": "6b0f5305c3c0b07ddc85c0fb816fad61b2ca0029cd7adf0aa7b30cdd03f80cce",
+      "firstSeenAt": "2026-11-12T14:46:24.630Z",
+      "requestHash": "0ff95e2139a2cfeb345d68c58f9a2efc320dd27bc78ed519e3ea4f306b6772bd",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7562150
+    },
+    {
+      "id": "dd60a6f5a5de487712d213ca0d30c0db",
+      "title": "Manager, GTM Intelligence",
+      "sourceId": "ashby:brightwheel",
+      "url": "https://jobs.ashbyhq.com/brightwheel/478dff40-c582-49fd-93b2-3421dcbd8f83",
+      "sourceHash": "5d87c7cf5322989833f6cd110b24d441b63efb2dc0c8893160d97d25af2db62c",
+      "firstSeenAt": "2026-11-12T14:46:24.630Z",
+      "requestHash": "1cde5e0b0c2b2375c1c3ba4cfa9f722b9b31ffd0241ac83898e65aa1120e330d",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7912850
+    },
+    {
+      "id": "1247d000717e5ce9660d9dcc3bcdb2f5",
+      "title": "Senior Marketing Strategist, Product",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/7587509",
+      "sourceHash": "6753749d312a81e69bf9272a53445204aeb3b15ddbf7551254640e4aa762e8fa",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "c1b4c566687232713d484a7e6238a5b822e6b348ff99d2f39e441d1b69a6de3a",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8470400
+    },
+    {
+      "id": "43f02b3afdc7388e7099da8ab7b4eec3",
+      "title": "Senior Staff Software Engineer",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8348241",
+      "sourceHash": "754a0031a8ab376fb04ff54e277bc95c486a78f3bcd3190d7a063a4248f66873",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "6cc8bd6db4720fe7e2b292f756922048113651035eb02fe662354f435828fde0",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8210700
+    },
+    {
+      "id": "503351da5d377bae71f0bd93a102b91d",
+      "title": "Staff Credit Risk Analyst",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8248342",
+      "sourceHash": "115182fbd1f76c2410181f0478157fb55744b9399188834fdb0c6dc88d6dda3d",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "9ee93f92dfa8b355f1ee4e7a2eae3b756d30a7c273e05e137e002ece71275145",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8169400
+    },
+    {
+      "id": "8839838a26660366e48aa5e654680634",
+      "title": "Senior AI Builder",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/7926939",
+      "sourceHash": "b4db5d4e2887b20b5d60da09221745d7fd51a515d36259d02d4b5ad16b79c4ea",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "aaf097d03ff3b202e970b22d11370e1b5d66755ba8bf753ed70359708ce0e4af",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8696500
+    },
+    {
+      "id": "9ea699fa6546d22d7f1d1912023aedf4",
+      "title": "Senior Platform Engineer",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8335328",
+      "sourceHash": "25a3278e89e1756faa05d7c299ae3f2e8a2c5d8550e52edceb27d087aad27eb6",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "c889c510a64952f491ca72a22a4740c6b09ed29c657c255cb2439ba0bf2e819e",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9267700
+    },
+    {
+      "id": "c3836975618d2a30fd2387ac37d1f949",
+      "title": "Senior Platform Engineer",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8335327",
+      "sourceHash": "c259113adc216550ab7cebeeca6c634a8bfea5f2d1c67b93eb4c3356a753b672",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "6d46fdb73e0d8f8e7e34108eca23ae3aed17ea16e611b48e402eea0f94eab74c",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9245300
+    },
+    {
+      "id": "c50223916f9c2ca2710b29586c87decf",
+      "title": "Office & People Specialist",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8280614",
+      "sourceHash": "fcc621bb774e11ac3f4794004c9b02ee48a005716202a2594aca75ef62e969a4",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "4b90df5d6c40e0f551a4a2ad23de710b5db55fe1ec2358d64b4fc792e1d7d634",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9331750
+    },
+    {
+      "id": "c9f73934ea573a210f7aee59ba632c88",
+      "title": "Senior Staff Software Engineer - Identity & Trust",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8335461",
+      "sourceHash": "d0efb7f9b2996cd28a9d2ed696feb94129d2bf869a6f6cacc037994f1cfd4728",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "c7a8cfeb92af990590fbdd91b5319b496a5aa78226f82d6fb675f38bc0e44c5e",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9713950
+    },
+    {
+      "id": "ce0b94a517e46b90a531802eb39dc8d1",
+      "title": "Platform Engineer (AI Automation)",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8346674",
+      "sourceHash": "707506d29b5316d4ff237edc0f3891a2ece6548da7e562cc18329dba60c6a9ae",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "1c9b8d707105607e0765f67099fc6d583004f1c5e1375960052251fe7eff433b",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8753550
+    },
+    {
+      "id": "d4c8914a12b7ab20f8c67da0a65e0b2d",
+      "title": "Engineering Manager",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8337123",
+      "sourceHash": "b19ced68322de8d1472f3a087c3befaf3f14bb6067456ad8c00e1793e5a416cd",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "968dbcda3863334ae0693fd47cfc22eeb37a965683e44bb90560c30b59441f9a",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8424550
+    },
+    {
+      "id": "d82bd9f6bff9faaa5de898482b751c3c",
+      "title": "Future Opportunities at EarnIn",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/4905240",
+      "sourceHash": "37f0f1cc802bd61adbabce6c2ee68115dc16c94874a8d86d0e639aef6768fc25",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "8906490eecbdef74478bab0288931c8e576e661d6f6bea5dc3aca87f149993c4",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7340950
+    },
+    {
+      "id": "fa55e963c9c28b1f50473e8749b10a6c",
+      "title": "M&A Analyst",
+      "sourceId": "greenhouse:earnin",
+      "url": "https://job-boards.greenhouse.io/earnin/jobs/8243783",
+      "sourceHash": "e48f5e9fec4d0700b341977ec86c8001ab76635629e1bdf4362ba723246bd773",
+      "firstSeenAt": "2026-11-12T14:46:17.022Z",
+      "requestHash": "5ab2cea243712013113b91e81ab341743a9b76396acb7a5eccccf6c1ba835c0c",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8037800
+    },
+    {
+      "id": "2643c6f5e8464304f790cc787cc8be41",
+      "title": "Senior Designer I",
+      "sourceId": "greenhouse:hook",
+      "url": "https://job-boards.greenhouse.io/hook/jobs/8569690002",
+      "sourceHash": "1340954c5220a8a1c547102acd9f20af9b05f0188842a20ff3e5ebe2df5350c7",
+      "firstSeenAt": "2026-11-12T14:46:07.238Z",
+      "requestHash": "554bdefc2eac6f797e9f293040ee47f0098822c36b91d9542dec6da391b239ff",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8105000
+    },
+    {
+      "id": "2b5b62140a933f0f2172e56854fb139e",
+      "title": "Principal Engineer  -- Full-Stack TypeScript (Node.js, React, Cloud)",
+      "sourceId": "greenhouse:hook",
+      "url": "https://job-boards.greenhouse.io/hook/jobs/8922828002",
+      "sourceHash": "6505187105e53f6768f67fad9a6c6cc3b24d1ce900ef267d5fd9f14459c432d2",
+      "firstSeenAt": "2026-11-12T14:46:07.238Z",
+      "requestHash": "176ba028e1a5c0b0160a92dfab15bf3f570c15d70c74d2f09ae270cb464eb3c6",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8586600
+    },
+    {
+      "id": "a339918f847a7c8451be57ca15cedf3a",
+      "title": "Associate Design Director",
+      "sourceId": "greenhouse:hook",
+      "url": "https://job-boards.greenhouse.io/hook/jobs/8402409002",
+      "sourceHash": "e3e0dc394d29c8d6263551bdb89b52ab54b914a3727e61bd53e271e8a7c8241b",
+      "firstSeenAt": "2026-11-12T14:46:07.238Z",
+      "requestHash": "2ff23e8874b17a24eb7f6f341b74cbbf6d2b5531afeb948b7b52d20b6cb6232f",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8563850
+    },
+    {
+      "id": "307ce9f670fdf6eb87f15a781e667717",
+      "title": "Software Engineer, Product",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/4e463062-c104-4349-b7c4-14825f3cc44b",
+      "sourceHash": "d84f0b8af709326f655db4005cecc8febc6e17fa850bb9428b732fe07ba22c1e",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "716ee46fed1c8f64f1b2b13d979ba6e5ee9ece4b328d2a7832cefe96208e1d85",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8107100
+    },
+    {
+      "id": "65127fed9aedc44247c2ac8155737171",
+      "title": "Software Engineer, Platform",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/899496e3-cbb0-4c84-885a-7391991054b5",
+      "sourceHash": "f1abe11d10d15fe6d4ee7a1f6e73d1fbe7e13fe2a37e9d61ce9c5e6537bb22ec",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "9a66fac900e782a96ac1ddecd7fc9549d00e36e7af1d17d3bc7d678001b2f608",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8613550
+    },
+    {
+      "id": "a074e7f38000cd77fbc18bc4cbd86c37",
+      "title": "Product Manager, Fintech",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/18122c71-3fb7-4089-a901-20610cd34d63",
+      "sourceHash": "a6d207f4980cad8f21950e9b852577f3ba01333bd4f00606202aaf0dc3f7a94c",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "bc717e82dc9bf437ef7affcb737b70743071d55fc35d4020d6eb7cba5662263f",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8465500
+    },
+    {
+      "id": "a3059b060ec6191313461ac1cba154f4",
+      "title": "Software Engineer, AI",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/3b116b4f-d264-4ac4-92cb-deacdd7656ef",
+      "sourceHash": "3e93f4d478615b7b8101c90299e7e48184447f8f340a59e2c5c501ed99c74fd4",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "b68b30b517324706f676355c4b85c06dd3dcc9c3e3fb68265fb26714b9e7fb4e",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8179900
+    },
+    {
+      "id": "a720fc4dbf54dfa4d81a9b33fa25c04b",
+      "title": "Software Engineer, Labs",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/ff7372eb-0863-4f8c-94aa-8bee9a7c1670",
+      "sourceHash": "8436890f9eaa17758c0f7d8c8f97ef57c511349bf50a73cdb42db1e7631808f1",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "c542e70005be73fc38e92c7aa2b56f571d358aabebbe34f6a1d981ef13a20d7b",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7439300
+    },
+    {
+      "id": "f2972d417351e5675e9a814f36bd42f6",
+      "title": "GTM Operations",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/ee11db89-9f79-4d20-a8c9-e74bbfa51f8b",
+      "sourceHash": "49d9952e38efaf7bcdeb1c4e014093c6deaebabee0e9caa63934f4a3038c77a5",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "9950ee47be94a15569077139f33ce8a5fc0e356778dce99d77c7440c263505a9",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7896400
+    },
+    {
+      "id": "f864f92752b0d5fcbd4139251e2015fc",
+      "title": "Customer Solutions Manager (Contract)",
+      "sourceId": "ashby:ambrook",
+      "url": "https://jobs.ashbyhq.com/ambrook/a2aa6dfb-8bb4-4307-a646-bdaac9e57bb7",
+      "sourceHash": "3eeeb156a2e6b023a8157152daf6df3d6c167cf78858973768157742e5914736",
+      "firstSeenAt": "2026-11-12T14:46:03.176Z",
+      "requestHash": "2f9abc529b00c4a2707ac9d94a43f7203ef9419f2d2779802620c1040a0cb98e",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 7950650
+    },
+    {
+      "id": "7135a41fbff630bb1fc22c4b0d0d1ab9",
+      "title": "Senior AI Enablement Engineer",
+      "sourceId": "ashby:cloudzero",
+      "url": "https://jobs.ashbyhq.com/CloudZero/eeac6aff-5b3c-4667-9c84-0db19445c651",
+      "sourceHash": "dde5ca9724cb9c44e74a0287500230cc808e90686871cf7fb6af4384da6df2f7",
+      "firstSeenAt": "2026-11-12T14:45:59.595Z",
+      "requestHash": "9559d8adcc9c2a2eec05132dd966d867c85150e897f6b241a2d3018470ed65ce",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9040900
+    },
+    {
+      "id": "01b5f7f784c054fba6569f6e91f40f8b",
+      "title": "GTM Process & Automation Manager",
+      "sourceId": "greenhouse:shipbobinc",
+      "url": "https://job-boards.greenhouse.io/shipbobinc/jobs/4744357005",
+      "sourceHash": "f4b0d327802b92c41dfcabac369c93826300293a016224ee8efc9614a2e8e8b7",
+      "firstSeenAt": "2026-11-12T14:45:55.465Z",
+      "requestHash": "60355e6a4ba1d62d3de292d1b9600b3718e9320df582703cbbc7fac5ef02692d",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 10538200
+    },
+    {
+      "id": "13f75752cd27a179176fafd777ec323e",
+      "title": "Area Manager, Fulfillment Operations",
+      "sourceId": "greenhouse:shipbobinc",
+      "url": "https://job-boards.greenhouse.io/shipbobinc/jobs/4748875005",
+      "sourceHash": "bb1f97ee5d0ba66d740ab3f03042581a5de63cc5c2e9ccdfa581c673fd69ba8b",
+      "firstSeenAt": "2026-11-12T14:45:55.465Z",
+      "requestHash": "6ae7de4ae12a83e95dad65f4d45c6fe5562db42141fe6400eb30d544ed4d7532",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 9799350
+    },
+    {
+      "id": "013c94d49c9a9055080982511745e96f",
+      "title": "Senior Product Manager, GRC Platform",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/7816b5fe-e916-43b8-9200-d0d45298ba9f",
+      "sourceHash": "736394e558766921dd1ba771d675ea374d624a961b23ecef9ad37f6e8213ee9e",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "1b7de72b74e423caa6650dd7df606810708d365f4dc932ef1a61c9d1d553f1c3",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8272300
+    },
+    {
+      "id": "1d2e3946c103ffc391596f1707214b08",
+      "title": "Staff Software Engineer, Growth (Self Serve)",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/e4e1f472-5113-4cd0-b8f9-dd10af087f5d",
+      "sourceHash": "92f33fa45d3fa0966a1dc9a24b2498c5b17df79392420a5421dbd222e10bd1db",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "16e902366469eae1dbe2bdea0a5421a9f733d39e41248fae0cba0a7b3f86dfbd",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8655200
+    },
+    {
+      "id": "692ace4c54f9c0b4d8f8e54ff241b889",
+      "title": "Staff Software Engineer, Vanta for Government",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/c752a8a1-5832-4d2a-a8c5-8b8308d6a7e2",
+      "sourceHash": "a5d7a1652162e7dff51028fb4b6982d93a923135190e1398b240ae8775c2cf7a",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "770b611958b7b91dd231084b935848d7634e5d6b45b3cbe9fa2ae66b7c6e3ba8",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8421750
+    },
+    {
+      "id": "6f4c298644f35d1099a40a22726e1503",
+      "title": "Staff Product Manager, Activation",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/c3a34fb5-02e4-430e-83d2-b096363901aa",
+      "sourceHash": "9f60f79ee88dbd5b2b3bc2a50050af21494b8d8b9a4d5016824abda60405ab48",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "c667196ed2502f1ac6ca2d68a36cfd60af69a72ca669baa328462e85d371f3c2",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8685650
+    },
+    {
+      "id": "9b2a9883884544fe1288298def5a3b13",
+      "title": "Senior Director of Design",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/b604e8b8-a311-4848-9940-9ba77a67410c",
+      "sourceHash": "56c33903acfe2609339d096316988e6a2884667e3260dd5f3d9b979dcbac73b5",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "597c87f99a0197b94fd53a461f7e4ae0d208c95b400f9213a7cb2817d917b25b",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8418600
+    },
+    {
+      "id": "a66f66be3140dd3a97169b623797ca8f",
+      "title": "Senior Software Engineer, AI Platform",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/6d2a60a8-7daf-4482-ab9a-6b87516548d0",
+      "sourceHash": "9dbc832a4324d98c74d105242f985355c2fdbb38a0762adcb16f75882791a647",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "55d504059fb634353e8717ac087acd07493adb0b766ee6d51400a3bb0b131ad4",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8411950
+    },
+    {
+      "id": "ecf8794ff8f46666d8801c1e2285f5ae",
+      "title": "Senior Product Manager, Organizational Units",
+      "sourceId": "ashby:vanta",
+      "url": "https://jobs.ashbyhq.com/vanta/82dd0fed-120e-4983-a1ae-676ae355cea8",
+      "sourceHash": "dc4165e6dd2aad743c1e51e95d4f5346da93750a3daff233182aa10ccf739934",
+      "firstSeenAt": "2026-11-12T14:45:44.590Z",
+      "requestHash": "1d4efbeba26fadaee324ab92b3f2b040afa5e51f89838ac45569782aef650267",
+      "promptHash": "d0c2fc2274cc1bd2c6a63a33968cfaebc3b9419fa86bed22cb5d647b24f731dd",
+      "reservation": 8553350
+    }
+  ],
+  "results": [
+    {
+      "id": "23dd03a786038cf03f33137568f6f660",
+      "requestId": "0a222221-062e-4933-9881-8af74acd88d0",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns substantial backend and infrastructure implementation, but its mandate centers on technical architecture, reliability, and scaling. It does not establish that AI materially enables the engineer’s own building, or that they own shaping user or business problems into solutions.",
+      "usage": {
+        "input_tokens": 2673,
+        "input_tokens_details": {
+          "cache_write_tokens": 2670,
+          "cached_tokens": 0
+        },
+        "output_tokens": 203,
+        "output_tokens_details": {
+          "reasoning_tokens": 135
+        },
+        "total_tokens": 2876
+      },
+      "costEstimateNanodollars": 368800
+    },
+    {
+      "id": "13bb57632c8bc226adac5cd2cc00eed2",
+      "requestId": "c10cb089-643e-4d5b-a8d3-5b7091f23f9e",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The engineer personally ships and owns AI-powered product features, partnering with Product on scope and design. But the posting describes building AI into the product, not AI materially enabling the engineer’s own building, testing, or iteration.",
+      "usage": {
+        "input_tokens": 2644,
+        "input_tokens_details": {
+          "cache_write_tokens": 894,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 341,
+        "output_tokens_details": {
+          "reasoning_tokens": 277
+        },
+        "total_tokens": 2985
+      },
+      "costEstimateNanodollars": 434900
+    },
+    {
+      "id": "22573febd2405850431d551ca3421e40",
+      "requestId": "b796c34f-fa35-488e-b908-6ec059a8b648",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role primarily reviews contracts against established checklists, corrects routine Salesforce data, and escalates exceptions. It uses AI tools and provides feedback, but the specialists—not this associate—own building the automation and documentation; personal implementation of working solutions is not a substantive responsibility.",
+      "usage": {
+        "input_tokens": 3212,
+        "input_tokens_details": {
+          "cache_write_tokens": 1462,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 117,
+        "output_tokens_details": {
+          "reasoning_tokens": 43
+        },
+        "total_tokens": 3329
+      },
+      "costEstimateNanodollars": 379700
+    },
+    {
+      "id": "4a8b2a11dc93070163ee518cf5a5b427",
+      "requestId": "62a3b62f-3135-4699-bb6f-04741fd30f76",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns user research, solution direction, and end-to-end design delivery, but does not establish personal AI-assisted implementation of working software or workflows. Its AI-native focus concerns designing experiences, not building them.",
+      "usage": {
+        "input_tokens": 2582,
+        "input_tokens_details": {
+          "cache_write_tokens": 832,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 60,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2642
+      },
+      "costEstimateNanodollars": 288200
+    },
+    {
+      "id": "9b3fa558ab0b45dee37ecccaa916f093",
+      "requestId": "579944ec-eeb6-41f2-a4df-2d0737054f58",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role primarily leads the Design organization, sets strategy and operating practices, and partners with Product and Engineering. AI-native design ways of working are part of the mandate, but personally building and iterating on working solutions is not an expected responsibility.",
+      "usage": {
+        "input_tokens": 3179,
+        "input_tokens_details": {
+          "cache_write_tokens": 1429,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 137,
+        "output_tokens_details": {
+          "reasoning_tokens": 69
+        },
+        "total_tokens": 3316
+      },
+      "costEstimateNanodollars": 386400
+    },
+    {
+      "id": "c9d98a2b694803ff98318894763c7518",
+      "requestId": "c94818e6-f041-4d7a-8b53-86d1418cb70e",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns support operations, staffing, service performance, and product-roadmap influence. Although it calls for improving workflows and tooling and governing AI-assisted resolution, it does not establish that the director personally implements usable AI-enabled solutions; the primary mandate is organizational leadership.",
+      "usage": {
+        "input_tokens": 3096,
+        "input_tokens_details": {
+          "cache_write_tokens": 1346,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 179,
+        "output_tokens_details": {
+          "reasoning_tokens": 107
+        },
+        "total_tokens": 3275
+      },
+      "costEstimateNanodollars": 399100
+    },
+    {
+      "id": "e1c7d4d3f223a4d59c51a929bf6095fc",
+      "requestId": "2a877e89-0d8c-4da6-8b76-ac98a3996d7a",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns billing discovery and sales enablement, creating training, demo scripts, and processes. It does not establish responsibility for personally implementing usable AI-enabled tools or workflows; positioning the product’s AI capabilities is not enough.",
+      "usage": {
+        "input_tokens": 2962,
+        "input_tokens_details": {
+          "cache_write_tokens": 1212,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 154,
+        "output_tokens_details": {
+          "reasoning_tokens": 90
+        },
+        "total_tokens": 3116
+      },
+      "costEstimateNanodollars": 373200
+    },
+    {
+      "id": "5bb22bfc95e01375d8ab51623e96b102",
+      "requestId": "6e659c56-2990-44f9-97e0-79272e75ef16",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns customer learning journeys and measurable implementation outcomes, while personally building the first paths, labs, and assessments and configuring the learning platforms. It also requires piloting AI-assisted content and operational workflows, making AI-enabled implementation substantive rather than incidental.",
+      "usage": {
+        "input_tokens": 3526,
+        "input_tokens_details": {
+          "cache_write_tokens": 1776,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 372,
+        "output_tokens_details": {
+          "reasoning_tokens": 303
+        },
+        "total_tokens": 3898
+      },
+      "costEstimateNanodollars": 538600
+    },
+    {
+      "id": "8facc4d417484af84fcafaae76b235eb",
+      "requestId": "38322d86-00a4-4fca-8a8d-11ca7e30531c",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns implementation of security infrastructure, but it does not establish that AI materially enables the engineer’s own building or iteration; familiarity with coding agents and work on an agentic platform are not enough.",
+      "usage": {
+        "input_tokens": 3039,
+        "input_tokens_details": {
+          "cache_write_tokens": 1289,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 576,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 3615
+      },
+      "costEstimateNanodollars": 591900
+    },
+    {
+      "id": "c9f98ac1b100dff7840ac3977d3318b3",
+      "requestId": "933977d5-666a-452e-a5e6-cfae9d9aa8c7",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "This is a program-operations leadership role: it defines FDE standards, tracks customer and engineering commitments, manages capacity, and coordinates dependencies. It does not make personally building AI-enabled solutions or workflows a substantive responsibility.",
+      "usage": {
+        "input_tokens": 3341,
+        "input_tokens_details": {
+          "cache_write_tokens": 1591,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 61,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3402
+      },
+      "costEstimateNanodollars": 364600
+    },
+    {
+      "id": "f0146731b9dbe9fc28e1ed223dbf977e",
+      "requestId": "dcc126a3-e6a2-4fa3-8b84-496a6a3a7f39",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns event strategy and delivery, budgets, vendors, and pipeline results. It does not require personally building AI-enabled software, tools, or workflows; AI is mentioned only in the recruiting process.",
+      "usage": {
+        "input_tokens": 3753,
+        "input_tokens_details": {
+          "cache_write_tokens": 2003,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 58,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3811
+      },
+      "costEstimateNanodollars": 404300
+    },
+    {
+      "id": "0aec329bb165cd07cfa4fbc09448381a",
+      "requestId": "9f73fc6a-5bc9-4a79-b3d2-2059a36e3e2d",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role is accountable for building and leading an enterprise sales team, pipeline, and revenue—not personally implementing AI-enabled software or workflows. General expectations to use AI for productivity do not establish a builder mandate.",
+      "usage": {
+        "input_tokens": 3442,
+        "input_tokens_details": {
+          "cache_write_tokens": 1692,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 90,
+        "output_tokens_details": {
+          "reasoning_tokens": 30
+        },
+        "total_tokens": 3532
+      },
+      "costEstimateNanodollars": 389200
+    },
+    {
+      "id": "0df5bde0a5cee0879ff1a3295619293d",
+      "requestId": "6097aff8-e306-49f7-bb2b-362ef522432a",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role translates ambiguous GTM business problems into measurable questions, then personally builds and productionizes models and agentic analysis and pipeline workflows using AI coding agents, with evaluation and monitoring.",
+      "usage": {
+        "input_tokens": 3335,
+        "input_tokens_details": {
+          "cache_write_tokens": 1585,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 132,
+        "output_tokens_details": {
+          "reasoning_tokens": 76
+        },
+        "total_tokens": 3467
+      },
+      "costEstimateNanodollars": 399500
+    },
+    {
+      "id": "1692f0de869f647dbdc57c077fe7d64f",
+      "requestId": "cb0f8198-f62a-4d78-97a4-016c05e38ba3",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role explicitly expects the marketer to build and run their own programs, measurement, and AI-assisted automation rather than hand that work off. They also choose regional campaigns based on sales needs and own pipeline outcomes, establishing problem judgment and accountability for results.",
+      "usage": {
+        "input_tokens": 3562,
+        "input_tokens_details": {
+          "cache_write_tokens": 1812,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 880,
+        "output_tokens_details": {
+          "reasoning_tokens": 811
+        },
+        "total_tokens": 4442
+      },
+      "costEstimateNanodollars": 796200
+    },
+    {
+      "id": "3aedba5b070ebf51615b1beee62e6da3",
+      "requestId": "64e32351-8c15-4ed8-b69f-b98fa254fe0e",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role leads Sales recruiting, develops recruiters, and designs hiring strategies and processes. The general expectation to use AI in daily workflows does not establish responsibility to personally build and iterate on AI-enabled solutions.",
+      "usage": {
+        "input_tokens": 3171,
+        "input_tokens_details": {
+          "cache_write_tokens": 1421,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 103,
+        "output_tokens_details": {
+          "reasoning_tokens": 44
+        },
+        "total_tokens": 3274
+      },
+      "costEstimateNanodollars": 368600
+    },
+    {
+      "id": "abe18be5b4af2e69a20906684483e7d0",
+      "requestId": "bd548f4e-dbf3-49d2-a350-5c3b7d4000f3",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns and optimizes lifecycle marketing programs, including Marketo nurture journeys and automated workflows. But the general expectation to use AI for productivity is not connected to AI materially enabling the person to build, test, or iterate on those workflows.",
+      "usage": {
+        "input_tokens": 3255,
+        "input_tokens_details": {
+          "cache_write_tokens": 1505,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 301,
+        "output_tokens_details": {
+          "reasoning_tokens": 233
+        },
+        "total_tokens": 3556
+      },
+      "costEstimateNanodollars": 476000
+    },
+    {
+      "id": "438cea9527435b3853ce3dff1395df03",
+      "requestId": "d91aeaf6-9c7e-4e47-9bb8-51a5d1aa4929",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns Salesforce changes from business request through scoped implementation, testing, release, and post-release follow-up. It personally builds production workflows and configuration, with AI used to build and test faster, and is accountable for improving how go-to-market teams work.",
+      "usage": {
+        "input_tokens": 2555,
+        "input_tokens_details": {
+          "cache_write_tokens": 805,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 143,
+        "output_tokens_details": {
+          "reasoning_tokens": 72
+        },
+        "total_tokens": 2698
+      },
+      "costEstimateNanodollars": 327000
+    },
+    {
+      "id": "dd60a6f5a5de487712d213ca0d30c0db",
+      "requestId": "99dea329-3e40-4879-89f8-12f753c793a0",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns identifying GTM efficiency problems and implementing scalable, AI-driven workflows and sales processes—including automated analysis, routing, alerting, and monitoring—with accountability for their ongoing operational results.",
+      "usage": {
+        "input_tokens": 2702,
+        "input_tokens_details": {
+          "cache_write_tokens": 952,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 120,
+        "output_tokens_details": {
+          "reasoning_tokens": 63
+        },
+        "total_tokens": 2822
+      },
+      "costEstimateNanodollars": 330200
+    },
+    {
+      "id": "1247d000717e5ce9660d9dcc3bcdb2f5",
+      "requestId": "8e5271d1-e236-40b4-948b-477bcebe8114",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns product marketing strategy, positioning, campaigns, and adoption, using customer and market insights to influence product decisions. It does not establish personal responsibility for building AI-assisted software, tools, or operational workflows.",
+      "usage": {
+        "input_tokens": 2986,
+        "input_tokens_details": {
+          "cache_write_tokens": 1236,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 60,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3046
+      },
+      "costEstimateNanodollars": 328600
+    },
+    {
+      "id": "43f02b3afdc7388e7099da8ab7b4eec3",
+      "requestId": "c5338b41-05e9-477d-82c5-366c3ca16e7e",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The primary mandate is cross-team architecture, technical standards, and mentoring. Although the role uses AI daily and builds agents, skills, and documentation, those are framed as architecture-enablement; it does not establish personal AI-assisted delivery and iteration of usable product or operational solutions as a substantive responsibility.",
+      "usage": {
+        "input_tokens": 2896,
+        "input_tokens_details": {
+          "cache_write_tokens": 1146,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 1082,
+        "output_tokens_details": {
+          "reasoning_tokens": 1004
+        },
+        "total_tokens": 3978
+      },
+      "costEstimateNanodollars": 830600
+    },
+    {
+      "id": "503351da5d377bae71f0bd93a102b91d",
+      "requestId": "cbd4421b-5dcf-421f-9776-d6cf5d73a72f",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns credit-risk analysis, policy experiments, forecasting, and recommendations, while partnering with Product, ML, Engineering, and Operations on shipped changes. It does not establish a responsibility to personally build AI-enabled solutions; the company-wide AI-native language is not a role-specific implementation mandate.",
+      "usage": {
+        "input_tokens": 2843,
+        "input_tokens_details": {
+          "cache_write_tokens": 1093,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 214,
+        "output_tokens_details": {
+          "reasoning_tokens": 137
+        },
+        "total_tokens": 3057
+      },
+      "costEstimateNanodollars": 391300
+    },
+    {
+      "id": "8839838a26660366e48aa5e654680634",
+      "requestId": "608dffa9-424e-4165-9695-270c69aaace7",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns improving real engineering workflows and developer experience, deciding where agents can remove friction, then personally building production agent infrastructure, evaluation pipelines, and reusable tools that teams adopt.",
+      "usage": {
+        "input_tokens": 3196,
+        "input_tokens_details": {
+          "cache_write_tokens": 1446,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 144,
+        "output_tokens_details": {
+          "reasoning_tokens": 89
+        },
+        "total_tokens": 3340
+      },
+      "costEstimateNanodollars": 391600
+    },
+    {
+      "id": "9ea699fa6546d22d7f1d1912023aedf4",
+      "requestId": "031dd130-3595-4789-b25c-f357c0924882",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns real platform and developer-workflow problems—such as incident triage, provisioning, and self-service—and independently designs, builds, and operates agentic solutions for them. The company’s stated AI-native execution practice and the role’s production-agent mandate establish AI-enabled delivery, not merely roadmap or coordination work.",
+      "usage": {
+        "input_tokens": 3495,
+        "input_tokens_details": {
+          "cache_write_tokens": 1745,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 757,
+        "output_tokens_details": {
+          "reasoning_tokens": 674
+        },
+        "total_tokens": 4252
+      },
+      "costEstimateNanodollars": 728000
+    },
+    {
+      "id": "c3836975618d2a30fd2387ac37d1f949",
+      "requestId": "55a535e4-a3a5-48e7-8645-021005b91c76",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns building and operating production AI agents and developer-platform features that reduce operational toil, including incident triage, provisioning, and self-service. It also identifies and resolves platform problems and independently designs solutions, establishing both problem judgment and AI-assisted implementation.",
+      "usage": {
+        "input_tokens": 3474,
+        "input_tokens_details": {
+          "cache_write_tokens": 1724,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 321,
+        "output_tokens_details": {
+          "reasoning_tokens": 251
+        },
+        "total_tokens": 3795
+      },
+      "costEstimateNanodollars": 507900
+    },
+    {
+      "id": "c50223916f9c2ca2710b29586c87decf",
+      "requestId": "332456e0-285a-4572-b1f4-79dcf718f651",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role is accountable for local people support, employee relations coordination, and office operations. It does not include a substantive responsibility to build AI-enabled tools or workflows; the company-wide AI language is not specific to this job.",
+      "usage": {
+        "input_tokens": 3466,
+        "input_tokens_details": {
+          "cache_write_tokens": 1716,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 62,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3528
+      },
+      "costEstimateNanodollars": 377600
+    },
+    {
+      "id": "c9f73934ea573a210f7aee59ba632c88",
+      "requestId": "d93327e6-1f25-4662-b82b-1628d5abcff3",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The primary mandate is setting Identity & Trust strategy, architecture, and technical direction across teams. Although the role includes implementation and AI-agentic engineering work, personal coding is framed as occasional, and AI adoption is chiefly an organizational-leadership responsibility rather than a substantive mandate to personally build and iterate on solutions.",
+      "usage": {
+        "input_tokens": 3610,
+        "input_tokens_details": {
+          "cache_write_tokens": 1860,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 561,
+        "output_tokens_details": {
+          "reasoning_tokens": 480
+        },
+        "total_tokens": 4171
+      },
+      "costEstimateNanodollars": 641500
+    },
+    {
+      "id": "ce0b94a517e46b90a531802eb39dc8d1",
+      "requestId": "68a9909a-0932-4303-8ab7-1fb54816228d",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role explicitly owns identifying operational toil and personally designing, building, deploying, and iterating AI agents and automations that deliver platform and developer self-service outcomes.",
+      "usage": {
+        "input_tokens": 3196,
+        "input_tokens_details": {
+          "cache_write_tokens": 1446,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 94,
+        "output_tokens_details": {
+          "reasoning_tokens": 42
+        },
+        "total_tokens": 3290
+      },
+      "costEstimateNanodollars": 366600
+    },
+    {
+      "id": "d4c8914a12b7ab20f8c67da0a65e0b2d",
+      "requestId": "56c2fab3-db13-4842-9f8a-1f80375d00d2",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns team management, delivery, roadmap judgment, and AI-practice adoption, but does not establish personal implementation of usable solutions; AI-assisted coding fluency is a qualification, not a stated building responsibility.",
+      "usage": {
+        "input_tokens": 3029,
+        "input_tokens_details": {
+          "cache_write_tokens": 1279,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 136,
+        "output_tokens_details": {
+          "reasoning_tokens": 74
+        },
+        "total_tokens": 3165
+      },
+      "costEstimateNanodollars": 370900
+    },
+    {
+      "id": "d82bd9f6bff9faaa5de898482b751c3c",
+      "requestId": "8f1b8751-2bf7-4c84-aff9-c71ebed4ad37",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "This is a general future-opportunities posting, not a defined role. It describes the company’s AI-native approach but establishes no responsibility for personally building and iterating on solutions.",
+      "usage": {
+        "input_tokens": 2437,
+        "input_tokens_details": {
+          "cache_write_tokens": 687,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 53,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2490
+      },
+      "costEstimateNanodollars": 270200
+    },
+    {
+      "id": "fa55e963c9c28b1f50473e8749b10a6c",
+      "requestId": "377f1673-79d2-48fe-a816-541886a1f0dd",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role focuses on M&A analysis, financial modeling, due diligence, and transaction coordination. The company’s AI-native context does not establish a responsibility to build AI-enabled tools or workflows.",
+      "usage": {
+        "input_tokens": 2799,
+        "input_tokens_details": {
+          "cache_write_tokens": 1049,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 55,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2854
+      },
+      "costEstimateNanodollars": 307400
+    },
+    {
+      "id": "2643c6f5e8464304f790cc787cc8be41",
+      "requestId": "be2658a1-ebdf-4571-9dc2-ce0c1c893aa1",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns creative concepts and produces design assets, prototypes, and campaigns, but its AI requirement is using image-generation tools for creative work. It does not establish responsibility for personally implementing AI-enabled working software or operational solutions.",
+      "usage": {
+        "input_tokens": 2800,
+        "input_tokens_details": {
+          "cache_write_tokens": 1050,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 170,
+        "output_tokens_details": {
+          "reasoning_tokens": 106
+        },
+        "total_tokens": 2970
+      },
+      "costEstimateNanodollars": 365000
+    },
+    {
+      "id": "2b5b62140a933f0f2172e56854fb139e",
+      "requestId": "a64e0b10-b1e4-4077-b67c-935f1c003e35",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "Owns internal product areas from problem discovery and workflow understanding through implementation, deployment, and improvement, while personally building production applications with AI-assisted development tools.",
+      "usage": {
+        "input_tokens": 3165,
+        "input_tokens_details": {
+          "cache_write_tokens": 1415,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 125,
+        "output_tokens_details": {
+          "reasoning_tokens": 75
+        },
+        "total_tokens": 3290
+      },
+      "costEstimateNanodollars": 379000
+    },
+    {
+      "id": "a339918f847a7c8451be57ca15cedf3a",
+      "requestId": "7156e738-b1bd-48e2-a398-9769045e82c2",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns creative direction and personally produces campaign designs, prototypes, and assets, but AI tools are only an optional qualification. The work does not establish a substantive mandate to use AI to build, test, or iterate on working solutions.",
+      "usage": {
+        "input_tokens": 3024,
+        "input_tokens_details": {
+          "cache_write_tokens": 1274,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 237,
+        "output_tokens_details": {
+          "reasoning_tokens": 170
+        },
+        "total_tokens": 3261
+      },
+      "costEstimateNanodollars": 420900
+    },
+    {
+      "id": "307ce9f670fdf6eb87f15a781e667717",
+      "requestId": "9fd5250a-631f-4925-a205-3b6d726ab205",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "Owns delivery of customer-facing features, learns directly from agricultural customers, and contributes to feature prioritization. The role also explicitly expects engineers to apply AI development tools in their day-to-day work, making AI-assisted implementation part of the engineering mandate.",
+      "usage": {
+        "input_tokens": 2824,
+        "input_tokens_details": {
+          "cache_write_tokens": 1074,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 211,
+        "output_tokens_details": {
+          "reasoning_tokens": 142
+        },
+        "total_tokens": 3035
+      },
+      "costEstimateNanodollars": 387900
+    },
+    {
+      "id": "65127fed9aedc44247c2ac8155737171",
+      "requestId": "f22a2ea7-0e9c-44ac-9806-1f80eab56ed6",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns platform users’ needs and personally ships production infrastructure and agent-framework features. However, it does not establish that AI materially enables the engineer’s own building or iteration; building infrastructure for AI agents alone is not enough.",
+      "usage": {
+        "input_tokens": 3071,
+        "input_tokens_details": {
+          "cache_write_tokens": 1321,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 212,
+        "output_tokens_details": {
+          "reasoning_tokens": 147
+        },
+        "total_tokens": 3283
+      },
+      "costEstimateNanodollars": 413100
+    },
+    {
+      "id": "a074e7f38000cd77fbc18bc4cbd86c37",
+      "requestId": "8fa07491-50ff-40d1-8bf0-f9e18ff151fb",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns fintech product strategy, prioritization, and delivery through a pod of engineers, while code prototypes are listed as a way to create clarity. AI use for software engineering is required, but personal implementation and iteration of usable solutions are not established.",
+      "usage": {
+        "input_tokens": 2997,
+        "input_tokens_details": {
+          "cache_write_tokens": 1247,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 192,
+        "output_tokens_details": {
+          "reasoning_tokens": 122
+        },
+        "total_tokens": 3189
+      },
+      "costEstimateNanodollars": 395700
+    },
+    {
+      "id": "a3059b060ec6191313461ac1cba154f4",
+      "requestId": "8d934550-9f2f-4b8e-bd85-7c55910332d7",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns building and shipping AI systems for real bookkeeping workflows, including an assistant, document extraction, and transaction tagging. It also collaborates with operations, product, and design to understand customer pain and shape automation and human-in-the-loop decisions.",
+      "usage": {
+        "input_tokens": 2901,
+        "input_tokens_details": {
+          "cache_write_tokens": 1151,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 105,
+        "output_tokens_details": {
+          "reasoning_tokens": 36
+        },
+        "total_tokens": 3006
+      },
+      "costEstimateNanodollars": 342600
+    },
+    {
+      "id": "a720fc4dbf54dfa4d81a9b33fa25c04b",
+      "requestId": "c970a0ac-28a5-4159-9761-e6fa6d7285d7",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "Owns end-to-end AI experiments: works directly with operators to identify real problems, builds and ships features to customers, evaluates results, and decides what is worth scaling.",
+      "usage": {
+        "input_tokens": 2483,
+        "input_tokens_details": {
+          "cache_write_tokens": 733,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 79,
+        "output_tokens_details": {
+          "reasoning_tokens": 25
+        },
+        "total_tokens": 2562
+      },
+      "costEstimateNanodollars": 287800
+    },
+    {
+      "id": "f2972d417351e5675e9a814f36bd42f6",
+      "requestId": "37c68610-a90a-471c-b777-d0cf6895fc26",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns GTM process and efficiency problems, then personally designs and implements AI workflows and internal systems—including a production automation pilot—and measures their operational impact.",
+      "usage": {
+        "input_tokens": 2727,
+        "input_tokens_details": {
+          "cache_write_tokens": 977,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 100,
+        "output_tokens_details": {
+          "reasoning_tokens": 49
+        },
+        "total_tokens": 2827
+      },
+      "costEstimateNanodollars": 322700
+    },
+    {
+      "id": "f864f92752b0d5fcbd4139251e2015fc",
+      "requestId": "a7f77704-8117-4aaa-ba3e-a820c000cfca",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns customer financial workflows, identifies improvements, and builds some tools or processes, but AI is only mentioned as something to learn; the posting does not establish that AI materially enables the building or iteration.",
+      "usage": {
+        "input_tokens": 2748,
+        "input_tokens_details": {
+          "cache_write_tokens": 998,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 331,
+        "output_tokens_details": {
+          "reasoning_tokens": 270
+        },
+        "total_tokens": 3079
+      },
+      "costEstimateNanodollars": 440300
+    },
+    {
+      "id": "7135a41fbff630bb1fc22c4b0d0d1ab9",
+      "requestId": "48d4e960-92cd-43c1-bcd4-a12959ff77e5",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role explicitly owns understanding business-team workflows, agreeing on goals and success metrics, then personally building, operating, and improving AI workflows, agents, automations, and tools that teams rely on. It also requires AI-assisted development and accountability for results.",
+      "usage": {
+        "input_tokens": 3490,
+        "input_tokens_details": {
+          "cache_write_tokens": 1740,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 68,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 3558
+      },
+      "costEstimateNanodollars": 383000
+    },
+    {
+      "id": "01b5f7f784c054fba6569f6e91f40f8b",
+      "requestId": "97c8eb48-1003-4f01-ad2c-57da542a91c1",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns sales-process problems from discovery and prioritization through building workflow automations, AI agents, and system configurations, then driving adoption, measuring outcomes, and iterating based on use. This is a substantive AI-enabled implementation mandate tied to real sales-workflow judgment and results.",
+      "usage": {
+        "input_tokens": 4348,
+        "input_tokens_details": {
+          "cache_write_tokens": 2598,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 74,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 4422
+      },
+      "costEstimateNanodollars": 471800
+    },
+    {
+      "id": "13f75752cd27a179176fafd777ec323e",
+      "requestId": "1ef2f188-d69f-4575-ab40-5cb4496256e5",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role primarily manages warehouse staff, daily fulfillment operations, safety, and performance metrics. Although it includes process improvement and implementing operational solutions, it does not establish personal AI-assisted building of working tools or workflows; the company-wide AI tools statement is not a role-specific building mandate.",
+      "usage": {
+        "input_tokens": 3875,
+        "input_tokens_details": {
+          "cache_write_tokens": 2125,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 110,
+        "output_tokens_details": {
+          "reasoning_tokens": 35
+        },
+        "total_tokens": 3985
+      },
+      "costEstimateNanodollars": 442500
+    },
+    {
+      "id": "013c94d49c9a9055080982511745e96f",
+      "requestId": "5d4c2a6a-a7d4-4046-8092-57c591c39efa",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns platform strategy, roadmap, customer needs, and AI-first redesigns, but does not establish personal implementation of usable software or workflows. AI use is framed as a way to amplify product work, not as a building responsibility.",
+      "usage": {
+        "input_tokens": 2916,
+        "input_tokens_details": {
+          "cache_write_tokens": 1166,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 108,
+        "output_tokens_details": {
+          "reasoning_tokens": 41
+        },
+        "total_tokens": 3024
+      },
+      "costEstimateNanodollars": 345600
+    },
+    {
+      "id": "1d2e3946c103ffc391596f1707214b08",
+      "requestId": "b800bb25-484f-48cf-a1d7-dbc4a28e817e",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role clearly owns customer problems, product judgment, and hands-on delivery of growth software. However, its AI requirement is only general day-to-day use across routine workflows; it does not establish that AI materially enables the engineer’s building or iteration.",
+      "usage": {
+        "input_tokens": 3099,
+        "input_tokens_details": {
+          "cache_write_tokens": 1349,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 285,
+        "output_tokens_details": {
+          "reasoning_tokens": 216
+        },
+        "total_tokens": 3384
+      },
+      "costEstimateNanodollars": 452400
+    },
+    {
+      "id": "692ace4c54f9c0b4d8f8e54ff241b889",
+      "requestId": "01df1bd2-0d21-4472-ba34-07380c5fc34e",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns user-informed product capabilities and personally leads their technical design and build, but AI is only described as something to be open to using to improve efficiency—not as a material part of building, testing, or iterating on solutions.",
+      "usage": {
+        "input_tokens": 2965,
+        "input_tokens_details": {
+          "cache_write_tokens": 1215,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 226,
+        "output_tokens_details": {
+          "reasoning_tokens": 159
+        },
+        "total_tokens": 3191
+      },
+      "costEstimateNanodollars": 409500
+    },
+    {
+      "id": "6f4c298644f35d1099a40a22726e1503",
+      "requestId": "21fd6687-6d8f-4edc-a184-0598dedb9e0d",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "The role owns activation strategy, onboarding outcomes, and experiments in partnership with engineering, but does not establish personal responsibility for building and iterating on usable solutions. AI use is described as amplifying day-to-day work, not as a means of personally implementing the product.",
+      "usage": {
+        "input_tokens": 3170,
+        "input_tokens_details": {
+          "cache_write_tokens": 1420,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 128,
+        "output_tokens_details": {
+          "reasoning_tokens": 55
+        },
+        "total_tokens": 3298
+      },
+      "costEstimateNanodollars": 381000
+    },
+    {
+      "id": "9b2a9883884544fe1288298def5a3b13",
+      "requestId": "758793a1-8eab-43c2-95cf-2657f8e5baab",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role shapes the agentic product direction and co-owns pillar outcomes, while explicitly using AI hands-on to build in a design harness or code and setting a practice where designers prototype and ship to production. That combines solution judgment with personal AI-assisted building.",
+      "usage": {
+        "input_tokens": 3045,
+        "input_tokens_details": {
+          "cache_write_tokens": 1295,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 470,
+        "output_tokens_details": {
+          "reasoning_tokens": 399
+        },
+        "total_tokens": 3515
+      },
+      "costEstimateNanodollars": 539500
+    },
+    {
+      "id": "a66f66be3140dd3a97169b623797ca8f",
+      "requestId": "001be4a6-158a-4d2a-8305-6d10f31269b5",
+      "status": "succeeded",
+      "decision": "yes",
+      "reason": "The role owns building and operating AI platform capabilities, while partnering with product teams to prototype solutions and identify reusable needs. Product judgment is explicitly tied to developer and customer outcomes, and the posting expects AI use in day-to-day work.",
+      "usage": {
+        "input_tokens": 2985,
+        "input_tokens_details": {
+          "cache_write_tokens": 1235,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 373,
+        "output_tokens_details": {
+          "reasoning_tokens": 307
+        },
+        "total_tokens": 3358
+      },
+      "costEstimateNanodollars": 485000
+    },
+    {
+      "id": "ecf8794ff8f46666d8801c1e2285f5ae",
+      "requestId": "22f4da40-231c-4571-9f89-e29aca56b5e2",
+      "status": "succeeded",
+      "decision": "no",
+      "reason": "This is a customer-focused product management role: the PM understands enterprise needs, prioritizes workflows, writes specs, and partners with design and engineering to deliver agent-first features. LLM experience and day-to-day AI use are required, but personal implementation of working solutions is not.",
+      "usage": {
+        "input_tokens": 3040,
+        "input_tokens_details": {
+          "cache_write_tokens": 1290,
+          "cached_tokens": 1747
+        },
+        "output_tokens": 144,
+        "output_tokens_details": {
+          "reasoning_tokens": 69
+        },
+        "total_tokens": 3184
+      },
+      "costEstimateNanodollars": 376000
+    }
+  ]
+}

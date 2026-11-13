@@ -1,0 +1,432 @@
+[
+  {
+    "id": "axiad",
+    "role": "Axiad \u2014 Principal Product Builder",
+    "label": "yes",
+    "reason": "Perfect reference: product ownership and agentic building.",
+    "url": "https://job-boards.greenhouse.io/axiad/jobs/6220016004"
+  },
+  {
+    "id": "vailent",
+    "role": "Vailent/Vinmar \u2014 Builder (Product Led)",
+    "label": "yes",
+    "reason": "Perfect reference: product decisions and direct AI-assisted delivery.",
+    "url": "https://apply.workable.com/vinmar-international/j/386FDF1309/"
+  },
+  {
+    "id": "alaffia",
+    "role": "Alaffia \u2014 AI Transformation Lead",
+    "label": "yes",
+    "reason": "Strong internal product/workflow builder reference.",
+    "url": "https://careers.kula.ai/alaffia/33849-ai-transformation-lead"
+  },
+  {
+    "id": "gitlab",
+    "role": "GitLab \u2014 AI Transformation Owner, Product & Design",
+    "label": "yes",
+    "reason": "Related positive: slightly different balance, still quite good.",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8716179002"
+  },
+  {
+    "id": "rivian",
+    "role": "Rivian \u2014 AI Product Engineer, Facilities",
+    "label": "yes",
+    "reason": "Good match: product/TPM entry routes and direct AI building.",
+    "url": "https://careers.rivian.com/careers-home/jobs/34304?lang=en-US"
+  },
+  {
+    "id": "g2",
+    "role": "G2 \u2014 Senior AI Product Builder",
+    "label": "yes",
+    "reason": "Good match despite substantial technical fluency requirements.",
+    "url": "https://jobs.ashbyhq.com/g2/92dc2275-115f-4676-a607-fdda964e8121"
+  },
+  {
+    "id": "apollo",
+    "role": "Apollo \u2014 Principal Product Builder, Data",
+    "label": "yes",
+    "reason": "Good match: product ownership and direct building.",
+    "url": "https://job-boards.greenhouse.io/apolloio/jobs/6229000004"
+  },
+  {
+    "id": "within",
+    "role": "Within \u2014 Senior AI Product Manager",
+    "label": "yes",
+    "reason": "Good match; PM title and engineering support are compatible with the category.",
+    "url": "https://jobs.ashbyhq.com/within.ai/6886702a-4e88-4cc1-9f71-04b690aefb9a"
+  },
+  {
+    "id": "earnin",
+    "role": "EarnIn \u2014 Senior Product Builder",
+    "label": "yes",
+    "reason": "Good match despite full-stack expectations and technical qualifications.",
+    "url": "https://job-boards.greenhouse.io/earnin/jobs/8261686"
+  },
+  {
+    "id": "indeed",
+    "role": "Indeed Flex \u2014 Product Builder",
+    "label": "yes",
+    "reason": "Good match: personally ships AI-assisted software, accepts demonstrated builds.",
+    "url": "https://job-boards.eu.greenhouse.io/indeedflex/jobs/4994921101"
+  },
+  {
+    "id": "medecision",
+    "role": "Medecision \u2014 AI Product Builder",
+    "label": "yes",
+    "reason": "Perfect reference: PM/PO/BA route and direct creation of working features.",
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4571394"
+  },
+  {
+    "id": "amperity",
+    "role": "Amperity \u2014 Principal Product Builder",
+    "label": "yes",
+    "reason": "Great fit; engineering ownership of production architecture is compatible with fit.",
+    "url": "https://amperity.com/careers/8212260?gh_jid=8212260"
+  },
+  {
+    "id": "brightwheel",
+    "role": "brightwheel \u2014 Staff AI Software Engineer, Product",
+    "label": "no",
+    "reason": "Specific posting rejected for significant engineering-career expectations.",
+    "url": "https://jobs.ashbyhq.com/brightwheel/1e5afc7d-5a4d-437e-bade-1e4a14ba4c24"
+  },
+  {
+    "id": "docker",
+    "role": "Docker \u2014 Staff Software Engineer, AI Developer Tools",
+    "label": "no",
+    "reason": "Specific posting rejected for significant engineering-career expectations.",
+    "url": "https://jobs.ashbyhq.com/docker/87bda848-01ed-4641-beaa-829373d0ed56"
+  },
+  {
+    "id": "rwe",
+    "role": "RWE \u2014 Senior Product Manager, AI Transformation",
+    "label": "no",
+    "reason": "Product ownership of transformation without direct building."
+  },
+  {
+    "id": "cyvl",
+    "role": "Cyvl \u2014 Forward Deployed Engineer",
+    "label": "no",
+    "reason": "Solutions rather than product.",
+    "url": "https://jobs.ashbyhq.com/cyvl/0e848342-babd-4ff7-834e-ca4b7c710f75"
+  },
+  {
+    "id": "form",
+    "role": "Form Energy \u2014 Staff Forward Deployed Engineer",
+    "label": "no",
+    "reason": "Forward-deployed/solutions work.",
+    "url": "https://jobs.ashbyhq.com/formenergy/b271995b-a17b-4153-abf2-f1ab4c2283f2"
+  },
+  {
+    "id": "toast",
+    "role": "Toast \u2014 GTM Engineer",
+    "label": "no",
+    "reason": "Engineering-centered role."
+  },
+  {
+    "id": "legion",
+    "role": "Legion Health \u2014 Founding Product Manager",
+    "label": "no",
+    "reason": "Overall traditional PM role. Preserve negative label despite coding language in the reviewed version.",
+    "url": "https://jobs.ashbyhq.com/legionhealth/0ffded39-1242-4a35-9bc3-0e5b0ce22276"
+  },
+  {
+    "id": "cloudzero",
+    "role": "CloudZero \u2014 Senior/Staff PM, Agentic Practice",
+    "label": "no",
+    "reason": "AI-native PM rather than builder; prototyping alone is insufficient.",
+    "url": "https://jobs.ashbyhq.com/CloudZero/9a295df8-1e90-43df-b903-b01eabc3e240"
+  },
+  {
+    "id": "extenteam",
+    "role": "Extenteam \u2014 Founding AI Product Engineer, Multifamily",
+    "label": "stretch",
+    "reason": "Interesting stretch: appears to want an engineer despite broad formal qualifications."
+  },
+  {
+    "id": "sharkninja",
+    "role": "SharkNinja \u2014 Director, Finance AI & Automation",
+    "label": "yes",
+    "reason": "Does seem to have a builder role, with substantial finance/domain and experience requirements.",
+    "qualification": "qualified",
+    "url": "https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4709349006"
+  },
+  {
+    "id": "exiger",
+    "role": "Exiger \u2014 AI Product Builder",
+    "label": "engineering_first_blend",
+    "reason": "User agrees with engineering-first product-blend assessment.",
+    "qualification": "confirmed_type",
+    "url": "https://www.exiger.com/careers/6202657004?gh_jid=6202657004"
+  },
+  {
+    "id": "shipbob",
+    "role": "ShipBob \u2014 Senior AI Product Builder, Inventory Experience",
+    "label": "yes",
+    "reason": "Good match.",
+    "qualification": "positive",
+    "url": "https://job-boards.greenhouse.io/shipbobinc/jobs/4725934005"
+  },
+  {
+    "id": "alt",
+    "role": "Alt \u2014 Product Builder, Growth",
+    "label": "yes",
+    "reason": "Still a fit; asking for a lot. Demanding requirements do not make the role merely a stretch.",
+    "qualification": "positive",
+    "url": "https://jobs.ashbyhq.com/alt/62bdcbde-df4a-4d2c-bd01-0560d86b387c"
+  },
+  {
+    "id": "oath",
+    "role": "Oath \u2014 Product Manager",
+    "label": "yes",
+    "reason": "Good match.",
+    "qualification": "positive",
+    "url": "https://jobs.ashbyhq.com/oath/1ff90c8e-192a-4921-ba9d-89c74344c28e"
+  },
+  {
+    "id": "vanta",
+    "role": "Vanta \u2014 Senior Product Builder, Organizational Intelligence",
+    "label": "yes",
+    "reason": "Good match.",
+    "qualification": "positive",
+    "url": "https://jobs.ashbyhq.com/vanta/c986dc01-e886-4bfe-bbe9-068b7af9d2d3"
+  },
+  {
+    "id": "overjoy",
+    "role": "Overjoy \u2014 Product Manager",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User-confirmed strong match: product decisions and personal AI-assisted shipping.",
+    "url": "https://jobs.overjoy.ai/40195"
+  },
+  {
+    "id": "figma_ai_insights",
+    "role": "Figma \u2014 Product Builder, AI Insights",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User-confirmed strong match; substantial design qualifications are separate from role fit.",
+    "url": "https://job-boards.greenhouse.io/figma/jobs/6227402004?gh_jid=6227402004"
+  },
+  {
+    "id": "mangoapps",
+    "role": "MangoApps \u2014 Product Manager, AI Builder",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User-confirmed strong match: owns product outcomes and builds directly.",
+    "url": "https://hq.workforce.mangoapps.com/apps/job_board/public/jobs/472"
+  },
+  {
+    "id": "veho",
+    "role": "Veho \u2014 Director of Product, Consumer & Support (AI Builder)",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User-confirmed strong match; demanding seniority is separate from role fit.",
+    "url": "https://jobs.ashbyhq.com/veho-tech-inc/58699c81-9b9a-473d-9455-c1a93ef0c6d3"
+  },
+  {
+    "id": "rillet",
+    "role": "Rillet \u2014 Business Operations, AI Builder",
+    "label": "operations_builder",
+    "focus": [
+      "operations"
+    ],
+    "reason": "User-confirmed builder role with a business-operations focus, not a product focus.",
+    "url": "https://jobs.ashbyhq.com/rillet/f8d4f207-1e14-49fc-a0aa-a997a0c9bc2c"
+  },
+  {
+    "id": "batch1_c46",
+    "role": "Faros \u2014 Product Manager, AI Native Initiatives",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User says yes: product-focused builder.",
+    "url": "https://jobs.ashbyhq.com/faros-ai/11413be9-77d0-40e7-957a-687c347146d6"
+  },
+  {
+    "id": "batch1_c20",
+    "role": "TRM Labs \u2014 Forward Deployed Engineer, U.S. National Security",
+    "label": "yes",
+    "focus": [
+      "software_engineering"
+    ],
+    "reason": "User says yes: sits with mission users, personally builds what they need, and carries mission context into the product roadmap.",
+    "url": "https://jobs.ashbyhq.com/trm-labs/e4992057-b59e-4fb3-8f18-a919497d0ba5"
+  },
+  {
+    "id": "batch1_c29",
+    "role": "Sekai \u2014 AI Product Engineer",
+    "label": "yes",
+    "focus": [
+      "software_engineering"
+    ],
+    "reason": "User says yes: product-centric engineer who cares about user experience and uses AI as a core part of building.",
+    "url": "https://jobs.ashbyhq.com/sekai/3b727ebd-b3d3-4f32-a955-c4aa57f8e14f"
+  },
+  {
+    "id": "batch1_c27",
+    "role": "OpenSesame \u2014 AI Product Builder Intern",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User says yes: product-focused builder.",
+    "url": "https://boards.greenhouse.io/opensesame/jobs/8313424?gh_jid=8313424"
+  },
+  {
+    "id": "batch1_c03",
+    "role": "OpenArt \u2014 Early Adopter & Product Builder Intern, Creative AI",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User says yes: product-focused builder.",
+    "url": "https://jobs.ashbyhq.com/openart/8dd52ba6-a5b6-40b1-95fe-50de352fa254"
+  },
+  {
+    "id": "batch1_c50",
+    "role": "Babylist \u2014 Staff Product Designer (AI Builder)",
+    "label": "yes",
+    "focus": [
+      "design"
+    ],
+    "reason": "User says yes: design-focused builder.",
+    "url": "https://job-boards.greenhouse.io/babylist/jobs/5831620004"
+  },
+  {
+    "id": "batch1_c37",
+    "role": "SevenAI \u2014 AI Product Manager",
+    "label": "maybe",
+    "focus": [
+      "product"
+    ],
+    "reason": "User is unsure whether personal building is actually part of the role. Product focus.",
+    "url": "https://jobs.ashbyhq.com/sevenai/7ecab710-4008-4c7e-8518-c8b15bee95bf"
+  },
+  {
+    "id": "batch1_c43",
+    "role": "Rillet \u2014 Product Manager",
+    "label": "no",
+    "focus": [],
+    "reason": "User says no: appears to be a PM role, not a builder role.",
+    "url": "https://jobs.ashbyhq.com/rillet/a182464e-76c1-4f0b-af78-76ba8a611281"
+  },
+  {
+    "id": "batch1_c08",
+    "role": "AwardSpring \u2014 Product Builder Intern",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User says yes: product-focused builder.",
+    "url": "https://www.awardspring.com/careers/product-builder-intern"
+  },
+  {
+    "id": "batch1_c01",
+    "role": "ITS Logistics \u2014 AI Builder",
+    "label": "yes",
+    "focus": [
+      "software_engineering"
+    ],
+    "reason": "User says yes: software-engineering-focused builder.",
+    "url": "https://job-boards.greenhouse.io/itslogisticsllc/jobs/5370389008"
+  },
+  {
+    "id": "batch1_c07",
+    "role": "RK Logistics Group \u2014 AI Product Builder",
+    "label": "yes",
+    "focus": [
+      "operations"
+    ],
+    "reason": "User says yes: operations-focused builder.",
+    "url": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4506881"
+  },
+  {
+    "id": "batch1_c52",
+    "role": "Faros \u2014 AI-Native Builder",
+    "label": "yes",
+    "focus": [
+      "product"
+    ],
+    "reason": "User clarified C52 Faros is a positive product-focused builder.",
+    "url": "https://jobs.ashbyhq.com/faros-ai/f0978123-07f9-457e-9236-dc136ac1c0e7"
+  },
+  {
+    "id": "fresh_20261028_n01",
+    "role": "g2 \u2014 Associate GTM Engineer",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N01). Specific reason and focus were not supplied.",
+    "url": "https://jobs.ashbyhq.com/g2/187a60bb-94fd-4127-bddd-a8c26ae6dec1"
+  },
+  {
+    "id": "fresh_20261028_n02",
+    "role": "figma \u2014 Sales Operations Manager",
+    "label": "no",
+    "reason": "User correction (2026-10-29): \"The Sales Operations Manager role at Figma should not be on there. That was a mistake.\" Earlier positive review is superseded; no further rationale supplied.",
+    "url": "https://boards.greenhouse.io/figma/jobs/6235320004?gh_jid=6235320004"
+  },
+  {
+    "id": "fresh_20261028_n03",
+    "role": "vanta \u2014 Staff Product Designer, Activation",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N03). Specific reason and focus were not supplied.",
+    "url": "https://jobs.ashbyhq.com/vanta/7d9922bb-2d0e-4833-bc4e-df65dc57d232"
+  },
+  {
+    "id": "fresh_20261028_n04",
+    "role": "trm-labs \u2014 Deployment Strategist, National Security",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N04). Specific reason and focus were not supplied.",
+    "url": "https://jobs.ashbyhq.com/trm-labs/369c6fb3-6214-478e-870e-f57d3b234481"
+  },
+  {
+    "id": "fresh_20261028_n05",
+    "role": "openart \u2014 B2B Lifecycle Marketing Manager",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N05). Specific reason and focus were not supplied.",
+    "url": "https://jobs.ashbyhq.com/openart/069aefb9-3103-4e07-9485-d5f66f5f4d01"
+  },
+  {
+    "id": "fresh_20261028_n06",
+    "role": "figma \u2014 Manager, Software Engineering - UX Platform",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N06). Specific reason and focus were not supplied.",
+    "url": "https://boards.greenhouse.io/figma/jobs/6237757004?gh_jid=6237757004"
+  },
+  {
+    "id": "fresh_20261028_n07",
+    "role": "figma \u2014 PhD Intern, Security Engineer (2027)",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N07). Specific reason and focus were not supplied.",
+    "url": "https://boards.greenhouse.io/figma/jobs/6238015004?gh_jid=6238015004"
+  },
+  {
+    "id": "fresh_20261028_n08",
+    "role": "trm-labs \u2014 Enablement Manager, Public Sector",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N08). Specific reason and focus were not supplied.",
+    "url": "https://jobs.ashbyhq.com/trm-labs/56b079fd-2ca5-4a65-8f3f-e63ae8073d36"
+  },
+  {
+    "id": "fresh_20261028_n09",
+    "role": "earnin \u2014 Head of Communications",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N09). Specific reason and focus were not supplied.",
+    "url": "https://job-boards.greenhouse.io/earnin/jobs/8329516"
+  },
+  {
+    "id": "fresh_20261028_n10",
+    "role": "veho-tech-inc \u2014 Warehouse Associate II, Ground Operations",
+    "label": "no",
+    "reason": "User confirmed no in the fresh-posting review (N10). Specific reason and focus were not supplied.",
+    "url": "https://jobs.ashbyhq.com/veho-tech-inc/5770ec09-a538-4f2f-958a-5dbfc9eaddcd"
+  }
+]

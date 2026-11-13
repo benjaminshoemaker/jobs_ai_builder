@@ -1,0 +1,27 @@
+{
+  "records": 10,
+  "truePositive": 1,
+  "falsePositive": 1,
+  "trueNegative": 8,
+  "falseNegative": 0,
+  "accuracy": 0.9,
+  "precision": 0.5,
+  "recall": 1.0,
+  "falsePositiveId": "N01",
+  "positiveId": "N02",
+  "limits": "Small watchlist batch with only one user-positive role. Agent predictions, not a Decisions API run. Labels are now calibration and cannot be reused as fresh held-out evidence.",
+  "historicalMetricsSuperseded": true,
+  "correction": "2026-10-29: user withdrew N02 Figma Sales Operations Manager approval; original metrics above describe the earlier labels only.",
+  "metricsWithCorrectedLabels": {
+    "records": 10,
+    "truePositive": 0,
+    "falsePositive": 2,
+    "trueNegative": 8,
+    "falseNegative": 0,
+    "accuracy": 0.8,
+    "precision": 0,
+    "recall": null,
+    "positiveExamples": 0,
+    "limits": "All ten corrected labels are negative. This batch is calibration, not a current held-out evaluation."
+  }
+}

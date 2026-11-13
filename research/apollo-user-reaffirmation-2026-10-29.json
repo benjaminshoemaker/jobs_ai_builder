@@ -1,0 +1,17 @@
+{
+  "createdAt": "2026-10-30T01:00:38.397Z",
+  "key": "apollo",
+  "company": "Apollo",
+  "title": "Principal Product Builder, Data",
+  "url": "https://job-boards.greenhouse.io/apolloio/jobs/6229000004",
+  "decision": "yes",
+  "previousHumanDecision": "yes",
+  "lastInThreadPrediction": "no",
+  "quotedEvidence": "Apollo is hiring for what comes next: Product Builders who combine product judgment, domain depth, and AI-native research and execution.",
+  "sourceId": "e2654263-7a44-4b9f-9d88-ec994f1d44b5",
+  "sourceHash": "af09f2e49cdc64deeb205980146747d03cc8dc53bfe1c8bc3746e4d04cd7f608",
+  "inputHash": "050ed7f8fd916d40433220f186443da5c53cd25ff58d434e5ed238f3346920c9",
+  "provenance": "User challenges exclusion of the linked Apollo job and cites its explicit Product Builder mandate. Record as reaffirmation of the existing Yes, not a new fresh-batch case.",
+  "sourceCaveat": "Quoted passage matches archived full text. Do not infer that the original historical review used an identical full description or that the entire page was newly verified in this turn.",
+  "interpretation": "Consider role-wide builder mandate together with required AI-native building and shipped work. Absence of a repeated personal-production-code duty is not a veto. A title alone remains insufficient."
+}
